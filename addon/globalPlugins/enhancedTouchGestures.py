@@ -2,14 +2,13 @@
 # A touchscreen global plugin for NVDA
 # Copyright 2013 Joseph Lee and others, released under GPL.
 
-# Implements needed improvements for web navigation using touchscreens.
+# Implements needed improvements for various touchscreen gestures.
 
 import globalPluginHandler # Global plugin please.
 import touchHandler # The brain of this plugin.
 import ui # Output.
 from globalCommands import commands # For certain touch commands.
 import virtualBuffers # Web navigation.
-from baseObject import ScriptableObject
 import api
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -20,17 +19,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# A few setup events please (mostly for web navigation):
 
 	def event_gainFocus(self, obj, nextHandler):
-		if isinstance(obj.treeInterceptor, virtualBuffers.VirtualBuffer):
-			if "Web" not in touchHandler.availableTouchModes:
-				touchHandler.availableTouchModes.append("Web") # Web browsing gestures.
-		else:
-			# If we're not in browser window, force object mode.
-			if "Web" not in touchHandler.availableTouchModes: touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
+		# Crucial: Don't do anything unless if it is an installed copy.
+		import config
+		if config.isInstalledCopy():
+			if isinstance(obj.treeInterceptor, virtualBuffers.VirtualBuffer):
+				if "Web" not in touchHandler.availableTouchModes:
+					touchHandler.availableTouchModes.append("Web") # Web browsing gestures.
 			else:
-				curAvailTouchModes = len(touchHandler.availableTouchModes)
-				# If we have too many touch modes, pop all except the original entries.
-				if curAvailTouchModes > self.origAvailTouchModes:
-					for i in range(0, curAvailTouchModes-self.origAvailTouchModes): touchHandler.availableTouchModes.pop()
+				# If we're not in browser window, force object mode.
+				if "Web" not in touchHandler.availableTouchModes: touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
+				else:
+					curAvailTouchModes = len(touchHandler.availableTouchModes)
+					# If we have too many touch modes, pop all except the original entries.
+					if curAvailTouchModes > self.origAvailTouchModes:
+						for i in range(0, curAvailTouchModes-self.origAvailTouchModes): touchHandler.availableTouchModes.pop()
 		nextHandler()
 
 	# Global commands: additional touch commands available everywhere.
