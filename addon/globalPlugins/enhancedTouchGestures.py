@@ -1,6 +1,6 @@
 ﻿# Touch Browse Mode
 # A touchscreen global plugin for NVDA
-# Copyright 2013 Joseph Lee and others, released under GPL.
+# Copyright 2013-2014 Joseph Lee and others, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
 
@@ -10,6 +10,7 @@ import ui # Output.
 from globalCommands import commands # For certain touch commands.
 import virtualBuffers # Web navigation.
 import api
+import winUser
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -96,6 +97,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			elif self.webBrowseMode == 4: virtualBuffers.VirtualBuffer.script_previousFrame(obj, gesture)
 			elif self.webBrowseMode == 5: virtualBuffers.VirtualBuffer.script_previousTable(obj, gesture)
 
+	def script_touch_rightClick(self, gesture):
+		obj=api.getNavigatorObject() 
+		try:
+			p=api.getReviewPosition().pointAtStart
+		except (NotImplementedError, LookupError):
+			p=None
+		if p:
+			x=p.x
+			y=p.y
+		else:
+			try:
+				(left,top,width,height)=obj.location
+			except:
+				# Translators: Reported when the object has no location for the mouse to move to it.
+				ui.message(_("object has no location"))
+				return
+			x=left+(width/2)
+			y=top+(height/2)
+		winUser.setCursorPos(x,y)
+		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN,0,0,None,None)
+		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP,0,0,None,None)
+	script_touch_rightClick.__doc__="Performs right click at the object under your finger"
+
 
 	__gestures={
 		# Add-on specific touch gestures.
@@ -109,6 +133,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"ts(object):4finger_flickDown":"reportStatusLine",
 		"ts(object):3finger_flickDown":"speakForeground",
 		"ts(object):3finger_flickRight":"navigatorObject_current",
+		"ts:tapAndHold":"touch_rightClick",
 
 		# Web browsing gestures:
 		"ts(Web):flickDown":"nextWebElement",

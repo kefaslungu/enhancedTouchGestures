@@ -20,7 +20,7 @@ addon_info = {
 	"addon-description" : _("""A suite of additional touch commands, including tabbing and help commands.
 	Requires a touch-enabled computer with Windows 8.0 or later with NVDA 2012.3 or later installed."""),
 	# version
-	"addon-version" : "0.1",
+	"addon-version" : "0.2",
 	# Author(s)
 	"addon-author" : "Joseph Lee <joseph.lee22590@gmail.com>",
 	# URL for the add-on documentation support
