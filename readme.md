@@ -1,7 +1,7 @@
 # Enhanced Touchscreen Gestures #
 
 * Author: Joseph Lee
-* Version: [0.2][1]
+* Version: [0.3][1]
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
@@ -25,5 +25,9 @@ Note that you need NVDA 2012.3 or later installed on a touchscreen computer runn
 ## Web touch mode ##
 
 This touch mode, available in browse mode, allows you to navigate the document by selected element. To switch to web mode, from browse mode documents, perform 3 finger tap. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents, object touch mode is used.
+
+## Coordinate announcement beep ##
+
+If you've enabled play mouse coordinates setting in mouse settings, you'll hear beeps to indicate current screen coordinate when you invoke touch exploration gestures.
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ets
