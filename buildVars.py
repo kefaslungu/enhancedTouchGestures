@@ -24,7 +24,10 @@ addon_info = {
 	# Author(s)
 	"addon-author" : "Joseph Lee <joseph.lee22590@gmail.com>",
 	# URL for the add-on documentation support
-	"addon-url" : None
+	"addon-url" : None,
+	# File name for the add-on help file.
+	"addon_docFileName" : "readme.html"
+}
 }
 
 
@@ -35,7 +38,7 @@ import os.path
 pythonSources = [os.path.join("addon", "globalPlugins", "enhancedTouchGestures.py")]
 
 # Files that contain strings for translation. Usually your python sources
-i18nSources = pythonSources + ["buildVars.py", "docHandler.py"]
+i18nSources = pythonSources + ["buildVars.py"]
 
 # Files that will be ignored when building the nvda-addon file
 # Paths are relative to the addon directory, not to the root directory of your addon sources.
