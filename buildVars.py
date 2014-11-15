@@ -11,23 +11,22 @@ addon_info = {
 	# for previously unpublished addons, please follow the community guidelines at:
 	# https://bitbucket.org/nvdaaddonteam/todo/src/56140dbec531e4d7591338e1dbc6192f3dd422a8/guideLines.txt
 	# add-on Name, internal for nvda
-	"addon-name" : "enhancedTouchGestures",
+	"addon_name" : "enhancedTouchGestures",
 	# Add-on summary, usually the user visible name of the addon.
 	# TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-	"addon-summary" : _("Enhanced Touch Gestures"),
+	"addon_summary" : _("Enhanced Touch Gestures"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon-description" : _("""A suite of additional touch commands, including tabbing and help commands.
+	"addon_description" : _("""A suite of additional touch commands, including tabbing and help commands.
 	Requires a touch-enabled computer with Windows 8.0 or later with NVDA 2012.3 or later installed."""),
 	# version
-	"addon-version" : "0.2",
+	"addon_version" : "0.3",
 	# Author(s)
-	"addon-author" : "Joseph Lee <joseph.lee22590@gmail.com>",
+	"addon_author" : "Joseph Lee <joseph.lee22590@gmail.com>",
 	# URL for the add-on documentation support
-	"addon-url" : None,
+	"addon_url" : None,
 	# File name for the add-on help file.
 	"addon_docFileName" : "readme.html"
-}
 }
 
 

@@ -11,6 +11,8 @@ from globalCommands import commands # For certain touch commands.
 import virtualBuffers # Web navigation.
 import api
 import winUser
+import mouseHandler
+import config
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -120,6 +122,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP,0,0,None,None)
 	script_touch_rightClick.__doc__="Performs right click at the object under your finger"
 
+	def script_touch_newExplore(self,gesture):
+		touchHandler.handler.screenExplorer.moveTo(gesture.tracker.x,gesture.tracker.y,new=True)
+		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
+			w, h, screenWidth, screenHeight = api.getDesktopObject().location
+			mouseHandler.playAudioCoordinates(gesture.tracker.x,gesture.tracker.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+	# Translators: Input help mode message for a touchscreen gesture.
+	script_touch_newExplore.__doc__=_("Reports the object and content directly under your finger")
+
+	def script_touch_explore(self,gesture):
+		touchHandler.handler.screenExplorer.moveTo(gesture.tracker.x,gesture.tracker.y)
+		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
+			w, h, screenWidth, screenHeight = api.getDesktopObject().location
+			mouseHandler.playAudioCoordinates(gesture.tracker.x,gesture.tracker.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+	# Translators: Input help mode message for a touchscreen gesture.
+	script_touch_explore.__doc__=_("Reports the new object or content under your finger if different to where your finger was last")
 
 	__gestures={
 		# Add-on specific touch gestures.
@@ -134,6 +151,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"ts(object):3finger_flickDown":"speakForeground",
 		"ts(object):3finger_flickRight":"navigatorObject_current",
 		"ts:tapAndHold":"touch_rightClick",
+		"ts:tap":"touch_newExplore",
+		"ts:hoverDown":"touch_newExplore",
+		"ts:hover":"touch_explore",
+		
 
 		# Web browsing gestures:
 		"ts(Web):flickDown":"nextWebElement",
