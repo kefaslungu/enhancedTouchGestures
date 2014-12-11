@@ -1,14 +1,14 @@
-﻿# Touch Browse Mode
+﻿# Enhanced touch gestures
 # A touchscreen global plugin for NVDA
 # Copyright 2013-2014 Joseph Lee and others, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
 
-import globalPluginHandler # Global plugin please.
-import touchHandler # The brain of this plugin.
-import ui # Output.
-from globalCommands import commands # For certain touch commands.
-import virtualBuffers # Web navigation.
+import globalPluginHandler
+import touchHandler
+import ui
+from globalCommands import commands
+import virtualBuffers
 import api
 import winUser
 import mouseHandler
@@ -22,9 +22,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# A few setup events please (mostly for web navigation):
 
 	def event_gainFocus(self, obj, nextHandler):
-		# Crucial: Don't do anything unless if it is an installed copy.
-		import config
-		if config.isInstalledCopy():
+		# Crucial: Don't do anything unless if it is an installed copy and touchscreen support is active.
+		if config.isInstalledCopy() and touchHandler.handler:
 			if isinstance(obj.treeInterceptor, virtualBuffers.VirtualBuffer):
 				if "Web" not in touchHandler.availableTouchModes:
 					touchHandler.availableTouchModes.append("Web") # Web browsing gestures.
