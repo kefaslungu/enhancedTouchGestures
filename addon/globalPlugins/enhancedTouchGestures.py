@@ -17,7 +17,12 @@ import config
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Set up the touch environment for the add-on.
-	origAvailTouchModes = len(touchHandler.availableTouchModes)
+	origAvailTouchModes = len(touchHandler.availableTouchModes)+1
+
+	def __init__(self):
+		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		if touchHandler.handler:
+			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 
 	# A few setup events please (mostly for web navigation):
 
@@ -137,6 +142,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: Input help mode message for a touchscreen gesture.
 	script_touch_explore.__doc__=_("Reports the new object or content under your finger if different to where your finger was last")
 
+	def script_prevSynthSettingValue(self, gesture):
+		commands.script_increaseSynthSetting(gesture)
+
+	def script_nextSynthSettingValue(self, gesture):
+		commands.script_decreaseSynthSetting(gesture)
+
+	def script_nextSynthSetting(self, gesture):
+		commands.script_nextSynthSetting(gesture)
+
+	def script_prevSynthSetting(self, gesture):
+		commands.script_previousSynthSetting(gesture)
+
 	__gestures={
 		# Add-on specific touch gestures.
 
@@ -159,8 +176,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"ts(Web):flickDown":"nextWebElement",
 		"ts(Web):flickUp":"prevWebElement",
 		"ts(Web):flickRight":"nextSelectedElement",
-		"ts(Web):flickLeft":"prevSelectedElement"
+		"ts(Web):flickLeft":"prevSelectedElement",
 
 		# Settings gestures:
-		# Two finger left/right/up/down for synth settings ring, one finger flicks for other settings.
+		"ts(SynthSettings):2finger_flickRight":"nextSynthSetting",
+		"ts(SynthSettings):2finger_flickLeft":"prevSynthSetting",
+		"ts(SynthSettings):2finger_flickUp":"prevSynthSettingValue",
+		"ts(SynthSettings):2finger_flickDown":"nextSynthSettingValue",
 	}
