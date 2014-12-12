@@ -1,7 +1,7 @@
 # Enhanced Touchscreen Gestures #
 
 * Author: Joseph Lee
-* Version: [0.3][1]
+* Version: [0.4][1]
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
