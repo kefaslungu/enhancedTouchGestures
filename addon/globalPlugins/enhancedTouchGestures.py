@@ -1,6 +1,6 @@
 ﻿# Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2014 Joseph Lee and others, released under GPL.
+# Copyright 2013-2015 Joseph Lee and others, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
 
@@ -13,6 +13,10 @@ import api
 import winUser
 import mouseHandler
 import config
+import windowUtils
+import tones
+from NVDAObjects.IAccessible import getNVDAObjectFromEvent
+
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -142,6 +146,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: Input help mode message for a touchscreen gesture.
 	script_touch_explore.__doc__=_("Reports the new object or content under your finger if different to where your finger was last")
 
+	def script_touchKeyboardEnable(self, gesture):
+		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
+		keyboardButtonHwnd = windowUtils.findDescendantWindow(api.getDesktopObject().windowHandle, className="TIPBand")
+		touchKeyboardButton = getNVDAObjectFromEvent(keyboardButtonHwnd, winUser.OBJID_CLIENT, 0)
+		touchKeyboardButton.doAction()
+		tones.beep(1000, 150)
+
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
 
@@ -161,6 +172,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# For object mode: moving focus, moving to focus, object name and dimentions.
 		# For text mode, moving to top and bottom of text.
 		"ts:4finger_double_tap":"toggleInputHelp",
+		"ts:4finger_flickRight":"touchKeyboardEnable",
 		"ts(object):3finger_flickLeft":"reportCurrentFocus",
 		"ts(object):4finger_flickUp":"title",
 		"ts(object):4finger_flickDown":"reportStatusLine",
