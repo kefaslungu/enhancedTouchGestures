@@ -3,9 +3,11 @@
 # Copyright 2013-2015 Joseph Lee and others, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
+# It also includes other support features such as announcing screen orientation.
 
 import globalPluginHandler
 import touchHandler
+import wx
 import ui
 from globalCommands import commands
 import virtualBuffers
@@ -27,6 +29,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		if touchHandler.handler:
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
+		# Announce screen orientation.
+		resolution = api.getDesktopObject().location
+		self.desktopLoc = [resolution[2], resolution[3]]
+		self.screenOrientationT = wx.PyTimer(self._announceScreenOrientation)
+		self.screenOrientationT.Start(1000)
+
+	def terminate(self):
+		self.screenOrientationT.Stop()
 
 	# A few setup events please (mostly for web navigation):
 
@@ -45,6 +55,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					if curAvailTouchModes > self.origAvailTouchModes:
 						for i in range(0, curAvailTouchModes-self.origAvailTouchModes): touchHandler.availableTouchModes.pop()
 		nextHandler()
+
+	# Screen orientation announcement
+
+	def _announceScreenOrientation(self):
+		resolution = api.getDesktopObject().location
+		if self.desktopLoc[0] != resolution[2] and self.desktopLoc[1] != resolution[3]:
+			ui.message("Landscape") if resolution[2] > resolution[3] else ui.message("Portrait")
+			self.desktopLoc[0] = resolution[2]
+			self.desktopLoc[1] = resolution[3]
 
 	# Global commands: additional touch commands available everywhere.
 
