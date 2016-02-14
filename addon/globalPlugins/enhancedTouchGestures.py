@@ -1,6 +1,6 @@
 ﻿# Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2015 Joseph Lee and others, released under GPL.
+# Copyright 2013-2016 Joseph Lee and others, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
 # It also includes other support features such as announcing screen orientation.
@@ -150,18 +150,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_touch_rightClick.__doc__="Performs right click at the object under your finger"
 
 	def script_touch_newExplore(self,gesture):
-		touchHandler.handler.screenExplorer.moveTo(gesture.tracker.x,gesture.tracker.y,new=True)
+		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y,new=True)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			w, h, screenWidth, screenHeight = api.getDesktopObject().location
-			mouseHandler.playAudioCoordinates(gesture.tracker.x,gesture.tracker.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+			mouseHandler.playAudioCoordinates(gesture.x,gesture.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
 	# Translators: Input help mode message for a touchscreen gesture.
 	script_touch_newExplore.__doc__=_("Reports the object and content directly under your finger")
 
 	def script_touch_explore(self,gesture):
-		touchHandler.handler.screenExplorer.moveTo(gesture.tracker.x,gesture.tracker.y)
+		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			w, h, screenWidth, screenHeight = api.getDesktopObject().location
-			mouseHandler.playAudioCoordinates(gesture.tracker.x,gesture.tracker.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+			mouseHandler.playAudioCoordinates(gesture.x,gesture.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
 	# Translators: Input help mode message for a touchscreen gesture.
 	script_touch_explore.__doc__=_("Reports the new object or content under your finger if different to where your finger was last")
 
