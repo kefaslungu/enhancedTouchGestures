@@ -13,11 +13,22 @@ from globalCommands import commands
 import virtualBuffers
 import api
 import winUser
+import winKernel
 import mouseHandler
 import config
 import windowUtils
+import win32con
 import tones
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
+
+# Keep an eye on orientation changes via a window (credit: Power notification add-on from Tyler Spivey)
+class Window(windowUtils.CustomWindow):
+	className = u"NVDAOrientationTracker"
+
+	def windowProc(self, hwnd, msg, wParam, lParam):
+		# Resolution detection comes from an article found at https://msdn.microsoft.com/en-us/library/ms812142.aspx.
+		if msg == win32con.WM_DISPLAYCHANGE:
+			ui.message("Landscape" if lParam%0x10000 > lParam/0x10000 else "Portrait")
 
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -27,16 +38,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		self.orientationTracker = None
 		if touchHandler.handler:
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
-		# Announce screen orientation.
-		resolution = api.getDesktopObject().location
-		self.desktopLoc = [resolution[2], resolution[3]]
-		self.screenOrientationT = wx.PyTimer(self._announceScreenOrientation)
-		self.screenOrientationT.Start(1000)
+			self.orientationTracker = Window()
 
 	def terminate(self):
-		self.screenOrientationT.Stop()
+		if self.orientationTracker is not None:
+			self.orientationTracker = None
 
 	# A few setup events please (mostly for web navigation):
 
@@ -55,15 +64,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					if curAvailTouchModes > self.origAvailTouchModes:
 						for i in range(0, curAvailTouchModes-self.origAvailTouchModes): touchHandler.availableTouchModes.pop()
 		nextHandler()
-
-	# Screen orientation announcement
-
-	def _announceScreenOrientation(self):
-		resolution = api.getDesktopObject().location
-		if self.desktopLoc[0] != resolution[2] and self.desktopLoc[1] != resolution[3]:
-			ui.message("Landscape") if resolution[2] > resolution[3] else ui.message("Portrait")
-			self.desktopLoc[0] = resolution[2]
-			self.desktopLoc[1] = resolution[3]
 
 	# Global commands: additional touch commands available everywhere.
 
