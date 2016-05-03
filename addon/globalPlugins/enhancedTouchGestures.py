@@ -41,6 +41,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.orientationTracker = None
 		if touchHandler.handler:
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
+			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
+			touchHandler.touchModeLabels["web"] = "web mode"
 			self.orientationTracker = Window()
 
 	def terminate(self):
