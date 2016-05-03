@@ -35,4 +35,8 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 
 If you've enabled play mouse coordinates setting in mouse settings, you'll hear beeps to indicate current screen coordinate when you invoke touch exploration gestures.
 
+## Screen orientation ##
+
+NVDA can announce screen orientation changes. Note that NvDA cannot distinguish between primary and secondary orientation at this time.
+
 [1]: http://addons.nvda-project.org/files/get.php?file=ets
