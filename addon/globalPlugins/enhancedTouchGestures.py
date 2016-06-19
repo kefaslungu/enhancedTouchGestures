@@ -20,6 +20,8 @@ import windowUtils
 import win32con
 import tones
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
+from NVDAObjects.UIA import UIA
+import controlTypes
 
 # Keep an eye on orientation changes via a window (credit: Power notification add-on from Tyler Spivey)
 class Window(windowUtils.CustomWindow):
@@ -29,6 +31,16 @@ class Window(windowUtils.CustomWindow):
 		# Resolution detection comes from an article found at https://msdn.microsoft.com/en-us/library/ms812142.aspx.
 		if msg == win32con.WM_DISPLAYCHANGE:
 			ui.message("Landscape" if lParam%0x10000 > lParam/0x10000 else "Portrait")
+
+# Touch keyboard enhancements
+class TouchKey(UIA):
+
+	def _get_states(self):
+		# Same as NVDA Core issue 5178: suppress read-only state (reported by a user)
+		# Borrowed from Mozilla objects in NVDAObjects/IAccessible/Mozilla.py.
+		states = super(TouchKey, self).states
+		states.discard(controlTypes.STATE_READONLY)
+		return states
 
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -48,6 +60,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def terminate(self):
 		if self.orientationTracker is not None:
 			self.orientationTracker = None
+
+	# Certain touch objects.
+	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
+		if isinstance(obj, UIA):
+			if obj.UIAElement.cachedClassName == "CRootKey":
+				clsList.insert(0, TouchKey)
 
 	# A few setup events please (mostly for web navigation):
 
