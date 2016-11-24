@@ -11,7 +11,6 @@ import wx
 import ui
 from globalCommands import commands
 import browseMode
-import virtualBuffers
 import api
 import winUser
 import winKernel
@@ -73,7 +72,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def event_gainFocus(self, obj, nextHandler):
 		# Crucial: Don't do anything unless if it is an installed copy and touchscreen support is active.
 		if config.isInstalledCopy() and touchHandler.handler:
-			if isinstance(obj.treeInterceptor, virtualBuffers.VirtualBuffer) and "Web" not in touchHandler.availableTouchModes:
+			# From 2015 onwards, browse mode module is used.
+			if isinstance(obj.treeInterceptor, browseMode.BrowseModeTreeInterceptor) and "Web" not in touchHandler.availableTouchModes:
 				touchHandler.availableTouchModes.append("Web") # Web browsing gestures.
 			else:
 				# If we're not in browser window, force object mode.
@@ -105,11 +105,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
 
-
 		#Web navigation:
 
 			# Web elements list:
-	webBrowseElements=("normal", "Link", "Form", "Heading", "Frame", "Table", "List", "Landmark")
+	webBrowseElements=("normal", "Link", "Form field", "Heading", "Frame", "Table", "List", "Landmark")
 	webBrowseMode = 0 # The starting index for the web browse mode, which flicks through objects.
 
 	# Touch gestures please.
@@ -125,26 +124,28 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_prevWebElement.__doc__="Selects the previous web navigation element."
 
 	# The actual navigation gestures:
+	# Look up the needed commands for readability purposes.
+	browseModeCommands=(
+		(browseMode.BrowseModeTreeInterceptor.script_nextLink, browseMode.BrowseModeTreeInterceptor.script_previousLink),
+		(browseMode.BrowseModeTreeInterceptor.script_nextFormField, browseMode.BrowseModeTreeInterceptor.script_previousFormField),
+		(browseMode.BrowseModeTreeInterceptor.script_nextHeading, browseMode.BrowseModeTreeInterceptor.script_previousHeading),
+		(browseMode.BrowseModeTreeInterceptor.script_nextFrame, browseMode.BrowseModeTreeInterceptor.script_previousFrame),
+		(browseMode.BrowseModeTreeInterceptor.script_nextTable, browseMode.BrowseModeTreeInterceptor.script_previousTable),
+		(browseMode.BrowseModeTreeInterceptor.script_nextList, browseMode.BrowseModeTreeInterceptor.script_previousList),
+		(browseMode.BrowseModeTreeInterceptor.script_nextLandmark, browseMode.BrowseModeTreeInterceptor.script_previousLandmark),
+	)
 
 	def script_nextSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
-		if isinstance(obj, virtualBuffers.VirtualBuffer):
+		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
 			if self.webBrowseMode == 0: commands.script_navigatorObject_nextInFlow(gesture)
-			elif self.webBrowseMode == 1: virtualBuffers.VirtualBuffer.script_nextLink(obj, gesture)
-			elif self.webBrowseMode == 2: virtualBuffers.VirtualBuffer.script_nextFormField(obj, gesture)
-			elif self.webBrowseMode == 3: virtualBuffers.VirtualBuffer.script_nextHeading(obj, gesture)
-			elif self.webBrowseMode == 4: virtualBuffers.VirtualBuffer.script_nextFrame(obj, gesture)
-			elif self.webBrowseMode == 5: virtualBuffers.VirtualBuffer.script_nextTable(obj, gesture)
+			else: self.browseModeCommands[self.webBrowseMode-1][0](obj, gesture)
 
 	def script_prevSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
-		if isinstance(obj, virtualBuffers.VirtualBuffer):
+		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
 			if self.webBrowseMode == 0: commands.script_navigatorObject_previousInFlow(gesture)
-			elif self.webBrowseMode == 1: virtualBuffers.VirtualBuffer.script_previousLink(obj, gesture)
-			elif self.webBrowseMode == 2: virtualBuffers.VirtualBuffer.script_previousFormField(obj, gesture)
-			elif self.webBrowseMode == 3: virtualBuffers.VirtualBuffer.script_previousHeading(obj, gesture)
-			elif self.webBrowseMode == 4: virtualBuffers.VirtualBuffer.script_previousFrame(obj, gesture)
-			elif self.webBrowseMode == 5: virtualBuffers.VirtualBuffer.script_previousTable(obj, gesture)
+			else: self.browseModeCommands[self.webBrowseMode-1][1](obj, gesture)
 
 	def script_touch_rightClick(self, gesture):
 		obj=api.getNavigatorObject() 
