@@ -7,13 +7,11 @@
 
 import globalPluginHandler
 import touchHandler
-import wx
 import ui
 from globalCommands import commands
 import browseMode
 import api
 import winUser
-import winKernel
 import mouseHandler
 import config
 import windowUtils
