@@ -10,6 +10,7 @@ import touchHandler
 import wx
 import ui
 from globalCommands import commands
+import browseMode
 import virtualBuffers
 import api
 import winUser
@@ -72,9 +73,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def event_gainFocus(self, obj, nextHandler):
 		# Crucial: Don't do anything unless if it is an installed copy and touchscreen support is active.
 		if config.isInstalledCopy() and touchHandler.handler:
-			if isinstance(obj.treeInterceptor, virtualBuffers.VirtualBuffer):
-				if "Web" not in touchHandler.availableTouchModes:
-					touchHandler.availableTouchModes.append("Web") # Web browsing gestures.
+			if isinstance(obj.treeInterceptor, virtualBuffers.VirtualBuffer) and "Web" not in touchHandler.availableTouchModes:
+				touchHandler.availableTouchModes.append("Web") # Web browsing gestures.
 			else:
 				# If we're not in browser window, force object mode.
 				if "Web" not in touchHandler.availableTouchModes: touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
@@ -109,18 +109,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		#Web navigation:
 
 			# Web elements list:
-	webBrowseElements=["normal", "Link", "Form", "Heading", "Frame", "Table"]
+	webBrowseElements=("normal", "Link", "Form", "Heading", "Frame", "Table", "List", "Landmark")
 	webBrowseMode = 0 # The starting index for the web browse mode, which flicks through objects.
 
 	# Touch gestures please.
 
 	def script_nextWebElement(self, gesture):
-		self.webBrowseMode = 0 if self.webBrowseMode+1 == len(self.webBrowseElements) else self.webBrowseMode +1
+		self.webBrowseMode = (self.webBrowseMode+1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 	script_nextWebElement.__doc__="Selects the next web navigation element."
 
 	def script_prevWebElement(self, gesture):
-		self.webBrowseMode = len(self.webBrowseElements)-1 if self.webBrowseMode == 0  else self.webBrowseMode -1
+		self.webBrowseMode = (self.webBrowseMode-1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 	script_prevWebElement.__doc__="Selects the previous web navigation element."
 
