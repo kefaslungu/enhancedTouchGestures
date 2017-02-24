@@ -1,6 +1,6 @@
 ﻿# Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2016 Joseph Lee and others, released under GPL.
+# Copyright 2013-2017 Joseph Lee and others, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
 # It also includes other support features such as announcing screen orientation.
@@ -20,6 +20,16 @@ import tones
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 from NVDAObjects.UIA import UIA
 import controlTypes
+
+# 17.03 hack: a function to play audio coordinates.
+# In NvDA 2017.1, mouse handling extends to multi-monitor setups, hence a min point argument is needed.
+def playAudioCoordinates(x, y):
+	screenWidth, screenHeight = api.getDesktopObject().location[-2:]
+	if hasattr(mouseHandler, "getMinMaxPoints"): # 2017.1 or later.
+		import wx
+		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+	else: # 2016.4 or earlier, to be removed in summer.
+		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
 
 # Keep an eye on orientation changes via a window (credit: Power notification add-on from Tyler Spivey)
 class Window(windowUtils.CustomWindow):
@@ -171,16 +181,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_touch_newExplore(self,gesture):
 		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y,new=True)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
-			w, h, screenWidth, screenHeight = api.getDesktopObject().location
-			mouseHandler.playAudioCoordinates(gesture.x,gesture.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+			playAudioCoordinates(gesture.x,gesture.y)
 	# Translators: Input help mode message for a touchscreen gesture.
 	script_touch_newExplore.__doc__=_("Reports the object and content directly under your finger")
 
 	def script_touch_explore(self,gesture):
 		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
-			w, h, screenWidth, screenHeight = api.getDesktopObject().location
-			mouseHandler.playAudioCoordinates(gesture.x,gesture.y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+			playAudioCoordinates(gesture.x,gesture.y)
 	# Translators: Input help mode message for a touchscreen gesture.
 	script_touch_explore.__doc__=_("Reports the new object or content under your finger if different to where your finger was last")
 
