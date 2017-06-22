@@ -199,6 +199,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		touchKeyboardButton.doAction()
 		tones.beep(1000, 150)
 
+	def script_touch_hoverUp(self,gesture):
+		#Specifically for touch typing with onscreen keyboard keys
+		obj=api.getNavigatorObject()
+		#if isinstance(obj, TouchKey):
+			#obj.doAction()
+
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
 
@@ -228,6 +234,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"ts:tap":"touch_newExplore",
 		"ts:hoverDown":"touch_newExplore",
 		"ts:hover":"touch_explore",
+		"ts:hoverUp":"touch_hoverUp",
 		
 
 		# Web browsing gestures:
