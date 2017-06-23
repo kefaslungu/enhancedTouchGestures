@@ -66,7 +66,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.touchModeLabels["web"] = "web mode"
 			self.orientationTracker = Window()
 		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
-		self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("Touch Interaction..."), _("Touchscreen interaction settings"))
+		self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
 
 	def onConfigDialog(self, evt):
@@ -267,7 +267,7 @@ confspec = {
 }
 config.conf.spec["touch"] = confspec
 
-class TouchInteractionDialog(SettingsDialog):
+class TouchInteractionDialog(gui.SettingsDialog):
 	# Translators: This is the label for the touch interaction settings dialog.
 	title = _("Touch Interaction")
 
@@ -283,4 +283,4 @@ class TouchInteractionDialog(SettingsDialog):
 
 	def onOk(self,evt):
 		config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
-		super(InputCompositionDialog, self).onOk(evt)
+		super(TouchInteractionDialog, self).onOk(evt)
