@@ -20,13 +20,14 @@ import tones
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 from NVDAObjects.UIA import UIA
 import controlTypes
+import gui
+import wx
 
 # 17.03 hack: a function to play audio coordinates.
 # In NvDA 2017.1, mouse handling extends to multi-monitor setups, hence a min point argument is needed.
 def playAudioCoordinates(x, y):
 	screenWidth, screenHeight = api.getDesktopObject().location[-2:]
 	if hasattr(mouseHandler, "getMinMaxPoints"): # 2017.1 or later.
-		import wx
 		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
 	else: # 2016.4 or earlier, to be removed in summer.
 		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
@@ -64,10 +65,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
 			self.orientationTracker = Window()
+		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
+		self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("Touch Interaction..."), _("Touchscreen interaction settings"))
+		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
+
+	def onConfigDialog(self, evt):
+		gui.mainFrame._popupSettingsDialog(TouchInteractionDialog)
 
 	def terminate(self):
 		if self.orientationTracker is not None:
 			self.orientationTracker = None
+		try:
+			self.prefsMenu.RemoveItem(self.touchSettings)
+		except (RuntimeError, AttributeError, wx.PyDeadObjectError):
+			pass
 
 	# Certain touch objects.
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
@@ -249,3 +260,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"ts(SynthSettings):2finger_flickUp":"prevSynthSettingValue",
 		"ts(SynthSettings):2finger_flickDown":"nextSynthSettingValue",
 	}
+
+# Add-on config database
+confspec = {
+	"touchTyping": "boolean(default=false)",
+}
+config.conf.spec["touch"] = confspec
+
+class TouchInteractionDialog(SettingsDialog):
+	# Translators: This is the label for the touch interaction settings dialog.
+	title = _("Touch Interaction")
+
+	def makeSettings(self, settingsSizer):
+		# Translators: This is the label for a checkbox in the
+		# touch interaction settings dialog.
+		self.touchTypingCheckBox=wx.CheckBox(self,wx.NewId(),label=_("&Touch typing mode"))
+		self.touchTypingCheckBox.SetValue(config.conf["touch"]["touchTyping"])
+		settingsSizer.Add(self.touchTypingCheckBox,border=10,flag=wx.BOTTOM)
+
+	def postInit(self):
+		self.touchTypingCheckBox.SetFocus()
+
+	def onOk(self,evt):
+		config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
+		super(InputCompositionDialog, self).onOk(evt)
