@@ -213,8 +213,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_touch_hoverUp(self,gesture):
 		#Specifically for touch typing with onscreen keyboard keys
 		obj=api.getNavigatorObject()
-		#if isinstance(obj, TouchKey):
-			#obj.doAction()
+		if isinstance(obj, TouchKey) and config.conf["touch"]["touchTyping"]:
+			obj.doAction()
 
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
