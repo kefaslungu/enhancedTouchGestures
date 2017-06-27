@@ -219,6 +219,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			try:
 				touchHandler.initialize()
 				ui.message("Touch passthrough off")
+				import tones
+				tones.beep(380, 100)
 			except:
 				ui.message("Touch is not supported")
 			finally:
@@ -226,12 +228,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_toggleTouchPassthrough(self, gesture):
 		if touchHandler.handler:
-			`touchHandler.terminate()
+			touchHandler.terminate()
 			ui.message("Touch passthrough on")
 			import tones
 			tones.beep(760, 100)
 			self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
 			self.touchPassthroughTimer.Start(3000, True)
+	script_toggleTouchPassthrough.__doc__ = "Temporarily disables touch interaction so you can interact with a touchscreen as through NVDA is not running"
+	script_toggleTouchPassthrough.category = "Enhanced Touch Gestures"
 
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
