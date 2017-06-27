@@ -27,10 +27,7 @@ import wx
 # In NvDA 2017.1, mouse handling extends to multi-monitor setups, hence a min point argument is needed.
 def playAudioCoordinates(x, y):
 	screenWidth, screenHeight = api.getDesktopObject().location[-2:]
-	if hasattr(mouseHandler, "getMinMaxPoints"): # 2017.1 or later.
-		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
-	else: # 2016.4 or earlier, to be removed in summer.
-		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+	mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
 
 # Keep an eye on orientation changes via a window (credit: Power notification add-on from Tyler Spivey)
 class Window(windowUtils.CustomWindow):
@@ -68,6 +65,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
 		self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
+		self.touchPassthroughTimer = None
 
 	def onConfigDialog(self, evt):
 		gui.mainFrame._popupSettingsDialog(TouchInteractionDialog)
@@ -215,6 +213,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		obj=api.getNavigatorObject()
 		if isinstance(obj, TouchKey) and config.conf["touch"]["touchTyping"]:
 			obj.doAction()
+
+	def resumeTouchInteraction(self):
+		if not touchHandler.handler:
+			try:
+				touchHandler.initialize()
+				ui.message("Touch passthrough off")
+			except:
+				ui.message("Touch is not supported")
+			finally:
+				self.touchPassthroughTimer = None
+
+	def script_toggleTouchPassthrough(self, gesture):
+		if touchHandler.handler:
+			`touchHandler.terminate()
+			ui.message("Touch passthrough on")
+			import tones
+			tones.beep(760, 100)
+			self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
+			self.touchPassthroughTimer.Start(3000, True)
 
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
