@@ -233,7 +233,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			import tones
 			tones.beep(760, 100)
 			self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
-			self.touchPassthroughTimer.Start(3000, True)
+			self.touchPassthroughTimer.Start(config.conf["touch"]["commandPassthroughDuration"]*1000, True)
 	script_toggleTouchPassthrough.__doc__ = "Temporarily disables touch interaction so you can interact with a touchscreen as through NVDA is not running"
 	script_toggleTouchPassthrough.category = "Enhanced Touch Gestures"
 
@@ -285,6 +285,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 # Add-on config database
 confspec = {
 	"touchTyping": "boolean(default=false)",
+	"commandPassthroughDuration": "integer(min=3, max=10, default=5)",
 }
 config.conf.spec["touch"] = confspec
 
@@ -293,15 +294,18 @@ class TouchInteractionDialog(gui.SettingsDialog):
 	title = _("Touch Interaction")
 
 	def makeSettings(self, settingsSizer):
+		touchHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Translators: This is the label for a checkbox in the
 		# touch interaction settings dialog.
-		self.touchTypingCheckBox=wx.CheckBox(self,wx.NewId(),label=_("&Touch typing mode"))
+		self.touchTypingCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("&Touch typing mode")))
 		self.touchTypingCheckBox.SetValue(config.conf["touch"]["touchTyping"])
-		settingsSizer.Add(self.touchTypingCheckBox,border=10,flag=wx.BOTTOM)
+		# Translators: The label for a setting in touch interaction dialog to allow users to interact directly with touchscreens for specified duration in seconds.
+		self.commandPassthroughDuration=touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
 
 	def postInit(self):
 		self.touchTypingCheckBox.SetFocus()
 
 	def onOk(self,evt):
 		config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
+		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		super(TouchInteractionDialog, self).onOk(evt)
