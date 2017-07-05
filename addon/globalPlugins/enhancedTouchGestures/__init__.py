@@ -9,6 +9,7 @@ import globalPluginHandler
 import touchHandler
 import ui
 from globalCommands import commands
+import globalVars
 import browseMode
 import api
 import winUser
@@ -102,6 +103,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						for i in range(0, curAvailTouchModes-self.origAvailTouchModes): touchHandler.availableTouchModes.pop()
 		nextHandler()
 
+	# Debugging.
+
+	def etsDebugOutput(self, msg):
+		if globalVars.appArgs.debugLogging:
+			log.debug(msg)
+
 	# Global commands: additional touch commands available everywhere.
 
 	def script_toggleInputHelp(self, gesture):
@@ -133,11 +140,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_nextWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode+1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
+		self.etsDebugOutput("etouch: switching web mode to %s"%self.webBrowseElements[self.webBrowseMode])
 	script_nextWebElement.__doc__="Selects the next web navigation element."
 
 	def script_prevWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode-1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
+		self.etsDebugOutput("etouch: switching web mode to %s"%self.webBrowseElements[self.webBrowseMode])
 	script_prevWebElement.__doc__="Selects the previous web navigation element."
 
 	# The actual navigation gestures:
@@ -165,6 +174,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else: self.browseModeCommands[self.webBrowseMode-1][1](obj, gesture)
 
 	def script_touch_rightClick(self, gesture):
+		self.etsDebugOutput("etouch: attempting to perform right-click")
 		obj=api.getNavigatorObject() 
 		try:
 			p=api.getReviewPosition().pointAtStart
@@ -182,6 +192,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				return
 			x=left+(width/2)
 			y=top+(height/2)
+		self.etsDebugOutput("etouch: mouse point found at %s, %s"%(x, y))
 		winUser.setCursorPos(x,y)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN,0,0,None,None)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP,0,0,None,None)
