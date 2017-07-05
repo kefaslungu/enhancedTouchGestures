@@ -107,6 +107,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def etsDebugOutput(self, msg):
 		if globalVars.appArgs.debugLogging:
+			from logHandler import log
 			log.debug(msg)
 
 	# Global commands: additional touch commands available everywhere.
