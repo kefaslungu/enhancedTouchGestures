@@ -229,6 +229,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def resumeTouchInteraction(self):
 		if not touchHandler.handler:
 			try:
+				self.etsDebugOutput("etouch: attempting to enable touch handler")
 				touchHandler.initialize()
 				ui.message("Touch passthrough off")
 				import tones
@@ -239,14 +240,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				self.touchPassthroughTimer = None
 
 	def script_toggleTouchPassthrough(self, gesture):
+		# First, check if timer is running, and if so, enable touch interaction (manual toggle).
+		if self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning():
+			self.etsDebugOutput("etouch: manually enabling touch handler")
+			self.resumeTouchInteraction()
+			return
 		if touchHandler.handler:
+			self.etsDebugOutput("etouch: disabling touch handler")
 			touchHandler.terminate()
 			ui.message("Touch passthrough on")
 			import tones
 			tones.beep(760, 100)
 			self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
 			self.touchPassthroughTimer.Start(config.conf["touch"]["commandPassthroughDuration"]*1000, True)
-	script_toggleTouchPassthrough.__doc__ = "Temporarily disables touch interaction so you can interact with a touchscreen as through NVDA is not running"
+	script_toggleTouchPassthrough.__doc__ = "Temporarily disables touch interaction so you can interact with a touchscreen as though NVDA is not running"
 	script_toggleTouchPassthrough.category = "Enhanced Touch Gestures"
 
 	def script_prevSynthSettingValue(self, gesture):
