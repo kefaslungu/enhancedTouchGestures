@@ -63,9 +63,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
 			self.orientationTracker = Window()
-		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
-		self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
-		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
+			self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
+			self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
+			gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
+		else:
+			self.prefsMenu = None
+			self.touchSettings = None
 		self.touchPassthroughTimer = None
 
 	def onConfigDialog(self, evt):
