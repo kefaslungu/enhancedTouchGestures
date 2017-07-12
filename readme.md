@@ -45,7 +45,12 @@ With the add-on installed, when typing on the touch keyboard, you need to perfor
 
 ## Touch command passthrough
 
-An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+
+## Version 17.07.1
+
+* Added an option in touch interaction dialog to manually toggle touch passthrough without use of a timer.
+* With manual passthrough mode off, if touch passthrough is turned on before the passthrough duration expires, touch interaction would be enabled.
 
 ## Version 17.07
 
