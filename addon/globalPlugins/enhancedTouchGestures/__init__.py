@@ -244,7 +244,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_toggleTouchPassthrough(self, gesture):
 		# First, check if timer is running, and if so, enable touch interaction (manual toggle).
-		if self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning():
+		if ((not touchHandler.handler and config.conf["touch"]["manualPassthroughToggle"])
+		or (self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning())):
 			self.etsDebugOutput("etouch: manually enabling touch handler")
 			self.resumeTouchInteraction()
 			return
@@ -254,8 +255,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message("Touch passthrough on")
 			import tones
 			tones.beep(760, 100)
-			self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
-			self.touchPassthroughTimer.Start(config.conf["touch"]["commandPassthroughDuration"]*1000, True)
+			if not config.conf["touch"]["manualPassthroughToggle"]:
+				self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
+				self.touchPassthroughTimer.Start(config.conf["touch"]["commandPassthroughDuration"]*1000, True)
 	script_toggleTouchPassthrough.__doc__ = "Temporarily disables touch interaction so you can interact with a touchscreen as though NVDA is not running"
 	script_toggleTouchPassthrough.category = "Enhanced Touch Gestures"
 
@@ -308,6 +310,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 confspec = {
 	"touchTyping": "boolean(default=false)",
 	"commandPassthroughDuration": "integer(min=3, max=10, default=5)",
+	"manualPassthroughToggle": "boolean(default=false)",
 }
 config.conf.spec["touch"] = confspec
 
@@ -323,6 +326,9 @@ class TouchInteractionDialog(gui.SettingsDialog):
 		self.touchTypingCheckBox.SetValue(config.conf["touch"]["touchTyping"])
 		# Translators: The label for a setting in touch interaction dialog to allow users to interact directly with touchscreens for specified duration in seconds.
 		self.commandPassthroughDuration=touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
+		# Translators: a checkbox to allow passthrough to be toggled manually.
+		self.manualPassthroughCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("&Manually toggle touch passthrough")))
+		self.manualPassthroughCheckBox.SetValue(config.conf["touch"]["manualPassthroughToggle"])
 
 	def postInit(self):
 		self.touchTypingCheckBox.SetFocus()
@@ -330,4 +336,5 @@ class TouchInteractionDialog(gui.SettingsDialog):
 	def onOk(self,evt):
 		config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
+		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
 		super(TouchInteractionDialog, self).onOk(evt)
