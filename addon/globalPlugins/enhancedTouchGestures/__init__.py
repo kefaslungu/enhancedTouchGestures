@@ -24,6 +24,13 @@ import controlTypes
 import gui
 import wx
 
+# Compatibility with 2017.3 and earlier.
+try:
+	import extensionPoints
+	orientationTrackerNeeded = False
+except ImportError:
+	orientationTrackerNeeded = True
+
 # 17.03 hack: a function to play audio coordinates.
 # In NvDA 2017.1, mouse handling extends to multi-monitor setups, hence a min point argument is needed.
 def playAudioCoordinates(x, y):
@@ -31,6 +38,7 @@ def playAudioCoordinates(x, y):
 	mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
 
 # Keep an eye on orientation changes via a window (credit: Power notification add-on from Tyler Spivey)
+# No longer needed in NVDA 2017.4.
 class Window(windowUtils.CustomWindow):
 	className = u"NVDAOrientationTracker"
 
@@ -62,7 +70,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
-			self.orientationTracker = Window()
+			if orientationTrackerNeeded: self.orientationTracker = Window()
 			self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
 			self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
 			gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
