@@ -5,7 +5,7 @@
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2017.1 or later running on a touchscreen computer with Windows 8 or later installed.
+Note: this add-on requires NVDA 2017.1 or later running on a touchscreen computer with Windows 8.1 or 10.
 
 ## Commands
 
@@ -37,7 +37,7 @@ If you've enabled play mouse coordinates setting in mouse settings, you'll hear 
 
 ## Screen orientation
 
-NVDA can announce screen orientation changes. Note that NvDA cannot distinguish between primary and secondary orientation at this time.
+If you are running NvDA 2017.3 or earlier, NVDA can announce screen orientation changes. Note that NvDA cannot distinguish between primary and secondary orientation at this time.
 
 ## Touch keyboard
 
@@ -46,6 +46,11 @@ With the add-on installed, when typing on the touch keyboard, you need to perfor
 ## Touch command passthrough
 
 An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+
+## Version 17.10
+
+* Due to support policy from Microsoft, Windows 8 (original release) is no longer supported.
+* NVDA will no longer announce screen orientation twice when running NVDA 2017.4 development snapshots.
 
 ## Version 17.07.1
 
