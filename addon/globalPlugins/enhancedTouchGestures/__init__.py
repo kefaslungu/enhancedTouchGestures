@@ -328,10 +328,12 @@ class TouchInteractionDialog(gui.SettingsDialog):
 
 	def makeSettings(self, settingsSizer):
 		touchHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
-		# Translators: This is the label for a checkbox in the
-		# touch interaction settings dialog.
-		self.touchTypingCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("&Touch typing mode")))
-		self.touchTypingCheckBox.SetValue(config.conf["touch"]["touchTyping"])
+		# Do not show the following if NVDA 2018.1 or later is in use, as it'll come iwth its own touch interaction dialog.
+		if not hasattr(touchHandler, "touchSupported"):
+			# Translators: This is the label for a checkbox in the
+			# touch interaction settings dialog.
+			self.touchTypingCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("&Touch typing mode")))
+			self.touchTypingCheckBox.SetValue(config.conf["touch"]["touchTyping"])
 		# Translators: The label for a setting in touch interaction dialog to allow users to interact directly with touchscreens for specified duration in seconds.
 		self.commandPassthroughDuration=touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
 		# Translators: a checkbox to allow passthrough to be toggled manually.
@@ -339,10 +341,10 @@ class TouchInteractionDialog(gui.SettingsDialog):
 		self.manualPassthroughCheckBox.SetValue(config.conf["touch"]["manualPassthroughToggle"])
 
 	def postInit(self):
-		self.touchTypingCheckBox.SetFocus()
+		self.touchTypingCheckBox.SetFocus() if not hasattr(touchHandler, "touchSupported") else self.commandPassthroughDuration.SetFocus()
 
 	def onOk(self,evt):
-		config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
+		if not hasattr(touchHandler, "touchSupported"): config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
 		super(TouchInteractionDialog, self).onOk(evt)
