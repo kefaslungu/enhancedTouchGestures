@@ -24,28 +24,9 @@ import controlTypes
 import gui
 import wx
 
-# Compatibility with 2017.3 and earlier.
-try:
-	import extensionPoints
-	orientationTrackerNeeded = False
-except ImportError:
-	orientationTrackerNeeded = True
-
-# 17.03 hack: a function to play audio coordinates.
-# In NvDA 2017.1, mouse handling extends to multi-monitor setups, hence a min point argument is needed.
 def playAudioCoordinates(x, y):
 	screenWidth, screenHeight = api.getDesktopObject().location[-2:]
 	mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
-
-# Keep an eye on orientation changes via a window (credit: Power notification add-on from Tyler Spivey)
-# No longer needed in NVDA 2017.4.
-class Window(windowUtils.CustomWindow):
-	className = u"NVDAOrientationTracker"
-
-	def windowProc(self, hwnd, msg, wParam, lParam):
-		# Resolution detection comes from an article found at https://msdn.microsoft.com/en-us/library/ms812142.aspx.
-		if msg == win32con.WM_DISPLAYCHANGE:
-			ui.message("Landscape" if lParam%0x10000 > lParam/0x10000 else "Portrait")
 
 # Touch keyboard enhancements
 class TouchKey(UIA):
@@ -65,12 +46,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
-		self.orientationTracker = None
 		if touchHandler.handler:
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
-			if orientationTrackerNeeded: self.orientationTracker = Window()
 			self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
 			self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
 			gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
@@ -83,8 +62,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame._popupSettingsDialog(TouchInteractionDialog)
 
 	def terminate(self):
-		if self.orientationTracker is not None:
-			self.orientationTracker = None
 		try:
 			self.prefsMenu.RemoveItem(self.touchSettings)
 		except (RuntimeError, AttributeError, wx.PyDeadObjectError):
