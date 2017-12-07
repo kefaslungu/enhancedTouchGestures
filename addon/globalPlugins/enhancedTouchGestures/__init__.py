@@ -50,6 +50,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
+			config.configProfileSwitched.register(self.handleConfigProfileSwitch)
 			self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
 			self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
 			gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
@@ -72,6 +73,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(obj, UIA):
 			if obj.UIAElement.cachedClassName == "CRootKey":
 				clsList.insert(0, TouchKey)
+
+	# Action handlers.
+
+	def handleConfigProfileSwitch(self):
+		# Because some apps have their own handlers for touch, do not let NVDA take over touchscreens.
+		# Due to this mechanism, NVDA 2017.4 or later is required.
+		if touchHandler.handler and config.conf["touch"]["noTouchSupport"]:
+			self.etsDebugOutput("etouch: automatically disabling touch handler")
+			touchHandler.terminate()
+		elif touchHandler.handler is None and not config.conf["touch"]["noTouchSupport"]:
+			self.etsDebugOutput("etouch: automatically enabling touch handler")
+			self.resumeTouchInteraction(profileSwitch=True)
 
 	# A few setup events please (mostly for web navigation):
 
@@ -214,16 +227,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(obj, TouchKey) and config.conf["touch"]["touchTyping"]:
 			obj.doAction()
 
-	def resumeTouchInteraction(self):
+	def resumeTouchInteraction(self, profileSwitch=False):
 		if not touchHandler.handler:
 			try:
 				self.etsDebugOutput("etouch: attempting to enable touch handler")
 				touchHandler.initialize()
-				ui.message("Touch passthrough off")
-				import tones
-				tones.beep(380, 100)
+				if not profileSwitch:
+					ui.message("Touch passthrough off")
+					import tones
+					tones.beep(380, 100)
 			except:
-				ui.message("Touch is not supported")
+				if not profileSwitch: ui.message("Touch is not supported")
 			finally:
 				self.touchPassthroughTimer = None
 
@@ -296,6 +310,7 @@ confspec = {
 	"touchTyping": "boolean(default=false)",
 	"commandPassthroughDuration": "integer(min=3, max=10, default=5)",
 	"manualPassthroughToggle": "boolean(default=false)",
+	"noTouchSupport": "boolean(default=false)",
 }
 config.conf.spec["touch"] = confspec
 
