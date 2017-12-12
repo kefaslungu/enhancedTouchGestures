@@ -347,7 +347,9 @@ class TouchInteractionDialog(gui.SettingsDialog):
 		self.manualPassthroughCheckBox.SetValue(config.conf["touch"]["manualPassthroughToggle"])
 
 	def postInit(self):
-		self.touchTypingCheckBox.SetFocus() if not hasattr(touchHandler, "touchSupported") else self.commandPassthroughDuration.SetFocus()
+		if hasattr(self, "noTouchSupportCheckBox"): self.noTouchSupportCheckBox.SetFocus()
+		elif hasattr(self, "touchTypingCheckBox"): self.touchTypingCheckBox.SetFocus()
+		else: self.commandPassthroughDuration.SetFocus()
 
 	def onOk(self,evt):
 		if config.conf.profiles[-1].name is not None:
