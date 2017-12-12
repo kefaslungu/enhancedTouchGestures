@@ -78,13 +78,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def handleConfigProfileSwitch(self):
 		# Because some apps have their own handlers for touch, do not let NVDA take over touchscreens.
+		# There are also times when turning off touchscreen through a profile is useful.
 		# Due to this mechanism, NVDA 2017.4 or later is required.
-		if touchHandler.handler and config.conf["touch"]["noTouchSupport"]:
-			self.etsDebugOutput("etouch: automatically disabling touch handler")
-			touchHandler.terminate()
-		elif touchHandler.handler is None and not config.conf["touch"]["noTouchSupport"]:
-			self.etsDebugOutput("etouch: automatically enabling touch handler")
-			self.resumeTouchInteraction(profileSwitch=True)
+		if config.conf["touch"]["noTouchSupport"]:
+			if touchHandler.handler:
+				self.etsDebugOutput("etouch: automatically disabling touch handler")
+				touchHandler.terminate()
+			else:
+				# Manual touch passthrough timer might be active.
+				if self.touchPassthroughTimer.IsRunning:
+					self.touchPassthroughTimer.Stop()
+					self.touchPassthroughTimer = None
+		else:
+			if touchHandler.handler is None:
+				self.etsDebugOutput("etouch: automatically enabling touch handler")
+				self.resumeTouchInteraction(profileSwitch=True)
 
 	# A few setup events please (mostly for web navigation):
 
