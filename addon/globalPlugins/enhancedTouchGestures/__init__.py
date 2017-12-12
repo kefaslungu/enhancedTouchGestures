@@ -328,6 +328,12 @@ class TouchInteractionDialog(gui.SettingsDialog):
 
 	def makeSettings(self, settingsSizer):
 		touchHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
+		# Never, EVER allow touch support to be disabled completely if using normal configuration (only manual passthrough will be allowed).
+		if config.conf.profiles[-1].name is not None:
+			# Translators: This is the label for a checkbox in the
+			# touch interaction settings dialog.
+			self.noTouchSupportCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("Completely disable touch interaction support")))
+			self.noTouchSupportCheckBox.SetValue(config.conf["touch"]["noTouchSupport"])
 		# Do not show the following if NVDA 2018.1 or later is in use, as it'll come iwth its own touch interaction dialog.
 		if not hasattr(touchHandler, "touchSupported"):
 			# Translators: This is the label for a checkbox in the
@@ -344,6 +350,12 @@ class TouchInteractionDialog(gui.SettingsDialog):
 		self.touchTypingCheckBox.SetFocus() if not hasattr(touchHandler, "touchSupported") else self.commandPassthroughDuration.SetFocus()
 
 	def onOk(self,evt):
+		if config.conf.profiles[-1].name is not None:
+			if not config.conf["touch"]["noTouchSupport"] and self.noTouchSupportCheckBox.IsChecked():
+				message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to this dialog and uncheck 'disable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
+				if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
+					return
+			config.conf["touch"]["noTouchSupport"]=self.noTouchSupportCheckBox.IsChecked()
 		if not hasattr(touchHandler, "touchSupported"): config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
