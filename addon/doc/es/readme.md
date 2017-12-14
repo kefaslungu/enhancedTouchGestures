@@ -1,0 +1,158 @@
+# Enhanced Touch Gestures #
+
+* Autor: Joseph Lee
+* Descargar [versión estable][1]
+* Descargar [versión de desarrollo][2]
+
+Este complemento proporciona gestos táctiles adicionales para NVDA. También
+proporciona un conjunto de gestos para una mejor navegación del modo
+exploración.
+
+Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
+computer with Windows 8.1 or 10.
+
+## Órdenes
+
+### Disponible desde cualquier lugar
+
+* Doble toque con 4 dedos: conmuta el modo de ayuda de entrada.
+* Tocar y mantener: lleva a cabo clic derecho en el objeto bajo tu dedo.
+* Deslizamiento a la derecha con cuatro dedos: conmuta el teclado táctil
+  (normalmente lo activa).
+
+### Modo Objeto
+
+* Deslizar 3 dedos hacia abajo: leer ventana actual.
+* Deslizar 3 dedos a la izquierda: anunciar objeto con el foco.
+* Deslizar 3 dedos a la derecha: anunciar actual navegador de objetos.
+* deslizar 4 dedos hacia arriba: anunciar el título de la ventana actual.
+* Deslizar 4 dedos hacia abajo: anunciar texto de la barra de estado.
+
+## Modo Web táctil 
+
+Este modo táctil, disponible en modo exploración, te permite navegar el
+documento por elementos seleccionados. Para cambiar a modo web, desde
+documentos de modo exploración, realiza un toque con 3 dedos. Desde este
+modo, desliza arriba o abajo con un dedo cíclicamente a través de los modos
+de navegación disponibles, mientras que deslizando a la derecha o a la
+izquierda con un dedo te mueves al elemento siguiente o al anterior,
+respectivamente. Una vez te salgas de los documentos en modo exploración, se
+utiliza el modo táctil objeto.
+
+## Modo táctil de opciones del sintetizador
+
+Puedes utilizar este modo para cambiar cíclicamente las opciones del
+sintetizador tales como la elección de una voz y el cambio del volumen. En
+este modo, utiliza el deslizamiento de dos dedos hacia la izquierda o la
+derecha para moverte entre opciones del sintetizador y utiliza gestos de
+deslizamiento de dos dedos arriba y abajo para cambiar los valores. Estos
+gestos se reflejan en las órdenes del grupo de opciones del sintetizador del
+teclado.
+
+## Anunciar pitidos de coordenadas
+
+Si has habilitado la opción Reproducir Coordenadas del Ratón en Opciones de
+Ratón, escucharás pitidos para indicar las coordenadas actuales de la
+pantalla al invocar los gestos de exploración de la pantalla táctil .
+
+## Teclado táctil
+
+Con el complemento instalado, al escribir en el teclado táctil, necesitas
+realizar un doble toque para pulsar teclas (denominado escritura
+estándar). puedes cambiarlo a escritura táctil (donde pulsas la tecla y
+luego la sueltas) vé al menú NVDA /Preferenciass/Interacción Táctil y marca
+la casilla de verificación Escritura Táctil.
+
+## Dejar pasar orden táctil
+
+Está disponible una orden no asignada para permitirte utilizar gestos de la
+pantalla táctil como si NVDA no estuviese en ejecución. Para poder utilizar
+esto, necesitas asignar una orden (a través del diálogo Gestos de Entrada)
+en la categoría Enhanced Touch Gestures para permitirte hacer esto en hasta
+10 segundos o conmutarla manualmente. Entonces vé al menú
+NVDA/Preferencias/Interacción Táctil, luego configura pausar la orden de
+valor táctil de NVDA entre 3 y 10 segundos (el predeterminado es 5
+segundos).
+
+## Disable touch support in profiles
+
+If profiles other than normal configuration is active and if you go to Touch
+Interaction dialog, you'll see a checkbox named "completely disable touch
+support". Checking this box and answering yes if prompted will completely
+turn off touch support for that profile. This is useful in apps that provide
+their own touch commands. To restore touch functionality, either uncehck
+this checkbox or manually toggle touch passthrough.
+
+## Version 17.12
+
+* Requires NVDA 2017.4. Specifically, this add-on can now handle
+  configuration profile switches.
+* As NVDA 2017.4 includes screen orientation announcement, this feature is
+  no longer part of this add-on.
+* Added a hidden checkbox in Touch Interaction dialog to completely disable
+  touch support (available if profiles other than normal configuration is
+  active).
+* If using recent NVDA development snapshots, Touch Interaciotn dialog will
+  be listed twice under NvDA's preferences menu. The second item is the
+  dialog that comes with the add-on.
+* In Touch Interaction dialog for the add-on, touch typing mode is no longer
+  shown if using recent NVDA development snapshots.
+
+## Version 17.10
+
+* Due to support policy from Microsoft, Windows 8 (original release) is no
+  longer supported.
+* NVDA will no longer announce screen orientation twice when running NVDA
+  2017.4 development snapshots.
+
+## Versión 17.07.1
+
+* Añadida una opción en el diálogo Interacción táctil para conmutar
+  manualmente dejar pasar un toque sin utilizar un temporizador.
+* Con el modo dejar pasar manual desactivado, si dejar pasar toques está
+  activado antes de que expire la duración de dejar pasar, la interacción
+  táctil debería habilitarse.
+
+## Versión 17.07
+
+* Añadido un diálogo nuevo llamado Interacción Táctil en el menú
+  Preferencias de NVDA para configurar cómo trabaja NVDA con las pantallas
+  táctiles.
+* Después de instalar esta versión, al pulsar teclas en el teclado táctil,
+  se debe hacer doble toque en la tecla deseada. Puedes volver al modo
+  antiguo habilitando la escritura táctil desde el diálogo Interacción
+  Táctil.
+* Añadida una orden (no asignada) para permitir a NVDA ignorar gestos
+  táctiles por hasta 10 segundos.
+* Añadida una opción en el diálogo Interacción Táctil para permitir a NVDA
+  pausar la interacción táctil entre 3 y 10 segundos para realizar gestos de
+  la pantalla táctil directamente (tal como si NVDA no está en ejecución;
+  por defecto es 5 segundos).
+* Añadidos mensajes de depuración en el registro al realizar clic derecho
+  (tocar y mantener) para grabarlos en el registro de NVDA (requiere de NVDA
+  2017.1 o posterior).
+* Debido a cambios hechos al reproducir las coordenadas de la pantalla, se
+  requiere de NVDA 2017.1 o posterior.
+
+##Versión 17.03
+
+* Corregido un fallo cuando el pitido de anunciado de coordenadas no se
+  reproducía o se reproducía un tono de error en su lugar cuando se utiliza
+  NVDA 2017.1 o anterior.
+
+##Versión 16.12
+
+* El modo web táctil funciona en Microsoft Edge, Microsoft Word y otros
+  donde se utilice el modo exploración.
+* Añadidas listas y puntos de referencia a los elementos del modo web
+  táctil.
+
+## Versión 16.06
+
+* Versión estable inicial.
+
+[[!tag dev stable]]
+
+[1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
