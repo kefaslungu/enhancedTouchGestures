@@ -5,7 +5,7 @@
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2017.1 or later running on a touchscreen computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2017.4 or later running on a touchscreen computer with Windows 8.1 or 10.
 
 ## Commands
 
@@ -37,7 +37,7 @@ If you've enabled play mouse coordinates setting in mouse settings, you'll hear 
 
 ## Screen orientation
 
-If you are running NvDA 2017.3 or earlier, NVDA can announce screen orientation changes. Note that NvDA cannot distinguish between primary and secondary orientation at this time.
+If you are running NvDA 2017.3 or earlier, NVDA can announce screen orientation changes. Note that NvDA cannot distinguish between primary and secondary orientation at this time, and this feature is now part of NVDA as of 2017.4.
 
 ## Touch keyboard
 
