@@ -7,8 +7,8 @@
 Тази добавка предлага допълнителни сензорни жестове за NVDA. Също така
 предоставя и пакет от жестове за улеснена навигация в режим на разглеждане.
 
-Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Забележка: Тази добавка изисква NVDA 2017.4 или по-нова, работеща на
+компютър със сензорен екран с Windows 8.1 или 10.
 
 ## Команди
 
@@ -76,36 +76,41 @@ computer with Windows 8.1 or 10.
 зададете стойността на настройката за времето за пауза на сензорните жестове
 на NVDA в интервала от 3 до 10 секунди (по подразбиране е 5 секунди).
 
-## Disable touch support in profiles
+## Забраняване на сензорната поддръжка за конкретни конфигурационни профили
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncehck
-this checkbox or manually toggle touch passthrough.
+Ако е активен профил различен от този по подразбиране и ако отидете в
+диалоговия прозорец "Сензорно взаимодействие", ще видите поле за отметка с
+име "Забрани изцяло сензорната поддръжка". Поставянето на отметка в това
+поле и отговарянето с "Да" на последвалото запитване, изцяло ще забрани
+сензорната поддръжка за този профил. Това е полезно в приложения, които
+предоставят свои собствени сензорни команди. За да възстановите сензорната
+функционалност, премахнете отметката в това поле или ръчно превключете
+сензорното препредаване.
 
-## Version 17.12
+## Версия 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using recent NVDA development snapshots, Touch Interaciotn dialog will
-  be listed twice under NvDA's preferences menu. The second item is the
-  dialog that comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using recent NVDA development snapshots.
+* Изисква NVDA 2017.4. По-конкретно, тази добавка вече може да обработва
+  превключвателите за конфигурационните профили.
+* Тъй като NVDA 2017.4 включва съобщения за ориентацията на екрана, тази
+  функция вече не е част от тази добавка.
+* Добавено е скрито поле за отметка в диалоговия прозорец "Сензорно
+  взаимодействие", с цел пълно забраняване на сензорната поддръжка (налично,
+  ако е активен профил, различен от този по подразбиране ("Обичайни
+  настройки")).
+* Ако използвате скорошните тестови версии на NVDA, диалоговият прозорец
+  "Сензорно взаимодействие" ще се показва два пъти в менюто "Настройки"в
+  менюто на NVDA. Вторият елемент е за диалоговият прозорец, който е свързан
+  с добавката.
+* В диалоговия прозорец "Сензорно взаимодействие" за добавката, опцията
+  "Въвеждане чрез докосване" вече не се показва, ако се използват последните
+  тестови версии на NVDA.
 
-## Version 17.10
+## Версия 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* Поради политиката за поддръжка на Microsoft, Windows 8 (оригинално
+  издание) вече не се поддържа.
+* NVDA вече няма да съобщава ориентацията на екрана два пъти при използване
+  на тестовите версии на NVDA 2017.4.
 
 ## Версия 17.07.1
 

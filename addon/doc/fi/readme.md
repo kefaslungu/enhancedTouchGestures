@@ -7,8 +7,8 @@
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Huom: Tämä lisäosa vaatii NVDA 2017.4:n tai uudemman ja
+kosketusnäyttötietokoneen, jossa on asennettuna Windows 8.1 tai 10.
 
 ## Komennot
 
@@ -73,36 +73,39 @@ Syötekomennot-valintaikkunan Laajennetut kosketuseleet
 vuorovaikutus ja määritä asetuksen "Keskeytä NVDA:n kosketuskomento" arvoksi
 jotain kolmen ja kymmenen sekunnin väliltä (oletus on 5).
 
-## Disable touch support in profiles
+## Poista käytöstä kosketustuki profiileissa
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncehck
-this checkbox or manually toggle touch passthrough.
+Jos jokin muu profiili kuin "(normaalit asetukset)" on aktiivisena ja jos
+siirryt Kosketuksen vuorovaikutus -valintaikkunaan, löydät sieltä "Poista
+kosketuksen vuorovaikutustuki kokonaan käytöstä" -valintaruudun. Kun se on
+valittuna ja vastattu kysyttäessä kyllä, kosketustuki poistetaan kokonaan
+käytöstä kyseisessä profiilissa. Tästä on hyötyä sovelluksissa, jotka
+tarjoavat omia kosketuskomentojaan. Palauta kosketustuki käyttöön joko
+poistamalla valintaruudun valinta tai vaihtamalla manuaalisesti kosketuksen
+läpivientitilaa.
 
-## Version 17.12
+## Versio 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using recent NVDA development snapshots, Touch Interaciotn dialog will
-  be listed twice under NvDA's preferences menu. The second item is the
-  dialog that comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using recent NVDA development snapshots.
+* Vaatii NVDA 2017.4:n. Lisäosa voi nyt käsitellä asetusprofiilien
+  vaihdoksia.
+* Koska NVDA 2017.4 sisältää näytön suunnan ilmoittamisen, kyseinen
+  ominaisuus on poistettu tästä lisäosasta.
+* Lisätty Kosketuksen vuorovaikutus -valintaikkunaan piilotettu
+  valintaruutu, joka poistaa kosketustuen kokonaan käytöstä (käytettävissä,
+  mikäli muu profiili kuin "(normaalit asetukset)" on aktiivisena).
+* Mikäli käytetään NVDA:n viimeisimpiä kehitysversioita, Kosketuksen
+  vuorovaikutus -valintaikkuna näkyy kahdesti Asetukset-valikossa. Toinen
+  kohteista avaa tämän lisäosan valintaikkunan.
+* Mikäli käytetään NVDA:n viimeisimpiä kehitysversioita,
+  kosketuskirjoitustilaa ei enää näytetä lisäosan Kosketuksen vuorovaikutus
+  -valintaikkunassa.
 
-## Version 17.10
+## Versio 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* Windows 8:n alkuperäisversiota ei enää tueta Microsoftin tukipolitiikan
+  vuoksi.
+* Ruudun suuntaa ei enää ilmoiteta kahdesti NVDA 2017.4:n kehitysversioita
+  käytettäessä.
 
 ## Versio 17.07.1
 

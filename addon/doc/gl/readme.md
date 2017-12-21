@@ -8,8 +8,8 @@ Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
 exploración.
 
-Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Nota: este complemento require do NVDA 2017.4 ou posterior executándose nun
+computador con pantalla táctil co Windows 8.1 ou 10.
 
 ## Ordes
 
@@ -63,50 +63,54 @@ Escritura Tactil.
 
 ## Deixar pasar orde tactil
 
-An unassigned command is available to allow you to use touchscreen gestures
-as though NVDA is not running. In order to use this, you need to assign a
-command (via Input Gestures dialog) under Enhanced Touch Gestures category
-to let you do this for up to ten seconds or toggle this manually. Then go to
-NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch
-command value between 3 to 10 seconds (default is 5 seconds).
+Está dispoñible unha orde non asignada para permitirche usar xestos da
+pantalla tactil coma se NVDA non estibera  en execución. Para poder usar
+esto, necesitas asignar unha orde (a través do diálogo Xestos de Entrada) na
+categoría Enhanced Touch Gestures para permitirche facer esto en ata 10
+segundos ou cambialo manualmente. Entón vai ao menú
+NVDA/Preferencias/Interacción Tactil, logo configura pausar a orde de valor
+tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
 
-## Disable touch support in profiles
+## Deshabilitar soporte tactil en perfís
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncehck
-this checkbox or manually toggle touch passthrough.
+Se outros perfís distintos á configuración normal están activos e se vas ao
+diálogo Interación Tactil, verás unha caixa de verificación chamada
+"deshabilitar compretamente soporte tactil". Marcando esta caixa e
+respondento si ao se cho pedir desactivará por compreto o soporte tactil
+para ese perfil. Esto é útil en aplicacións que proporcionen as súas
+proprias ordes tactiles. Para restaurar a funcionalidade tactil, desmarca
+esta caixa de verificación ou activa manualmente deixar pasar toque.
 
-## Version 17.12
+## Versión 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using recent NVDA development snapshots, Touch Interaciotn dialog will
-  be listed twice under NvDA's preferences menu. The second item is the
-  dialog that comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using recent NVDA development snapshots.
+* Requírese do NVDA 2017.4. Específicamente, este complemento agora pode
+  manexar cambios de perfil de configuración.
+* Dado que o NVDA 2017.4 inclúe o anunciado da horientación da pantalla,
+  esta característica xa non forma parte deste complemento.
+* Engadida unha caixa de verificación oculta no diálogo Interación Tactil
+  para desactivar compretamente o soporte tactil (dispoñible se os perfís
+  distintos á configuración normal están activos).
+* Se se usan snapshots de desenvolvemento do NVDA recentes, o diálogo
+  Interación Tactil listarase dúas veces no menú Preferencias do NVDA. o
+  segundo elemento é o diálogo que ven co complemento.
+* No diálogo Interación Tactil para o complemento, o modo de escritura
+  tactil xa non se amosa se se usan snapshots de desenvolvemento do NVDA
+  recentes.
 
-## Version 17.10
+## Versión 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* Debido a políticas de soporte de Microsoft, Windows 8 (versión orixinal)
+  xa non se soporta.
+* O NVDA xa non anunciará a orientación da pantalla dúas veces ao executar
+  snapshots de desenvolvemento do NVDA 2017.4.
 
-## Version 17.07.1
+## Versión 17.07.1
 
-* Added an option in touch interaction dialog to manually toggle touch
-  passthrough without use of a timer.
-* With manual passthrough mode off, if touch passthrough is turned on before
-  the passthrough duration expires, touch interaction would be enabled.
+* Engadida una opción no diálogo Interación Táctil para activar manualmente
+  deixar pasar toque sen usar un temporizador.
+* Co modo deixar pasar manual desactivado, se deixar pasar toque se activa
+  antes de que expire a duración de deixar pasar, voltaríase a activar a
+  interación táctil.
 
 ## Versión 17.07
 

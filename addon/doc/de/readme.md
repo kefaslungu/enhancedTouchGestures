@@ -1,14 +1,14 @@
-# Erweiterte Berührungs-Gesten #
+# Erweiterte Touch-Gesten #
 
 * Autor: Joseph Lee
 * Herunterladen der [stabilen Version][1]
 * [Testversion herunterladen][2]
 
-Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Ein Satz
-von Touchscreen-Gesten für den Lesemodus ist ebenfalls verfügbar.
+Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
+Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Hinweis: Für dieses Add-on ist NVDA 2017.4 oder höher erforderlich, das auf
+einem Touchscreen-Computer mit Windows 8.1 oder 10 ausgeführt wird.
 
 ## Befehle
 
@@ -30,21 +30,29 @@ computer with Windows 8.1 or 10.
 
 ## Web-Touch-Modus
 
-In diesem Modus können Sie Elemente im Lesemodus auswählen. Um in den
-Web-Touch-Modus zu wechseln, tippen Sie mit drei Fingern.
+In diesem Modus können Sie Elementtypen im Lesemodus auswählen und zwischen
+Elementen des ausgewählten Elementtyps navigieren. Um in den Webmodus zu
+wechseln, tippen Sie aus dem Lesemodus mit 3 Fingern auf dem Bildschirm. Von
+diesem Modus aus können Sie mit einem Finger nach oben oder unten durch die
+verfügbaren Elementtypen blättern, während Sie mit einem Finger nach rechts
+oder links zum nächsten bzw. vorherigen Element des ausgewählten Elementtyps
+gelangen. Sobald Sie das Dokument im Lesemodus beenden bzw. zu einem anderen
+Fenster wechseln, wo der Lesemodus deaktiviert oder nicht verfügbar ist,
+wird automatisch die Objektnavigation aktiviert.
 
-## Modus für Spracheinstellungen
+## Modus für Sprachausgabeneinstellungen
 
-In diesem Modus können Sie Spracheinstellungen wie Tonhöhe, Geschwindigkeit
-oder Lautstärke ändern. Um zwischen den einstellungen zu wechseln, streichen
-Sie mit 2 Fingern nach links oder rechts. Um eine Einstellung zu ändern,
-streichen Sie mit 2 Fingern nach oben oder unten. Diese einstellungen ähneln
-den Tastenkombinationen für den Synthesizer-Einstellungsring.
+In diesem Modus können Sie Sprachausgabeneinstellungen wie Tonhöhe,
+Geschwindigkeit oder Lautstärke ändern. Um zwischen den einstellungen zu
+wechseln, streichen Sie mit 2 Fingern nach links oder rechts. Um eine
+Einstellung zu ändern, streichen Sie mit 2 Fingern nach oben oder
+unten. Diese Gesten ähneln den Tastenkombinationen für Einstellungen im
+Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 ## Signalton für Koordinaten
 
 Wenn der Signalton für Mauskoordinaten in den Mauseinstellungen aktiviert
-ist, hören Sie Signaltöne, während Sie den Bildschirm erkunden.
+ist, hören Sie beim Erkunden des Bildschirms entsprechende Töne.
 
 ## Touch-Tastatur
 
@@ -52,52 +60,57 @@ Wenn die Erweiterung installiert ist, müssen Sie beim Tippen auf der
 Touch-Tastatur einen Doppeltipp ausführen, um die Zeichen einzutragen (so
 genannte Standardeingabe). Sie können die Eingabe auf "Tippen beim Berühren"
 oder touch typing umstellen. Dabei wird das Zeichen eingetragen, wenn sie
-den Finger von der Taste wegnehmen. Touch typing können Sie aktivieren,
-indem Sie im NVDA-Menü unter Einstellungen/Touch-Interaction gehen und das
-Kontrollkästchen für das Tippen auf Berührung aktivieren.
+den Finger von der Taste wegnehmen. Touch typing können Sie im NVDA-Menü
+unter Einstellungen/Touch-Interaction durch das Kontrollkästchen für das
+Tippen auf Berührung einschalten.
 
 ## Touch-Befehl durchreichen
 
 Es steht ein nicht zugewiesener Befehl zur Verfügung, mit dem Sie
-Touchscreen-Gesten so verwenden können, als ob NVDA beendet wäre. Um dies
-nutzen zu können, müssen Sie im Dialog Eingaben unter der Kategorie
-erweiterte Berührungsgesten einen Befehl zuweisen. Mit diesem Befehl können
-Sie bis zu zehn Sekunden lang diese Funktion nutzen. Die Zeit können Sie
-auch manuell umschalten. Gehen Sie dazu in das
+Touchscreen-Gesten so verwenden können, als ob NVDA beendet wäre. Dafür
+müssen Sie im Dialog Eingaben unter der Kategorie erweiterte
+Berührungsgesten einen Tastaturbefehl zuweisen. Mit diesem Befehl können Sie
+bis zu zehn Sekunden lang diese Funktion nutzen. Die Zeit können Sie auch
+manuell umschalten. Gehen Sie dazu in das
 NVDA-Menü/Einstellungen/Touch-Interaction und konfigurieren Sie die
 Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
 (Standard ist 5 Sekunden).
 
-## Disable touch support in profiles
+## Deaktivieren der Unterstützung für NVDA Touch-Gesten in benutzerdefinierten Konfigurationsprofilen
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncehck
-this checkbox or manually toggle touch passthrough.
+Wenn benutzerdefinierte Profile aktiv sind und Sie zum Dialogfeld
+Touch-Interaktion gehen, sehen Sie ein Kontrollkästchen mit dem Namen
+"Unterstützung für Touch-Interaktion deaktivieren". Wenn Sie dieses
+Kontrollkästchen aktivieren und mit Ja antworten, wird die
+Touch-Unterstützung für das aktuelle Konfigurationsprofil vollständig
+deaktiviert. Dies ist in Anwendungen mit eigenen Touch-Befehlen nützlich. Um
+die Touch-Funktionalität von NVDA wieder zu aktivieren, deaktivieren Sie
+entweder dieses Kontrollkästchen oder schalten Sie das Durchreichen der
+Touch-Gesten manuell ein.
 
 ## Version 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using recent NVDA development snapshots, Touch Interaciotn dialog will
-  be listed twice under NvDA's preferences menu. The second item is the
-  dialog that comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using recent NVDA development snapshots.
+* Erfordert NVDA 2017.4. Diese Erweiterung unterstützt nun auch das Wechseln
+  der Konfigurationsprofile im NVDA.
+* Da NVDA 2017.4 die Ansage der Bildschirmausrichtung  enthält, ist diese
+  Funktion nicht mehr Bestandteil der Erweiterung.
+* Ein verstecktes Kontrollkästchen im Dialogfeld"Touch-Interaktion" wurde
+  hinzugefügt, um die Touch-Unterstützung vollständig zu deaktivieren. Dies
+  ist nur für benutzerdefinierte Konfigurationsprofile verfügbar.
+* Wenn Sie aktuelle NVDA-Entwicklungs-Snapshots verwenden, wird der Dialog
+  für Touch-Interaktion zweimal unter dem Einstellungsmenü von NVDA
+  angezeigt. Das zweite Element ist der Dialog, der für die Erweiterung
+  gilt. Der erste Dialog ist die im NVDA integrierte Touch-Interaktion.
+* Im Dialogfeld"Touch Interactio nwird die Art der Touch-Eingabe nicht mehr
+  angezeigt, wenn aktuelle NVDA-Entwicklungs-Snapshots verwendet werden.
 
 ## Version 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* Aufgrund der Support-Richtlinien von Microsoft wird Windows 8
+  (Originalversion) nicht mehr unterstützt. Windows 8.1 ist daher
+  erforderlich.
+* NVDA wird die Bildschirmausrichtung nicht mehr zweimal ankündigen, wenn
+  NVDA 2017.4 Entwicklungs-Snapshots ausgeführt werden.
 
 ## Version 17.07.1
 
