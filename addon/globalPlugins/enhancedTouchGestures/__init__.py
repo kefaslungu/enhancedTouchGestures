@@ -212,15 +212,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y,new=True)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			playAudioCoordinates(gesture.x,gesture.y)
-	# Translators: Input help mode message for a touchscreen gesture.
-	script_touch_newExplore.__doc__=_("Reports the object and content directly under your finger")
+	script_touch_newExplore.__doc__=commands.script_touch_newExplore.__doc__
 
 	def script_touch_explore(self,gesture):
 		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			playAudioCoordinates(gesture.x,gesture.y)
-	# Translators: Input help mode message for a touchscreen gesture.
-	script_touch_explore.__doc__=_("Reports the new object or content under your finger if different to where your finger was last")
+	script_touch_explore.__doc__=commands.script_touch_explore.__doc__
 
 	def script_touchKeyboardEnable(self, gesture):
 		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
