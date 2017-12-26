@@ -139,9 +139,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
 
-		#Web navigation:
+	#Web navigation:
 
-			# Web elements list:
+	# Web elements list:
 	webBrowseElements=("normal", "Link", "Form field", "Heading", "Frame", "Table", "List", "Landmark")
 	webBrowseMode = 0 # The starting index for the web browse mode, which flicks through objects.
 
@@ -281,8 +281,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		commands.script_previousSynthSetting(gesture)
 
 	__gestures={
-		# Add-on specific touch gestures.
-
 		# Additional touch gestures added to global commands:
 		# For object mode: moving focus, moving to focus, object name and dimentions.
 		# For text mode, moving to top and bottom of text.
