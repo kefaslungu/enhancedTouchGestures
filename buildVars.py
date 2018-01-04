@@ -17,8 +17,8 @@ addon_info = {
 	"addon_summary" : _("Enhanced Touch Gestures"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description" : _("""A suite of additional touch commands, including tabbing and help commands.
-	Requires a touch-enabled computer with Windows 8.0 or later with NVDA 2012.3 or later installed."""),
+	"addon_description" : _("""A suite of additional touch commands, including navigation and help commands.
+	Requires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."""),
 	# version
 	"addon_version" : "17.12",
 	# Author(s)
