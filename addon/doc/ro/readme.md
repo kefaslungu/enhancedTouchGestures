@@ -7,8 +7,8 @@
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
 
-Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Rețineți că aveți nevoie de NVDA 2017.4 sau mai nou instalat pe un computer
+cu touchscreen care rulează Windows 8.1 sau 10.
 
 ## Comenzi
 
@@ -77,7 +77,7 @@ turn off touch support for that profile. This is useful in apps that provide
 their own touch commands. To restore touch functionality, either uncehck
 this checkbox or manually toggle touch passthrough.
 
-## Version 17.12
+## Versiunea 17.12
 
 * Requires NVDA 2017.4. Specifically, this add-on can now handle
   configuration profile switches.
@@ -92,7 +92,7 @@ this checkbox or manually toggle touch passthrough.
 * In Touch Interaction dialog for the add-on, touch typing mode is no longer
   shown if using recent NVDA development snapshots.
 
-## Version 17.10
+## Versiunea 17.10
 
 * Due to support policy from Microsoft, Windows 8 (original release) is no
   longer supported.
