@@ -1,9 +1,8 @@
 # Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2017 Joseph Lee and others, released under GPL.
+# Copyright 2013-2018 Joseph Lee and others, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
-# It also includes other support features such as announcing screen orientation.
 
 import globalPluginHandler
 import touchHandler
@@ -46,7 +45,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
-		if touchHandler.handler:
+		if touchHandler.touchSupported():
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
@@ -311,7 +310,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 # Add-on config database
 confspec = {
-	"touchTyping": "boolean(default=false)",
 	"commandPassthroughDuration": "integer(min=3, max=10, default=5)",
 	"manualPassthroughToggle": "boolean(default=false)",
 	"noTouchSupport": "boolean(default=false)",
@@ -330,12 +328,6 @@ class TouchInteractionDialog(gui.SettingsDialog):
 			# touch interaction settings dialog.
 			self.noTouchSupportCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("Completely disable touch interaction support")))
 			self.noTouchSupportCheckBox.SetValue(config.conf["touch"]["noTouchSupport"])
-		# Do not show the following if NVDA 2018.1 or later is in use, as it'll come iwth its own touch interaction dialog.
-		if not hasattr(touchHandler, "touchSupported"):
-			# Translators: This is the label for a checkbox in the
-			# touch interaction settings dialog.
-			self.touchTypingCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("&Touch typing mode")))
-			self.touchTypingCheckBox.SetValue(config.conf["touch"]["touchTyping"])
 		# Translators: The label for a setting in touch interaction dialog to allow users to interact directly with touchscreens for specified duration in seconds.
 		self.commandPassthroughDuration=touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
 		# Translators: a checkbox to allow passthrough to be toggled manually.
@@ -344,7 +336,6 @@ class TouchInteractionDialog(gui.SettingsDialog):
 
 	def postInit(self):
 		if hasattr(self, "noTouchSupportCheckBox"): self.noTouchSupportCheckBox.SetFocus()
-		elif hasattr(self, "touchTypingCheckBox"): self.touchTypingCheckBox.SetFocus()
 		else: self.commandPassthroughDuration.SetFocus()
 
 	def onOk(self,evt):
@@ -354,7 +345,6 @@ class TouchInteractionDialog(gui.SettingsDialog):
 				if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
 					return
 			config.conf["touch"]["noTouchSupport"]=self.noTouchSupportCheckBox.IsChecked()
-		if not hasattr(touchHandler, "touchSupported"): config.conf["touch"]["touchTyping"]=self.touchTypingCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
 		super(TouchInteractionDialog, self).onOk(evt)
