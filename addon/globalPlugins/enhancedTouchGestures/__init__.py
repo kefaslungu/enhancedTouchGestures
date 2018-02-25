@@ -226,12 +226,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		touchKeyboardButton.doAction()
 		tones.beep(1000, 150)
 
-	def script_touch_hoverUp(self,gesture):
-		#Specifically for touch typing with onscreen keyboard keys
-		obj=api.getNavigatorObject()
-		if isinstance(obj, TouchKey) and config.conf["touch"]["touchTyping"]:
-			obj.doAction()
-
 	def resumeTouchInteraction(self, profileSwitch=False):
 		if not touchHandler.handler:
 			try:
