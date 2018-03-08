@@ -71,36 +71,38 @@ isključivanje ove značajke. Potom idite u NVDA izbornik/Postavke/Interakcija
 dodirom i definirajte razmak između dodirnih komandi NVDA u intervalu između
 3 i 10 sekundi (po zadanom je 5 sekundi).
 
-## Disable touch support in profiles
+## Onemogući podršku za dodir u profilima 
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncehck
-this checkbox or manually toggle touch passthrough.
+Ako su aktivni profili koji nemaju standardnu konfiguraciju i ako idete u
+dijaloški okvir Interakcija dodirom, vidjet ćete potvrdni okvir pod nazivom
+""Potpuno onemogući podršku za dodir". Uključivanjem ove opcije i
+odgovaranjem da ako je potrebno, u potpunosti će isključiti podršku za dodir
+za taj profil. Ovo je korisno u aplikacijama koje nude vlastite dodirne
+komande. Kako biste vratili ovo podešavanje na staro, samo isključite taj
+potvrdni okvir.
 
 ## Version 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using recent NVDA development snapshots, Touch Interaciotn dialog will
-  be listed twice under NvDA's preferences menu. The second item is the
-  dialog that comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using recent NVDA development snapshots.
+* Zahtijeva NVDA 2017.4. Konkretno, ovaj dodatak sada može pratiti
+  prebacivanje između konfiguracijskih profila.
+* S obzirom da NVDA inačica 2017.4 uključuje izvještavanje o orijentaciji
+  zaslona, ova značajka više nije dio ovog dodatka.
+* Dodan skriveni potvrdni okvir u dijaloškom okviru Interakcija dodirom koji
+  kompletno onemogućava podršku dodirom (dostupno je ako su aktivni
+  konfiguracijski profili koji nemaju uobičajenu konfiguraciju).
+* Ako koristite nedavno objavljene razvojne inačice NVDA, dijaloški okvir
+  Interakcija dodirom bit će prikazan dvaput u podizborniku postavki
+  NVDA. Druga stavka je dijaloški okvir koji dolazi s dodatkom.
+* U dijaloškom okviru Interakcija dodirom ovog dodatka, način tipkanja
+  dodirom više se ne prikazuje ako koristite nedavno objavljene razvojne
+  inačice NVDA.
 
 ## Version 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* Zbog politike podrške tvrtke Microsoft, Windows 8 (originalno izdanje)
+  više nije podržan.
+* NVDA više neće dvaput izvještavati o orijentaciji zaslona tijekom
+  korištenja razvojnih inačica NVDA 2017.4.
 
 ## Version 17.07.1
 
