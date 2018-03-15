@@ -2,14 +2,13 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Descargar [versión de desarrollo][2]
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
 exploración.
 
-Nota: este complemento requiere de NVDA 2017.4 o posterior ejecutándose en
-un ordenador con pantalla táctil con Windows 8,1 o 10.
+Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Órdenes
 
@@ -55,14 +54,6 @@ Si has habilitado la opción Reproducir Coordenadas del Ratón en Opciones de
 Ratón, escucharás pitidos para indicar las coordenadas actuales de la
 pantalla al invocar los gestos de exploración de la pantalla táctil .
 
-## Teclado táctil
-
-Con el complemento instalado, al escribir en el teclado táctil, necesitas
-realizar un doble toque para pulsar teclas (denominado escritura
-estándar). puedes cambiarlo a escritura táctil (donde pulsas la tecla y
-luego la sueltas) vé al menú NVDA /Preferenciass/Interacción Táctil y marca
-la casilla de verificación Escritura Táctil.
-
 ## Dejar pasar orden táctil
 
 Está disponible una orden no asignada para permitirte utilizar gestos de la
@@ -76,13 +67,18 @@ segundos).
 
 ## Deshabilitar soporte táctil en perfiles
 
-Si otros perfiles distintos a la configuración normal están activos y si vas
-al diálogo Interacción Táctil, verás una casilla de verificación llamada
-"deshabilitar completamente soporte táctil". Marcando esta casilla y
-respondiento sí al pedírtelo desactivará por completo el soporte táctil para
-ese perfil. Esto es útil en aplicaciones que proporcionen sus propias
-órdenes táctiles. Para restaurar la funcionalidad táctil, desmarca esta
-casilla de verificación o activa manualmente dejar pasar toque.
+If profiles other than normal configuration is active and if you go to Touch
+Interaction dialog, you'll see a checkbox named "completely disable touch
+support". Checking this box and answering yes if prompted will completely
+turn off touch support for that profile. This is useful in apps that provide
+their own touch commands. To restore touch functionality, either uncheck
+this checkbox or manually toggle touch passthrough.
+
+## Version 18.03
+
+* NVDA 2018.1 is required.
+* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
+  longer included in this add-on.
 
 ## Versión 17.12
 
@@ -93,12 +89,11 @@ casilla de verificación o activa manualmente dejar pasar toque.
 * Añadida una casilla de verificación oculta en el diálogo Interacción
   Táctil para desactivar completamente el soporte táctil (disponible si los
   perfiles distintos a la configuración normal están activos).
-* Si se utilizan snapshots de desarrollo de NVDA recientes, el diálogo
-  Interacción Táctil se listará dos veces en el menú Preferencias de
-  NVDA. El segundo elemento es el diálogo que viene con el complemento.
-* En el diálogo Interacción Táctil para el complemento, el modo de escritura
-  táctil ya no se muestra si se usan snapshots de desarrollo de NVDA
-  recientes.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NvDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
+* In Touch Interaction dialog for the add-on, touch typing mode is no longer
+  shown if using NVDA 2018.1 or later.
 
 ## Versión 17.10
 
@@ -156,5 +151,3 @@ casilla de verificación o activa manualmente dejar pasar toque.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

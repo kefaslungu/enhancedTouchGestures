@@ -1,45 +1,54 @@
-# Enhanced Touch Gestures #
+# Rozszerzone gesty dotykowe/ Enhanced Touch Gestures #
 
-* аутор : Joseph Lee
-* Preuzmi [stabilnu verziju][1]
+* Autor: Joseph Lee
+* Pobierz [wersja stabilna][1]
 
-овај додатак вам пружа побољшане гестове за екране осетљиве на додир.
+Ten dodatek udostępnia dodatkowe gesty dla NVDA. Dostarcza również zestawu
+gestów dla łatwiejszej nawigacji w trybie czytania.
 
 Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
-## команде
+## Polecenia
 
-### доступне свуда
+### Dostępne wszędzie
 
-* дупли клик са 4 прста укључује помоћ за унос
-* клик са задршком ради десни клик на објекат испод прста
-* Prevlačenje sa 4 prsta desno: uključuje i isključuje touch
-  tastaturu(obično je uključuje)
+* Podwójne stuknięcie czterema palcami: przełącza pomoc wprowadzania.
+* Stuknięcie i przytrzymanie: wykonuje kliknięcie prawym przyciskiem myszy
+  na obiekcie pod palcem.
+* Four finger flick right: toggle touch keyboard (usually enables it).
 
-### објекатски мод
+### Tryb obiektu
 
-* повлачење са 3 прста на доле чита тренутни прозор
-* повлачење са 3 прста на лево чита име објекта са фокусом
-* повлачење са 3 прста на десно чита навигаторски објекат
-* повлачење са 4 прста на горе пријављује наслов прозора
-* повлачење са 4 прста на доле пријављује текст статусне траке
+* Machnięcie w dół trzema palcami: odczytanie bieżącego okna.
+* Machnięcie w lewo trzema palcami: odczytaj obiekt posiadający punkt uwagi.
+* Machnięcie w prawo trzema palcami: odczytaj bieżący obiekt nawigacyjny.
+* Machnięcie w górę czterema palcami: odczytaj tytuł bieżącego okna.
+* Machnięcie w dół czterema palcami: odczytaj tekst paska stanu.
 
-## интернет
+## dotykowy tryb czytania
 
-овај мод вам омогућава навигацију по одређеним елементима тапните екран са 3
-прста повлачите прст на доле да изаберете врсту елемената па са једним
-прстом повлачите на десно да идете по изабраним елементима
+Ten tryb gestów, dostępny w trybie czytania, pozwala nawigować w dokumencie
+po wybranych elementach. By przełączyć się w ten tryb,, z dokumentów trybu
+czytania, wykonaj stuknięcie trzema palcami. W tym trybie, machnięcie w górę
+lub w dół jednym palcem przełącza między dostępnymi sposobami nawigacji,
+machnięcie jednym palcem w lewo lub prawo przesuwa do poprzedniego lub
+następnego wybranego elementu. Po wyjściu z dokumentu trybu czytania,
+używany jest obiektowy tryb gestów dotykowych.
 
-## мод синтетизатора
+## Tryb dotykowej zmiany ustawień syntezatora
 
-у овом моду можете брзо изабрати глас ии променити јачину користите 2 прста
-на десно да изаберете контролу и 2 прста на доле да је промените
+Możesz użyć tego trybu do szybkiej zmiany ustawień syntezatora, np. by
+wybrać głos, albo zmienić głośność. Użyj machnięcia dwoma palcami w lewo lub
+prawo do przejścia pomiędzy ustawieniami, a gestów machnięcia dwoma palcami
+w górę i dół do zmiany wartości ustawienia. Te gesty odpowiadają klawiszom
+szybkiej zmiany ustawień syntezatora.
 
-## пиштање за кординате
+## Dźwięk oznajmiania położenia
 
-ако сте у подешавањима миша укључили пиштања чућете их када истражујете
-екран
+Jeśli włączony jest dźwięk wskaźnika myszy,  będziesz słyszał dźwięki
+określające aktualne położenie na ekranie, po wywołaniu gestu dotykowej
+eksploracji.
 
 ## Touch command passthrough
 
@@ -113,18 +122,18 @@ this checkbox or manually toggle touch passthrough.
 
 ##Version 17.03
 
-* Popravljena greška kada zvučni signal za grešku nije ispravno reprodukovan
-  ili se reprodukovao ton za grešku u verziji 2017.1
+* Fixed an issue where coordinate announcement beep did not play or an error
+  tone played instead when using NVDA 2017.1 or later.
 
-##verzija 16.12
+##Wersja 16.12
 
-* Web režim dodira radi u programima Microsoft Edge, Microsoft Word i
-  ostalim programima gde se koristi režim pretraživanja
-* Dodate liste i regioni u režimu pretraživanja
+* Web touch mode works in Microsoft Edge, Microsoft Word and others where
+  browse mode is used.
+* Added lists and landmarks to web touch mode elements.
 
-## Verzija 16.06
+## Wersja 16.06
 
-* Prva stabilna verzija
+* Initial stable version.
 
 [[!tag dev stable]]
 

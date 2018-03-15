@@ -2,13 +2,12 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stable version][1]
-* Download [development version][2]
 
 Ovaj dodatak omogućuje dodatne dodirničke geste u NVDA čitaču zaslona. Ovaj
 dodatak također dodaje set dodirnih gesti za lakšu navigaciju u načinu
 pregleda.
 
-Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
+Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
 ## Komande
@@ -52,15 +51,6 @@ Ako ste omogućili postaku reproduciraj zvukove prilikom pomicanja miša u
 postavkama miša, čut ćete zvučne signale kako biste čuli indikaciju zaslona
 kad pozovete geste za istraživanje dodirom.
 
-## Touch tipkovnica
-
-Ako imate instaliran dodatak, dok tipkate po touch tipkovnici, trebate
-dodirnuti dvaput kako biste pritisnuli tipku (tzv. mod standardnog
-tipkanja). Ovo možete promijeniti u mod tipkanja jednim dodirom, gdje se
-tipka pritisne čim podignete prst sa trenutno fokusirane tipke. To možete
-učiniti ulaskom u NVDA izbornik/Postavke/Interakcija dodirom i odabirom
-stavke Tipkanje jednim dodirom.
-
 ## Komanda za tipkanje jednim dodirom 
 
 Možete koristiti dodatnu naredbu za korištenje dodirnih gesti dok NVDA nije
@@ -73,13 +63,18 @@ dodirom i definirajte razmak između dodirnih komandi NVDA u intervalu između
 
 ## Onemogući podršku za dodir u profilima 
 
-Ako su aktivni profili koji nemaju standardnu konfiguraciju i ako idete u
-dijaloški okvir Interakcija dodirom, vidjet ćete potvrdni okvir pod nazivom
-""Potpuno onemogući podršku za dodir". Uključivanjem ove opcije i
-odgovaranjem da ako je potrebno, u potpunosti će isključiti podršku za dodir
-za taj profil. Ovo je korisno u aplikacijama koje nude vlastite dodirne
-komande. Kako biste vratili ovo podešavanje na staro, samo isključite taj
-potvrdni okvir.
+If profiles other than normal configuration is active and if you go to Touch
+Interaction dialog, you'll see a checkbox named "completely disable touch
+support". Checking this box and answering yes if prompted will completely
+turn off touch support for that profile. This is useful in apps that provide
+their own touch commands. To restore touch functionality, either uncheck
+this checkbox or manually toggle touch passthrough.
+
+## Version 18.03
+
+* Zahtijeva NVDA 2018.1
+* Zbog toga što NVDA 2018.1 dolazi s potvrdnim okvirom za tipkanje dodirom,
+  taj potvrdni okvir više nije uključen u ovaj dodatak.
 
 ## Version 17.12
 
@@ -90,12 +85,11 @@ potvrdni okvir.
 * Dodan skriveni potvrdni okvir u dijaloškom okviru Interakcija dodirom koji
   kompletno onemogućava podršku dodirom (dostupno je ako su aktivni
   konfiguracijski profili koji nemaju uobičajenu konfiguraciju).
-* Ako koristite nedavno objavljene razvojne inačice NVDA, dijaloški okvir
-  Interakcija dodirom bit će prikazan dvaput u podizborniku postavki
-  NVDA. Druga stavka je dijaloški okvir koji dolazi s dodatkom.
-* U dijaloškom okviru Interakcija dodirom ovog dodatka, način tipkanja
-  dodirom više se ne prikazuje ako koristite nedavno objavljene razvojne
-  inačice NVDA.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NvDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
+* In Touch Interaction dialog for the add-on, touch typing mode is no longer
+  shown if using NVDA 2018.1 or later.
 
 ## Version 17.10
 
@@ -152,5 +146,3 @@ potvrdni okvir.
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: http://addons.nvda-project.org/files/get.php?file=ets
