@@ -2,14 +2,13 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* Télécharger [version de développement][2]
 
 Ce module complémentaire fournit des gestes supplémentaires sur l'écran
 tactile pour NVDA. Il fournit également un ensemble de gestes pour parcourir
 facilement lorsque vous êtes en mode navigation.
 
-Notez que ce module complémentaire requiert NVDA 2017.4 ou ultérieure
-s'exécutant sur un ordinateur tactile avec Windows 8 ou 10.
+Notez que ce module complémentaire requiert NVDA 2018.1 ou une version
+ultérieure s'exécutant sur un ordinateur tactile avec Windows 8 ou 10.
 
 ## Commandes
 
@@ -56,15 +55,6 @@ déplace dans les paramètres de la souris, vous entendrez des bips pour
 indiquer la coordonnée actuelle de la souris sur l'écran lorsque vous
 invoquez des gestes d'exploration tactile.
 
-## Clavier tactile
-
-Avec le module complémentaire installé, lorsque vous tapez sur le clavier
-tactile, vous devez effectuer une double tape afin d'appuyer sur les touches
-(appelées frape standard). Vous pouvez modifier en activant la frappe
-tactile (vous lâcher la touche et la touche sera appuyée) en allant au menu
-NVDA/Préférences/Interaction Tactile et cochez la case à cocher frappe
-tactile.
-
 ## Émulation de commande tactile
 
 Une commande non assignée est disponible pour vous permettre d'utiliser les
@@ -80,12 +70,18 @@ secondes (par défaut 5 secondes).
 
 Si des profils autres que la configuration normale sont actifs et que vous
 accédez au dialogue Interaction Tactile, une case à cocher nommée
-"Désactiver complètement le support tactile" s'affiche. Cocher cette case et
-que vous répondez oui si vous y êtes invité, le support tactile de ce profil
-sera complètement désactivé. Ceci est utile dans les applications qui
-fournissent leurs propres commandes tactiles. Pour restaurer la
-fonctionnalité tactile, désactivez cette case à cocher ou basculer
+"Désactiver complètement le support tactile" s'affiche. Si vous cochez cette
+case et que vous répondez oui si vous y êtes invité, le support  tactile de
+ce profil sera complètement désactivé. Ceci est utile dans les applications
+qui fournissent leurs propres commandes tactiles. Pour restaurer la
+fonctionnalité tactile, décochez cette case à cocher ou basculer
 manuellement l'émulation tactile.
+
+## Version 18.03
+
+* NVDA 2018.1 est requis.
+* Parce que NVDA 2018.1 est livré avec la case à cocher frappe tactile, la
+  case à cocher n'est plus inclus dans ce module complémentaire.
 
 ## Version 17.12
 
@@ -96,13 +92,13 @@ manuellement l'émulation tactile.
 * Ajout d'une case à cocher masquée dans le dialogue Interaction Tactile
   pour désactiver complètement le support tactile (disponible si des profils
   autres que la configuration normale sont actifs).
-* Si vous utilisez des versions snapshots de développement de NVDA récents,
-  le dialogue Interaction Tactile apparaîtra deux fois sous le menu des
-  préférences de NVDA. Le deuxième élément est le dialogue fournie avec le
-  module complémentaire.
+* Si vous utilisez NVDA 2018.1 ou une version ultérieure le dialogue
+  Interaction Tactile apparaîtra deux fois sous le menu des préférences de
+  NVDA. Le deuxième élément est le dialogue fournie avec le module
+  complémentaire.
 * Dans le dialogue Interaction Tactile du module complémentaire, le mode
-  frappe tactile n'est plus affiché si vous utilisez les versions snapshots
-  de développement de NVDA récents.
+  frappe tactile n'est plus affiché si vous utilisez NVDA 2018.1 ou une
+  version ultérieure.
 
 ## Version 17.10
 
@@ -159,5 +155,3 @@ manuellement l'émulation tactile.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

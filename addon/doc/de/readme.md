@@ -2,13 +2,12 @@
 
 * Autor: Joseph Lee
 * Herunterladen der [stabilen Version][1]
-* [Testversion herunterladen][2]
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Hinweis: Für dieses Add-on ist NVDA 2017.4 oder höher erforderlich, das auf
-einem Touchscreen-Computer mit Windows 8.1 oder 10 ausgeführt wird.
+Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Befehle
 
@@ -54,16 +53,6 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 Wenn der Signalton für Mauskoordinaten in den Mauseinstellungen aktiviert
 ist, hören Sie beim Erkunden des Bildschirms entsprechende Töne.
 
-## Touch-Tastatur
-
-Wenn die Erweiterung installiert ist, müssen Sie beim Tippen auf der
-Touch-Tastatur einen Doppeltipp ausführen, um die Zeichen einzutragen (so
-genannte Standardeingabe). Sie können die Eingabe auf "Tippen beim Berühren"
-oder touch typing umstellen. Dabei wird das Zeichen eingetragen, wenn sie
-den Finger von der Taste wegnehmen. Touch typing können Sie im NVDA-Menü
-unter Einstellungen/Touch-Interaction durch das Kontrollkästchen für das
-Tippen auf Berührung einschalten.
-
 ## Touch-Befehl durchreichen
 
 Es steht ein nicht zugewiesener Befehl zur Verfügung, mit dem Sie
@@ -78,15 +67,18 @@ Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
 
 ## Deaktivieren der Unterstützung für NVDA Touch-Gesten in benutzerdefinierten Konfigurationsprofilen
 
-Wenn benutzerdefinierte Profile aktiv sind und Sie zum Dialogfeld
-Touch-Interaktion gehen, sehen Sie ein Kontrollkästchen mit dem Namen
-"Unterstützung für Touch-Interaktion deaktivieren". Wenn Sie dieses
-Kontrollkästchen aktivieren und mit Ja antworten, wird die
-Touch-Unterstützung für das aktuelle Konfigurationsprofil vollständig
-deaktiviert. Dies ist in Anwendungen mit eigenen Touch-Befehlen nützlich. Um
-die Touch-Funktionalität von NVDA wieder zu aktivieren, deaktivieren Sie
-entweder dieses Kontrollkästchen oder schalten Sie das Durchreichen der
-Touch-Gesten manuell ein.
+If profiles other than normal configuration is active and if you go to Touch
+Interaction dialog, you'll see a checkbox named "completely disable touch
+support". Checking this box and answering yes if prompted will completely
+turn off touch support for that profile. This is useful in apps that provide
+their own touch commands. To restore touch functionality, either uncheck
+this checkbox or manually toggle touch passthrough.
+
+## Version 18.03
+
+* NVDA 2018.1 is required.
+* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
+  longer included in this add-on.
 
 ## Version 17.12
 
@@ -97,12 +89,11 @@ Touch-Gesten manuell ein.
 * Ein verstecktes Kontrollkästchen im Dialogfeld"Touch-Interaktion" wurde
   hinzugefügt, um die Touch-Unterstützung vollständig zu deaktivieren. Dies
   ist nur für benutzerdefinierte Konfigurationsprofile verfügbar.
-* Wenn Sie aktuelle NVDA-Entwicklungs-Snapshots verwenden, wird der Dialog
-  für Touch-Interaktion zweimal unter dem Einstellungsmenü von NVDA
-  angezeigt. Das zweite Element ist der Dialog, der für die Erweiterung
-  gilt. Der erste Dialog ist die im NVDA integrierte Touch-Interaktion.
-* Im Dialogfeld"Touch Interactio nwird die Art der Touch-Eingabe nicht mehr
-  angezeigt, wenn aktuelle NVDA-Entwicklungs-Snapshots verwendet werden.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NvDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
+* In Touch Interaction dialog for the add-on, touch typing mode is no longer
+  shown if using NVDA 2018.1 or later.
 
 ## Version 17.10
 
@@ -163,5 +154,3 @@ Touch-Gesten manuell ein.
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: http://addons.nvda-project.org/files/get.php?file=emo-dev

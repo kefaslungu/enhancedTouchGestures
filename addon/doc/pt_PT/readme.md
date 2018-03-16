@@ -2,14 +2,13 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* Baixar [versão de desenvolvimento][2]
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Nota: este extra requer o NVDA 2017.4 ou posterior executado num computador
-touchscreen com o Windows 8.1 ou 10.
+Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Comandos:
 
@@ -53,14 +52,6 @@ Se tiver ativado a configuração de coordenadas do rato na configuração do
 rato, ouvirá sinais sonoros para indicar a coordenada actual do ecrã quando
 usa os gestos de exploração por toque.
 
-## Teclado virtual:
-
-Com o extra instalado, ao digitar no teclado virtual, precisa executar uma
-batida dupla para pressionar as teclas (digitação padrão). pode alterar para
-digitar só com um toque (onde solta a tecla e esta será pressionada) indo
-para o menu NVDA / Preferências / interacção por toque e verificar a caixa
-de selecção de toque.
-
 ## Passagem do comando de toque
 
 Um comando não atribuído está disponível para permitir que possam ser usados
@@ -74,13 +65,18 @@ NVDA entre 3 a 10 segundos (o padrão é 5 segundos).
 
 ## Desactivar o suporte de toque nos perfis
 
-Se os perfis além da configuração normal estiverem ativos e se for para a
-caixa de diálogo Interacção por toque, verá uma caixa de selecção chamada
-"desactivar completamente o suporte ao toque". Verificando esta caixa e
-respondendo sim, se solicitado, irá desactivar completamente o suporte ao
-toque para esse perfil. Isto é útil em aplicações que fornecem os seus
-próprios comandos de toque. Para restaurar a funcionalidade de toque,
-desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
+If profiles other than normal configuration is active and if you go to Touch
+Interaction dialog, you'll see a checkbox named "completely disable touch
+support". Checking this box and answering yes if prompted will completely
+turn off touch support for that profile. This is useful in apps that provide
+their own touch commands. To restore touch functionality, either uncheck
+this checkbox or manually toggle touch passthrough.
+
+## Version 18.03
+
+* NVDA 2018.1 is required.
+* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
+  longer included in this add-on.
 
 ## Versão 17.12
 
@@ -91,11 +87,11 @@ desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
 * Adicionada uma caixa de selecção oculta na caixa de diálogo Interacção por
   toque para desativar completamente o suporte por toque (disponível se
   outros perfis além do da configuração normal estiverem activos).
-* Se estiver a usar versões de desenvolvimento do NVDA, a caixa de diálogo
-  interacções por toque será listada duas vezes no menu de preferências do
-  NVDA. O segundo item é o diálogo que vem com o add-on. 
-* No diálogo de interacção de toque para o extra, o modo de digitar toque
-  não é mostrado se usar versões de desenvolvimento recentes do NVDA.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NvDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
+* In Touch Interaction dialog for the add-on, touch typing mode is no longer
+  shown if using NVDA 2018.1 or later.
 
 ## Versão 17.10
 
@@ -152,5 +148,3 @@ desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

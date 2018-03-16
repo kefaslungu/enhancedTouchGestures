@@ -2,13 +2,12 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* Download [development version][2]
 
 Este complemento provê gestos adicionais para telas táteis no NVDA. Também
 provê um conjunto de gestos para uma navegabilidade mais fácil no modo de
 navegação.
 
-Note: this add-on requires NVDA 2017.4 or later running on a touchscreen
+Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
 ## Comandos
@@ -52,14 +51,6 @@ Caso você tenha habilitado a opção de indicar as coordenadas do mouse nas
 opções de mouse, você ouvirá bipes que indicam as coordenadas de tela atuais
 quando fizer uso de gestos de exploração da tela.
 
-## Teclado tátil
-
-Ao digitar no teclado tátil com o complemento instalado, você tem que dar um
-duplo toque para pressionar as teclas (digitação definida padrão). Você pode
-mudar para digitação por toque (em que se solta a tecla e esta é
-pressionada) indo ao menu do NVDA/Preferências/Interação Tátil e marcando a
-caixa de seleção Digitação por Toque.
-
 ## Passagem de comandos táteis
 
 Está disponível um comando não atribuído para possibilitar usar gestos
@@ -76,8 +67,14 @@ If profiles other than normal configuration is active and if you go to Touch
 Interaction dialog, you'll see a checkbox named "completely disable touch
 support". Checking this box and answering yes if prompted will completely
 turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncehck
+their own touch commands. To restore touch functionality, either uncheck
 this checkbox or manually toggle touch passthrough.
+
+## Version 18.03
+
+* NVDA 2018.1 is required.
+* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
+  longer included in this add-on.
 
 ## Version 17.12
 
@@ -88,11 +85,11 @@ this checkbox or manually toggle touch passthrough.
 * Added a hidden checkbox in Touch Interaction dialog to completely disable
   touch support (available if profiles other than normal configuration is
   active).
-* If using recent NVDA development snapshots, Touch Interaciotn dialog will
-  be listed twice under NvDA's preferences menu. The second item is the
-  dialog that comes with the add-on.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NvDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using recent NVDA development snapshots.
+  shown if using NVDA 2018.1 or later.
 
 ## Version 17.10
 
@@ -146,5 +143,3 @@ this checkbox or manually toggle touch passthrough.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

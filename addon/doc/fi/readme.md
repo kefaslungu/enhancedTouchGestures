@@ -2,12 +2,11 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* Lataa [kehitysversio][2]
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Huom: Tämä lisäosa vaatii NVDA 2017.4:n tai uudemman ja
+Huom: Tämä lisäosa vaatii NVDA 2018.1:n tai uudemman ja
 kosketusnäyttötietokoneen, jossa on asennettuna Windows 8.1 tai 10.
 
 ## Komennot
@@ -54,15 +53,6 @@ Jos olet ottanut käyttöön hiiren koordinaattien ilmaisemisen
 Hiiriasetukset-valintaikkunasta, kuulet äänimerkkejä, jotka ilmaisevat
 nykyisen sijainnin näytöllä kosketuseleitä käyttäessäsi.
 
-## Kosketusnäppäimistö
-
-Kun tämä lisäosa on asennettuna, kosketusnäppäimistöllä kirjoitettaessa on
-tehtävä kaksoisnapautus näppäinten painamiseksi (kutsutaan
-standardikirjoitukseksi). Voit muuttaa tämän kosketuskirjoitukseksi (jossa
-sormi nostetaan näppäimeltä, jolloin sitä painetaan) valitsemalla
-NVDA-valikosta Asetukset/Kosketuksen vuorovaikutus ja valitsemalla
-kosketuskirjoitus-valintaruudun.
-
 ## Kosketuskomentojen läpivienti
 
 Käytettävissä on määrittämätön komento, joka mahdollistaa kosketuseleiden
@@ -81,8 +71,14 @@ kosketuksen vuorovaikutustuki kokonaan käytöstä" -valintaruudun. Kun se on
 valittuna ja vastattu kysyttäessä kyllä, kosketustuki poistetaan kokonaan
 käytöstä kyseisessä profiilissa. Tästä on hyötyä sovelluksissa, jotka
 tarjoavat omia kosketuskomentojaan. Palauta kosketustuki käyttöön joko
-poistamalla valintaruudun valinta tai vaihtamalla manuaalisesti kosketuksen
-läpivientitilaa.
+poistamalla valintaruudun valinta tai vaihtamalla kosketuksen
+läpivientitilaa manuaalisesti.
+
+## Versio 18.03
+
+* NVDA 2018.1 vaaditaan.
+* Koska NVDA 2018.1:ssä on kosketuskirjoituksen valintaruutu, sitä ei ole
+  enää tässä lisäosassa.
 
 ## Versio 17.12
 
@@ -93,12 +89,11 @@ läpivientitilaa.
 * Lisätty Kosketuksen vuorovaikutus -valintaikkunaan piilotettu
   valintaruutu, joka poistaa kosketustuen kokonaan käytöstä (käytettävissä,
   mikäli muu profiili kuin "(normaalit asetukset)" on aktiivisena).
-* Mikäli käytetään NVDA:n viimeisimpiä kehitysversioita, Kosketuksen
-  vuorovaikutus -valintaikkuna näkyy kahdesti Asetukset-valikossa. Toinen
-  kohteista avaa tämän lisäosan valintaikkunan.
-* Mikäli käytetään NVDA:n viimeisimpiä kehitysversioita,
-  kosketuskirjoitustilaa ei enää näytetä lisäosan Kosketuksen vuorovaikutus
-  -valintaikkunassa.
+* Mikäli käytetään NVDA 2018.1:tä tai uudempaa, Kosketuksen vuorovaikutus
+  -vaihtoehto näkyy kahdesti Asetukset-valikossa. Toisena oleva eli alempi
+  avaa tämän lisäosan valintaikkunan.
+* Kosketuskirjoitustilaa ei enää näytetä lisäosan Kosketuksen vuorovaikutus
+  -valintaikkunassa, mikäli käytetään NVDA 2018.1:tä tai uudempaa.
 
 ## Versio 17.10
 
@@ -155,5 +150,3 @@ läpivientitilaa.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
