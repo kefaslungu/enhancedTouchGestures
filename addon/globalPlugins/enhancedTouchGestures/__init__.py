@@ -286,8 +286,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"ts:tap":"touch_newExplore",
 		"ts:hoverDown":"touch_newExplore",
 		"ts:hover":"touch_explore",
-		"ts:hoverUp":"touch_hoverUp",
-		
 
 		# Web browsing gestures:
 		"ts(Web):flickDown":"nextWebElement",
