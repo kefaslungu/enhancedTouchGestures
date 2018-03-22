@@ -6,8 +6,8 @@
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
 
-Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Rețineți că aveți nevoie de NVDA 2018.1 sau mai nou instalat pe un computer
+cu touchscreen care rulează Windows 8.1 sau 10.
 
 ## Comenzi
 
@@ -29,10 +29,14 @@ computer with Windows 8.1 or 10.
 
 ## Mod tactil web
 
-Acest mod tactil web, disponibil în modul navigare, vă permite să parcurgeți
-documentul prin elementul selectat. Pentru a comuta la modul web, din
+Acest mod tactil, disponibil în modul navigare, vă permite să parcurgeți
+documentul prin elementul selectat. Pentru a comuta la modul web din
 documentele modului de navigare, efectuați o atingere cu 3 degete. Din acest
-mod, glisând în sus sau în jos cu un deget 
+mod, glisând în sus sau în jos cu un deget prin intermediul modurilor de
+navigare a elementelor disponibile, în timp ce faceți clic dreapta sau
+stânga cu un deget se deplasează la elementul următor sau anterior ales.După
+ce vă îndepărtați de documentele de navigare, este utilizat modul de
+atingere a obiectului.
 
 ## Setările sintetizatorului la modul de atingere
 
@@ -40,7 +44,8 @@ Aveți posibilitatea să utilizați acest mod pentru a modifica rapid setările
 de sintetizator, cum ar fi alegerea unei voci și modificarea volumului. În
 acest mod, utilizați glisarea cu două degete spre stânga sau spre dreapta
 pentru a vă deplasa între setările sintetizatorului și utilizați gesturile
-glisare cu două degete sus și jos pentru a modifica valorile. 
+glisare cu două degete sus și jos pentru a modifica valorile. Aceste gesturi
+reflectă asta în comenzile setărilor sintezei pe tastatură.
 
 ## Coordonată anunț bip
 
@@ -59,42 +64,43 @@ meniul NVDA/Preferințe/Interacțiunea prin atingere, apoi configurați pauza
 valorii comenzii de atingere NVDA între 3 și 10 secunde (valoarea implicită
 este de 5 secunde).
 
-## Disable touch support in profiles
+## Dezactivează suportul tactil în profiluri
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncheck
-this checkbox or manually toggle touch passthrough.
+Dacă sunt active alte profiluri decât configurația obișnuită și dacă
+accesați dialogul Interacțiune cu atingere, veți vedea o casetă de bifat
+„dezactivează complet asistența tactilă”. Dacă bifați această casetă și
+răspundeți da, în cazul în care vi se solicită, suportul tactil va fi
+dezactivat complet. Acest lucru este util în aplicațiile care oferă
+propriile comenzi de atingere. Pentru a restabili funcționalitatea tactilă,
+debifați această casetă sau comutați manual la trecerea prin atingere.
 
-## Version 18.03
+## Versiunea 18.03
 
-* NVDA 2018.1 is required.
-* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
-  longer included in this add-on.
+* Este necesar NVDA 2018.1.
+* Fiindcă NVDA 2018.1 vine la pachet cu caseta de bifat „„scriere tactilă”,
+  ea nu mai este inclusă în acest supliment.
 
 ## Versiunea 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NvDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using NVDA 2018.1 or later.
+* Necesită NVDA 2017.4. De specificat: acest supliment poate gestiona acum
+  comutările configurații profilurilor.
+* Întrucât NVDA 2017.4 include anunțarea orientării ecranului, această
+  caracteristică nu mai face parte din supliment.
+* S-a adăugat o casetă de bifat ascunsă în dialogul interacțiunii tactile
+  pentru dezactivarea completă a suportului tactil (disponibilă dacă sunt
+  active alte profiluri decât configurația obișnuită).
+* Dacă utilizați NVDA2018.1 sau mai nou, dialogul interacțiunii tactile va
+  fi listat de două ori în submeniul de preferințe al NVDA-ului. Al doilea
+  element este dialogul care vine la pachet cu suplimentul.
+* În dialogul interacțiunii tactile pentru supliment, modul de scriere
+  tactilă nu mai este afișat dacă se utilizează NVDA 2018.1 sau mai nou.
 
 ## Versiunea 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* Datorită politicii de asistență de la Microsoft, Windows 8 (versiunea
+  originală) nu mai este suportată.
+* NVDA nu va mai anunța orientarea ecranului de două ori atunci când se
+  rulează versiuni de dezvoltare snapshot NVDA 2017.4.
 
 ## Versiunea 17.07.1
 
