@@ -7,8 +7,8 @@ Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Nota: este extra requer o NVDA 2018.1 ou posterior executado num computador
+touchscreen com o Windows 8.1 ou 10.
 
 ## Comandos:
 
@@ -65,18 +65,19 @@ NVDA entre 3 a 10 segundos (o padrão é 5 segundos).
 
 ## Desactivar o suporte de toque nos perfis
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncheck
-this checkbox or manually toggle touch passthrough.
+Se tiver activos perfis para além do da configuração normal e se for para a
+caixa de diálogo Interacção por toque, verá uma caixa de selecção chamada
+"desactivar completamente o suporte ao toque". Verificando esta caixa e
+respondendo sim, se solicitado, irá desactivar completamente o suporte ao
+toque para esse perfil. Isto é útil em aplicações que fornecem os seus
+próprios comandos de toque. Para restaurar a funcionalidade de toque,
+desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
 
-## Version 18.03
+## Versão 18.03
 
-* NVDA 2018.1 is required.
-* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
-  longer included in this add-on.
+* É necessário o NVDA 2018.1
+* Como o NVDA 2018.1 já trás incluída a caixa de selecção por toque, essa
+  caixa de selecção deixou de fazer parte deste extra.
 
 ## Versão 17.12
 
@@ -87,11 +88,11 @@ this checkbox or manually toggle touch passthrough.
 * Adicionada uma caixa de selecção oculta na caixa de diálogo Interacção por
   toque para desativar completamente o suporte por toque (disponível se
   outros perfis além do da configuração normal estiverem activos).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NvDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using NVDA 2018.1 or later.
+* Se estiver a usar o NVDA 2018.1 ou posteriores, a caixa de diálogo
+  interacções por toque será listada duas vezes no menu de preferências do
+  NVDA. O segundo item é o diálogo que vem com o add-on. 
+* No diálogo de interacção de toque para o extra, o modo de digitar toque
+  não é mostrado se usar versões do NVDA posteriores à 2018.1.
 
 ## Versão 17.10
 
