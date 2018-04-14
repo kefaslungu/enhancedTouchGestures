@@ -302,6 +302,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 # Add-on config database
 confspec = {
+	"touchTyping": "boolean(default=false)",
 	"commandPassthroughDuration": "integer(min=3, max=10, default=5)",
 	"manualPassthroughToggle": "boolean(default=false)",
 	"noTouchSupport": "boolean(default=false)",
