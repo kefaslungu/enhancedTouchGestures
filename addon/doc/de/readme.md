@@ -77,6 +77,11 @@ die Touch-Funktionalität von NVDA wieder zu aktivieren, deaktivieren Sie
 entweder dieses Kontrollkästchen oder schalten Sie das Durchreichen der
 Touch-Gesten manuell ein.
 
+## Version 18.04
+
+* Resolves an issue where touch interaction category in NVDA Settings panel
+  may cause error sounds to be heard due to changes made from this add-on.
+
 ## Version 18.03
 
 * NVDA 2018.1 ist erforderlich.

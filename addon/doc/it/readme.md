@@ -66,6 +66,11 @@ turn off touch support for that profile. This is useful in apps that provide
 their own touch commands. To restore touch functionality, either uncheck
 this checkbox or manually toggle touch passthrough.
 
+## Version 18.04
+
+* Resolves an issue where touch interaction category in NVDA Settings panel
+  may cause error sounds to be heard due to changes made from this add-on.
+
 ## Version 18.03
 
 * NVDA 2018.1 is required.

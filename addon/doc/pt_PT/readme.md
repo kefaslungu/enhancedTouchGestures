@@ -73,6 +73,12 @@ toque para esse perfil. Isto é útil em aplicações que fornecem os seus
 próprios comandos de toque. Para restaurar a funcionalidade de toque,
 desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
 
+## Versão 18.04
+
+* Resolve um problema em que a categoria de interacção por toque no painel
+  Configurações do NVDA pode causar sons de erro, devido a alterações feitas
+  a partir deste extra.
+
 ## Versão 18.03
 
 * É necessário o NVDA 2018.1

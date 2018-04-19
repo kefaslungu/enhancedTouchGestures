@@ -70,6 +70,11 @@ turn off touch support for that profile. This is useful in apps that provide
 their own touch commands. To restore touch functionality, either uncheck
 this checkbox or manually toggle touch passthrough.
 
+## Version 18.04
+
+* Ispravljena greška gdje kategorija Interakcija dodirom u postavkama NVDA
+  može uzrokovati reprodukciju zvukova greške zbog promjena u dodatku.
+
 ## Version 18.03
 
 * Zahtijeva NVDA 2018.1

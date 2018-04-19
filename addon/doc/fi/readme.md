@@ -74,6 +74,12 @@ tarjoavat omia kosketuskomentojaan. Palauta kosketustuki käyttöön joko
 poistamalla valintaruudun valinta tai vaihtamalla kosketuksen
 läpivientitilaa manuaalisesti.
 
+## Versio 18.04
+
+* Ratkaisee ongelman, jossa NVDA-asetusruudun
+  Kosketusvuorovaikutus-kategoria saattaa aiheuttaa virheäänen kuulumisen
+  tähän lisäosaan tehtyjen muutosten vuoksi.
+
 ## Versio 18.03
 
 * NVDA 2018.1 vaaditaan.

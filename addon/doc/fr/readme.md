@@ -77,6 +77,12 @@ qui fournissent leurs propres commandes tactiles. Pour restaurer la
 fonctionnalité tactile, décochez cette case à cocher ou basculer
 manuellement l'émulation tactile.
 
+## Version 18.04
+
+* Résout un problème où la catégorie interaction tactile dans le panneau
+  Paramètres de NVDA peut provoquer l'apparition de sons d'erreur en raison
+  des modifications apportées à partir de ce module complémentaire.
+
 ## Version 18.03
 
 * NVDA 2018.1 est requis.
