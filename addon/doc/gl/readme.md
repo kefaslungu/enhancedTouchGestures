@@ -72,10 +72,11 @@ para ese perfil. Esto é útil en aplicacións que proporcionen as súas
 proprias ordes tactiles. Para restaurar a funcionalidade tactil, desmarca
 esta caixa de verificación ou activa manualmente deixar pasar toque.
 
-## Version 18.04
+## Versión 18.04
 
-* Resolves an issue where touch interaction category in NVDA Settings panel
-  may cause error sounds to be heard due to changes made from this add-on.
+* Resolto un erro que podería causar a reprodución de sons de erro na
+  categoría de Interacción Táctil no panel de Preferencias do NVDA debido a
+  cambios feitos por este complemento.
 
 ## Versión 18.03
 
