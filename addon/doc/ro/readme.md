@@ -74,10 +74,11 @@ dezactivat complet. Acest lucru este util în aplicațiile care oferă
 propriile comenzi de atingere. Pentru a restabili funcționalitatea tactilă,
 debifați această casetă sau comutați manual la trecerea prin atingere.
 
-## Version 18.04
+## Versiunea 18.04
 
-* Resolves an issue where touch interaction category in NVDA Settings panel
-  may cause error sounds to be heard due to changes made from this add-on.
+* Rezolvă o problemă în care categoria interacțiunii tactile din panoul de
+  setări al NVDA-ului poate cauza auzirea sunetelor de eroare datorită
+  modificărilor făcute n acest supliment.
 
 ## Versiunea 18.03
 
