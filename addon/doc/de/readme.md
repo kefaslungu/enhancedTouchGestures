@@ -79,8 +79,9 @@ Touch-Gesten manuell ein.
 
 ## Version 18.04
 
-* Resolves an issue where touch interaction category in NVDA Settings panel
-  may cause error sounds to be heard due to changes made from this add-on.
+* Behebt ein Problem, bei dem die Touch-Interaktionskategorie im
+  NVDA-Einstellungsfenster aufgrund von vorgenommenen Änderungen durch die
+  Erweiterung zu Fehlertönen führen kann.
 
 ## Version 18.03
 
