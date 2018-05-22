@@ -50,16 +50,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
 			config.configProfileSwitched.register(self.handleConfigProfileSwitch)
-			self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
-			self.touchSettings = self.prefsMenu.Append(wx.ID_ANY, _("&Touch Interaction..."), _("Touchscreen interaction settings"))
-			gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onConfigDialog, self.touchSettings)
+			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
 		else:
 			self.prefsMenu = None
 			self.touchSettings = None
 		self.touchPassthroughTimer = None
-
-	def onConfigDialog(self, evt):
-		gui.mainFrame._popupSettingsDialog(TouchInteractionDialog)
 
 	def terminate(self):
 		try:
@@ -309,35 +304,30 @@ confspec = {
 }
 config.conf.spec["touch"] = confspec
 
-class TouchInteractionDialog(gui.SettingsDialog):
+class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 	# Translators: This is the label for the touch interaction settings dialog.
-	title = _("Touch Interaction")
+	title = _("Enhanced Touch Gestures")
 
 	def makeSettings(self, settingsSizer):
 		touchHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Never, EVER allow touch support to be disabled completely if using normal configuration (only manual passthrough will be allowed).
 		if config.conf.profiles[-1].name is not None:
 			# Translators: This is the label for a checkbox in the
-			# touch interaction settings dialog.
+			# Enhanced Touch Gestures settings panel.
 			self.noTouchSupportCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("Completely disable touch interaction support")))
 			self.noTouchSupportCheckBox.SetValue(config.conf["touch"]["noTouchSupport"])
-		# Translators: The label for a setting in touch interaction dialog to allow users to interact directly with touchscreens for specified duration in seconds.
+		# Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 		self.commandPassthroughDuration=touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
 		# Translators: a checkbox to allow passthrough to be toggled manually.
 		self.manualPassthroughCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("&Manually toggle touch passthrough")))
 		self.manualPassthroughCheckBox.SetValue(config.conf["touch"]["manualPassthroughToggle"])
 
-	def postInit(self):
-		if hasattr(self, "noTouchSupportCheckBox"): self.noTouchSupportCheckBox.SetFocus()
-		else: self.commandPassthroughDuration.SetFocus()
-
-	def onOk(self,evt):
+	def onSave(self):
 		if config.conf.profiles[-1].name is not None:
 			if not config.conf["touch"]["noTouchSupport"] and self.noTouchSupportCheckBox.IsChecked():
-				message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to this dialog and uncheck 'disable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
+				message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to Enhanced Touch Gestures panel in NVDA Settings and uncheck 'disable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
 				if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
 					return
 			config.conf["touch"]["noTouchSupport"]=self.noTouchSupportCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
-		super(TouchInteractionDialog, self).onOk(evt)
