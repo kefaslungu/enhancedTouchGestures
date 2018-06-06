@@ -59,7 +59,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def terminate(self):
 		try:
 			self.prefsMenu.RemoveItem(self.touchSettings)
-		except (RuntimeError, AttributeError, wx.PyDeadObjectError):
+		except:
 			pass
 
 	# Certain touch objects.
