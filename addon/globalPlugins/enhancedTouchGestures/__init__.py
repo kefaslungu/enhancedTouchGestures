@@ -52,13 +52,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			config.configProfileSwitched.register(self.handleConfigProfileSwitch)
 			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
 		else:
-			self.prefsMenu = None
 			self.touchSettings = None
 		self.touchPassthroughTimer = None
 
 	def terminate(self):
 		try:
-			self.prefsMenu.RemoveItem(self.touchSettings)
+			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(EnhancedTouchGesturesPanel)
 		except:
 			pass
 
