@@ -7,8 +7,8 @@ Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
 exploración.
 
-Nota: este complemento require do NVDA 2018.1 ou posterior executándose nun
-computador con pantalla táctil co Windows 8.1 ou 10.
+Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Ordes
 
@@ -71,6 +71,13 @@ respondento si ao se cho pedir desactivará por compreto o soporte tactil
 para ese perfil. Esto é útil en aplicacións que proporcionen as súas
 proprias ordes tactiles. Para restaurar a funcionalidade tactil, desmarca
 esta caixa de verificación ou activa manualmente deixar pasar toque.
+
+## Version 18.06
+
+* Add-on settings is now found in new multi-category NVDA Settings screen
+  under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is
+  required.
+* Fixed compatibility issues with wxPython 4.
 
 ## Versión 18.04
 

@@ -6,7 +6,7 @@
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Huom: Tämä lisäosa vaatii NVDA 2018.1:n tai uudemman ja
+Huom: Tämä lisäosa vaatii NVDA 2018.2:n tai uudemman ja
 kosketusnäyttötietokoneen, jossa on asennettuna Windows 8.1 tai 10.
 
 ## Komennot
@@ -73,6 +73,13 @@ käytöstä kyseisessä profiilissa. Tästä on hyötyä sovelluksissa, jotka
 tarjoavat omia kosketuskomentojaan. Palauta kosketustuki käyttöön joko
 poistamalla valintaruudun valinta tai vaihtamalla kosketuksen
 läpivientitilaa manuaalisesti.
+
+## Versio 18.06
+
+* Lisäosan asetukset löytyvät nyt uudesta monikategoriaisesta
+  Asetukset-ruudusta kohdasta "Laajennetut kosketuseleet". Tämän seurauksena
+  edellytetään NVDA 2018.2:ta.
+* Korjattu wxPython 4:n kanssa ilmenneitä yhteensopivuusongelmia.
 
 ## Versio 18.04
 
