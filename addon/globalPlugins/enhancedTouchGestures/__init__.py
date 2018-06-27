@@ -24,8 +24,10 @@ import gui
 import wx
 
 def playAudioCoordinates(x, y):
-	screenWidth, screenHeight = api.getDesktopObject().location[-2:]
-	mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+	# play audio coordinates function might be gone in a future NVDA release.
+	if hasattr(mouseHandler, "playAudioCoordinates"):
+		screenWidth, screenHeight = api.getDesktopObject().location[-2:]
+		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
 
 # Touch keyboard enhancements
 class TouchKey(UIA):
