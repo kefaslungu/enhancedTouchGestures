@@ -6,8 +6,8 @@
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Hinweis: Diese Erweiterung benötigt NVDA 2018.2 oder höher auf einem
+Touchscreen-Computer mit Windows 8.1 oder 10.
 
 ## Befehle
 
@@ -79,10 +79,10 @@ Touch-Gesten manuell ein.
 
 ## Version 18.06
 
-* Add-on settings is now found in new multi-category NVDA Settings screen
-  under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is
-  required.
-* Fixed compatibility issues with wxPython 4.
+* Einstellungen für die Erweiterung finden Sie nun im neuen
+  NVDA-Einstellungsbildschirm unter der Kategorie "Erweiterte
+  Touch-Gesten". Daher ist NVDA 2018.2 erforderlich.
+* Kompatibilitätsprobleme mit wxPython 4 behoben.
 
 ## Version 18.04
 
