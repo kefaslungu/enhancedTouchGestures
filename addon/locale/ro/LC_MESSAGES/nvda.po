@@ -8,40 +8,31 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2018-01-25 18:44+0100\n"
-"Last-Translator: Adriani Botez <adriani.botez@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-06-20 12:07+0300\n"
+"Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-
-msgid "&Touch Interaction..."
-msgstr "Interac&țiune tactilă..."
-
-msgid "Touchscreen interaction settings"
-msgstr "Setări interacțiune ecran tactil"
+"X-Generator: Poedit 2.0.6\n"
+"Language-Team: \n"
 
 #. Translators: Reported when the object has no location for the mouse to move to it.
 msgid "object has no location"
 msgstr "obiectul nu are nicio locație"
 
 #. Translators: This is the label for the touch interaction settings dialog.
-msgid "Touch Interaction"
-msgstr "Interacțiune tactilă"
+#. Add-on summary, usually the user visible name of the addon.
+#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+msgid "Enhanced Touch Gestures"
+msgstr "Enhanced Touch Gestures"
 
 #. Translators: This is the label for a checkbox in the
-#. touch interaction settings dialog.
+#. Enhanced Touch Gestures settings panel.
 msgid "Completely disable touch interaction support"
-msgstr "dezactivează complet suportul interacțiunii tactile"
+msgstr "Dezactivează complet suportul interacțiunii tactile"
 
-#. Translators: This is the label for a checkbox in the
-#. touch interaction settings dialog.
-msgid "&Touch typing mode"
-msgstr "&Mod de scriere tactilă"
-
-#. Translators: The label for a setting in touch interaction dialog to allow users to interact directly with touchscreens for specified duration in seconds.
+#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
 msgstr "&Pune pe pauză suportul tactil al NVDA-ului (durată în secunde)"
 
@@ -52,23 +43,19 @@ msgstr "Activeaz&ă sau dezactivează manual passthroug-ul"
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to this dialog and uncheck 'disable touch "
-"interaction support' checkbox. Are you sure you wish to completely disable "
-"touch interaction support?"
+"support, you need to return to Enhanced Touch Gestures panel in NVDA "
+"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
+"sure you wish to completely disable touch interaction support?"
 msgstr ""
 "Sunteți pe punctul de a dezactiva complet suportul interacțiunii tactile, "
 "astfel încât ecranul tactil poate fi utilizat ca și cum NVDA nu rulează. "
-"Pentru a activa suportul tactil, trebuie să reveniți la acest dialog și să "
-"debifați caseta 'dezactivează suportul interacțiunii tactile'. Sunteți sigur "
-"că doriți să dezactivați complet suportul interacțiunii tactile?"
+"Pentru a activa suportul tactil, trebuie să reveniți la panoul Enhanced "
+"Touch Gestures din setările NVDA și să debifați caseta 'dezactivează "
+"suportul interacțiunii tactile'. Sunteți sigur că doriți să dezactivați "
+"complet suportul interacțiunii tactile?"
 
 msgid "Disable touch interaction support"
 msgstr "Dezactivează suportul interacțiunii tactile"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-msgid "Enhanced Touch Gestures"
-msgstr "Enhanced Touch Gestures"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -82,3 +69,15 @@ msgstr ""
 "ajutor.\n"
 "\tNecesită un computer cu funcția touch activată, cu Windows 8.1 sau mai nou "
 "și cu NVDA 2017.4 sau mai nou instalat."
+
+#~ msgid "&Touch Interaction..."
+#~ msgstr "Interac&țiune tactilă..."
+
+#~ msgid "Touchscreen interaction settings"
+#~ msgstr "Setări interacțiune ecran tactil"
+
+#~ msgid "Touch Interaction"
+#~ msgstr "Interacțiune tactilă"
+
+#~ msgid "&Touch typing mode"
+#~ msgstr "&Mod de scriere tactilă"

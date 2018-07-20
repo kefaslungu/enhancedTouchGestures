@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2018-01-05 17:45+0100\n"
+"PO-Revision-Date: 2018-06-26 17:45+0100\n"
 "Last-Translator: Juan C. Buño <oprisniki@gmail.com>\n"
 "Language-Team: Spanish translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
@@ -17,31 +17,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.11\n"
 
-msgid "&Touch Interaction..."
-msgstr "&Interacción Táctil..."
-
-msgid "Touchscreen interaction settings"
-msgstr "Opciones de interacción de la pantalla táctil"
-
 #. Translators: Reported when the object has no location for the mouse to move to it.
 msgid "object has no location"
 msgstr "el objeto no tiene localización"
 
 #. Translators: This is the label for the touch interaction settings dialog.
-msgid "Touch Interaction"
-msgstr "Interacción Táctil"
+#. Add-on summary, usually the user visible name of the addon.
+#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+msgid "Enhanced Touch Gestures"
+msgstr "Enhanced Touch Gestures"
 
 #. Translators: This is the label for a checkbox in the
-#. touch interaction settings dialog.
+#. Enhanced Touch Gestures settings panel.
 msgid "Completely disable touch interaction support"
 msgstr "Deshabilita completamente el soporte de interacción táctil"
 
-#. Translators: This is the label for a checkbox in the
-#. touch interaction settings dialog.
-msgid "&Touch typing mode"
-msgstr "Modo de escritura &Táctil"
-
-#. Translators: The label for a setting in touch interaction dialog to allow users to interact directly with touchscreens for specified duration in seconds.
+#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
 msgstr "&Pausa el soporte táctil de NVDA (duración en segundos)"
 
@@ -52,24 +43,19 @@ msgstr "Conmuta &Manualmente dejar pasar toque"
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to this dialog and uncheck 'disable touch "
-"interaction support' checkbox. Are you sure you wish to completely disable "
-"touch interaction support?"
+"support, you need to return to Enhanced Touch Gestures panel in NVDA "
+"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
+"sure you wish to completely disable touch interaction support?"
 msgstr ""
 "Vas a desactivar el soporte de interacción táctil completamente tal que la "
 "pantalla táctil pueda utilizarse como si NVDA no esté en ejecución. Para "
-"habilitar el soporte táctil, tienes que volver a este diálogo y desmarcar la "
-"casilla de verificación 'deshabilitar soporte de interacción táctil'. ¿Estás "
-"seguro de que deseas deshabilitar completamente el soporte de interacción "
-"táctil?"
+"habilitar el soporte táctil, tienes que volver al panel to Enhanced Touch "
+"Gestures y desmarcar la casilla de verificación 'deshabilitar soporte de "
+"interacción táctil'. ¿Estás seguro de que deseas deshabilitar completamente "
+"el soporte de interacción táctil?"
 
 msgid "Disable touch interaction support"
 msgstr "Deshabilitar soporte de interacción táctil"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-msgid "Enhanced Touch Gestures"
-msgstr "Enhanced Touch Gestures"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -83,6 +69,18 @@ msgstr ""
 "y de ayuda.\n"
 "\tRequieren de un ordenador táctil habilitado con Windows 8.1 o posterior "
 "con NVDA 2017.4 o posterior instalado."
+
+#~ msgid "&Touch Interaction..."
+#~ msgstr "&Interacción Táctil..."
+
+#~ msgid "Touchscreen interaction settings"
+#~ msgstr "Opciones de interacción de la pantalla táctil"
+
+#~ msgid "Touch Interaction"
+#~ msgstr "Interacción Táctil"
+
+#~ msgid "&Touch typing mode"
+#~ msgstr "Modo de escritura &Táctil"
 
 #~ msgid "Reports the object and content directly under your finger"
 #~ msgstr "Anuncia el objeto y el contenido directamente bajo tu dedo"

@@ -7,7 +7,7 @@ Ce module complémentaire fournit des gestes supplémentaires sur l'écran
 tactile pour NVDA. Il fournit également un ensemble de gestes pour parcourir
 facilement lorsque vous êtes en mode navigation.
 
-Notez que ce module complémentaire requiert NVDA 2018.1 ou une version
+Notez que ce module complémentaire requiert NVDA 2018.2 ou une version
 ultérieure s'exécutant sur un ordinateur tactile avec Windows 8 ou 10.
 
 ## Commandes
@@ -76,6 +76,13 @@ ce profil sera complètement désactivé. Ceci est utile dans les applications
 qui fournissent leurs propres commandes tactiles. Pour restaurer la
 fonctionnalité tactile, décochez cette case à cocher ou basculer
 manuellement l'émulation tactile.
+
+## Version 18.06
+
+* Les paramètres du module complémentaire sont désormais disponibles dans le
+  nouvel écran Paramètres NVDA multi-catégories sous la catégorie "Enhanced
+  Touch Gestures". Par conséquent, NVDA 2018.2 est requis.
+* Correction de problèmes de compatibilité avec wxPython 4.
 
 ## Version 18.04
 

@@ -6,7 +6,7 @@
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità esplorazione
 
-Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
+Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
 ## Comandi
@@ -48,36 +48,50 @@ verticalmente per cambiare i valori.
 Questa opzione funziona se sono state abilitate le coordinate mouse dalle
 impostazioni di NVDA.
 
-## Touch command passthrough
+## Passa il comando successivo al TouchScreen
 
-An unassigned command is available to allow you to use touchscreen gestures
-as though NVDA is not running. In order to use this, you need to assign a
-command (via Input Gestures dialog) under Enhanced Touch Gestures category
-to let you do this for up to ten seconds or toggle this manually. Then go to
-NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch
-command value between 3 to 10 seconds (default is 5 seconds).
+è disponibile un comando non associato ad alcun gesto per consentire di
+utilizzare il touchScreen come se NVDA non fosse in esecuzione. Per servirsi
+di questa caratteristica, è necessario assegnare un comando (attraverso la
+finestra gesti e tasti di immissione) sotto la categoria Enhanced Touch
+Gestures in modo tale da permettere di operare in questa modalità per un
+massimo di dieci secondi oppure abilitare/disabilitare l'impostazione
+manualmente. Poi recarsi nel menu preferenze di NVDA, selezionare
+interazione al tocco, quindi configurare il valore del parametro pausa tocco
+di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
 
-## Disable touch support in profiles
+## disabilita supporto al tocco dai profili
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncheck
-this checkbox or manually toggle touch passthrough.
+Se sono attivi profili diversi da quello chiamato configurazione normale e
+ci si reca nella finestra interazioni al tocco, si troverà una casella di
+controllo chiamata "disattiva completamente il supporto al tocco". Attivando
+la casella di controllo e rispondendo in maniera affermativa alla richiesta
+seguente, si disattiverà completamente il supporto al touchscreen da parte
+di NVDA per il profilo di configurazione attualmente in uso. Ciò è utile per
+quelle app che dispongono già di comandi proprietari da eseguirsi nel
+touchScreen. Per rirpristinare il supporto al tocco da parte di NVDA,
+disattivare la casella di controllo in questione oppure servirsi della
+funzione passa il prossimo gesto al touchscreen.
 
-## Version 18.04
+## Versione 18.06
+
+* Le impostazioni del componente aggiuntivo si trovano ora nella finestra
+  multicategoria impostazioni di NVDA, alla categoria "enhanced Touch
+  Gestures". Ne deriva che è necessario usare NVDA 2018.2.
+* Risolti problemi di compatibilità con wxPython 4.
+
+## Versione 18.04
 
 * Resolves an issue where touch interaction category in NVDA Settings panel
   may cause error sounds to be heard due to changes made from this add-on.
 
-## Version 18.03
+## Versione 18.03
 
-* NVDA 2018.1 is required.
+* è richiesto NVDA 2018.1.
 * Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
   longer included in this add-on.
 
-## Version 17.12
+## Versione 17.12
 
 * Requires NVDA 2017.4. Specifically, this add-on can now handle
   configuration profile switches.
@@ -92,21 +106,21 @@ this checkbox or manually toggle touch passthrough.
 * In Touch Interaction dialog for the add-on, touch typing mode is no longer
   shown if using NVDA 2018.1 or later.
 
-## Version 17.10
+## Versione 17.10
 
 * Due to support policy from Microsoft, Windows 8 (original release) is no
   longer supported.
 * NVDA will no longer announce screen orientation twice when running NVDA
   2017.4 development snapshots.
 
-## Version 17.07.1
+## Versione 17.07.1
 
 * Added an option in touch interaction dialog to manually toggle touch
   passthrough without use of a timer.
 * With manual passthrough mode off, if touch passthrough is turned on before
   the passthrough duration expires, touch interaction would be enabled.
 
-## Version 17.07
+## Versione 17.07
 
 * Added a new dialog named Touch Interaction under NVDA's preferences menu
   to configure how NVDA works with touchscreens.
@@ -123,7 +137,7 @@ this checkbox or manually toggle touch passthrough.
 * Due to changes made when playing screen coordinates, NVDA 2017.1 or later
   is required.
 
-##Version 17.03
+##Versione 17.03
 
 * Risolto un problema che impediva la riproduzione delle coordinate audio
   con NVDA 2017.1 o successive.

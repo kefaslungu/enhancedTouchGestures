@@ -7,7 +7,7 @@ Ovaj dodatak omogućuje dodatne dodirničke geste u NVDA čitaču zaslona. Ovaj
 dodatak također dodaje set dodirnih gesti za lakšu navigaciju u načinu
 pregleda.
 
-Note: this add-on requires NVDA 2018.1 or later running on a touchscreen
+Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
 ## Komande
@@ -69,6 +69,13 @@ support". Checking this box and answering yes if prompted will completely
 turn off touch support for that profile. This is useful in apps that provide
 their own touch commands. To restore touch functionality, either uncheck
 this checkbox or manually toggle touch passthrough.
+
+## Version 18.06
+
+* Add-on settings is now found in new multi-category NVDA Settings screen
+  under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is
+  required.
+* Fixed compatibility issues with wxPython 4.
 
 ## Version 18.04
 

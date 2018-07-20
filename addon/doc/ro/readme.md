@@ -6,7 +6,7 @@
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
 
-Rețineți că aveți nevoie de NVDA 2018.1 sau mai nou instalat pe un computer
+Rețineți că aveți nevoie de NVDA 2018.2 sau mai nou instalat pe un computer
 cu touchscreen care rulează Windows 8.1 sau 10.
 
 ## Comenzi
@@ -73,6 +73,13 @@ răspundeți da, în cazul în care vi se solicită, suportul tactil va fi
 dezactivat complet. Acest lucru este util în aplicațiile care oferă
 propriile comenzi de atingere. Pentru a restabili funcționalitatea tactilă,
 debifați această casetă sau comutați manual la trecerea prin atingere.
+
+## Versiunea 18.06
+
+* Setările suplimentului se află în ecranul multicategoriei de setări, în
+  categoria „Enhanced Touch Gestures”. Ca rezultat al acestei schimbări,
+  este necesară versiunea NVDA 2018.2
+* S-au rezolvat problemele de compatibilitate cu wxPython 4.
 
 ## Versiunea 18.04
 

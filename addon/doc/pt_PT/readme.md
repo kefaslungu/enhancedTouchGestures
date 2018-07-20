@@ -7,7 +7,7 @@ Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Nota: este extra requer o NVDA 2018.1 ou posterior executado num computador
+Nota: este extra requer o NVDA 2018.2 ou posterior executado num computador
 touchscreen com o Windows 8.1 ou 10.
 
 ## Comandos:
@@ -72,6 +72,13 @@ respondendo sim, se solicitado, irá desactivar completamente o suporte ao
 toque para esse perfil. Isto é útil em aplicações que fornecem os seus
 próprios comandos de toque. Para restaurar a funcionalidade de toque,
 desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
+
+## Versão 18.06
+
+* Agora, as configurações adicionais encontram-se no novo ecrã
+  multi-categoria Configurações do NVDA, na categoria "comandos de toque
+  aprimorados". Como resultado, é necessário o NVDA 2018.2.
+* Corrigidos problemas de compatibilidade com o wxPython 4.
 
 ## Versão 18.04
 
