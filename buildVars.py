@@ -27,6 +27,8 @@ addon_info = {
 	"addon_url" : None,
 	# File name for the add-on help file.
 	"addon_docFileName" : "readme.html"
+	# Minimum NVDA version supported
+	"addon_minimumNVDAVersion" : "2018.2",
 }
 
 
