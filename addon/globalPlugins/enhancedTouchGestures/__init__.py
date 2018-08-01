@@ -51,7 +51,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
-			config.configProfileSwitched.register(self.handleConfigProfileSwitch)
+			# NVDA 2018.3 and later.
+			if hasattr(config, "post_configProfileSwitch"):
+				config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
+			else: #2018.2 and earlier.
+				config.configProfileSwitched.register(self.handleConfigProfileSwitch)
 			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
 		else:
 			self.touchSettings = None
