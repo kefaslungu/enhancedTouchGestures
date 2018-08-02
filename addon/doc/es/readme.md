@@ -75,6 +75,10 @@ ese perfil. Esto es útil en aplicaciones que proporcionen sus propias
 órdenes táctiles. Para restaurar la funcionalidad táctil, desmarca esta
 casilla de verificación o activa manualmente dejar pasar toque.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Versión 18.06
 
 * La configuración del complemento ahora se encuentra en la nueva pantalla

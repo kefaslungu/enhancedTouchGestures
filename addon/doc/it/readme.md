@@ -73,6 +73,10 @@ touchScreen. Per rirpristinare il supporto al tocco da parte di NVDA,
 disattivare la casella di controllo in questione oppure servirsi della
 funzione passa il prossimo gesto al touchscreen.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Versione 18.06
 
 * Le impostazioni del componente aggiuntivo si trovano ora nella finestra

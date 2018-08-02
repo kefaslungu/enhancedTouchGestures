@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the enhancedTouchGestures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enhancedTouchGestures 17.12\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2017-12-15 06:10+1000\n"
+"PO-Revision-Date: 2018-07-28 19:13+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#. Translators: Reported when the object has no location for the mouse to move to it.
+msgid "object has no location"
+msgstr "Obiekt nie ma lokalizacji"
+
+#. Translators: This is the label for the touch interaction settings dialog.
+#. Add-on summary, usually the user visible name of the addon.
+#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+msgid "Enhanced Touch Gestures"
+msgstr "Enhanced Touch Gestures"
+
+#. Translators: This is the label for a checkbox in the
+#. Enhanced Touch Gestures settings panel.
+msgid "Completely disable touch interaction support"
+msgstr "Całkowicie wyłącza wsparcie interakcji dotykowej"
+
+#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
+msgid "&Pause NVDA's touch support (duration in seconds)"
+msgstr "&Zatrzymaj wsparcie interakcji dotykowej (w sekundach)"
+
+#. Translators: a checkbox to allow passthrough to be toggled manually.
+msgid "&Manually toggle touch passthrough"
+msgstr "&Ręczne przełączanie dotyku"
+
+#, fuzzy
+msgid ""
+"You are about to turn off touch interaction support completely so the "
+"touchscreen can be used as though NVDA is not running. To enable touch "
+"support, you need to return to Enhanced Touch Gestures panel in NVDA "
+"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
+"sure you wish to completely disable touch interaction support?"
+msgstr ""
+"Zamykasz wsparcie interakcji dotykowej. Po jego zamknięciu, ekran dotykowy "
+"można będzie obsługiwać tylko za pomocą standardowych gestów, niezależnych "
+"od NVDA. Aby włączyć wsparcie dotyku, należy powrócić do tego okna "
+"dialogowego i odznaczyć pole wyboru 'wyłącz wsparcie interakcji dotykowej'. "
+"Czy na pewno chcesz wyłączyć wsparcie interakcji dotykowej?"
+
+msgid "Disable touch interaction support"
+msgstr "Wyłącz wsparcie interakcji dotykowej"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#, fuzzy
+msgid ""
+"A suite of additional touch commands, including navigation and help "
+"commands.\n"
+"\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA "
+"2017.4 or later installed."
+msgstr ""
+"Jest to zestaw dodatkowych komend dotykowych, takich jak tabulator oraz "
+"komendy pomocy.\n"
+"\tWymaga włączonego interfejsu dotykowego, systemu Windows 8.0 lub nowszego "
+"oraz NVDA 2012.3 lub nowszej."
+
+#~ msgid "&Touch Interaction..."
+#~ msgstr "&Ustawienia interakcji Dotykowej..."
+
+#~ msgid "Touchscreen interaction settings"
+#~ msgstr "Ustawienia interakcji z ekranem dotykowym"
+
+#~ msgid "Touch Interaction"
+#~ msgstr "Interakcja dotykowa"
+
+#~ msgid "&Touch typing mode"
+#~ msgstr "&Tryb pisania dotykowego"

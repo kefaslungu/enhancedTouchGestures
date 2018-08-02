@@ -73,6 +73,10 @@ den pågældende profil. Dette er nyttigt i apps der anvender deres egne
 touch-kommandoer. Hvis du vil gendanne touch funktionalitet, enten fjerne
 markeringen i dette afkrydsningsfelt eller manuelt skifte touch passthrough.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Version 18.06
 
 * Tilføjelsesindstillinger er nu at finde i kategorien "Udvidede

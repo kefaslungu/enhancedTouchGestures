@@ -77,6 +77,10 @@ qui fournissent leurs propres commandes tactiles. Pour restaurer la
 fonctionnalité tactile, décochez cette case à cocher ou basculer
 manuellement l'émulation tactile.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Version 18.06
 
 * Les paramètres du module complémentaire sont désormais disponibles dans le

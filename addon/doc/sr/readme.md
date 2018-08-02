@@ -59,6 +59,10 @@ turn off touch support for that profile. This is useful in apps that provide
 their own touch commands. To restore touch functionality, either uncheck
 this checkbox or manually toggle touch passthrough.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Version 18.06
 
 * Add-on settings is now found in new multi-category NVDA Settings screen

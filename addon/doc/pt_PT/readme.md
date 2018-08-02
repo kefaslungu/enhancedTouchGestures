@@ -73,6 +73,10 @@ toque para esse perfil. Isto é útil em aplicações que fornecem os seus
 próprios comandos de toque. Para restaurar a funcionalidade de toque,
 desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
 
+## Versão 18.08
+
+* Compatível com NVDA 2018.3 e futuras versões.
+
 ## Versão 18.06
 
 * Agora, as configurações adicionais encontram-se no novo ecrã

@@ -74,6 +74,10 @@ tarjoavat omia kosketuskomentojaan. Palauta kosketustuki käyttöön joko
 poistamalla valintaruudun valinta tai vaihtamalla kosketuksen
 läpivientitilaa manuaalisesti.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Versio 18.06
 
 * Lisäosan asetukset löytyvät nyt uudesta monikategoriaisesta

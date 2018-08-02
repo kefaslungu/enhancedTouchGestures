@@ -77,6 +77,10 @@ die Touch-Funktionalität von NVDA wieder zu aktivieren, deaktivieren Sie
 entweder dieses Kontrollkästchen oder schalten Sie das Durchreichen der
 Touch-Gesten manuell ein.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Version 18.06
 
 * Einstellungen für die Erweiterung finden Sie nun im neuen

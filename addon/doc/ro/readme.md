@@ -74,6 +74,10 @@ dezactivat complet. Acest lucru este util în aplicațiile care oferă
 propriile comenzi de atingere. Pentru a restabili funcționalitatea tactilă,
 debifați această casetă sau comutați manual la trecerea prin atingere.
 
+## Version 18.08
+
+* Compatible with NVDA 2018.3 and future versions.
+
 ## Versiunea 18.06
 
 * Setările suplimentului se află în ecranul multicategoriei de setări, în
