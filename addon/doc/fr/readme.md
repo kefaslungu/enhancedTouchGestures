@@ -79,7 +79,7 @@ manuellement l'émulation tactile.
 
 ## Version 18.08
 
-* Compatible with NVDA 2018.3 and future versions.
+* Compatible avec NVDA 2018.3 et les versions futures.
 
 ## Version 18.06
 
