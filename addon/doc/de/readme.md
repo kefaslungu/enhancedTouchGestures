@@ -79,7 +79,7 @@ Touch-Gesten manuell ein.
 
 ## Version 18.08
 
-* Compatible with NVDA 2018.3 and future versions.
+* Kompatibel mit NVDA 2018.3 und zukünftigen Versionen.
 
 ## Version 18.06
 

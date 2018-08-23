@@ -72,9 +72,9 @@ para ese perfil. Esto é útil en aplicacións que proporcionen as súas
 proprias ordes tactiles. Para restaurar a funcionalidade tactil, desmarca
 esta caixa de verificación ou activa manualmente deixar pasar toque.
 
-## Version 18.08
+## Versión 18.08
 
-* Compatible with NVDA 2018.3 and future versions.
+* Compatible con NVDA 2018.3 e versións futuras.
 
 ## Versión 18.06
 
