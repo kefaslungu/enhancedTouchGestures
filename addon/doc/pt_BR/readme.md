@@ -7,8 +7,8 @@ Este complemento provê gestos adicionais para telas táteis no NVDA. Também
 provê um conjunto de gestos para uma navegabilidade mais fácil no modo de
 navegação.
 
-Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Nota: este complemento requer o NVDA 2018.2 ou posterior executando num
+computador com tela de toque com Windows 8.1 ou 10.
 
 ## Comandos
 
@@ -33,9 +33,8 @@ documento pelo elemento selecionado. Para trocar para o modo web, estando
 num documento de navegação, dê um toque com 3 dedos. Neste modo, deslizar
 acima ou abaixo com 1 dedo alterna o modo de navegação entre os elementos
 disponíveis, ao passo que deslizar à direita ou à esquerda com 1 dedo move
-para o elemento escolhidod seguinte ou anterior, respectivamente. Uma vez
-que você saia de um documento de navegação, o modo tátil para objetos é
-usado.
+para o elemento escolhido seguinte ou anterior, respectivamente. Uma vez que
+você saia de um documento de navegação, o modo tátil para objetos é usado.
 
 ## Modo tátil para opções de sintetizador
 
@@ -61,58 +60,60 @@ alternar manualmente. Depois vá ao menu do NVDA/Preferências/Interação Táti
 e configure o valor do comando tátil Pausar NVDA entre 3 e 10 segundos (o
 padrão é 5 segundos).
 
-## Disable touch support in profiles
+## Desativar o suporte tátil nos perfis
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncheck
-this checkbox or manually toggle touch passthrough.
+Se perfis diferentes da configuração normal estiverem ativos e se você for
+para a caixa de diálogo Interação por Toque, você verá uma caixa de seleção
+chamada "desativar completamente o suporte por toque". Marcar esta caixa e
+responder sim, se solicitado, desligará completamente o suporte tátil para
+esse perfil. Isso é útil em aplicativos que fornecem seus próprios comandos
+de toque. Para restaurar a funcionalidade de toque, desmarque esta caixa de
+seleção ou alterne manualmente a passagem tátil.
 
-## Version 18.08
+## Versão 18.08
 
-* Compatible with NVDA 2018.3 and future versions.
+* Compatível com o NVDA 2018.3 e versões futuras.
 
-## Version 18.06
+## Versão 18.06
 
-* Add-on settings is now found in new multi-category NVDA Settings screen
-  under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is
-  required.
-* Fixed compatibility issues with wxPython 4.
+* As configurações do complemento agora são encontradas na nova tela
+  multicategoria Configurações do NVDA, na categoria "Gestos Táteis
+  Aprimorados". Como resultado, o NVDA 2018.2 é necessário.
+* Corrigidos problemas de compatibilidade com o wxPython 4.
 
-## Version 18.04
+## Versão 18.04
 
-* Resolves an issue where touch interaction category in NVDA Settings panel
-  may cause error sounds to be heard due to changes made from this add-on.
+* Resolve um problema em que a categoria de interação por toque no painel
+  Configurações do NVDA pode causar sons de erro a serem ouvidos devido a
+  alterações feitas neste complemento.
 
-## Version 18.03
+## Versão 18.03
 
-* NVDA 2018.1 is required.
-* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
-  longer included in this add-on.
+* O NVDA 2018.1 é requerido.
+* Como o NVDA 2018.1 vem com a caixa de seleção digitação tátil, a caixa de
+  seleção não está mais incluída neste complemento.
 
-## Version 17.12
+## Versão 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NvDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using NVDA 2018.1 or later.
+* Requer o NVDA 2017.4. Especificamente, este complemento agora pode
+  manipular interruptores de perfil de configuração.
+* Como o NVDA 2017.4 inclui anúncio de orientação de tela, este recurso não
+  faz mais parte deste complemento.
+* Adicionada uma caixa de seleção oculta na caixa de diálogo Interação por
+  toque para desativar completamente o suporte ao toque (disponível se
+  outros perfis além da configuração normal estiverem ativos).
+* Se estiver usando o NVDA 2018.1 ou posterior, a caixa de diálogo Interação
+  por Toque será listada duas vezes no menu de preferências do NvDA. O
+  segundo item é o diálogo que vem com o complemento.
+* Na caixa de diálogo Interação por toque do complemento, o modo de
+  digitação não é mais exibido se você usar o NVDA 2018.1 ou posterior.
 
-## Version 17.10
+## Versão 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* Devido à política de suporte da Microsoft, o Windows 8 (versão original)
+  não é mais suportado.
+* O NVDA deixará de anunciar a orientação da tela duas vezes quando executar
+  os snapshots de desenvolvimento do NVDA 2017.4.
 
 ## Versão 17.07.1
 
