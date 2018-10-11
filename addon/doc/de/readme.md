@@ -1,7 +1,7 @@
 # Erweiterte Touch-Gesten #
 
 * Autor: Joseph Lee
-* Herunterladen der [stabilen Version][1]
+* [Stabile Version herunterladen][1]
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
