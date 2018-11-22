@@ -75,7 +75,7 @@ markeringen i dette afkrydsningsfelt eller manuelt skifte touch passthrough.
 
 ## Version 18.08
 
-* Compatible with NVDA 2018.3 and future versions.
+* Kompatibel med NVDA 2018.3 og fremtidige versioner.
 
 ## Version 18.06
 
