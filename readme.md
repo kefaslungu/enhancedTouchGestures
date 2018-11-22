@@ -43,6 +43,10 @@ An unassigned command is available to allow you to use touchscreen gestures as t
 
 If profiles other than normal configuration is active and if you go to Touch Interaction dialog, you'll see a checkbox named "completely disable touch support". Checking this box and answering yes if prompted will completely turn off touch support for that profile. This is useful in apps that provide their own touch commands. To restore touch functionality, either uncheck this checkbox or manually toggle touch passthrough.
 
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
+
 ## Version 18.08
 
 * Compatible with NVDA 2018.3 and future versions.
