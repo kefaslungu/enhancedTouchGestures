@@ -2,6 +2,7 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
+* Compatibilidad con NVDA: de 2018.2 a 2019.1
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
@@ -27,7 +28,7 @@ un ordenador con pantalla táctil con Windows 8.1 o 10.
 * deslizar 4 dedos hacia arriba: anunciar el título de la ventana actual.
 * Deslizar 4 dedos hacia abajo: anunciar texto de la barra de estado.
 
-## Modo Web táctil 
+## Modo Web táctil
 
 Este modo táctil, disponible en modo exploración, te permite navegar el
 documento por elementos seleccionados. Para cambiar a modo web, desde

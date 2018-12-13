@@ -2,6 +2,7 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
+* NVDA compatibility: 2018.2 to 2019.1
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.

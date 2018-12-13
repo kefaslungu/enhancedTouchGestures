@@ -2,6 +2,7 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
+* Compatibilité NVDA: 2018.2 à 2019.1
 
 Ce module complémentaire fournit des gestes supplémentaires sur l'écran
 tactile pour NVDA. Il fournit également un ensemble de gestes pour parcourir
