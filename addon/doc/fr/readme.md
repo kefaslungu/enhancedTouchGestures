@@ -4,12 +4,12 @@
 * Télécharger [version stable][1]
 * Compatibilité NVDA: 2018.2 à 2019.1
 
-Ce module complémentaire fournit des gestes supplémentaires sur l'écran
-tactile pour NVDA. Il fournit également un ensemble de gestes pour parcourir
-facilement lorsque vous êtes en mode navigation.
+Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
+NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
+lorsque vous êtes en mode navigation.
 
-Notez que ce module complémentaire requiert NVDA 2018.2 ou une version
-ultérieure s'exécutant sur un ordinateur tactile avec Windows 8 ou 10.
+Note : Cette extension requiert NVDA 2018.2 ou une version ultérieure
+s'exécutant sur un ordinateur tactile avec Windows 8 ou 10.
 
 ## Commandes
 
@@ -49,7 +49,7 @@ entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
 
-## Annonce la coordonnée par des bips
+## Annonce des coordonnées par des bips
 
 Si vous avez activé l'option Sonoriser les coordonnées quand la souris se
 déplace dans les paramètres de la souris, vous entendrez des bips pour
@@ -84,39 +84,38 @@ manuellement l'émulation tactile.
 
 ## Version 18.06
 
-* Les paramètres du module complémentaire sont désormais disponibles dans le
-  nouvel écran Paramètres NVDA multi-catégories sous la catégorie "Enhanced
-  Touch Gestures". Par conséquent, NVDA 2018.2 est requis.
+* Les paramètres de l'extension sont désormais disponibles dans le nouvel
+  écran Paramètres NVDA multi-catégories sous la catégorie "Enhanced Touch
+  Gestures". Par conséquent, NVDA 2018.2 est requis.
 * Correction de problèmes de compatibilité avec wxPython 4.
 
 ## Version 18.04
 
 * Résout un problème où la catégorie interaction tactile dans le panneau
   Paramètres de NVDA peut provoquer l'apparition de sons d'erreur en raison
-  des modifications apportées à partir de ce module complémentaire.
+  des modifications apportées à partir de cette extension.
 
 ## Version 18.03
 
 * NVDA 2018.1 est requis.
 * Parce que NVDA 2018.1 est livré avec la case à cocher frappe tactile, la
-  case à cocher n'est plus inclus dans ce module complémentaire.
+  case à cocher n'est plus incluse dans cette extension.
 
 ## Version 17.12
 
-* Nécessite NVDA 2017.4. Plus précisément, ce module complémentaire peut
-  désormais gérer les commutateurs de profil de configuration.
+* Nécessite NVDA 2017.4. Plus précisément, cette extension peut désormais
+  gérer les commutateurs de profil de configuration.
 * Comme NVDA 2017.4 inclut l'annonce d'orientation de l'écran, cette
-  fonctionnalité ne fait plus partie de ce module complémentaire.
+  fonctionnalité ne fait plus partie de cette extension.
 * Ajout d'une case à cocher masquée dans le dialogue Interaction Tactile
   pour désactiver complètement le support tactile (disponible si des profils
   autres que la configuration normale sont actifs).
 * Si vous utilisez NVDA 2018.1 ou une version ultérieure le dialogue
   Interaction Tactile apparaîtra deux fois sous le menu des préférences de
-  NVDA. Le deuxième élément est le dialogue fournie avec le module
-  complémentaire.
-* Dans le dialogue Interaction Tactile du module complémentaire, le mode
-  frappe tactile n'est plus affiché si vous utilisez NVDA 2018.1 ou une
-  version ultérieure.
+  NVDA. Le deuxième élément est le dialogue fournie avec l'extension.
+* Dans le dialogue Interaction Tactile de l'extension, le mode frappe
+  tactile n'est plus affiché si vous utilisez NVDA 2018.1 ou une version
+  ultérieure.
 
 ## Version 17.10
 
@@ -164,7 +163,7 @@ manuellement l'émulation tactile.
 
 * Le mode web tactile fonctionne dans Microsoft Edge, Microsoft Word et
   d'autres où le mode navigation est utilisé.
-* Ajout de listes et de régions aux éléments du mode web tactile.
+* Ajout des listes et régions aux éléments du mode web tactile.
 
 ## Version 16.06
 
