@@ -2,7 +2,7 @@
 
 * аутор : Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2018.2 to 2019.1
+* NVDA compatibility: 2018.2 to 2019.2
 
 овај додатак вам пружа побољшане гестове за екране осетљиве на додир.
 

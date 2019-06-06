@@ -2,7 +2,7 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA-kompatibilitet: 2018.2 til 2019.1
+* NVDA compatibility: 2018.2 to 2019.2
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.

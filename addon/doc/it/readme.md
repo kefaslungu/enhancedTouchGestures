@@ -2,7 +2,7 @@
 
 * Autore: Joseph Lee
 * Download [versione stabile][1]
-* NVDA compatibility: 2018.2 to 2019.1
+* NVDA compatibility: 2018.2 to 2019.2
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità esplorazione
