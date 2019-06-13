@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* Compatibilidad con NVDA: de 2018.2 a 2019.2
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
