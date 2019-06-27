@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* NVDA-Kompatibilität: 2018.2 bis 2019.2
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
