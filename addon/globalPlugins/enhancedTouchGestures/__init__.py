@@ -15,7 +15,6 @@ import winUser
 import mouseHandler
 import config
 import windowUtils
-import win32con
 import tones
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 from NVDAObjects.UIA import UIA
