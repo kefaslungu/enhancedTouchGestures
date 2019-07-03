@@ -2,6 +2,7 @@
 
 * Author: Joseph Lee
 * Download [stable version][1]
+* NVDA compatibility: 2018.2 to 2019.2
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
@@ -42,6 +43,10 @@ An unassigned command is available to allow you to use touchscreen gestures as t
 ## Disable touch support in profiles
 
 If profiles other than normal configuration is active and if you go to Touch Interaction dialog, you'll see a checkbox named "completely disable touch support". Checking this box and answering yes if prompted will completely turn off touch support for that profile. This is useful in apps that provide their own touch commands. To restore touch functionality, either uncheck this checkbox or manually toggle touch passthrough.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
 
 ## Version 18.12
 
