@@ -198,8 +198,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: Reported when the object has no location for the mouse to move to it.
 				ui.message(_("object has no location"))
 				return
-			x=left+(width/2)
-			y=top+(height/2)
+			x=left+(width//2)
+			y=top+(height//2)
 		self.etsDebugOutput("etouch: mouse point found at %s, %s"%(x, y))
 		winUser.setCursorPos(x,y)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN,0,0,None,None)
