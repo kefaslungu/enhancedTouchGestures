@@ -91,7 +91,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				touchHandler.terminate()
 			else:
 				# Manual touch passthrough timer might be active.
-				if self.touchPassthroughTimer.IsRunning:
+				if self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning:
 					self.touchPassthroughTimer.Stop()
 					self.touchPassthroughTimer = None
 		else:
