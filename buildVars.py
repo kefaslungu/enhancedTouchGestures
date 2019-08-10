@@ -33,6 +33,8 @@ addon_info = {
 	"addon_lastTestedNVDAVersion" : "2019.3.0",
 	# Minimum Windows version supported
 	"addon_minimumWindowsVersion" : "6.3.9600",
+	# Add-on update channel (default is stable)
+	"addon_updateChannel" : None,
 }
 
 

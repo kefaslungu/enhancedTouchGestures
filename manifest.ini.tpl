@@ -8,3 +8,4 @@ docFileName = {addon_docFileName}
 minimumNVDAVersion = {addon_minimumNVDAVersion}
 lastTestedNVDAVersion = {addon_lastTestedNVDAVersion}
 minimumWindowsVersion = {addon_minimumWindowsVersion}
+updateChannel = {addon_updateChannel}
