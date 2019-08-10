@@ -47,6 +47,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		if touchHandler.touchSupported():
+			# Turn off touch support at startup if told to do so.
+			# This is useful if using NVDA on a shared computer.
+			if not config.conf["touch"]["enabled"]:
+				self.etsDebugOutput("etouch: disabling touch handler on startup")
+				touchHandler.terminate()
+				tones.beep(380, 100)
+				wx.CallAfter(ui.message, "Touch interaction support is disabled")
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
@@ -78,7 +85,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Because some apps have their own handlers for touch, do not let NVDA take over touchscreens.
 		# There are also times when turning off touchscreen through a profile is useful.
 		# Due to this mechanism, NVDA 2017.4 or later is required.
-		if config.conf["touch"]["noTouchSupport"]:
+		if not config.conf["touch"]["enabled"]:
 			if touchHandler.handler:
 				self.etsDebugOutput("etouch: automatically disabling touch handler")
 				touchHandler.terminate()
@@ -301,10 +308,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 # Add-on config database
 confspec = {
+	"enabled": "boolean(default=True)",
 	"touchTyping": "boolean(default=false)",
 	"commandPassthroughDuration": "integer(min=3, max=10, default=5)",
 	"manualPassthroughToggle": "boolean(default=false)",
-	"noTouchSupport": "boolean(default=false)",
 }
 config.conf.spec["touch"] = confspec
 
