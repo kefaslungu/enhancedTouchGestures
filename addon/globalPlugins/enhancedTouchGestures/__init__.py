@@ -21,6 +21,7 @@ from NVDAObjects.UIA import UIA
 import controlTypes
 import gui
 import wx
+import extensionPoints
 
 def playAudioCoordinates(x, y):
 	# play audio coordinates function might be gone in a future NVDA release.
@@ -62,6 +63,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
 			else: #2018.2 and earlier.
 				config.configProfileSwitched.register(self.handleConfigProfileSwitch)
+			# Also react to touch handler enable/disable notification if changed from settings panel.
+			ETSActionTouchHandlerSettingsChanged.register(self.handleConfigProfileSwitch)
 			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
 		else:
 			self.touchSettings = None
@@ -315,6 +318,9 @@ confspec = {
 }
 config.conf.spec["touch"] = confspec
 
+# Notify whenever touch handler settings panel values change.
+ETSActionTouchHandlerSettingsChanged = extensionPoints.Action()
+
 class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 	# Translators: This is the label for the touch interaction settings dialog.
 	title = _("Enhanced Touch Gestures")
@@ -339,3 +345,4 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 		config.conf["touch"]["enabled"]=self.enableTouchSupportCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
+		ETSActionTouchHandlerSettingsChanged.notify()
