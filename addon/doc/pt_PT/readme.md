@@ -2,6 +2,7 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
+* Baixar [versão de desenvolvimento][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
@@ -167,3 +168,5 @@ desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

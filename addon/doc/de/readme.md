@@ -2,6 +2,7 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
+* [Testversion herunterladen][2]
 * NVDA-Kompatibilität: 2018.2 bis 2019.2
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
@@ -177,3 +178,5 @@ Touch-Gesten manuell ein.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=emo-dev

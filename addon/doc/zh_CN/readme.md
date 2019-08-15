@@ -2,6 +2,7 @@
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
+* 下载 [开发板][2]
 * NVDA兼容版本: 2018.2至2019.2
 
 此插件为NVDA提供了额外的触摸屏手势。它还提供了一组手势，以便于浏览模式导航。
@@ -106,3 +107,5 @@ Gestures类别下分配命令（通过“输入手势”对话框），以便最
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

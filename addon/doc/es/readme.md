@@ -2,6 +2,7 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
+* Descargar [versión de desarrollo][2]
 * Compatibilidad con NVDA: de 2018.2 a 2019.2
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
@@ -170,3 +171,5 @@ casilla de verificación o activa manualmente dejar pasar toque.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
