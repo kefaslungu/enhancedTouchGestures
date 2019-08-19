@@ -2,7 +2,8 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* Descărcați [versiunea în dezvoltare][2]
+* Compatibilitate NVDA: 2018.2 - 2019.2
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
@@ -170,3 +171,5 @@ debifați această casetă sau comutați manual la trecerea prin atingere.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

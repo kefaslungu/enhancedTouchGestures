@@ -2,7 +2,8 @@
 
 * Автор: Joseph Lee
 * Изтегляне на [стабилна версия][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* Изтегляне на [тестова версия][2]
+* Съвместимост с NVDA: от 2018.2 до 2019.2
 
 Тази добавка предлага допълнителни сензорни жестове за NVDA. Също така
 предоставя и пакет от жестове за улеснена навигация в режим на разглеждане.
@@ -178,3 +179,5 @@
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

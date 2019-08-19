@@ -2,7 +2,8 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* Lataa [kehitysversio][2]
+* Yhteensopivuus: NVDA 2018.2-2019.2
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
@@ -168,3 +169,5 @@ läpivientitilaa manuaalisesti.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

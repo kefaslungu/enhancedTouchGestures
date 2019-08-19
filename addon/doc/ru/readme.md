@@ -2,6 +2,7 @@
 
 * Автор: Joseph Lee
 * Загрузить [стабильную версию][1]
+* Загрузить [разрабатываемую версию][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Это дополнение предоставляет дополнительные жесты сенсорного экрана для
@@ -159,3 +160,5 @@ this checkbox or manually toggle touch passthrough.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

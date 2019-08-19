@@ -2,6 +2,7 @@
 
 * Autore: Joseph Lee
 * Download [versione stabile][1]
+* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
@@ -161,3 +162,5 @@ funzione passa il prossimo gesto al touchscreen.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

@@ -2,6 +2,7 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
+* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
@@ -166,3 +167,5 @@ markeringen i dette afkrydsningsfelt eller manuelt skifte touch passthrough.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

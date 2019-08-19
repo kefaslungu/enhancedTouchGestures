@@ -2,6 +2,7 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
+* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
@@ -159,3 +160,5 @@ odznacz to pole wyboru lub ręcznie przełącz przepuszczanie dotyku.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

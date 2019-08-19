@@ -2,6 +2,7 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
+* Télécharger [version de développement][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
@@ -172,3 +173,5 @@ manuellement l'émulation tactile.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

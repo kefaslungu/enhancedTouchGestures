@@ -2,6 +2,7 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
+* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Este complemento provê gestos adicionais para telas táteis no NVDA. Também
@@ -161,3 +162,5 @@ seleção ou alterne manualmente a passagem tátil.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

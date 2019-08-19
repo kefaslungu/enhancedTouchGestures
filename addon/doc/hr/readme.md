@@ -2,6 +2,7 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stable version][1]
+* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Ovaj dodatak omogućuje dodatne dodirničke geste u NVDA čitaču zaslona. Ovaj
@@ -163,3 +164,5 @@ this checkbox or manually toggle touch passthrough.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
+
+[2]: https://addons.nvda-project.org/files/get.php?file=ets
