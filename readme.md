@@ -40,9 +40,9 @@ If you've enabled play mouse coordinates setting in mouse settings, you'll hear 
 
 An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
 
-## Disable touch support in profiles
+## Version 19.09
 
-If profiles other than normal configuration is active and if you go to Touch Interaction dialog, you'll see a checkbox named "completely disable touch support". Checking this box and answering yes if prompted will completely turn off touch support for that profile. This is useful in apps that provide their own touch commands. To restore touch functionality, either uncheck this checkbox or manually toggle touch passthrough.
+* Touch support can now be disabled from everywhere, not just from profiles other than normal profile.
 
 ## Version 19.07
 
