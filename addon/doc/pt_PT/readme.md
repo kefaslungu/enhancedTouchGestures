@@ -2,7 +2,6 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* Baixar [versão de desenvolvimento][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
@@ -65,15 +64,18 @@ alternar isso manualmente. Em seguida, vá para o menu NVDA / Preferências /
 Interacção por toque e configure a pausa no valor de comando de toque do
 NVDA entre 3 a 10 segundos (o padrão é 5 segundos).
 
-## Desactivar o suporte de toque nos perfis
+## Version 19.09
 
-Se tiver activos perfis para além do da configuração normal e se for para a
-caixa de diálogo Interacção por toque, verá uma caixa de selecção chamada
-"desactivar completamente o suporte ao toque". Verificando esta caixa e
-respondendo sim, se solicitado, irá desactivar completamente o suporte ao
-toque para esse perfil. Isto é útil em aplicações que fornecem os seus
-próprios comandos de toque. Para restaurar a funcionalidade de toque,
-desmarque essa caixa de selecção ou altere manualmente a passagem de toque.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Versão 18.08
 

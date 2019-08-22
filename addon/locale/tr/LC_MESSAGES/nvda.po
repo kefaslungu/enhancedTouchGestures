@@ -29,8 +29,9 @@ msgstr "Gelişmiş Dokunma Hareketleri"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-msgid "Completely disable touch interaction support"
-msgstr "Dokunmatik etkileşim desteğini tamamen devre dışı bırak"
+#, fuzzy
+msgid "Enable touch interaction support"
+msgstr "Dokunmatik etkileşim desteğini devre dışı bırak"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -40,12 +41,13 @@ msgstr "&NVDA dokunmatik desteğine ara ver (saniye cinsinden süre)"
 msgid "&Manually toggle touch passthrough"
 msgstr "Dokunmatik geçiş &manuel olarak yapılsın"
 
+#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
 "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
-"sure you wish to completely disable touch interaction support?"
+"Settings and check 'enable touch interaction support' checkbox. Are you sure "
+"you wish to completely disable touch interaction support?"
 msgstr ""
 "Dokunmatik etkileşim desteğini tamamen kapatmak üzeresiniz ve kapatırsanız "
 "dokunmatik ekran NVDA'nın kullanılmadığı varsayılarak çalışacak. Dokunmatik "
@@ -69,6 +71,9 @@ msgstr ""
 "komutlarından oluşan bir paket.\n"
 "\tNVDA 2017.4 ya da sonraki sürümlerinden birinin kurulu olduğu, dokunmatik "
 "ekranlı ve en az Windows 8.1 yüklü bir bilgisayar gerektirir."
+
+#~ msgid "Completely disable touch interaction support"
+#~ msgstr "Dokunmatik etkileşim desteğini tamamen devre dışı bırak"
 
 #~ msgid "&Touch Interaction..."
 #~ msgstr "&Dokunmatik Etkileşim..."

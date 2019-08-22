@@ -29,8 +29,9 @@ msgstr "Enhanced Touch Gestures"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-msgid "Completely disable touch interaction support"
-msgstr "Deshabilita completamente o soporte da interacción tactil"
+#, fuzzy
+msgid "Enable touch interaction support"
+msgstr "Deshabilitar soporte de interación tactil"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -40,12 +41,13 @@ msgstr "&Pausa o soporte tactil do NVDA (duración en segundos)"
 msgid "&Manually toggle touch passthrough"
 msgstr "Conmuta &Manualmente deixar pasar toque"
 
+#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
 "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
-"sure you wish to completely disable touch interaction support?"
+"Settings and check 'enable touch interaction support' checkbox. Are you sure "
+"you wish to completely disable touch interaction support?"
 msgstr ""
 "Vas desactivar o soporte de interación tactil compretamente tal que a "
 "pantalla tactil poida usarse coma se o NVDA non estea en execución. Para "
@@ -69,6 +71,9 @@ msgstr ""
 "axuda.\n"
 "\tRequiren dun computador tactil habilitado co Windows 8.1 ou posterior co "
 "NVDA 2017.4 ou posterior instalado."
+
+#~ msgid "Completely disable touch interaction support"
+#~ msgstr "Deshabilita completamente o soporte da interacción tactil"
 
 #~ msgid "&Touch Interaction..."
 #~ msgstr "&Interación Tactil..."

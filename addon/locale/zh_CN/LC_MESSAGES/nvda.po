@@ -32,8 +32,9 @@ msgstr "触摸手势增强"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-msgid "Completely disable touch interaction support"
-msgstr "完全禁用触摸交互支持"
+#, fuzzy
+msgid "Enable touch interaction support"
+msgstr "禁用触摸交互支持"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -43,12 +44,13 @@ msgstr "＆暂停NVDA的触摸支持（持续时间以秒为单位）"
 msgid "&Manually toggle touch passthrough"
 msgstr "&手动切换直接触摸"
 
+#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
 "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
-"sure you wish to completely disable touch interaction support?"
+"Settings and check 'enable touch interaction support' checkbox. Are you sure "
+"you wish to completely disable touch interaction support?"
 msgstr ""
 "您即将完全关闭触摸交互支持，因此可以像没有打开NVDA一样使用触摸屏。 要启用触摸"
 "支持，您需要返回到此对话框并取消选中“禁用触摸交互支持”复选框。 您确定要完全禁"
@@ -67,6 +69,9 @@ msgid ""
 msgstr ""
 "一套附加的触摸命令，包括导航和帮助命令。\n"
 "需要安装有NVDA 2017.4以上或者windows8.1以上带有触摸屏的计算机"
+
+#~ msgid "Completely disable touch interaction support"
+#~ msgstr "完全禁用触摸交互支持"
 
 #~ msgid "&Touch Interaction..."
 #~ msgstr "＆触摸交互..."

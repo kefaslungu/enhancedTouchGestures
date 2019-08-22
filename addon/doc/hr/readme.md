@@ -2,7 +2,6 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stable version][1]
-* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Ovaj dodatak omogućuje dodatne dodirničke geste u NVDA čitaču zaslona. Ovaj
@@ -63,14 +62,18 @@ isključivanje ove značajke. Potom idite u NVDA izbornik/Postavke/Interakcija
 dodirom i definirajte razmak između dodirnih komandi NVDA u intervalu između
 3 i 10 sekundi (po zadanom je 5 sekundi).
 
-## Onemogući podršku za dodir u profilima 
+## Version 19.09
 
-If profiles other than normal configuration is active and if you go to Touch
-Interaction dialog, you'll see a checkbox named "completely disable touch
-support". Checking this box and answering yes if prompted will completely
-turn off touch support for that profile. This is useful in apps that provide
-their own touch commands. To restore touch functionality, either uncheck
-this checkbox or manually toggle touch passthrough.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Version 18.08
 

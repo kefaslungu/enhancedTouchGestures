@@ -2,7 +2,6 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* Descărcați [versiunea în dezvoltare][2]
 * Compatibilitate NVDA: 2018.2 - 2019.2
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
@@ -66,15 +65,18 @@ meniul NVDA/Preferințe/Interacțiunea prin atingere, apoi configurați pauza
 valorii comenzii de atingere NVDA între 3 și 10 secunde (valoarea implicită
 este de 5 secunde).
 
-## Dezactivează suportul tactil în profiluri
+## Version 19.09
 
-Dacă sunt active alte profiluri decât configurația obișnuită și dacă
-accesați dialogul Interacțiune cu atingere, veți vedea o casetă de bifat
-„dezactivează complet asistența tactilă”. Dacă bifați această casetă și
-răspundeți da, în cazul în care vi se solicită, suportul tactil va fi
-dezactivat complet. Acest lucru este util în aplicațiile care oferă
-propriile comenzi de atingere. Pentru a restabili funcționalitatea tactilă,
-debifați această casetă sau comutați manual la trecerea prin atingere.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Versiunea 18.08
 

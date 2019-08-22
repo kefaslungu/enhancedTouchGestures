@@ -2,7 +2,6 @@
 
 * Autore: Joseph Lee
 * Download [versione stabile][1]
-* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
@@ -62,18 +61,18 @@ manualmente. Poi recarsi nel menu preferenze di NVDA, selezionare
 interazione al tocco, quindi configurare il valore del parametro pausa tocco
 di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
 
-## disabilita supporto al tocco dai profili
+## Version 19.09
 
-Se sono attivi profili diversi da quello chiamato configurazione normale e
-ci si reca nella finestra interazioni al tocco, si troverà una casella di
-controllo chiamata "disattiva completamente il supporto al tocco". Attivando
-la casella di controllo e rispondendo in maniera affermativa alla richiesta
-seguente, si disattiverà completamente il supporto al touchscreen da parte
-di NVDA per il profilo di configurazione attualmente in uso. Ciò è utile per
-quelle app che dispongono già di comandi proprietari da eseguirsi nel
-touchScreen. Per rirpristinare il supporto al tocco da parte di NVDA,
-disattivare la casella di controllo in questione oppure servirsi della
-funzione passa il prossimo gesto al touchscreen.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Version 18.08
 

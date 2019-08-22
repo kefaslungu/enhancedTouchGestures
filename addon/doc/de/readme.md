@@ -2,7 +2,6 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* [Testversion herunterladen][2]
 * NVDA-Kompatibilität: 2018.2 bis 2019.2
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
@@ -67,17 +66,18 @@ NVDA-Menü/Einstellungen/Touch-Interaction und konfigurieren Sie die
 Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
 (Standard ist 5 Sekunden).
 
-## Deaktivieren der Unterstützung für NVDA Touch-Gesten in benutzerdefinierten Konfigurationsprofilen
+## Version 19.09
 
-Wenn benutzerdefinierte Profile aktiv sind und Sie zum Dialogfeld
-Touch-Interaktion gehen, sehen Sie ein Kontrollkästchen mit dem Namen
-"Unterstützung für Touch-Interaktion vollständig deaktivieren". Wenn Sie
-dieses Kontrollkästchen aktivieren und mit Ja antworten, wird die
-Touch-Unterstützung für das aktuelle Konfigurationsprofil vollständig
-deaktiviert. Dies ist in Anwendungen mit eigenen Touch-Befehlen nützlich. Um
-die Touch-Funktionalität von NVDA wieder zu aktivieren, deaktivieren Sie
-entweder dieses Kontrollkästchen oder schalten Sie das Durchreichen der
-Touch-Gesten manuell ein.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Version 18.08
 

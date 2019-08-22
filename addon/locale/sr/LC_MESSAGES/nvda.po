@@ -29,8 +29,9 @@ msgstr "Enhanced Touch Gestures"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-msgid "Completely disable touch interaction support"
-msgstr "U potpunosti onemogući podršku ekrana osetljivog na dodir"
+#, fuzzy
+msgid "Enable touch interaction support"
+msgstr "Onemogući podršku za ekran osetljiv na dodir"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -43,12 +44,13 @@ msgid "&Manually toggle touch passthrough"
 msgstr ""
 "&Ručno uključivanje i isključivanje komande za slanje prečice aplikaciji"
 
+#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
 "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
-"sure you wish to completely disable touch interaction support?"
+"Settings and check 'enable touch interaction support' checkbox. Are you sure "
+"you wish to completely disable touch interaction support?"
 msgstr ""
 "Upravo ćete isključiti podršku za ekran osetljiv na dodir i ekran će se "
 "ponašati kao da NVDA nije pokrenut. Da biste omogućili podršku za ekran, "
@@ -71,3 +73,6 @@ msgstr ""
 "navigaciju i pomoć.\n"
 "\tZahteva računar sa ekranom osetljivim na dodir i Windows 8.1 ili noviji sa "
 "programom NVDA 2017.4 ili novijim instaliranim."
+
+#~ msgid "Completely disable touch interaction support"
+#~ msgstr "U potpunosti onemogući podršku ekrana osetljivog na dodir"

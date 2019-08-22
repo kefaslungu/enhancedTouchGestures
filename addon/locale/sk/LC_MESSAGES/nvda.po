@@ -9,12 +9,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2018-11-30 05:10+1000\n"
 "PO-Revision-Date: 2019-05-28 01:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.2.3\n"
 
 #. Translators: Reported when the object has no location for the mouse to move to it.
@@ -29,8 +29,9 @@ msgstr "Enhanced Touch Gestures"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-msgid "Completely disable touch interaction support"
-msgstr "Vypne úplne podporu dotykovej interakcie"
+#, fuzzy
+msgid "Enable touch interaction support"
+msgstr "Vypne podporu dotykovej interakcie"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -40,12 +41,13 @@ msgstr "& Pozastavenie dotykovej podpory NVDA (duration in second)"
 msgid "&Manually toggle touch passthrough"
 msgstr "& Ručne prepnúť dotykový priechod"
 
+#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
 "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
-"sure you wish to completely disable touch interaction support?"
+"Settings and check 'enable touch interaction support' checkbox. Are you sure "
+"you wish to completely disable touch interaction support?"
 msgstr ""
 "Chystáte sa úplne vypnúť podporu dotykovej interakcie, aby sa dotykový "
 "displej mohol používať, ak NVDA beží. Ak chcete povoliť dotykovú podporu, "
@@ -64,7 +66,9 @@ msgid ""
 "\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA "
 "2017.4 or later installed."
 msgstr ""
-"Sada ďalších dotykových príkazov, vrátane navigačných a pomocných "
-"príkazov\n"
+"Sada ďalších dotykových príkazov, vrátane navigačných a pomocných príkazov\n"
 "\tVyžaduje počítač s dotykovou obrazovkou so systémom Windows 8.1 alebo "
 "novším s nainštalovaným programom NVDA 2017.4 alebo novším."
+
+#~ msgid "Completely disable touch interaction support"
+#~ msgstr "Vypne úplne podporu dotykovej interakcie"

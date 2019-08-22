@@ -2,7 +2,6 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Este complemento provê gestos adicionais para telas táteis no NVDA. Também
@@ -62,15 +61,18 @@ alternar manualmente. Depois vá ao menu do NVDA/Preferências/Interação Táti
 e configure o valor do comando tátil Pausar NVDA entre 3 e 10 segundos (o
 padrão é 5 segundos).
 
-## Desativar o suporte tátil nos perfis
+## Version 19.09
 
-Se perfis diferentes da configuração normal estiverem ativos e se você for
-para a caixa de diálogo Interação por Toque, você verá uma caixa de seleção
-chamada "desativar completamente o suporte por toque". Marcar esta caixa e
-responder sim, se solicitado, desligará completamente o suporte tátil para
-esse perfil. Isso é útil em aplicativos que fornecem seus próprios comandos
-de toque. Para restaurar a funcionalidade de toque, desmarque esta caixa de
-seleção ou alterne manualmente a passagem tátil.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Versão 18.08
 

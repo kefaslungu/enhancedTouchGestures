@@ -2,7 +2,6 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
@@ -62,14 +61,18 @@ do dziesięciu sekund lub przełączyć ją ręcznie. Następnie należy wejść
 meni NVDA/Ustawienia/Reakcja na Dotyk, i skonfigurować czas wstrzymania
 poleceń dotykowych NVDA od 3 do 10 sekund. Wartość domyślna to 5 sekund.
 
-## Wyłączanie wsparcia dotyku w profilach
+## Version 19.09
 
-Jeżeli aktywny jest inny profil niż standardowy, po wejściu do dialogu
-reakcji na dotyk zobaczysz pole wyboru o nazwie "Wyłącz wsparcie
-dotyku". Zaznaczenie tego pola i potwierdzenie przyciskiem Tak całkowicie
-wyłączy wsparcie dotyku dla tego profilu. Jest to użyteczne w aplikacjach,
-które posiadają własne gesty dotykowe. Aby przywrócić funkcjonalność dotyku,
-odznacz to pole wyboru lub ręcznie przełącz przepuszczanie dotyku.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Wersja 18.08
 

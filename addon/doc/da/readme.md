@@ -2,7 +2,6 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* Download [development version][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
@@ -65,15 +64,18 @@ NVDA-menu>Præferencer>Indstillinger>Touch-interaktion, og konfigurer Pause i
 NVDA's touch-understøttelse til mellem 3 og 10 sekunder. Som standard er det
 5.
 
-## Slå understøttelse for berøring fra i profiler
+## Version 19.09
 
-Hvis andre profiler end den normal konfiguration er aktiv, og hvis du går
-til dialogboksen Berøringsinteraktion, vil du se check boxen "deaktivér
-fuldstændigt berøringsunderstøttelse". Du vælger check boxen og svarer ja,
-hvis du bliver bedt om du helt vil deaktivere berøringsunderstøttelse for
-den pågældende profil. Dette er nyttigt i apps der anvender deres egne
-touch-kommandoer. Hvis du vil gendanne touch funktionalitet, enten fjerne
-markeringen i dette afkrydsningsfelt eller manuelt skifte touch passthrough.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Version 18.08
 

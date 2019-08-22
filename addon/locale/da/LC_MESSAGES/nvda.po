@@ -29,8 +29,9 @@ msgstr "Udvidede berøringsbevægelser"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-msgid "Completely disable touch interaction support"
-msgstr "Slå understøttelse af berøringsinteraktion helt fra"
+#, fuzzy
+msgid "Enable touch interaction support"
+msgstr "Slå understøttelse af berøringsinteraktion fra"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -40,12 +41,13 @@ msgstr "&Pause i NVDAs berøringsunderstøttelse (tid i sekunder)"
 msgid "&Manually toggle touch passthrough"
 msgstr "Lad berøring slippe igennem til/fra (&manuel)"
 
+#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
 "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and uncheck 'disable touch interaction support' checkbox. Are you "
-"sure you wish to completely disable touch interaction support?"
+"Settings and check 'enable touch interaction support' checkbox. Are you sure "
+"you wish to completely disable touch interaction support?"
 msgstr ""
 "Du er i færd med at slå understøttelse af berøringsinteraktion helt fra, så "
 "touchskærmen kan bruges, som om NVDA ikke kørte. For at slå "
@@ -68,6 +70,9 @@ msgstr ""
 "Et sæt af yderligere touch-kommandoer, herunder tabbe- og hjælpekommandoer.\n"
 "\tKræver en computer med touch-understøttelse med Windows 8.0 eller senere "
 "og med NVDA 2017.4 eller senere installeret."
+
+#~ msgid "Completely disable touch interaction support"
+#~ msgstr "Slå understøttelse af berøringsinteraktion helt fra"
 
 #~ msgid "&Touch Interaction..."
 #~ msgstr "&Touch-interaktion..."

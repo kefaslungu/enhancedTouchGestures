@@ -2,7 +2,6 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* Lataa [kehitysversio][2]
 * Yhteensopivuus: NVDA 2018.2-2019.2
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
@@ -65,16 +64,18 @@ Syötekomennot-valintaikkunan Laajennetut kosketuseleet
 vuorovaikutus ja määritä asetuksen "Keskeytä NVDA:n kosketuskomento" arvoksi
 jotain kolmen ja kymmenen sekunnin väliltä (oletus on 5).
 
-## Poista käytöstä kosketustuki profiileissa
+## Version 19.09
 
-Jos jokin muu profiili kuin "(normaalit asetukset)" on aktiivisena ja jos
-siirryt Kosketuksen vuorovaikutus -valintaikkunaan, löydät sieltä "Poista
-kosketuksen vuorovaikutustuki kokonaan käytöstä" -valintaruudun. Kun se on
-valittuna ja vastattu kysyttäessä kyllä, kosketustuki poistetaan kokonaan
-käytöstä kyseisessä profiilissa. Tästä on hyötyä sovelluksissa, jotka
-tarjoavat omia kosketuskomentojaan. Palauta kosketustuki käyttöön joko
-poistamalla valintaruudun valinta tai vaihtamalla kosketuksen
-läpivientitilaa manuaalisesti.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Versio 18.08
 

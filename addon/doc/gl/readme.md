@@ -2,7 +2,6 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Descargar [versión de desenvolvemento][2]
 * Compatibilidade con NVDA: da 2018.2 á 2019.2
 
 Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
@@ -64,15 +63,18 @@ segundos ou cambialo manualmente. Entón vai ao menú
 NVDA/Preferencias/Interacción Tactil, logo configura pausar a orde de valor
 tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
 
-## Deshabilitar soporte tactil en perfís
+## Versión 19.09
 
-Se outros perfís distintos á configuración normal están activos e se vas ao
-diálogo Interación Tactil, verás unha caixa de verificación chamada
-"deshabilitar compretamente soporte tactil". Marcando esta caixa e
-respondento si ao se cho pedir desactivará por compreto o soporte tactil
-para ese perfil. Esto é útil en aplicacións que proporcionen as súas
-proprias ordes tactiles. Para restaurar a funcionalidade tactil, desmarca
-esta caixa de verificación ou activa manualmente deixar pasar toque.
+* Xa se pode desactivar o soporte táctil dende calquera lugar, non só dende
+  perfiles que non sexan o normal.
+
+## Versión 19.07
+
+* Cambios internos para soportar versións futuras de NVDA.
+
+## Versión 18.12
+
+* Cambios internos para soportar versións futuras de NVDA.
 
 ## Versión 18.08
 

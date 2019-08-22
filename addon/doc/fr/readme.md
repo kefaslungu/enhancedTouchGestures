@@ -2,7 +2,6 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* Télécharger [version de développement][2]
 * NVDA compatibility: 2018.2 to 2019.2
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
@@ -68,16 +67,18 @@ allez dans le menu NVDA/Préférences/Interaction Tactile, puis le configurer
 afin de suspendre la valeur   de la commande tactile de NVDA entre 3 à 10
 secondes (par défaut 5 secondes).
 
-## Désactiver le support tactile dans les profils
+## Version 19.09
 
-Si des profils autres que la configuration normale sont actifs et que vous
-accédez au dialogue Interaction Tactile, une case à cocher nommée
-"Désactiver complètement le support tactile" s'affiche. Si vous cochez cette
-case et que vous répondez oui si vous y êtes invité, le support  tactile de
-ce profil sera complètement désactivé. Ceci est utile dans les applications
-qui fournissent leurs propres commandes tactiles. Pour restaurer la
-fonctionnalité tactile, décochez cette case à cocher ou basculer
-manuellement l'émulation tactile.
+* Touch support can now be disabled from everywhere, not just from profiles
+  other than normal profile.
+
+## Version 19.07
+
+* Internal changes to support future NVDA releases.
+
+## Version 18.12
+
+* Internal changes to support future NVDA releases.
 
 ## Version 18.08
 
