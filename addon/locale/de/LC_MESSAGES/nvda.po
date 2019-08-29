@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2018-06-21 21:51+0200\n"
+"PO-Revision-Date: 2019-08-23 07:24+0200\n"
 "Last-Translator: René Linke <rene.linke@hamburg.de>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. Translators: Reported when the object has no location for the mouse to move to it.
 msgid "object has no location"
-msgstr "Kein Standort für dieses objekt vorhanden"
+msgstr "Keine Position für dieses Objekt vorhanden"
 
 #. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
@@ -29,19 +29,17 @@ msgstr "Erweiterte Touch-gesten"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-#, fuzzy
 msgid "Enable touch interaction support"
-msgstr "Unterstützung für Touch-Interaktion deaktivieren"
+msgstr "Unterstützung für Touch-Interaktion aktivieren"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
-msgstr "&NVDA Touch-Unterstützung pausieren (Dauer in Sekunden)"
+msgstr "NVDA-Touch-Unterstützung &pausieren (Dauer in Sekunden)"
 
 #. Translators: a checkbox to allow passthrough to be toggled manually.
 msgid "&Manually toggle touch passthrough"
 msgstr "&Durchreichen der Touch-Gesten manuell umschalten"
 
-#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
@@ -49,12 +47,12 @@ msgid ""
 "Settings and check 'enable touch interaction support' checkbox. Are you sure "
 "you wish to completely disable touch interaction support?"
 msgstr ""
-"Sie sind dabei, die Unterstützung für die Touchinteraktion komplett "
-"abzuschalten, damit der Touchscreen so verwendet werden kann, als ob NVDA "
-"nicht läuft. Um die Touch-Unterstützung zu aktivieren, müssen Sie in den "
-"NVDA-Einstellungen zum Bereich Erweiterte Touch-Gesten zurückkehren und das "
-"Kontrollkästchen \"Unterstützung für Touch-Interaktion deaktivieren\" "
-"deaktivieren. Sind Sie sicher, dass Sie die Unterstützung der Touch-"
+"Sie sind dabei, die Unterstützung für Touch-Interaktionen vollständig "
+"abzuschalten, damit der Touch-Screen so verwendet werden kann, als ob NVDA "
+"nicht ausgeführt wird. Um die Touch-Unterstützung zu aktivieren, müssen Sie "
+"in den NVDA-Einstellungen zur Anzeige Erweiterte Touch-Gesten zurückkehren "
+"und das Kontrollkästchen \"Touch-Interaktionsunterstützung aktivieren\" "
+"einschalten. Sind Sie sicher, dass Sie die Unterstützung der Touch-"
 "Interaktion vollständig deaktivieren möchten?"
 
 msgid "Disable touch interaction support"

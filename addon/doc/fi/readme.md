@@ -64,18 +64,18 @@ Syötekomennot-valintaikkunan Laajennetut kosketuseleet
 vuorovaikutus ja määritä asetuksen "Keskeytä NVDA:n kosketuskomento" arvoksi
 jotain kolmen ja kymmenen sekunnin väliltä (oletus on 5).
 
-## Version 19.09
+## Versio 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* Kosketustuki voidaan nyt poistaa käytöstä mistä tahansa, ei pelkästään
+  muista kuin normaalista profiilista.
 
-## Version 19.07
+## Versio 19.07
 
-* Internal changes to support future NVDA releases.
+* Sisäisiä muutoksia tulevien NVDA-versioiden tukemiseksi.
 
-## Version 18.12
+## Versio 18.12
 
-* Internal changes to support future NVDA releases.
+* Sisäisiä muutoksia tulevien NVDA-versioiden tukemiseksi.
 
 ## Versio 18.08
 
