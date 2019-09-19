@@ -68,16 +68,16 @@ Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
 
 ## Version 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* Die Touch-Unterstützung kann jetzt überall deaktiviert werden, nicht nur
+  von anderen Profilen, sondern auch in der Standard-Konfiguration.
 
 ## Version 19.07
 
-* Internal changes to support future NVDA releases.
+* Interne Änderungen zur Unterstützung zukünftiger NVDA-Versionen.
 
 ## Version 18.12
 
-* Internal changes to support future NVDA releases.
+* Interne Änderungen zur Unterstützung zukünftiger NVDA-Versionen.
 
 ## Version 18.08
 
