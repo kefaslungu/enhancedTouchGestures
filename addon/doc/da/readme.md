@@ -1,8 +1,8 @@
-# Enhanced Touch Gestures (Udvidede berøringsbevægelser) #
+# Udvidede berøringsbevægelser) #
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* NVDA-kompatibilitet: 2018.2 til 2019.2
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
@@ -66,16 +66,18 @@ NVDA's touch-understøttelse til mellem 3 og 10 sekunder. Som standard er det
 
 ## Version 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* Berøringsunderstøttelse kan nu deaktiveres fra alle steder, ikke kun fra
+  andre profiler end den normale profil.
 
 ## Version 19.07
 
-* Internal changes to support future NVDA releases.
+* Interne ændringer for at bedre kunne understøtte fremtidige versioner af
+  NVDA.
 
 ## Version 18.12
 
-* Internal changes to support future NVDA releases.
+* Interne ændringer for at bedre kunne understøtte fremtidige versioner af
+  NVDA.
 
 ## Version 18.08
 

@@ -2,13 +2,13 @@
 
 * Autore: Joseph Lee
 * Download [versione stabile][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* Compatibilità NVDA: dalla 2018.2 alla 2019.2
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità esplorazione
 
-Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Si noti che è necessario avere NVDA 2018.2 o successivo installato su un
+computer touchscreen con sistema operativo Windows 8 o versioni successive.
 
 ## Comandi
 
@@ -61,22 +61,22 @@ manualmente. Poi recarsi nel menu preferenze di NVDA, selezionare
 interazione al tocco, quindi configurare il valore del parametro pausa tocco
 di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
 
-## Version 19.09
+## Versione 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* Il supporto touch ora può essere disattivato ovunque, non solo da profili
+  diversi dal profilo normale.
 
-## Version 19.07
+## Versione 19.07
 
-* Internal changes to support future NVDA releases.
+* Modifiche interne per supportare le versioni future di NVDA.
 
-## Version 18.12
+## Versione 18.12
 
-* Internal changes to support future NVDA releases.
+* Modifiche interne per supportare le versioni future di NVDA.
 
-## Version 18.08
+## Versione 18.08
 
-* Compatible with NVDA 2018.3 and future versions.
+* Compatibile con NVDA 2018.3 e versioni future.
 
 ## Versione 18.06
 
@@ -93,8 +93,8 @@ di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
 ## Versione 18.03
 
 * è richiesto NVDA 2018.1.
-* Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no
-  longer included in this add-on.
+* Poiché NVDA 2018.1 viene fornito con la casella di controllo digitazione a
+  tocco, non è più inclusa in questo componente aggiuntivo.
 
 ## Versione 17.12
 
@@ -139,8 +139,8 @@ di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
   gestures directly (as though NVDA is not running; default is 5 seconds).
 * Added debug logging messages when performing right clicks (tap and hold)
   to be recorded in the NVDA log (requires NVDA 2017.1 or later).
-* Due to changes made when playing screen coordinates, NVDA 2017.1 or later
-  is required.
+* A causa delle modifiche apportate durante la riproduzione delle coordinate
+  dello schermo, è necessario NVDA 2017.1 o successivo.
 
 ##Versione 17.03
 
