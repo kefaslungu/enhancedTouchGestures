@@ -1,125 +1,129 @@
-# unaprjeđene dodirne geste -enhanced touch gestures #
+# Dodatne dodirne geste (Enhanced touch gestures) #
 
 * Autor: Joseph Lee
-* Preuzmi [stable version][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* Preuzmi [stabilnu verziju][1]
+* NVDA kompatibilnost: 2018.2 do 2019.2
 
-Ovaj dodatak omogućuje dodatne dodirničke geste u NVDA čitaču zaslona. Ovaj
-dodatak također dodaje set dodirnih gesti za lakšu navigaciju u načinu
-pregleda.
+Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
+čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakšu navigaciju
+u modusu čitanja.
 
-Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Napomena: Dodatak zahtijeva NVDA 2018.2 ili noviji, instaliran na računalu
+koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom Windows 8.1
+ili 10.
 
-## Komande
+## Naredbe
 
-### Dostupne svugdje
+### Svuda dostupne
 
-* četveroprstni dodir : uključi /isključi pomoč pri unosu.
-* dodirni i drži: izvodi desni klik na objektu pod vašim prstom.
-* Prevlačenje sa 4 prsta desno: uključuje i isključuje touch tastaturu
+* Dodir s četiri prsta: uključi/isključi pomoć pri unosu.
+* Dodirni i drži: izvodi desni klik na objektu pod prstom.
+* Klizanje s četiri prsta u desno: uključuje i isključuje touch tastaturu
   (obično je uključuje).
 
-### Objektni način
+### Objektni modus
 
-* troprstno klizanje prema dolje: čitanje trenutnog prozora.
-* troprstno klizanje lijevo: izvještava o objektu koji ima fokus.
-* troprstno klizanje u desno: izvještava o trenutnom objektu navigatora.
-* četveroprstno klizanje prema gore: izgovara naslov trenutnog prozora.
-* četveroprstno klizanje prema dolje: čita tekst statusne trake.
+* Klizanje s tri prsta prema dolje: čita trenutačni prozor.
+* Klizanje s tri prsta u lijevo: izvještava o objektu koji ima fokus.
+* Klizanje s tri prsta u desno: izvještava o trenutačnom navigacijskom
+  objektu.
+* Klizanje s četiri prsta prema gore: izgovara naslov trenutačnog prozora.
+* Klizanje s četiri prsta prema dolje: čita tekst statusne trake.
 
-## Dodirni način za web
+## Dodirni modus za web
 
-Ovaj dodirni način, dostupan u načinu pregleda, omogućava vam navigaciju po
-označenom elementu. Da biste se prebacili u dodirni način za web, iz
-dokumenata načina pregleda, izvedite troprstni dodir. iz ovog načina,
-klizanje u lijevo ili desno jednim prstom prebacuje između dostupnih načina
-navigacije - kretanja, dok se krećete desno ili lijevo jednim prstom pomiće
-se na slijedeći ili prethodni element, doista. Jednom kad izađete iz
-dokumenta načina pregleda, koristi se način objekta.
+Ovaj dodirni modus – dostupan u modusu čitanja – omogućuje navigaciju po
+označenom elementu. Za prebacivanje iz dokumenata u modusu čitanja u dodirni
+modus za web, ekran treba dodirnuti s tri prsta. U ovom modusu, klizanjem
+jednim prstom prema gore ili dolje prebacuje se između dostupnih modusa
+navigacije po elementima. Klizanjem jednim prstom u desno ili u lijevo,
+pomiče se na sljedeći ili prethodni element. Kad se izađe iz dokumenata u
+modusu čitanja, koristi se dodirni modus za objekte.
 
-## dodirni način postavki govorne jedinice
+## Postavke govorne jedinice u dodirnom modusu
 
-Možete koristiti ovaj način kako biste brzo promijenili postavke govorne
-jedinice poput odabira glasa ili promjene glasnoće. U ovom načinu, koristite
-dvoprstno klizanje u lijevo ili desno kako biste se pomicali između postavki
-govorne jedinice i koristite klizanje prstom u desno gore i dolje kako biste
-promijenili vrijednosti. Ove su geste preslik prečaca sa tipkovnice.
+Ovaj se modus koristiti za brzo mijenjenje postavki govorne jedinice, poput
+odabira glasa ili promjene glasnoće. Klizanjem s dva prsta u lijevo ili
+desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
+prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
+tipkovnice.
 
 ## Izvještavanje koordinata zvukom
 
-Ako ste omogućili postaku reproduciraj zvukove prilikom pomicanja miša u
-postavkama miša, čut ćete zvučne signale kako biste čuli indikaciju zaslona
-kad pozovete geste za istraživanje dodirom.
+Ako je u postavkama miša aktivirana postavka „Reproduciraj koordinate miša”,
+čut će se zvučni signali kao indikacija trenutačne koordinate ekrana kad se
+koriste geste za istraživanje dodirom.
 
-## Komanda za tipkanje jednim dodirom 
+## Proslijeđivanje dodirne naredbe
 
-Možete koristiti dodatnu naredbu za korištenje dodirnih gesti dok NVDA nije
-pokrenut. Morate definirati naredbu (koristeći dijaloški okvir Ulazne
-dodirne geste u kategoriji Dodatne dodirne geste kako bisgte omogućili
-korištenje ove značajke u intervalu do 10 sekundi te ručno uključivanje i
-isključivanje ove značajke. Potom idite u NVDA izbornik/Postavke/Interakcija
-dodirom i definirajte razmak između dodirnih komandi NVDA u intervalu između
-3 i 10 sekundi (po zadanom je 5 sekundi).
+Postoji nedodijeljena naredba za korištenje dodirnih gesti, kao da NVDA nije
+pokrenut. Da bi se koristila, naredba se mora definirati (putem dijaloškog
+okvira „Ulazne geste”) u kategoriji „Dodatne dodirne geste”, čime se
+omogućuje korištenje ove naredbe u trajanju od do 10 sekundi. Naredbu je
+moguće uključiti/isključiti i ručno. Zatim se putem NVDA
+izbornik→Postavke→Interakcija dodirom, treba definirati pauza za dodirne
+NVDA naredbe, u trajanju od 3 do 10 sekundi (standardno je postavljeno 5
+sekundi).
 
-## Version 19.09
+## Verzija 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* Podrška za dodir se sada može svugdje isključiti, ne samo u profilima koji
+  nisu normalni profili.
 
-## Version 19.07
+## Verzija 19.07
 
-* Internal changes to support future NVDA releases.
+* Unutarnje promjene, kako bi se podržale buduća NVDA izdanja.
 
-## Version 18.12
+## Verzija 18.12
 
-* Internal changes to support future NVDA releases.
+* Unutarnje promjene, kako bi se podržale buduća NVDA izdanja.
 
-## Version 18.08
+## Verzija 18.08
 
-* Compatible with NVDA 2018.3 and future versions.
+* Kompatibilno s NVDA 2018.3 i budućim verzijama.
 
-## Version 18.06
+## Verzija 18.06
 
-* Add-on settings is now found in new multi-category NVDA Settings screen
-  under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is
-  required.
-* Fixed compatibility issues with wxPython 4.
+* Postavke dodatka se sada nalaze u novom ekranu NVDA postavki s višestrukim
+  kategorijama pod kategorijom „Dodatne dodirne geste”. Iz tog razloga je
+  potreban NVDA 2018.2.
+* Ispravljena greška kompatibilnosti s wxPython 4.
 
-## Version 18.04
+## Verzija 18.04
 
 * Ispravljena greška gdje kategorija Interakcija dodirom u postavkama NVDA
-  može uzrokovati reprodukciju zvukova greške zbog promjena u dodatku.
+  može prouzročiti reprodukciju zvukova greške zbog promjena u dodatku.
 
-## Version 18.03
+## Verzija 18.03
 
-* Zahtijeva NVDA 2018.1
-* Zbog toga što NVDA 2018.1 dolazi s potvrdnim okvirom za tipkanje dodirom,
-  taj potvrdni okvir više nije uključen u ovaj dodatak.
+* Zahtijeva NVDA 2018.1.
+* Budući da NVDA 2018.1 dolazi s potvrdnim okvirom za tipkanje dodirom, taj
+  potvrdni okvir više nije uključen u ovaj dodatak.
 
-## Version 17.12
+## Verzija 17.12
 
-* Zahtijeva NVDA 2017.4. Konkretno, ovaj dodatak sada može pratiti
-  prebacivanje između konfiguracijskih profila.
-* S obzirom da NVDA inačica 2017.4 uključuje izvještavanje o orijentaciji
-  zaslona, ova značajka više nije dio ovog dodatka.
-* Dodan skriveni potvrdni okvir u dijaloškom okviru Interakcija dodirom koji
-  kompletno onemogućava podršku dodirom (dostupno je ako su aktivni
-  konfiguracijski profili koji nemaju uobičajenu konfiguraciju).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NvDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using NVDA 2018.1 or later.
+* Zahtijeva NVDA 2017.4. Konkretno, ovaj dodatak sada podržava mijenjenje
+  konfiguracijskih profila.
+* S obzirom da NVDA verzija 2017.4 uključuje izvještavanje o orijentaciji
+  ekrana, ova značajka više nije dio ovog dodatka.
+* Dodan skriveni potvrdni okvir u dijaloškom okviru Interakcija dodirom,
+  koji kompletno onemogućava podršku dodirom (dostupno je, ako su
+  konfiguracijski profili aktivni koji nemaju uobičajenu konfiguraciju).
+* Ako se koriste nedavno objavljene razvojne verzije NVDA čitača, dijaloški
+  okvir „Interakcija dodirom” bit će prikazan dvaput u podizborniku NVDA
+  postavki. Druga stavka je dijaloški okvir koji dolazi s dodatkom.
+* U dijaloškom okviru Interakcija dodirom ovog dodatka, modus tipkanja
+  dodirom više se ne prikazuje, ako koristite nedavno objavljene razvojne
+  verzije NVDA.
 
-## Version 17.10
+## Verzija 17.10
 
 * Zbog politike podrške tvrtke Microsoft, Windows 8 (originalno izdanje)
   više nije podržan.
 * NVDA više neće dvaput izvještavati o orijentaciji zaslona tijekom
-  korištenja razvojnih inačica NVDA 2017.4.
+  korištenja razvojnih verzija NVDA 2017.4.
 
-## Version 17.07.1
+## Verzija 17.07.1
 
 * Dodana je opcija u dijaloškom okviru interakcije dodirom za uključivanje i
   isključivanje istraživanja jednim dodirom bez štoperice.
@@ -127,40 +131,40 @@ dodirom i definirajte razmak između dodirnih komandi NVDA u intervalu između
   uključen prije nego što mod učenja istekne, interakcija dodirom će biti
   dostupna.
 
-## Version 17.07
+## Verzija 17.07
 
-* Dodan je novi dijaloški okvir pod nazivom Interakcija dodirom u
-  podizborniku postavki NVDA za definiranje kako će NVDA raditi sa zaslonima
-  osjetljivim na dodir.
-* Naqkon što instalirate ovu verziju, dok pritiščete tipke na touch
-  tipkovnici, jednu željenu tipku morate dvaput dodirnuti. Možete se vratiti
-  na stari način rada omogućavanjem tipkanja jednim dodirom iz dijaloškog
-  okvira Interakcija dodirom.
-* Dodana je naredba (neraspoređena) koja dozvoljava NVDA da ignorira dodirne
-  geste u intervalu do 10 sekundi.
+* Dodan je novi dijaloški okvir pod nazivom „Interakcija dodirom” u
+  podizborniku NVDA postavki za definiranje načina rada NVDA čitača s
+  ekranima osjetljivim na dodir.
+* Nakon instaliranja ove verzije, prilikom pritiskanja tipki na dodirnoj
+  tipkovnici, željena tipka se mora dodirnuti dvaput. Moguće je prebaciti se
+  na stari način rada, aktiviranjem tipkanja dodirom u dijaloškom okviru
+  Interakcija dodirom.
+* Dodana je naredba (nedodijeljena) koja dozvoljava NVDA čitaču ignorirati
+  dodirne geste u intervalu do 10 sekundi.
 * Dodana je opcija u dijaloškom okviru interakcije dodirom koja dozvoljava
-  NVDA da zaustavi interakciju dodirom u intervalu između 3 i 10 sekundi
-  kako bi se direktno izvršile dodirne geste (kada NVDA nije pokrenut; po
-  zadanom je 5 sekundi).
-* Dodane poruke za otkrivanje grešaka tijekom izvođenja desnog klika
-  (dodirni i zadrži) i njihovo pohranjivanje u NVDA log (zahtijeva NVDA
-  inačicu 2017.1
-* Implementirane promjene za prikazivanje koordinata na zaslonu zahtijevaju
-  NVDA inačicu 2017.1 ili noviju.
+  NVDA čitaču zaustaviti interakciju dodirom u intervalu između 3 i 10
+  sekundi, kako bi se direktno izvršile dodirne geste (kad NVDA nije
+  pokrenut; standardno je 5 sekundi).
+* Dodane su poruke za otkrivanje grešaka tijekom izvođenja desnog klika
+  (dodirni i zadrži) i njihovo spremanje u NVDA log (zahtijeva NVDA verziju
+  2017.1 ili noviju).
+* Zbog promjena u reproduciranju koordinata ekrana, zahtijeva NVDA verziju
+  2017.1 ili noviju.
 
-##Version 17.03
+##Verzija 17.03
 
 * Riješen problem gdje se pri izvještavanju koordinata nije čuo zvuk ili se
-  pojavljivao zvuk pogreške tijekom korištenja NVDA inačice 2017.1 ili
+  pojavljivao zvuk pogreške tijekom korištenja NVDA verzije 2017.1 ili
   novije.
 
-##Version 16.12
+##Verzija 16.12
 
-* Web dodirni mod radi u programu Microsoft Edge, Microsoft Word i drugdje
-  gdje je moguće koristiti mod pretraživanja.
-* Dodani su popisi i orijentiri za elemente u web dodirnom okruženju.
+* Dodirni modus za web radi u programu Microsoft Edge, Microsoft Word i
+  drugdje gdje je moguće koristiti modus pretraživanja.
+* Dodani su popisi i orijentiri za elemente u dodirnom modusu za web.
 
-## Inačica 16.06
+## Verzija 16.06
 
 * Inicijalna stabilna verzija.
 
