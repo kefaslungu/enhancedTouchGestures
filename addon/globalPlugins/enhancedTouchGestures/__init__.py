@@ -58,11 +58,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
-			# NVDA 2018.3 and later.
-			if hasattr(config, "post_configProfileSwitch"):
-				config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
-			else: #2018.2 and earlier.
-				config.configProfileSwitched.register(self.handleConfigProfileSwitch)
+			config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
 			# Also react to touch handler enable/disable notification if changed from settings panel.
 			ETSActionTouchHandlerSettingsChanged.register(self.handleConfigProfileSwitch)
 			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
