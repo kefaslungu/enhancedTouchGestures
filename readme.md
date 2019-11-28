@@ -2,11 +2,11 @@
 
 * Author: Joseph Lee
 * Download [stable version][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* NVDA compatibility: 2019.3 and beyond
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2018.2 or later running on a touchscreen computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen computer with Windows 8.1 or 10.
 
 ## Commands
 
@@ -39,6 +39,10 @@ If you've enabled play mouse coordinates setting in mouse settings, you'll hear 
 ## Touch command passthrough
 
 An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
 
 ## Version 19.11
 
