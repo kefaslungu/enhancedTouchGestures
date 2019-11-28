@@ -128,18 +128,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_reportCurrentFocus(self, gesture):
 		commands.script_reportCurrentFocus(gesture)
+	script_reportCurrentFocus.__doc__ = commands.script_reportCurrentFocus.__doc__
 
 	def script_title(self, gesture):
 		commands.script_title(gesture)
+	script_title.__doc__ = commands.script_title.__doc__
 
 	def script_reportStatusLine(self, gesture):
 		commands.script_reportStatusLine(gesture)
+	script_reportStatusLine.__doc__ = commands.script_reportStatusLine.__doc__
 
 	def script_speakForeground(self, gesture):
 		commands.script_speakForeground(gesture)
+	script_speakForeground.__doc__ = commands.script_speakForeground.__doc__
 
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
+	script_navigatorObject_current.__doc__ = commands.script_navigatorObject_current.__doc__
 
 	#Web navigation:
 
@@ -264,15 +269,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
+	script_prevSynthSettingValue.__doc__ = commands.script_increaseSynthSetting.__doc__
 
 	def script_nextSynthSettingValue(self, gesture):
 		commands.script_decreaseSynthSetting(gesture)
+	script_nextSynthSettingValue.__doc__ = commands.script_decreaseSynthSetting.__doc__
 
 	def script_nextSynthSetting(self, gesture):
 		commands.script_nextSynthSetting(gesture)
+	script_nextSynthSetting.__doc__ = commands.script_nextSynthSetting.__doc__
 
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
+	script_prevSynthSetting.__doc__ = commands.script_previousSynthSetting.__doc__
 
 	__gestures={
 		# Additional touch gestures added to global commands:
