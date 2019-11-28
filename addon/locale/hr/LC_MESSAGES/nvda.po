@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2019-11-15 23:30+0100\n"
+"PO-Revision-Date: 2019-11-21 23:08+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: \n"
 "Language: hr\n"
@@ -31,9 +31,8 @@ msgstr "Dodatne dodirne geste"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-#, fuzzy
 msgid "Enable touch interaction support"
-msgstr "Deaktiviraj podršku za dodirnu interakciju"
+msgstr "Aktiviraj podršku za dodirnu interakciju"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -43,7 +42,6 @@ msgstr "&Pauziraj NVDA podršku za dodir (trajanje u sekundama)"
 msgid "&Manually toggle touch passthrough"
 msgstr "&Ručno uključi/isključi dodirne naredbe"
 
-#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "
@@ -54,7 +52,7 @@ msgstr ""
 "Potpuno ćeš isključiti podršku za dodirnu interakciju, tako da se ekran "
 "osjetljiv na dodir može koristiti kao da NVDA nije pokrenut. Za aktiviranje "
 "podrške za dodir, vrati se na ploču „Dodatne dodirne geste” u NVDA "
-"postavkama i odznači potvrdni okvir „Deaktiviraj podršku za dodirnu "
+"postavkama i označi potvrdni okvir „Aktiviraj podršku za dodirnu "
 "interakciju”. Zaista želiš potpuno isključiti podršku za dodirnu interakciju?"
 
 msgid "Disable touch interaction support"
@@ -70,8 +68,8 @@ msgid ""
 msgstr ""
 "Paket dodatnih naredbi za dodire, uključujući naredbe za navigaciju i "
 "pomoć.\n"
-"\tPotrebno je računalo koje omogućuje rad dodirom, s instaliranim sustavom "
-"Windows 8.1 ili novijim i s NVDA 2017.4 ili novijom verzijom."
+"\tPotrebno je računalo koje omogućuje rad dodirom i na kojem je instaliran "
+"sustav Windows 8.1 ili noviji i NVDA 2017.4 ili noviji."
 
 #~ msgid "Completely disable touch interaction support"
 #~ msgstr "Kompletno deaktiviraj podršku za dodirnu interakciju"
