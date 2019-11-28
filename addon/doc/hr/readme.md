@@ -61,7 +61,7 @@ pokrenut. Da bi se koristila, naredba se mora definirati (putem dijaloškog
 okvira „Ulazne geste”) u kategoriji „Dodatne dodirne geste”, čime se
 omogućuje korištenje ove naredbe u trajanju od do 10 sekundi. Naredbu je
 moguće uključiti/isključiti i ručno. Zatim se putem NVDA
-izbornik→Postavke→Interakcija dodirom, treba definirati pauza za dodirne
+izbornik>Postavke>Interakcija dodirom, treba definirati pauza za dodirne
 NVDA naredbe, u trajanju od 3 do 10 sekundi (standardno je postavljeno 5
 sekundi).
 

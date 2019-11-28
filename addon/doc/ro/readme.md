@@ -65,18 +65,18 @@ meniul NVDA/Preferințe/Interacțiunea prin atingere, apoi configurați pauza
 valorii comenzii de atingere NVDA între 3 și 10 secunde (valoarea implicită
 este de 5 secunde).
 
-## Version 19.09
+## Versiunea 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* Suportul tactil poate fi dezactivat de oriunde, nu doar din alte profiluri
+  decât cel normal.
 
-## Version 19.07
+## Versiunea 19.07
 
-* Internal changes to support future NVDA releases.
+* Modificări interne care suportă viitoarele versiuni de NVDA.
 
-## Version 18.12
+## Versiunea 18.12
 
-* Internal changes to support future NVDA releases.
+* Modificări interne care suportă viitoarele versiuni de NVDA.
 
 ## Versiunea 18.08
 
@@ -86,7 +86,7 @@ este de 5 secunde).
 
 * Setările suplimentului se află în ecranul multicategoriei de setări, în
   categoria „Enhanced Touch Gestures”. Ca rezultat al acestei schimbări,
-  este necesară versiunea NVDA 2018.2
+  este necesară versiunea NVDA 2018.2.
 * S-au rezolvat problemele de compatibilitate cu wxPython 4.
 
 ## Versiunea 18.04

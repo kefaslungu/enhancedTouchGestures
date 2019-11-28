@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* Zgodność z wersjami NVDA: 2018.2 do 2019.2
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
@@ -61,18 +61,18 @@ do dziesięciu sekund lub przełączyć ją ręcznie. Następnie należy wejść
 meni NVDA/Ustawienia/Reakcja na Dotyk, i skonfigurować czas wstrzymania
 poleceń dotykowych NVDA od 3 do 10 sekund. Wartość domyślna to 5 sekund.
 
-## Version 19.09
+## Wersja 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* Wsparcie dotykowe może być wyłączone z jakiegokolwiek miejsca, czyli nie
+  tylko przy aktywnym normalnym profilu.
 
-## Version 19.07
+## Wersja 19.07
 
-* Internal changes to support future NVDA releases.
+* Zmiany wewnętrzne dla wsparcia nowszych wersji NVDA.
 
-## Version 18.12
+## Wersja 18.12
 
-* Internal changes to support future NVDA releases.
+* Zmiany wewnętrzne dla wsparcia nowszych wersji NVDA.
 
 ## Wersja 18.08
 
