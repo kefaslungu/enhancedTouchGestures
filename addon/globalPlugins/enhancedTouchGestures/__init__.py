@@ -249,6 +249,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				self.touchPassthroughTimer = None
 
 	def script_toggleTouchPassthrough(self, gesture):
+		# No, do not allow passthrough to be toggled if touch support is turned off completely.
+		if not config.conf["touch"]["enabled"]:
+			ui.message("Touch support is disabled, cannot toggle touch passthrough")
+			return
 		# First, check if timer is running, and if so, enable touch interaction (manual toggle).
 		if ((not touchHandler.handler and config.conf["touch"]["manualPassthroughToggle"])
 		or (self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning())):
