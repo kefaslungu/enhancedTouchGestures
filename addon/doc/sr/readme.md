@@ -2,7 +2,7 @@
 
 * аутор : Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* NVDA compatibility: 2018.2 to 2019.3
 
 овај додатак вам пружа побољшане гестове за екране осетљиве на додир.
 
@@ -50,6 +50,10 @@ command (via Input Gestures dialog) under Enhanced Touch Gestures category
 to let you do this for up to ten seconds or toggle this manually. Then go to
 NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch
 command value between 3 to 10 seconds (default is 5 seconds).
+
+## Version 19.11
+
+* Added input help messages for additional touch commands.
 
 ## Version 19.09
 

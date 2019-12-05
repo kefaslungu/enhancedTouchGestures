@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Compatibilidade con NVDA: da 2018.2 á 2019.2
+* Compatibilidade con NVDA: da 2018.2 á 2019.3
 
 Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
@@ -28,7 +28,7 @@ computador con pantalla táctil co Windows 8.1 ou 10.
 * deslizar 4 dedos cara arriba: anunciar o título da ventá actual.
 * Deslizar 4 dedos cara abaixo: anunciar texto da barra de estado.
 
-## Modo Web táctil 
+## Modo Web táctil
 
 Este modo táctil, dispoñible no modo exploración, permíteche navegar o
 documento por elementos seleccionados. Para cambiar a modo web, dende
@@ -62,6 +62,10 @@ categoría Enhanced Touch Gestures para permitirche facer esto en ata 10
 segundos ou cambialo manualmente. Entón vai ao menú
 NVDA/Preferencias/Interacción Tactil, logo configura pausar a orde de valor
 tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
+
+## Versión 19.11
+
+* Engadidas mensaxes de axuda de entrada para xestos táctiles adicionais.
 
 ## Versión 19.09
 

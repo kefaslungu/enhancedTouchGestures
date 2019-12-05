@@ -2,7 +2,7 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* Yhteensopivuus: NVDA 2018.2-2019.2
+* Yhteensopivuus: NVDA 2018.2-2019.3
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
@@ -63,6 +63,10 @@ Syötekomennot-valintaikkunan Laajennetut kosketuseleet
 -kategoriasta. Valitse tämän jälkeen NVDA-valikosta Asetukset/Kosketuksen
 vuorovaikutus ja määritä asetuksen "Keskeytä NVDA:n kosketuskomento" arvoksi
 jotain kolmen ja kymmenen sekunnin väliltä (oletus on 5).
+
+## Versio 19.11
+
+* Lisätty syöteohjeviestejä kosketuskomennoille.
 
 ## Versio 19.09
 

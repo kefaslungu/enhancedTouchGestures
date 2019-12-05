@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA-Kompatibilität: 2018.2 bis 2019.2
+* NVDA-Kompatibilität: 2018.2 bis 2019.3
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
@@ -65,6 +65,10 @@ manuell umschalten. Gehen Sie dazu in das
 NVDA-Menü/Einstellungen/Touch-Interaction und konfigurieren Sie die
 Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
 (Standard ist 5 Sekunden).
+
+## Version 19.11
+
+* Eingabehilfemeldungen für zusätzliche Berührungsgesten hinzugefügt.
 
 ## Version 19.09
 
