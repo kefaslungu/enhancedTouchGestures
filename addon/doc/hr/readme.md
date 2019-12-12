@@ -5,8 +5,8 @@
 * NVDA kompatibilnost: 2018.2 do 2019.3
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
-čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakšu navigaciju
-u modusu čitanja.
+čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
+modusu čitanja.
 
 Napomena: Dodatak zahtijeva NVDA 2018.2 ili noviji, instaliran na računalu
 koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom Windows 8.1
@@ -32,13 +32,13 @@ ili 10.
 
 ## Dodirni modus za web
 
-Ovaj dodirni modus – dostupan u modusu čitanja – omogućuje navigaciju po
+Ovaj dodirni modus – dostupan u modusu čitanja – omogućuje kretanje po
 označenom elementu. Za prebacivanje iz dokumenata u modusu čitanja u dodirni
 modus za web, ekran treba dodirnuti s tri prsta. U ovom modusu, klizanjem
 jednim prstom prema gore ili dolje prebacuje se između dostupnih modusa
-navigacije po elementima. Klizanjem jednim prstom u desno ili u lijevo,
-pomiče se na sljedeći ili prethodni element. Kad se izađe iz dokumenata u
-modusu čitanja, koristi se dodirni modus za objekte.
+kretanja po elementima. Klizanjem jednim prstom u desno ili u lijevo, pomiče
+se na sljedeći ili prethodni element. Kad se izađe iz dokumenata u modusu
+čitanja, koristi se dodirni modus za objekte.
 
 ## Postavke govorne jedinice u dodirnom modusu
 
