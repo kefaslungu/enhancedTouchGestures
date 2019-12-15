@@ -82,6 +82,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Because some apps have their own handlers for touch, do not let NVDA take over touchscreens.
 		# There are also times when turning off touchscreen through a profile is useful.
 		# Due to this mechanism, NVDA 2017.4 or later is required.
+		# Touch handler toggle will become unnecessary once NVDA Core issue 9682 becomes a reality.
+		if hasattr(touchHandler, "setTouchSupport"):
+			if not config.conf["touch"]["enabled"]:
+				# Manual touch passthrough timer might be active.
+				if self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning:
+					self.touchPassthroughTimer.Stop()
+					self.touchPassthroughTimer = None
+			else:
+				self.resumeTouchInteraction(profileSwitch=True)
+			return
 		if not config.conf["touch"]["enabled"]:
 			if touchHandler.handler:
 				self.etsDebugOutput("etouch: automatically disabling touch handler")
@@ -235,13 +245,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		tones.beep(1000, 150)
 
 	def resumeTouchInteraction(self, profileSwitch=False):
+		import tones
+		if hasattr(touchHandler, "setTouchSupport"):
+			if touchHandler.touchSupported():
+				touchHandler.setTouchSupport(True)
+				if not profileSwitch:
+					ui.message("Touch passthrough off")
+					tones.beep(380, 100)
+			else:
+				if not profileSwitch: ui.message("Touch is not supported")
+			self.touchPassthroughTimer = None
+			return
 		if not touchHandler.handler:
 			try:
 				self.etsDebugOutput("etouch: attempting to enable touch handler")
 				touchHandler.initialize()
 				if not profileSwitch:
 					ui.message("Touch passthrough off")
-					import tones
 					tones.beep(380, 100)
 			except:
 				if not profileSwitch: ui.message("Touch is not supported")
@@ -261,7 +281,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		if touchHandler.handler:
 			self.etsDebugOutput("etouch: disabling touch handler")
-			touchHandler.terminate()
+			if hasattr(touchHandler, "setTouchSupport"): touchHandler.setTouchSupport(False)
+			else: touchHandler.terminate()
 			ui.message("Touch passthrough on")
 			import tones
 			tones.beep(760, 100)
@@ -334,10 +355,11 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 
 	def makeSettings(self, settingsSizer):
 		touchHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
-		# Translators: This is the label for a checkbox in the
-		# Enhanced Touch Gestures settings panel.
-		self.enableTouchSupportCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("Enable touch interaction support")))
-		self.enableTouchSupportCheckBox.SetValue(config.conf["touch"]["enabled"])
+		if not hasattr(touchHandler, "setTouchSupport"):
+			# Translators: This is the label for a checkbox in the
+			# Enhanced Touch Gestures settings panel.
+			self.enableTouchSupportCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("Enable touch interaction support")))
+			self.enableTouchSupportCheckBox.SetValue(config.conf["touch"]["enabled"])
 		# Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 		self.commandPassthroughDuration=touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
 		# Translators: a checkbox to allow passthrough to be toggled manually.
@@ -345,11 +367,12 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 		self.manualPassthroughCheckBox.SetValue(config.conf["touch"]["manualPassthroughToggle"])
 
 	def onSave(self):
-		if config.conf["touch"]["enabled"] and not self.enableTouchSupportCheckBox.IsChecked():
-			message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to Enhanced Touch Gestures panel in NVDA Settings and check 'enable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
-			if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
-				return
-		config.conf["touch"]["enabled"]=self.enableTouchSupportCheckBox.IsChecked()
+		if hasattr(self, "enableTouchSupportCheckBox"):
+			if config.conf["touch"]["enabled"] and not self.enableTouchSupportCheckBox.IsChecked():
+				message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to Enhanced Touch Gestures panel in NVDA Settings and check 'enable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
+				if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
+					return
+			config.conf["touch"]["enabled"]=self.enableTouchSupportCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
 		ETSActionTouchHandlerSettingsChanged.notify()
