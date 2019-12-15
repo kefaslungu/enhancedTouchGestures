@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Compatibilidad con NVDA: de 2018.2 a 2019.2
+* Compatibilidad con NVDA: de 2018.2 a 2019.3
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
@@ -65,6 +65,11 @@ en la categoría Enhanced Touch Gestures para permitirte hacer esto en hasta
 NVDA/Preferencias/Interacción Táctil, luego configura pausar la orden de
 valor táctil de NVDA entre 3 y 10 segundos (el predeterminado es 5
 segundos).
+
+## Versión 19.11
+
+* Se han añadido mensajes de ayuda de entrada para las órdenes táctiles
+  adicionales.
 
 ## Versión 19.09
 

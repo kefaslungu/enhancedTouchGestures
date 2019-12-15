@@ -2,7 +2,7 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA-kompatibilitet: 2018.2 til 2019.2
+* NVDA compatibility: 2018.2 to 2019.3
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
@@ -63,6 +63,10 @@ eller dette kan slås fra manuelt. Gå herefter til
 NVDA-menu>Præferencer>Indstillinger>Touch-interaktion, og konfigurer Pause i
 NVDA's touch-understøttelse til mellem 3 og 10 sekunder. Som standard er det
 5.
+
+## Version 19.11
+
+* Added input help messages for additional touch commands.
 
 ## Version 19.09
 
