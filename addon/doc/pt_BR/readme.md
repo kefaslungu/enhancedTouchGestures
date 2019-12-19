@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* NVDA compatibility: 2018.2 to 2019.3
 
 Este complemento provê gestos adicionais para telas táteis no NVDA. Também
 provê um conjunto de gestos para uma navegabilidade mais fácil no modo de
@@ -60,6 +60,10 @@ gestos táteis aprimorados, para poder fazer isso por até dez segundos ou
 alternar manualmente. Depois vá ao menu do NVDA/Preferências/Interação Tátil
 e configure o valor do comando tátil Pausar NVDA entre 3 e 10 segundos (o
 padrão é 5 segundos).
+
+## Version 19.11
+
+* Added input help messages for additional touch commands.
 
 ## Version 19.09
 

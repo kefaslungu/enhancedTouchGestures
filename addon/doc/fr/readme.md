@@ -2,7 +2,7 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2018.2 to 2019.2
+* NVDA compatibility: 2018.2 to 2019.3
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
@@ -66,6 +66,10 @@ de l'étendre jusqu'à dix secondes ou de le basculer manuellement. Ensuite,
 allez dans le menu NVDA/Préférences/Interaction Tactile, puis le configurer
 afin de suspendre la valeur   de la commande tactile de NVDA entre 3 à 10
 secondes (par défaut 5 secondes).
+
+## Version 19.11
+
+* Added input help messages for additional touch commands.
 
 ## Version 19.09
 

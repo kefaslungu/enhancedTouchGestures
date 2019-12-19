@@ -2,11 +2,11 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA kompatibilnost: 2018.2 do 2019.2
+* NVDA kompatibilnost: 2018.2 do 2019.3
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
-čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakšu navigaciju
-u modusu čitanja.
+čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
+modusu čitanja.
 
 Napomena: Dodatak zahtijeva NVDA 2018.2 ili noviji, instaliran na računalu
 koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom Windows 8.1
@@ -16,9 +16,9 @@ ili 10.
 
 ### Svuda dostupne
 
-* Dodir s četiri prsta: uključi/isključi pomoć pri unosu.
+* Dodir s četiri prsta: uključi ili isključi modus pomoći tijekom unosa.
 * Dodirni i drži: izvodi desni klik na objektu pod prstom.
-* Klizanje s četiri prsta u desno: uključuje i isključuje touch tastaturu
+* Klizanje s četiri prsta u desno: uključi ili isključi dodirnu tastaturu
   (obično je uključuje).
 
 ### Objektni modus
@@ -32,13 +32,13 @@ ili 10.
 
 ## Dodirni modus za web
 
-Ovaj dodirni modus – dostupan u modusu čitanja – omogućuje navigaciju po
+Ovaj dodirni modus – dostupan u modusu čitanja – omogućuje kretanje po
 označenom elementu. Za prebacivanje iz dokumenata u modusu čitanja u dodirni
 modus za web, ekran treba dodirnuti s tri prsta. U ovom modusu, klizanjem
 jednim prstom prema gore ili dolje prebacuje se između dostupnih modusa
-navigacije po elementima. Klizanjem jednim prstom u desno ili u lijevo,
-pomiče se na sljedeći ili prethodni element. Kad se izađe iz dokumenata u
-modusu čitanja, koristi se dodirni modus za objekte.
+kretanja po elementima. Klizanjem jednim prstom u desno ili u lijevo, pomiče
+se na sljedeći ili prethodni element. Kad se izađe iz dokumenata u modusu
+čitanja, koristi se dodirni modus za objekte.
 
 ## Postavke govorne jedinice u dodirnom modusu
 
@@ -65,9 +65,13 @@ izbornik>Postavke>Interakcija dodirom, treba definirati pauza za dodirne
 NVDA naredbe, u trajanju od 3 do 10 sekundi (standardno je postavljeno 5
 sekundi).
 
+## Verzija 19.11
+
+* Dodane su poruke pomoći tijekom unosa za dodatne dodirne naredbe.
+
 ## Verzija 19.09
 
-* Podrška za dodir se sada može svugdje isključiti, ne samo u profilima koji
+* Podrška za dodir se sad može svugdje isključiti, ne samo u profilima koji
   nisu normalni profili.
 
 ## Verzija 19.07
@@ -118,9 +122,9 @@ sekundi).
 
 ## Verzija 17.10
 
-* Zbog politike podrške tvrtke Microsoft, Windows 8 (originalno izdanje)
-  više nije podržan.
-* NVDA više neće dvaput izvještavati o orijentaciji zaslona tijekom
+* Zbog Microsoft pravila za podršku, Windows 8 (originalno izdanje) više
+  nije podržan.
+* NVDA više neće dvaput izvještavati o orijentaciji ekrana tijekom
   korištenja razvojnih verzija NVDA 2017.4.
 
 ## Verzija 17.07.1
@@ -172,4 +176,4 @@ sekundi).
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ets
+[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

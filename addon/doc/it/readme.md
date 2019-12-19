@@ -2,7 +2,7 @@
 
 * Autore: Joseph Lee
 * Download [versione stabile][1]
-* Compatibilità NVDA: dalla 2018.2 alla 2019.2
+* NVDA compatibility: 2018.2 to 2019.3
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità esplorazione
@@ -60,6 +60,10 @@ massimo di dieci secondi oppure abilitare/disabilitare l'impostazione
 manualmente. Poi recarsi nel menu preferenze di NVDA, selezionare
 interazione al tocco, quindi configurare il valore del parametro pausa tocco
 di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
+
+## Version 19.11
+
+* Added input help messages for additional touch commands.
 
 ## Versione 19.09
 

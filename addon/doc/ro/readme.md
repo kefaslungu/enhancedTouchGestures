@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* Compatibilitate NVDA: 2018.2 - 2019.2
+* NVDA compatibility: 2018.2 to 2019.3
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
@@ -64,6 +64,10 @@ permite să faceți acest lucru timp de până la zece secunde, apoi mergeți la
 meniul NVDA/Preferințe/Interacțiunea prin atingere, apoi configurați pauza
 valorii comenzii de atingere NVDA între 3 și 10 secunde (valoarea implicită
 este de 5 secunde).
+
+## Version 19.11
+
+* Added input help messages for additional touch commands.
 
 ## Versiunea 19.09
 
