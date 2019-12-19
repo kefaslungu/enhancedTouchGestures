@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2018-06-16 16:24+0100\n"
+"PO-Revision-Date: 2019-12-15 18:58+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sr\n"
@@ -29,9 +29,8 @@ msgstr "Enhanced Touch Gestures"
 
 #. Translators: This is the label for a checkbox in the
 #. Enhanced Touch Gestures settings panel.
-#, fuzzy
 msgid "Enable touch interaction support"
-msgstr "Onemogući podršku za ekran osetljiv na dodir"
+msgstr "Omogući podršku interakcije sa ekranom"
 
 #. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
 msgid "&Pause NVDA's touch support (duration in seconds)"
@@ -44,7 +43,6 @@ msgid "&Manually toggle touch passthrough"
 msgstr ""
 "&Ručno uključivanje i isključivanje komande za slanje prečice aplikaciji"
 
-#, fuzzy
 msgid ""
 "You are about to turn off touch interaction support completely so the "
 "touchscreen can be used as though NVDA is not running. To enable touch "

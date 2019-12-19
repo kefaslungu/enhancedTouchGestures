@@ -124,7 +124,7 @@ sekundi).
 
 * Zbog Microsoft pravila za podršku, Windows 8 (originalno izdanje) više
   nije podržan.
-* NVDA više neće dvaput izvještavati o orijentaciji zaslona tijekom
+* NVDA više neće dvaput izvještavati o orijentaciji ekrana tijekom
   korištenja razvojnih verzija NVDA 2017.4.
 
 ## Verzija 17.07.1
