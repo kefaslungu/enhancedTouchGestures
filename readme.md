@@ -43,6 +43,7 @@ An unassigned command is available to allow you to use touchscreen gestures as t
 ## Version 20.01
 
 * NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer function if touch support is turned off completely.
 
 ## Version 19.11
 
