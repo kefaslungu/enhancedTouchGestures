@@ -2,13 +2,14 @@
 
 * Автор: Joseph Lee
 * Загрузить [стабильную версию][1]
-* NVDA compatibility: 2018.2 to 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Это дополнение предоставляет дополнительные жесты сенсорного экрана для
 NVDA. Также, оно предоставляет набор жестов для облегчения навигации режима
 обзора.
 
-Note: this add-on requires NVDA 2018.2 or later running on a touchscreen
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
 ## Команды
@@ -63,6 +64,12 @@ command (via Input Gestures dialog) under Enhanced Touch Gestures category
 to let you do this for up to ten seconds or toggle this manually. Then go to
 NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch
 command value between 3 to 10 seconds (default is 5 seconds).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Version 19.11
 
@@ -169,3 +176,5 @@ command value between 3 to 10 seconds (default is 5 seconds).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

@@ -2,13 +2,14 @@
 
 * Автор: Joseph Lee
 * Изтегляне на [стабилна версия][1]
-* Съвместимост с NVDA: от 2018.2 до 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Тази добавка предлага допълнителни сензорни жестове за NVDA. Също така
 предоставя и пакет от жестове за улеснена навигация в режим на разглеждане.
 
-Забележка: Тази добавка изисква NVDA 2018.2 или по-нова, работеща на
-компютър със сензорен екран с Windows 8.1 или 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Команди
 
@@ -65,6 +66,12 @@
 менюто на NVDA -> Настройки -> Сензорно взаимодействие, от където можете да
 зададете стойността на настройката за времето за пауза на сензорните жестове
 на NVDA в интервала от 3 до 10 секунди (по подразбиране е 5 секунди).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Версия 19.11
 
@@ -187,3 +194,5 @@
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

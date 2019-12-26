@@ -2,14 +2,15 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Compatibilidade con NVDA: da 2018.2 á 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
 exploración.
 
-Nota: este complemento require do NVDA 2018.2 ou posterior executándose nun
-computador con pantalla táctil co Windows 8.1 ou 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Ordes
 
@@ -62,6 +63,12 @@ categoría Enhanced Touch Gestures para permitirche facer esto en ata 10
 segundos ou cambialo manualmente. Entón vai ao menú
 NVDA/Preferencias/Interacción Tactil, logo configura pausar a orde de valor
 tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Versión 19.11
 
@@ -173,3 +180,5 @@ tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

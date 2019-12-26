@@ -2,13 +2,14 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* NVDA compatibility: 2018.2 to 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
 
-Rețineți că aveți nevoie de NVDA 2018.2 sau mai nou instalat pe un computer
-cu touchscreen care rulează Windows 8.1 sau 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Comenzi
 
@@ -64,6 +65,12 @@ permite să faceți acest lucru timp de până la zece secunde, apoi mergeți la
 meniul NVDA/Preferințe/Interacțiunea prin atingere, apoi configurați pauza
 valorii comenzii de atingere NVDA între 3 și 10 secunde (valoarea implicită
 este de 5 secunde).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Version 19.11
 
@@ -179,3 +186,5 @@ este de 5 secunde).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

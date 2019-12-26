@@ -2,13 +2,14 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA compatibility: 2018.2 to 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
 
-Bemærk, at du skal bruge NVDA 2018.2 eller senere installeret på en computer
-med berøringsfølsom skærm, og som kører Windows 8.1 eller 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Kommandoer
 
@@ -63,6 +64,12 @@ eller dette kan slås fra manuelt. Gå herefter til
 NVDA-menu>Præferencer>Indstillinger>Touch-interaktion, og konfigurer Pause i
 NVDA's touch-understøttelse til mellem 3 og 10 sekunder. Som standard er det
 5.
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Version 19.11
 
@@ -177,3 +184,5 @@ NVDA's touch-understøttelse til mellem 3 og 10 sekunder. Som standard er det
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

@@ -2,14 +2,15 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* NVDA compatibility: 2018.2 to 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Este complemento provê gestos adicionais para telas táteis no NVDA. Também
 provê um conjunto de gestos para uma navegabilidade mais fácil no modo de
 navegação.
 
-Nota: este complemento requer o NVDA 2018.2 ou posterior executando num
-computador com tela de toque com Windows 8.1 ou 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Comandos
 
@@ -60,6 +61,12 @@ gestos táteis aprimorados, para poder fazer isso por até dez segundos ou
 alternar manualmente. Depois vá ao menu do NVDA/Preferências/Interação Tátil
 e configure o valor do comando tátil Pausar NVDA entre 3 e 10 segundos (o
 padrão é 5 segundos).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Version 19.11
 
@@ -170,3 +177,5 @@ padrão é 5 segundos).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

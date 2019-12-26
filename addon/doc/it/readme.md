@@ -2,13 +2,14 @@
 
 * Autore: Joseph Lee
 * Download [versione stabile][1]
-* NVDA compatibility: 2018.2 to 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità esplorazione
 
-Si noti che è necessario avere NVDA 2018.2 o successivo installato su un
-computer touchscreen con sistema operativo Windows 8 o versioni successive.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Comandi
 
@@ -60,6 +61,12 @@ massimo di dieci secondi oppure abilitare/disabilitare l'impostazione
 manualmente. Poi recarsi nel menu preferenze di NVDA, selezionare
 interazione al tocco, quindi configurare il valore del parametro pausa tocco
 di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Version 19.11
 
@@ -167,3 +174,5 @@ di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

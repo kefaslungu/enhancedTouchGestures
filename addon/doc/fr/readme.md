@@ -2,14 +2,15 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2018.2 to 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note : Cette extension requiert NVDA 2018.2 ou une version ultérieure
-s'exécutant sur un ordinateur tactile avec Windows 8 ou 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Commandes
 
@@ -66,6 +67,12 @@ de l'étendre jusqu'à dix secondes ou de le basculer manuellement. Ensuite,
 allez dans le menu NVDA/Préférences/Interaction Tactile, puis le configurer
 afin de suspendre la valeur   de la commande tactile de NVDA entre 3 à 10
 secondes (par défaut 5 secondes).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Version 19.11
 
@@ -180,3 +187,5 @@ secondes (par défaut 5 secondes).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

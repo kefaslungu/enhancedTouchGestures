@@ -2,14 +2,15 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* NVDA compatibility: 2018.2 to 2019.3
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Nota: este extra requer o NVDA 2018.2 ou posterior executado num computador
-touchscreen com o Windows 8.1 ou 10.
+Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Comandos:
 
@@ -63,6 +64,12 @@ de toque aprimorados para permitir que faça isso por até dez segundos ou
 alternar isso manualmente. Em seguida, vá para o menu NVDA / Preferências /
 Interacção por toque e configure a pausa no valor de comando de toque do
 NVDA entre 3 a 10 segundos (o padrão é 5 segundos).
+
+## Version 20.01
+
+* NVDA 2019.3 or later is required.
+* Touch support toggle command (including touch passthrough) will no longer
+  function if touch support is turned off completely.
 
 ## Version 19.11
 
@@ -176,3 +183,5 @@ NVDA entre 3 a 10 segundos (o padrão é 5 segundos).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019
