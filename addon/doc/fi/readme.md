@@ -2,14 +2,15 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Yhteensopivuus: NVDA 2019.3 ja uudemmat
+* Lataa [vanhempi versio,][3] joka on yhteensopiva NVDA 2019.2.1:n ja sitä
+  vanhempien kanssa
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Huom: Tämä lisäosa vaatii NVDA 2019.3:n tai uudemman ja
+kosketusnäyttötietokoneen, jossa on asennettuna Windows 8.1 tai 10.
 
 ## Komennot
 
@@ -65,11 +66,11 @@ Syötekomennot-valintaikkunan Laajennetut kosketuseleet
 vuorovaikutus ja määritä asetuksen "Keskeytä NVDA:n kosketuskomento" arvoksi
 jotain kolmen ja kymmenen sekunnin väliltä (oletus on 5).
 
-## Version 20.01
+## Versio 20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* NVDA 2019.3 vaaditaan.
+* Kosketustuen tilanvaihtokomento (kosketuksen läpivienti mukaan lukien) ei
+  enää toimi, mikäli kosketustuki poistetaan kokonaan käytöstä.
 
 ## Versio 19.11
 

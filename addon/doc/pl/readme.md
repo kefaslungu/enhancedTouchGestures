@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Zgodność z wersjami NVDA: 2019.3 i nowszymi
+* Pobierz [starszą wersję][3] zgodna z NVDA 2019.2.1 i starszymi
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Uwaga! Ten dodatek wymaga NVDA w wersji 2019.3 lub nowszej, uruchomionej na
+komputerze z ekranem dotykowym i systemem operacyjnym Windows 8.1 lub 10.
 
 ## Polecenia
 
@@ -62,11 +62,12 @@ do dziesięciu sekund lub przełączyć ją ręcznie. Następnie należy wejść
 meni NVDA/Ustawienia/Reakcja na Dotyk, i skonfigurować czas wstrzymania
 poleceń dotykowych NVDA od 3 do 10 sekund. Wartość domyślna to 5 sekund.
 
-## Version 20.01
+## Wersja 20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* Wymagana jest wersja NVDA 2019.3 lub nowsza.
+* Polecenie do przełączania trybu dotykowego (włączając w to dotykowe
+  przełączanie) nie będzie więcej funkcjonowało, gdy wsparcie dotykowe jest
+  kompletnie wyłączone.
 
 ## Wersja 19.11
 
