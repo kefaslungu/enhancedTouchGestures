@@ -201,6 +201,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else: self.browseModeCommands[self.webBrowseMode-1][1](obj, gesture)
 
 	def script_touch_rightClick(self, gesture):
+		# NVDA Core issue 3886: NVDA 2020.1 includes right-click gesture.
+		if hasattr(commands, "script_touch_rightClick"):
+			commands.script_touch_rightClick(gesture)
+			return
 		self.etsDebugOutput("etouch: attempting to perform right-click")
 		obj=api.getNavigatorObject() 
 		try:
@@ -223,7 +227,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		winUser.setCursorPos(x,y)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN,0,0,None,None)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP,0,0,None,None)
-	script_touch_rightClick.__doc__="Performs right click at the object under your finger"
+	script_touch_rightClick.__doc__ = _("Clicks the right mouse button at the current touch position. This is generally used to activate a context menu.")
 
 	def script_touch_newExplore(self,gesture):
 		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y,new=True)
