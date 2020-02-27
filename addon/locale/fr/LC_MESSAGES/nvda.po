@@ -21,6 +21,11 @@ msgstr ""
 msgid "object has no location"
 msgstr "l'objet n'a pas d'emplacement"
 
+msgid ""
+"Clicks the right mouse button at the current touch position. This is "
+"generally used to activate a context menu."
+msgstr ""
+
 #. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.

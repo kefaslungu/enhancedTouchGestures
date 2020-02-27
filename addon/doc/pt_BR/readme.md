@@ -2,15 +2,16 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Compatibilidade com NVDA: 2019.3 e além
+* Baixe a [versão mais antiga][3] compatível com o NVDA 2019.2.1 e
+  anteriores
 
 Este complemento provê gestos adicionais para telas táteis no NVDA. Também
 provê um conjunto de gestos para uma navegabilidade mais fácil no modo de
 navegação.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Nota: este complemento requer o NVDA 2019.3 ou posterior executando num
+computador com tela de toque com Windows 8.1 ou 10.
 
 ## Comandos
 
@@ -62,28 +63,29 @@ alternar manualmente. Depois vá ao menu do NVDA/Preferências/Interação Táti
 e configure o valor do comando tátil Pausar NVDA entre 3 e 10 segundos (o
 padrão é 5 segundos).
 
-## Version 20.01
+## Versão 20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* O NVDA 2019.3 ou posterior é requerido.
+* O comando de alternância de suporte a toque (incluindo passagem tátil) não
+  funcionará mais se o suporte a toque estiver completamente desligado.
 
-## Version 19.11
+## Versão 19.11
 
-* Added input help messages for additional touch commands.
+* Adicionadas mensagens de ajuda de entrada para comandos de toque
+  adicionais.
 
-## Version 19.09
+## Versão 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* O suporte à toque agora pode ser desativado de qualquer lugar, não apenas
+  de perfis diferentes do perfil normal.
 
-## Version 19.07
+## Versão 19.07
 
-* Internal changes to support future NVDA releases.
+* Alterações internas para suportar versões futuras do NVDA.
 
-## Version 18.12
+## Versão 18.12
 
-* Internal changes to support future NVDA releases.
+* Alterações internas para suportar versões futuras do NVDA.
 
 ## Versão 18.08
 

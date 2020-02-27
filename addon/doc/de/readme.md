@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* NVDA-Kompatibilität: 2019.3 und neuer
+* [Ältere Version herunterladen][3] (kompatibel mit NVDA 2019.2.1 und älter)
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Hinweis: Diese Erweiterung benötigt NVDA 2019.3 oder neuer, das auf einem
+System mit Touchscreen und Windows 8.1 oder Windows 10 läuft.
 
 ## Befehle
 
@@ -69,9 +69,10 @@ Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
 
 ## Version 20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* Benötigt NVDA 2019.3 oder neuer.
+* Der Befehl zum Umschalten der Unterstützung für Touchscreens
+  (einschließlich Durchreichen des Touch-Befehls) funktioniert nicht mehr,
+  wenn dieser vollständig ausgeschaltet ist.
 
 ## Version 19.11
 

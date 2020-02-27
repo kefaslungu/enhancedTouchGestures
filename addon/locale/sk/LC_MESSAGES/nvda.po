@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 18.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2018-11-30 05:10+1000\n"
-"PO-Revision-Date: 2020-01-12 15:52+0100\n"
+"PO-Revision-Date: 2020-02-21 09:16+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: \n"
 "Language: sk\n"
@@ -20,6 +20,13 @@ msgstr ""
 #. Translators: Reported when the object has no location for the mouse to move to it.
 msgid "object has no location"
 msgstr "Nie je možné nájsť obbjekt"
+
+msgid ""
+"Clicks the right mouse button at the current touch position. This is "
+"generally used to activate a context menu."
+msgstr ""
+"Simuluje klik pravým tlačidlom myši na mieste, kde sa práve nachádza kurzor. "
+"Zvyčajne aktivuje kontextovú ponuku."
 
 #. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
