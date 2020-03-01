@@ -360,36 +360,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
-	script_prevSynthSetting.__doc__ = commands.script_previousSynthSetting.__doc__
-
-	__gestures={
-		# Additional touch gestures added to global commands:
-		# For object mode: moving focus, moving to focus, object name and dimentions.
-		# For text mode, moving to top and bottom of text.
-		"ts:4finger_double_tap":"toggleInputHelp",
-		"ts:4finger_flickRight":"touchKeyboardEnable",
-		"ts(object):3finger_flickLeft":"reportCurrentFocus",
-		"ts(object):4finger_flickUp":"title",
-		"ts(object):4finger_flickDown":"reportStatusLine",
-		"ts(object):3finger_flickDown":"speakForeground",
-		"ts(object):3finger_flickRight":"navigatorObject_current",
-		"ts:tapAndHold":"touch_rightClick",
-		"ts:tap":"touch_newExplore",
-		"ts:hoverDown":"touch_newExplore",
-		"ts:hover":"touch_explore",
-
-		# Web browsing gestures:
-		"ts(Web):flickDown":"nextWebElement",
-		"ts(Web):flickUp":"prevWebElement",
-		"ts(Web):flickRight":"nextSelectedElement",
-		"ts(Web):flickLeft":"prevSelectedElement",
-
-		# Settings gestures:
-		"ts(SynthSettings):2finger_flickRight":"nextSynthSetting",
-		"ts(SynthSettings):2finger_flickLeft":"prevSynthSetting",
-		"ts(SynthSettings):2finger_flickUp":"prevSynthSettingValue",
-		"ts(SynthSettings):2finger_flickDown":"nextSynthSettingValue",
-	}
 
 # Add-on config database
 confspec = {
