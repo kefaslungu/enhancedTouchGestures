@@ -6,6 +6,7 @@
 
 import globalPluginHandler
 import touchHandler
+import scriptHandler
 import ui
 from globalCommands import commands
 import globalVars
@@ -133,28 +134,44 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Global commands: additional touch commands available everywhere.
 
+	@scriptHandler.script(gesture="ts:4finger_double_tap")
 	def script_toggleInputHelp(self, gesture):
 		commands.script_toggleInputHelp(gesture)
 
+	@scriptHandler.script(
+		description=commands.script_reportCurrentFocus.__doc__,
+		gesture="ts(object):3finger_flickLeft"
+	)
 	def script_reportCurrentFocus(self, gesture):
 		commands.script_reportCurrentFocus(gesture)
-	script_reportCurrentFocus.__doc__ = commands.script_reportCurrentFocus.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_title.__doc__,
+		gesture="ts(object):4finger_flickUp"
+	)
 	def script_title(self, gesture):
 		commands.script_title(gesture)
-	script_title.__doc__ = commands.script_title.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_reportStatusLine.__doc__,
+		gesture="ts(object):4finger_flickDown"
+	)
 	def script_reportStatusLine(self, gesture):
 		commands.script_reportStatusLine(gesture)
-	script_reportStatusLine.__doc__ = commands.script_reportStatusLine.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_speakForeground.__doc__,
+		gesture="ts(object):3finger_flickDown"
+	)
 	def script_speakForeground(self, gesture):
 		commands.script_speakForeground(gesture)
-	script_speakForeground.__doc__ = commands.script_speakForeground.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_navigatorObject_current.__doc__,
+		gesture="ts(object):3finger_flickRight"
+	)
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
-	script_navigatorObject_current.__doc__ = commands.script_navigatorObject_current.__doc__
 
 	#Web navigation:
 
@@ -164,17 +181,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Touch gestures please.
 
+	@scriptHandler.script(
+		description="Selects the next web navigation element.",
+		gesture="ts(Web):flickDown"
+	)
 	def script_nextWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode+1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 		self.etsDebugOutput("etouch: switching web mode to %s"%self.webBrowseElements[self.webBrowseMode])
-	script_nextWebElement.__doc__="Selects the next web navigation element."
 
+	@scriptHandler.script(
+		description="Selects the previous web navigation element.",
+		gesture="ts(Web):flickUp"
+	)
 	def script_prevWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode-1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 		self.etsDebugOutput("etouch: switching web mode to %s"%self.webBrowseElements[self.webBrowseMode])
-	script_prevWebElement.__doc__="Selects the previous web navigation element."
 
 	# The actual navigation gestures:
 	# Look up the needed commands for readability purposes.
@@ -188,18 +211,24 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		(browseMode.BrowseModeTreeInterceptor.script_nextLandmark, browseMode.BrowseModeTreeInterceptor.script_previousLandmark),
 	)
 
+	@scriptHandler.script(gesture="ts(Web):flickRight")
 	def script_nextSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
 		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
 			if self.webBrowseMode == 0: commands.script_navigatorObject_nextInFlow(gesture)
 			else: self.browseModeCommands[self.webBrowseMode-1][0](obj, gesture)
 
+	@scriptHandler.script(gesture="ts(Web):flickLeft")
 	def script_prevSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
 		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
 			if self.webBrowseMode == 0: commands.script_navigatorObject_previousInFlow(gesture)
 			else: self.browseModeCommands[self.webBrowseMode-1][1](obj, gesture)
 
+	@scriptHandler.script(
+		description=_("Clicks the right mouse button at the current touch position. This is generally used to activate a context menu."),
+		gesture="ts:tapAndHold"
+	)
 	def script_touch_rightClick(self, gesture):
 		# NVDA Core issue 3886: NVDA 2020.1 includes right-click gesture.
 		if hasattr(commands, "script_touch_rightClick"):
@@ -227,20 +256,26 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		winUser.setCursorPos(x,y)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN,0,0,None,None)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP,0,0,None,None)
-	script_touch_rightClick.__doc__ = _("Clicks the right mouse button at the current touch position. This is generally used to activate a context menu.")
 
+	@scriptHandler.script(
+		description=commands.script_touch_newExplore.__doc__,
+		gestures=["ts:tap", "ts:hoverDown"]
+	)
 	def script_touch_newExplore(self,gesture):
 		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y,new=True)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			playAudioCoordinates(gesture.x,gesture.y)
-	script_touch_newExplore.__doc__=commands.script_touch_newExplore.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_touch_explore.__doc__,
+		gesture="ts:hover"
+	)
 	def script_touch_explore(self,gesture):
 		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			playAudioCoordinates(gesture.x,gesture.y)
-	script_touch_explore.__doc__=commands.script_touch_explore.__doc__
 
+	@scriptHandler.script(gesture="ts:4finger_flickRight")
 	def script_touchKeyboardEnable(self, gesture):
 		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
 		keyboardButtonHwnd = windowUtils.findDescendantWindow(api.getDesktopObject().windowHandle, className="TIPBand")
@@ -272,6 +307,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			finally:
 				self.touchPassthroughTimer = None
 
+	@scriptHandler.script(
+		description="Temporarily disables touch interaction so you can interact with a touchscreen as though NVDA is not running",
+		category="Enhanced Touch Gestures"
+	)
 	def script_toggleTouchPassthrough(self, gesture):
 		# No, do not allow passthrough to be toggled if touch support is turned off completely.
 		if not config.conf["touch"]["enabled"]:
@@ -293,21 +332,32 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not config.conf["touch"]["manualPassthroughToggle"]:
 				self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
 				self.touchPassthroughTimer.Start(config.conf["touch"]["commandPassthroughDuration"]*1000, True)
-	script_toggleTouchPassthrough.__doc__ = "Temporarily disables touch interaction so you can interact with a touchscreen as though NVDA is not running"
-	script_toggleTouchPassthrough.category = "Enhanced Touch Gestures"
 
+	@scriptHandler.script(
+		description=commands.script_increaseSynthSetting.__doc__,
+		gesture="ts(SynthSettings):2finger_flickUp"
+	)
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
-	script_prevSynthSettingValue.__doc__ = commands.script_increaseSynthSetting.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_decreaseSynthSetting.__doc__,
+		gesture="ts(SynthSettings):2finger_flickDown"
+	)
 	def script_nextSynthSettingValue(self, gesture):
 		commands.script_decreaseSynthSetting(gesture)
-	script_nextSynthSettingValue.__doc__ = commands.script_decreaseSynthSetting.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_nextSynthSetting.__doc__,
+		gesture="ts(SynthSettings):2finger_flickRight"
+	)
 	def script_nextSynthSetting(self, gesture):
 		commands.script_nextSynthSetting(gesture)
-	script_nextSynthSetting.__doc__ = commands.script_nextSynthSetting.__doc__
 
+	@scriptHandler.script(
+		description=commands.script_previousSynthSetting.__doc__,
+		gesture="ts(SynthSettings):2finger_flickLeft"
+	)
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
 	script_prevSynthSetting.__doc__ = commands.script_previousSynthSetting.__doc__
