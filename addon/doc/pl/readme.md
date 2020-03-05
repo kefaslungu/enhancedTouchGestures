@@ -3,7 +3,6 @@
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
 * Zgodność z wersjami NVDA: 2019.3 i nowszymi
-* Pobierz [starszą wersję][3] zgodna z NVDA 2019.2.1 i starszymi
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
@@ -118,8 +117,9 @@ poleceń dotykowych NVDA od 3 do 10 sekund. Wartość domyślna to 5 sekund.
 * Aby zupełnie wyłączyć wsparcie dotyku, Do dialogu reakcji na dotyk dodano
   ukryte pole wyboru, dostępne tylko wtedy gdy aktywny jest inny profil niż
   standardowy.
-* W NVDA 2018.1 i nowszych, dialog reakcji na dotyk pojawi się dwukrotnie w
-  meni ustawień NvDA. Drugi dialog jest oryginalną częścią dodatku.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice in NVDA's preferences menu. The second item is the dialog that comes
+  with the add-on.
 * W oknie dialogowym reakcji dotykowej dodatku, od wersji NVDA 2018.1 tryb
   wpisywania dotykowego nie jest już pokazywany.
 
@@ -177,5 +177,3 @@ poleceń dotykowych NVDA od 3 do 10 sekund. Wartość domyślna to 5 sekund.
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

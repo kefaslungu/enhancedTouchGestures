@@ -3,8 +3,6 @@
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
 * Compatibilitate NVDA: 2019.3 și mai nou
-* Descărcați [versiunea mai veche][3], compatibilă cu NVDA 2019.2.1 și cu
-  versiunile mai vechi ale acestuia
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
@@ -123,9 +121,9 @@ este de 5 secunde).
 * S-a adăugat o casetă de bifat ascunsă în dialogul interacțiunii tactile
   pentru dezactivarea completă a suportului tactil (disponibilă dacă sunt
   active alte profiluri decât configurația obișnuită).
-* Dacă utilizați NVDA2018.1 sau mai nou, dialogul interacțiunii tactile va
-  fi listat de două ori în submeniul de preferințe al NVDA-ului. Al doilea
-  element este dialogul care vine la pachet cu suplimentul.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice in NVDA's preferences menu. The second item is the dialog that comes
+  with the add-on.
 * În dialogul interacțiunii tactile pentru supliment, modul de scriere
   tactilă nu mai este afișat dacă se utilizează NVDA 2018.1 sau mai nou.
 
@@ -188,5 +186,3 @@ este de 5 secunde).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

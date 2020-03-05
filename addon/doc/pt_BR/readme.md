@@ -3,8 +3,6 @@
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
 * Compatibilidade com NVDA: 2019.3 e além
-* Baixe a [versão mais antiga][3] compatível com o NVDA 2019.2.1 e
-  anteriores
 
 Este complemento provê gestos adicionais para telas táteis no NVDA. Também
 provê um conjunto de gestos para uma navegabilidade mais fácil no modo de
@@ -19,7 +17,7 @@ computador com tela de toque com Windows 8.1 ou 10.
 
 * Toque duplo com 4 dedos: Alterna o modo de ajuda de entrada.
 * Tocar e segurar: Executa clique direito no objeto sob o dedo.
-* deslizar 4 dedos à direita: Alterna o teclado tátil (geralmente o ativa).
+* Deslizar 4 dedos à direita: alterna o teclado tátil (geralmente o ativa).
 
 ### Modo objeto
 
@@ -119,9 +117,9 @@ padrão é 5 segundos).
 * Adicionada uma caixa de seleção oculta na caixa de diálogo Interação por
   toque para desativar completamente o suporte ao toque (disponível se
   outros perfis além da configuração normal estiverem ativos).
-* Se estiver usando o NVDA 2018.1 ou posterior, a caixa de diálogo Interação
-  por Toque será listada duas vezes no menu de preferências do NvDA. O
-  segundo item é o diálogo que vem com o complemento.
+* Se estiver usando o NVDA 2018.1 ou posterior, o diálogo Interação por
+  Toque será listado duas vezes no menu de preferências do NVDA. O segundo
+  item é a caixa de diálogo que acompanha o complemento.
 * Na caixa de diálogo Interação por toque do complemento, o modo de
   digitação não é mais exibido se você usar o NVDA 2018.1 ou posterior.
 
@@ -179,5 +177,3 @@ padrão é 5 segundos).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

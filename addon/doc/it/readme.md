@@ -3,7 +3,6 @@
 * Autore: Joseph Lee
 * Download [versione stabile][1]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità esplorazione
@@ -117,8 +116,8 @@ di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
   touch support (available if profiles other than normal configuration is
   active).
 * If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NvDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
+  twice in NVDA's preferences menu. The second item is the dialog that comes
+  with the add-on.
 * In Touch Interaction dialog for the add-on, touch typing mode is no longer
   shown if using NVDA 2018.1 or later.
 
@@ -174,5 +173,3 @@ di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

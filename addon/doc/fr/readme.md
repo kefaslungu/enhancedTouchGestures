@@ -3,7 +3,6 @@
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
@@ -123,9 +122,9 @@ secondes (par défaut 5 secondes).
 * Ajout d'une case à cocher masquée dans le dialogue Interaction Tactile
   pour désactiver complètement le support tactile (disponible si des profils
   autres que la configuration normale sont actifs).
-* Si vous utilisez NVDA 2018.1 ou une version ultérieure le dialogue
-  Interaction Tactile apparaîtra deux fois sous le menu des préférences de
-  NVDA. Le deuxième élément est le dialogue fournie avec l'extension.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice in NVDA's preferences menu. The second item is the dialog that comes
+  with the add-on.
 * Dans le dialogue Interaction Tactile de l'extension, le mode frappe
   tactile n'est plus affiché si vous utilisez NVDA 2018.1 ou une version
   ultérieure.
@@ -187,5 +186,3 @@ secondes (par défaut 5 secondes).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

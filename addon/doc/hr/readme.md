@@ -3,7 +3,6 @@
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
@@ -119,9 +118,9 @@ sekundi).
 * Dodan skriveni potvrdni okvir u dijaloškom okviru Interakcija dodirom,
   koji kompletno onemogućava podršku dodirom (dostupno je, ako su
   konfiguracijski profili aktivni koji nemaju uobičajenu konfiguraciju).
-* Ako se koriste nedavno objavljene razvojne verzije NVDA čitača, dijaloški
-  okvir „Interakcija dodirom” bit će prikazan dvaput u podizborniku NVDA
-  postavki. Druga stavka je dijaloški okvir koji dolazi s dodatkom.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice in NVDA's preferences menu. The second item is the dialog that comes
+  with the add-on.
 * U dijaloškom okviru Interakcija dodirom ovog dodatka, modus tipkanja
   dodirom više se ne prikazuje, ako koristite nedavno objavljene razvojne
   verzije NVDA.
@@ -183,5 +182,3 @@ sekundi).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

@@ -3,8 +3,6 @@
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
 * Compatibilidad con NVDA: 2019.3 y posteriores
-* Descargar [versión más antigua][3] compatible con NVDA 2019.2.1 y
-  anteriores
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
@@ -189,5 +187,3 @@ segundos).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

@@ -2,13 +2,11 @@
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* NVDA兼容版本: 2019.3 以上
 
 此插件为NVDA提供了额外的触摸屏手势。它还提供了一组手势，以便于浏览模式导航。
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+注意：此插件需要在装有Windows 8.1或10的触摸屏计算机上运行NVDA版本需要 2019.3或以上。
 
 ## 快捷键
 
@@ -43,11 +41,10 @@ computer with Windows 8.1 or 10.
 未分配的命令可用于允许您使用触摸屏手势，就像NVDA未运行一样。要使用此功能，您需要在Enhanced Touch
 Gestures类别下分配命令（通过“输入手势”对话框），以便最多执行此操作10秒或手动切换。然后转到NVDA菜单/首选项/触摸交互，然后将暂停NVDA的触摸命令值配置为3到10秒（默认为5秒）。
 
-## Version 20.01
+## 版本20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* 现在需要NVDA 2019.3或更高版本。
+* 如果完全关闭触摸支持，则触摸支持切换命令（包括触摸传递）将不再起作用。
 
 ## 版本19.11
 
@@ -128,5 +125,3 @@ Gestures类别下分配命令（通过“输入手势”对话框），以便最
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

@@ -3,8 +3,6 @@
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
 * Compatibilidade con NVDA: 2019.3 en diante
-* Descargar [versión máis antiga][3] compatible con NVDA 2019.2.1 e
-  anteriores
 
 Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
@@ -120,9 +118,9 @@ tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
 * Engadida unha caixa de verificación oculta no diálogo Interación Tactil
   para desactivar compretamente o soporte tactil (dispoñible se os perfís
   distintos á configuración normal están activos).
-* Se se usa NVDA 2018.1 en adiante, o diálogo Interación Tactil listarase
+* Se se usa NVDA 2018.1 en adiante, o diálogo Interacción Táctil listarase
   dúas veces no menú Preferencias do NVDA. o segundo elemento é o diálogo
-  que ven co complemento.
+  que vén co complemento.
 * No diálogo Interación Tactil para o complemento, o modo de escritura
   tactil xa non se amosa se se usa NVDA 2018.1 en adiante.
 
@@ -181,5 +179,3 @@ tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

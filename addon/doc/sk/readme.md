@@ -3,7 +3,6 @@
 * Autor: Joseph Lee
 * Stiahnuť [stabilnú verziu][1]
 * Funguje s NVDA od verzie 2019.3
-* Stiahnuť [Staršiu verziu][3] pre NVDA do verzie 2019.2.1
 
 Poskytuje doplnkové dotykové gestá na ovládanie NVDA a tiež gestá pre prácu
 v režime prehliadania.
@@ -158,5 +157,3 @@ nastavené na 5 sekúnd.
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019

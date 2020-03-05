@@ -3,7 +3,6 @@
 * Автор: Joseph Lee
 * Загрузить [стабильную версию][1]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Это дополнение предоставляет дополнительные жесты сенсорного экрана для
 NVDA. Также, оно предоставляет набор жестов для облегчения навигации режима
@@ -120,8 +119,8 @@ command value between 3 to 10 seconds (default is 5 seconds).
   touch support (available if profiles other than normal configuration is
   active).
 * If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NvDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
+  twice in NVDA's preferences menu. The second item is the dialog that comes
+  with the add-on.
 * In Touch Interaction dialog for the add-on, touch typing mode is no longer
   shown if using NVDA 2018.1 or later.
 
@@ -176,5 +175,3 @@ command value between 3 to 10 seconds (default is 5 seconds).
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=ets-2019
