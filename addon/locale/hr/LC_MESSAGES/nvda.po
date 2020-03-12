@@ -1,14 +1,14 @@
 # Hrvatska lokalizacija za NVDA.
 # Copyright (C) 2006-2019 NVDA contributors <https://www.nvda-project.org>
 # This file is distributed under the same license as the virtualRevision package.
-# Milo Ivir <mail@milotype.de>, 2019.
+# Milo Ivir <mail@milotype.de>, 2019., 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2019-12-08 17:56+0100\n"
+"PO-Revision-Date: 2020-03-11 15:56+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: \n"
 "Language: hr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #. Translators: Reported when the object has no location for the mouse to move to it.
 msgid "object has no location"
@@ -27,6 +27,8 @@ msgid ""
 "Clicks the right mouse button at the current touch position. This is "
 "generally used to activate a context menu."
 msgstr ""
+"Pritisni desnom tipkom miša pri trenutačnom položaju dodira. To se obično "
+"koristi za aktiviranje kontekstnog izbornika."
 
 #. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
@@ -75,6 +77,3 @@ msgstr ""
 "pomoć.\n"
 "\tPotrebno je računalo koje omogućuje rad dodirom i na kojem je instaliran "
 "sustav Windows 8.1 ili noviji i NVDA 2017.4 ili noviji."
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "Kompletno deaktiviraj podršku za dodirnu interakciju"

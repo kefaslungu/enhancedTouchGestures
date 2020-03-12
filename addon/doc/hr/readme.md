@@ -2,14 +2,15 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA kompatibilnost: 2019.3 i novija
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
 modusu čitanja.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Napomena: Dodatak zahtijeva NVDA 2019.3 ili noviji, instaliran na računalu
+koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom Windows 8.1
+ili 10.
 
 ## Naredbe
 
@@ -64,11 +65,11 @@ izbornik>Postavke>Interakcija dodirom, treba definirati pauza za dodirne
 NVDA naredbe, u trajanju od 3 do 10 sekundi (standardno je postavljeno 5
 sekundi).
 
-## Version 20.01
+## Verzija 20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* Zahtijeva NVDA 2019.3 ili noviju.
+* Naredba za prebacivanje podrške dodira (uključujući proslijeđivanje) više
+  neće funkcionirati, ako je podrška dodira potpuno isključena.
 
 ## Verzija 19.11
 
@@ -118,9 +119,9 @@ sekundi).
 * Dodan skriveni potvrdni okvir u dijaloškom okviru Interakcija dodirom,
   koji kompletno onemogućava podršku dodirom (dostupno je, ako su
   konfiguracijski profili aktivni koji nemaju uobičajenu konfiguraciju).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
+* Ako se koristi NVDA 2018.1, dijaloški okvir „Interakcija dodirom” biti će
+  prikazan dvaput u podizborniku NVDA postavki. Druga stavka je dijaloški
+  okvir koji dolazi s dodatkom.
 * U dijaloškom okviru Interakcija dodirom ovog dodatka, modus tipkanja
   dodirom više se ne prikazuje, ako koristite nedavno objavljene razvojne
   verzije NVDA.
@@ -134,11 +135,12 @@ sekundi).
 
 ## Verzija 17.07.1
 
-* Dodana je opcija u dijaloškom okviru interakcije dodirom za uključivanje i
-  isključivanje istraživanja jednim dodirom bez štoperice.
-* Ako je ručno isključen mod istraživanja jednim dodirom, te ako je isti
-  uključen prije nego što mod učenja istekne, interakcija dodirom će biti
-  dostupna.
+* U dijaloškom okviru interakcije dodirom, dodana je opcija za ručno
+  uključivanje i isključivanje proslijeđivanja dodirne naredbe bez upotrebe
+  štoperice.
+* Ako je ručno isključen modus proslijeđivanja, te ako je isti uključen
+  prije nego što modusu proslijeđivanja istekne vrijeme, interakcija dodirom
+  biti će aktivirana.
 
 ## Verzija 17.07
 
