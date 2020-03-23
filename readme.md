@@ -2,7 +2,7 @@
 
 * Author: Joseph Lee
 * Download [stable version][1]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2019.3 to 2020.1
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
@@ -13,7 +13,7 @@ Note: this add-on requires NVDA 2019.3 or later running on a touchscreen compute
 ### Available everywhere
 
 * 4 finger double tap: toggle input help mode.
-* Tap and hold: performs right click at the object under your finger.
+* Tap and hold: performs right click at the object under your finger (now part of NVDA 2020.1 and later).
 * Four finger flick right: toggle touch keyboard (usually enables it).
 
 ### Object mode
@@ -39,6 +39,10 @@ If you've enabled play mouse coordinates setting in mouse settings, you'll hear 
 ## Touch command passthrough
 
 An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+
+## Version 20.04
+
+* Right mouse click gesture (one finger tap and hold) is now part of NVDA 2020.1.
 
 ## Version 20.01
 
