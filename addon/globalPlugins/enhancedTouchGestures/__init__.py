@@ -28,7 +28,7 @@ def playAudioCoordinates(x, y):
 	# play audio coordinates function might be gone in a future NVDA release.
 	if hasattr(mouseHandler, "playAudioCoordinates"):
 		screenWidth, screenHeight = api.getDesktopObject().location[-2:]
-		mouseHandler.playAudioCoordinates(x,y,screenWidth,screenHeight,wx.Point(),config.conf['mouse']['audioCoordinates_detectBrightness'],config.conf['mouse']['audioCoordinates_blurFactor'])
+		mouseHandler.playAudioCoordinates(x, y, screenWidth, screenHeight, wx.Point(), config.conf['mouse']['audioCoordinates_detectBrightness'], config.conf['mouse']['audioCoordinates_blurFactor'])
 
 # Touch keyboard enhancements
 class TouchKey(UIA):
@@ -245,7 +245,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			y = p.y
 		else:
 			try:
-				(left,top,width,height) = obj.location
+				(left, top, width, height) = obj.location
 			except:
 				# Translators: Reported when the object has no location for the mouse to move to it.
 				ui.message(_("object has no location"))
@@ -253,27 +253,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			x = left+(width//2)
 			y = top+(height//2)
 		self.etsDebugOutput("etouch: mouse point found at %s, %s"%(x, y))
-		winUser.setCursorPos(x,y)
-		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN,0,0,None,None)
-		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP,0,0,None,None)
+		winUser.setCursorPos(x, y)
+		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN, 0, 0, None, None)
+		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP, 0, 0, None, None)
 
 	@scriptHandler.script(
 		description=commands.script_touch_newExplore.__doc__,
 		gestures=["ts:tap", "ts:hoverDown"]
 	)
-	def script_touch_newExplore(self,gesture):
-		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y,new=True)
+	def script_touch_newExplore(self, gesture):
+		touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y, new=True)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
-			playAudioCoordinates(gesture.x,gesture.y)
+			playAudioCoordinates(gesture.x, gesture.y)
 
 	@scriptHandler.script(
 		description=commands.script_touch_explore.__doc__,
 		gesture="ts:hover"
 	)
-	def script_touch_explore(self,gesture):
-		touchHandler.handler.screenExplorer.moveTo(gesture.x,gesture.y)
+	def script_touch_explore(self, gesture):
+		touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y)
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
-			playAudioCoordinates(gesture.x,gesture.y)
+			playAudioCoordinates(gesture.x, gesture.y)
 
 	@scriptHandler.script(gesture="ts:4finger_flickRight")
 	def script_touchKeyboardEnable(self, gesture):
