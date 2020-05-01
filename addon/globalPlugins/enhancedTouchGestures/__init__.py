@@ -176,7 +176,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	#Web navigation:
 
 	# Web elements list:
-	webBrowseElements=("normal", "Link", "Form field", "Heading", "Frame", "Table", "List", "Landmark")
+	webBrowseElements = ("normal", "Link", "Form field", "Heading", "Frame", "Table", "List", "Landmark")
 	webBrowseMode = 0 # The starting index for the web browse mode, which flicks through objects.
 
 	# Touch gestures please.
@@ -201,7 +201,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# The actual navigation gestures:
 	# Look up the needed commands for readability purposes.
-	browseModeCommands=(
+	browseModeCommands = (
 		(browseMode.BrowseModeTreeInterceptor.script_nextLink, browseMode.BrowseModeTreeInterceptor.script_previousLink),
 		(browseMode.BrowseModeTreeInterceptor.script_nextFormField, browseMode.BrowseModeTreeInterceptor.script_previousFormField),
 		(browseMode.BrowseModeTreeInterceptor.script_nextHeading, browseMode.BrowseModeTreeInterceptor.script_previousHeading),
@@ -235,23 +235,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			commands.script_touch_rightClick(gesture)
 			return
 		self.etsDebugOutput("etouch: attempting to perform right-click")
-		obj=api.getNavigatorObject() 
+		obj = api.getNavigatorObject() 
 		try:
-			p=api.getReviewPosition().pointAtStart
+			p = api.getReviewPosition().pointAtStart
 		except (NotImplementedError, LookupError):
-			p=None
+			p = None
 		if p:
-			x=p.x
-			y=p.y
+			x = p.x
+			y = p.y
 		else:
 			try:
-				(left,top,width,height)=obj.location
+				(left,top,width,height) = obj.location
 			except:
 				# Translators: Reported when the object has no location for the mouse to move to it.
 				ui.message(_("object has no location"))
 				return
-			x=left+(width//2)
-			y=top+(height//2)
+			x = left+(width//2)
+			y = top+(height//2)
 		self.etsDebugOutput("etouch: mouse point found at %s, %s"%(x, y))
 		winUser.setCursorPos(x,y)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN,0,0,None,None)
@@ -382,12 +382,12 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 		if not hasattr(touchHandler, "setTouchSupport"):
 			# Translators: This is the label for a checkbox in the
 			# Enhanced Touch Gestures settings panel.
-			self.enableTouchSupportCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("Enable touch interaction support")))
+			self.enableTouchSupportCheckBox = touchHelper.addItem(wx.CheckBox(self, label=_("Enable touch interaction support")))
 			self.enableTouchSupportCheckBox.SetValue(config.conf["touch"]["enabled"])
 		# Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
-		self.commandPassthroughDuration=touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
+		self.commandPassthroughDuration = touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"]["commandPassthroughDuration"])
 		# Translators: a checkbox to allow passthrough to be toggled manually.
-		self.manualPassthroughCheckBox=touchHelper.addItem(wx.CheckBox(self, label=_("&Manually toggle touch passthrough")))
+		self.manualPassthroughCheckBox = touchHelper.addItem(wx.CheckBox(self, label=_("&Manually toggle touch passthrough")))
 		self.manualPassthroughCheckBox.SetValue(config.conf["touch"]["manualPassthroughToggle"])
 
 	def onSave(self):
@@ -396,7 +396,7 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 				message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to Enhanced Touch Gestures panel in NVDA Settings and check 'enable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
 				if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
 					return
-			config.conf["touch"]["enabled"]=self.enableTouchSupportCheckBox.IsChecked()
+			config.conf["touch"]["enabled"] = self.enableTouchSupportCheckBox.IsChecked()
 		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
 		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
 		ETSActionTouchHandlerSettingsChanged.notify()
