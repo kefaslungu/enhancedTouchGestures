@@ -56,7 +56,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				touchHandler.terminate()
 				tones.beep(380, 100)
 				wx.CallAfter(ui.message, "Touch interaction support is disabled")
-			touchHandler.availableTouchModes.append("SynthSettings") # Synth settings ring layer.
+			# Synth settings ring layer.
+			touchHandler.availableTouchModes.append("SynthSettings")
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
 			config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
@@ -114,7 +115,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if config.isInstalledCopy() and touchHandler.handler:
 			# From 2015 onwards, browse mode module is used.
 			if isinstance(obj.treeInterceptor, browseMode.BrowseModeTreeInterceptor) and "Web" not in touchHandler.availableTouchModes:
-				touchHandler.availableTouchModes.append("Web") # Web browsing gestures.
+				touchHandler.availableTouchModes.append("Web")
 			else:
 				# If we're not in browser window, force object mode.
 				if "Web" not in touchHandler.availableTouchModes: touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
@@ -173,11 +174,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
 
-	#Web navigation:
+	# Web navigation:
 
 	# Web elements list:
 	webBrowseElements = ("normal", "Link", "Form field", "Heading", "Frame", "Table", "List", "Landmark")
-	webBrowseMode = 0 # The starting index for the web browse mode, which flicks through objects.
+	# The starting index for the web browse mode, which flicks through objects.
+	webBrowseMode = 0
 
 	# Touch gestures please.
 
