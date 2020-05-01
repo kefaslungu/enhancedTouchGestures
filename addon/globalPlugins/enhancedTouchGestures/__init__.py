@@ -245,7 +245,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			y = p.y
 		else:
 			try:
-				(left, top, width, height) = obj.location
+				left, top, width, height = obj.location
 			except:
 				# Translators: Reported when the object has no location for the mouse to move to it.
 				ui.message(_("object has no location"))
