@@ -24,11 +24,13 @@ import gui
 import wx
 import extensionPoints
 
+
 def playAudioCoordinates(x, y):
 	# play audio coordinates function might be gone in a future NVDA release.
 	if hasattr(mouseHandler, "playAudioCoordinates"):
 		screenWidth, screenHeight = api.getDesktopObject().location[-2:]
 		mouseHandler.playAudioCoordinates(x, y, screenWidth, screenHeight, wx.Point(), config.conf['mouse']['audioCoordinates_detectBrightness'], config.conf['mouse']['audioCoordinates_blurFactor'])
+
 
 # Touch keyboard enhancements
 class TouchKey(UIA):
@@ -363,6 +365,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
 
+
 # Add-on config database
 confspec = {
 	"enabled": "boolean(default=True)",
@@ -374,6 +377,7 @@ config.conf.spec["touch"] = confspec
 
 # Notify whenever touch handler settings panel values change.
 ETSActionTouchHandlerSettingsChanged = extensionPoints.Action()
+
 
 class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 	# Translators: This is the label for the touch interaction settings dialog.

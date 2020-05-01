@@ -8,6 +8,7 @@
 import addonHandler
 addonHandler.initTranslation()
 
+
 def onInstall():
 	import winVersion
 	import gui
