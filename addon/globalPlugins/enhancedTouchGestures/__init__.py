@@ -235,7 +235,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			commands.script_touch_rightClick(gesture)
 			return
 		self.etsDebugOutput("etouch: attempting to perform right-click")
-		obj = api.getNavigatorObject() 
+		obj = api.getNavigatorObject()
 		try:
 			p = api.getReviewPosition().pointAtStart
 		except (NotImplementedError, LookupError):
