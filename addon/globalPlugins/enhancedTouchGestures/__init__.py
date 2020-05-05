@@ -192,7 +192,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_nextWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode+1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
-		self.etsDebugOutput("etouch: switching web mode to %s"%self.webBrowseElements[self.webBrowseMode])
+		self.etsDebugOutput(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(
 		description="Selects the previous web navigation element.",
@@ -201,7 +201,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_prevWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode-1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
-		self.etsDebugOutput("etouch: switching web mode to %s"%self.webBrowseElements[self.webBrowseMode])
+		self.etsDebugOutput(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	# The actual navigation gestures:
 	# Look up the needed commands for readability purposes.
@@ -256,7 +256,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				return
 			x = left+(width//2)
 			y = top+(height//2)
-		self.etsDebugOutput("etouch: mouse point found at %s, %s"%(x, y))
+		self.etsDebugOutput(f"etouch: mouse point found at {x}, {y}")
 		winUser.setCursorPos(x, y)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN, 0, 0, None, None)
 		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP, 0, 0, None, None)
