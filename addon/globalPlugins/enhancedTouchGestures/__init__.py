@@ -321,8 +321,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message("Touch support is disabled, cannot toggle touch passthrough")
 			return
 		# First, check if timer is running, and if so, enable touch interaction (manual toggle).
-		if ((not touchHandler.handler and config.conf["touch"]["manualPassthroughToggle"])
-		or (self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning())):
+		if (
+			(not touchHandler.handler and config.conf["touch"]["manualPassthroughToggle"])
+			or (self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning())
+		):
 			self.etsDebugOutput("etouch: manually enabling touch handler")
 			self.resumeTouchInteraction()
 			return
