@@ -36,9 +36,17 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 
 If you've enabled play mouse coordinates setting in mouse settings, you'll hear beeps to indicate current screen coordinate when you invoke touch exploration gestures.
 
+Note: coordinate announcement beep will not be heard while using touch keyboard.
+
 ## Touch command passthrough
 
 An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+
+## Version 20.07
+
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated (four finger flick right).
 
 ## Version 20.06
 
