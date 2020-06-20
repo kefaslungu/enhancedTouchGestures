@@ -25,7 +25,17 @@ import wx
 import extensionPoints
 
 
+# Touch input panel apps.
+TouchInputPanelApps = (
+	"taptip",
+	"windowsinternal_composableshell_experiences_textinput_inputapp",
+	"textinputhost",
+)
+
+
 def playAudioCoordinates(x, y):
+	# Touch keyboard should not trigger this at all.
+	if api.getNavigatorObject().appModule.appName in TouchInputPanelApps: return
 	# play audio coordinates function might be gone in a future NVDA release.
 	if hasattr(mouseHandler, "playAudioCoordinates"):
 		screenWidth, screenHeight = api.getDesktopObject().location[-2:]
