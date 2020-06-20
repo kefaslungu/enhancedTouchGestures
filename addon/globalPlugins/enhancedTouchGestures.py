@@ -300,8 +300,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
 		keyboardButtonHwnd = windowUtils.findDescendantWindow(api.getDesktopObject().windowHandle, className="TIPBand")
 		touchKeyboardButton = getNVDAObjectFromEvent(keyboardButtonHwnd, winUser.OBJID_CLIENT, 0)
-		touchKeyboardButton.doAction()
-		tones.beep(1000, 150)
+		try:
+			touchKeyboardButton.doAction()
+			tones.beep(1000, 150)
+		except NotImplementedError:
+			# Translators: message shown when touch keyboard button is not found.
+			ui.message(_("Cannot activate touch keyboard"))
 
 	def resumeTouchInteraction(self, profileSwitch=False):
 		import tones
