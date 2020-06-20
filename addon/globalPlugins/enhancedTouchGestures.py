@@ -276,7 +276,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gestures=["ts:tap", "ts:hoverDown"]
 	)
 	def script_touch_newExplore(self, gesture):
-		touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y, new=True)
+		try:
+			touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y, new=True)
+		except:
+			pass
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			playAudioCoordinates(gesture.x, gesture.y)
 
@@ -285,7 +288,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts:hover"
 	)
 	def script_touch_explore(self, gesture):
-		touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y)
+		try:
+			touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y)
+		except:
+			pass
 		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
 			playAudioCoordinates(gesture.x, gesture.y)
 
