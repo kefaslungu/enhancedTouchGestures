@@ -2,11 +2,11 @@
 
 * Author: Joseph Lee
 * Download [stable version][1]
-* NVDA compatibility: 2019.3 to 2020.1
+* NVDA compatibility: 2020.1 to 2020.2
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2020.1 or later running on a touchscreen computer with Windows 8.1 or 10.
 
 ## Commands
 
