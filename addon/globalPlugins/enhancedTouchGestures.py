@@ -240,38 +240,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else: self.browseModeCommands[self.webBrowseMode-1][1](obj, gesture)
 
 	@scriptHandler.script(
-		description=_("Clicks the right mouse button at the current touch position. This is generally used to activate a context menu."),
-		gesture="ts:tapAndHold"
-	)
-	def script_touch_rightClick(self, gesture):
-		# NVDA Core issue 3886: NVDA 2020.1 includes right-click gesture.
-		if hasattr(commands, "script_touch_rightClick"):
-			commands.script_touch_rightClick(gesture)
-			return
-		self.etsDebugOutput("etouch: attempting to perform right-click")
-		obj = api.getNavigatorObject()
-		try:
-			p = api.getReviewPosition().pointAtStart
-		except (NotImplementedError, LookupError):
-			p = None
-		if p:
-			x = p.x
-			y = p.y
-		else:
-			try:
-				left, top, width, height = obj.location
-			except:
-				# Translators: Reported when the object has no location for the mouse to move to it.
-				ui.message(_("object has no location"))
-				return
-			x = left+(width//2)
-			y = top+(height//2)
-		self.etsDebugOutput(f"etouch: mouse point found at {x}, {y}")
-		winUser.setCursorPos(x, y)
-		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTDOWN, 0, 0, None, None)
-		winUser.mouse_event(winUser.MOUSEEVENTF_RIGHTUP, 0, 0, None, None)
-
-	@scriptHandler.script(
 		description=commands.script_touch_newExplore.__doc__,
 		gestures=["ts:tap", "ts:hoverDown"]
 	)
