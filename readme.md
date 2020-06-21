@@ -13,7 +13,6 @@ Note: this add-on requires NVDA 2020.1 or later running on a touchscreen compute
 ### Available everywhere
 
 * 4 finger double tap: toggle input help mode.
-* Tap and hold: performs right click at the object under your finger (now part of NVDA 2020.1 and later).
 * Four finger flick right: toggle touch keyboard (usually enables it).
 
 ### Object mode
@@ -44,6 +43,7 @@ An unassigned command is available to allow you to use touchscreen gestures as t
 
 ## Version 20.07
 
+* As NVDA 2020.1 and later includes a touch command to perform right mouse click (one finger tap and hold), the command has been removed from this add-on. AS a result, NVDA 2020.1 or later is required.
 * Coordinate announcement beep will not be heard while using touch keyboard.
 * NVDA will no longer appear to do nothing or play error tones while exploring modern input facility such as emoji panel via touch.
 * NVDA will present an error message if touch keyboard cannot be activated (four finger flick right).
