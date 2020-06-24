@@ -282,8 +282,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		import tones
 		if hasattr(touchHandler, "setTouchSupport"):
 			if touchHandler.touchSupported():
-				touchHandler.setTouchSupport(True)
 				if not profileSwitch:
+					# Touch support would have been enabled by NVDA anyway (especially after a configuration profile switch).
+					touchHandler.setTouchSupport(True)
 					ui.message("Touch passthrough off")
 					tones.beep(380, 100)
 			else:
