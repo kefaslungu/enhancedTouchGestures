@@ -302,11 +302,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			finally:
 				self.touchPassthroughTimer = None
 
+	def toggleTouchInteraction(self):
+		# Idea comes from NVDA pull request 11297.
+		touchInteraction = not config.conf["touch"]["enabled"]
+		try:
+			config.conf["touch"]["enabled"] = touchInteraction
+			# Intentionally not translatable as the NVDA pull request takes care of this.
+			ui.message("Touch interaction on" if touchInteraction else "Touch interaction off")
+			touchHandler.setTouchSupport(touchInteraction)
+		except NotImplementedError:
+			ui.message("Touch is not supported")
+
 	@scriptHandler.script(
 		description="Temporarily disables touch interaction so you can interact with a touchscreen as though NVDA is not running",
 		category="Enhanced Touch Gestures"
 	)
 	def script_toggleTouchPassthrough(self, gesture):
+		# Automatic touch passthrough is deprecated, eventually only manual touch interaction toggle will be carried out through this script.
+		# If touch mode setter is present, toggle touch interaction instead.
+		if hasattr(touchHandler, "setTouchSupport"):
+			self.toggleTouchInteraction()
+			return
 		# No, do not allow passthrough to be toggled if touch support is turned off completely.
 		if not config.conf["touch"]["enabled"]:
 			ui.message("Touch support is disabled, cannot toggle touch passthrough")
