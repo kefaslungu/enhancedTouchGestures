@@ -64,8 +64,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Turn off touch support at startup if told to do so.
 			# This is useful if using NVDA on a shared computer.
 			if not config.conf["touch"]["enabled"]:
-				self.etsDebugOutput("etouch: disabling touch handler on startup")
-				touchHandler.terminate()
+				if hasattr(touchHandler, "setTouchSupport"):
+					self.etsDebugOutput("etouch: touch support disabled from NVDA")
+				else:
+					self.etsDebugOutput("etouch: disabling touch handler on startup")
+					touchHandler.terminate()
 				tones.beep(380, 100)
 				wx.CallAfter(ui.message, "Touch interaction support is disabled")
 			# Synth settings ring layer.
