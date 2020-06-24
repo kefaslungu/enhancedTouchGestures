@@ -314,7 +314,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message("Touch is not supported")
 
 	@scriptHandler.script(
-		description="Temporarily disables touch interaction so you can interact with a touchscreen as though NVDA is not running",
+		description="Toggles touch interaction. If disabled, you can interact with a touchscreen as though NVDA is not running",
 		category="Enhanced Touch Gestures"
 	)
 	def script_toggleTouchPassthrough(self, gesture):
