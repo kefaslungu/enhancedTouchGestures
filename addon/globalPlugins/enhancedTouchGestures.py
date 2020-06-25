@@ -80,7 +80,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
 			# Also react to touch handler enable/disable notification if changed from settings panel.
 			ETSActionTouchHandlerSettingsChanged.register(self.handleConfigProfileSwitch)
-			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
+			if not setTouchSupportPresent:
+				gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
 		self.touchPassthroughTimer = None
 
 	def terminate(self):
