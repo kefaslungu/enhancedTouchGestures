@@ -61,10 +61,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		if touchHandler.touchSupported():
+			# Make a note of whether set touch support flag is present (NVDA 2020.3 or later).
+			setTouchSupportPresent = hasattr(touchHandler, "setTouchSupport")
 			# Turn off touch support at startup if told to do so.
 			# This is useful if using NVDA on a shared computer.
 			if not config.conf["touch"]["enabled"]:
-				if hasattr(touchHandler, "setTouchSupport"):
+				if setTouchSupportPresent:
 					self.etsDebugOutput("etouch: touch support disabled from NVDA")
 				else:
 					self.etsDebugOutput("etouch: disabling touch handler on startup")
