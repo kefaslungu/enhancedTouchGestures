@@ -35,15 +35,20 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 
 If you've enabled play mouse coordinates setting in mouse settings, you'll hear beeps to indicate current screen coordinate when you invoke touch exploration gestures.
 
-Note: coordinate announcement beep will not be heard while using touch keyboard.
+Note: coordinate announcement beep will not be heard while using touch keyboard. In the future this feature will be removed altogether.
 
-## Touch command passthrough
+## Touch interaction toggle/passthrough
 
-An unassigned command is available to allow you to use touchscreen gestures as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+An unassigned command is available to allow you to toggle touch interaction or temporarily use touchscreen gestures (touch command passthrough) as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
+
+Note: the ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough) is deprecated. In the future this command will toggle touch interaction instead.
 
 ## Version 20.07
 
 * As NVDA 2020.1 and later includes a touch command to perform right mouse click (one finger tap and hold), the command has been removed from this add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough) is deprecated. In the future this feature will toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes, touch command passthrough feature and Enhanced Touch Gestures settings panel will be disabled. The command used to enable touch command passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in a future add-on release.
 * Coordinate announcement beep will not be heard while using touch keyboard.
 * NVDA will no longer appear to do nothing or play error tones while exploring modern input facility such as emoji panel via touch.
 * NVDA will present an error message if touch keyboard cannot be activated (four finger flick right).
