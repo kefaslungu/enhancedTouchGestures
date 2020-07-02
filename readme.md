@@ -14,6 +14,7 @@ Note: this add-on requires NVDA 2020.1 or later running on a touchscreen compute
 
 * 4 finger double tap: toggle input help mode.
 * Four finger flick right: toggle touch keyboard (usually enables it).
+* Control+Alt+NVDA+T: toggles touch interaction.
 
 ### Object mode
 
@@ -45,6 +46,7 @@ Note: the ability to let NVDA turn off touch interaction for up to ten seconds (
 
 ## Version 20.07
 
+* Added a keyboard command to toggle touch interaction or enable/disable touch passthrough (Control+Alt+NVDA+T).
 * As NVDA 2020.1 and later includes a touch command to perform right mouse click (one finger tap and hold), the command has been removed from this add-on. AS a result, NVDA 2020.1 or later is required.
 * The ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough) is deprecated. In the future this feature will toggle touch interaction instead.
 * In NVDA development snapshots, due to touch interaction feature changes, touch command passthrough feature and Enhanced Touch Gestures settings panel will be disabled. The command used to enable touch command passthrough will toggle touch interaction instead.
