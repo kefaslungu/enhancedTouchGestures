@@ -117,7 +117,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			if touchHandler.handler is None:
 				self.etsDebugOutput("etouch: automatically enabling touch handler")
-				self.resumeTouchInteraction(profileSwitch=True)
+				touchHandler.initialize()
 
 	# A few setup events please (mostly for web navigation):
 
@@ -273,31 +273,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except NotImplementedError:
 			# Translators: message shown when touch keyboard button is not found.
 			ui.message(_("Cannot activate touch keyboard"))
-
-	def resumeTouchInteraction(self, profileSwitch=False):
-		import tones
-		if hasattr(touchHandler, "setTouchSupport"):
-			if touchHandler.touchSupported():
-				if not profileSwitch:
-					# Touch support would have been enabled by NVDA anyway (especially after a configuration profile switch).
-					touchHandler.setTouchSupport(True)
-					ui.message("Touch passthrough off")
-					tones.beep(380, 100)
-			else:
-				if not profileSwitch: ui.message("Touch is not supported")
-			self.touchPassthroughTimer = None
-			return
-		if not touchHandler.handler:
-			try:
-				self.etsDebugOutput("etouch: attempting to enable touch handler")
-				touchHandler.initialize()
-				if not profileSwitch:
-					ui.message("Touch passthrough off")
-					tones.beep(380, 100)
-			except:
-				if not profileSwitch: ui.message("Touch is not supported")
-			finally:
-				self.touchPassthroughTimer = None
 
 	@scriptHandler.script(
 		description="Toggles touch interaction. If disabled, you can interact with a touchscreen as though NVDA is not running",
