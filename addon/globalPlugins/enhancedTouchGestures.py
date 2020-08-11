@@ -105,15 +105,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# There are also times when turning off touchscreen through a profile is useful.
 		# Due to this mechanism, NVDA 2017.4 or later is required.
 		# Touch handler toggle will become unnecessary once NVDA Core issue 9682 becomes a reality.
-		if hasattr(touchHandler, "setTouchSupport"):
-			if not config.conf["touch"]["enabled"]:
-				# Manual touch passthrough timer might be active.
-				if self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning:
-					self.touchPassthroughTimer.Stop()
-					self.touchPassthroughTimer = None
-			else:
-				self.resumeTouchInteraction(profileSwitch=True)
-			return
 		if not config.conf["touch"]["enabled"]:
 			if touchHandler.handler:
 				self.etsDebugOutput("etouch: automatically disabling touch handler")
