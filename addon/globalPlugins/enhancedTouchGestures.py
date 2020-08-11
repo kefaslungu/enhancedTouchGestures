@@ -77,10 +77,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.availableTouchModes.append("SynthSettings")
 			touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 			touchHandler.touchModeLabels["web"] = "web mode"
-			config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
-			# Also react to touch handler enable/disable notification if changed from settings panel.
-			ETSActionTouchHandlerSettingsChanged.register(self.handleConfigProfileSwitch)
+			# NVDA 2020.3 will take care of touch support changes due to config profile changes.
+			# It also comes with touch support toggle interface and a dedicated command to do so.
 			if not setTouchSupportPresent:
+				config.post_configProfileSwitch.register(self.handleConfigProfileSwitch)
+				# Also react to touch handler enable/disable notification if changed from settings panel.
+				ETSActionTouchHandlerSettingsChanged.register(self.handleConfigProfileSwitch)
 				gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
 		self.touchPassthroughTimer = None
 
