@@ -84,7 +84,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Also react to touch handler enable/disable notification if changed from settings panel.
 				ETSActionTouchHandlerSettingsChanged.register(self.handleConfigProfileSwitch)
 				gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(EnhancedTouchGesturesPanel)
-		self.touchPassthroughTimer = None
 
 	def terminate(self):
 		try:
@@ -109,11 +108,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if touchHandler.handler:
 				self.etsDebugOutput("etouch: automatically disabling touch handler")
 				touchHandler.terminate()
-			else:
-				# Manual touch passthrough timer might be active.
-				if self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning:
-					self.touchPassthroughTimer.Stop()
-					self.touchPassthroughTimer = None
 		else:
 			if touchHandler.handler is None:
 				self.etsDebugOutput("etouch: automatically enabling touch handler")
