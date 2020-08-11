@@ -343,11 +343,6 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 		# Enhanced Touch Gestures settings panel.
 		self.enableTouchSupportCheckBox = touchHelper.addItem(wx.CheckBox(self, label=_("Enable touch interaction support")))
 		self.enableTouchSupportCheckBox.SetValue(config.conf["touch"]["enabled"])
-		# Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
-		self.commandPassthroughDuration = touchHelper.addLabeledControl(_("&Pause NVDA's touch support (duration in seconds)"), gui.nvdaControls.SelectOnFocusSpinCtrl, min=3, max=10, initial=config.conf["touch"].get("commandPassthroughDuration", 5))
-		# Translators: a checkbox to allow passthrough to be toggled manually.
-		self.manualPassthroughCheckBox = touchHelper.addItem(wx.CheckBox(self, label=_("&Manually toggle touch passthrough")))
-		self.manualPassthroughCheckBox.SetValue(bool(config.conf["touch"]["manualPassthroughToggle"]))
 
 	def onSave(self):
 		if config.conf["touch"]["enabled"] and not self.enableTouchSupportCheckBox.IsChecked():
@@ -355,6 +350,4 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 			if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
 				return
 		config.conf["touch"]["enabled"] = self.enableTouchSupportCheckBox.IsChecked()
-		config.conf["touch"]["commandPassthroughDuration"] = self.commandPassthroughDuration.Value
-		config.conf["touch"]["manualPassthroughToggle"] = self.manualPassthroughCheckBox.IsChecked()
 		ETSActionTouchHandlerSettingsChanged.notify()
