@@ -314,33 +314,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="kb:NVDA+control+alt+t",
 	)
 	def script_toggleTouchPassthrough(self, gesture):
-		# Automatic touch passthrough is deprecated, eventually only manual touch interaction toggle will be carried out through this script.
 		# If touch interaction toggle script is present, toggle touch interaction instead.
 		if hasattr(commands, "script_toggleTouchSupport"):
 			commands.script_toggleTouchSupport(None)
 			return
-		# No, do not allow passthrough to be toggled if touch support is turned off completely.
-		if not config.conf["touch"]["enabled"]:
-			ui.message("Touch support is disabled, cannot toggle touch passthrough")
+		# Emulate NVDA 2020.3 behavior (credit: various authors)
+		if not touchHandler.touchSupported():
+			ui.message(_("Touch interaction not supported"))
 			return
-		# First, check if timer is running, and if so, enable touch interaction (manual toggle).
-		if (
-			(not touchHandler.handler and config.conf["touch"]["manualPassthroughToggle"])
-			or (self.touchPassthroughTimer and self.touchPassthroughTimer.IsRunning())
-		):
-			self.etsDebugOutput("etouch: manually enabling touch handler")
-			self.resumeTouchInteraction()
-			return
-		if touchHandler.handler:
-			self.etsDebugOutput("etouch: disabling touch handler")
-			if hasattr(touchHandler, "setTouchSupport"): touchHandler.setTouchSupport(False)
-			else: touchHandler.terminate()
-			ui.message("Touch passthrough on")
-			import tones
-			tones.beep(760, 100)
-			if not config.conf["touch"]["manualPassthroughToggle"]:
-				self.touchPassthroughTimer = wx.PyTimer(self.resumeTouchInteraction)
-				self.touchPassthroughTimer.Start(config.conf["touch"]["commandPassthroughDuration"]*1000, True)
+		enabled = not config.conf["touch"]["enabled"]
+		config.conf["touch"]["enabled"] = enabled
+		if not touchHandler.handler and enabled:
+			touchHandler.initialize()
+			ui.message(_("Touch interaction enabled"))
+		elif touchHandler.handler and not enabled:
+			touchHandler.terminate()
+			ui.message(_("Touch interaction disabled"))
 
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
