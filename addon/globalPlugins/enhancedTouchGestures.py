@@ -13,7 +13,6 @@ import globalVars
 import browseMode
 import api
 import winUser
-import mouseHandler
 import config
 import windowUtils
 import tones
@@ -231,30 +230,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
 			if self.webBrowseMode == 0: commands.script_navigatorObject_previousInFlow(gesture)
 			else: self.browseModeCommands[self.webBrowseMode-1][1](obj, gesture)
-
-	@scriptHandler.script(
-		description=commands.script_touch_newExplore.__doc__,
-		gestures=["ts:tap", "ts:hoverDown"]
-	)
-	def script_touch_newExplore(self, gesture):
-		try:
-			touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y, new=True)
-		except:
-			pass
-		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
-			playAudioCoordinates(gesture.x, gesture.y)
-
-	@scriptHandler.script(
-		description=commands.script_touch_explore.__doc__,
-		gesture="ts:hover"
-	)
-	def script_touch_explore(self, gesture):
-		try:
-			touchHandler.handler.screenExplorer.moveTo(gesture.x, gesture.y)
-		except:
-			pass
-		if config.conf["mouse"]["audioCoordinatesOnMouseMove"]:
-			playAudioCoordinates(gesture.x, gesture.y)
 
 	@scriptHandler.script(gesture="ts:4finger_flickRight")
 	def script_touchKeyboardEnable(self, gesture):
