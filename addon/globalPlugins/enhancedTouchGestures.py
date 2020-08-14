@@ -24,23 +24,6 @@ import wx
 import extensionPoints
 
 
-# Touch input panel apps.
-TouchInputPanelApps = (
-	"taptip",
-	"windowsinternal_composableshell_experiences_textinput_inputapp",
-	"textinputhost",
-)
-
-
-def playAudioCoordinates(x, y):
-	# Touch keyboard should not trigger this at all.
-	if api.getNavigatorObject().appModule.appName in TouchInputPanelApps: return
-	# play audio coordinates function might be gone in a future NVDA release.
-	if hasattr(mouseHandler, "playAudioCoordinates"):
-		screenWidth, screenHeight = api.getDesktopObject().location[-2:]
-		mouseHandler.playAudioCoordinates(x, y, screenWidth, screenHeight, wx.Point(), config.conf['mouse']['audioCoordinates_detectBrightness'], config.conf['mouse']['audioCoordinates_blurFactor'])
-
-
 # Touch keyboard enhancements
 class TouchKey(UIA):
 
@@ -55,7 +38,7 @@ class TouchKey(UIA):
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Set up the touch environment for the add-on.
-	origAvailTouchModes = len(touchHandler.availableTouchModes)+1
+	origAvailTouchModes = len(touchHandler.availableTouchModes) + 1
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
@@ -122,12 +105,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				touchHandler.availableTouchModes.append("Web")
 			else:
 				# If we're not in browser window, force object mode.
-				if "Web" not in touchHandler.availableTouchModes: touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
+				if "Web" not in touchHandler.availableTouchModes:
+					touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
 				else:
 					curAvailTouchModes = len(touchHandler.availableTouchModes)
 					# If we have too many touch modes, pop all except the original entries.
 					if curAvailTouchModes > self.origAvailTouchModes:
-						for i in range(0, curAvailTouchModes-self.origAvailTouchModes): touchHandler.availableTouchModes.pop()
+						for i in range(0, curAvailTouchModes - self.origAvailTouchModes):
+							touchHandler.availableTouchModes.pop()
 		nextHandler()
 
 	# Debugging.
@@ -192,7 +177,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(Web):flickDown"
 	)
 	def script_nextWebElement(self, gesture):
-		self.webBrowseMode = (self.webBrowseMode+1) % len(self.webBrowseElements)
+		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 		self.etsDebugOutput(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
 
@@ -201,7 +186,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(Web):flickUp"
 	)
 	def script_prevWebElement(self, gesture):
-		self.webBrowseMode = (self.webBrowseMode-1) % len(self.webBrowseElements)
+		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 		self.etsDebugOutput(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
 
@@ -221,15 +206,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_nextSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
 		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
-			if self.webBrowseMode == 0: commands.script_navigatorObject_nextInFlow(gesture)
-			else: self.browseModeCommands[self.webBrowseMode-1][0](obj, gesture)
+			if self.webBrowseMode == 0:
+				commands.script_navigatorObject_nextInFlow(gesture)
+			else:
+				self.browseModeCommands[self.webBrowseMode - 1][0](obj, gesture)
 
 	@scriptHandler.script(gesture="ts(Web):flickLeft")
 	def script_prevSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
 		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
-			if self.webBrowseMode == 0: commands.script_navigatorObject_previousInFlow(gesture)
-			else: self.browseModeCommands[self.webBrowseMode-1][1](obj, gesture)
+			if self.webBrowseMode == 0:
+				commands.script_navigatorObject_previousInFlow(gesture)
+			else:
+				self.browseModeCommands[self.webBrowseMode - 1][1](obj, gesture)
 
 	@scriptHandler.script(gesture="ts:4finger_flickRight")
 	def script_touchKeyboardEnable(self, gesture):
