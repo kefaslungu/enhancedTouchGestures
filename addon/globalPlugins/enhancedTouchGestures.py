@@ -70,7 +70,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def terminate(self):
 		try:
 			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(EnhancedTouchGesturesPanel)
-		except:
+		except ValueError:
 			pass
 
 	# Certain touch objects.
