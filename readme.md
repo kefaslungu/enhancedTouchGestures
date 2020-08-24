@@ -107,7 +107,7 @@ Note: the ability to let NVDA turn off touch interaction for up to ten seconds (
 * Requires NVDA 2017.4. Specifically, this add-on can now handle configuration profile switches.
 * As NVDA 2017.4 includes screen orientation announcement, this feature is no longer part of this add-on.
 * Added a hidden checkbox in Touch Interaction dialog to completely disable touch support (available if profiles other than normal configuration is active).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed twice under NvDA's preferences menu. The second item is the dialog that comes with the add-on.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed twice under NVDA's preferences menu. The second item is the dialog that comes with the add-on.
 * In Touch Interaction dialog for the add-on, touch typing mode is no longer shown if using NVDA 2018.1 or later.
 
 ## Version 17.10
