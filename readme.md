@@ -32,17 +32,10 @@ This touch mode, available in browse mode, allows you to navigate the document b
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
 
-## Coordinate announcement beep
+## Version 20.09
 
-If you've enabled play mouse coordinates setting in mouse settings, you'll hear beeps to indicate current screen coordinate when you invoke touch exploration gestures.
-
-Note: coordinate announcement beep will not be heard while using touch keyboard. In the future this feature will be removed altogether.
-
-## Touch interaction toggle/passthrough
-
-An unassigned command is available to allow you to toggle touch interaction or temporarily use touchscreen gestures (touch command passthrough) as though NVDA is not running. In order to use this, you need to assign a command (via Input Gestures dialog) under Enhanced Touch Gestures category to let you do this for up to ten seconds or toggle this manually. Then go to NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch command value between 3 to 10 seconds (default is 5 seconds).
-
-Note: the ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough) is deprecated. In the future this command will toggle touch interaction instead.
+* Removed ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
 ## Version 20.07
 
