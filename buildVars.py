@@ -8,8 +8,6 @@ _ = lambda x: x
 
 # Add-on information variables
 addon_info = {
-	# for previously unpublished addons, please follow the community guidelines at:
-	# https://bitbucket.org/nvdaaddonteam/todo/src/56140dbec531e4d7591338e1dbc6192f3dd422a8/guideLines.txt
 	# add-on Name, internal for nvda
 	"addon_name": "enhancedTouchGestures",
 	# Add-on summary, usually the user visible name of the addon.
@@ -24,7 +22,7 @@ addon_info = {
 	# Author(s)
 	"addon_author": "Joseph Lee <joseph.lee22590@gmail.com>",
 	# URL for the add-on documentation support
-	"addon_url": None,
+	"addon_url": "https://addons.nvda-project.org",
 	# File name for the add-on help file.
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported
