@@ -101,7 +101,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Crucial: Don't do anything unless if it is an installed copy and touchscreen support is active.
 		if config.isInstalledCopy() and touchHandler.handler:
 			# From 2015 onwards, browse mode module is used.
-			if isinstance(obj.treeInterceptor, browseMode.BrowseModeTreeInterceptor) and "Web" not in touchHandler.availableTouchModes:
+			if (
+				isinstance(obj.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
+				and "Web" not in touchHandler.availableTouchModes
+			):
 				touchHandler.availableTouchModes.append("Web")
 			else:
 				# If we're not in browser window, force object mode.
@@ -311,7 +314,10 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 	def onSave(self):
 		if config.conf["touch"]["enabled"] and not self.enableTouchSupportCheckBox.IsChecked():
 			message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to Enhanced Touch Gestures panel in NVDA Settings and check 'enable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
-			if gui.messageBox(message, _("Disable touch interaction support"), wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION) == wx.NO:
+			if gui.messageBox(
+				message, _("Disable touch interaction support"),
+				wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION
+			) == wx.NO:
 				return
 		config.conf["touch"]["enabled"] = self.enableTouchSupportCheckBox.IsChecked()
 		ETSActionTouchHandlerSettingsChanged.notify()
