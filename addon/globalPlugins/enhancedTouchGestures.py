@@ -196,13 +196,34 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# The actual navigation gestures:
 	# Look up the needed commands for readability purposes.
 	browseModeCommands = (
-		(browseMode.BrowseModeTreeInterceptor.script_nextLink, browseMode.BrowseModeTreeInterceptor.script_previousLink),
-		(browseMode.BrowseModeTreeInterceptor.script_nextFormField, browseMode.BrowseModeTreeInterceptor.script_previousFormField),
-		(browseMode.BrowseModeTreeInterceptor.script_nextHeading, browseMode.BrowseModeTreeInterceptor.script_previousHeading),
-		(browseMode.BrowseModeTreeInterceptor.script_nextFrame, browseMode.BrowseModeTreeInterceptor.script_previousFrame),
-		(browseMode.BrowseModeTreeInterceptor.script_nextTable, browseMode.BrowseModeTreeInterceptor.script_previousTable),
-		(browseMode.BrowseModeTreeInterceptor.script_nextList, browseMode.BrowseModeTreeInterceptor.script_previousList),
-		(browseMode.BrowseModeTreeInterceptor.script_nextLandmark, browseMode.BrowseModeTreeInterceptor.script_previousLandmark),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextLink,
+			browseMode.BrowseModeTreeInterceptor.script_previousLink
+		),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextFormField,
+			browseMode.BrowseModeTreeInterceptor.script_previousFormField
+		),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextHeading,
+			browseMode.BrowseModeTreeInterceptor.script_previousHeading
+		),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextFrame,
+			browseMode.BrowseModeTreeInterceptor.script_previousFrame
+		),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextTable,
+			browseMode.BrowseModeTreeInterceptor.script_previousTable
+		),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextList,
+			browseMode.BrowseModeTreeInterceptor.script_previousList
+		),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextLandmark,
+			browseMode.BrowseModeTreeInterceptor.script_previousLandmark
+		),
 	)
 
 	@scriptHandler.script(gesture="ts(Web):flickRight")
