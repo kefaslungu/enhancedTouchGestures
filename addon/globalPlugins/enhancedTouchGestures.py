@@ -226,7 +226,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(gesture="ts:4finger_flickRight")
 	def script_touchKeyboardEnable(self, gesture):
 		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
-		keyboardButtonHwnd = windowUtils.findDescendantWindow(api.getDesktopObject().windowHandle, className="TIPBand")
+		keyboardButtonHwnd = windowUtils.findDescendantWindow(
+			api.getDesktopObject().windowHandle, className="TIPBand"
+		)
 		touchKeyboardButton = getNVDAObjectFromEvent(keyboardButtonHwnd, winUser.OBJID_CLIENT, 0)
 		try:
 			touchKeyboardButton.doAction()
@@ -236,7 +238,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(_("Cannot activate touch keyboard"))
 
 	@scriptHandler.script(
-		description="Toggles touch interaction. If disabled, you can interact with a touchscreen as though NVDA is not running",
+		description="Toggles touch interaction. "
+		"If disabled, you can interact with a touchscreen as though NVDA is not running",
 		category="Enhanced Touch Gestures",
 		gesture="kb:NVDA+control+alt+t",
 	)
@@ -306,14 +309,22 @@ class EnhancedTouchGesturesPanel(gui.SettingsPanel):
 
 	def makeSettings(self, settingsSizer):
 		touchHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
-		# Translators: This is the label for a checkbox in the
-		# Enhanced Touch Gestures settings panel.
-		self.enableTouchSupportCheckBox = touchHelper.addItem(wx.CheckBox(self, label=_("Enable touch interaction support")))
+		self.enableTouchSupportCheckBox = touchHelper.addItem(
+			# Translators: This is the label for a checkbox in the
+			# Enhanced Touch Gestures settings panel.
+			wx.CheckBox(self, label=_("Enable touch interaction support"))
+		)
 		self.enableTouchSupportCheckBox.SetValue(config.conf["touch"]["enabled"])
 
 	def onSave(self):
 		if config.conf["touch"]["enabled"] and not self.enableTouchSupportCheckBox.IsChecked():
-			message = _("You are about to turn off touch interaction support completely so the touchscreen can be used as though NVDA is not running. To enable touch support, you need to return to Enhanced Touch Gestures panel in NVDA Settings and check 'enable touch interaction support' checkbox. Are you sure you wish to completely disable touch interaction support?")
+			message = _(
+				"You are about to turn off touch interaction support completely "
+				"so the touchscreen can be used as though NVDA is not running. "
+				"To enable touch support, you need to return to Enhanced Touch Gestures "
+				"panel in NVDA Settings and check 'enable touch interaction support' checkbox. "
+				"Are you sure you wish to completely disable touch interaction support?"
+			)
 			if gui.messageBox(
 				message, _("Disable touch interaction support"),
 				wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION
