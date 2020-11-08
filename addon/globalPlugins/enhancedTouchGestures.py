@@ -279,37 +279,3 @@ confspec = {
 	"manualPassthroughToggle": "boolean(default=false)",
 }
 config.conf.spec["touch"] = confspec
-
-# Notify whenever touch handler settings panel values change.
-ETSActionTouchHandlerSettingsChanged = extensionPoints.Action()
-
-
-class EnhancedTouchGesturesPanel(gui.SettingsPanel):
-	# Translators: This is the label for the touch interaction settings dialog.
-	title = _("Enhanced Touch Gestures")
-
-	def makeSettings(self, settingsSizer):
-		touchHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
-		self.enableTouchSupportCheckBox = touchHelper.addItem(
-			# Translators: This is the label for a checkbox in the
-			# Enhanced Touch Gestures settings panel.
-			wx.CheckBox(self, label=_("Enable touch interaction support"))
-		)
-		self.enableTouchSupportCheckBox.SetValue(config.conf["touch"]["enabled"])
-
-	def onSave(self):
-		if config.conf["touch"]["enabled"] and not self.enableTouchSupportCheckBox.IsChecked():
-			message = _(
-				"You are about to turn off touch interaction support completely "
-				"so the touchscreen can be used as though NVDA is not running. "
-				"To enable touch support, you need to return to Enhanced Touch Gestures "
-				"panel in NVDA Settings and check 'enable touch interaction support' checkbox. "
-				"Are you sure you wish to completely disable touch interaction support?"
-			)
-			if gui.messageBox(
-				message, _("Disable touch interaction support"),
-				wx.YES_NO | wx.NO_DEFAULT | wx.CANCEL | wx.CENTER | wx.ICON_QUESTION
-			) == wx.NO:
-				return
-		config.conf["touch"]["enabled"] = self.enableTouchSupportCheckBox.IsChecked()
-		ETSActionTouchHandlerSettingsChanged.notify()
