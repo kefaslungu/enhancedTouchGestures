@@ -243,30 +243,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(_("Cannot activate touch keyboard"))
 
 	@scriptHandler.script(
-		description="Toggles touch interaction. "
-		"If disabled, you can interact with a touchscreen as though NVDA is not running",
-		category="Enhanced Touch Gestures",
-		gesture="kb:NVDA+control+alt+t",
-	)
-	def script_toggleTouchPassthrough(self, gesture):
-		# If touch interaction toggle script is present, toggle touch interaction instead.
-		if hasattr(commands, "script_toggleTouchSupport"):
-			commands.script_toggleTouchSupport(None)
-			return
-		# Emulate NVDA 2020.3 behavior (credit: various authors)
-		if not touchHandler.touchSupported():
-			ui.message(_("Touch interaction not supported"))
-			return
-		enabled = not config.conf["touch"]["enabled"]
-		config.conf["touch"]["enabled"] = enabled
-		if not touchHandler.handler and enabled:
-			touchHandler.initialize()
-			ui.message(_("Touch interaction enabled"))
-		elif touchHandler.handler and not enabled:
-			touchHandler.terminate()
-			ui.message(_("Touch interaction disabled"))
-
-	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickUp"
 	)
