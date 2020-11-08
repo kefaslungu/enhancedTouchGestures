@@ -256,13 +256,3 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
-
-
-# Add-on config database
-confspec = {
-	"enabled": "boolean(default=True)",
-	"touchTyping": "boolean(default=false)",
-	"commandPassthroughDuration": "integer(min=3, max=10, default=5)",
-	"manualPassthroughToggle": "boolean(default=false)",
-}
-config.conf.spec["touch"] = confspec
