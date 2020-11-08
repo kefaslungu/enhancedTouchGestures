@@ -79,22 +79,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if obj.UIAElement.cachedClassName == "CRootKey":
 				clsList.insert(0, TouchKey)
 
-	# Action handlers.
-
-	def handleConfigProfileSwitch(self):
-		# Because some apps have their own handlers for touch, do not let NVDA take over touchscreens.
-		# There are also times when turning off touchscreen through a profile is useful.
-		# Due to this mechanism, NVDA 2017.4 or later is required.
-		# Touch handler toggle will become unnecessary once NVDA Core issue 9682 becomes a reality.
-		if not config.conf["touch"]["enabled"]:
-			if touchHandler.handler:
-				self.etsDebugOutput("etouch: automatically disabling touch handler")
-				touchHandler.terminate()
-		else:
-			if touchHandler.handler is None:
-				self.etsDebugOutput("etouch: automatically enabling touch handler")
-				touchHandler.initialize()
-
 	# A few setup events please (mostly for web navigation):
 
 	def event_gainFocus(self, obj, nextHandler):
