@@ -19,7 +19,7 @@ addon_info = {
 	"addon_name": "enhancedTouchGestures",
 	# Add-on summary, usually the user visible name of the addon.
 	# Translators: Summary for this add-on
-	# to be shown on installation and add-on information.
+	# to be shown on installation and add-on information found in Add-ons Manager.
 	"addon_summary": _("Enhanced Touch Gestures"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -64,3 +64,8 @@ i18nSources = pythonSources + ["buildVars.py"]
 # Files that will be ignored when building the nvda-addon file
 # Paths are relative to the addon directory, not to the root directory of your addon sources.
 excludedFiles = []
+
+# Base language for the NVDA add-on
+# If your add-on is written in a language other than english, modify this variable.
+# For example, set baseLanguage to "es" if your add-on is primarily written in spanish.
+baseLanguage = "en"
