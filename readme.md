@@ -2,11 +2,11 @@
 
 * Author: Joseph Lee
 * Download [stable version][1]
-* NVDA compatibility: 2020.1 to 2020.3
+* NVDA compatibility: 2020.3
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2020.1 or later running on a touchscreen computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen computer with Windows 8.1 or 10.
 
 ## Commands
 
@@ -14,7 +14,6 @@ Note: this add-on requires NVDA 2020.1 or later running on a touchscreen compute
 
 * 4 finger double tap: toggle input help mode.
 * Four finger flick right: toggle touch keyboard (usually enables it).
-* Control+Alt+NVDA+T: toggles touch interaction.
 
 ### Object mode
 
@@ -31,6 +30,12 @@ This touch mode, available in browse mode, allows you to navigate the document b
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction settings panel, a dedicated Enhanced Touch Gestures settings panel has been removed.
 
 ## Version 20.09
 
