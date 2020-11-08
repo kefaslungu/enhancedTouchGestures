@@ -21,7 +21,6 @@ from NVDAObjects.UIA import UIA
 import controlTypes
 import gui
 import wx
-import extensionPoints
 
 
 # Touch keyboard enhancements
@@ -43,16 +42,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		if touchHandler.touchSupported():
-			# Make a note of whether set touch support flag is present (NVDA 2020.3 or later).
-			setTouchSupportPresent = hasattr(touchHandler, "setTouchSupport")
-			# Turn off touch support at startup if told to do so.
+			# Notify if touch support is off.
 			# This is useful if using NVDA on a shared computer.
 			if not config.conf["touch"]["enabled"]:
-				if setTouchSupportPresent:
-					self.etsDebugOutput("etouch: touch support disabled from NVDA")
-				else:
-					self.etsDebugOutput("etouch: disabling touch handler on startup")
-					touchHandler.terminate()
+				self.etsDebugOutput("etouch: touch support disabled from NVDA")
 				tones.beep(380, 100)
 				wx.CallAfter(ui.message, "Touch interaction support is disabled")
 			# Synth settings ring layer.
