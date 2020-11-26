@@ -2,13 +2,13 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* Yhteensopivuus: NVDA 2019.3 ja uudemmat
+* Yhteensopivuus: NVDA 2020.1-2020.3
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Huom: Tämä lisäosa vaatii NVDA 2019.3:n tai uudemman ja
-kosketusnäyttötietokoneen, jossa on asennettuna Windows 8.1 tai 10.
+Huom: Tämä lisäosa edellyttää NVDA 2020.1:tä tai uudempaa ja
+kosketusnäyttötietokonetta, jossa on asennettuna Windows 8.1 tai 10.
 
 ## Komennot
 
@@ -16,9 +16,9 @@ kosketusnäyttötietokoneen, jossa on asennettuna Windows 8.1 tai 10.
 
 * Kaksoisnapautus neljällä sormella: ottaa syöteohjeen käyttöön tai poistaa
   sen käytöstä.
-* Napautus ja pitäminen: suorittaa hiiren oikean painikkeen napsautuksen
-  sormesi alla olevalle objektille.
-* Pyyhkäisy oikealle neljällä sormella: kosketusnäppäimistö näkyviin/pois.
+* Pyyhkäisy oikealle neljällä sormella: tuo näkyviin kosketusnäppäimistön
+  tai piilottaa sen.
+* Ctrl+Alt+NVDA+T: Vaihtaa kosketusvuorovaikutuksen tilaa.
 
 ### Objektitila
 
@@ -48,21 +48,47 @@ kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
 
-## Koordinaattien ilmoitusäänimerkki
+## Versio 20.09
 
-Jos olet ottanut käyttöön hiiren koordinaattien ilmaisemisen
-Hiiriasetukset-valintaikkunasta, kuulet äänimerkkejä, jotka ilmaisevat
-nykyisen sijainnin näytöllä kosketuseleitä käyttäessäsi.
+* Poistettu mahdollisuus NVDA:n kosketusvuorovaikutuksen käytöstä
+  poistamiseen enintään 10 sekunniksi (kosketuskomennon läpivienti).
+* Poistettu koordinaattien ilmaisemisen äänimerkki
 
-## Kosketuskomentojen läpivienti
+## Versio 20.07
 
-Käytettävissä on määrittämätön komento, joka mahdollistaa kosketuseleiden
-käytön enintään kymmenen sekunnin ajan tai manuaalisesti ikään kuin NVDA ei
-olisi käynnissä. Voit käyttää tätä määrittämällä komennon
-Syötekomennot-valintaikkunan Laajennetut kosketuseleet
--kategoriasta. Valitse tämän jälkeen NVDA-valikosta Asetukset/Kosketuksen
-vuorovaikutus ja määritä asetuksen "Keskeytä NVDA:n kosketuskomento" arvoksi
-jotain kolmen ja kymmenen sekunnin väliltä (oletus on 5).
+* Lisätty näppäinkomento kosketuksen vuorovaikutuksen tilan vaihtamiseen tai
+  kosketuksen läpiviennin käyttöön ottamiseen/käytöstä poistamiseen
+  (Ctrl+Alt+NVDA+T).
+* Koska NVDA 2020.1 sisältää kosketuskomennon oikean hiiripainikkeen
+  napsauttamiselle (yhden sormen napautus ja pito), komento on poistettu
+  tästä lisäosasta. Tästä johtuen lisäosa edellyttää NVDA 2020.1:tä tai
+  uudempaa.
+* Mahdollisuus NVDA:n kosketuksen vuorovaikutuksen käytöstä poistamiselle
+  enintään 10 sekunniksi (kosketuskomennon läpivienti) on
+  poistettu. Tulevaisuudessa tämä komento vaihtaa kosketuksen
+  vuorovaikutuksen tilaa.
+* Kosketuksen vuorovaikutukseen tehtyjen muutosten takia kosketuskomennon
+  läpivientitoiminto ja Laajennetut kosketuseleet -asetuspaneeli poistetaan
+  käytöstä NVDA:n kehitysversioissa. Kosketuskomennon läpiviennin käyttöön
+  ottamiseen käytetty komento vaihtaa kosketuksen vuorovaikutuksen tilaa.
+* Koordinaattien ilmaisemisen äänimerkkitoiminto on vanhentunut ja
+  poistetaan lisäosan tulevassa versiossa.
+* Koordinaattien ilmaisemisen äänimerkkiä ei kuulu kosketusnäppäimistöä
+  käytettäessä.
+* NVDA ei näytä enää tekevän mitään tai toista virheääniä tutkittaessa
+  kosketuksella modernin syötön palvelua, kuten emojipaneelia.
+* NVDA näyttää virheilmoituksen, jos kosketusnäppäimistöä ei voi aktivoida
+  (pyyhkäisy oikealle neljällä sormella).
+
+## Versio 20.06
+
+* Ratkaistu useita koodaustyylin ongelmia sekä mahdollisia bugeja Flake8:n
+  kanssa.
+
+## Versio 20.04
+
+* Hiiren oikean painikkeen napsautus (yhden sormen napautus ja pito)
+  sisältyy nyt NVDA 2020.1:teen.
 
 ## Versio 20.01
 
@@ -119,9 +145,9 @@ jotain kolmen ja kymmenen sekunnin väliltä (oletus on 5).
 * Lisätty Kosketuksen vuorovaikutus -valintaikkunaan piilotettu
   valintaruutu, joka poistaa kosketustuen kokonaan käytöstä (käytettävissä,
   mikäli muu profiili kuin "(normaalit asetukset)" on aktiivisena).
-* Mikäli käytetään NVDA 2018.1:tä tai uudempaa, Kosketuksen vuorovaikutus
-  -vaihtoehto näkyy kahdesti Asetukset-valikossa. Toisena oleva eli alempi
-  avaa tämän lisäosan valintaikkunan.
+* Mikäli käytetään NVDA 2018.1:tä tai sitä uudempaa, Kosketuksen
+  vuorovaikutus -vaihtoehto näkyy kahdesti Asetukset-valikossa. Toisena
+  oleva eli alempi vaihtoehto avaa tämän lisäosan valintaikkunan.
 * Kosketuskirjoitustilaa ei enää näytetä lisäosan Kosketuksen vuorovaikutus
   -valintaikkunassa, mikäli käytetään NVDA 2018.1:tä tai uudempaa.
 

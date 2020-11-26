@@ -2,12 +2,12 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA-kompatibilitet: 2019.3 og derefter
+* NVDA compatibility: 2020.1 to 2020.3
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
 
-Bemærk: Denne tilføjelse kræver NVDA 2019.3 eller nyere kørende på en
+Bemærk: Denne tilføjelse kræver NVDA 2020.1 eller nyere kørende på en
 computer med touchskærm med Windows 8.1 eller 10.
 
 ## Kommandoer
@@ -15,9 +15,9 @@ computer med touchskærm med Windows 8.1 eller 10.
 ### Tilgængelig over alt
 
 * Dobbelt-tap med 4 fingre: Slå hjælpetilstand til/fra.
-* Tap og hold: udfører et højreklik på objektet under din finger.
 * Svirp til højre med 4 fingre: Slå berøringstastatur til/fra (som regel
   til).
+* Ctrl+Alt+NVDA+T: Slår berøringsinteraktion til og fra.
 
 ### Objekttilstand
 
@@ -47,22 +47,45 @@ forskellige indstillinger for talesyntesen. Svirp op og ned for at ændre den
 valgte indstilling. Disse bevægelser svarer til tastaturkommandoerne til
 ringen for talesynteseindstillinger.
 
-## Annoncering af koordinater, lydsignal
+## Version 20.09
 
-Hvis du har slået indstillingen "Afspil lydkoordinater under flytning af
-mus" til under indstillinger for mus, vil du høre lydsignaler, som indikerer
-de aktuelle skærmkoordinater, når du bruger udforskningsbevægelser.
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
-## Slip berørngskommando igennem
+## Version 20.07
 
-En utildelt berøringskommando er tilgængelig, der lader dig benytte andre
-berøringskommandoer som om NVDA ikke kørte. For at benytte denne funktion,
-skal du tildel en kommando ved at benytte dialogen "Inputbevægelser" under
-kategorien "Enhanced Touch Gestures". Dette kan vare op til ti sekunder,
-eller dette kan slås fra manuelt. Gå herefter til
-NVDA-menu>Præferencer>Indstillinger>Touch-interaktion, og konfigurer Pause i
-NVDA's touch-understøttelse til mellem 3 og 10 sekunder. Som standard er det
-5.
+* Tilføjede en tastaturkommando til at skifte berøringsinteraktion eller
+  aktivere/deaktivere  funktion, der slipper berøringsbevægelser igennem, så
+  bevægelser ikke indfanges af NVDA (Ctrl+Alt+NVDA+T).
+* Da NVDA 2020.1 og nyere inkluderer en touch-kommando til at udføre
+  højreklik med musen (tryk og hold på en finger), er kommandoen blevet
+  fjernet fra denne tilføjelse. Derfor kræves NVDA 2020.1 eller nyere.
+* Muligheden for at lade NVDA slå berøringsinteraktion fra i op til ti
+  sekunder (funktion til at slippe bevægelser direkte igennem til systemet)
+  er forældet. I fremtiden skifter denne kommando i stedet for indstillingen
+  for berøringsinteraktion.
+* I NVDA-udviklingssnapshots, på grund af ændringer i
+  berøringsinteraktionsfunktionen, vil berøringskommandoens funktion til at
+  slippe bevægelser direkte igennem til operativsystemet blive
+  deaktiveret. Den kommando, der bruges til at aktivere denne funktion, vil
+  nu slå berøringsinteraktion til og fra i stedet.
+* Koordinat-meddelelsesbip-funktionen er forældet og fjernes i en fremtidig
+  tilføjelsesopdatering.
+* Koordinat-meddelelsesbip høres ikke, mens du bruger berøringstastaturet.
+* NVDA vil ikke længere se ud til at gøre ingenting eller afspille
+  fejletoner, mens man udforsker moderne inputmetoder såsom emoji-panelet
+  via berøring.
+* NVDA vil vise en fejlmeddelelse, hvis berøringstastaturet ikke kan
+  aktiveres (svirp fire fingre til højre).
+
+## Version 20.06
+
+* Løst mange problemer med kodningstil og potentielle fejl med Flake8.
+
+## Version 20.04
+
+* Højre museklik (tryk og hold med én finger) er nu en del af NVDA 2020.1.
 
 ## Version 20.01
 
@@ -122,9 +145,9 @@ NVDA's touch-understøttelse til mellem 3 og 10 sekunder. Som standard er det
 * Tilføjede en skjult check box i berøringsinteraktion, der lader dig slå
   understøttelse for berøring helt fra (tilgængelig hvis andre profiler end
   den normale indstillingsprofil er aktiv).
-* Hvis du bruger NVDA 2018.1 eller nyere, vil du få vist dialoger til
-  berøringsinteraktion to gange under NVDAs indstillingskategorier. Det
-  andet punkt er den dialog, der tilhører tilføjelsen.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * Indstillingen til berøringsindtastning vises ikke længere i tilføjelsens
   egen dialog for berøringsindtastning, hvis du benytter NVDA 2018.2 eller
   nyere.

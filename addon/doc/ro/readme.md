@@ -2,23 +2,22 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* Compatibilitate NVDA: 2019.3 și mai nou
+* NVDA compatibility: 2020.1 to 2020.3
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
 
-Rețineți că acest supliment necesită NVDA 2019.3 sau mai nou instalat pe un
-computer cu touchscreen care rulează Windows 8.1 sau 10.
+Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Comenzi
 
 ### Disponibile oriunde
 
 * Atingere dublă cu 4 degete: comută modul de intrare al ajutorului.
-* Țineți apăsat: efectuează clic dreapta pe obiect sub degetul
-  dumneavoastră.
 * Glisare la dreapta cu 4 degete: comută tastatura tactilă (de obicei o
   activează).
+* Control+Alt+NVDA+T: toggles touch interaction.
 
 ### Mod obiect
 
@@ -48,22 +47,42 @@ pentru a vă deplasa între setările sintetizatorului și utilizați gesturile
 glisare cu două degete sus și jos pentru a modifica valorile. Aceste gesturi
 reflectă asta în comenzile setărilor sintezei pe tastatură.
 
-## Coordonată anunț bip
+## Version 20.09
 
-Dacă ați activat redarea coordonatelor mausului în setările acestuia, auziți
-bipuri pentru a indica coordonata curentă a ecranului atunci când invocați
-gesturile de explorare ale atingerii.
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
-## Comanda de atingere passthrough
+## Version 20.07
 
-O comandă neatribuită este disponibilă pentru a vă permite să utilizați
-gesturi de pe ecranul tactil ca și când NVDA nu se execută. Pentru a utiliza
-acest lucru, trebuie să atribuiți o comandă (prin dialogul Gesturi de
-intrare) sub categoria „gesturi de atingere îmbunătățite” pentru a vă
-permite să faceți acest lucru timp de până la zece secunde, apoi mergeți la
-meniul NVDA/Preferințe/Interacțiunea prin atingere, apoi configurați pauza
-valorii comenzii de atingere NVDA între 3 și 10 secunde (valoarea implicită
-este de 5 secunde).
+* Added a keyboard command to toggle touch interaction or enable/disable
+  touch passthrough (Control+Alt+NVDA+T).
+* As NVDA 2020.1 and later includes a touch command to perform right mouse
+  click (one finger tap and hold), the command has been removed from this
+  add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds
+  (touch command passthrough) is deprecated. In the future this feature will
+  toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes,
+  touch command passthrough feature and Enhanced Touch Gestures settings
+  panel will be disabled. The command used to enable touch command
+  passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in
+  a future add-on release.
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while
+  exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated
+  (four finger flick right).
+
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
+## Version 20.04
+
+* Right mouse click gesture (one finger tap and hold) is now part of NVDA
+  2020.1.
 
 ## Versiunea 20.01
 
@@ -122,8 +141,8 @@ este de 5 secunde).
   pentru dezactivarea completă a suportului tactil (disponibilă dacă sunt
   active alte profiluri decât configurația obișnuită).
 * If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * În dialogul interacțiunii tactile pentru supliment, modul de scriere
   tactilă nu mai este afișat dacă se utilizează NVDA 2018.1 sau mai nou.
 

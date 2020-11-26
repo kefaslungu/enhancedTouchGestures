@@ -2,22 +2,21 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA-Kompatibilität: 2019.3 und neuer
+* NVDA compatibility: 2020.1 to 2020.3
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Hinweis: Diese Erweiterung benötigt NVDA 2019.3 oder neuer, das auf einem
-System mit Touchscreen und Windows 8.1 oder Windows 10 läuft.
+Hinweis: Diese Erweiterung benötigt NVDA 2020.1 oder neuer, auf dem Tablet
+mit Touchscreen und Windows 8.1 oder Windows 10 läuft.
 
 ## Befehle
 
 ### Überall verfügbar
 
 * Mit vier Fingern zweimal tippen: Eingabehilfe ein-/ausschalten.
-* Tippen und halten: Führt einen Rechtsklick auf dem objekt unter Ihrem
-  Finger aus.
 * Mit vier Fingern nach rechts streichen: Aktiviert die Bildschirmtastatur.
+* Strg+Alt+NVDA+T: Schaltet die Touch-Interaktion um.
 
 ### Objektmodus
 
@@ -49,22 +48,48 @@ Einstellung zu ändern, streichen Sie mit 2 Fingern nach oben oder
 unten. Diese Gesten ähneln den Tastenkombinationen für Einstellungen im
 Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
-## Signalton für Koordinaten
+## Version 20.09
 
-Wenn der Signalton für Mauskoordinaten in den Mauseinstellungen aktiviert
-ist, hören Sie beim Erkunden des Bildschirms entsprechende Töne.
+* Möglichkeit entfernt, den NVDA die Berührungsinteraktion für bis zu zehn
+  Sekunden abschalten zu lassen (Durchreichen der Touch-Befehle).
+* Funktion für den Signalton für die Koordinatenrückmeldungen wurde
+  entfernt.
 
-## Touch-Befehl durchreichen
+## Version 20.07
 
-Es steht ein nicht zugewiesener Befehl zur Verfügung, mit dem Sie
-Touchscreen-Gesten so verwenden können, als ob NVDA beendet wäre. Dafür
-müssen Sie im Dialog Eingaben unter der Kategorie erweiterte
-Berührungsgesten einen Tastaturbefehl zuweisen. Mit diesem Befehl können Sie
-bis zu zehn Sekunden lang diese Funktion nutzen. Die Zeit können Sie auch
-manuell umschalten. Gehen Sie dazu in das
-NVDA-Menü/Einstellungen/Touch-Interaction und konfigurieren Sie die
-Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
-(Standard ist 5 Sekunden).
+* Es wurde ein Tastaturbefehl zum Umschalten der Touch-Interaktion oder zum
+  Aktivieren bzw. Deaktivieren der Durchreichen des Touch-Befehls
+  (Strg+Alt+NVDA+T) hinzugefügt.
+* Da NVDA 2020.1 und neuer einen Touch-Befehl zur Ausführung eines rechten
+  Mausklicks (ein Finger tippen und halten) enthält, wurde der Befehl aus
+  dieser Erweiterung entfernt. Daher ist NVDA 2020.1 oder neuer
+  erforderlich.
+* Die Möglichkeit, NVDA die Touch-Interaktion für bis zu zehn Sekunden
+  abschalten zu lassen (Durchreichen des Touch-Befehls), ist veraltet. In
+  Zukunft wird diese Funktion stattdessen die Touch-Interaktion umschalten.
+* In NVDA-Entwicklungs-Snapshots werden aufgrund von Änderungen der
+  Touch-Interaktionsfunktion die Funktion zum Durchreichen von
+  Touch-Befehlen und das Einstellungsfenster für erweiterte Berührungsgesten
+  deaktiviert. Der zum Aktivieren des Durchreichens von touch-Befehlen
+  verwendete Befehl schaltet stattdessen die Touch-Interaktion um.
+* Die Funktion für den Signalton für die Koordinatenrückmeldungen ist
+  veraltet und wird in einer zukünftigen Version entfernt werden.
+* Der Signalton für die KoordinatenRückmeldung ertönt nicht, wenn die
+  Tastatur mit Touch-Eingabe verwendet wird.
+* NVDA wird nicht mehr den Anschein erwecken, nichts zu tun oder Fehlertöne
+  abzuspielen, wenn moderne Eingabemöglichkeiten wie das Emoji-Panel per
+  Berührung erkundet werden.
+* NVDA gibt eine Fehlermeldung aus, wenn die Touch-Tastatur nicht aktiviert
+  werden konnte (Mit vier Fingern nach rechts wischen).
+
+## Version 20.06
+
+* Mit Flake8 wurden viele Code-Probleme und potenzielle Fehler behoben.
+
+## Version 20.04
+
+* Rechte Mausklick-Geste (ein Fingertipp und Halten) ist jetzt Teil von NVDA
+  2020.1.
 
 ## Version 20.01
 
@@ -123,9 +148,9 @@ Pausenzeit für den Touch-Befehlswert von NVDA zwischen 3 und 10 Sekunden
 * Ein verstecktes Kontrollkästchen im Dialogfeld"Touch-Interaktion" wurde
   hinzugefügt, um die Touch-Unterstützung vollständig zu deaktivieren. Dies
   ist nur für benutzerdefinierte Konfigurationsprofile verfügbar.
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
+* Wenn NVDA 2018.1 oder neuer verwendet wird, wird der Dialog Interaktion
+  berühren zweimal im Einstellungsmenü von NVDA aufgeführt. Das zweite
+  Element ist der Dialog, der mit der Erweiterung mitgeliefert wird.
 * Im Erweiterungsdialog Touch Interaction nwird die Eingabeart "Tippen auf
   Berührung" nicht mehr angezeigt, wenn NVDA 2018.1 verwendet wird.
 

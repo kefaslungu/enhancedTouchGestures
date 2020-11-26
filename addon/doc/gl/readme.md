@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Compatibilidade con NVDA: 2019.3 en diante
+* Compatibilidade con NVDA: da 2020.1 á 2020.3
 
 Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
 exploración.
 
-Nota: este complemento require do NVDA 2019.3 ou posterior executándose nun
+Nota: este complemento require do NVDA 2020.1 ou posterior executándose nun
 computador con pantalla táctil co Windows 8.1 ou 10.
 
 ## Ordes
@@ -16,9 +16,9 @@ computador con pantalla táctil co Windows 8.1 ou 10.
 ### Dispoñible dende calquera lugar
 
 * Doble toque con 4 dedos: conmuta o modo de axuda de entrada.
-* Tocar e manter: leva a cabo clic dereito no obxecto baixo o teu dedo.
 * Deslizamento de catro dedos cara a dereita: conmuta o teclado tactil
   (normalmente actívao).
+* Control+Alt+NVDA+T: alterna a interacción táctil.
 
 ### Modo Obxecto
 
@@ -47,21 +47,45 @@ opcións do sintetizador e utiliza os xestos de desprazar dous dedos cara
 arriba e cara abaixo para cambiar os valores. Estos xestos refrexan as ordes
 do grupo de opcións do sintetizador no teclado.
 
-## Anunciado de pitidos para coordenadas
+## Versión 20.09
 
-Se habilitaches a opción Reproducir coordenadas do rato Nas Opcións do Rato,
-escoitarás pitidos para indicar as coordenadas actuais da pantalla ó invocar
-os xestos de exploración tactil.
+* Eliminouse a posibilidade de deixar que NVDA desactive a interacción
+  táctil durante ata dez segundos (deixar pasar xesto táctil).
+* Eliminouse a característica de nunciado con pitidos das coordenadas.
 
-## Deixar pasar orde tactil
+## Versión 20.07
 
-Está dispoñible unha orde non asignada para permitirche usar xestos da
-pantalla tactil coma se NVDA non estibera  en execución. Para poder usar
-esto, necesitas asignar unha orde (a través do diálogo Xestos de Entrada) na
-categoría Enhanced Touch Gestures para permitirche facer esto en ata 10
-segundos ou cambialo manualmente. Entón vai ao menú
-NVDA/Preferencias/Interacción Tactil, logo configura pausar a orde de valor
-tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
+* Engadida unha orde de teclado para alternar a interacción táctil ou
+  habilitar/deshabilitar deixar pasar xestos táctiles (Control+Alt+NVDA+T).
+* Xa que NVDA 2020.1 e posterior inclúe un xesto táctil para realizar click
+  dereito co rato (tocar e manter cun dedo), o xesto eliminouse deste
+  complemento. En consecuencia, requírese NVDA 2020.1 ou posterior.
+* A posibilidade de deixar que NVDA desactive a interacción táctil durante
+  ata dez segundos (deixar pasar xesto táctil) está obsoleta. No futuro este
+  comando alternará a interacción táctil no seu lugar.
+* Nas versións de desenvolvemento de NVDA, debido a trocos na característica
+  de interacción táctil, a característica de deixar pasar xesto táctil e o
+  panel de opcións de Enhanced Touch Gestures deshabilitaranse. A orde
+  utilizada para habilitar deixar pasar xesto táctil alternará a interacción
+  táctil no seu lugar.
+* A característica de pitido de anuncio de coordeada está obsoleta e
+  eliminarase nunha versión futura do complemento.
+* Non se oirá o pitido de anuncio de coordeada ao utilizar o teclado táctil.
+* NVDA xa non parecerá non facer nada nin reproducirá tons de erro ao
+  explorar vía táctil unha facilidade de entrada moderna como o panel de
+  emoji.
+* NVDA presentará unha mensaxe de erro se non se pode activar o teclado
+  táctil (deslizamento con catro dedos á dereita).
+
+## Versión 20.06
+
+* Resoltas varias incidencias de estilo do código e erros potenciais con
+  Flake8.
+
+## Versión 20.04
+
+* O xesto de click co botón dereito do rato (un tap mantido cun dedo) agora
+  forma parte de NVDA 2020.1.
 
 ## Versión 20.01
 
@@ -119,7 +143,7 @@ tzctil de NVDA entre 3 e 10 segundos (o predeterminado é 5 segundos).
   para desactivar compretamente o soporte tactil (dispoñible se os perfís
   distintos á configuración normal están activos).
 * Se se usa NVDA 2018.1 en adiante, o diálogo Interacción Táctil listarase
-  dúas veces no menú Preferencias do NVDA. o segundo elemento é o diálogo
+  dúas veces no menú Preferencias do NVDA. O segundo elemento é o diálogo
   que vén co complemento.
 * No diálogo Interación Tactil para o complemento, o modo de escritura
   tactil xa non se amosa se se usa NVDA 2018.1 en adiante.

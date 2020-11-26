@@ -2,13 +2,13 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2020.1 to 2020.3
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
 ## Commandes
@@ -16,9 +16,9 @@ computer with Windows 8.1 or 10.
 ### Disponible partout
 
 * Double tape 4 doigts : basculer en mode aide à la saisie.
-* Taper et maintenir : effectue un clic droit sur l'objet sous votre doigt.
 * Glisser vers la droite quatre doigts : basculer clavier tactile
   (habituellement activer celui-ci).
+* Control+Alt+NVDA+T: toggles touch interaction.
 
 ### Mode objet
 
@@ -49,23 +49,42 @@ entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
 
-## Annonce des coordonnées par des bips
+## Version 20.09
 
-Si vous avez activé l'option Sonoriser les coordonnées quand la souris se
-déplace dans les paramètres de la souris, vous entendrez des bips pour
-indiquer la coordonnée actuelle de la souris sur l'écran lorsque vous
-invoquez des gestes d'exploration tactile.
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
-## Émulation de commande tactile
+## Version 20.07
 
-Une commande non assignée est disponible pour vous permettre d'utiliser les
-gestes de l'écran tactile comme si NVDA ne fonctionnait pas. Pour
-l'utiliser, vous devez assigner une commande (via le dialogue Gestes de
-commandes) dans la catégorie Enhanced Touch Gestures afin de vous permettre
-de l'étendre jusqu'à dix secondes ou de le basculer manuellement. Ensuite,
-allez dans le menu NVDA/Préférences/Interaction Tactile, puis le configurer
-afin de suspendre la valeur   de la commande tactile de NVDA entre 3 à 10
-secondes (par défaut 5 secondes).
+* Added a keyboard command to toggle touch interaction or enable/disable
+  touch passthrough (Control+Alt+NVDA+T).
+* As NVDA 2020.1 and later includes a touch command to perform right mouse
+  click (one finger tap and hold), the command has been removed from this
+  add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds
+  (touch command passthrough) is deprecated. In the future this feature will
+  toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes,
+  touch command passthrough feature and Enhanced Touch Gestures settings
+  panel will be disabled. The command used to enable touch command
+  passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in
+  a future add-on release.
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while
+  exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated
+  (four finger flick right).
+
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
+## Version 20.04
+
+* Right mouse click gesture (one finger tap and hold) is now part of NVDA
+  2020.1.
 
 ## Version 20.01
 
@@ -123,8 +142,8 @@ secondes (par défaut 5 secondes).
   pour désactiver complètement le support tactile (disponible si des profils
   autres que la configuration normale sont actifs).
 * If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * Dans le dialogue Interaction Tactile de l'extension, le mode frappe
   tactile n'est plus affiché si vous utilisez NVDA 2018.1 ou une version
   ultérieure.

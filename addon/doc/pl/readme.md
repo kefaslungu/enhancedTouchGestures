@@ -2,23 +2,22 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* Zgodność z wersjami NVDA: 2019.3 i nowszymi
+* NVDA compatibility: 2020.1 to 2020.3
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
 
-Uwaga! Ten dodatek wymaga NVDA w wersji 2019.3 lub nowszej, uruchomionej na
-komputerze z ekranem dotykowym i systemem operacyjnym Windows 8.1 lub 10.
+Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
+computer with Windows 8.1 or 10.
 
 ## Polecenia
 
 ### Dostępne wszędzie
 
 * Podwójne stuknięcie czterema palcami: przełącza pomoc wprowadzania.
-* Stuknięcie i przytrzymanie: wykonuje kliknięcie prawym przyciskiem myszy
-  na obiekcie pod palcem.
 * Przesunięcie w prawo czterema palcami: Przełączanie klawiatury dotykowej
   (za zwyczaj ją włącza).
+* Control+Alt+NVDA+T: toggles touch interaction.
 
 ### Tryb obiektu
 
@@ -46,20 +45,42 @@ aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dó
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
 
-## Dźwięk oznajmiania położenia
+## Version 20.09
 
-Jeśli włączony jest dźwięk wskaźnika myszy,  będziesz słyszał dźwięki
-określające aktualne położenie na ekranie, po wywołaniu gestu dotykowej
-eksploracji.
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
-## Przepuszczanie polecenia dotykowego
+## Version 20.07
 
-Nieprzypisane polecenie pozwala używać gestów ekranu tak, jakby NVDA nie był
-uruchomiony. Aby użyć tej funkcji, przypisz je w kategorii Enhanced Touch
-Gestures przez dialog zdarzeń wejścia. Pozwoli to wstrzymać reakcję na dotyk
-do dziesięciu sekund lub przełączyć ją ręcznie. Następnie należy wejść do
-meni NVDA/Ustawienia/Reakcja na Dotyk, i skonfigurować czas wstrzymania
-poleceń dotykowych NVDA od 3 do 10 sekund. Wartość domyślna to 5 sekund.
+* Added a keyboard command to toggle touch interaction or enable/disable
+  touch passthrough (Control+Alt+NVDA+T).
+* As NVDA 2020.1 and later includes a touch command to perform right mouse
+  click (one finger tap and hold), the command has been removed from this
+  add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds
+  (touch command passthrough) is deprecated. In the future this feature will
+  toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes,
+  touch command passthrough feature and Enhanced Touch Gestures settings
+  panel will be disabled. The command used to enable touch command
+  passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in
+  a future add-on release.
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while
+  exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated
+  (four finger flick right).
+
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
+## Wersja 20.04
+
+* Polecenie prawego przycisku myszy (stuknięcie z przytrzymaniem jednym
+  palcem) jest wbudowane w NVDA w wersji 2020.1.
 
 ## Wersja 20.01
 
@@ -118,8 +139,8 @@ poleceń dotykowych NVDA od 3 do 10 sekund. Wartość domyślna to 5 sekund.
   ukryte pole wyboru, dostępne tylko wtedy gdy aktywny jest inny profil niż
   standardowy.
 * If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * W oknie dialogowym reakcji dotykowej dodatku, od wersji NVDA 2018.1 tryb
   wpisywania dotykowego nie jest już pokazywany.
 

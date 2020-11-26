@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* Compatibilidade com NVDA: 2018.2 a 2019.2
+* NVDA compatibility: 2020.1 to 2020.3
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
+Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
 computer with Windows 8.1 or 10.
 
 ## Comandos:
@@ -16,8 +16,8 @@ computer with Windows 8.1 or 10.
 ### Disponíveis em qualquer lugar:
 
 * Toque com quatro dedos: Activa/desactiva a ajuda de entrada.
-* Tocar e segurar: activa o butão direito do objecto sob o dedo.
 * Quatro dedos para a direita: Geralmente, activa o teclado virtual.
+* Control+Alt+NVDA+T: toggles touch interaction.
 
 ### Revisão de objecto:
 
@@ -47,22 +47,42 @@ sintetizador e use dois dedos para cima e para baixo gestos para alterar os
 valores. estes gestos são semelhantes aos comandos de teclado das
 configurações dos sintetizadores.
 
-## Beep para anunciar as coordenadas.
+## Version 20.09
 
-Se tiver ativado a configuração de coordenadas do rato na configuração do
-rato, ouvirá sinais sonoros para indicar a coordenada actual do ecrã quando
-usa os gestos de exploração por toque.
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
-## Passagem do comando de toque
+## Version 20.07
 
-Um comando não atribuído está disponível para permitir que possam ser usados
-gestos do ecrã sensível ao toque como se o NVDA não estivesse em
-execução. Para usar essa funcionalidade, precisa atribuir um comando (por
-meio da caixa de diálogo definição de comandos) na categoria Gerenciadores
-de toque aprimorados para permitir que faça isso por até dez segundos ou
-alternar isso manualmente. Em seguida, vá para o menu NVDA / Preferências /
-Interacção por toque e configure a pausa no valor de comando de toque do
-NVDA entre 3 a 10 segundos (o padrão é 5 segundos).
+* Added a keyboard command to toggle touch interaction or enable/disable
+  touch passthrough (Control+Alt+NVDA+T).
+* As NVDA 2020.1 and later includes a touch command to perform right mouse
+  click (one finger tap and hold), the command has been removed from this
+  add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds
+  (touch command passthrough) is deprecated. In the future this feature will
+  toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes,
+  touch command passthrough feature and Enhanced Touch Gestures settings
+  panel will be disabled. The command used to enable touch command
+  passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in
+  a future add-on release.
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while
+  exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated
+  (four finger flick right).
+
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
+## Version 20.04
+
+* Right mouse click gesture (one finger tap and hold) is now part of NVDA
+  2020.1.
 
 ## Version 20.01
 
@@ -120,8 +140,8 @@ NVDA entre 3 a 10 segundos (o padrão é 5 segundos).
   toque para desativar completamente o suporte por toque (disponível se
   outros perfis além do da configuração normal estiverem activos).
 * If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * No diálogo de interacção de toque para o extra, o modo de digitar toque
   não é mostrado se usar versões do NVDA posteriores à 2018.1.
 
