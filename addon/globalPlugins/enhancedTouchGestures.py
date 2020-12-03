@@ -222,6 +222,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message shown when touch keyboard button is not found.
 			ui.message(_("Cannot activate touch keyboard"))
 
+	@scriptHandler.script(gesture="ts:4finger_flickLeft")
+	def script_win10Dictation(self, gesture):
+		# Press Windows+H on Windows 10 Version 1709 (Fall Creators Update) and later.
+		import winVersion
+		import keyboardHandler
+		if winVersion.winVersion.build < 16299:
+			# Translators: message shown when dictation command is unavailable.
+			ui.message(_("Dictation is supported on Windows 10 Version 1709 or later"))
+		else:
+			keyboardHandler.KeyboardInputGesture.fromName("windows+h").send()
+
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickUp"
