@@ -8,25 +8,27 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-02-20 20:40+0100\n"
+"PO-Revision-Date: 2020-11-26 20:57+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Spanish translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#. Translators: Reported when the object has no location for the mouse to move to it.
-msgid "object has no location"
-msgstr "el objeto no tiene ubicación"
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "No se puede activar el teclado táctil"
 
-msgid ""
-"Clicks the right mouse button at the current touch position. This is "
-"generally used to activate a context menu."
-msgstr ""
-"Hace clic con el botón derecho del ratón en la posición de toque actual. Se "
-"usa habitualmente para activar un menú de contexto."
+msgid "Touch interaction not supported"
+msgstr "No se soporta la interacción táctil"
+
+msgid "Touch interaction enabled"
+msgstr "Interacción Táctil activada"
+
+msgid "Touch interaction disabled"
+msgstr "Interacción Táctil desactivada"
 
 #. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
@@ -38,14 +40,6 @@ msgstr "Enhanced Touch Gestures"
 #. Enhanced Touch Gestures settings panel.
 msgid "Enable touch interaction support"
 msgstr "Habilitar soporte de interacción táctil"
-
-#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
-msgid "&Pause NVDA's touch support (duration in seconds)"
-msgstr "&Pausa el soporte táctil de NVDA (duración en segundos)"
-
-#. Translators: a checkbox to allow passthrough to be toggled manually.
-msgid "&Manually toggle touch passthrough"
-msgstr "Conmuta &Manualmente dejar pasar toque"
 
 msgid ""
 "You are about to turn off touch interaction support completely so the "
@@ -77,6 +71,22 @@ msgstr ""
 "\tRequieren de un ordenador táctil habilitado con Windows 8.1 o posterior "
 "con NVDA 2017.4 o posterior instalado."
 
+#~ msgid "object has no location"
+#~ msgstr "el objeto no tiene ubicación"
+
+#~ msgid ""
+#~ "Clicks the right mouse button at the current touch position. This is "
+#~ "generally used to activate a context menu."
+#~ msgstr ""
+#~ "Hace clic con el botón derecho del ratón en la posición de toque actual. "
+#~ "Se usa habitualmente para activar un menú de contexto."
+
+#~ msgid "&Pause NVDA's touch support (duration in seconds)"
+#~ msgstr "&Pausa el soporte táctil de NVDA (duración en segundos)"
+
+#~ msgid "&Manually toggle touch passthrough"
+#~ msgstr "Conmuta &Manualmente dejar pasar toque"
+
 #~ msgid "Completely disable touch interaction support"
 #~ msgstr "Deshabilita completamente el soporte de interacción táctil"
 
@@ -85,9 +95,6 @@ msgstr ""
 
 #~ msgid "Touchscreen interaction settings"
 #~ msgstr "Opciones de interacción de la pantalla táctil"
-
-#~ msgid "Touch Interaction"
-#~ msgstr "Interacción Táctil"
 
 #~ msgid "&Touch typing mode"
 #~ msgstr "Modo de escritura &Táctil"

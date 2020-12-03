@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-03-01 15:49+0200\n"
+"PO-Revision-Date: 2020-11-27 13:18+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
@@ -19,16 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#. Translators: Reported when the object has no location for the mouse to move to it.
-msgid "object has no location"
-msgstr "Objektilla ei ole sijaintia"
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Kosketusnäppäimistöä ei voi aktivoida"
 
-msgid ""
-"Clicks the right mouse button at the current touch position. This is "
-"generally used to activate a context menu."
-msgstr ""
-"Napsauttaa hiiren oikeaa painiketta nykyisessä kosketusnäytön kohdassa. Tätä "
-"käytetään yleensä pikavalikon avaamiseen."
+msgid "Touch interaction not supported"
+msgstr "Kosketuksen vuorovaikutusta ei tueta"
+
+msgid "Touch interaction enabled"
+msgstr "Kosketuksen vuorovaikutus käytössä"
+
+msgid "Touch interaction disabled"
+msgstr "Kosketuksen vuorovaikutus poistettu käytöstä"
 
 #. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
@@ -40,14 +42,6 @@ msgstr "Laajennetut kosketuseleet"
 #. Enhanced Touch Gestures settings panel.
 msgid "Enable touch interaction support"
 msgstr "Ota käyttöön kosketuksen vuorovaikutustuki"
-
-#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
-msgid "&Pause NVDA's touch support (duration in seconds)"
-msgstr "&Keskeytä NVDA:n kosketustuki (kesto sekunteina)"
-
-#. Translators: a checkbox to allow passthrough to be toggled manually.
-msgid "&Manually toggle touch passthrough"
-msgstr "Vaihda kosketuksen läpivientitilaa &manuaalisesti"
 
 msgid ""
 "You are about to turn off touch interaction support completely so the "
@@ -79,6 +73,22 @@ msgstr ""
 "\tVaatii kosketusnäytöllisen tietokoneen, jossa on asennettuna Windows 8.1 "
 "tai uudempi sekä NVDA 2017.4 tai uudempi."
 
+#~ msgid "object has no location"
+#~ msgstr "Objektilla ei ole sijaintia"
+
+#~ msgid ""
+#~ "Clicks the right mouse button at the current touch position. This is "
+#~ "generally used to activate a context menu."
+#~ msgstr ""
+#~ "Napsauttaa hiiren oikeaa painiketta nykyisessä kosketusnäytön kohdassa. "
+#~ "Tätä käytetään yleensä pikavalikon avaamiseen."
+
+#~ msgid "&Pause NVDA's touch support (duration in seconds)"
+#~ msgstr "&Keskeytä NVDA:n kosketustuki (kesto sekunteina)"
+
+#~ msgid "&Manually toggle touch passthrough"
+#~ msgstr "Vaihda kosketuksen läpivientitilaa &manuaalisesti"
+
 #~ msgid "Completely disable touch interaction support"
 #~ msgstr "Poista kosketuksen vuorovaikutustuki kokonaan käytöstä"
 
@@ -87,9 +97,6 @@ msgstr ""
 
 #~ msgid "Touchscreen interaction settings"
 #~ msgstr "Kosketusnäyttövuorovaikutuksen asetukset"
-
-#~ msgid "Touch Interaction"
-#~ msgstr "Kosketuksen vuorovaikutus"
 
 #~ msgid "&Touch typing mode"
 #~ msgstr "&Kosketuskirjoitustila"

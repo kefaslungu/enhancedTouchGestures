@@ -18,7 +18,7 @@ Windows 8.1 o 10.
 * doppio tap con 4 dita: attiva/disattiva modalità aiuto immissione.
 * Flick con 4 dita verso destra: attiva/disattiva la tastiera virtuale a
   tocco (in genere la attiva).
-* Control+Alt+NVDA+T: attiva/disattiva l'interazione tramite tocco.
+* Control+Alt+NVDA+T: attiva/disattiva l'interazione a tocco.
 
 ### Modalità oggetti
 
@@ -32,10 +32,10 @@ Windows 8.1 o 10.
 ## Modalità tocco web
 
 Questa modalità di tocco, disponibile in modalità navigazione, permette di
-esplorare un documento tramite un elemento selezionato. Per andare in
-modalità web, da un documento in modalità esplorazione, effettuare un tocco
-con tre dita. Da questo momento, effettuando un flick verticale con un dito
-si sceglieranno gli elementi in base ai quali spostarsi, mentre con un flick
+esplorare un documento a un elemento selezionato. Per andare in modalità
+web, da un documento in modalità esplorazione, effettuare un tocco con tre
+dita. Da questo momento, effettuando un flick verticale con un dito si
+sceglieranno gli elementi in base ai quali spostarsi, mentre con un flick
 verso destra o sinistra ci si sposterà all'elemento successivo o precedente
 del tipo scelto. Quando si lascia la modalità esplorazione documenti, viene
 utilizzata la modalità oggetti.
@@ -52,32 +52,32 @@ tastiera.
 
 ## Novità nella versione 20.09
 
-* Rimossa la possibilità che NVDA disattivi l'interazione tramite tocco per
-  non più di dieci secondi (comando passa tocco a).
+* Rimossa la possibilità che NVDA disattivi l'interazione a tocco per non
+  più di dieci secondi (comando passa tocco a).
 * Rimossa la funzionalità annuncio coordinate con beep.
 
 ## Novità nella versione 20.07
 
-* Aggiunto un comando da tastiera per attivare/disattivare l'interazione
-  tramite tocco o attivare/disattivare "passa tocco a" (Control+Alt+NVDA+T).
+* Aggiunto un comando da tastiera per attivare/disattivare l'interazione a
+  tocco o attivare/disattivare "passa tocco a" (Control+Alt+NVDA+T).
 * Poiché NVDA 2020.1 e versioni successive include un comando a tocco per
   effettuare un click con il tasto destro del mouse (un tocco trattenuto con
   un dito), il comando è stato rimosso da questo add-on. In virtù di ciò, è
   richiesto NVDA 2020.1 e versioni successive.
-* La possibilità che NVDA disattivi l'interazione tramite tocco per non più
-  di dieci secondi (comando passa tocco a) è obsoleta. In futuro, questa
+* La possibilità che NVDA disattivi l'interazione a tocco per non più di
+  dieci secondi (comando passa tocco a) è obsoleta. In futuro, questa
   funzionalità attiverà e disattiverà l'interazione a tocco.
 * Nelle development snapshots di NVDA, a causa delle modifiche alla
-  funzionalità interazione tramite tocco, il comando "passa tocco a" e la
-  finestra impostazioni di Enhanced Touch Gestures saranno disabilitate. Il
-  comando utilizzato per abilitare "passa tocco a" attiverà e disattiverà
-  l'interazione tramite tocco.
+  funzionalità interazione a tocco, il comando "passa tocco a" e la finestra
+  impostazioni di Enhanced Touch Gestures saranno disabilitate. Il comando
+  utilizzato per abilitare "passa tocco a" attiverà e disattiverà
+  l'interazione a tocco.
 * La funzionalità annuncio coordinate con beep è obsoleta e verrà rimossa in
   una prossima versione dell'add-on.
 * L'annuncio coordinate con beep non si sentirà quando si usa la tastiera a
   tocco.
 * NVDA non sembrerà più bloccato, né riprodurrà suoni di errore quando si
-  utilizzano metodi di input moderni, come il pannello emoji, tramite tocco.
+  utilizzano metodi di input moderni, come il pannello emoji, a tocco.
 * NVDA mostrerà un messaggio di errore se la tastiera a tocco non può essere
   attivata (flick verso destra con quattro dita).
 
@@ -168,7 +168,7 @@ tastiera.
   successivo al touchscreen senza utilizzare un timer.
 * Con il passaggio del gesto successivo al touchscreen manuale disattivato,
   se tale passaggio viene attivato prima della scadenza del tempo ad esso
-  assegnato, l'interazione tramite tocco viene attivata.
+  assegnato, l'interazione a tocco viene attivata.
 
 ## Novità nella versione 17.07
 
