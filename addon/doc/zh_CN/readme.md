@@ -2,19 +2,19 @@
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
-* NVDA兼容版本: 2019.3 以上
+* NVDA compatibility: 2020.1 to 2020.3
 
 此插件为NVDA提供了额外的触摸屏手势。它还提供了一组手势，以便于浏览模式导航。
 
-注意：此插件需要在装有Windows 8.1或10的触摸屏计算机上运行NVDA版本需要 2019.3或以上。
+注意：此插件需要在装有Windows 8.1或10的触摸屏计算机上运行NVDA版本需要 2020.1或以上。
 
 ## 快捷键
 
 ### 随处可用
 
 * 4指双击：切换输入帮助模式。
-* 点按并按住：右键单击手指下方的对象。
 * 四指轻弹：切换触摸键盘（通常启用它）。
+* Control+Alt+NVDA+T: toggles touch interaction.
 
 ### 对象模式
 
@@ -32,14 +32,41 @@
 
 您可以使用此模式快速更改合成器设置，例如选择语音和更改音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间移动，并使用两个手指向上和向下轻拂手势来更改值。这种手势反映了键盘上合成器设置响铃命令的手势。
 
-## 坐标通知蜂鸣声
+## Version 20.09
 
-如果您在鼠标设置中启用了播放鼠标坐标设置，则在调用触摸探测手势时，您将听到蜂鸣声以指示当前屏幕坐标。
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
-## 触摸命令窗口
+## Version 20.07
 
-未分配的命令可用于允许您使用触摸屏手势，就像NVDA未运行一样。要使用此功能，您需要在Enhanced Touch
-Gestures类别下分配命令（通过“输入手势”对话框），以便最多执行此操作10秒或手动切换。然后转到NVDA菜单/首选项/触摸交互，然后将暂停NVDA的触摸命令值配置为3到10秒（默认为5秒）。
+* Added a keyboard command to toggle touch interaction or enable/disable
+  touch passthrough (Control+Alt+NVDA+T).
+* As NVDA 2020.1 and later includes a touch command to perform right mouse
+  click (one finger tap and hold), the command has been removed from this
+  add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds
+  (touch command passthrough) is deprecated. In the future this feature will
+  toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes,
+  touch command passthrough feature and Enhanced Touch Gestures settings
+  panel will be disabled. The command used to enable touch command
+  passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in
+  a future add-on release.
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while
+  exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated
+  (four finger flick right).
+
+## 版本20.06
+
+* 使用 Flake8 解决了许多编码样式问题和潜在错误。
+
+## 版本20.04
+
+* 鼠标右键单击手势（一个手指点击并按住）现在是 NVDA 2020.1 的一部分。
 
 ## 版本20.01
 
@@ -85,7 +112,9 @@ Gestures类别下分配命令（通过“输入手势”对话框），以便最
 * 现在需要NVDA 2017.4。具体来说，此附加组件现在可以处理配置文件切换。
 * 由于NVDA 2017.4包含屏幕方向通知，因此此功能不再是此插件的一部分。
 * 在“触摸交互”对话框中添加了一个隐藏复选框，以完全禁用触摸支持（如果正常配置以外的配置文件处于活动状态。
-* 如果使用NVDA 2018.1或更高版本，触摸交互对话框将在NvDA的首选项菜单下列出两次。第二项是插件附带的对话框。
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * 在插件的“触摸交互”对话框中，如果使用NVDA 2018.1或更高版本，则不再显示触摸键入模式。
 
 ## 版本17.10

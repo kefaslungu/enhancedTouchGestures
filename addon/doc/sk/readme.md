@@ -2,12 +2,12 @@
 
 * Autor: Joseph Lee
 * Stiahnuť [stabilnú verziu][1]
-* Funguje s NVDA od verzie 2019.3
+* Funguje s NVDA od 2020.1 po 2020.3
 
 Poskytuje doplnkové dotykové gestá na ovládanie NVDA a tiež gestá pre prácu
 v režime prehliadania.
 
-Doplnok vyžaduje NVDA od verzie 2019.3, operačný systém Windows od verzie
+Doplnok vyžaduje NVDA od verzie 2020.1, operačný systém Windows od verzie
 8.1 a zariadenie vybavené dotykovou obrazovkou.
 
 ## Príkazy
@@ -15,8 +15,8 @@ Doplnok vyžaduje NVDA od verzie 2019.3, operačný systém Windows od verzie
 ### Všeobecné
 
 * Poklepanie štyrmi prstami: Aktivuje a deaktivuje nápovedu vstupu.
-* Klepnúť a podržať: Klikne pravým tlačidlom myši na zameraný objekt.
 * Švihnutie vpravo štyrmi prstami: Aktivuje dotykovú klávesnicu.
+* Nvda+ctrl+alt+t: Zapína a vypína ovládanie pomocou dotykovej obrazovky.
 
 ### Objektový režim
 
@@ -41,20 +41,38 @@ nastavenia hlasového výstupu. Švihaním dvoma prstami vľavo a vpravo
 vyberiete parameter, ktorý chcete zmeniť. Švihaním dvoma prstami hore a dole
 následne upravujete hodnoty.
 
-## Signalizovanie polohy
+## Verzia 20.09
 
-Ak máte aktivované signalizovanie polohy myši zvukom, budete tiež počuť
-pípanie pri aktivovaní dotykových gest.
+* Odstránená funkcia na dočasné vypnutie dotykových gest.
+* Odstránené signalizovanie polohy.
 
-## Prepustenie dotykového príkazu
+## Verzia 20.07
 
-Je možné nastaviť dotykové gesto, ktoré nachvíľu pozastaví fungovanie
-dotykových príkazov a dotyková obrazovka sa tak bude správať tak, ako keby
-NVDA nebolo spustené. Tento príkaz je potrebné nastaviť ručne v dialógu
-klávesové skratky vo vetve pokročilé dotykové gestá. Následne v strome
-nastavení NVDA nájdite vetvu pokročilé dotykové gestá a nastavte hodnotu
-"pozastaviť podporu pre dotykové gestá" (v sekundách). Predvolene je
-nastavené na 5 sekúnd.
+* Pridaná skratka na zapínanie a vypínanie ovládania pomocou dotykovej
+  obrazovky.
+* NVDA od verzie 2020.1 obsahuje dotykové gesto simulujúce kliknutie pravým
+  tlačidlom myši. Preto bola táto funkcia z doplnku odstránená. Zároveň to
+  znamená, že doplnok správne funguje v NVDA od verzie 2020.1.
+* Funkcia dočasného vypnutia ovládania pomocou dotykov sa viac nevyvíja a
+  máme v pláne ju odstrániť. Skratka bude v budúcnosti len zapínať a vypínať
+  ovládanie pomocou dotykovej obrazovky.
+* Vzhľadom na zmeny v dotykových gestách vo vývojových verziách NVDA je v
+  týchto verziách nedostupný panel nastavení doplnku. Klávesová skratka
+  vypína alebo zapína ovládanie pomocou dotykovej obrazovky.
+* Oznamovanie pozície zvukom sa viac nevyvíja a bude čoskoro odstránené.
+* NVDA pri používaní dotykovej klávesnice neoznamuje pozíciu zvukom.
+* NVDA viac nezamrzne pri prezeraní emoji panela a podobných prvkov pomocou
+  dotykových gest.
+* NVDA zobrazí chybu, ak nie je možné zobraziť dotykovú klávesnicu.
+
+## Verzia 20.06
+
+* Oopravené drobné chyby v kóde.
+
+## Verzia 20.04
+
+* Gesto na simulovanie kliknutia pravým tlačidlom myši je priamo súčasťou
+  NVDA 2020.1.
 
 ## Verzia 20.01
 

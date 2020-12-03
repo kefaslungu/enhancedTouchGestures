@@ -1,172 +1,212 @@
 # Enhanced Touch Gestures #
 
 * Autore: Joseph Lee
-* Download [versione stabile][1]
-* NVDA compatibility: 2019.3 and beyond
+* Scarica [versione stabile][1]
+* Compatibilità NVDA: dalla versione 2020.1alla 2020.3
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
-inoltre gesti che facilitano la modalità esplorazione
+inoltre gesti che facilitano la modalità navigazione.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Nota: questo componente aggiuntivo richiede NVDA 2020.1 o superiore
+installato su un computer dotato di touchscreen, con sistema operativo
+Windows 8.1 o 10.
 
 ## Comandi
 
 ### Disponibili ovunque
 
-* doppio tap con 4 dita: attiva modalità aiuto immissione dati
-* Toccare e tenere premuto: effettua clic destro sull'oggetto sotto il dito.
-* 4 dita verso destra: attiva/disattiva la tastiera virtuale a tocco (in
-  genere la attiva).
+* doppio tap con 4 dita: attiva/disattiva modalità aiuto immissione.
+* Flick con 4 dita verso destra: attiva/disattiva la tastiera virtuale a
+  tocco (in genere la attiva).
+* Control+Alt+NVDA+T: attiva/disattiva l'interazione tramite tocco.
 
 ### Modalità oggetti
 
-* Tre dita verso il basso: legge la finestra corrente.
-* Tre dita verso sinistra: legge l'oggetto che ha il focus.
-* 3 dita verso destra: legge l'oggetto corrente del navigatore.
-* 4 dita verso l'alto: legge il titolo della finestra corrente.
-* 4 dita verso il basso: legge il testo della barra di stato.
+* flick con Tre dita verso il basso: legge la finestra corrente.
+* flick con Tre dita verso sinistra: legge l'oggetto che ha il focus.
+* flick con 3 dita verso destra: legge l'oggetto corrente su cui si trova il
+  navigatore.
+* flick con 4 dita verso l'alto: legge il titolo della finestra corrente.
+* flick con 4 dita verso il basso: legge il testo della barra di stato.
 
 ## Modalità tocco web
 
 Questa modalità di tocco, disponibile in modalità navigazione, permette di
 esplorare un documento tramite un elemento selezionato. Per andare in
 modalità web, da un documento in modalità esplorazione, effettuare un tocco
-con tre dita. Da questo momento, effettuando un movimento verticale con un
-dito si scorreranno gli elementi disponibili, mentre con un movimento verso
-destra o sinistra si scorreranno quelli selezionati.
+con tre dita. Da questo momento, effettuando un flick verticale con un dito
+si sceglieranno gli elementi in base ai quali spostarsi, mentre con un flick
+verso destra o sinistra ci si sposterà all'elemento successivo o precedente
+del tipo scelto. Quando si lascia la modalità esplorazione documenti, viene
+utilizzata la modalità oggetti.
 
 ## Impostazioni sintetizzatore, modalità tocco
 
 È possibile utilizzare questa modalità per modificare rapidamente le
 impostazioni del sintetizzatore, come la scelta di una voce e cambiare il
-volume. In questa modalità, utilizzare due dita verso sinistra o destra per
-spostarsi tra le impostazioni del sintetizzatore e utilizzare due dita
-verticalmente per cambiare i valori.
+volume. In questa modalità, utilizzare il flick con due dita verso sinistra
+o destra per spostarsi tra le impostazioni del sintetizzatore e utilizzare
+il flick con due dita in alto o in basso per cambiare i valori. Questi gesti
+rispecchiano quelli per modificare al volo le impostazioni sintetizzatore da
+tastiera.
 
-## Annuncio coordinate con beep
+## Novità nella versione 20.09
 
-Questa opzione funziona se sono state abilitate le coordinate mouse dalle
-impostazioni di NVDA.
+* Rimossa la possibilità che NVDA disattivi l'interazione tramite tocco per
+  non più di dieci secondi (comando passa tocco a).
+* Rimossa la funzionalità annuncio coordinate con beep.
 
-## Passa il comando successivo al TouchScreen
+## Novità nella versione 20.07
 
-è disponibile un comando non associato ad alcun gesto per consentire di
-utilizzare il touchScreen come se NVDA non fosse in esecuzione. Per servirsi
-di questa caratteristica, è necessario assegnare un comando (attraverso la
-finestra gesti e tasti di immissione) sotto la categoria Enhanced Touch
-Gestures in modo tale da permettere di operare in questa modalità per un
-massimo di dieci secondi oppure abilitare/disabilitare l'impostazione
-manualmente. Poi recarsi nel menu preferenze di NVDA, selezionare
-interazione al tocco, quindi configurare il valore del parametro pausa tocco
-di NVDA tra 3 a 10 secondi (il valore predefinito è 5).
+* Aggiunto un comando da tastiera per attivare/disattivare l'interazione
+  tramite tocco o attivare/disattivare "passa tocco a" (Control+Alt+NVDA+T).
+* Poiché NVDA 2020.1 e versioni successive include un comando a tocco per
+  effettuare un click con il tasto destro del mouse (un tocco trattenuto con
+  un dito), il comando è stato rimosso da questo add-on. In virtù di ciò, è
+  richiesto NVDA 2020.1 e versioni successive.
+* La possibilità che NVDA disattivi l'interazione tramite tocco per non più
+  di dieci secondi (comando passa tocco a) è obsoleta. In futuro, questa
+  funzionalità attiverà e disattiverà l'interazione a tocco.
+* Nelle development snapshots di NVDA, a causa delle modifiche alla
+  funzionalità interazione tramite tocco, il comando "passa tocco a" e la
+  finestra impostazioni di Enhanced Touch Gestures saranno disabilitate. Il
+  comando utilizzato per abilitare "passa tocco a" attiverà e disattiverà
+  l'interazione tramite tocco.
+* La funzionalità annuncio coordinate con beep è obsoleta e verrà rimossa in
+  una prossima versione dell'add-on.
+* L'annuncio coordinate con beep non si sentirà quando si usa la tastiera a
+  tocco.
+* NVDA non sembrerà più bloccato, né riprodurrà suoni di errore quando si
+  utilizzano metodi di input moderni, come il pannello emoji, tramite tocco.
+* NVDA mostrerà un messaggio di errore se la tastiera a tocco non può essere
+  attivata (flick verso destra con quattro dita).
 
-## Version 20.01
+## Novità nella versione 20.06
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* Risolti molti problemi legati allo stile del codice e bug potenziali con
+  Flake8.
 
-## Version 19.11
+## Novità nella versione 20.04
 
-* Added input help messages for additional touch commands.
+* Il gesto "clic con il tasto destro del mouse" (toccare con un dito e
+  tenere premuto)  è ora integrato in NVDA 2020.1.
 
-## Versione 19.09
+## Novità nella versione 20.01
+
+* E' richiesto NVDA 2019.3.
+* Il comando che attiva e disattiva il supporto touch (compreso il comando
+  per passare il gesto successivo al touchscreen) non funzionerà più se il
+  supporto touch è disattivato completamente.
+
+## Novità nella versione 19.11
+
+* Aggiunti i messaggi di aiuto immissione per altri comandi touch.
+
+## Novità nella versione 19.09
 
 * Il supporto touch ora può essere disattivato ovunque, non solo da profili
   diversi dal profilo normale.
 
-## Versione 19.07
+## Novità nella versione 19.07
 
 * Modifiche interne per supportare le versioni future di NVDA.
 
-## Versione 18.12
+## Novità nella versione 18.12
 
 * Modifiche interne per supportare le versioni future di NVDA.
 
-## Versione 18.08
+## Novità nella versione 18.08
 
 * Compatibile con NVDA 2018.3 e versioni future.
 
-## Versione 18.06
+## Novità nella versione 18.06
 
 * Le impostazioni del componente aggiuntivo si trovano ora nella finestra
   multicategoria impostazioni di NVDA, alla categoria "enhanced Touch
   Gestures". Ne deriva che è necessario usare NVDA 2018.2.
 * Risolti problemi di compatibilità con wxPython 4.
 
-## Versione 18.04
+## Novità nella versione 18.04
 
-* Resolves an issue where touch interaction category in NVDA Settings panel
-  may cause error sounds to be heard due to changes made from this add-on.
+* Risolve un problema in virtù del qwuale, nella categoria interazione a
+  tocco nella finestra impostazioni di NVDA, si potevano sentire suoni di
+  errore dovuti a modifiche apportate da questo add-on.
 
-## Versione 18.03
+## Novità nella versione 18.03
 
-* è richiesto NVDA 2018.1.
+* E' richiesto NVDA 2018.1.
 * Poiché NVDA 2018.1 viene fornito con la casella di controllo digitazione a
-  tocco, non è più inclusa in questo componente aggiuntivo.
+  tocco, questa non è più inclusa in questo componente aggiuntivo.
 
-## Versione 17.12
+## Novità nella versione 17.12
 
-* Requires NVDA 2017.4. Specifically, this add-on can now handle
-  configuration profile switches.
-* As NVDA 2017.4 includes screen orientation announcement, this feature is
-  no longer part of this add-on.
-* Added a hidden checkbox in Touch Interaction dialog to completely disable
-  touch support (available if profiles other than normal configuration is
-  active).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
-* In Touch Interaction dialog for the add-on, touch typing mode is no longer
-  shown if using NVDA 2018.1 or later.
+* Richiede NVDA 2017.4. Nello specifico, ora questo add-on può gestire i
+  cambi di profilo di configurazione.
+* Poiché NVDA 2017.4 include la vocalizzazione dell'orientamento dello
+  schermo, questa caratteristica non fa più parte di questo add-on.
+* Aggiunta una casella di controllo nascosta nella finestra Interazione a
+  Tocco per disattivare completamente il supporto touch (disponibile se è
+  attivo un profilo diverso dalla configurazione normale).
+* Se si utilizza NVDA 2018.1 o superiore, la finestra Interazione a Tocco
+  sarà elencata due volte nel menu preferenze di NVDA. Il secondo elemento è
+  la finestra che viene fornita con il componente aggiuntivo.
+* Nella finestra di dialogo Interazione a Tocco del componente aggiuntivo,
+  la modalità tastiera touch non viene più mostrata se si utilizza NVDA
+  2018.1 o superiore.
 
-## Versione 17.10
+## Novità nella versione 17.10
 
-* Due to support policy from Microsoft, Windows 8 (original release) is no
-  longer supported.
-* NVDA will no longer announce screen orientation twice when running NVDA
-  2017.4 development snapshots.
+* A causa delle politiche di supporto di Microsoft, Windows 8 (versione
+  originale) non è più supportato.
+* NVDA non vocalizzerà più due volte l'orientamento dello schermo quando si
+  eseguono le snapshot di sviluppo di NVDA 2017.
 
-## Versione 17.07.1
+## Novità nella versione 17.07.1
 
-* Added an option in touch interaction dialog to manually toggle touch
-  passthrough without use of a timer.
-* With manual passthrough mode off, if touch passthrough is turned on before
-  the passthrough duration expires, touch interaction would be enabled.
+* Nella finestra di dialogo INterazione a Tocco, aggiunta un'opzione per
+  attivare e disattivare manualmente il comando per passare il gesto
+  successivo al touchscreen senza utilizzare un timer.
+* Con il passaggio del gesto successivo al touchscreen manuale disattivato,
+  se tale passaggio viene attivato prima della scadenza del tempo ad esso
+  assegnato, l'interazione tramite tocco viene attivata.
 
-## Versione 17.07
+## Novità nella versione 17.07
 
-* Added a new dialog named Touch Interaction under NVDA's preferences menu
-  to configure how NVDA works with touchscreens.
-* After installing this version, when pressing keys on the touch keyboard,
-  one must double tap the desired key. You can switch back to the old way by
-  enabling touch typing from Touch Interaction dialog.
-* Added a command (unassigned) to allow NVDA to ignore touch gestures for up
-  to 10 seconds.
-* Added an option in Touch Interaction dialog to allow NVDA to pause touch
-  interaction between 3 to 10 seconds in order to perform touchscreen
-  gestures directly (as though NVDA is not running; default is 5 seconds).
-* Added debug logging messages when performing right clicks (tap and hold)
-  to be recorded in the NVDA log (requires NVDA 2017.1 or later).
-* A causa delle modifiche apportate durante la riproduzione delle coordinate
-  dello schermo, è necessario NVDA 2017.1 o successivo.
+* Aggiunta una nuova finestra di dialogo chiamata Interazione a Tocco nel
+  menu impostazioni di NVDA, per configurare come NVDA lavora con i
+  touchscreen.
+* Dopo aver installato questa versione, per premere tasti sulla tastiera
+  touch, si deve toccare due volte il tasto desiderato. Si può tornare alla
+  vecchia modalità attivando "digitazione a tocco" dalla finestra
+  INterazione a Tocco.
+* Aggiunto un comando non assegnato ad alcun gesto, che permette ad NVDA di
+  ignorare i gesti touch per massimo 10 secondi.
+* Aggiunta un'opzione nella finestra di dialogo Interazione a Tocco, per
+  permettere ad NVDA di disattivare l'interazione a tocco per un tempo
+  compreso tra 3 e 10 secondi, al fine di eseguire direttamente gesti
+  touchscreen (come se NVDA non fosse in esecuzione; il default è 5
+  secondi).
+* Aggiunti i log dei messaggi di debug quando si eseguono clic destri (premi
+  e tieni premuto), perché siano registrati nei log di NVDA (richiede NVDA
+  2017.1 o successive).
+* A causa di modifiche apportate alla funzione Coordinate Aurio, è
+  necessario NVDA 2017.1 o successivo.
 
 ##Versione 17.03
 
 * Risolto un problema che impediva la riproduzione delle coordinate audio
   con NVDA 2017.1 o successive.
 
-##Version 16.12
+##Versione 16.12
 
 * La modalità web a tocco funziona in Microsoft Edge, Microsoft Word e altri
   programmi dove viene usata la modalità navigazione.
 * Aggiunti elenchi e punti di riferimento agli elementi web in modalità
-  tocco
+  tocco.
 
-## Versione 16.06
+## Novità nella versione 16.06
 
-* Versione iniziale stabile
+* Versione iniziale stabile.
 
 [[!tag dev stable]]
 

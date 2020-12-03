@@ -1,14 +1,14 @@
-# Gestos táteis aprimorados #
+# Gestos Táteis Aprimorados (Enhanced Touch Gestures) #
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* Compatibilidade com NVDA: 2019.3 e além
+* NVDA compatibility: 2020.1 to 2020.3
 
-Este complemento provê gestos adicionais para telas táteis no NVDA. Também
+Este complemento provê gestos adicionais para telas de toque no NVDA. Também
 provê um conjunto de gestos para uma navegabilidade mais fácil no modo de
 navegação.
 
-Nota: este complemento requer o NVDA 2019.3 ou posterior executando num
+Nota: este complemento requer o NVDA 2020.1 ou posterior executando num
 computador com tela de toque com Windows 8.1 ou 10.
 
 ## Comandos
@@ -16,8 +16,8 @@ computador com tela de toque com Windows 8.1 ou 10.
 ### Disponíveis em qualquer situação
 
 * Toque duplo com 4 dedos: Alterna o modo de ajuda de entrada.
-* Tocar e segurar: Executa clique direito no objeto sob o dedo.
 * Deslizar 4 dedos à direita: alterna o teclado tátil (geralmente o ativa).
+* Control+Alt+NVDA+T: alterna a interação por toque.
 
 ### Modo objeto
 
@@ -45,21 +45,46 @@ dedos à esquerda ou à direita para mover entre as opções do sintetizador e
 deslize com dois dedos acima e abaixo para mudar valores. Esses gestos
 espelham os comandos do anel de opções do sintetizador pelo teclado.
 
-## Bipe de anúncio de coordenadas
+## Version 20.09
 
-Caso você tenha habilitado a opção de indicar as coordenadas do mouse nas
-opções de mouse, você ouvirá bipes que indicam as coordenadas de tela atuais
-quando fizer uso de gestos de exploração da tela.
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Removed coordinate announcement beep feature.
 
-## Passagem de comandos táteis
+## Versão 20.07
 
-Está disponível um comando não atribuído para possibilitar usar gestos
-táteis como se o NVDA não estivesse rodando. Para usá-lo, você tem que
-atribuir um comando (via diálogo de Gestos para Entrada), na categoria
-gestos táteis aprimorados, para poder fazer isso por até dez segundos ou
-alternar manualmente. Depois vá ao menu do NVDA/Preferências/Interação Tátil
-e configure o valor do comando tátil Pausar NVDA entre 3 e 10 segundos (o
-padrão é 5 segundos).
+* Adicionado um comando de teclado para alternar a interação por toque ou
+  habilitar/desabilitar a passagem tátil (Control+Alt+NVDA+T).
+* Como o NVDA 2020.1 e posteriores inclui um comando tátil para executar o
+  clique com o botão direito do mouse (tocar com um dedo e segurar), o
+  comando foi removido deste complemento. Como resultado, é necessário o
+  NVDA 2020.1 ou posterior.
+* A capacidade de permitir que o NVDA desligue a interação por toque por até
+  dez segundos (passagem de comando tátil) foi descontinuada. Ao invés no
+  futuro, esse recurso alternará a interação por toque.
+* Nos instantâneos (snapshots) de desenvolvimento do NVDA, devido a
+  alterações no recurso de interação por toque, o recurso de passagem de
+  comando tátil e o painel de configurações dos Gestos táteis aprimorados
+  serão desativados. O comando usado para ativar a passagem de comando tátil
+  alternará a interação por toque.
+* O recurso de bipe de anúncio de coordenadas foi descontinuado e será
+  removido em uma versão futura do complemento.
+* O bipe de anúncio de coordenadas não será ouvido ao usar o teclado
+  virtual.
+* O NVDA não parece mais fazer nada ou reproduzir tons de erro enquanto
+  explora os recursos de entrada modernos, como o painel emoji via toque.
+* O NVDA apresentará uma mensagem de erro se o teclado virtual não puder ser
+  ativado (varrer com quatro dedos à direita).
+
+## Versão 20.06
+
+* Foram resolvidos muitos problemas de estilo de codificação e possíveis
+  erros com o Flake8.
+
+## Versão 20.04
+
+* O gesto de clicar com o botão direito do mouse (tocar com um dedo e
+  segurar) agora faz parte do NVDA 2020.1.
 
 ## Versão 20.01
 
@@ -117,9 +142,9 @@ padrão é 5 segundos).
 * Adicionada uma caixa de seleção oculta na caixa de diálogo Interação por
   toque para desativar completamente o suporte ao toque (disponível se
   outros perfis além da configuração normal estiverem ativos).
-* Se estiver usando o NVDA 2018.1 ou posterior, o diálogo Interação por
-  Toque será listado duas vezes no menu de preferências do NVDA. O segundo
-  item é a caixa de diálogo que acompanha o complemento.
+* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * Na caixa de diálogo Interação por toque do complemento, o modo de
   digitação não é mais exibido se você usar o NVDA 2018.1 ou posterior.
 

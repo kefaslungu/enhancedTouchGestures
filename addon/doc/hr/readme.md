@@ -2,24 +2,24 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA kompatibilnost: 2019.3 i novija
+* NVDA compatibility: 2020.1 to 2020.3
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
 modusu čitanja.
 
-Napomena: Dodatak zahtijeva NVDA 2019.3 ili noviji, instaliran na računalu
-koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom Windows 8.1
-ili 10.
+Napomena: Dodatak zahtijeva NVDA 2020.1 ili noviju verziju, instaliranu na
+računalu koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom
+Windows 8.1 ili 10.
 
 ## Naredbe
 
 ### Svuda dostupne
 
 * Dodir s četiri prsta: uključi ili isključi modus pomoći tijekom unosa.
-* Dodirni i drži: izvodi desni klik na objektu pod prstom.
 * Klizanje s četiri prsta u desno: uključi ili isključi dodirnu tastaturu
   (obično je uključuje).
+* Kontrol+Alt+NVDA+T: uključuje/isključuje interakciju dodirom.
 
 ### Objektni modus
 
@@ -48,22 +48,43 @@ desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
 
-## Izvještavanje koordinata zvukom
+## Verzija 20.09
 
-Ako je u postavkama miša aktivirana postavka „Reproduciraj koordinate miša”,
-čut će se zvučni signali kao indikacija trenutačne koordinate ekrana kad se
-koriste geste za istraživanje dodirom.
+* Uklonjena je mogućnost, da NVDA isključi dodirnu interakciju do deset
+  sekundi (prolaz naredbe dodirom).
+* Ukljonjena je funkcija izvještavanja koordinata zvukom.
 
-## Proslijeđivanje dodirne naredbe
+## Verzija 20.07
 
-Postoji nedodijeljena naredba za korištenje dodirnih gesti, kao da NVDA nije
-pokrenut. Da bi se koristila, naredba se mora definirati (putem dijaloškog
-okvira „Ulazne geste”) u kategoriji „Dodatne dodirne geste”, čime se
-omogućuje korištenje ove naredbe u trajanju od do 10 sekundi. Naredbu je
-moguće uključiti/isključiti i ručno. Zatim se putem NVDA
-izbornik>Postavke>Interakcija dodirom, treba definirati pauza za dodirne
-NVDA naredbe, u trajanju od 3 do 10 sekundi (standardno je postavljeno 5
-sekundi).
+* Added a keyboard command to toggle touch interaction or enable/disable
+  touch passthrough (Control+Alt+NVDA+T).
+* As NVDA 2020.1 and later includes a touch command to perform right mouse
+  click (one finger tap and hold), the command has been removed from this
+  add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds
+  (touch command passthrough) is deprecated. In the future this feature will
+  toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes,
+  touch command passthrough feature and Enhanced Touch Gestures settings
+  panel will be disabled. The command used to enable touch command
+  passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in
+  a future add-on release.
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while
+  exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated
+  (four finger flick right).
+
+## Verzija 20.06
+
+* Riješen je mnogo problema sa stilom kodiranja i potencijalnih grešaka s
+  Flake8.
+
+## Verzija 20.04
+
+* Gesta za pritiskanje desnog gumba miša (dodir i držanje s jednim prstom)
+  sada je dio NVDA čitača 2020.1.
 
 ## Verzija 20.01
 
