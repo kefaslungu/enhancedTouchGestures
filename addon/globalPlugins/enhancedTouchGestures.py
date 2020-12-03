@@ -19,7 +19,6 @@ import tones
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 from NVDAObjects.UIA import UIA
 import controlTypes
-import gui
 import wx
 
 
