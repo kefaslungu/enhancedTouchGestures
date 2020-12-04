@@ -14,6 +14,7 @@ Note: this add-on requires NVDA 2020.3 or later running on a touchscreen compute
 
 * 4 finger double tap: toggle input help mode.
 * Four finger flick right: toggle touch keyboard (usually enables it).
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version 1709 or later).
 
 ### Object mode
 
@@ -34,6 +35,7 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 ## Version 21.01
 
 * NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will toggle dictation (Windows+H).
 * Remove dedicated touch interaction support toggle command from the add-on.
 * As touch interaction support can be toggled from NVDA's touch interaction settings panel, a dedicated Enhanced Touch Gestures settings panel has been removed.
 
