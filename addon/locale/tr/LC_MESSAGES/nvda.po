@@ -21,42 +21,15 @@ msgstr ""
 msgid "Cannot activate touch keyboard"
 msgstr "Dokunmatik klavye etkinleştirilemiyor"
 
-msgid "Touch interaction not supported"
-msgstr "Dokunmatik etkileşim desteklenmiyor"
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr ""
 
-msgid "Touch interaction enabled"
-msgstr "Dokunmatik Etkileşim etkin"
-
-msgid "Touch interaction disabled"
-msgstr "Dokunmatik Etkileşim devre dışı"
-
-#. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Gelişmiş Dokunma Hareketleri"
-
-#. Translators: This is the label for a checkbox in the
-#. Enhanced Touch Gestures settings panel.
-msgid "Enable touch interaction support"
-msgstr "Dokunmatik etkileşim desteğini etkinleştir"
-
-msgid ""
-"You are about to turn off touch interaction support completely so the "
-"touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and check 'enable touch interaction support' checkbox. Are you sure "
-"you wish to completely disable touch interaction support?"
-msgstr ""
-"Dokunmatik etkileşim desteğini tamamen kapatmak üzeresiniz ve kapatırsanız "
-"dokunmatik ekran NVDA'nın kullanılmadığı varsayılarak çalışacak. Dokunmatik "
-"desteğini etkinleştirmek için, NVDA ayarlar iletişim kutusunu tekrar açıp "
-"'Dokunmatik etkileşim desteğini etkinleştir' onay kutusunu  işaretlemeniz "
-"gerekir. Dokunmatik etkileşim desteğini tamamen kapatmak istediğinizden emin "
-"misiniz?"
-
-msgid "Disable touch interaction support"
-msgstr "Dokunmatik etkileşim desteğini devre dışı bırak"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -70,6 +43,35 @@ msgstr ""
 "komutlarından oluşan bir paket.\n"
 "\tNVDA 2017.4 ya da sonraki sürümlerinden birinin kurulu olduğu, dokunmatik "
 "ekranlı ve en az Windows 8.1 yüklü bir bilgisayar gerektirir."
+
+#~ msgid "Touch interaction not supported"
+#~ msgstr "Dokunmatik etkileşim desteklenmiyor"
+
+#~ msgid "Touch interaction enabled"
+#~ msgstr "Dokunmatik Etkileşim etkin"
+
+#~ msgid "Touch interaction disabled"
+#~ msgstr "Dokunmatik Etkileşim devre dışı"
+
+#~ msgid "Enable touch interaction support"
+#~ msgstr "Dokunmatik etkileşim desteğini etkinleştir"
+
+#~ msgid ""
+#~ "You are about to turn off touch interaction support completely so the "
+#~ "touchscreen can be used as though NVDA is not running. To enable touch "
+#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
+#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
+#~ "sure you wish to completely disable touch interaction support?"
+#~ msgstr ""
+#~ "Dokunmatik etkileşim desteğini tamamen kapatmak üzeresiniz ve "
+#~ "kapatırsanız dokunmatik ekran NVDA'nın kullanılmadığı varsayılarak "
+#~ "çalışacak. Dokunmatik desteğini etkinleştirmek için, NVDA ayarlar "
+#~ "iletişim kutusunu tekrar açıp 'Dokunmatik etkileşim desteğini "
+#~ "etkinleştir' onay kutusunu  işaretlemeniz gerekir. Dokunmatik etkileşim "
+#~ "desteğini tamamen kapatmak istediğinizden emin misiniz?"
+
+#~ msgid "Disable touch interaction support"
+#~ msgstr "Dokunmatik etkileşim desteğini devre dışı bırak"
 
 #~ msgid "object has no location"
 #~ msgstr "nesnenin konumu yok"

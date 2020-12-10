@@ -23,41 +23,15 @@ msgstr ""
 msgid "Cannot activate touch keyboard"
 msgstr "Nije moguće aktivirati dodirnu tipkovnicu"
 
-msgid "Touch interaction not supported"
-msgstr "Dodirna interakcija nije podržana"
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr ""
 
-msgid "Touch interaction enabled"
-msgstr "Dodirna interakcija aktivirana"
-
-msgid "Touch interaction disabled"
-msgstr "Dodirna interakcija deaktivirana"
-
-#. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Dodatne dodirne geste"
-
-#. Translators: This is the label for a checkbox in the
-#. Enhanced Touch Gestures settings panel.
-msgid "Enable touch interaction support"
-msgstr "Aktiviraj podršku za dodirnu interakciju"
-
-msgid ""
-"You are about to turn off touch interaction support completely so the "
-"touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and check 'enable touch interaction support' checkbox. Are you sure "
-"you wish to completely disable touch interaction support?"
-msgstr ""
-"Potpuno ćeš isključiti podršku za dodirnu interakciju, tako da se ekran "
-"osjetljiv na dodir može koristiti kao da NVDA nije pokrenut. Za aktiviranje "
-"podrške za dodir, vrati se na ploču „Dodatne dodirne geste” u NVDA "
-"postavkama i označi potvrdni okvir „Aktiviraj podršku za dodirnu "
-"interakciju”. Zaista želiš potpuno isključiti podršku za dodirnu interakciju?"
-
-msgid "Disable touch interaction support"
-msgstr "Deaktiviraj podršku za dodirnu interakciju"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -71,6 +45,35 @@ msgstr ""
 "pomoć.\n"
 "\tPotrebno je računalo koje omogućuje rad dodirom i na kojem je instaliran "
 "sustav Windows 8.1 ili noviji i NVDA 2017.4 ili noviji."
+
+#~ msgid "Touch interaction not supported"
+#~ msgstr "Dodirna interakcija nije podržana"
+
+#~ msgid "Touch interaction enabled"
+#~ msgstr "Dodirna interakcija aktivirana"
+
+#~ msgid "Touch interaction disabled"
+#~ msgstr "Dodirna interakcija deaktivirana"
+
+#~ msgid "Enable touch interaction support"
+#~ msgstr "Aktiviraj podršku za dodirnu interakciju"
+
+#~ msgid ""
+#~ "You are about to turn off touch interaction support completely so the "
+#~ "touchscreen can be used as though NVDA is not running. To enable touch "
+#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
+#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
+#~ "sure you wish to completely disable touch interaction support?"
+#~ msgstr ""
+#~ "Potpuno ćeš isključiti podršku za dodirnu interakciju, tako da se ekran "
+#~ "osjetljiv na dodir može koristiti kao da NVDA nije pokrenut. Za "
+#~ "aktiviranje podrške za dodir, vrati se na ploču „Dodatne dodirne geste” u "
+#~ "NVDA postavkama i označi potvrdni okvir „Aktiviraj podršku za dodirnu "
+#~ "interakciju”. Zaista želiš potpuno isključiti podršku za dodirnu "
+#~ "interakciju?"
+
+#~ msgid "Disable touch interaction support"
+#~ msgstr "Deaktiviraj podršku za dodirnu interakciju"
 
 #~ msgid "object has no location"
 #~ msgstr "objekt nema lokaciju"

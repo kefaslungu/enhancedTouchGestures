@@ -21,42 +21,15 @@ msgstr ""
 msgid "Cannot activate touch keyboard"
 msgstr "Non se puido activar o teclado táctil"
 
-msgid "Touch interaction not supported"
-msgstr "Interacción táctil non soportada"
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr ""
 
-msgid "Touch interaction enabled"
-msgstr "Interación táctil habilitada"
-
-msgid "Touch interaction disabled"
-msgstr "Interación táctil deshabilitada"
-
-#. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Enhanced Touch Gestures"
-
-#. Translators: This is the label for a checkbox in the
-#. Enhanced Touch Gestures settings panel.
-msgid "Enable touch interaction support"
-msgstr "Habilitar soporte de interacción táctil"
-
-msgid ""
-"You are about to turn off touch interaction support completely so the "
-"touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and check 'enable touch interaction support' checkbox. Are you sure "
-"you wish to completely disable touch interaction support?"
-msgstr ""
-"Vas desactivar o soporte de interacción táctil completamente tal que a "
-"pantalla táctil poida usarse coma se o NVDA non estivese en execución. Para "
-"habilitar o soporte táctil, tes que voltar ao panel Enhanced Touch Gestures  "
-"e desmarcar a caixa de verificación 'deshabilitar soporte de interacción "
-"táctil'. ¿Estás seguro de que desexas deshabilitar completamente o soporte "
-"de interacción táctil?"
-
-msgid "Disable touch interaction support"
-msgstr "Deshabilitar soporte de interación tactil"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -70,6 +43,35 @@ msgstr ""
 "axuda.\n"
 "\tRequiren dun computador tactil habilitado co Windows 8.1 ou posterior co "
 "NVDA 2017.4 ou posterior instalado."
+
+#~ msgid "Touch interaction not supported"
+#~ msgstr "Interacción táctil non soportada"
+
+#~ msgid "Touch interaction enabled"
+#~ msgstr "Interación táctil habilitada"
+
+#~ msgid "Touch interaction disabled"
+#~ msgstr "Interación táctil deshabilitada"
+
+#~ msgid "Enable touch interaction support"
+#~ msgstr "Habilitar soporte de interacción táctil"
+
+#~ msgid ""
+#~ "You are about to turn off touch interaction support completely so the "
+#~ "touchscreen can be used as though NVDA is not running. To enable touch "
+#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
+#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
+#~ "sure you wish to completely disable touch interaction support?"
+#~ msgstr ""
+#~ "Vas desactivar o soporte de interacción táctil completamente tal que a "
+#~ "pantalla táctil poida usarse coma se o NVDA non estivese en execución. "
+#~ "Para habilitar o soporte táctil, tes que voltar ao panel Enhanced Touch "
+#~ "Gestures  e desmarcar a caixa de verificación 'deshabilitar soporte de "
+#~ "interacción táctil'. ¿Estás seguro de que desexas deshabilitar "
+#~ "completamente o soporte de interacción táctil?"
+
+#~ msgid "Disable touch interaction support"
+#~ msgstr "Deshabilitar soporte de interación tactil"
 
 #~ msgid "object has no location"
 #~ msgstr "o obxecto non ten localización"

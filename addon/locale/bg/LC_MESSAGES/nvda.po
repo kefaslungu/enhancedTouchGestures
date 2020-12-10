@@ -21,43 +21,15 @@ msgstr ""
 msgid "Cannot activate touch keyboard"
 msgstr "Не може да се задейства сензорната клавиатура"
 
-msgid "Touch interaction not supported"
-msgstr "Сензорното взаимодействие не се поддържа"
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr ""
 
-msgid "Touch interaction enabled"
-msgstr "Сензорното взаимодействие е включено"
-
-msgid "Touch interaction disabled"
-msgstr "Сензорното взаимодействие е изключено"
-
-#. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Подобрени сензорни жестове"
-
-#. Translators: This is the label for a checkbox in the
-#. Enhanced Touch Gestures settings panel.
-msgid "Enable touch interaction support"
-msgstr "Разреши поддръжката за сензорно взаимодействие"
-
-msgid ""
-"You are about to turn off touch interaction support completely so the "
-"touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and check 'enable touch interaction support' checkbox. Are you sure "
-"you wish to completely disable touch interaction support?"
-msgstr ""
-"На път сте да забраните изцяло поддръжката за сензорно взаимодействие, така "
-"че сензорният екран да може да се използва така, сякаш NVDA не работи. За да "
-"задействате сензорната поддръжка, трябва да се върнете към категорията с "
-"настройките за добавката \"Разширени Сензорни Жестове\" в прозореца с "
-"настройките на NVDA и да сложите отметката в полето \"Разреши поддръжката за "
-"сензорно взаимодействие\". Наистина ли желаете изцяло да забраните "
-"поддръжката за сензорно взаимодействие?"
-
-msgid "Disable touch interaction support"
-msgstr "Забраняване на поддръжката за сензорно взаимодействие"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -71,6 +43,36 @@ msgstr ""
 "помощ.\n"
 "\tИзисква компютър със сензорна поддръжка с Windows 8.1 или по-нова версия и "
 "NVDA 2017.4 или по-нова версия."
+
+#~ msgid "Touch interaction not supported"
+#~ msgstr "Сензорното взаимодействие не се поддържа"
+
+#~ msgid "Touch interaction enabled"
+#~ msgstr "Сензорното взаимодействие е включено"
+
+#~ msgid "Touch interaction disabled"
+#~ msgstr "Сензорното взаимодействие е изключено"
+
+#~ msgid "Enable touch interaction support"
+#~ msgstr "Разреши поддръжката за сензорно взаимодействие"
+
+#~ msgid ""
+#~ "You are about to turn off touch interaction support completely so the "
+#~ "touchscreen can be used as though NVDA is not running. To enable touch "
+#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
+#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
+#~ "sure you wish to completely disable touch interaction support?"
+#~ msgstr ""
+#~ "На път сте да забраните изцяло поддръжката за сензорно взаимодействие, "
+#~ "така че сензорният екран да може да се използва така, сякаш NVDA не "
+#~ "работи. За да задействате сензорната поддръжка, трябва да се върнете към "
+#~ "категорията с настройките за добавката \"Разширени Сензорни Жестове\" в "
+#~ "прозореца с настройките на NVDA и да сложите отметката в полето \"Разреши "
+#~ "поддръжката за сензорно взаимодействие\". Наистина ли желаете изцяло да "
+#~ "забраните поддръжката за сензорно взаимодействие?"
+
+#~ msgid "Disable touch interaction support"
+#~ msgstr "Забраняване на поддръжката за сензорно взаимодействие"
 
 #~ msgid "object has no location"
 #~ msgstr "Обектът няма местоположение"
