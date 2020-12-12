@@ -11,10 +11,10 @@ addonHandler.initTranslation()
 
 
 def onInstall():
-	import winVersion
+	import sys
 	import gui
 	import wx
-	if winVersion.winVersion.build < 9600 and gui.messageBox(
+	if sys.getwindowsversion().build < 9600 and gui.messageBox(
 		_(
 			# Translators: Dialog text shown when attempting to install the add-on on an unsupported version of Windows
 			# (minSupportedVersion is the minimum version required for this add-on).
