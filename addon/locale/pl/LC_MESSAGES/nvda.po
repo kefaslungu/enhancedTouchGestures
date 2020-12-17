@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-11-26 21:35+0100\n"
+"PO-Revision-Date: 2020-12-13 09:59-0800\n"
 "Last-Translator: Zvonimir stanecic <zvonimirek222@yandex.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.8.9\n"
+"Language-Team: \n"
 
 #. Translators: message shown when touch keyboard button is not found.
 msgid "Cannot activate touch keyboard"
@@ -43,59 +43,3 @@ msgstr ""
 "pomocy.\n"
 "\tWymaga włączonego interfejsu dotykowego, systemu Windows 8.0 lub nowszego "
 "oraz NVDA 2012.3 lub nowszego."
-
-#~ msgid "Touch interaction not supported"
-#~ msgstr "Interakcja dotykowa nie jest wspierana"
-
-#~ msgid "Touch interaction enabled"
-#~ msgstr "Interakcja dotykowa włączona"
-
-#~ msgid "Touch interaction disabled"
-#~ msgstr "Interakcja dotykowa wyłączona"
-
-#~ msgid "Enable touch interaction support"
-#~ msgstr "Włącz wsparcie interakcji dotykowej"
-
-#~ msgid ""
-#~ "You are about to turn off touch interaction support completely so the "
-#~ "touchscreen can be used as though NVDA is not running. To enable touch "
-#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
-#~ "sure you wish to completely disable touch interaction support?"
-#~ msgstr ""
-#~ "Zamykasz wsparcie interakcji dotykowej. Po jego wyłączeniu, ekran "
-#~ "dotykowy można będzie obsługiwać tylko za pomocą standardowych gestów, "
-#~ "niezależnych od NVDA. Aby włączyć wsparcie dotyku, należy powrócić do "
-#~ "tego okna dialogowego i odznaczyć pole wyboru 'włącz wsparcie interakcji "
-#~ "dotykowej'. Czy na pewno chcesz wyłączyć wsparcie interakcji dotykowej?"
-
-#~ msgid "Disable touch interaction support"
-#~ msgstr "Wyłącz wsparcie interakcji dotykowej"
-
-#~ msgid "object has no location"
-#~ msgstr "Obiekt nie ma lokalizacji"
-
-#~ msgid ""
-#~ "Clicks the right mouse button at the current touch position. This is "
-#~ "generally used to activate a context menu."
-#~ msgstr ""
-#~ "Klika prawym przycyskiem myszy na aktualnej pozycji. Jest to ogólnie "
-#~ "używane gdy aktywujemy klawisz kontekstowy."
-
-#~ msgid "&Pause NVDA's touch support (duration in seconds)"
-#~ msgstr "&Zatrzymaj wsparcie interakcji dotykowej (w sekundach)"
-
-#~ msgid "&Manually toggle touch passthrough"
-#~ msgstr "&Ręczne przełączanie dotyku"
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "Całkowicie wyłącz wsparcie interakcji dotykowej"
-
-#~ msgid "&Touch Interaction..."
-#~ msgstr "&Ustawienia interakcji Dotykowej..."
-
-#~ msgid "Touchscreen interaction settings"
-#~ msgstr "Ustawienia interakcji z ekranem dotykowym"
-
-#~ msgid "&Touch typing mode"
-#~ msgstr "&Tryb pisania dotykowego"

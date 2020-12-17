@@ -32,12 +32,12 @@ Windows 8.1 o 10.
 ## Modalità tocco web
 
 Questa modalità di tocco, disponibile in modalità navigazione, permette di
-esplorare un documento a un elemento selezionato. Per andare in modalità
-web, da un documento in modalità esplorazione, effettuare un tocco con tre
-dita. Da questo momento, effettuando un flick verticale con un dito si
-sceglieranno gli elementi in base ai quali spostarsi, mentre con un flick
-verso destra o sinistra ci si sposterà all'elemento successivo o precedente
-del tipo scelto. Quando si lascia la modalità esplorazione documenti, viene
+navigare un documento rispetto a un elemento selezionato. Per passare alla
+modalità tocco web, da un documento in modalità navigazione, effettuare un
+tocco con tre dita. Da questo momento, effettuando un flick verticale con un
+dito si sceglieranno gli elementi in base ai quali spostarsi, mentre con un
+flick verso destra o sinistra ci si sposterà all'elemento successivo o
+precedente del tipo scelto. Quando si lascia la modalità navigazione, viene
 utilizzata la modalità oggetti.
 
 ## Impostazioni sintetizzatore, modalità tocco
@@ -199,10 +199,10 @@ tastiera.
 
 ##Versione 16.12
 
-* La modalità web a tocco funziona in Microsoft Edge, Microsoft Word e altri
+* La modalità tocco web funziona in Microsoft Edge, Microsoft Word e altri
   programmi dove viene usata la modalità navigazione.
-* Aggiunti elenchi e punti di riferimento agli elementi web in modalità
-  tocco.
+* Aggiunti elenchi e punti di riferimento agli elementi disponibili in
+  modalità tocco web.
 
 ## Novità nella versione 16.06
 

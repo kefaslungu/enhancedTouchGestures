@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-11-27 17:22+0100\n"
+"PO-Revision-Date: 2020-12-13 09:56-0800\n"
 "Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
 "Language-Team: Galician language team <oprisniki@gmail.com>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Translators: message shown when touch keyboard button is not found.
 msgid "Cannot activate touch keyboard"
@@ -43,70 +43,3 @@ msgstr ""
 "axuda.\n"
 "\tRequiren dun computador tactil habilitado co Windows 8.1 ou posterior co "
 "NVDA 2017.4 ou posterior instalado."
-
-#~ msgid "Touch interaction not supported"
-#~ msgstr "Interacción táctil non soportada"
-
-#~ msgid "Touch interaction enabled"
-#~ msgstr "Interación táctil habilitada"
-
-#~ msgid "Touch interaction disabled"
-#~ msgstr "Interación táctil deshabilitada"
-
-#~ msgid "Enable touch interaction support"
-#~ msgstr "Habilitar soporte de interacción táctil"
-
-#~ msgid ""
-#~ "You are about to turn off touch interaction support completely so the "
-#~ "touchscreen can be used as though NVDA is not running. To enable touch "
-#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
-#~ "sure you wish to completely disable touch interaction support?"
-#~ msgstr ""
-#~ "Vas desactivar o soporte de interacción táctil completamente tal que a "
-#~ "pantalla táctil poida usarse coma se o NVDA non estivese en execución. "
-#~ "Para habilitar o soporte táctil, tes que voltar ao panel Enhanced Touch "
-#~ "Gestures  e desmarcar a caixa de verificación 'deshabilitar soporte de "
-#~ "interacción táctil'. ¿Estás seguro de que desexas deshabilitar "
-#~ "completamente o soporte de interacción táctil?"
-
-#~ msgid "Disable touch interaction support"
-#~ msgstr "Deshabilitar soporte de interación tactil"
-
-#~ msgid "object has no location"
-#~ msgstr "o obxecto non ten localización"
-
-#~ msgid ""
-#~ "Clicks the right mouse button at the current touch position. This is "
-#~ "generally used to activate a context menu."
-#~ msgstr ""
-#~ "Fai click co botón dereito do rato na posición táctil actual. Isto "
-#~ "utilízase polo xeral para activar un menú de contexto."
-
-#~ msgid "&Pause NVDA's touch support (duration in seconds)"
-#~ msgstr "&Pausa o soporte tactil do NVDA (duración en segundos)"
-
-#~ msgid "&Manually toggle touch passthrough"
-#~ msgstr "Conmuta &Manualmente deixar pasar toque"
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "Deshabilita completamente o soporte da interacción tactil"
-
-#~ msgid "&Touch Interaction..."
-#~ msgstr "&Interación Tactil..."
-
-#~ msgid "Touchscreen interaction settings"
-#~ msgstr "Opcións de interacción da pantalla tactil"
-
-#~ msgid "&Touch typing mode"
-#~ msgstr "Modo de escritura &Tactil"
-
-#~ msgid "Reports the object and content directly under your finger"
-#~ msgstr "Anuncia o obxecto e o contido directamente baixo do teu dedo"
-
-#~ msgid ""
-#~ "Reports the new object or content under your finger if different to where "
-#~ "your finger was last"
-#~ msgstr ""
-#~ "Anuncia o obxecto ou o contido novos baixo do teu dedo se son diferentes "
-#~ "a onde estaba o último"

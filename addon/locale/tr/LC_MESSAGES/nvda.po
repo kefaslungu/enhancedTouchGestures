@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-11-26 22:21+0300\n"
+"PO-Revision-Date: 2020-12-14 06:55+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: tr\n"
@@ -23,7 +23,7 @@ msgstr "Dokunmatik klavye etkinleştirilemiyor"
 
 #. Translators: message shown when dictation command is unavailable.
 msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr ""
+msgstr "Dikte, Windows 10 1709 veya sonraki sürümlerde desteklenir"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
@@ -40,53 +40,6 @@ msgid ""
 "2017.4 or later installed."
 msgstr ""
 "navigasyon ve yardım komutları da dahil olmak üzere, ek dokunmatik "
-"komutlarından oluşan bir paket.\n"
+"komutlardan oluşan bir paket.\n"
 "\tNVDA 2017.4 ya da sonraki sürümlerinden birinin kurulu olduğu, dokunmatik "
 "ekranlı ve en az Windows 8.1 yüklü bir bilgisayar gerektirir."
-
-#~ msgid "Touch interaction not supported"
-#~ msgstr "Dokunmatik etkileşim desteklenmiyor"
-
-#~ msgid "Touch interaction enabled"
-#~ msgstr "Dokunmatik Etkileşim etkin"
-
-#~ msgid "Touch interaction disabled"
-#~ msgstr "Dokunmatik Etkileşim devre dışı"
-
-#~ msgid "Enable touch interaction support"
-#~ msgstr "Dokunmatik etkileşim desteğini etkinleştir"
-
-#~ msgid ""
-#~ "You are about to turn off touch interaction support completely so the "
-#~ "touchscreen can be used as though NVDA is not running. To enable touch "
-#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
-#~ "sure you wish to completely disable touch interaction support?"
-#~ msgstr ""
-#~ "Dokunmatik etkileşim desteğini tamamen kapatmak üzeresiniz ve "
-#~ "kapatırsanız dokunmatik ekran NVDA'nın kullanılmadığı varsayılarak "
-#~ "çalışacak. Dokunmatik desteğini etkinleştirmek için, NVDA ayarlar "
-#~ "iletişim kutusunu tekrar açıp 'Dokunmatik etkileşim desteğini "
-#~ "etkinleştir' onay kutusunu  işaretlemeniz gerekir. Dokunmatik etkileşim "
-#~ "desteğini tamamen kapatmak istediğinizden emin misiniz?"
-
-#~ msgid "Disable touch interaction support"
-#~ msgstr "Dokunmatik etkileşim desteğini devre dışı bırak"
-
-#~ msgid "object has no location"
-#~ msgstr "nesnenin konumu yok"
-
-#~ msgid "&Pause NVDA's touch support (duration in seconds)"
-#~ msgstr "&NVDA dokunmatik desteğine ara ver (saniye cinsinden süre)"
-
-#~ msgid "&Manually toggle touch passthrough"
-#~ msgstr "Dokunmatik geçiş &manuel olarak yapılsın"
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "Dokunmatik etkileşim desteğini tamamen devre dışı bırak"
-
-#~ msgid "&Touch Interaction..."
-#~ msgstr "&Dokunmatik Etkileşim..."
-
-#~ msgid "Touchscreen interaction settings"
-#~ msgstr "Dokunmatik ekran etkileşim ayarları"

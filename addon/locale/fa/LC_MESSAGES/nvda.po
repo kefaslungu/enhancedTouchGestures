@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-12-04 19:47+0330\n"
+"PO-Revision-Date: 2020-12-11 23:27+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation team <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -23,7 +23,7 @@ msgstr "نمیتوانم صفحه‌کلیدِ لمسی را فعال کنم"
 
 #. Translators: message shown when dictation command is unavailable.
 msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr ""
+msgstr "تبدیلِ گفتار به نوشتار از ویندوز ۱۰، نگارش ۱۷۰۹ به بعد پشتیبانی میشود"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on

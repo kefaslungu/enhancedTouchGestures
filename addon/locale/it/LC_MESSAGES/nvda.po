@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-11-30 23:37+0100\n"
+"PO-Revision-Date: 2020-12-13 23:19+0100\n"
 "Last-Translator: Fabrizio Marini <marini.carlo@fastwebnet.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -23,7 +23,7 @@ msgstr "Impossibile attivare la tastiera touch"
 
 #. Translators: message shown when dictation command is unavailable.
 msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr ""
+msgstr "La dettatura è supportata in Windows 10, Versione 1709 o successive"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
@@ -43,61 +43,3 @@ msgstr ""
 "navigazione e l'aiuto.\n"
 "\tRichiede un computer configurato con un touch screen, sistema operativo "
 "Windows 8.1 o successivo e NVDA 2017.4 o versioni successive."
-
-#~ msgid "Touch interaction not supported"
-#~ msgstr "Interazione a tocco non supportata"
-
-#~ msgid "Touch interaction enabled"
-#~ msgstr "Interazione a tocco abilitata"
-
-#~ msgid "Touch interaction disabled"
-#~ msgstr "Interazione a tocco disabilitata"
-
-#~ msgid "Enable touch interaction support"
-#~ msgstr "Attiva il supporto all'interazione a tocco"
-
-#~ msgid ""
-#~ "You are about to turn off touch interaction support completely so the "
-#~ "touchscreen can be used as though NVDA is not running. To enable touch "
-#~ "support, you need to return to Enhanced Touch Gestures panel in NVDA "
-#~ "Settings and check 'enable touch interaction support' checkbox. Are you "
-#~ "sure you wish to completely disable touch interaction support?"
-#~ msgstr ""
-#~ "Si sta per disabilitare completamente il supporto all'interazione a "
-#~ "tocco; in questo modo il touch screen potrà essere utilizzato come se "
-#~ "NVDA non fosse in esecuzione. Per riattivare il supporto touch, è "
-#~ "necessario ritornare a questa finestra di dialogo e attivare la casella "
-#~ "di controllo 'attiva il supporto all'interazione a tocco'. Sei sicuro di "
-#~ "voler disattivare completamente il supporto al touch screen?"
-
-#~ msgid "Disable touch interaction support"
-#~ msgstr "Disattiva il supporto all'interazione a tocco"
-
-#~ msgid "object has no location"
-#~ msgstr "l'oggetto non ha posizione"
-
-#~ msgid ""
-#~ "Clicks the right mouse button at the current touch position. This is "
-#~ "generally used to activate a context menu."
-#~ msgstr ""
-#~ "Effettua un click con il tasto destro del mouse nella posizione corrente. "
-#~ "Generalmente si utilizza per attivare un menù di contesto. "
-
-#~ msgid "&Pause NVDA's touch support (duration in seconds)"
-#~ msgstr "Metti in &pausa il supporto touch di NVDA (durata in secondi)"
-
-#~ msgid "&Manually toggle touch passthrough"
-#~ msgstr ""
-#~ "Alterna &manualmente la funzione \"passa il tocco all'applicazione\""
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "disabilita completamente il supporto interazione al tocco"
-
-#~ msgid "&Touch Interaction..."
-#~ msgstr "In&terazione al tocco..."
-
-#~ msgid "Touchscreen interaction settings"
-#~ msgstr "Impostazioni interazione con il touchscreen"
-
-#~ msgid "&Touch typing mode"
-#~ msgstr "Modalità digitazione &tocco"
