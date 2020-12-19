@@ -1,6 +1,6 @@
 # Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2020 Joseph Lee and others, released under GPL.
+# Copyright 2013-2020 Joseph Lee, released under GPL.
 
 # Implements needed improvements for various touchscreen gestures.
 
