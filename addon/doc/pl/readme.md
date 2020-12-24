@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* NVDA compatibility: 2020.1 to 2020.3
+* Zgodność z wersjami NVDA: 2020.1 do 2020.3
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
@@ -45,13 +45,13 @@ aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dó
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
 
-## Version 20.09
+## Wersja 20.04
 
 * Removed ability to let NVDA turn off touch interaction for up to ten
   seconds (touch command passthrough).
 * Removed coordinate announcement beep feature.
 
-## Version 20.07
+## Wersja 20.07
 
 * Added a keyboard command to toggle touch interaction or enable/disable
   touch passthrough (Control+Alt+NVDA+T).
@@ -73,9 +73,10 @@ szybkiej zmiany ustawień syntezatora.
 * NVDA will present an error message if touch keyboard cannot be activated
   (four finger flick right).
 
-## Version 20.06
+## Wersja 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Naprawiono niektóre błędy stylistyczne związane z kodem,  a także
+  naprawiono błędy związane z linterem Flake8.
 
 ## Wersja 20.04
 
