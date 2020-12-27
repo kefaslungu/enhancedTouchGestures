@@ -1,5 +1,5 @@
 # enhancedTouchGestures/installTasks.py
-# Copyright 2017-2020 Joseph Lee, released under GPL.
+# Copyright 2017-2021 Joseph Lee, released under GPL.
 
 # Provides needed routines during add-on installation and removal.
 # Mostly checks compatibility.
