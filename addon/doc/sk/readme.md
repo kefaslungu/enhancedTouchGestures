@@ -155,12 +155,12 @@ následne upravujete hodnoty.
 * Vyžaduje sa NVDA od verzie 2017.1, hlavne pre zmeny, ktoré sa urobili v
   NVDA na oznamovanie pozície myši zvukom.
 
-##Verzia 17.03
+##Version 17.03
 
 * Opravené oznamovanie pozície kurzora myši zvukom pre NVDA od verzie
   2017.1.
 
-##Verzia 16.12
+##Version 16.12
 
 * Webový režim funguje v aplikáciách MS Edge, Word a ďalších.
 * Do webového režimu pridaná možnosť prechádzať po oblastiach stránky a

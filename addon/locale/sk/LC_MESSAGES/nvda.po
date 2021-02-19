@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 18.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2018-11-30 05:10+1000\n"
-"PO-Revision-Date: 2020-02-21 09:16+0100\n"
+"PO-Revision-Date: 2021-02-09 11:32+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: \n"
 "Language: sk\n"
@@ -17,49 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.11\n"
 
-#. Translators: Reported when the object has no location for the mouse to move to it.
-msgid "object has no location"
-msgstr "Nie je možné nájsť obbjekt"
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Nie je možné aktivovať dotykovú klávesnicu"
 
-msgid ""
-"Clicks the right mouse button at the current touch position. This is "
-"generally used to activate a context menu."
-msgstr ""
-"Simuluje klik pravým tlačidlom myši na mieste, kde sa práve nachádza kurzor. "
-"Zvyčajne aktivuje kontextovú ponuku."
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr "Diktovanie je podporované v systémoch Windows od verzie 1709 "
 
-#. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Pokročilé dotykové gestá"
-
-#. Translators: This is the label for a checkbox in the
-#. Enhanced Touch Gestures settings panel.
-msgid "Enable touch interaction support"
-msgstr "Povoliť podporu pre dotykovú obrazovku"
-
-#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
-msgid "&Pause NVDA's touch support (duration in seconds)"
-msgstr "&Pozastaviť podporu pre dotykovú obrazovku (v sekúndách)"
-
-#. Translators: a checkbox to allow passthrough to be toggled manually.
-msgid "&Manually toggle touch passthrough"
-msgstr "&Ručne aktivovať prepustenie dotykových gest"
-
-msgid ""
-"You are about to turn off touch interaction support completely so the "
-"touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and check 'enable touch interaction support' checkbox. Are you sure "
-"you wish to completely disable touch interaction support?"
-msgstr ""
-"Chystáte sa vypnúť podporu pre dotykovú obrazovku. Dotyková obrazovka bude "
-"fungovať bez zásahov NVDA. Podporu pre dotykovú obrazovku môžete opätovne "
-"zapnúť v nastaveniach NVDA. Chcete pokračovať?"
-
-msgid "Disable touch interaction support"
-msgstr "Vypnúť podporu pre dotykovú obrazovku"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -70,8 +40,5 @@ msgid ""
 "2017.4 or later installed."
 msgstr ""
 "Sada ďalších dotykových príkazov, vrátane navigačných a pomocných príkazov\n"
-"\tVyžaduje počítač s dotykovou obrazovkou so systémom Windows 8.1 alebo "
-"novším s nainštalovaným programom NVDA 2017.4 alebo novším."
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "Vypne úplne podporu dotykovej interakcie"
+"\tVyžaduje počítač s dotykovou obrazovkou so systémom Windows od verzie 8.1 "
+"s nainštalovaným programom NVDA od verzie 2017.4."

@@ -183,13 +183,13 @@ reflectă asta în comenzile setărilor sintezei pe tastatură.
 * Datorită schimbărilor făcute la redarea coordonatelor ecranului, NVDA
   2017.1 este necesar.
 
-#Versiunea 17.03
+##Version 17.03
 
 * A fost reparată o eroare în care bipul anunțării coordonatelor nu era
   redat, iar în locul lui o eroare de ton era redată la utilizarea NVDA
   2017.1 sau mai nou.
 
-##Versiunea 16.12
+##Version 16.12
 
 * Modul tactil web funcționează în Microsoft Edge, Microsoft Word, și altele
   unde unde modul navigare este folosit.

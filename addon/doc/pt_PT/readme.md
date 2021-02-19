@@ -181,13 +181,13 @@ configurações dos sintetizadores.
 * Devido às alterações feitas ao reproduzir as coordenadas do ecrã, o NVDA
   2017.1 ou posterior é necessário.
 
-##Versão 17.03
+##Version 17.03
 
 * Corrigido um problema em que o sinal sonoro de coordenadas não era
   reproduzido ou surgia um beep de erro em vez disso ao usar o NVDA 2017.1
   ou posterior.
 
-##Versão 16.12
+##Version 16.12
 
 * O modo Web Touch funciona no Microsoft Edge, no Microsoft Word e em outros
   onde o modo de navegação é usado.

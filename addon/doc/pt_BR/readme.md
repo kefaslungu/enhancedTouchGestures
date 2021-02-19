@@ -181,12 +181,12 @@ espelham os comandos do anel de opções do sintetizador pelo teclado.
 * Devido a alterações feitas na parte de tocar coordenadas de tela, exige-se
   o NVDA 2017.1 ou posterior.
 
-##Versão 17.03
+##Version 17.03
 
 * Corrigido um problema em que o bipe de anúncio de coordenadas não tocava
   ou um som de erro tocava no lugar, ao usar NVDA 2017.1 ou posterior.
 
-##Versão 16.12
+##Version 16.12
 
 * O modo tátil para a web funciona em Microsoft Edge, Microsoft Word e
   outros onde o modo de navegação é usado.

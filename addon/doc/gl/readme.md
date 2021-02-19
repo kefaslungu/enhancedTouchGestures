@@ -182,13 +182,13 @@ do grupo de opcións do sintetizador no teclado.
 * Debido a cambios feitos ao se reproducir as coordinadas da pantalla,
   requírese do NVDA 2017.1 ou posterior.
 
-##Versión 17.03
+##Version 17.03
 
 * Correxido un fallo cando o pitido de anunciado de coordinadas non se
   reproducía ou reproducíase un ton de erro no seu lugar cando se utiliza
   NVDA 2017.1 ou anterior.
 
-##Versión 16.12
+##Version 16.12
 
 * O modo web táctil funciona no Microsoft Edge, no Microsoft Word e outros
   onde se use o modo exploración.

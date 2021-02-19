@@ -178,13 +178,13 @@ szybkiej zmiany ustawień syntezatora.
 * W związku ze zmianami w odtwarzaniu współrzędnych ekranu, wymagana jest
   wersja NVDA 2017.1 lub nowsza.
 
-##Wersja 17.03
+##Version 17.03
 
 * Poprawiono błąd, z powodu którego dźwięk oznajmiania położenia nie był
   odtwarzany lub zamiast niego pojawiał się dźwięk błędu. Działo się to w
   NVDA 2017.1 i nowszych.
 
-##Wersja 16.12
+##Version 16.12
 
 * Dotykowy tryb czytania działa w Microsoft Edge, Microsoft Word i innych
   programach, gdzie używa się trybu przeglądu.

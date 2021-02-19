@@ -192,12 +192,12 @@ tastiera.
 * A causa di modifiche apportate alla funzione Coordinate Aurio, è
   necessario NVDA 2017.1 o successivo.
 
-##Versione 17.03
+##Version 17.03
 
 * Risolto un problema che impediva la riproduzione delle coordinate audio
   con NVDA 2017.1 o successive.
 
-##Versione 16.12
+##Version 16.12
 
 * La modalità tocco web funziona in Microsoft Edge, Microsoft Word e altri
   programmi dove viene usata la modalità navigazione.

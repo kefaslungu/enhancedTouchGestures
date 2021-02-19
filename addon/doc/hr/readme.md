@@ -184,13 +184,13 @@ tipkovnice.
 * Zbog promjena u reproduciranju koordinata ekrana, zahtijeva NVDA verziju
   2017.1 ili noviju.
 
-##Verzija 17.03
+##Version 17.03
 
 * Riješen problem gdje se pri izvještavanju koordinata nije čuo zvuk ili se
   pojavljivao zvuk pogreške tijekom korištenja NVDA verzije 2017.1 ili
   novije.
 
-##Verzija 16.12
+##Version 16.12
 
 * Dodirni modus za web radi u programu Microsoft Edge, Microsoft Word i
   drugdje gdje je moguće koristiti modus pretraživanja.
