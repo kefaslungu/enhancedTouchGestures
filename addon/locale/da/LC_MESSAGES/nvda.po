@@ -8,61 +8,29 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-03-05 13:13+0100\n"
+"PO-Revision-Date: 2021-02-24 14:29+0100\n"
 "Last-Translator: Nicolai Svendsen <chojiro1990@gmail.com>\n"
 "Language-Team: Dansk NVDA <dansk@nvda.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#. Translators: Reported when the object has no location for the mouse to move to it.
-msgid "object has no location"
-msgstr "Objektet har ingen placering"
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Kan ikke aktivere berøringstastatur"
 
-msgid ""
-"Clicks the right mouse button at the current touch position. This is "
-"generally used to activate a context menu."
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
 msgstr ""
-"Klikker på højre museknap ved den aktuelle berøringsposition. Dette bruges "
-"generelt til at aktivere en genvejsmenu."
+"Dikteringsfunktioner understøttes i Windows 10 version 1709 eller nyere"
 
-#. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Udvidede berøringsbevægelser"
-
-#. Translators: This is the label for a checkbox in the
-#. Enhanced Touch Gestures settings panel.
-msgid "Enable touch interaction support"
-msgstr "Aktivér understøttelse af berøringsinteraktion"
-
-#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
-msgid "&Pause NVDA's touch support (duration in seconds)"
-msgstr "&Pause i NVDAs berøringsunderstøttelse (tid i sekunder)"
-
-#. Translators: a checkbox to allow passthrough to be toggled manually.
-msgid "&Manually toggle touch passthrough"
-msgstr "Lad berøring slippe igennem til/fra (&manuel)"
-
-msgid ""
-"You are about to turn off touch interaction support completely so the "
-"touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and check 'enable touch interaction support' checkbox. Are you sure "
-"you wish to completely disable touch interaction support?"
-msgstr ""
-"Du er i færd med at slå understøttelse af berøringsinteraktion helt fra, så "
-"touchskærmen kan bruges, som om NVDA ikke kørte. For at slå "
-"berøringsunderstøttelse til igen skal du vende tilbage til denne dialog og "
-"fjerne krydset fra checkboksen \"Slå understøttelse af berøringsinteraktion "
-"fra\". Er du sikker på, at du vil slå understøttelse af berøringsinteraktion "
-"helt fra?"
-
-msgid "Disable touch interaction support"
-msgstr "Slå understøttelse af berøringsinteraktion fra"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -72,31 +40,7 @@ msgid ""
 "\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA "
 "2017.4 or later installed."
 msgstr ""
-"Et sæt af yderligere touch-kommandoer, herunder tabbe- og hjælpekommandoer.\n"
+"Et sæt af yderligere touch-kommandoer, herunder tabbe- og "
+"hjælpekommandoer.\n"
 "\tKræver en computer med touch-understøttelse med Windows 8.0 eller senere "
 "og med NVDA 2017.4 eller senere installeret."
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "Slå understøttelse af berøringsinteraktion helt fra"
-
-#~ msgid "&Touch Interaction..."
-#~ msgstr "&Touch-interaktion..."
-
-#~ msgid "Touchscreen interaction settings"
-#~ msgstr "Indstillinger for touchskærminteraktion"
-
-#~ msgid "Touch Interaction"
-#~ msgstr "Touch-interaktion"
-
-#~ msgid "&Touch typing mode"
-#~ msgstr "&Berøringsindtastning"
-
-#~ msgid "Reports the object and content directly under your finger"
-#~ msgstr "Rapporterer objektet og indholdet direkte under din finger"
-
-#~ msgid ""
-#~ "Reports the new object or content under your finger if different to where "
-#~ "your finger was last"
-#~ msgstr ""
-#~ "Rapporterer det nye objekt eller indhold under din finger, hvis det er "
-#~ "forskelligt fra der, hvor din finger var sidst"

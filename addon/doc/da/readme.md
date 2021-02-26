@@ -2,7 +2,7 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA compatibility: 2020.1 to 2020.3
+* NVDA-kompatibilitet: 2020.1 til 2020.3
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
@@ -49,9 +49,9 @@ ringen for talesynteseindstillinger.
 
 ## Version 20.09
 
-* Removed ability to let NVDA turn off touch interaction for up to ten
-  seconds (touch command passthrough).
-* Removed coordinate announcement beep feature.
+* Fjernet indstillingen til at lade NVDA deaktivere berøringsinteraktion i
+  op til ti sekunder (slip bevægelser direkte igennem til systemet).
+* Fjernede annoncering af koordinater, lydsignal
 
 ## Version 20.07
 
@@ -145,9 +145,9 @@ ringen for talesynteseindstillinger.
 * Tilføjede en skjult check box i berøringsinteraktion, der lader dig slå
   understøttelse for berøring helt fra (tilgængelig hvis andre profiler end
   den normale indstillingsprofil er aktiv).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NVDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
+* Hvis du bruger NVDA 2018.1 eller nyere, vil du få vist dialoger til
+  berøringsinteraktion to gange under NVDAs indstillingskategorier. Det
+  andet punkt er den dialog, der tilhører tilføjelsen.
 * Indstillingen til berøringsindtastning vises ikke længere i tilføjelsens
   egen dialog for berøringsindtastning, hvis du benytter NVDA 2018.2 eller
   nyere.
