@@ -8,59 +8,28 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-01-05 12:25+0200\n"
+"PO-Revision-Date: 2021-02-07 12:46+0200\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#. Translators: Reported when the object has no location for the mouse to move to it.
-msgid "object has no location"
-msgstr "obiectul nu are nicio locație"
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Nu se poate activa tastatura tactilă"
 
-msgid ""
-"Clicks the right mouse button at the current touch position. This is "
-"generally used to activate a context menu."
-msgstr ""
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr "Este suportată dictarea în versiunile de Windows 10 începând cu 1709"
 
-#. Translators: This is the label for the touch interaction settings dialog.
 #. Add-on summary, usually the user visible name of the addon.
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Enhanced Touch Gestures"
-
-#. Translators: This is the label for a checkbox in the
-#. Enhanced Touch Gestures settings panel.
-msgid "Enable touch interaction support"
-msgstr "Activează suportul interacțiunii tactile"
-
-#. Translators: The label for a setting in Enhanced Touch Gestures settings panel to allow users to interact directly with touchscreens for specified duration in seconds.
-msgid "&Pause NVDA's touch support (duration in seconds)"
-msgstr "&Pune pe pauză suportul tactil al NVDA-ului (durată în secunde)"
-
-#. Translators: a checkbox to allow passthrough to be toggled manually.
-msgid "&Manually toggle touch passthrough"
-msgstr "&Activează sau dezactivează manual passthroug-ul"
-
-msgid ""
-"You are about to turn off touch interaction support completely so the "
-"touchscreen can be used as though NVDA is not running. To enable touch "
-"support, you need to return to Enhanced Touch Gestures panel in NVDA "
-"Settings and check 'enable touch interaction support' checkbox. Are you sure "
-"you wish to completely disable touch interaction support?"
-msgstr ""
-"Sunteți pe punctul de a dezactiva complet suportul interacțiunii tactile, "
-"astfel încât ecranul tactil poate fi utilizat ca și cum NVDA nu rulează. "
-"Pentru a activa suportul tactil, trebuie să reveniți la panoul Enhanced "
-"Touch Gestures din setările NVDA și să debifați caseta „activează suportul "
-"interacțiunii tactile”. Sunteți sigur că doriți să dezactivați complet "
-"suportul interacțiunii tactile?"
-
-msgid "Disable touch interaction support"
-msgstr "Dezactivează suportul interacțiunii tactile"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -74,18 +43,3 @@ msgstr ""
 "ajutor.\n"
 "\tNecesită un computer cu funcția touch activată, cu Windows 8.1 sau mai nou "
 "și cu NVDA 2017.4 sau mai nou instalat."
-
-#~ msgid "Completely disable touch interaction support"
-#~ msgstr "Dezactivează complet suportul interacțiunii tactile"
-
-#~ msgid "&Touch Interaction..."
-#~ msgstr "Interac&țiune tactilă..."
-
-#~ msgid "Touchscreen interaction settings"
-#~ msgstr "Setări interacțiune ecran tactil"
-
-#~ msgid "Touch Interaction"
-#~ msgstr "Interacțiune tactilă"
-
-#~ msgid "&Touch typing mode"
-#~ msgstr "&Mod de scriere tactilă"
