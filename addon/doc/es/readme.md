@@ -190,13 +190,13 @@ teclado.
 * Debido a cambios hechos al reproducir las coordenadas de la pantalla, se
   requiere de NVDA 2017.1 o posterior.
 
-##Version 17.03
+##Versión 17.03
 
 * Corregido un fallo cuando el pitido de anunciado de coordenadas no se
   reproducía o se reproducía un tono de error en su lugar cuando se utiliza
   NVDA 2017.1 o anterior.
 
-##Version 16.12
+##Versión 16.12
 
 * El modo web táctil funciona en Microsoft Edge, Microsoft Word y otros
   donde se utilice el modo exploración.
