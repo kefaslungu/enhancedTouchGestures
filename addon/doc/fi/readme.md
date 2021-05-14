@@ -188,12 +188,12 @@ komentoja.
 * Ruudun koordinaattien ilmaisuun tehtyjen muutosten vuoksi edellytetään
   NVDA 2017.1:tä tai uudempaa.
 
-##Version 17.03
+##Versio 17.03
 
 * Korjattu ongelma, jossa koordinaatinilmoitusäänimerkkiä ei toistettu tai
   virheääni kuului sen asemesta NVDA 2017.1:tä tai uudempaa käytettäessä.
 
-##Version 16.12
+##Versio 16.12
 
 * Verkkotila toimii Microsoft Edgessä, Microsoft Wordissa ja muualla, missä
   käytetään selaustilaa.
