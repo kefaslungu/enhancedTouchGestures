@@ -2,7 +2,9 @@
 
 * Author: Joseph Lee
 * Download [stable version][1]
-* NVDA compatibility: 2020.3 to 2020.4
+* NVDA compatibility: 2020.3 and beyond
+
+Note: I (Joseph Lee) am looking for people who will maintain StationPlaylist add-on from September 1, 2021 onwards.
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
