@@ -4,11 +4,11 @@
 * Download [stable version][1]
 * NVDA compatibility: 2020.3 and beyond
 
-Note: I (Joseph Lee) am looking for people who will maintain StationPlaylist add-on from September 1, 2021 onwards.
+Note: I (Joseph Lee) am looking for people who will maintain Enhanced Touch Gestures add-on from January 1, 2022 onwards.
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen computer with Windows 8.1, 10 or 11.
 
 ## Commands
 
@@ -33,6 +33,10 @@ This touch mode, available in browse mode, allows you to navigate the document b
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+## Version 21.08
+
+* Initial support for Windows 11.
 
 ## Version 21.01
 
