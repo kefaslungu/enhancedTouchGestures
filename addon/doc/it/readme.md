@@ -2,7 +2,7 @@
 
 * Autore: Joseph Lee
 * Scarica [versione stabile][1]
-* Compatibilità NVDA: dalla versione 2020.1alla 2020.3
+* NVDA compatibility: 2020.1 to 2021.1
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità navigazione.

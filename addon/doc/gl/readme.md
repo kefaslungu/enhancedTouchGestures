@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Compatibilidade con NVDA: da 2020.1 á 2020.3
+* NVDA compatibility: 2020.1 to 2021.1
 
 Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo

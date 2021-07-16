@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* NVDA compatibility: 2020.1 to 2020.3
+* NVDA compatibility: 2020.1 to 2021.1
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.

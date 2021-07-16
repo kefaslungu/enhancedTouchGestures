@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* Zgodność z wersjami NVDA: 2020.1 do 2020.3
+* NVDA compatibility: 2020.1 to 2021.1
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.

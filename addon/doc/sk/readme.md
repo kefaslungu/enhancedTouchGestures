@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Stiahnuť [stabilnú verziu][1]
-* Funguje s NVDA od 2020.1 po 2020.3
+* NVDA compatibility: 2020.1 to 2021.1
 
 Poskytuje doplnkové dotykové gestá na ovládanie NVDA a tiež gestá pre prácu
 v režime prehliadania.

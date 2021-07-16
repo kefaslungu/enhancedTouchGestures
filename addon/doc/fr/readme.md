@@ -2,7 +2,7 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2020.1 to 2020.3
+* NVDA compatibility: 2020.1 to 2021.1
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
