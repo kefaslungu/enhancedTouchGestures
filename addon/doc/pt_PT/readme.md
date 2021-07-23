@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Comandos:
 
@@ -17,7 +17,8 @@ computer with Windows 8.1 or 10.
 
 * Toque com quatro dedos: Activa/desactiva a ajuda de entrada.
 * Quatro dedos para a direita: Geralmente, activa o teclado virtual.
-* Control+Alt+NVDA+T: toggles touch interaction.
+* Quatro dedos à esquerda: alternar ditado (Windows+H; Windows 10 Versão
+  1709 ou posterior).
 
 ### Revisão de objecto:
 
@@ -46,6 +47,17 @@ a esquerda ou para a direita para se mover entre as configurações do
 sintetizador e use dois dedos para cima e para baixo gestos para alterar os
 valores. estes gestos são semelhantes aos comandos de teclado das
 configurações dos sintetizadores.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* No Windows 10 Versão 1709 e posteriores, fazer um movimento de quatro
+  dedos à esquerda irá alternar o ditado (Windows+H).
+* Remover o comando de alternância de suporte dedicado de interacção táctil
+  do extra.
+* Como o suporte de interacção táctil pode ser alternado a partir do painel
+  de configurações de interacção táctil do NVDA, um painel dedicado de
+  definições de comandos Tácteis Melhorados foi removido.
 
 ## Version 20.09
 

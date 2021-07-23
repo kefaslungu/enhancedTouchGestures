@@ -2,14 +2,13 @@
 
 * Autore: Joseph Lee
 * Scarica [versione stabile][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità navigazione.
 
-Nota: questo componente aggiuntivo richiede NVDA 2020.1 o superiore
-installato su un computer dotato di touchscreen, con sistema operativo
-Windows 8.1 o 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Comandi
 
@@ -18,7 +17,8 @@ Windows 8.1 o 10.
 * doppio tap con 4 dita: attiva/disattiva modalità aiuto immissione.
 * Flick con 4 dita verso destra: attiva/disattiva la tastiera virtuale a
   tocco (in genere la attiva).
-* Control+Alt+NVDA+T: attiva/disattiva l'interazione a tocco.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Modalità oggetti
 
@@ -49,6 +49,16 @@ o destra per spostarsi tra le impostazioni del sintetizzatore e utilizzare
 il flick con due dita in alto o in basso per cambiare i valori. Questi gesti
 rispecchiano quelli per modificare al volo le impostazioni sintetizzatore da
 tastiera.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Novità nella versione 20.09
 

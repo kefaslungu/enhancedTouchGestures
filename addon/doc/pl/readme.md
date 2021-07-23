@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
 
-Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Polecenia
 
@@ -17,7 +17,8 @@ computer with Windows 8.1 or 10.
 * Podwójne stuknięcie czterema palcami: przełącza pomoc wprowadzania.
 * Przesunięcie w prawo czterema palcami: Przełączanie klawiatury dotykowej
   (za zwyczaj ją włącza).
-* Control+Alt+NVDA+T: toggles touch interaction.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Tryb obiektu
 
@@ -44,6 +45,16 @@ wybrać głos, albo zmienić głośność. Przesuń dwoma palcami w lewo lub pra
 aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dół
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Wersja 20.04
 

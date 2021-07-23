@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
 
-Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Comenzi
 
@@ -17,7 +17,8 @@ computer with Windows 8.1 or 10.
 * Atingere dublă cu 4 degete: comută modul de intrare al ajutorului.
 * Glisare la dreapta cu 4 degete: comută tastatura tactilă (de obicei o
   activează).
-* Control+Alt+NVDA+T: toggles touch interaction.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Mod obiect
 
@@ -46,6 +47,16 @@ acest mod, utilizați glisarea cu două degete spre stânga sau spre dreapta
 pentru a vă deplasa între setările sintetizatorului și utilizați gesturile
 glisare cu două degete sus și jos pentru a modifica valorile. Aceste gesturi
 reflectă asta în comenzile setărilor sintezei pe tastatură.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Version 20.09
 

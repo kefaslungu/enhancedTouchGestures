@@ -2,13 +2,13 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Huom: Tämä lisäosa edellyttää NVDA 2020.1:tä tai uudempaa ja
-kosketusnäyttötietokonetta, jossa on asennettuna Windows 8.1 tai 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Komennot
 
@@ -18,7 +18,8 @@ kosketusnäyttötietokonetta, jossa on asennettuna Windows 8.1 tai 10.
   sen käytöstä.
 * Pyyhkäisy oikealle neljällä sormella: tuo näkyviin kosketusnäppäimistön
   tai piilottaa sen.
-* Ctrl+Alt+NVDA+T: Vaihtaa kosketusvuorovaikutuksen tilaa.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Objektitila
 
@@ -47,6 +48,16 @@ sormen pyyhkäisyä vasemmalle tai oikealle siirtyäksesi asetusten välillä ja
 kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Versio 20.09
 

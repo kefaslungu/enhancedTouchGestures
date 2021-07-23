@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA-Kompatibilität: 2020.3 und neuer
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Hinweis: Diese Erweiterung benötigt NVDA 2020.1 oder neuer, auf dem Tablet
-mit Touchscreen und Windows 8.1 oder Windows 10 läuft.
+Hinweis: Diese Erweiterung erfordert NVDA 2020.3 oder neuer, das auf einem
+Computer mit Touchscreen mit Windows 8.1, 10 oder 11 ausgeführt wird.
 
 ## Befehle
 
@@ -16,7 +16,8 @@ mit Touchscreen und Windows 8.1 oder Windows 10 läuft.
 
 * Mit vier Fingern zweimal tippen: Eingabehilfe ein-/ausschalten.
 * Mit vier Fingern nach rechts streichen: Aktiviert die Bildschirmtastatur.
-* Strg+Alt+NVDA+T: Schaltet die Touch-Interaktion um.
+* Mit vier Fingern nach links wischen: Diktat umschalten (Windows+H; Windows
+  10 Version 1709 oder neuer).
 
 ### Objektmodus
 
@@ -47,6 +48,17 @@ wechseln, streichen Sie mit 2 Fingern nach links oder rechts. Um eine
 Einstellung zu ändern, streichen Sie mit 2 Fingern nach oben oder
 unten. Diese Gesten ähneln den Tastenkombinationen für Einstellungen im
 Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
+
+## Version 21.01
+
+* NVDA 2020.3 oder neuer ist erforderlich.
+* Unter Windows 10 Version 1709 und neuer wird die Diktierfunktion mit vier
+  Fingern nach links wischen umgeschaltet (Windows+H).
+* Dedizierter Umschaltbefehl für die Unterstützung zur Touch-Interaktion aus
+  der Erweiterung entfernt.
+* Da die Unterstützung der Touch-Interaktion über das Einstellungsfeld für
+  die Berührungsinteraktion von NVDA umgeschaltet werden kann, wurde ein
+  spezielles Einstellungsfeld für erweiterte Berührungsgesten entfernt.
 
 ## Version 20.09
 

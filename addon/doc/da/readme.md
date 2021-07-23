@@ -2,13 +2,13 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA-kompatibilitet: 2020.1 til 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
 
-Bemærk: Denne tilføjelse kræver NVDA 2020.1 eller nyere kørende på en
-computer med touchskærm med Windows 8.1 eller 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Kommandoer
 
@@ -17,7 +17,8 @@ computer med touchskærm med Windows 8.1 eller 10.
 * Dobbelt-tap med 4 fingre: Slå hjælpetilstand til/fra.
 * Svirp til højre med 4 fingre: Slå berøringstastatur til/fra (som regel
   til).
-* Ctrl+Alt+NVDA+T: Slår berøringsinteraktion til og fra.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Objekttilstand
 
@@ -46,6 +47,16 @@ du svirpe til højre eller venstre med to fingre for at flytte mellem de
 forskellige indstillinger for talesyntesen. Svirp op og ned for at ændre den
 valgte indstilling. Disse bevægelser svarer til tastaturkommandoerne til
 ringen for talesynteseindstillinger.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Version 20.09
 

@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* Compatibilidad con NVDA: de 2020.1 a 2021.1
+* Compatibilidad con NVDA: de 2020.3 en adelante
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
 exploración.
 
-Nota: este complemento requiere de NVDA 2020.1 o posterior ejecutándose en
-un ordenador con pantalla táctil con Windows 8.1 o 10.
+Nota: este complemento requiere de NVDA 2020.3 o posterior ejecutándose en
+un ordenador con pantalla táctil con Windows 8.1, 10 o 11.
 
 ## Órdenes
 
@@ -18,7 +18,8 @@ un ordenador con pantalla táctil con Windows 8.1 o 10.
 * Doble toque con 4 dedos: conmuta el modo de ayuda de entrada.
 * Deslizamiento a la derecha con cuatro dedos: conmuta el teclado táctil
   (normalmente lo activa).
-* Control+alt+NVDA+t: conmuta la interacción táctil.
+* Desplazamiento con cuatro dedos a la izquierda: conmutar dictado
+  (Windows+h; Windows 10 versión 1709 o posterior).
 
 ### Modo Objeto
 
@@ -48,6 +49,17 @@ derecha para moverte entre opciones del sintetizador y utiliza gestos de
 deslizamiento de dos dedos arriba y abajo para cambiar los valores. Estos
 gestos se reflejan en las órdenes del grupo de opciones del sintetizador del
 teclado.
+
+## Versión 21.01
+
+* Se requiere NVDA 2020.3 o posterior.
+* En Windows 10 versión 1709 y posterior, haciendo un desplazamiento con
+  cuatro dedos hacia la izquierda se conmutará el dictado (Windows+H).
+* Se elimina la orden dedicada de conmutación del soporte de interacción
+  táctil del complemento.
+* Ya que el soporte de interacción táctil se puede conmutar desde el panel
+  de opciones de interacción táctil de NVDA, se ha eliminado un panel
+  dedicado de opciones de Enhanced Touch Gestures.
 
 ## Versión 20.09
 

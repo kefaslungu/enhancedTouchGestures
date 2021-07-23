@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Stiahnuť [stabilnú verziu][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Poskytuje doplnkové dotykové gestá na ovládanie NVDA a tiež gestá pre prácu
 v režime prehliadania.
 
-Doplnok vyžaduje NVDA od verzie 2020.1, operačný systém Windows od verzie
-8.1 a zariadenie vybavené dotykovou obrazovkou.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Príkazy
 
@@ -16,7 +16,8 @@ Doplnok vyžaduje NVDA od verzie 2020.1, operačný systém Windows od verzie
 
 * Poklepanie štyrmi prstami: Aktivuje a deaktivuje nápovedu vstupu.
 * Švihnutie vpravo štyrmi prstami: Aktivuje dotykovú klávesnicu.
-* Nvda+ctrl+alt+t: Zapína a vypína ovládanie pomocou dotykovej obrazovky.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Objektový režim
 
@@ -40,6 +41,16 @@ Pomocou dotykových gest môžete rovnako ako z klávesnice okamžite upravovať
 nastavenia hlasového výstupu. Švihaním dvoma prstami vľavo a vpravo
 vyberiete parameter, ktorý chcete zmeniť. Švihaním dvoma prstami hore a dole
 následne upravujete hodnoty.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Verzia 20.09
 

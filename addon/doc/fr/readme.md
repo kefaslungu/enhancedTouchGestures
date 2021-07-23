@@ -2,14 +2,14 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note: this add-on requires NVDA 2020.1 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Commandes
 
@@ -18,7 +18,8 @@ computer with Windows 8.1 or 10.
 * Double tape 4 doigts : basculer en mode aide à la saisie.
 * Glisser vers la droite quatre doigts : basculer clavier tactile
   (habituellement activer celui-ci).
-* Control+Alt+NVDA+T: toggles touch interaction.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Mode objet
 
@@ -48,6 +49,16 @@ mode, glisser vers la gauche ou vers la droite deux doigts pour se déplacer
 entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Version 20.09
 

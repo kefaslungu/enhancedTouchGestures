@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* Compatibilidade com NVDA: 2020.1 a 2021.1
+* Compatibilidade com NVDA: 2020.3 e além
 
 Este complemento fornece gestos adicionais para telas sensível ao toque no
 NVDA. Também provê um conjunto de gestos para uma navegabilidade mais fácil
 no modo de navegação.
 
-Nota: este complemento requer o NVDA 2020.1 ou posterior executando num
-computador com tela de toque com Windows 8.1 ou 10.
+Nota: este complemento requer o NVDA 2020.3 ou posterior executando num
+computador com tela de toque com Windows 8.1, 10 ou 11.
 
 ## Comandos
 
@@ -18,7 +18,8 @@ computador com tela de toque com Windows 8.1 ou 10.
 * Toque duplo com 4 dedos: Alterna o modo de ajuda de entrada.
 * Deslizar 4 dedos à direita: alterna o teclado tátil (geralmente o
   habilita).
-* Control+Alt+NVDA+T: alterna a interação por toque.
+* Deslizar quatro dedos à esquerda: alternar ditado (Windows+H; Windows 10
+  Versão 1709 ou posterior).
 
 ### Modo objeto
 
@@ -45,6 +46,17 @@ tais como escolher uma voz e alterar o volume. Neste modo, deslize com 2
 dedos à esquerda ou à direita para mover entre as opções do sintetizador e
 deslize com dois dedos acima e abaixo para mudar valores. Esses gestos
 espelham os comandos do anel de opções do sintetizador pelo teclado.
+
+## Versão 21.01
+
+* O NVDA 2020.3 ou posterior é requerido.
+* No Windows 10 Versão 1709 e posteriormente, fazer um movimento de quatro
+  dedos à esquerda alternará ditado (Windows+H).
+* Removido o comando dedicado de alternância do suporte à interação por
+  toque do complemento.
+* Como o suporte à interação por toque pode ser alternado no painel de
+  configurações de interação por toque do NVDA, um painel de configurações
+  de Gestos Táteis Aprimorados foi removido.
 
 ## Versão 20.09
 

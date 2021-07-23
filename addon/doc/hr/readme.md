@@ -2,15 +2,14 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2020.1 to 2021.1
+* NVDA compatibility: 2020.3 and beyond
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
 modusu čitanja.
 
-Napomena: Dodatak zahtijeva NVDA 2020.1 ili noviju verziju, instaliranu na
-računalu koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom
-Windows 8.1 ili 10.
+Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Naredbe
 
@@ -19,7 +18,8 @@ Windows 8.1 ili 10.
 * Dodir s četiri prsta: uključi ili isključi modus pomoći tijekom unosa.
 * Klizanje s četiri prsta u desno: uključi ili isključi dodirnu tastaturu
   (obično je uključuje).
-* Kontrol+Alt+NVDA+T: uključuje/isključuje interakciju dodirom.
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Objektni modus
 
@@ -47,6 +47,16 @@ odabira glasa ili promjene glasnoće. Klizanjem s dva prsta u lijevo ili
 desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
+
+## Version 21.01
+
+* NVDA 2020.3 or later is required.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
 
 ## Verzija 20.09
 
