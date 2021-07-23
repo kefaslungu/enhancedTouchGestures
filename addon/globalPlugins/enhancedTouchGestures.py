@@ -225,9 +225,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(gesture="ts:4finger_flickLeft")
 	def script_win10Dictation(self, gesture):
 		# Press Windows+H on Windows 10 Version 1709 (Fall Creators Update) and later.
-		import sys
+		import winVersion
 		import keyboardHandler
-		if sys.getwindowsversion().build < 16299:
+		if winVersion.getWinVer() < winVersion.WIN10_1709:
 			# Translators: message shown when dictation command is unavailable.
 			ui.message(_("Dictation is supported on Windows 10 Version 1709 or later"))
 		else:
