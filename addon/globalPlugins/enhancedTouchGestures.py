@@ -29,7 +29,7 @@ class TouchKey(UIA):
 		# Same as NVDA Core issue 5178: suppress read-only state (reported by a user)
 		# Borrowed from Mozilla objects in NVDAObjects/IAccessible/Mozilla.py.
 		states = super(TouchKey, self).states
-		states.discard(controlTypes.STATE_READONLY)
+		states.discard(controlTypes.State.READONLY)
 		return states
 
 
