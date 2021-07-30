@@ -50,6 +50,10 @@ deslizamiento de dos dedos arriba y abajo para cambiar los valores. Estos
 gestos se reflejan en las órdenes del grupo de opciones del sintetizador del
 teclado.
 
+## Versión 21.08
+
+* Soporte inicial para Windows 11.
+
 ## Versión 21.01
 
 * Se requiere NVDA 2020.3 o posterior.
@@ -219,8 +223,7 @@ teclado.
 
 * Versión estable inicial.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

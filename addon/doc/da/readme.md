@@ -48,6 +48,10 @@ forskellige indstillinger for talesyntesen. Svirp op og ned for at ændre den
 valgte indstilling. Disse bevægelser svarer til tastaturkommandoerne til
 ringen for talesynteseindstillinger.
 
+## Version 21.08
+
+* Initial support for Windows 11.
+
 ## Version 21.01
 
 * NVDA 2020.3 or later is required.
@@ -213,8 +217,7 @@ ringen for talesynteseindstillinger.
 
 * Første stabile version.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

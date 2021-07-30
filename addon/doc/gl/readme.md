@@ -48,6 +48,10 @@ opcións do sintetizador e utiliza os xestos de desprazar dous dedos cara
 arriba e cara abaixo para cambiar os valores. Estos xestos refrexan as ordes
 do grupo de opcións do sintetizador no teclado.
 
+## Version 21.08
+
+* Initial support for Windows 11.
+
 ## Versión 21.01
 
 * Require NVDA 2020.3 ou posterior.
@@ -210,8 +214,7 @@ do grupo de opcións do sintetizador no teclado.
 
 * Versión estable inicial.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

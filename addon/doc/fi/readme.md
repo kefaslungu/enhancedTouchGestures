@@ -2,13 +2,13 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* NVDA compatibility: 2020.3 and beyond
+* Yhteensopivuus: NVDA 2020.3 ja uudemmat
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Huom: Tämä lisäosa edellyttää NVDA 2020.3:a tai uudempaa ja
+kosketusnäyttötietokonetta, jossa on asennettuna Windows 8.1, 10 tai 11.
 
 ## Komennot
 
@@ -18,8 +18,9 @@ computer with Windows 8.1, 10 or 11.
   sen käytöstä.
 * Pyyhkäisy oikealle neljällä sormella: tuo näkyviin kosketusnäppäimistön
   tai piilottaa sen.
-* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
-  1709 or later).
+* Pyyhkäisy vasemmalle neljällä sormella: ota sanelu käyttöön tai poista se
+  käytöstä (Win+H-näppäinkomento Windows 10:n versiossa 1709 tai
+  uudemmissa).
 
 ### Objektitila
 
@@ -49,15 +50,20 @@ kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
 
-## Version 21.01
+## Versio 21.08
 
-* NVDA 2020.3 or later is required.
-* On Windows 10 Version 1709 and later, doing a four finger flick left will
-  toggle dictation (Windows+H).
-* Remove dedicated touch interaction support toggle command from the add-on.
-* As touch interaction support can be toggled from NVDA's touch interaction
-  settings panel, a dedicated Enhanced Touch Gestures settings panel has
-  been removed.
+* Alustava tuki Windows 11:lle.
+
+## Versio 21.01
+
+* NVDA 2020.3 tai uudempi vaaditaan.
+* Windows 10:n versiossa 1709 ja uudemmissa neljän sormen pyyhkäisy
+  vasemmalle ottaa sanelun käyttöön tai poistaa sen käytöstä (Win+H).
+* Poistettu lisäosasta erillinen kosketusvuorovaikutuksen käyttöön ottava
+  tai käytöstä poistava komento.
+* Erillinen Kosketuseleet-asetuspaneeli on poistettu, koska
+  kosketusvuorovaikutuksen tuki voidaan ottaa käyttöön ja poistaa käytöstä
+  NVDA:n Kosketuksen vuorovaikutus -asetuspaneelista.
 
 ## Versio 20.09
 
@@ -214,8 +220,7 @@ komentoja.
 
 * Ensimmäinen vakaa versio.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

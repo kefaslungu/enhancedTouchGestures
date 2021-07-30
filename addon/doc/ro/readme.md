@@ -48,6 +48,10 @@ pentru a vă deplasa între setările sintetizatorului și utilizați gesturile
 glisare cu două degete sus și jos pentru a modifica valorile. Aceste gesturi
 reflectă asta în comenzile setărilor sintezei pe tastatură.
 
+## Version 21.08
+
+* Initial support for Windows 11.
+
 ## Version 21.01
 
 * NVDA 2020.3 or later is required.
@@ -211,8 +215,7 @@ reflectă asta în comenzile setărilor sintezei pe tastatură.
 
 * Versiunea stabilă inițială.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

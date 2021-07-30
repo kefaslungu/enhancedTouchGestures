@@ -47,6 +47,10 @@ ayarları arasında dolaşabilir, iki parmakla yukarı veya aşağı fiske yapar
 ayarları değiştirebilirsiniz. Bu hareketler klavyedeki hızlı sentezleyici
 ayarlarını dokunmatik ekrana aktarır.
 
+## Version 21.08
+
+* Initial support for Windows 11.
+
 ## Sürüm 21.01
 
 * NVDA 2020.3 veya üzeri sürümü gerekir.
@@ -211,8 +215,7 @@ ayarlarını dokunmatik ekrana aktarır.
 
 * İlk kararlı sürüm.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

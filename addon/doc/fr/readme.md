@@ -50,6 +50,10 @@ entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
 
+## Version 21.08
+
+* Initial support for Windows 11.
+
 ## Version 21.01
 
 * NVDA 2020.3 or later is required.
@@ -211,8 +215,7 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 
 * Première version stable.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

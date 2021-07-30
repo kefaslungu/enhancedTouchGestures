@@ -47,6 +47,10 @@ dedos à esquerda ou à direita para mover entre as opções do sintetizador e
 deslize com dois dedos acima e abaixo para mudar valores. Esses gestos
 espelham os comandos do anel de opções do sintetizador pelo teclado.
 
+## Version 21.08
+
+* Initial support for Windows 11.
+
 ## Versão 21.01
 
 * O NVDA 2020.3 ou posterior é requerido.
@@ -210,8 +214,7 @@ espelham os comandos do anel de opções do sintetizador pelo teclado.
 
 * Versão estável inicial.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

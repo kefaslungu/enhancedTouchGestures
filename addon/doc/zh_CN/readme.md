@@ -34,6 +34,10 @@ computer with Windows 8.1, 10 or 11.
 
 您可以使用此模式快速更改合成器设置，例如选择语音和更改音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间移动，并使用两个手指向上和向下轻拂手势来更改值。这种手势反映了键盘上合成器设置响铃命令的手势。
 
+## Version 21.08
+
+* Initial support for Windows 11.
+
 ## Version 21.01
 
 * NVDA 2020.3 or later is required.
@@ -148,8 +152,7 @@ computer with Windows 8.1, 10 or 11.
 
 * 发布初始版本。
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

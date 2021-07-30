@@ -49,6 +49,10 @@ Einstellung zu ändern, streichen Sie mit 2 Fingern nach oben oder
 unten. Diese Gesten ähneln den Tastenkombinationen für Einstellungen im
 Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
+## Version 21.08
+
+* Unterstützung für Windows 11.
+
 ## Version 21.01
 
 * NVDA 2020.3 oder neuer ist erforderlich.
@@ -222,8 +226,7 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 * Ehrstveröffentlichung der stabilen Version.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=emo-dev
