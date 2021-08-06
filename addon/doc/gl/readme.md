@@ -48,9 +48,9 @@ opcións do sintetizador e utiliza os xestos de desprazar dous dedos cara
 arriba e cara abaixo para cambiar os valores. Estos xestos refrexan as ordes
 do grupo de opcións do sintetizador no teclado.
 
-## Version 21.08
+## Versión 21.08
 
-* Initial support for Windows 11.
+* Soporte inicial para Windows 11.
 
 ## Versión 21.01
 
