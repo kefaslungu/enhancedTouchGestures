@@ -2,12 +2,11 @@
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA兼容版本: 2020.3 或更高
 
 此插件为NVDA提供了额外的触摸屏手势。它还提供了一组手势，以便于浏览模式导航。
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+注意：此插件需要在装有 Windows 8.1、10 或 11 的触摸屏计算机上运行 NVDA 2020.3 或更高版本。
 
 ## 快捷键
 
@@ -15,8 +14,7 @@ computer with Windows 8.1, 10 or 11.
 
 * 4指双击：切换输入帮助模式。
 * 四指轻弹：切换触摸键盘（通常启用它）。
-* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
-  1709 or later).
+* 四指向左滑动：切换听写（Windows+H；Windows 10 版本 1709 或更高版本）。
 
 ### 对象模式
 
@@ -34,19 +32,16 @@ computer with Windows 8.1, 10 or 11.
 
 您可以使用此模式快速更改合成器设置，例如选择语音和更改音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间移动，并使用两个手指向上和向下轻拂手势来更改值。这种手势反映了键盘上合成器设置响铃命令的手势。
 
-## Version 21.08
+## 版本21.08
 
-* Initial support for Windows 11.
+* 对 Windows 11 的初始支持。
 
-## Version 21.01
+## 版本21.01
 
-* NVDA 2020.3 or later is required.
-* On Windows 10 Version 1709 and later, doing a four finger flick left will
-  toggle dictation (Windows+H).
-* Remove dedicated touch interaction support toggle command from the add-on.
-* As touch interaction support can be toggled from NVDA's touch interaction
-  settings panel, a dedicated Enhanced Touch Gestures settings panel has
-  been removed.
+* 现在需要NVDA 2020.3或更高版本。
+* 在 Windows 10 版本 1709 及更高版本上，四指向左滑动将切换听写 (Windows+H)。
+* 从插件中删除专用的触摸交互支持切换命令。
+* 由于可以从 NVDA 的触摸交互设置面板切换触摸交互支持，因此删除了专用的增强型触摸手势设置面板。
 
 ## 版本20.09
 
