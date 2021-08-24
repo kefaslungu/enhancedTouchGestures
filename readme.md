@@ -2,7 +2,7 @@
 
 * Author: Joseph Lee
 * Download [stable version][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA compatibility: 2021.2 and beyond
 
 Note: I (Joseph Lee) am looking for people who will maintain Enhanced Touch Gestures add-on from January 1, 2022 onwards.
 
@@ -33,6 +33,10 @@ This touch mode, available in browse mode, allows you to navigate the document b
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this add-on.
 
 ## Version 21.08
 
