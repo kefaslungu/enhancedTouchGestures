@@ -2,13 +2,13 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA -kompatibilitet: 2020.3 og senere
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Bemærk: denne tilføjelse kræver, at NVDA 2020.3 eller nyere kører på en
+computer med touchskærm kørende Windows 8.1, 10 eller 11.
 
 ## Kommandoer
 
@@ -17,8 +17,8 @@ computer with Windows 8.1, 10 or 11.
 * Dobbelt-tap med 4 fingre: Slå hjælpetilstand til/fra.
 * Svirp til højre med 4 fingre: Slå berøringstastatur til/fra (som regel
   til).
-* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
-  1709 or later).
+* Svirp med fire fingre til venstre: Aktivér eller deaktivér diktering
+  (Windows+H; Windows 10 version 1709 eller nyere).
 
 ### Objekttilstand
 
@@ -50,23 +50,23 @@ ringen for talesynteseindstillinger.
 
 ## Version 21.08
 
-* Initial support for Windows 11.
+* Første understøttelse til Windows 11.
 
 ## Version 21.01
 
-* NVDA 2020.3 or later is required.
-* On Windows 10 Version 1709 and later, doing a four finger flick left will
-  toggle dictation (Windows+H).
-* Remove dedicated touch interaction support toggle command from the add-on.
-* As touch interaction support can be toggled from NVDA's touch interaction
-  settings panel, a dedicated Enhanced Touch Gestures settings panel has
-  been removed.
+* NVDA 2020.3 eller nyere er påkrævet.
+* I Windows 10 Version 1709 og senere vil et svirp med fire fingre til
+  venstre slå diktering til eller fra(Windows+H).
+* Fjernet berøringsinteraktionskommando fra tilføjelsen.
+* Da understøttelse af berøringsinteraktion kan skiftes fra NVDA's panel for
+  berøringsinteraktionsindstillinger, er et særligt panel med forbedrede
+  berøringsbevægelser blevet fjernet.
 
 ## Version 20.09
 
 * Fjernet indstillingen til at lade NVDA deaktivere berøringsinteraktion i
   op til ti sekunder (slip bevægelser direkte igennem til systemet).
-* Fjernede annoncering af koordinater, lydsignal
+* Fjernede funktionen for annoncering af koordinater som lydsignal
 
 ## Version 20.07
 
