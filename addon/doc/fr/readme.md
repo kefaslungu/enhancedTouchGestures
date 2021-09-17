@@ -2,13 +2,13 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA compatibility: 2021.2 and beyond
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Commandes
@@ -49,6 +49,11 @@ mode, glisser vers la gauche ou vers la droite deux doigts pour se déplacer
 entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
 
 ## Version 21.08
 
@@ -214,7 +219,6 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 ## Version 16.06
 
 * Première version stable.
-
 
 [[!tag dev stable]]
 

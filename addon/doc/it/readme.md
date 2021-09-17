@@ -2,12 +2,12 @@
 
 * Autore: Joseph Lee
 * Scarica [versione stabile][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA compatibility: 2021.2 and beyond
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità navigazione.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Comandi
@@ -49,6 +49,11 @@ o destra per spostarsi tra le impostazioni del sintetizzatore e utilizzare
 il flick con due dita in alto o in basso per cambiare i valori. Questi gesti
 rispecchiano quelli per modificare al volo le impostazioni sintetizzatore da
 tastiera.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
 
 ## Version 21.08
 
@@ -221,7 +226,6 @@ tastiera.
 ## Novità nella versione 16.06
 
 * Versione iniziale stabile.
-
 
 [[!tag dev stable]]
 

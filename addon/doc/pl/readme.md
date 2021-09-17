@@ -2,12 +2,12 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA compatibility: 2021.2 and beyond
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Polecenia
@@ -45,6 +45,11 @@ wybrać głos, albo zmienić głośność. Przesuń dwoma palcami w lewo lub pra
 aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dół
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
 
 ## Version 21.08
 
@@ -208,7 +213,6 @@ szybkiej zmiany ustawień syntezatora.
 ## Wersja 16.06
 
 * Pierwsza wersja stabilna.
-
 
 [[!tag dev stable]]
 

@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA compatibility: 2021.2 and beyond
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Comandos:
@@ -47,6 +47,11 @@ a esquerda ou para a direita para se mover entre as configurações do
 sintetizador e use dois dedos para cima e para baixo gestos para alterar os
 valores. estes gestos são semelhantes aos comandos de teclado das
 configurações dos sintetizadores.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
 
 ## Version 21.08
 
@@ -212,7 +217,6 @@ configurações dos sintetizadores.
 ## Versão 16.06
 
 * Versão inicial estável.
-
 
 [[!tag dev stable]]
 

@@ -2,11 +2,12 @@
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
-* NVDA兼容版本: 2020.3 或更高
+* NVDA compatibility: 2021.2 and beyond
 
 此插件为NVDA提供了额外的触摸屏手势。它还提供了一组手势，以便于浏览模式导航。
 
-注意：此插件需要在装有 Windows 8.1、10 或 11 的触摸屏计算机上运行 NVDA 2020.3 或更高版本。
+Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## 快捷键
 
@@ -31,6 +32,11 @@
 ## 语音合成器触摸模式设置
 
 您可以使用此模式快速更改合成器设置，例如选择语音和更改音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间移动，并使用两个手指向上和向下轻拂手势来更改值。这种手势反映了键盘上合成器设置响铃命令的手势。
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
 
 ## 版本21.08
 
@@ -146,7 +152,6 @@
 ## 版本16.06
 
 * 发布初始版本。
-
 
 [[!tag dev stable]]
 

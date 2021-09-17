@@ -2,12 +2,12 @@
 
 * Autor: Joseph Lee
 * Descărcați [versiunea stabilă][1]
-* NVDA compatibility: 2020.3 and beyond
+* NVDA compatibility: 2021.2 and beyond
 
 Acest supliment oferă gesturi adiționale de atingere a ecranului pentru
 NVDA. El de asemenea oferă un set de gesturi pentru o navigare mai ușoară.
 
-Note: this add-on requires NVDA 2020.3 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Comenzi
@@ -47,6 +47,11 @@ acest mod, utilizați glisarea cu două degete spre stânga sau spre dreapta
 pentru a vă deplasa între setările sintetizatorului și utilizați gesturile
 glisare cu două degete sus și jos pentru a modifica valorile. Aceste gesturi
 reflectă asta în comenzile setărilor sintezei pe tastatură.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
 
 ## Version 21.08
 
@@ -214,7 +219,6 @@ reflectă asta în comenzile setărilor sintezei pe tastatură.
 ## Versiunea 16.06
 
 * Versiunea stabilă inițială.
-
 
 [[!tag dev stable]]
 
