@@ -2,13 +2,13 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* NVDA compatibility: 2021.2 and beyond
+* Yhteensopivuus: NVDA 2021.2 ja uudemmat
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Huom: Tämä lisäosa edellyttää NVDA 2021.2:ta tai uudempaa ja
+kosketusnäyttötietokonetta, jossa on asennettuna Windows 8.1, 10 tai 11.
 
 ## Komennot
 
@@ -50,10 +50,10 @@ kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
 
-## Version 21.10
+## Versio 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* NVDA 2021.2 tai uudempi vaaditaan tähän lisäosaan vaikuttavien
+  NVDA-muutosten takia.
 
 ## Versio 21.08
 
