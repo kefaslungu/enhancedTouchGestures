@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* NVDA compatibility: 2021.2 and beyond
+* Compatibilidade com NVDA: 2021.2 e superiores
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Nota: este extra requer o NVDA 2021.2 ou posterior e a execução num
+computador com ecrã táctil com Windows 8.1, 10 ou 11.
 
 ## Comandos:
 
@@ -48,18 +48,18 @@ sintetizador e use dois dedos para cima e para baixo gestos para alterar os
 valores. estes gestos são semelhantes aos comandos de teclado das
 configurações dos sintetizadores.
 
-## Version 21.10
+## Versão 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* É necessário o NVDA 2021.2 ou posterior devido a alterações do NVDA que
+  afectam este extra.
 
-## Version 21.08
+## Versão 21.08
 
-* Initial support for Windows 11.
+* Suporte inicial para Windows 11.
 
-## Version 21.01
+## Versão 21.01
 
-* NVDA 2020.3 or later is required.
+* A Versão do NVDA 2020.3 ou posterior é necessária.
 * No Windows 10 Versão 1709 e posteriores, fazer um movimento de quatro
   dedos à esquerda irá alternar o ditado (Windows+H).
 * Remover o comando de alternância de suporte dedicado de interacção táctil
@@ -68,65 +68,71 @@ configurações dos sintetizadores.
   de configurações de interacção táctil do NVDA, um painel dedicado de
   definições de comandos Tácteis Melhorados foi removido.
 
-## Version 20.09
+## Versão 20.09
 
-* Removed ability to let NVDA turn off touch interaction for up to ten
-  seconds (touch command passthrough).
-* Removed coordinate announcement beep feature.
+* Removida a capacidade de deixar o NVDA desligar a interacção por toque
+  durante até dez segundos (passagem do comando por toque).
+* Função de bip de anúncio de coordenadas removido.
 
-## Version 20.07
+## Versão 20.07
 
-* Added a keyboard command to toggle touch interaction or enable/disable
-  touch passthrough (Control+Alt+NVDA+T).
-* As NVDA 2020.1 and later includes a touch command to perform right mouse
-  click (one finger tap and hold), the command has been removed from this
-  add-on. AS a result, NVDA 2020.1 or later is required.
-* The ability to let NVDA turn off touch interaction for up to ten seconds
-  (touch command passthrough) is deprecated. In the future this feature will
-  toggle touch interaction instead.
-* In NVDA development snapshots, due to touch interaction feature changes,
-  touch command passthrough feature and Enhanced Touch Gestures settings
-  panel will be disabled. The command used to enable touch command
-  passthrough will toggle touch interaction instead.
-* Coordinate announcement beep feature is deprecated and will be removed in
-  a future add-on release.
-* Coordinate announcement beep will not be heard while using touch keyboard.
-* NVDA will no longer appear to do nothing or play error tones while
-  exploring modern input facility such as emoji panel via touch.
-* NVDA will present an error message if touch keyboard cannot be activated
-  (four finger flick right).
+* Adicionado um comando de teclado para alternar a interacção por toque ou
+  activar/desactivar a passagem por toque (Control+Alt+NVDA+T).
+* Como o NVDA 2020.1 e posteriores incluem um comando táctil para executar
+  um clique direito do rato (um toque com um dedo e segurar), o comando foi
+  removido deste suplemento. Como resultado, o NVDA 2020.1 ou posterior é
+  necessário.
+* A capacidade de deixar o NVDA desligar a interacção por toque durante até
+  dez segundos (passagem do comando por toque) foi desactivada. No futuro,
+  esta característica irá alternar a interacção táctil em vez disso.
+* Em versões de desenvolvimento do NVDA, devido a alterações na
+  funcionalidade de interacção táctil, a funcionalidade de passagem de
+  comandos tácteis e o painel de definições de Gestos Tácteis Melhorados
+  serão desactivados. O comando utilizado para permitir a passagem de
+  comandos tácteis irá alternar a interacção táctil em vez disso.
+* A funcionalidade de anúcio de coordenadas por bip foi desactivada e será
+  removida num futuro lançamento de um novo extra
+* O sinal sonoro de anúncio de coordenadas não será ouvido durante a
+  utilização do teclado táctil.
+* O NVDA deixará de parecer não fazer nada ou de tocar os tons de erro
+  enquanto explora as modernas facilidades de entrada, tais como o painel
+  emoji através do toque.
+* O NVDA apresentará uma mensagem de erro se o teclado táctil não puder ser
+  activado (quatro dedos à direita).
 
-## Version 20.06
+## Versão 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Resolvidos vários problemas de estilo de codificação e potenciais bugs com
+  Flake8.
 
-## Version 20.04
+## Versão 20.04
 
-* Right mouse click gesture (one finger tap and hold) is now part of NVDA
-  2020.1.
+* O gesto de clique com o botão direito do rato (um toque com um dedo e
+  segurar) faz agora parte do NVDA 2020.1.
 
-## Version 20.01
+## Versão 20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* Requere o NVDA 2019.3 ou posterior.
+* O comando de alternância do suporte táctil (incluindo a passagem táctil)
+  deixará de funcionar se o suporte táctil for completamente desligado.
 
-## Version 19.11
+## Versão 19.11
 
-* Added input help messages for additional touch commands.
+* Adicionadas mensagens de ajuda de entrada para comandos tácteis
+  adicionais.
 
-## Version 19.09
+## Versão 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* O apoio táctil pode agora ser desactivado a partir de qualquer lugar, e
+  não apenas a partir de perfis que não o perfil normal.
 
-## Version 19.07
+## Versão 19.07
 
-* Internal changes to support future NVDA releases.
+* Alterações internas para suportar futuros lançamentos do NVDA.
 
-## Version 18.12
+## Versão 18.12
 
-* Internal changes to support future NVDA releases.
+* Alterações internas para suportar futuros lançamentos do NVDA.
 
 ## Versão 18.08
 
@@ -160,9 +166,9 @@ configurações dos sintetizadores.
 * Adicionada uma caixa de selecção oculta na caixa de diálogo Interacção por
   toque para desativar completamente o suporte por toque (disponível se
   outros perfis além do da configuração normal estiverem activos).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NVDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
+* Se estiver a usar o NVDA 2018.1 ou posteriores, a caixa de diálogo
+  interacções por toque será listada duas vezes no menu de preferências do
+  NVDA. O segundo item é o diálogo que vem com o add-on. 
 * No diálogo de interacção de toque para o extra, o modo de digitar toque
   não é mostrado se usar versões do NVDA posteriores à 2018.1.
 
@@ -202,13 +208,13 @@ configurações dos sintetizadores.
 * Devido às alterações feitas ao reproduzir as coordenadas do ecrã, o NVDA
   2017.1 ou posterior é necessário.
 
-##Version 17.03
+##Versão 17.03
 
 * Corrigido um problema em que o sinal sonoro de coordenadas não era
   reproduzido ou surgia um beep de erro em vez disso ao usar o NVDA 2017.1
   ou posterior.
 
-##Version 16.12
+##Versão 16.12
 
 * O modo Web Touch funciona no Microsoft Edge, no Microsoft Word e em outros
   onde o modo de navegação é usado.
