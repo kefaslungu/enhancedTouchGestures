@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2021.2 and beyond
+* NVDA-Kompatibilität: 2021.2 und neuer
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Hinweis: Diese Erweiterung erfordert NVDA 2021.2 oder neuer, das auf einem
+Computer mit Touchscreen unter Windows 8.1, 10 oder 11 ausgeführt wird.
 
 ## Befehle
 
@@ -51,8 +51,8 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 ## Version 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* NVDA 2021.2 oder neuer ist erforderlich, da die Änderungen diese
+  Erweiterung betreffen.
 
 ## Version 21.08
 
