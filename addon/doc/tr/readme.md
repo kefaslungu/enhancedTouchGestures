@@ -2,7 +2,7 @@
 
 * Yazar: Joseph Lee
 * [kararlı sürüm][1]ü indir
-* NVDA uyumluluğu: 2021.2 ve sonrası
+* NVDA compatibility: 2021.2 and later
 
 Bu eklenti NVDA'ya ek dokunma hareketleri ekler. Ayrıca tarama kipinde daha
 kolay dolaşım için ek hareketler sunar.

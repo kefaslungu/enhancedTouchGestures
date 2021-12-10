@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* NVDA compatibility: 2021.2 and beyond
+* NVDA compatibility: 2021.2 and later
 
 Este complemento fornece gestos adicionais para telas sensível ao toque no
 NVDA. Também provê um conjunto de gestos para uma navegabilidade mais fácil

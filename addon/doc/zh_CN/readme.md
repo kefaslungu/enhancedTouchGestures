@@ -2,7 +2,7 @@
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
-* NVDA 兼容性： 2021.2 及以后
+* NVDA compatibility: 2021.2 and later
 
 此插件为 NVDA 提供了更多的触摸屏支持手势。其中包括一组浏览模式导航手势。
 
