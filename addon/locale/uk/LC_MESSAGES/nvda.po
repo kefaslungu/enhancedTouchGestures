@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the enhancedTouchGestures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enhancedTouchGestures 21.01\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2021-02-19 05:15+0000\n"
+"PO-Revision-Date: 2021-12-12 11:11+0200\n"
+"Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Неможливо активувати сенсорну клавіатуру"
+
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr "Диктування підтримується на Windows 10 версії 1709 або пізніших"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+msgid "Enhanced Touch Gestures"
+msgstr "Розширення сенсорних жестів"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"A suite of additional touch commands, including navigation and help "
+"commands.\n"
+"\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA "
+"2017.4 or later installed."
+msgstr ""
+"Набір додаткових жестових команд, включно з командами навігації й "
+"допомоги.\n"
+"\tВимагає комп’ютера з увімкненим сенсорним екраном на Windows 8.1 або "
+"пізнішою з встановленою NVDA 2017.4 або пізнішою."

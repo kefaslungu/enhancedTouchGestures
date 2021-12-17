@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* NVDA compatibility: 2021.2 and later
+* Compatibilidade com NVDA: 2021.2 e posteriores
 
 Este complemento fornece gestos adicionais para telas sensível ao toque no
 NVDA. Também provê um conjunto de gestos para uma navegabilidade mais fácil
 no modo de navegação.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Nota: este complemento requer o NVDA 2021.2 ou posterior executando num
+computador com tela de toque com Windows 8.1, 10 ou 11.
 
 ## Comandos
 
@@ -47,14 +47,14 @@ dedos à esquerda ou à direita para mover entre as opções do sintetizador e
 deslize com dois dedos acima e abaixo para mudar valores. Esses gestos
 espelham os comandos do anel de opções do sintetizador pelo teclado.
 
-## Version 21.10
+## Versão 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* O NVDA 2021.2 ou posterior é necessário devido a mudanças no NVDA que
+  afetam este complemento.
 
-## Version 21.08
+## Versão 21.08
 
-* Initial support for Windows 11.
+* Suporte inicial para Windows 11.
 
 ## Versão 21.01
 
