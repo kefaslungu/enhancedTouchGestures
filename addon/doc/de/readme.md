@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2021.2 and later
+* NVDA-Kompatibilität: 2021.3 und neuer
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.

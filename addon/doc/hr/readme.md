@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2021.2 and later
+* NVDA compatibility: 2021.3 and later
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u

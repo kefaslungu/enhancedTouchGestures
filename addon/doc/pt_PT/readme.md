@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Baixar [versão estável][1]
-* NVDA compatibility: 2021.2 and later
+* NVDA compatibility: 2021.3 and later
 
 Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
