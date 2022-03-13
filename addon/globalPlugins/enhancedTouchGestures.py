@@ -33,12 +33,6 @@ class TouchKey(UIA):
 		return states
 
 
-# Security: disable the global plugin altogether in secure mode.
-def disableInSecureMode(cls):
-	return globalPluginHandler.GlobalPlugin if globalVars.appArgs.secure else cls
-
-
-@disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Set up the touch environment for the add-on.
