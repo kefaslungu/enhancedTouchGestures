@@ -8,7 +8,7 @@ Note: I (Joseph Lee) am looking for people who will maintain Enhanced Touch Gest
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2021.3 or later running on a touchscreen computer with Windows 8.1, 10 or 11. Also, this add-on is not intended to be used in secure screens.
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen computer with Windows 8.1, 10 or 11.
 
 ## Commands
 
@@ -37,7 +37,6 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 ## Version 22.03
 
 * NVDA 2021.3 or later is required.
-* To improve security, add-on commands cannot be performed if NVDA is running in secure mode.
 
 ## Version 21.10
 
