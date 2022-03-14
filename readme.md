@@ -37,6 +37,7 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 ## Version 22.03
 
 * NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 
