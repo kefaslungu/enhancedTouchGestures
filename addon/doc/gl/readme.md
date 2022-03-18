@@ -8,8 +8,8 @@ Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
 exploración.
 
-Nota: este complemento require do NVDA 2021.2 ou posterior executándose nun
-computador con pantalla táctil co Windows 8.1, 10 ou 11.
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Ordes
 
@@ -47,6 +47,12 @@ desprazamento con dous dedos á esquerda e aá dereita para te mover entre
 opcións do sintetizador e utiliza os xestos de desprazar dous dedos cara
 arriba e cara abaixo para cambiar os valores. Estos xestos refrexan as ordes
 do grupo de opcións do sintetizador no teclado.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Versión 21.10
 

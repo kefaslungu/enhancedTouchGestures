@@ -7,7 +7,7 @@
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Polecenia
@@ -45,6 +45,12 @@ wybrać głos, albo zmienić głośność. Przesuń dwoma palcami w lewo lub pra
 aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dół
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 

@@ -7,7 +7,7 @@
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità navigazione.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Comandi
@@ -49,6 +49,12 @@ o destra per spostarsi tra le impostazioni del sintetizzatore e utilizzare
 il flick con due dita in alto o in basso per cambiare i valori. Questi gesti
 rispecchiano quelli per modificare al volo le impostazioni sintetizzatore da
 tastiera.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 

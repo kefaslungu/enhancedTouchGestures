@@ -7,7 +7,7 @@
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Kommandoer
@@ -47,6 +47,12 @@ du svirpe til højre eller venstre med to fingre for at flytte mellem de
 forskellige indstillinger for talesyntesen. Svirp op og ned for at ændre den
 valgte indstilling. Disse bevægelser svarer til tastaturkommandoerne til
 ringen for talesynteseindstillinger.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 

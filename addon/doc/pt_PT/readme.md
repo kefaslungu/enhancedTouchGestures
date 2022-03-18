@@ -8,8 +8,8 @@ Este extra fornece comandos de ecrã sensível ao toque adicionais para o
 NVDA. Também fornece um conjunto de comandos para uma navegação mais fácil
 no modo de navegação.
 
-Nota: este extra requer o NVDA 2021.2 ou posterior e a execução num
-computador com ecrã táctil com Windows 8.1, 10 ou 11.
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Comandos:
 
@@ -47,6 +47,12 @@ a esquerda ou para a direita para se mover entre as configurações do
 sintetizador e use dois dedos para cima e para baixo gestos para alterar os
 valores. estes gestos são semelhantes aos comandos de teclado das
 configurações dos sintetizadores.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Versão 21.10
 

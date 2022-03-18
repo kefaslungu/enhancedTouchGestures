@@ -7,8 +7,8 @@
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Hinweis: Diese Erweiterung erfordert NVDA 2021.2 oder neuer, das auf einem
-Computer mit Touchscreen unter Windows 8.1, 10 oder 11 ausgeführt wird.
+Hinweis: Diese Erweiterung benötigt NVDA 2021.3 oder neuer auf einem Gerät
+mit Touchscreen unter Windows 10 oder 11.
 
 ## Befehle
 
@@ -48,6 +48,12 @@ wechseln, streichen Sie mit 2 Fingern nach links oder rechts. Um eine
 Einstellung zu ändern, streichen Sie mit 2 Fingern nach oben oder
 unten. Diese Gesten ähneln den Tastenkombinationen für Einstellungen im
 Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
+
+## Version 22.03
+
+* NVDA 2021.3 oder neuer ist erforderlich.
+* Beim Versuch, das Add-on unter Windows 7 und 8/8.1 zu installieren, wird
+  eine Warnung angezeigt.
 
 ## Version 21.10
 

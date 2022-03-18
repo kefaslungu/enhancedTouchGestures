@@ -8,7 +8,7 @@ Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
 modusu čitanja.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Naredbe
@@ -47,6 +47,12 @@ odabira glasa ili promjene glasnoće. Klizanjem s dva prsta u lijevo ili
 desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 

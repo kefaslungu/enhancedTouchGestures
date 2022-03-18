@@ -7,8 +7,8 @@
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Huom: Tämä lisäosa edellyttää NVDA 2021.2:ta tai uudempaa ja
-kosketusnäyttötietokonetta, jossa on asennettuna Windows 8.1, 10 tai 11.
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
+computer with Windows 8.1, 10 or 11.
 
 ## Komennot
 
@@ -49,6 +49,12 @@ sormen pyyhkäisyä vasemmalle tai oikealle siirtyäksesi asetusten välillä ja
 kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Versio 21.10
 

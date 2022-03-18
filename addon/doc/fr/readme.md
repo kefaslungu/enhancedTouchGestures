@@ -8,7 +8,7 @@ Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note: this add-on requires NVDA 2021.2 or later running on a touchscreen
+Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
 computer with Windows 8.1, 10 or 11.
 
 ## Commandes
@@ -49,6 +49,12 @@ mode, glisser vers la gauche ou vers la droite deux doigts pour se déplacer
 entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
+
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 

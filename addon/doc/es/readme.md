@@ -8,7 +8,7 @@ Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
 exploración.
 
-Nota: este complemento requiere de NVDA 2021.2 o posterior ejecutándose en
+Nota: este complemento requiere de NVDA 2021.3 o posterior ejecutándose en
 un ordenador con pantalla táctil con Windows 8.1, 10 o 11.
 
 ## Órdenes
@@ -49,6 +49,12 @@ derecha para moverte entre opciones del sintetizador y utiliza gestos de
 deslizamiento de dos dedos arriba y abajo para cambiar los valores. Estos
 gestos se reflejan en las órdenes del grupo de opciones del sintetizador del
 teclado.
+
+## Versión 22.03
+
+* Se requiere NVDA 2021.3 o posterior.
+* Se mostrará un mensaje de aviso al intentar instalar el complemento en
+  Windows 7, 8 y 8.1.
 
 ## Versión 21.10
 
