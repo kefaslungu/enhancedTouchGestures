@@ -39,7 +39,7 @@ addon_info = {
 	"addon_lastTestedNVDAVersion": "2022.1",
 	# Minimum Windows version supported
 	# Note: not to be included in the manifest, kept here to remind people about touch support requirement.
-	"addon_minimumWindowsVersion": "6.3.9600",
+	"addon_minimumWindowsVersion": "10.0.10240",
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!
@@ -55,7 +55,10 @@ addon_info = {
 # pythonSources = ["addon/globalPlugins/*.py"]
 # For more information on SCons Glob expressions please take a look at:
 # https://scons.org/doc/production/HTML/scons-user/apd.html
-pythonSources = ["addon/globalPlugins/enhancedTouchGestures.py"]
+pythonSources = [
+	"addon/*.py",
+	"addon/globalPlugins/enhancedTouchGestures.py"
+]
 
 # Files that contain strings for translation. Usually your python sources
 i18nSources = pythonSources + ["buildVars.py"]
