@@ -2,14 +2,15 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2021.3 and later
+* NVDA kompatibilnost: 2021.3 i novije verzije
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
 modusu čitanja.
 
-Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Napomena: Dodatak zahtijeva NVDA 2021.3 ili noviju verziju, instaliranu na
+računalu koje posjeduje ekran osjetljiv na dodir s instaliranim sustavom
+Windows 8.1, 10 ili 11.
 
 ## Naredbe
 
@@ -18,8 +19,8 @@ computer with Windows 8.1, 10 or 11.
 * Dodir s četiri prsta: uključi ili isključi modus pomoći tijekom unosa.
 * Klizanje s četiri prsta u desno: uključi ili isključi dodirnu tastaturu
   (obično je uključuje).
-* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
-  1709 or later).
+* Klizanje s četiri prsta u desno: uključi ili isključi diktiranje
+  (Windows+H; Windows 10 verzija 1709 ili novija).
 
 ### Objektni modus
 
@@ -48,24 +49,24 @@ desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
 
-## Version 22.03
+## Verzija 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* Zahtijeva NVDA 2021.3 ili noviju verziju.
+* Prikazat će se poruka upozorenja kad pokušaš instalirati dodatak na
+  Windows 7, 8 i 8.1.
 
-## Version 21.10
+## Verzija 21.10
 
 * NVDA 2021.2 or later is required due to changes to NVDA that affects this
   add-on.
 
-## Version 21.08
+## Verzija 21.08
 
-* Initial support for Windows 11.
+* Izvorna podrška za Windows 11.
 
-## Version 21.01
+## Verzija 21.01
 
-* NVDA 2020.3 or later is required.
+* Zahtijeva NVDA 2020.3 ili noviju verziju.
 * On Windows 10 Version 1709 and later, doing a four finger flick left will
   toggle dictation (Windows+H).
 * Remove dedicated touch interaction support toggle command from the add-on.
@@ -209,13 +210,13 @@ tipkovnice.
 * Zbog promjena u reproduciranju koordinata ekrana, zahtijeva NVDA verziju
   2017.1 ili noviju.
 
-##Version 17.03
+##Verzija 17.03
 
 * Riješen problem gdje se pri izvještavanju koordinata nije čuo zvuk ili se
   pojavljivao zvuk pogreške tijekom korištenja NVDA verzije 2017.1 ili
   novije.
 
-##Version 16.12
+##Verzija 16.12
 
 * Dodirni modus za web radi u programu Microsoft Edge, Microsoft Word i
   drugdje gdje je moguće koristiti modus pretraživanja.
