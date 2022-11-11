@@ -1,14 +1,14 @@
-# Udvidede berøringsbevægelser) #
+# Udvidede berøringsfunktioner) #
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA compatibility: 2021.3 and later
+* NVDA-kompatibilitet: 2021.3 og nyere
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
 
-Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Bemærk: denne tilføjelse kræver, at NVDA 2021.3 eller nyere kører på en
+computer med touchskærm kørende Windows 8.1, 10 eller 11.
 
 ## Kommandoer
 
@@ -50,14 +50,14 @@ ringen for talesynteseindstillinger.
 
 ## Version 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* NVDA 2021.3 eller nyere er påkrævet.
+* En advarselsmeddelelse vil blive vist, når du forsøger at installere
+  tilføjelsen på Windows 7, 8 og 8.1.
 
 ## Version 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* NVDA 2021.2 eller nyere er påkrævet på grund af ændringer til NVDA, der
+  påvirker denne tilføjelse.
 
 ## Version 21.08
 
