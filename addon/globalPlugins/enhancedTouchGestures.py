@@ -35,6 +35,8 @@ class TouchKey(UIA):
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
+	# Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
+	scriptCategory = _("Enhanced Touch Gestures")
 	# Set up the touch environment for the add-on.
 	origAvailTouchModes = len(touchHandler.availableTouchModes) + 1
 
