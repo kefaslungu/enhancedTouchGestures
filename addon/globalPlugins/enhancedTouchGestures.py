@@ -208,7 +208,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				self.browseModeCommands[self.webBrowseMode - 1][1](obj, gesture)
 
-	@scriptHandler.script(gesture="ts:4finger_flickRight")
+	@scriptHandler.script(
+		# Translators: input help message for Enhanced touch Gestures command.
+		description=_("Toggles touch keyboard"),
+		gesture="ts:4finger_flickRight"
+	)
 	def script_touchKeyboardEnable(self, gesture):
 		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
 		keyboardButtonHwnd = windowUtils.findDescendantWindow(
@@ -222,7 +226,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message shown when touch keyboard button is not found.
 			ui.message(_("Cannot activate touch keyboard"))
 
-	@scriptHandler.script(gesture="ts:4finger_flickLeft")
+	@scriptHandler.script(
+		# Translators: input help message for Enhanced touch Gestures command.
+		description=_("Toggles voice dictation"),
+		gesture="ts:4finger_flickLeft"
+	)
 	def script_win10Dictation(self, gesture):
 		# Press Windows+H on Windows 10 Version 1709 (Fall Creators Update) and later.
 		import winVersion
