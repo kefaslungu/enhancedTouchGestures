@@ -9,7 +9,6 @@ import touchHandler
 import scriptHandler
 import ui
 from globalCommands import commands
-import globalVars
 import browseMode
 import api
 import winUser
@@ -23,6 +22,7 @@ import wx
 from logHandler import log
 import addonHandler
 addonHandler.initTranslation()
+
 
 # Touch keyboard enhancements
 class TouchKey(UIA):
