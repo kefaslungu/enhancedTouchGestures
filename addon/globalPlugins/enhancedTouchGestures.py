@@ -21,6 +21,8 @@ from NVDAObjects.UIA import UIA
 import controlTypes
 import wx
 from logHandler import log
+import addonHandler
+addonHandler.initTranslation()
 
 # Touch keyboard enhancements
 class TouchKey(UIA):
