@@ -20,7 +20,7 @@ from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 from NVDAObjects.UIA import UIA
 import controlTypes
 import wx
-
+from logHandler import log
 
 # Touch keyboard enhancements
 class TouchKey(UIA):
@@ -47,7 +47,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Notify if touch support is off.
 		# This is useful if using NVDA on a shared computer.
 		if not config.conf["touch"]["enabled"]:
-			self.etsDebugOutput("etouch: touch support disabled from NVDA")
+			log.debug("etouch: touch support disabled from NVDA")
 			tones.beep(380, 100)
 			wx.CallAfter(ui.message, "Touch interaction support is disabled")
 		# Synth settings ring layer.
@@ -83,13 +83,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						for i in range(0, curAvailTouchModes - self.origAvailTouchModes):
 							touchHandler.availableTouchModes.pop()
 		nextHandler()
-
-	# Debugging.
-
-	def etsDebugOutput(self, msg):
-		if globalVars.appArgs.debugLogging:
-			from logHandler import log
-			log.debug(msg)
 
 	# Global commands: additional touch commands available everywhere.
 
@@ -148,7 +141,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_nextWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
-		self.etsDebugOutput(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
+		log.debug(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(
 		description="Selects the previous web navigation element.",
@@ -157,7 +150,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_prevWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
-		self.etsDebugOutput(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
+		log.debug(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	# The actual navigation gestures:
 	# Look up the needed commands for readability purposes.
