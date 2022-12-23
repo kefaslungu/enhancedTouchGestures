@@ -2,11 +2,12 @@
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
-* NVDA 兼容性：2021.3 及更高版本
+* NVDA compatibility: 2022.3 and later
 
 此插件为 NVDA 提供了更多的触摸屏支持手势。其中包括一组浏览模式导航手势。
 
-注意：此插件需要在具备触摸屏的 Windows 8.1、10 或 11 的计算机上运行，并且需要 NVDA 2021.3 或更高版本。
+Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
+computer with Windows 10 or 11.
 
 ## 命令
 
@@ -32,6 +33,14 @@ Web模式，可以使用3指点击。在该模式下，用一个手指向上或�
 ## 语音设置模式
 
 您可以在此模式下快速更改语音合成器设置，例如选择语音和调节音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间切换，然后使用两个手指向上和向下清扫来更改相应设置的值。该手势对应于键盘上的语音循环切换。
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
+* It is possible to reassign touch keyboard and dictation toggle commands
+  from input gestures dialog under Enhanced Touch Gestures category.
 
 ## 版本 22.03
 

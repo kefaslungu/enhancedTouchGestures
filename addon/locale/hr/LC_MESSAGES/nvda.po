@@ -24,26 +24,36 @@ msgid ""
 "You are using an older version of Windows. This add-on requires Windows 10 "
 "or later."
 msgstr ""
-"Koristiš stariju verziju Windows sustava. Ovaj dodatak zahtijeva Windows "
-"10 ili noviju verziju."
+"Koristiš stariju verziju Windows sustava. Ovaj dodatak zahtijeva Windows 10 "
+"ili noviju verziju."
 
 #. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
 msgid "Old Windows version"
 msgstr "Stara Windows verzija"
 
-#. Translators: message shown when touch keyboard button is not found.
-msgid "Cannot activate touch keyboard"
-msgstr "Nije moguće aktivirati dodirnu tipkovnicu"
-
-#. Translators: message shown when dictation command is unavailable.
-msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr "Diktiranje je podržano za Windows 10 verzije 1709 ili novije"
-
+#. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Dodatne dodirne geste"
+
+#. Translators: input help message for Enhanced touch Gestures command.
+#, fuzzy
+msgid "Toggles touch keyboard"
+msgstr "Nije moguće aktivirati dodirnu tipkovnicu"
+
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Nije moguće aktivirati dodirnu tipkovnicu"
+
+#. Translators: input help message for Enhanced touch Gestures command.
+msgid "Toggles voice dictation"
+msgstr ""
+
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr "Diktiranje je podržano za Windows 10 verzije 1709 ili novije"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager

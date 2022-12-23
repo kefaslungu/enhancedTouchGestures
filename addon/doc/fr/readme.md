@@ -2,14 +2,14 @@
 
 * Auteurr : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2021.3 and later
+* NVDA compatibility: 2022.3 and later
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
+computer with Windows 10 or 11.
 
 ## Commandes
 
@@ -49,6 +49,14 @@ mode, glisser vers la gauche ou vers la droite deux doigts pour se déplacer
 entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
+* It is possible to reassign touch keyboard and dictation toggle commands
+  from input gestures dialog under Enhanced Touch Gestures category.
 
 ## Version 22.03
 

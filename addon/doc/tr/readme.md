@@ -2,13 +2,13 @@
 
 * Yazar: Joseph Lee
 * [kararlı sürüm][1]ü indir
-* NVDA uyumluluğu: 2021.3 ve sonrası
+* NVDA compatibility: 2022.3 and later
 
 Bu eklenti NVDA'ya ek dokunma hareketleri ekler. Ayrıca tarama kipinde daha
 kolay dolaşım için ek hareketler sunar.
 
-Not: Bu eklenti, Windows 8.1, 10 veya 11 ile dokunmatik ekranlı bir
-bilgisayarda çalışan NVDA 2021.3 veya sonraki bir sürümünü gerektirir.
+Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
+computer with Windows 10 or 11.
 
 ## Hareketler
 
@@ -46,6 +46,14 @@ kullanabilirsiniz. İki parmakla sola veya sağa fiske yaparak sentezleyici
 ayarları arasında dolaşabilir, iki parmakla yukarı veya aşağı fiske yaparak
 ayarları değiştirebilirsiniz. Bu hareketler klavyedeki hızlı sentezleyici
 ayarlarını dokunmatik ekrana aktarır.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
+* It is possible to reassign touch keyboard and dictation toggle commands
+  from input gestures dialog under Enhanced Touch Gestures category.
 
 ## Sürüm 22.03
 

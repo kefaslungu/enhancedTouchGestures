@@ -29,19 +29,29 @@ msgstr ""
 msgid "Old Windows version"
 msgstr "Стара версия на Windows"
 
-#. Translators: message shown when touch keyboard button is not found.
-msgid "Cannot activate touch keyboard"
-msgstr "Не може да се задейства сензорната клавиатура"
-
-#. Translators: message shown when dictation command is unavailable.
-msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr "Гласовото въвеждане се поддържа в Windows 10 версия 1709 или по-нови"
-
+#. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Подобрени сензорни жестове"
+
+#. Translators: input help message for Enhanced touch Gestures command.
+#, fuzzy
+msgid "Toggles touch keyboard"
+msgstr "Не може да се задейства сензорната клавиатура"
+
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Не може да се задейства сензорната клавиатура"
+
+#. Translators: input help message for Enhanced touch Gestures command.
+msgid "Toggles voice dictation"
+msgstr ""
+
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr "Гласовото въвеждане се поддържа в Windows 10 версия 1709 или по-нови"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager

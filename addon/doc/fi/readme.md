@@ -2,13 +2,13 @@
 
 * Tekijä: Joseph Lee
 * Lataa [vakaa versio][1]
-* Yhteensopivuus: NVDA 2021.3 ja uudemmat
+* Yhteensopivuus: NVDA 2022.3 ja uudemmat
 
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Huom: Tämä lisäosa edellyttää NVDA 2021.3:ea tai uudempaa ja
-kosketusnäyttötietokonetta, jossa on asennettuna Windows 8.1, 10 tai 11.
+Huom: Tämä lisäosa edellyttää NVDA 2022.3:ea tai uudempaa ja
+kosketusnäyttötietokonetta, jossa on asennettuna Windows 10 tai 11.
 
 ## Komennot
 
@@ -49,6 +49,15 @@ sormen pyyhkäisyä vasemmalle tai oikealle siirtyäksesi asetusten välillä ja
 kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
+
+## Versio 23.01
+
+* Edellyttää NVDA 2022.3:ea tai uudempaa.
+* Windows 10 tai uudempi vaaditaan, koska Microsoft ei enää tue Windows
+  7:ää, 8:aa tai 8.1:tä tammikuusta 2023 alkaen.
+* Kosketusnäppäimistön ja sanelun tilanvaihtokomennot on mahdollista
+  uudelleenmäärittää Näppäinkomennot-valintaikkunan Laajennetut
+  kosketuseleet -kategoriasta.
 
 ## Versio 22.03
 

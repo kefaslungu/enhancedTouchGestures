@@ -2,13 +2,13 @@
 
 * Forfatter: Joseph Lee
 * Download [stabil version][1]
-* NVDA-kompatibilitet: 2021.3 og nyere
+* NVDA compatibility: 2022.3 and later
 
 Dette tilføjelsesprogram tilføjer ekstra berøringskommandoer til NVDA. Det
 giver et sæt bevægelser for lettere navigering i gennemsynstilstand.
 
-Bemærk: denne tilføjelse kræver, at NVDA 2021.3 eller nyere kører på en
-computer med touchskærm kørende Windows 8.1, 10 eller 11.
+Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
+computer with Windows 10 or 11.
 
 ## Kommandoer
 
@@ -47,6 +47,14 @@ du svirpe til højre eller venstre med to fingre for at flytte mellem de
 forskellige indstillinger for talesyntesen. Svirp op og ned for at ændre den
 valgte indstilling. Disse bevægelser svarer til tastaturkommandoerne til
 ringen for talesynteseindstillinger.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
+* It is possible to reassign touch keyboard and dictation toggle commands
+  from input gestures dialog under Enhanced Touch Gestures category.
 
 ## Version 22.03
 

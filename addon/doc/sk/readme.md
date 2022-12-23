@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Stiahnuť [stabilnú verziu][1]
-* NVDA compatibility: 2021.3 and later
+* NVDA compatibility: 2022.3 and later
 
 Poskytuje doplnkové dotykové gestá na ovládanie NVDA a tiež gestá pre prácu
 v režime prehliadania.
 
-Note: this add-on requires NVDA 2021.3 or later running on a touchscreen
-computer with Windows 8.1, 10 or 11.
+Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
+computer with Windows 10 or 11.
 
 ## Príkazy
 
@@ -41,6 +41,14 @@ Pomocou dotykových gest môžete rovnako ako z klávesnice okamžite upravovať
 nastavenia hlasového výstupu. Švihaním dvoma prstami vľavo a vpravo
 vyberiete parameter, ktorý chcete zmeniť. Švihaním dvoma prstami hore a dole
 následne upravujete hodnoty.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
+* It is possible to reassign touch keyboard and dictation toggle commands
+  from input gestures dialog under Enhanced Touch Gestures category.
 
 ## Version 22.03
 
