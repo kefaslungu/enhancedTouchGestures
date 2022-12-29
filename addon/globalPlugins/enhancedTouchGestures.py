@@ -46,12 +46,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
 		touchHandler.touchModeLabels["web"] = "web mode"
 
-	# Certain touch objects.
-	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
-		if isinstance(obj, UIA):
-			if obj.UIAElement.cachedClassName == "CRootKey":
-				clsList.insert(0, TouchKey)
-
 	# A few setup events please (mostly for web navigation):
 
 	def event_gainFocus(self, obj, nextHandler):
