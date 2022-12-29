@@ -16,8 +16,6 @@ import config
 import windowUtils
 import tones
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
-from NVDAObjects.UIA import UIA
-import controlTypes
 import wx
 from logHandler import log
 import addonHandler
