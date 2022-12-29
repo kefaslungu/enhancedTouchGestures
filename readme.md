@@ -8,7 +8,7 @@ Note: I (Joseph Lee) am looking for people who will maintain Enhanced Touch Gest
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2021.3 or later running on a touchscreen computer with Windows 10 or 11.
+Note: this add-on requires NVDA 2022.3 or later running on a touchscreen computer with Windows 10 or 11.
 
 ## Commands
 
@@ -33,6 +33,13 @@ This touch mode, available in browse mode, allows you to navigate the document b
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 8.1 is no longer supported by Microsoft as of January 2023.
+* It is possible to reassign touch keyboard and dictation toggle commands from input gestures dialog under Enhanced Touch Gestures category.
+* Removed read-only state workaround for touch keyboard keys as it is resolved in Windows 10.
 
 ## Version 22.03
 
