@@ -24,17 +24,6 @@ import addonHandler
 addonHandler.initTranslation()
 
 
-# Touch keyboard enhancements
-class TouchKey(UIA):
-
-	def _get_states(self):
-		# Same as NVDA Core issue 5178: suppress read-only state (reported by a user)
-		# Borrowed from Mozilla objects in NVDAObjects/IAccessible/Mozilla.py.
-		states = super(TouchKey, self).states
-		states.discard(controlTypes.State.READONLY)
-		return states
-
-
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
