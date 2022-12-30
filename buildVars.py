@@ -26,7 +26,7 @@ addon_info = {
 	"addon_description": _("""A suite of additional touch commands, including navigation and help commands.
 	Requires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."""),
 	# version
-	"addon_version": "22.03",
+	"addon_version": "23.01",
 	# Author(s)
 	"addon_author": "Joseph Lee <joseph.lee22590@gmail.com>",
 	# URL for the add-on documentation support
