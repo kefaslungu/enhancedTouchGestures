@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2020-12-11 23:27+0330\n"
+"PO-Revision-Date: 2022-12-26 21:47+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation team <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -17,19 +17,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.10\n"
 
-#. Translators: message shown when touch keyboard button is not found.
-msgid "Cannot activate touch keyboard"
-msgstr "نمیتوانم صفحه‌کلیدِ لمسی را فعال کنم"
+#. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
+msgid ""
+"You are using an older version of Windows. This add-on requires Windows 10 "
+"or later."
+msgstr ""
+"شما دارید از یک نسخه‌ی قدیمیِ ویندوز استفاده میکنید. این افزونه به ویندوز ۱۰ "
+"یا بالاتر نیاز دارد."
 
-#. Translators: message shown when dictation command is unavailable.
-msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr "تبدیلِ گفتار به نوشتار از ویندوز ۱۰، نگارش ۱۷۰۹ به بعد پشتیبانی میشود"
+#. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
+msgid "Old Windows version"
+msgstr "نسخه‌ی قدیمیِ ویندوز"
 
+#. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "فرمان‌های لمسیِ پیشرفته"
+
+#. Translators: input help message for Enhanced touch Gestures command.
+msgid "Toggles touch keyboard"
+msgstr "صفحه‌کلیدِ لمسی را فعال یا غیرفعال میکند."
+
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "نمیتوانم صفحه‌کلیدِ لمسی را فعال کنم"
+
+#. Translators: input help message for Enhanced touch Gestures command.
+msgid "Toggles voice dictation"
+msgstr "املای صوتی را فعال یا غیرفعال میکند."
+
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr "تبدیلِ گفتار به نوشتار از ویندوز ۱۰، نگارش ۱۷۰۹ به بعد پشتیبانی میشود"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager

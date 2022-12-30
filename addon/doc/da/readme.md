@@ -51,10 +51,12 @@ ringen for talesynteseindstillinger.
 ## Version 23.01
 
 * NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
+* Windows 10 or later is required as Windows 8.1 is no longer supported by
+  Microsoft as of January 2023.
 * It is possible to reassign touch keyboard and dictation toggle commands
   from input gestures dialog under Enhanced Touch Gestures category.
+* Removed read-only state workaround for touch keyboard keys as it is
+  resolved in Windows 10.
 
 ## Version 22.03
 

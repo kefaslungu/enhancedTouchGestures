@@ -53,11 +53,13 @@ teclado.
 ## Versión 23.01
 
 * Se requiere NVDA 2022.3 o posterior.
-* Se requiere Windows 10 o posterior, ya que Microsoft no soporta Windows 7,
-  8 y 8.1 a partir de enero de 2023.
+* Se requiere Windows 10 o posterior, ya que Microsoft no soporta Windows
+  8.1 a partir de enero de 2023.
 * Es posible reasignar las órdenes de conmutación de dictado y teclado
   táctil desde el diálogo Gestos de entrada, bajo la categoría Enhanced
   Touch Gestures.
+* Se ha eliminado la solución provisional de estado de sólo lectura de las
+  teclas del teclado táctil, ya que está resuelto en Windows 10.
 
 ## Versión 22.03
 

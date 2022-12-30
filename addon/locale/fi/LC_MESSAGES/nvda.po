@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2022-04-01 09:48+0200\n"
+"PO-Revision-Date: 2022-12-23 12:26+0200\n"
 "Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
@@ -39,9 +39,8 @@ msgid "Enhanced Touch Gestures"
 msgstr "Laajennetut kosketuseleet"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#, fuzzy
 msgid "Toggles touch keyboard"
-msgstr "Kosketusnäppäimistöä ei voi aktivoida"
+msgstr "Ottaa kosketusnäppäimistön käyttöön tai poistaa sen käytöstä"
 
 #. Translators: message shown when touch keyboard button is not found.
 msgid "Cannot activate touch keyboard"
@@ -49,7 +48,7 @@ msgstr "Kosketusnäppäimistöä ei voi aktivoida"
 
 #. Translators: input help message for Enhanced touch Gestures command.
 msgid "Toggles voice dictation"
-msgstr ""
+msgstr "Ottaa sanelun käyttöön tai poistaa sen käytöstä"
 
 #. Translators: message shown when dictation command is unavailable.
 msgid "Dictation is supported on Windows 10 Version 1709 or later"

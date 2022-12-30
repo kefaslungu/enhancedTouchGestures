@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2022-04-01 09:37+0200\n"
+"PO-Revision-Date: 2022-12-23 10:14+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Spanish translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
 msgid ""
@@ -37,9 +37,8 @@ msgid "Enhanced Touch Gestures"
 msgstr "Enhanced Touch Gestures"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#, fuzzy
 msgid "Toggles touch keyboard"
-msgstr "No se puede activar el teclado táctil"
+msgstr "Conmuta el teclado táctil"
 
 #. Translators: message shown when touch keyboard button is not found.
 msgid "Cannot activate touch keyboard"
@@ -47,7 +46,7 @@ msgstr "No se puede activar el teclado táctil"
 
 #. Translators: input help message for Enhanced touch Gestures command.
 msgid "Toggles voice dictation"
-msgstr ""
+msgstr "Conmuta el dictado por voz"
 
 #. Translators: message shown when dictation command is unavailable.
 msgid "Dictation is supported on Windows 10 Version 1709 or later"

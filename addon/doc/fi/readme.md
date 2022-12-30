@@ -54,10 +54,12 @@ komentoja.
 
 * Edellyttää NVDA 2022.3:ea tai uudempaa.
 * Windows 10 tai uudempi vaaditaan, koska Microsoft ei enää tue Windows
-  7:ää, 8:aa tai 8.1:tä tammikuusta 2023 alkaen.
+  8.1:tä tammikuusta 2023 alkaen.
 * Kosketusnäppäimistön ja sanelun tilanvaihtokomennot on mahdollista
   uudelleenmäärittää Näppäinkomennot-valintaikkunan Laajennetut
   kosketuseleet -kategoriasta.
+* Kosketusnäppäimistön näppäinten vain luku -tilan kiertotapa on poistettu,
+  koska se on ratkaistu Windows 10:ssä.
 
 ## Versio 22.03
 

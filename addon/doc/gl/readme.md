@@ -2,14 +2,14 @@
 
 * Autor: Joseph Lee
 * Descargar [versión estable][1]
-* NVDA compatibility: 2022.3 and later
+* Compatibilidade con NVDA: 2022.2 en diante
 
 Este complemento proporciona xestos táctiles adicionais para NVDA. Tamén
 proporciona un conxunto de xestos para unha mellor navegación do modo
 exploración.
 
-Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
-computer with Windows 10 or 11.
+Nota: este complemento require do NVDA 2022.3 ou posterior executándose nun
+computador con pantalla táctil con Windows 10 ou 11.
 
 ## Ordes
 
@@ -48,17 +48,20 @@ opcións do sintetizador e utiliza os xestos de desprazar dous dedos cara
 arriba e cara abaixo para cambiar os valores. Estos xestos refrexan as ordes
 do grupo de opcións do sintetizador no teclado.
 
-## Version 23.01
+## Versión 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
-* It is possible to reassign touch keyboard and dictation toggle commands
-  from input gestures dialog under Enhanced Touch Gestures category.
+* Require NVDA 2022.3 ou posterior.
+* Requírese Windows 10 ou posterior xa que Windows 7, 8, e 8.1 xa non se
+  soportan dende Microsoft dende xaneiro do 2023.
+* É posible reasignar as ordes de alternar o teclado táctil e o dictado
+  dende o diálogo de xestos de entrada baixo a categoría Enhanced Touch
+  Gestures.
+* Eliminado o método para superar o estado de só lectura para as teclas do
+  teclado táctil, xa que se resolveu en Windows 10.
 
 ## Versión 22.03
 
-* NVDA 2021.3 or later is required.
+* Require NVDA 2021.3 ou posterior.
 * Amosarase unha mensaxe de advertencia ao tentar instalar o complemento en
   Windows 7, 8, e 8.1.
 

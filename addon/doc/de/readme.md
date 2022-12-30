@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2022.3 and later
+* NVDA-Kompatibilität: 2022.3 und neuer
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
 
-Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
-computer with Windows 10 or 11.
+Hinweis: Diese Erweiterung benötigt NVDA 2022.3 oder neuer auf einem Gerät
+mit Touchscreen unter Windows 10 oder 11.
 
 ## Befehle
 
@@ -51,11 +51,14 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 ## Version 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
-* It is possible to reassign touch keyboard and dictation toggle commands
-  from input gestures dialog under Enhanced Touch Gestures category.
+* NVDA 2022.3 oder neuer ist erforderlich.
+* Windows 10 oder neuer ist erforderlich, da Windows 8.1 ab Januar 2023
+  nicht mehr von Microsoft unterstützt wird.
+* Es ist möglich, die Befehle für die Touch-Tastatur und die
+  Diktatumschaltung im Dialogfeld der Tastenbefehle unter der Kategorie
+  "Erweiterte Touch-Gesten" neu zuzuweisen.
+* Der Workaround für den schreibgeschützten Status von Touch-Tastatur-Tasten
+  wurde entfernt, da er in Windows 10 behoben ist.
 
 ## Version 22.03
 
