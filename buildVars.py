@@ -38,7 +38,7 @@ addon_info = {
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
 	"addon_minimumNVDAVersion": "2022.3",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2022.1",
+	"addon_lastTestedNVDAVersion": "2022.4",
 	# Minimum Windows version supported
 	# Note: not to be included in the manifest, kept here to remind people about touch support requirement.
 	"addon_minimumWindowsVersion": "10.0.10240",
