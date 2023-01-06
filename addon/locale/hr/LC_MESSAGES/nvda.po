@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2022-04-23 10:51+0200\n"
+"PO-Revision-Date: 2023-01-03 14:10+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: \n"
 "Language: hr\n"
@@ -19,17 +19,20 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.0\n"
 
-#. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
-msgid ""
-"You are using an older version of Windows. This add-on requires Windows 10 "
-"or later."
+#. Enhanced Touch Gestures requires Windows 10 or later.
+#. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
+#. Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
+msgid "Unsupported Windows release"
 msgstr ""
-"Koristiš stariju verziju Windows sustava. Ovaj dodatak zahtijeva Windows 10 "
-"ili noviju verziju."
 
-#. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
-msgid "Old Windows version"
-msgstr "Stara Windows verzija"
+#. Translators: Dialog text shown when trying to install the add-on on
+#. releases earlier than minimum supported release.
+#, python-brace-format
+msgid ""
+"You are using {releaseName} ({build}), a Windows release not supported by "
+"this add-on.\n"
+"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
+msgstr ""
 
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary, usually the user visible name of the addon.
@@ -39,9 +42,8 @@ msgid "Enhanced Touch Gestures"
 msgstr "Dodatne dodirne geste"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#, fuzzy
 msgid "Toggles touch keyboard"
-msgstr "Nije moguće aktivirati dodirnu tipkovnicu"
+msgstr "Uključuje i isključuje dodirnu tipkovnicu"
 
 #. Translators: message shown when touch keyboard button is not found.
 msgid "Cannot activate touch keyboard"
@@ -49,7 +51,7 @@ msgstr "Nije moguće aktivirati dodirnu tipkovnicu"
 
 #. Translators: input help message for Enhanced touch Gestures command.
 msgid "Toggles voice dictation"
-msgstr ""
+msgstr "Uključuje i isključuje diktiranje"
 
 #. Translators: message shown when dictation command is unavailable.
 msgid "Dictation is supported on Windows 10 Version 1709 or later"
@@ -67,3 +69,13 @@ msgstr ""
 "pomoć.\n"
 "\tPotrebno je računalo koje omogućuje rad dodirom i na kojem je instaliran "
 "sustav Windows 8.1 ili noviji i NVDA 2017.4 ili noviji."
+
+#~ msgid ""
+#~ "You are using an older version of Windows. This add-on requires Windows "
+#~ "10 or later."
+#~ msgstr ""
+#~ "Koristiš stariju verziju Windows sustava. Ovaj dodatak zahtijeva Windows "
+#~ "10 ili noviju verziju."
+
+#~ msgid "Old Windows version"
+#~ msgstr "Stara Windows verzija"

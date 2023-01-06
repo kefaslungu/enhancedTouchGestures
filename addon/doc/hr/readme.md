@@ -2,21 +2,22 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2022.3 and later
+* NVDA kompatibilnost: 2022.3 i novije verzije
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
 modusu čitanja.
 
-Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
-computer with Windows 10 or 11.
+Napomena: Ovaj dodatak zahtijeva NVDA 2022.3 ili noviju verziju koja se
+koristi na računalu s ekranom koji je osjetljiv na dodir, s instaliranim
+sustavom Windows 10 ili 11.
 
 ## Naredbe
 
 ### Svuda dostupne
 
 * Dodir s četiri prsta: uključi ili isključi modus pomoći tijekom unosa.
-* Klizanje s četiri prsta u desno: uključi ili isključi dodirnu tastaturu
+* Klizanje s četiri prsta u desno: uključi ili isključi dodirnu tipkovnicu
   (obično je uključuje).
 * Klizanje s četiri prsta u desno: uključi ili isključi diktiranje
   (Windows+H; Windows 10 verzija 1709 ili novija).
@@ -48,15 +49,16 @@ desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
 
-## Version 23.01
+## Verzija 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 8.1 is no longer supported by
-  Microsoft as of January 2023.
-* It is possible to reassign touch keyboard and dictation toggle commands
-  from input gestures dialog under Enhanced Touch Gestures category.
-* Removed read-only state workaround for touch keyboard keys as it is
-  resolved in Windows 10.
+* Zahtijeva NVDA 2022.3 ili noviju verziju.
+* Zahtijeva Windows 10 ili noviju verziju, jer od siječnja 2023. Microsoft
+  više ne pordržava Windows 8.1.
+* Moguće je ponovo dodijeliti dodirnu tipkovnicu i naredbe za prebacivanje
+  diktata u dijaloškom okviru za ulazne geste u kategoriji „Dodatne dodirne
+  geste”.
+* Uklonjeno je zaobilazno rješenje stanja samo-za-čitanje za tipke dodirne
+  tipkovnice budući da je to riješeno u sustavu Windows 10.
 
 ## Verzija 22.03
 
@@ -66,8 +68,8 @@ tipkovnice.
 
 ## Verzija 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* Zahtijeva NVDA 2021.2 ili noviju verziju zbog promjena u NVDA čitaču koje
+  utječu na ovaj dodatak.
 
 ## Verzija 21.08
 
