@@ -2,7 +2,7 @@
 
 * Autore: Joseph Lee
 * Scarica [versione stabile][1]
-* NVDA compatibility: 2022.3 and later
+* NVDA compatibility: 2022.4 and later
 
 Questo componente aggiuntivo fornisce gesti aggiuntivi per NVDA. Fornisce
 inoltre gesti che facilitano la modalità navigazione.
