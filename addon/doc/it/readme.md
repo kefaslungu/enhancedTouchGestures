@@ -50,6 +50,11 @@ il flick con due dita in alto o in basso per cambiare i valori. Questi gesti
 rispecchiano quelli per modificare al volo le impostazioni sintetizzatore da
 tastiera.
 
+## Version 23.02
+
+* NVDA 2022.4 or later is required.
+* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+
 ## Version 23.01
 
 * NVDA 2022.3 or later is required.

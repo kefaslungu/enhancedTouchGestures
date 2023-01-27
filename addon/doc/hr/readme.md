@@ -49,6 +49,11 @@ desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
 
+## Version 23.02
+
+* NVDA 2022.4 or later is required.
+* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+
 ## Verzija 23.01
 
 * Zahtijeva NVDA 2022.3 ili noviju verziju.

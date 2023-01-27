@@ -49,6 +49,11 @@ Einstellung zu ändern, streichen Sie mit 2 Fingern nach oben oder
 unten. Diese Gesten ähneln den Tastenkombinationen für Einstellungen im
 Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
+## Version 23.02
+
+* NVDA 2022.4 or later is required.
+* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+
 ## Version 23.01
 
 * NVDA 2022.3 oder neuer ist erforderlich.

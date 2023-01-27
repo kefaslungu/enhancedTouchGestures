@@ -50,6 +50,12 @@ kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
 
+## Versio 23.02
+
+* Edellyttää NVDA 2022.4:ää tai uudempaa.
+* Windows 10 21H2 (marraskuun 2021 päivitys/koontiversio 19044) tai uudempi
+  vaaditaan.
+
 ## Versio 23.01
 
 * Edellyttää NVDA 2022.3:ea tai uudempaa.

@@ -47,6 +47,11 @@ dedos à esquerda ou à direita para mover entre as opções do sintetizador e
 deslize com dois dedos acima e abaixo para mudar valores. Esses gestos
 espelham os comandos do anel de opções do sintetizador pelo teclado.
 
+## Version 23.02
+
+* NVDA 2022.4 or later is required.
+* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+
 ## Version 23.01
 
 * NVDA 2022.3 or later is required.
