@@ -169,4 +169,4 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 
 * Initial stable version.
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ets
+[1]: https://addons.nvda-project.org/files/get.php?file=enhancedTouchGestures
