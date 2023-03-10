@@ -255,4 +255,5 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ets
+[1]:
+https://addons.nvda-project.org/files/get.php?file=enhancedTouchGestures
