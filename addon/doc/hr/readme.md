@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2022.4 and later
+* NVDA kompatibilnost: 2022.4 i novije verzije
 
 Ovaj dodatak omogućuje dodatne dodirne geste na ekranu za dodir u NVDA
 čitaču. Ovaj dodatak također dodaje skup dodirnih gesti za lakše kretanje u
@@ -49,10 +49,11 @@ desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
 
-## Version 23.02
+## Verzija 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* Potrebna je NVDA verzija 2022.4 ili novija.
+* Potreban je sustav Windows 10 21H2 (aktualizirana verzija iz studenog
+  2021./izgradnja 19044) ili novija verzija.
 
 ## Verzija 23.01
 
