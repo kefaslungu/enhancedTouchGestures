@@ -1,14 +1,13 @@
 # Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2023 Joseph Lee, released under GPL.
-
+# Copyright 2013-2023 Joseph Lee, Kefas Lungu, released under GPL.
 # Implements needed improvements for various touchscreen gestures.
 
 import globalPluginHandler
 import touchHandler
 import scriptHandler
 import ui
-from globalCommands import commands
+from globalCommands import commands, GlobalCommands
 import browseMode
 import api
 import winUser
@@ -75,43 +74,71 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_reportCurrentFocus.__doc__,
-		gesture="ts(object):3finger_flickLeft"
+		gesture="ts:3finger_flickLeft"
 	)
 	def script_reportCurrentFocus(self, gesture):
 		commands.script_reportCurrentFocus(gesture)
 
 	@scriptHandler.script(
 		description=commands.script_title.__doc__,
-		gesture="ts(object):4finger_flickUp"
+		gesture="ts:4finger_flickUp"
 	)
 	def script_title(self, gesture):
 		commands.script_title(gesture)
 
 	@scriptHandler.script(
 		description=commands.script_reportStatusLine.__doc__,
-		gesture="ts(object):4finger_flickDown"
+		gesture="ts:4finger_flickDown"
 	)
 	def script_reportStatusLine(self, gesture):
 		commands.script_reportStatusLine(gesture)
 
 	@scriptHandler.script(
 		description=commands.script_speakForeground.__doc__,
-		gesture="ts(object):3finger_flickDown"
+		gesture="ts:3finger_flickDown"
 	)
 	def script_speakForeground(self, gesture):
 		commands.script_speakForeground(gesture)
 
 	@scriptHandler.script(
 		description=commands.script_navigatorObject_current.__doc__,
-		gesture="ts(object):3finger_flickRight"
+		gesture="ts:3finger_flickRight"
 	)
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
 
+	@scriptHandler.script(
+		description=commands.script_cycleAudioDuckingMode.__doc__,
+		gesture="ts:2finger_tap"
+	)
+	def script_audioDuckingMode(self, gesture):
+		commands.script_cycleAudioDuckingMode(gesture)
+
+	@scriptHandler.script(
+		description=commands.script_cycleSpeechSymbolLevel.__doc__,
+		gesture="ts:3finger_double_tap"
+	)
+	def script_speechSymbolLevel(self, gesture):
+		commands.script_cycleSpeechSymbolLevel(gesture)
+
+	@scriptHandler.script(
+		description=GlobalCommands.script_toggleProgressBarOutput.__doc__,
+		gesture="ts:tripple_tap"
+	)
+	def script_progressBarOutput(self, gesture):
+		GlobalCommands.script_toggleProgressBarOutput(self, gesture)
+
+	@scriptHandler.script(
+		description=GlobalCommands.script_quit.__doc__,
+		gesture="ts:2finger_tripple_tap"
+	)
+	def script_quitNvda(self, gesture):
+		GlobalCommands.script_quit(self, gesture)
+
 	# Web navigation:
 
 	# Web elements list:
-	webBrowseElements = ("normal", "Link", "Form field", "Heading", "Frame", "Table", "List", "Landmark")
+	webBrowseElements = ("Default", "Links", "Buttons", "Form fields", "Headings", "Frames", "Tables", "Lists", "Graphics", "Landmarks")
 	# The starting index for the web browse mode, which flicks through objects.
 	webBrowseMode = 0
 
@@ -143,6 +170,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			browseMode.BrowseModeTreeInterceptor.script_previousLink
 		),
 		(
+			browseMode.BrowseModeTreeInterceptor.script_nextButton,
+			browseMode.BrowseModeTreeInterceptor.script_previousButton
+		),
+		(
 			browseMode.BrowseModeTreeInterceptor.script_nextFormField,
 			browseMode.BrowseModeTreeInterceptor.script_previousFormField
 		),
@@ -161,6 +192,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextList,
 			browseMode.BrowseModeTreeInterceptor.script_previousList
+		),
+		(
+			browseMode.BrowseModeTreeInterceptor.script_nextGraphic,
+			browseMode.BrowseModeTreeInterceptor.script_previousGraphic
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextLandmark,
@@ -217,7 +252,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message shown when dictation command is unavailable.
 			ui.message(_("Dictation is supported on Windows 10 Version 1709 or later"))
 		else:
-			keyboardHandler.KeyboardInputGesture.fromName("windows+h").send()
+    			keyboardHandler.KeyboardInputGesture.fromName("windows+h").send()
 
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
