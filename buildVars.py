@@ -26,13 +26,13 @@ addon_info = {
 	"addon_description": _("""A suite of additional touch commands, including navigation and help commands.
 	Requires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."""),
 	# version
-	"addon_version": "23.04",
+	"addon_version": "23.06",
 	# Author(s)
-	"addon_author": "Joseph Lee <joseph.lee22590@gmail.com>",
+	"addon_author": "Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",
 	# URL for the add-on documentation support
-	"addon_url": "https://addons.nvda-project.org",
+	"addon_url": "https://github.com/kefaslungu/enhancedTouchGestures/blob/main/readme.md",
 	# URL for the add-on repository where the source code can be found
-	"addon_sourceURL": "https://github.com/josephsl/enhancedtouchgestures",
+	"addon_sourceURL": "https://github.com/kefaslungu/enhancedtouchGestures",
 	# Documentation file name
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
