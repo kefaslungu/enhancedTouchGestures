@@ -109,7 +109,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_cycleAudioDuckingMode.__doc__,
-		gesture="ts:2finger_tap"
+		gesture="ts:4finger_tap"
 	)
 	def script_audioDuckingMode(self, gesture):
 		commands.script_cycleAudioDuckingMode(gesture)

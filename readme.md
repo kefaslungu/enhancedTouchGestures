@@ -22,7 +22,7 @@ Note: this add-on requires NVDA 2022.3 or later running on a touchscreen compute
 * 3 finger flick right: report current navigator object.
 * 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
 * 2 finger tripple tap: Quit NVDA!.
-* 2 finger tap: Cycles through audio ducking modes.
+* 4 finger tap: Cycles through audio ducking modes.
 * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
 
 ## Web touch mode
@@ -34,13 +34,16 @@ Available web modes are: Default, Links, Buttons, Form fields, Headings, Frames,
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
 
+## Version 23.06.1
+* audio docking moved to 4 finger tap because of conflict with speech stops NVDA core command.
+
 ## Version 23.06
 * Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
 * All gestures in object mode are now available everywhere.
 * New gestures are now available.
   * 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
   * 2 finger tripple tap: Quit NVDA!.
-  * 2 finger tap: Cycles through audio ducking modes.
+  * 4 finger tap: Cycles through audio ducking modes.
   * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
 * In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
 * In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
