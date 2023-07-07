@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 21.01\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-02-19 05:15+0000\n"
-"PO-Revision-Date: 2023-06-25 16:33+0300\n"
+"PO-Revision-Date: 2023-07-01 09:16+0300\n"
 "Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
 "Language-Team: \n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. Enhanced Touch Gestures requires Windows 10 21H2 or later.
 #. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
 #. Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
 msgid "Unsupported Windows release"
-msgstr ""
+msgstr "Непідтримувана версія Windows"
 
 #. Translators: Dialog text shown when trying to install the add-on on
 #. releases earlier than minimum supported release.
@@ -31,6 +31,9 @@ msgid ""
 "this add-on.\n"
 "This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
 msgstr ""
+"Ви використовуєте {releaseName} ({build}), версію Windows, яку цей додаток "
+"не підтримує.\n"
+"Цей додаток вимагає {supportedReleaseName} ({supportedBuild}) чи пізнішу."
 
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary, usually the user visible name of the addon.
@@ -63,7 +66,8 @@ msgid ""
 "\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA "
 "2017.4 or later installed."
 msgstr ""
-"Набір додаткових жестових команд, включно з командами навігації й довідки.\n"
+"Набір додаткових жестових команд, включно з командами навігації й "
+"довідки.\n"
 "\tВимагає комп’ютера з увімкненим сенсорним екраном на Windows 8.1 або "
 "пізнішою з встановленою NVDA 2017.4 або пізнішою."
 
