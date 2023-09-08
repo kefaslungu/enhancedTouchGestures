@@ -58,7 +58,7 @@ ayarlarını dokunmatik ekrana aktarır.
 * NVDA 2022.3 veya üstü gereklidir.
 * Windows 8.1, Ocak 2023 itibarıyla artık Microsoft tarafından
   desteklenmediğinden Windows 10 veya sonraki sürümleri gereklidir.
-* girdi hareketleri iletişim kutusunda, Geliştirilmiş Dokunmatik Hareketler
+* Girdi hareketleri iletişim kutusunda, Geliştirilmiş Dokunmatik Hareketler
   kategorisi altındaki dokunmatik klavye ve dikte geçiş komutlarını yeniden
   atamak mümkündür.
 * Windows 10'da çözüldüğü için dokunmatik klavye tuşları için salt okunur
