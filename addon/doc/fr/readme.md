@@ -1,6 +1,6 @@
 # Enhanced Touch Gestures #
 
-* Auteurr : Joseph Lee
+* Auteur : Joseph Lee
 * Télécharger [version stable][1]
 * Compatibilité NVDA : 2022.4 et plus
 
