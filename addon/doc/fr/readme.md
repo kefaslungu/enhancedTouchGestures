@@ -1,15 +1,15 @@
 # Enhanced Touch Gestures #
 
-* Auteurr : Joseph Lee
+* Auteur : Joseph Lee
 * Télécharger [version stable][1]
-* NVDA compatibility: 2022.4 and later
+* Compatibilité NVDA : 2022.4 et plus
 
 Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
-computer with Windows 10 or 11.
+Note : Cette extension requiert NVDA 2022.3 ou une version ultérieure
+s'exécutant sur un ordinateur tactile avec Windows 10 ou 11.
 
 ## Commandes
 
@@ -18,8 +18,8 @@ computer with Windows 10 or 11.
 * Double tape 4 doigts : basculer en mode aide à la saisie.
 * Glisser vers la droite quatre doigts : basculer clavier tactile
   (habituellement activer celui-ci).
-* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
-  1709 or later).
+* Glisser vers la gauche quatre doigts : bascule de la dictée (Windows+H;
+  Windows 10 Version 1709 ou version ultérieure).
 
 ### Mode objet
 
@@ -52,103 +52,114 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 
 ## Version 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* NVDA 2022.4 ou version ultérieure est requis.
+* Windows 10 21H2 (November 2021 Update/build 19044) ou ultérieure est
+  requise.
 
 ## Version 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 8.1 is no longer supported by
-  Microsoft as of January 2023.
-* It is possible to reassign touch keyboard and dictation toggle commands
-  from input gestures dialog under Enhanced Touch Gestures category.
-* Removed read-only state workaround for touch keyboard keys as it is
-  resolved in Windows 10.
+* NVDA 2022.3 ou version ultérieure est requis.
+* Windows 10 ou ultérieure est requis car Windows 8.1 n'est plus pris en
+  charge par Microsoft en janvier 2023.
+* Il est possible de réassigner le clavier tactile et les commandes de
+  bascule de la dictée à partir du dialogue Gestes de commandes dans la
+  catégorie Enhanced Touch Gestures.
+* Suppression de solution de contournement en lecture seule pour les touches
+  de clavier tactile telles qu'elle est résolue dans Windows 10.
 
 ## Version 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* NVDA 2021.3 ou version ultérieure est requis.
+* Un message d'avertissement sera affiché lors de la tentative d'installer
+  l'extension sur Windows 7, 8 et 8.1.
 
 ## Version 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* NVDA 2021.2 ou version ultérieure est requis en raison de modifications de
+  NVDA qui affectent cette extension.
 
 ## Version 21.08
 
-* Initial support for Windows 11.
+* Prise en charge initiale de Windows 11.
 
 ## Version 21.01
 
-* NVDA 2020.3 or later is required.
-* On Windows 10 Version 1709 and later, doing a four finger flick left will
-  toggle dictation (Windows+H).
-* Remove dedicated touch interaction support toggle command from the add-on.
-* As touch interaction support can be toggled from NVDA's touch interaction
-  settings panel, a dedicated Enhanced Touch Gestures settings panel has
-  been removed.
+* NVDA 2020.3 ou version ultérieure est requis.
+* Sur Windows 10 Version 1709 et ultérieure, faire glisser vers la gauche
+  quatre doigts pour basculer la dictée (Windows+H).
+* Supprimer le basculment de la commande du support d'interaction tactile
+  dédiée à partir de l'extension.
+* Comme le support d'interaction tactile peut être basculé à partir du
+  panneau des paramètres d'interaction tactile de NVDA, un panneau de
+  paramètres Enhanced Touch Gestures dédié a été supprimé.
 
 ## Version 20.09
 
-* Removed ability to let NVDA turn off touch interaction for up to ten
-  seconds (touch command passthrough).
-* Removed coordinate announcement beep feature.
+* Supprimé la possibilité de laisser NVDA désactiver l'interaction tactile
+  pendant jusqu'à dix secondes (l'émulation de commande tactile).
+* Suppression de la fonctionnalité d'annonce des coordonnées par des bips.
 
 ## Version 20.07
 
-* Added a keyboard command to toggle touch interaction or enable/disable
-  touch passthrough (Control+Alt+NVDA+T).
-* As NVDA 2020.1 and later includes a touch command to perform right mouse
-  click (one finger tap and hold), the command has been removed from this
-  add-on. AS a result, NVDA 2020.1 or later is required.
-* The ability to let NVDA turn off touch interaction for up to ten seconds
-  (touch command passthrough) is deprecated. In the future this feature will
-  toggle touch interaction instead.
-* In NVDA development snapshots, due to touch interaction feature changes,
-  touch command passthrough feature and Enhanced Touch Gestures settings
-  panel will be disabled. The command used to enable touch command
-  passthrough will toggle touch interaction instead.
-* Coordinate announcement beep feature is deprecated and will be removed in
-  a future add-on release.
-* Coordinate announcement beep will not be heard while using touch keyboard.
-* NVDA will no longer appear to do nothing or play error tones while
-  exploring modern input facility such as emoji panel via touch.
-* NVDA will present an error message if touch keyboard cannot be activated
-  (four finger flick right).
+* Ajout d'une commande clavier pour basculer l'interaction tactile ou
+  activer / désactiver l'émulation tactile (Control+Alt+NVDA+T).
+* Comme NVDA 2020.1 et plus comprend une commande tactile pour effectuer un
+  clic droit souris (une tape un doigt en maintenant appuyé), la commande a
+  été supprimée de cette extension. Par conséquent, NVDA 2020.1 ou version
+  ultérieure est requis.
+* La possibilité de laisser NVDA désactiver l'interaction tactile pendant
+  jusqu'à dix secondes (l'émulation de commande  tactile) est obsolète. À
+  l'avenir, cette fonctionnalité basculera à la place l'interaction tactile.
+* Dans les versions snapshots de développement de NVDA en raison des
+  modifications des fonctionnalités d'interaction tactile, La fonctionnalité
+  d'émulation de commande  tactile et le panneau de paramètres Enhanced
+  Touch Gestures seront désactivés. La commande utilisée pour activer
+  l'émulation de commande  tactile pour basculer à la place l'interaction
+  tactile.
+* La fonctionnalité d'annonce des coordonnées par des bips est obsolète et
+  sera supprimée dans une future version de l'extension.
+* L'annonce de la coordonnée par des bips ne sera pas entendu lors de
+  l'utilisation du clavier tactile.
+* NVDA ne semblera plus ne rien faire ou jouer des tonalités d'erreur tout
+  en explorant l'installation de la saisie moderne telle que le panneau des
+  emojis via le tactile.
+* NVDA présentera un message d'erreur si le clavier tactile ne peut pas être
+  activé (glisser vers la droite quatre doigts).
 
 ## Version 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Résolu de nombreux problèmes de style de codage et des bogues potentiels
+  avec Flake8.
 
 ## Version 20.04
 
-* Right mouse click gesture (one finger tap and hold) is now part of NVDA
-  2020.1.
+* Le geste de clic droit souris (une tape un doigt en maintenant appuyé)
+  fait désormais partie de NVDA 2020.1.
 
 ## Version 20.01
 
-* NVDA 2019.3 or later is required.
-* Touch support toggle command (including touch passthrough) will no longer
-  function if touch support is turned off completely.
+* NVDA 2019.3 ou version ultérieure est requis.
+* La commande tactile de basculement (y compris l'émulation tactile) ne
+  fonctionnera plus si la prise en charge tactile est complètement
+  désactivée.
 
 ## Version 19.11
 
-* Added input help messages for additional touch commands.
+* Ajout des messages d'aide à la saisie pour les commandes tactiles
+  supplémentaires.
 
 ## Version 19.09
 
-* Touch support can now be disabled from everywhere, not just from profiles
-  other than normal profile.
+* La prise en charge tactile peut désormais être désactivée de partout, pas
+  seulement à partir de profils autres que le profil normal.
 
 ## Version 19.07
 
-* Internal changes to support future NVDA releases.
+* Modifications internes pour la prise en charge des futures versions NVDA.
 
 ## Version 18.12
 
-* Internal changes to support future NVDA releases.
+* Modifications internes pour la prise en charge des futures versions NVDA.
 
 ## Version 18.08
 
@@ -182,9 +193,9 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 * Ajout d'une case à cocher masquée dans le dialogue Interaction Tactile
   pour désactiver complètement le support tactile (disponible si des profils
   autres que la configuration normale sont actifs).
-* If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice under NVDA's preferences menu. The second item is the dialog that
-  comes with the add-on.
+* Si vous utilisez NVDA 2018.1 ou une version ultérieure le dialogue
+  Interaction Tactile apparaîtra deux fois sous le menu des préférences de
+  NVDA. Le deuxième élément est le dialogue accompagné de l'extension.
 * Dans le dialogue Interaction Tactile de l'extension, le mode frappe
   tactile n'est plus affiché si vous utilisez NVDA 2018.1 ou une version
   ultérieure.
@@ -243,5 +254,4 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 
 [[!tag dev stable]]
 
-[1]:
-https://addons.nvda-project.org/files/get.php?file=enhancedTouchGestures
+[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

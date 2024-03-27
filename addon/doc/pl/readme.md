@@ -2,13 +2,13 @@
 
 * Autor: Joseph Lee
 * Pobierz [wersja stabilna][1]
-* NVDA compatibility: 2022.4 and later
+* Zgodność z NVDA: 2022.4 i nowsze
 
 Ten dodatek udostępnia gesty dotykowe dla NVDA oraz zestaw specjalnych
 gestów do łatwiejszej nawigacji w trybie czytania.
 
-Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
-computer with Windows 10 or 11.
+Uwaga: ten dodatek wymaga NVDA 2022.3 lub nowszego działającego na
+komputerze z ekranem dotykowym i systemem Windows 10 lub 11.
 
 ## Polecenia
 
@@ -46,20 +46,22 @@ aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dó
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
 
-## Version 23.02
+## Wersja 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* Wymagana jest NVDA 2022.4 lub nowsza.
+* Wymagany jest system Windows 10 21H2 (aktualizacja z listopada 2021
+  r./kompilacja 19044) lub nowszy.
 
-## Version 23.01
+## Wersja 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 8.1 is no longer supported by
-  Microsoft as of January 2023.
-* It is possible to reassign touch keyboard and dictation toggle commands
-  from input gestures dialog under Enhanced Touch Gestures category.
-* Removed read-only state workaround for touch keyboard keys as it is
-  resolved in Windows 10.
+* Wymagana jest NVDA 2022.3 lub nowsza.
+* System Windows 10 lub nowszy jest wymagany, ponieważ system Windows 8.1
+  nie jest już obsługiwany przez firmę Microsoft od stycznia 2023 r.
+* Możliwe jest ponowne przypisanie klawiatury dotykowej i poleceń dyktowania
+  z okna dialogowego gestów wprowadzania w kategorii Ulepszone gesty
+  dotykowe.
+* Usunięto obejście stanu tylko do odczytu dla klawiatury dotykowej,
+  ponieważ jest ono rozwiązane w systemie Windows 10.
 
 ## Wersja 22.03
 
@@ -243,5 +245,4 @@ szybkiej zmiany ustawień syntezatora.
 
 [[!tag dev stable]]
 
-[1]:
-https://addons.nvda-project.org/files/get.php?file=enhancedTouchGestures
+[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

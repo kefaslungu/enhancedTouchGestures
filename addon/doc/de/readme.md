@@ -2,7 +2,7 @@
 
 * Autor: Joseph Lee
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2022.4 and later
+* NVDA-Kompatibilität: 2022.4 und neuer
 
 Diese Erweiterung führt zusätzliche Touchscreen-Gesten in NVDA ein. Neue
 Touchscreen-Gesten für den Lesemodus sind ebenfalls verfügbar.
@@ -51,8 +51,9 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 ## Version 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* NVDA 2022.4 oder neuer wird benötigt.
+* Windows 10 Version 21H2 (November 2021 Update bzw. Bbuild 19044) oder
+  neuer wird benötigt.
 
 ## Version 23.01
 
@@ -255,5 +256,4 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 [[!tag dev stable]]
 
-[1]:
-https://addons.nvda-project.org/files/get.php?file=enhancedTouchGestures
+[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures
