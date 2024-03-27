@@ -138,7 +138,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Web navigation:
 
 	# Web elements list:
-	webBrowseElements = ("Default", "Links", "Buttons", "Form fields", "Headings", "Frames", "Tables", "Lists", "Graphics", "Landmarks")
+	webBrowseElements = (
+		"Default",
+		"Links",
+		"Buttons",
+		"Form fields",
+		"Headings",
+		"Frames",
+		"Tables",
+		"Lists",
+		"Graphics",
+		"Landmarks"
+	)
 	# The starting index for the web browse mode, which flicks through objects.
 	webBrowseMode = 0
 
@@ -252,7 +263,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message shown when dictation command is unavailable.
 			ui.message(_("Dictation is supported on Windows 10 Version 1709 or later"))
 		else:
-    			keyboardHandler.KeyboardInputGesture.fromName("windows+h").send()
+			keyboardHandler.KeyboardInputGesture.fromName("windows+h").send()
 
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
