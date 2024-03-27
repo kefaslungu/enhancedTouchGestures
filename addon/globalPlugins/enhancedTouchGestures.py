@@ -1,6 +1,6 @@
 # Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2023 Joseph Lee, Kefas Lungu, released under GPL.
+# Copyright 2013-2024 Joseph Lee, Kefas Lungu, released under GPL.
 # Implements needed improvements for various touchscreen gestures.
 
 import globalPluginHandler
@@ -29,7 +29,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	origAvailTouchModes = len(touchHandler.availableTouchModes) + 1
 
 	def __init__(self):
-		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		super().__init__()
 		if not touchHandler.touchSupported():
 			return
 		# Notify if touch support is off.
