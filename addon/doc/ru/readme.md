@@ -2,24 +2,24 @@
 
 * Автор: Joseph Lee
 * Загрузить [стабильную версию][1]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2022.4 and later
 
 Это дополнение предоставляет дополнительные жесты сенсорного экрана для
 NVDA. Также, оно предоставляет набор жестов для облегчения навигации режима
 обзора.
 
-Note: this add-on requires NVDA 2019.3 or later running on a touchscreen
-computer with Windows 8.1 or 10.
+Примечание: этому дополнению требуется NVDA 2022.3 или позднее, запущенной
+на сенсорном компьютере с Windows 10 или 11.
 
 ## Команды
 
 ### Доступно везде
 
 * Двойное касание четырьмя пальцами: включить режим справки по вводу.
-* Касание с последующим удержанием: выполнить щелчок правой кнопки мыши на
-  объекте под вашим пальцем.
 * Смахивание четырьмя пальцами вправо: Изменить состояние экранной
   клавиатуры (обычно, вызывает ее)
+* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version
+  1709 or later).
 
 ### Объектный режим
 
@@ -49,56 +49,118 @@ computer with Windows 8.1 or 10.
 вверх и вниз, чтобы изменить значения. Это зеркало жестов настроек
 клавиатурных команд кольца синтезатора.
 
-## Сигнал объявления координат
+## Версия 23.02
 
-Если вы включили настройку изменяющегося сигнала при перемещении мыши в
-настройках мыши, вы услышите звуковой сигнал, указывающий текущие координаты
-экрана, когда вы используете исследование сенсорными жестами.
+* Требуется NVDA 2022.4 или позже.
+* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
 
-## Touch command passthrough
+## Версия 23.01
 
-An unassigned command is available to allow you to use touchscreen gestures
-as though NVDA is not running. In order to use this, you need to assign a
-command (via Input Gestures dialog) under Enhanced Touch Gestures category
-to let you do this for up to ten seconds or toggle this manually. Then go to
-NVDA menu/Preferences/Touch Interaction, then configure pause NVDA's touch
-command value between 3 to 10 seconds (default is 5 seconds).
+* Требуется NVDA 2022.3 или позже.
+* Windows 10 or later is required as Windows 8.1 is no longer supported by
+  Microsoft as of January 2023.
+* It is possible to reassign touch keyboard and dictation toggle commands
+  from input gestures dialog under Enhanced Touch Gestures category.
+* Removed read-only state workaround for touch keyboard keys as it is
+  resolved in Windows 10.
 
-## Version 20.01
+## Версия 22.03
 
-* NVDA 2019.3 or later is required.
+* Требуется NVDA 2021.3 или позже.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
+
+## Версия 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
+
+## Версия 21.08
+
+* Initial support for Windows 11.
+
+## Версия 21.01
+
+* Требуется NVDA 2020.3 или позже.
+* On Windows 10 Version 1709 and later, doing a four finger flick left will
+  toggle dictation (Windows+H).
+* Remove dedicated touch interaction support toggle command from the add-on.
+* As touch interaction support can be toggled from NVDA's touch interaction
+  settings panel, a dedicated Enhanced Touch Gestures settings panel has
+  been removed.
+
+## Версия 20.09
+
+* Removed ability to let NVDA turn off touch interaction for up to ten
+  seconds (touch command passthrough).
+* Удалена функция звукового оповещения о координатах.
+
+## Версия 20.07
+
+* Added a keyboard command to toggle touch interaction or enable/disable
+  touch passthrough (Control+Alt+NVDA+T).
+* As NVDA 2020.1 and later includes a touch command to perform right mouse
+  click (one finger tap and hold), the command has been removed from this
+  add-on. AS a result, NVDA 2020.1 or later is required.
+* The ability to let NVDA turn off touch interaction for up to ten seconds
+  (touch command passthrough) is deprecated. In the future this feature will
+  toggle touch interaction instead.
+* In NVDA development snapshots, due to touch interaction feature changes,
+  touch command passthrough feature and Enhanced Touch Gestures settings
+  panel will be disabled. The command used to enable touch command
+  passthrough will toggle touch interaction instead.
+* Coordinate announcement beep feature is deprecated and will be removed in
+  a future add-on release.
+* Coordinate announcement beep will not be heard while using touch keyboard.
+* NVDA will no longer appear to do nothing or play error tones while
+  exploring modern input facility such as emoji panel via touch.
+* NVDA will present an error message if touch keyboard cannot be activated
+  (four finger flick right).
+
+## Версия 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
+## Версия 20.04
+
+* Right mouse click gesture (one finger tap and hold) is now part of NVDA
+  2020.1.
+
+## Версия 20.01
+
+* Требуется NVDA 2019.3 или позже.
 * Touch support toggle command (including touch passthrough) will no longer
   function if touch support is turned off completely.
 
-## Version 19.11
+## Версия 19.11
 
 * Added input help messages for additional touch commands.
 
-## Version 19.09
+## Версия 19.09
 
 * Touch support can now be disabled from everywhere, not just from profiles
   other than normal profile.
 
-## Version 19.07
+## Версия 19.07
 
 * Internal changes to support future NVDA releases.
 
-## Version 18.12
+## Версия 18.12
 
 * Internal changes to support future NVDA releases.
 
-## Version 18.08
+## Версия 18.08
 
 * Compatible with NVDA 2018.3 and future versions.
 
-## Version 18.06
+## Версия 18.06
 
 * Add-on settings is now found in new multi-category NVDA Settings screen
   under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is
   required.
 * Fixed compatibility issues with wxPython 4.
 
-## Version 18.04
+## Версия 18.04
 
 * Resolves an issue where touch interaction category in NVDA Settings panel
   may cause error sounds to be heard due to changes made from this add-on.
@@ -119,8 +181,8 @@ command value between 3 to 10 seconds (default is 5 seconds).
   touch support (available if profiles other than normal configuration is
   active).
 * If using NVDA 2018.1 or later, Touch Interaction dialog will be listed
-  twice in NVDA's preferences menu. The second item is the dialog that comes
-  with the add-on.
+  twice under NVDA's preferences menu. The second item is the dialog that
+  comes with the add-on.
 * In Touch Interaction dialog for the add-on, touch typing mode is no longer
   shown if using NVDA 2018.1 or later.
 
@@ -172,6 +234,4 @@ command value between 3 to 10 seconds (default is 5 seconds).
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev
+[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures
