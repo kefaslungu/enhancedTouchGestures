@@ -2,11 +2,11 @@
 
 * Authors: Joseph Lee, Kefas Lungu
 * Download [stable version][1]
-* NVDA compatibility: 2022.4 and later
+* NVDA compatibility: 2024.1 and later
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2022.3 or later running on a touchscreen computer with Windows 10 or 11.
+Note: this add-on requires NVDA 2024.1 or later running on a touchscreen computer with Windows 10 or 11.
 
 ## Commands
 
@@ -29,7 +29,6 @@ Note: this add-on requires NVDA 2022.3 or later running on a touchscreen compute
 
 This touch mode, available in browse mode, allows you to navigate the document by selected element. To switch to web mode, from browse mode documents, perform 3 finger tap. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents, object touch mode is used.
 Available web modes are: Default, Links, Buttons, Form fields, Headings, Frames, Tables, Lists, Graphics, and Landmarks.
-
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.

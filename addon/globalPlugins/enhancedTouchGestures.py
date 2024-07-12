@@ -9,6 +9,7 @@ import scriptHandler
 import ui
 from globalCommands import commands, GlobalCommands
 import browseMode
+import extensionPoints
 import api
 import winUser
 import config
@@ -23,6 +24,8 @@ addonHandler.initTranslation()
 
 # Support speak on demand mode: NVDA 2024.1 or later
 speakOnDemandMode = {"speakOnDemand": True} if versionInfo.version_year >= 2024 else {}
+# Notifies when browse mode state has changed, to enter or exit web mode.
+post_browseModeStateChange = extensionPoints.Action()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -57,6 +60,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				and "Web" not in touchHandler.availableTouchModes
 			):
 				touchHandler.availableTouchModes.append("Web")
+				# automatically switch to web mode if any brows mode window is active
+				touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[3]
 			else:
 				# If we're not in browser window, force object mode.
 				if "Web" not in touchHandler.availableTouchModes:
@@ -71,7 +76,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Global commands: additional touch commands available everywhere.
 
-	@scriptHandler.script(gesture="ts:4finger_double_tap")
+	@scriptHandler.script(
+		description=commands.script_toggleInputHelp.__doc__,
+		gesture="ts:4finger_double_tap",
+		**speakOnDemandMode
+	)
 	def script_toggleInputHelp(self, gesture):
 		commands.script_toggleInputHelp(gesture)
 
@@ -115,10 +124,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
 
+	# the following doesn't need speak on demand, skip it.
+	# audio ducking mode, cycle speech symbol level, progress bar output and quit NVDA.
+
 	@scriptHandler.script(
 		description=commands.script_cycleAudioDuckingMode.__doc__,
 		gesture="ts:4finger_tap",
-		**speakOnDemandMode
 	)
 	def script_audioDuckingMode(self, gesture):
 		commands.script_cycleAudioDuckingMode(gesture)
@@ -126,7 +137,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_cycleSpeechSymbolLevel.__doc__,
 		gesture="ts:3finger_double_tap",
-		**speakOnDemandMode
 	)
 	def script_speechSymbolLevel(self, gesture):
 		commands.script_cycleSpeechSymbolLevel(gesture)
@@ -134,7 +144,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=GlobalCommands.script_toggleProgressBarOutput.__doc__,
 		gesture="ts:tripple_tap",
-		**speakOnDemandMode
 	)
 	def script_progressBarOutput(self, gesture):
 		GlobalCommands.script_toggleProgressBarOutput(self, gesture)
