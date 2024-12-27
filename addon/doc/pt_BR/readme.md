@@ -1,15 +1,15 @@
-# Gestos Táteis Aprimorados (Enhanced Touch Gestures) #
+# Gestos Táteis Aprimorados #
 
 * Autor: Joseph Lee
 * Baixe a [versão estável][1]
-* NVDA compatibility: 2022.4 and later
+* Compatibilidade com NVDA: 2022.4 e posterior
 
 Este complemento fornece gestos adicionais para telas sensível ao toque no
 NVDA. Também provê um conjunto de gestos para uma navegabilidade mais fácil
 no modo de navegação.
 
-Note: this add-on requires NVDA 2022.3 or later running on a touchscreen
-computer with Windows 10 or 11.
+Nota: este complemento requer o NVDA 2022.3 ou posterior em execução em um
+computador com tela sensível ao toque com Windows 10 ou 11.
 
 ## Comandos
 
@@ -47,26 +47,28 @@ dedos à esquerda ou à direita para mover entre as opções do sintetizador e
 deslize com dois dedos acima e abaixo para mudar valores. Esses gestos
 espelham os comandos do anel de opções do sintetizador pelo teclado.
 
-## Version 23.02
+## Versão 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* É necessário o NVDA 2022.4 ou posterior.
+* É necessário o Windows 10 21H2 (atualização/compilação 19044 de novembro
+  de 2021) ou posterior.
 
-## Version 23.01
+## Versão 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 8.1 is no longer supported by
-  Microsoft as of January 2023.
-* It is possible to reassign touch keyboard and dictation toggle commands
-  from input gestures dialog under Enhanced Touch Gestures category.
-* Removed read-only state workaround for touch keyboard keys as it is
-  resolved in Windows 10.
+* É necessário o NVDA 2022.3 ou posterior.
+* É necessário ter o Windows 10 ou posterior, pois o Windows 8.1 não será
+  mais suportado pela Microsoft a partir de janeiro de 2023.
+* É possível reatribuir comandos de alternância de teclado de toque e ditado
+  na caixa de diálogo de gestos de entrada, na categoria Gestos de toque
+  aprimorados.
+* Removida a solução alternativa de estado somente leitura para as teclas do
+  teclado sensível ao toque, pois ela foi resolvida no Windows 10.
 
-## Version 22.03
+## Versão 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* É necessário o NVDA 2021.3 ou posterior.
+* Uma mensagem de aviso será exibida ao tentar instalar o complemento no
+  Windows 7, 8 e 8.1.
 
 ## Versão 21.10
 
@@ -105,11 +107,11 @@ espelham os comandos do anel de opções do sintetizador pelo teclado.
 * A capacidade de permitir que o NVDA desligue a interação por toque por até
   dez segundos (passagem de comando tátil) foi descontinuada. Ao invés no
   futuro, esse recurso alternará a interação por toque.
-* Nos instantâneos (snapshots) de desenvolvimento do NVDA, devido a
-  alterações no recurso de interação por toque, o recurso de passagem de
-  comando tátil e o painel de configurações dos Gestos táteis aprimorados
-  serão desativados. O comando usado para ativar a passagem de comando tátil
-  alternará a interação por toque.
+* Nos desenvolvimentos  instantâneos do NVDA, devido a alterações no recurso
+  de interação por toque, o recurso de passagem de comando tátil e o painel
+  de configurações dos Gestos táteis aprimorados serão desativados. O
+  comando usado para ativar a passagem de comando tátil alternará a
+  interação por toque.
 * O recurso de bipe de anúncio de coordenadas foi descontinuado e será
   removido em uma versão futura do complemento.
 * O bipe de anúncio de coordenadas não será ouvido ao usar o teclado
@@ -196,7 +198,7 @@ espelham os comandos do anel de opções do sintetizador pelo teclado.
 * Devido à política de suporte da Microsoft, o Windows 8 (versão original)
   não é mais suportado.
 * O NVDA deixará de anunciar a orientação da tela duas vezes quando executar
-  os snapshots de desenvolvimento do NVDA 2017.4.
+  os desenvolvimentos  instantâneos do NVDA 2017.4.
 
 ## Versão 17.07.1
 
