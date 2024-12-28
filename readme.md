@@ -1,8 +1,6 @@
 # Enhanced Touchscreen Gestures #
 
 * Authors: Joseph Lee, Kefas Lungu
-* Download [stable version][1]
-* NVDA compatibility: 2024.1 and later
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
@@ -33,10 +31,22 @@ Available web modes are: Default, Links, Buttons, Form fields, Headings, Frames,
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
 
+## Version 25.01
+
+* Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater add-on.
+
+## Version 24.05
+
+* NVDA 2024.1 or later is required.
+
 ## Version 23.06.1
-* audio docking moved to 4 finger tap because of conflict with speech stops NVDA core command.
+
+* audio ducking moved to 4 finger tap due to conflict with speech stops NVDA command.
 
 ## Version 23.06
+
 * Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
 * All gestures in object mode are now available everywhere.
 * New gestures are now available.
