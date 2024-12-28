@@ -1,6 +1,6 @@
 # Enhanced touch gestures
 # A touchscreen global plugin for NVDA
-# Copyright 2013-2024 Joseph Lee, Kefas Lungu, released under GPL.
+# Copyright 2013-2025 Joseph Lee, Kefas Lungu, released under GPL.
 # Implements needed improvements for various touchscreen gestures.
 
 import globalPluginHandler
