@@ -14,7 +14,6 @@ def onInstall():
 	import gui
 	import wx
 	import winVersion
-	import globalVars
 	# Do not present dialogs if minimal mode is set.
 	currentWinVer = winVersion.getWinVer()
 	# Enhanced Touch Gestures requires Windows 10 21H2 or later.
@@ -23,18 +22,17 @@ def onInstall():
 	unsupportedWindowsReleaseTitle = _("Unsupported Windows release")
 	minimumWinVer = winVersion.WIN10_21H2
 	if currentWinVer < minimumWinVer:
-		if not globalVars.appArgs.minimal:
-			gui.messageBox(
-				_(
-					# Translators: Dialog text shown when trying to install the add-on on
-					# releases earlier than minimum supported release.
-					"You are using {releaseName} ({build}), a Windows release not supported by this add-on.\n"
-					"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
-				).format(
-					releaseName=currentWinVer.releaseName,
-					build=currentWinVer.build,
-					supportedReleaseName=minimumWinVer.releaseName,
-					supportedBuild=minimumWinVer.build
-				), unsupportedWindowsReleaseTitle, wx.OK | wx.ICON_ERROR
-			)
+		gui.messageBox(
+			_(
+				# Translators: Dialog text shown when trying to install the add-on on
+				# releases earlier than minimum supported release.
+				"You are using {releaseName} ({build}), a Windows release not supported by this add-on.\n"
+				"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
+			).format(
+				releaseName=currentWinVer.releaseName,
+				build=currentWinVer.build,
+				supportedReleaseName=minimumWinVer.releaseName,
+				supportedBuild=minimumWinVer.build
+			), unsupportedWindowsReleaseTitle, wx.OK | wx.ICON_ERROR
+		)
 		raise RuntimeError("Attempting to install Enhanced Touch Gestures on Windows releases earlier than 10")
