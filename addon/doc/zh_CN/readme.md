@@ -1,4 +1,4 @@
-# 触摸屏增强插件-Enhanced Touch Gestures #
+# 触摸屏手势增强插件-Enhanced Touch Gestures #
 
 * 作者: Joseph Lee
 * 下载 [稳定版][1]
