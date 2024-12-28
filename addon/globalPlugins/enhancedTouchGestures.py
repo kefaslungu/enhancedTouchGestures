@@ -20,6 +20,7 @@ from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 import wx
 from logHandler import log
 import addonHandler
+
 addonHandler.initTranslation()
 
 # Support speak on demand mode: NVDA 2024.1 or later
@@ -27,8 +28,8 @@ speakOnDemandMode = {"speakOnDemand": True} if versionInfo.version_year >= 2024 
 # Notifies when browse mode state has changed, to enter or exit web mode.
 post_browseModeStateChange = extensionPoints.Action()
 
-class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
+class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 	scriptCategory = _("Enhanced Touch Gestures")
 	# Set up the touch environment for the add-on.
@@ -79,7 +80,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_toggleInputHelp.__doc__,
 		gesture="ts:4finger_double_tap",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_toggleInputHelp(self, gesture):
 		commands.script_toggleInputHelp(gesture)
@@ -87,15 +88,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_reportCurrentFocus.__doc__,
 		gesture="ts:3finger_flickLeft",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_reportCurrentFocus(self, gesture):
 		commands.script_reportCurrentFocus(gesture)
 
 	@scriptHandler.script(
-		description=commands.script_title.__doc__,
-		gesture="ts:4finger_flickUp",
-		**speakOnDemandMode
+		description=commands.script_title.__doc__, gesture="ts:4finger_flickUp", **speakOnDemandMode
 	)
 	def script_title(self, gesture):
 		commands.script_title(gesture)
@@ -103,7 +102,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_reportStatusLine.__doc__,
 		gesture="ts:4finger_flickDown",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_reportStatusLine(self, gesture):
 		commands.script_reportStatusLine(gesture)
@@ -111,7 +110,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_speakForeground.__doc__,
 		gesture="ts:3finger_flickDown",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_speakForeground(self, gesture):
 		commands.script_speakForeground(gesture)
@@ -119,7 +118,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_navigatorObject_current.__doc__,
 		gesture="ts:3finger_flickRight",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
@@ -148,10 +147,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_progressBarOutput(self, gesture):
 		GlobalCommands.script_toggleProgressBarOutput(self, gesture)
 
-	@scriptHandler.script(
-		description=GlobalCommands.script_quit.__doc__,
-		gesture="ts:2finger_tripple_tap"
-	)
+	@scriptHandler.script(description=GlobalCommands.script_quit.__doc__, gesture="ts:2finger_tripple_tap")
 	def script_quitNvda(self, gesture):
 		GlobalCommands.script_quit(self, gesture)
 
@@ -168,7 +164,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"Tables",
 		"Lists",
 		"Graphics",
-		"Landmarks"
+		"Landmarks",
 	)
 	# The starting index for the web browse mode, which flicks through objects.
 	webBrowseMode = 0
@@ -176,18 +172,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Touch gestures please.
 	# doesn't actually need touch on demand since the entire keyboard is also silenced.
 
-	@scriptHandler.script(
-		description="Selects the next web navigation element.",
-		gesture="ts(Web):flickDown"
-	)
+	@scriptHandler.script(description="Selects the next web navigation element.", gesture="ts(Web):flickDown")
 	def script_nextWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 		log.debug(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(
-		description="Selects the previous web navigation element.",
-		gesture="ts(Web):flickUp"
+		description="Selects the previous web navigation element.", gesture="ts(Web):flickUp"
 	)
 	def script_prevWebElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
@@ -199,39 +191,39 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	browseModeCommands = (
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextLink,
-			browseMode.BrowseModeTreeInterceptor.script_previousLink
+			browseMode.BrowseModeTreeInterceptor.script_previousLink,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextButton,
-			browseMode.BrowseModeTreeInterceptor.script_previousButton
+			browseMode.BrowseModeTreeInterceptor.script_previousButton,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextFormField,
-			browseMode.BrowseModeTreeInterceptor.script_previousFormField
+			browseMode.BrowseModeTreeInterceptor.script_previousFormField,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextHeading,
-			browseMode.BrowseModeTreeInterceptor.script_previousHeading
+			browseMode.BrowseModeTreeInterceptor.script_previousHeading,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextFrame,
-			browseMode.BrowseModeTreeInterceptor.script_previousFrame
+			browseMode.BrowseModeTreeInterceptor.script_previousFrame,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextTable,
-			browseMode.BrowseModeTreeInterceptor.script_previousTable
+			browseMode.BrowseModeTreeInterceptor.script_previousTable,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextList,
-			browseMode.BrowseModeTreeInterceptor.script_previousList
+			browseMode.BrowseModeTreeInterceptor.script_previousList,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextGraphic,
-			browseMode.BrowseModeTreeInterceptor.script_previousGraphic
+			browseMode.BrowseModeTreeInterceptor.script_previousGraphic,
 		),
 		(
 			browseMode.BrowseModeTreeInterceptor.script_nextLandmark,
-			browseMode.BrowseModeTreeInterceptor.script_previousLandmark
+			browseMode.BrowseModeTreeInterceptor.script_previousLandmark,
 		),
 	)
 
@@ -253,12 +245,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				self.browseModeCommands[self.webBrowseMode - 1][1](obj, gesture)
 
-# toggles touch keyboard
+	# toggles touch keyboard
 	# again, no speak on demand is needed since touch keyboard too will also be silenced during speech on demand.
 	@scriptHandler.script(
 		# Translators: input help message for Enhanced touch Gestures command.
 		description=_("Toggles touch keyboard"),
-		gesture="ts:4finger_flickRight"
+		gesture="ts:4finger_flickRight",
 	)
 	def script_touchKeyboardEnable(self, gesture):
 		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
@@ -278,12 +270,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: input help message for Enhanced touch Gestures command.
 		description=_("Toggles voice dictation"),
 		gesture="ts:4finger_flickLeft",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_win10Dictation(self, gesture):
 		# Press Windows+H on Windows 10 Version 1709 (Fall Creators Update) and later.
 		import winVersion
 		import keyboardHandler
+
 		if winVersion.getWinVer() < winVersion.WIN10_1709:
 			# Translators: message shown when dictation command is unavailable.
 			ui.message(_("Dictation is supported on Windows 10 Version 1709 or later"))
@@ -293,7 +286,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickUp",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
@@ -301,7 +294,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_decreaseSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickDown",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_nextSynthSettingValue(self, gesture):
 		commands.script_decreaseSynthSetting(gesture)
@@ -309,7 +302,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_nextSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickRight",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_nextSynthSetting(self, gesture):
 		commands.script_nextSynthSetting(gesture)
@@ -317,7 +310,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_previousSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickLeft",
-		**speakOnDemandMode
+		**speakOnDemandMode,
 	)
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
