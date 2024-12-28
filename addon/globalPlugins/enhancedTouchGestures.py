@@ -15,7 +15,6 @@ import winUser
 import config
 import windowUtils
 import tones
-import versionInfo
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 import wx
 from logHandler import log
@@ -23,8 +22,6 @@ import addonHandler
 
 addonHandler.initTranslation()
 
-# Support speak on demand mode: NVDA 2024.1 or later
-speakOnDemandMode = {"speakOnDemand": True} if versionInfo.version_year >= 2024 else {}
 # Notifies when browse mode state has changed, to enter or exit web mode.
 post_browseModeStateChange = extensionPoints.Action()
 
@@ -80,7 +77,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_toggleInputHelp.__doc__,
 		gesture="ts:4finger_double_tap",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_toggleInputHelp(self, gesture):
 		commands.script_toggleInputHelp(gesture)
@@ -88,13 +85,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_reportCurrentFocus.__doc__,
 		gesture="ts:3finger_flickLeft",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_reportCurrentFocus(self, gesture):
 		commands.script_reportCurrentFocus(gesture)
 
 	@scriptHandler.script(
-		description=commands.script_title.__doc__, gesture="ts:4finger_flickUp", **speakOnDemandMode
+		description=commands.script_title.__doc__, gesture="ts:4finger_flickUp", speakOnDemand=True
 	)
 	def script_title(self, gesture):
 		commands.script_title(gesture)
@@ -102,7 +99,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_reportStatusLine.__doc__,
 		gesture="ts:4finger_flickDown",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_reportStatusLine(self, gesture):
 		commands.script_reportStatusLine(gesture)
@@ -110,7 +107,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_speakForeground.__doc__,
 		gesture="ts:3finger_flickDown",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_speakForeground(self, gesture):
 		commands.script_speakForeground(gesture)
@@ -118,7 +115,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_navigatorObject_current.__doc__,
 		gesture="ts:3finger_flickRight",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_navigatorObject_current(self, gesture):
 		commands.script_navigatorObject_current(gesture)
@@ -270,7 +267,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: input help message for Enhanced touch Gestures command.
 		description=_("Toggles voice dictation"),
 		gesture="ts:4finger_flickLeft",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_win10Dictation(self, gesture):
 		# Press Windows+H on Windows 10 Version 1709 (Fall Creators Update) and later.
@@ -286,7 +283,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickUp",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_prevSynthSettingValue(self, gesture):
 		commands.script_increaseSynthSetting(gesture)
@@ -294,7 +291,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_decreaseSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickDown",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_nextSynthSettingValue(self, gesture):
 		commands.script_decreaseSynthSetting(gesture)
@@ -302,7 +299,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_nextSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickRight",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_nextSynthSetting(self, gesture):
 		commands.script_nextSynthSetting(gesture)
@@ -310,7 +307,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		description=commands.script_previousSynthSetting.__doc__,
 		gesture="ts(SynthSettings):2finger_flickLeft",
-		**speakOnDemandMode,
+		speakOnDemand=True,
 	)
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
