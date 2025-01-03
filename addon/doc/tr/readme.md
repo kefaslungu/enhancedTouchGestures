@@ -1,14 +1,12 @@
 # Geliştirilmiş Dokunmatik Ekran Hareketleri #
 
 * Yazar: Joseph Lee
-* [kararlı sürüm][1]ü indir
-* NVDA uyumluluğu: 2022.4 ve sonrası
 
 Bu eklenti NVDA'ya ek dokunma hareketleri ekler. Ayrıca tarama kipinde daha
 kolay dolaşım için ek hareketler sunar.
 
 Not: Bu eklenti, Windows 10 veya 11 yüklü dokunmatik ekranlı bir
-bilgisayarda çalışan NVDA 2022.3 veya sonraki sürümünü gerektirir.
+bilgisayarda NVDA 2024.1 veya sonrası sürümlerin çalışmasını gerektirir.
 
 ## Hareketler
 
@@ -46,6 +44,38 @@ kullanabilirsiniz. İki parmakla sola veya sağa fiske yaparak sentezleyici
 ayarları arasında dolaşabilir, iki parmakla yukarı veya aşağı fiske yaparak
 ayarları değiştirebilirsiniz. Bu hareketler klavyedeki hızlı sentezleyici
 ayarlarını dokunmatik ekrana aktarır.
+
+## Sürüm 25.01
+
+* Eklenti sürümlerinin indirme bağlantıları artık eklenti belgelerine dahil
+  edilmemektedir. Eklentiyi NV Access eklenti mağazasından indirebilirsiniz.
+* Linting aracı Flake8'den Ruff'a değiştirildi ve NVDA kodlama
+  standartlarıyla daha iyi uyum sağlamak için eklenti modülleri yeniden
+  biçimlendirildi.
+* Eklenti Güncelleyici eklentisinden otomatik eklenti güncellemeleri
+  özelliği desteği kaldırıldı.
+
+## Sürüm 24.05
+
+* NVDA 2024.1 veya sonrası gereklidir.
+
+## Sürüm 23.06.1
+
+* nvda'nın konuşma durdurma komutuyla çakışması nedeniyle sesin kısılması 4
+  parmakla dokunmaya taşındı.
+
+## Sürüm 23.06
+
+* Geliştirilmiş Dokunma hareketleri nvda-EKLENTİSİ artık Kefas Lungu
+  tarafından korunuyor.
+* Nesne modundaki tüm hareketler artık her yerde kullanılabiliyor.
+* Artık yeni hareketler mevcut.
+  * 3 parmakla çift dokunma: Hangi simgelerin söyleneceğini belirleyen konuşma simgesi düzeyleri arasında geçiş yapar
+  * 2 parmakla üç kez dokunma: NVDA'dan çık!.
+  * 4 parmakla dokunma: Sesi azaltma modları arasında geçiş yapar.
+  * Üç kez dokunma: Bip sesleri, konuşma, bip sesleri ve konuşma arasında geçiş yapar ve kapatır.
+* Web modunda, halihazırda mevcut olan göz atma öğesi listesine ek olarak düğmeleri, grafikleri ve yer işaretlerini kullanmak artık mümkün.
+* Web modunda, diğer göz atma öğeleri listesinden varsayılan gezinmeye geçtiğinizde NVDA artık normal değil, varsayılan diyecek. Örneğin, düğmelerden geçiş yaparken NVDA artık varsayılan diyecek.
 
 ## Sürüm 23.02
 

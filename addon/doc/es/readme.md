@@ -1,15 +1,13 @@
 # Enhanced Touch Gestures #
 
 * Autor: Joseph Lee
-* Descargar [versión estable][1]
-* Compatibilidad con NVDA: de 2022.4 en adelante
 
 Este complemento proporciona gestos táctiles adicionales para NVDA. También
 proporciona un conjunto de gestos para una mejor navegación del modo
 exploración.
 
-Nota: este complemento requiere NVDA 2022.3 o posterior ejecutándose en un
-ordenador con pantalla táctil con Windows 10 o 11.
+Note: this add-on requires NVDA 2024.1 or later running on a touchscreen
+computer with Windows 10 or 11.
 
 ## Órdenes
 
@@ -49,6 +47,36 @@ derecha para moverte entre opciones del sintetizador y utiliza gestos de
 deslizamiento de dos dedos arriba y abajo para cambiar los valores. Estos
 gestos se reflejan en las órdenes del grupo de opciones del sintetizador del
 teclado.
+
+## Version 25.01
+
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
+
+## Version 24.05
+
+* NVDA 2024.1 or later is required.
+
+## Version 23.06.1
+
+* audio ducking moved to 4 finger tap due to conflict with speech stops NVDA
+  command.
+
+## Version 23.06
+
+* Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
+* All gestures in object mode are now available everywhere.
+* New gestures are now available.
+  * 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
+  * 2 finger tripple tap: Quit NVDA!.
+  * 4 finger tap: Cycles through audio ducking modes.
+  * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
+* In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
+* In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
 
 ## Versión 23.02
 

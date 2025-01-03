@@ -1,12 +1,11 @@
 # 触摸屏手势增强插件-Enhanced Touch Gestures #
 
 * 作者: Joseph Lee
-* 下载 [稳定版][1]
-* NVDA 兼容性：2022.4 及更高版本
 
 此插件为 NVDA 提供了更多的触摸屏支持手势。其中包括一组浏览模式导航手势。
 
-注意：此插件需要在具备触摸屏的 Windows 10 或 11 的计算机上运行，并且需要 NVDA 2022.3 或更高版本。
+Note: this add-on requires NVDA 2024.1 or later running on a touchscreen
+computer with Windows 10 or 11.
 
 ## 命令
 
@@ -32,6 +31,36 @@ Web模式，可以使用3指点击。在该模式下，用一个手指向上或�
 ## 语音设置模式
 
 您可以在此模式下快速更改语音合成器设置，例如选择语音和调节音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间切换，然后使用两个手指向上和向下清扫来更改相应设置的值。该手势对应于键盘上的语音循环切换。
+
+## Version 25.01
+
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
+
+## Version 24.05
+
+* NVDA 2024.1 or later is required.
+
+## Version 23.06.1
+
+* audio ducking moved to 4 finger tap due to conflict with speech stops NVDA
+  command.
+
+## Version 23.06
+
+* Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
+* All gestures in object mode are now available everywhere.
+* New gestures are now available.
+  * 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
+  * 2 finger tripple tap: Quit NVDA!.
+  * 4 finger tap: Cycles through audio ducking modes.
+  * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
+* In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
+* In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
 
 ## 版本 23.02
 
