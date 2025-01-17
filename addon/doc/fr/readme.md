@@ -6,8 +6,8 @@ Cette extension fournit des gestes supplémentaires sur l'écran tactile pour
 NVDA. Elle fournit également un ensemble de gestes pour parcourir facilement
 lorsque vous êtes en mode navigation.
 
-Note: this add-on requires NVDA 2024.1 or later running on a touchscreen
-computer with Windows 10 or 11.
+Note : Cette extension requiert NVDA 2024.1 ou une version ultérieure
+s'exécutant sur un ordinateur tactile avec Windows 10 ou 11.
 
 ## Commandes
 
@@ -50,33 +50,44 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 
 ## Version 25.01
 
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* Les liens de téléchargement des versions de l'extension ne sont plus
+  inclus dans la documentation de l'extension. Vous pouvez télécharger
+  l'extension à partir de l'add-on store de NV Access.
+* Changement de l'outil linting qui fait de l'analyse statique de Flake8
+  vers Ruff et le reformatage des modules de l'extension pour mieux
+  s'aligner sur les normes de codage de NVDA.
+* Suppression de la prise en charge de la fonctionnalité de mise à jour
+  automatique à partir de l'extension Add-on Updater.
 
 ## Version 24.05
 
-* NVDA 2024.1 or later is required.
+* NVDA 2024.1 ou version ultérieure est requis.
 
 ## Version 23.06.1
 
-* audio ducking moved to 4 finger tap due to conflict with speech stops NVDA
-  command.
+* l'atténuation audio a été déplacée vers une tape 4 doigts en raison d'un
+  conflit avec la commande NVDA Arrêt de la parole.
 
 ## Version 23.06
 
-* Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
-* All gestures in object mode are now available everywhere.
-* New gestures are now available.
-  * 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
-  * 2 finger tripple tap: Quit NVDA!.
-  * 4 finger tap: Cycles through audio ducking modes.
-  * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
-* In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
-* In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
+* Enhanced Touch gestures nvda-addon  est désormais maintenu par Kefas
+  Lungu.
+* Tous les gestes en mode objet sont désormais disponibles partout.
+* De nouveaux gestes sont désormais disponibles.
+
+  * Double tape 3 doigts : fait défiler les niveaux de prononciation des
+    symboles qui déterminent quels symboles sont prononcés
+  * Triple tape 2 doigts : quitter NVDA !.
+  * Tape 4 doigts : fait défiler les modes d'atténuation audio.
+  * Triple tape : basculer entre bips, parole, bips et parole et désactivé.
+
+* En mode web, il est désormais possible d'utiliser des boutons, des
+  graphiques et des régions en plus de la liste d'éléments de navigation
+  déjà disponible.
+* En mode web, NVDA ne dira plus normal, mais par défaut lorsque vous
+  passerez à la navigation par défaut à partir d'une autre liste d'éléments
+  de navigation. Par exemple, lors du passage des boutons, NVDA indiquera
+  désormais par défaut.
 
 ## Version 23.02
 

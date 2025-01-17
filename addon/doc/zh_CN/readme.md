@@ -55,12 +55,18 @@ Web模式，可以使用3指点击。在该模式下，用一个手指向上或�
 * Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
 * All gestures in object mode are now available everywhere.
 * New gestures are now available.
-  * 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
+
+  * 3 finger double tap: Cycles through speech symbol levels which determine
+    what symbols are spoken
   * 2 finger tripple tap: Quit NVDA!.
   * 4 finger tap: Cycles through audio ducking modes.
   * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
-* In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
-* In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
+
+* In web mode, it is now possible to Use buttons, graphics, and landmarks in
+  addition to the already available browse element list.
+* In web mode, NVDA is no longer going to say normal, but default when you
+  switch to default navigation from other browse element list. For example,
+  when switching from buttons, NVDA will now say default.
 
 ## 版本 23.02
 
