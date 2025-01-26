@@ -31,6 +31,10 @@ Available web modes are: Default, Links, Buttons, Form fields, Headings, Frames,
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
 
+## Version 25.02
+
+* Restored limited support for Windows 8.1.
+
 ## Version 25.01
 
 * Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
