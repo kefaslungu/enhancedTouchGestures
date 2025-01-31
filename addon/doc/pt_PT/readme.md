@@ -46,6 +46,10 @@ sintetizador e use dois dedos para cima e para baixo gestos para alterar os
 valores. estes gestos são semelhantes aos comandos de teclado das
 configurações dos sintetizadores.
 
+## Version 25.02
+
+* Restored limited support for Windows 8.1.
+
 ## Version 25.01
 
 * Download links for add-on releases are no longer included in add-on

@@ -48,6 +48,10 @@ kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
 
+## Version 25.02
+
+* Restored limited support for Windows 8.1.
+
 ## Version 25.01
 
 * Download links for add-on releases are no longer included in add-on

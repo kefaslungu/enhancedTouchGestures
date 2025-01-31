@@ -45,6 +45,10 @@ computer with Windows 10 or 11.
 пролистування двома пальцями вгору і вниз. Ці жести дзеркально відображають
 жести кільцевих команд налаштувань синтезатора на клавіатурі.
 
+## Version 25.02
+
+* Restored limited support for Windows 8.1.
+
 ## Version 25.01
 
 * Download links for add-on releases are no longer included in add-on

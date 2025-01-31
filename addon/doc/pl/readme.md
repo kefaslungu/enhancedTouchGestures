@@ -44,6 +44,10 @@ aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dó
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
 
+## Version 25.02
+
+* Restored limited support for Windows 8.1.
+
 ## Version 25.01
 
 * Download links for add-on releases are no longer included in add-on

@@ -45,6 +45,10 @@ ayarları arasında dolaşabilir, iki parmakla yukarı veya aşağı fiske yapar
 ayarları değiştirebilirsiniz. Bu hareketler klavyedeki hızlı sentezleyici
 ayarlarını dokunmatik ekrana aktarır.
 
+## Sürüm 25.02
+
+* Windows 8.1 için sınırlı destek geri yüklendi.
+
 ## Sürüm 25.01
 
 * Eklenti sürümlerinin indirme bağlantıları artık eklenti belgelerine dahil

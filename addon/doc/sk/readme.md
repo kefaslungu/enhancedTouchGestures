@@ -40,6 +40,10 @@ nastavenia hlasového výstupu. Švihaním dvoma prstami vľavo a vpravo
 vyberiete parameter, ktorý chcete zmeniť. Švihaním dvoma prstami hore a dole
 následne upravujete hodnoty.
 
+## Version 25.02
+
+* Restored limited support for Windows 8.1.
+
 ## Version 25.01
 
 * Download links for add-on releases are no longer included in add-on

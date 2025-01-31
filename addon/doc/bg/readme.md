@@ -47,6 +47,10 @@ computer with Windows 10 or 11.
 или надолу за промяна на стойностите. Тези жестове са алтернатива на
 клавиатурните команди от пръстена с настройките за синтезатора.
 
+## Version 25.02
+
+* Restored limited support for Windows 8.1.
+
 ## Version 25.01
 
 * Download links for add-on releases are no longer included in add-on
