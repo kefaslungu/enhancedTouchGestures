@@ -4,8 +4,7 @@
 
 此插件为 NVDA 提供了更多的触摸屏支持手势。其中包括一组浏览模式导航手势。
 
-Note: this add-on requires NVDA 2024.1 or later running on a touchscreen
-computer with Windows 10 or 11.
+注意：此插件需要在具备触摸屏的 Windows 10 或 11 的计算机上运行，并且需要 NVDA 2024.1 或更高版本。
 
 ## 命令
 
@@ -32,45 +31,37 @@ Web模式，可以使用3指点击。在该模式下，用一个手指向上或�
 
 您可以在此模式下快速更改语音合成器设置，例如选择语音和调节音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间切换，然后使用两个手指向上和向下清扫来更改相应设置的值。该手势对应于键盘上的语音循环切换。
 
-## Version 25.02
+## 版本25.02
 
-* Restored limited support for Windows 8.1.
+* 恢复了对Windows 8.1的有限支持。
 
-## Version 25.01
+## 版本25.01
 
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* 文档中不再提供插件的下载链接。您可以从NV Access 插件商店下载插件。
+* Lintting 工具从 flake8 转为 ruff，并重新格式化插件模块，以更好地与NVDA编码标准保持一致。
+* 从插件更新器中删除了对自动更新的支持。
 
-## Version 24.05
+## 版本24.05
 
-* NVDA 2024.1 or later is required.
+* 需要NVDA 2024.1或更高版本。
 
-## Version 23.06.1
+## 版本23.06.1
 
-* audio ducking moved to 4 finger tap due to conflict with speech stops NVDA
-  command.
+* 由于跟停止朗读手势存在冲突，将切换音频闪避的手势改为4指单机。
 
-## Version 23.06
+## 版本23.06
 
-* Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
-* All gestures in object mode are now available everywhere.
-* New gestures are now available.
+* 触摸增强插件目前由  Kefas Lungu 维护。
+* 现在，对象模式下的所有手势全局生效。
+* 支持了新的手势。
 
-  * 3 finger double tap: Cycles through speech symbol levels which determine
-    what symbols are spoken
-  * 2 finger tripple tap: Quit NVDA!.
-  * 4 finger tap: Cycles through audio ducking modes.
-  * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
+  * 3指双击：在语音符号级别之间循环切换，已确定朗读哪些符号
+  * 2指三击：退出 NVDA
+  * 4指单击：在音频闪避模式之间切换，以确定何时减小其他声音的音量
+  * 三击：在语音模式之间循环切换。
 
-* In web mode, it is now possible to Use buttons, graphics, and landmarks in
-  addition to the already available browse element list.
-* In web mode, NVDA is no longer going to say normal, but default when you
-  switch to default navigation from other browse element list. For example,
-  when switching from buttons, NVDA will now say default.
+* 在Web模式下，除了原有支持导航列表以外，现在还支持按钮，图形和路标的导航。
+* 在Web模式下，从其他元素类型导航切换到“默认”模式后，NVDA 提示“默认”。
 
 ## 版本 23.02
 

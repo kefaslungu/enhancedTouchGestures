@@ -50,7 +50,7 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 
 ## Version 25.02
 
-* Restored limited support for Windows 8.1.
+* Restauré prise en charge limitée pour Windows 8.1.
 
 ## Version 25.01
 

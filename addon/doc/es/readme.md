@@ -48,9 +48,9 @@ deslizamiento de dos dedos arriba y abajo para cambiar los valores. Estos
 gestos se reflejan en las órdenes del grupo de opciones del sintetizador del
 teclado.
 
-## Version 25.02
+## Versión 25.02
 
-* Restored limited support for Windows 8.1.
+* Se restaura el soporte limitado para Windows 8.1.
 
 ## Versión 25.01
 
