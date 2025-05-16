@@ -281,6 +281,4 @@ ringen for talesynteseindstillinger.
 
 * Første stabile version.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

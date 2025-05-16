@@ -199,6 +199,4 @@ Web模式，可以使用3指点击。在该模式下，用一个手指向上或�
 
 * 发布初始版本。
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

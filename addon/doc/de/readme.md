@@ -292,6 +292,4 @@ Einstellungsring (STRG+Umschalt+NVDA+Pfeiltasten).
 
 * Ehrstveröffentlichung der stabilen Version.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

@@ -286,6 +286,4 @@ tastiera.
 
 * Versione iniziale stabile.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

@@ -279,6 +279,4 @@ reflectă asta în comenzile setărilor sintezei pe tastatură.
 
 * Versiunea stabilă inițială.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

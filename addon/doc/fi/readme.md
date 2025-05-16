@@ -5,8 +5,8 @@
 Tämä lisäosa tarjoaa lisää kosketuseleitä NVDA:han. Mukana on eleitä myös
 helpompaa selaustilanavigointia varten.
 
-Note: this add-on requires NVDA 2024.1 or later running on a touchscreen
-computer with Windows 10 or 11.
+Huom: Tämä lisäosa edellyttää NVDA 2024.1:tä tai uudempaa ja
+kosketusnäyttötietokonetta, jossa on asennettuna Windows 10 tai 11.
 
 ## Komennot
 
@@ -48,45 +48,47 @@ kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
 
-## Version 25.02
+## Versio 25.02
 
-* Restored limited support for Windows 8.1.
+* Palautettu rajoitettu tuki Windows 8.1:lle.
 
-## Version 25.01
+## Versio 25.01
 
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* Latauslinkkiä ei enää sisällytetä lisäosan dokumentaatioon. Voit ladata
+  lisäosan NV Accessin lisäosakaupasta.
+* Virheidentarkistustyökalu vaihdettu Flake8:sta Ruff:iin ja lisäosamoduulit
+  muotoiltu uudelleen paremmin NVDA:n koodauskäytäntöjä vastaaviksi.
+* Poistettu tuki Lisäosien päivittäjä -lisäosan automaattiselle
+  päivitystoiminnolle.
 
-## Version 24.05
+## Versio 24.05
 
-* NVDA 2024.1 or later is required.
+* Edellyttää NVDA 2024.1:tä tai uudempaa.
 
-## Version 23.06.1
+## Versio 23.06.1
 
-* audio ducking moved to 4 finger tap due to conflict with speech stops NVDA
-  command.
+* Äänenvaimennus siirretty neljän sormen napautukseen, koska aiempi komento
+  oli ristiriidassa NVDA:n puheen lopetuskomennon kanssa.
 
-## Version 23.06
+## Versio 23.06
 
-* Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
-* All gestures in object mode are now available everywhere.
-* New gestures are now available.
+* Tätä lisäosaa ylläpitää nyt Kefas Lungu.
+* Objektitilan eleet ovat nyt käytettävissä kaikkialla.
+* Uusia eleitä on nyt käytettävissä.
 
-  * 3 finger double tap: Cycles through speech symbol levels which determine
-    what symbols are spoken
-  * 2 finger tripple tap: Quit NVDA!.
-  * 4 finger tap: Cycles through audio ducking modes.
-  * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
+  * Kaksoisnapautus kolmella sormella: Vaihtaa puheen symbolitasoa, joka
+    määrittää, mitkä symbolit puhutaan.
+  * Kolmoisnapautus kahdella sormella: Sulkee NVDA:n.
+  * Napautus neljällä sormella: Vaihtaa äänenvaimennuksen tilaa.
+  * Kolmoisnapautus: Vaihtaa puhetilaa vaihtoehtojen "piippaukset", "puhe
+    käytössä", "piippaukset ja puhe" sekä "ei käytössä" välillä.
 
-* In web mode, it is now possible to Use buttons, graphics, and landmarks in
-  addition to the already available browse element list.
-* In web mode, NVDA is no longer going to say normal, but default when you
-  switch to default navigation from other browse element list. For example,
-  when switching from buttons, NVDA will now say default.
+* Verkkotilassa on nyt mahdollista käyttää painikkeita, grafiikoita ja
+  kiintopisteitä muiden jo elementtilistassa käytettävissä olevien
+  vaihtoehtojen lisäksi.
+* NVDA ei enää sano verkkotilassa "normaali" vaan "oletus" vaihdettaessa
+  takaisin oletusnavigointiin jostakin muusta elementtilistan tilasta,
+  esim. painikkeista.
 
 ## Versio 23.02
 
@@ -285,7 +287,5 @@ komentoja.
 ## Versio 16.06
 
 * Ensimmäinen vakaa versio.
-
-[[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

@@ -299,6 +299,4 @@ computer with Windows 10 or 11.
 
 * Първа стабилна версия.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

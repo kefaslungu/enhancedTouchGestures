@@ -286,6 +286,4 @@ espelham os comandos do anel de opções do sintetizador pelo teclado.
 
 * Versão estável inicial.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

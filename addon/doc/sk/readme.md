@@ -249,6 +249,4 @@ následne upravujete hodnoty.
 
 * Prvé stabilné vydanie.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

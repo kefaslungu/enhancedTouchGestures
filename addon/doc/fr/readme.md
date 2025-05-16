@@ -295,6 +295,4 @@ commandes en boucle des paramètres synthétiseur sur le clavier.
 
 * Première version stable.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

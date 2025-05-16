@@ -288,6 +288,4 @@ NVDA. Также, оно предоставляет набор жестов дл
 
 * Первая стабильная версия.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures
