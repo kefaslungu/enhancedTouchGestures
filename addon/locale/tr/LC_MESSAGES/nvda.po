@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: enhancedTouchGestures 17.12\n"
+"Project-Id-Version: Gelişmiş Dokunma Hareketleri\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2017-12-15 06:10+1000\n"
-"PO-Revision-Date: 2023-05-20 16:51+0300\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-05-22 11:50+0300\n"
 "Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
 "Language-Team: Umut KORKMAZ <umutkork@gmail.com>\n"
 "Language: tr_TR\n"
@@ -16,26 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
-
-#. Enhanced Touch Gestures requires Windows 10 21H2 or later.
-#. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
-#. Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
-msgid "Unsupported Windows release"
-msgstr "Desteklenmeyen Windows sürümü"
-
-#. Translators: Dialog text shown when trying to install the add-on on
-#. releases earlier than minimum supported release.
-#, python-brace-format
-msgid ""
-"You are using {releaseName} ({build}), a Windows release not supported by "
-"this add-on.\n"
-"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
-msgstr ""
-"Bu eklenti tarafından desteklenmeyen bir Windows sürümü olan {releaseName} "
-"({build}) kullanıyorsunuz.\n"
-"Bu eklenti, {supportedReleaseName} ({supportedBuild}) veya sonraki bir "
-"sürümünü gerektirir."
+"X-Generator: Poedit 3.6\n"
 
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary, usually the user visible name of the addon.
@@ -72,13 +53,3 @@ msgstr ""
 "komutlardan oluşan bir paket.\n"
 "\tNVDA 2017.4 ya da sonraki sürümlerinden birinin kurulu olduğu, dokunmatik "
 "ekranlı ve en az Windows 8.1 yüklü bir bilgisayar gerektirir."
-
-#~ msgid ""
-#~ "You are using an older version of Windows. This add-on requires Windows "
-#~ "10 or later."
-#~ msgstr ""
-#~ "Windows'un eski bir sürümünü kullanıyorsunuz. Bu eklenti, Windows 10 veya "
-#~ "üzerini gerektirir."
-
-#~ msgid "Old Windows version"
-#~ msgstr "Eski Windows sürümü"
