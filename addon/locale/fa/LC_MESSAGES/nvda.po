@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-05-21 17:59-0600\n"
+"PO-Revision-Date: 2025-05-27 23:27+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation team <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -26,7 +26,7 @@ msgstr "فرمان‌های لمسیِ پیشرفته"
 
 #. Translators: input help message for Enhanced touch Gestures command.
 msgid "Toggles touch keyboard"
-msgstr "صفحه‌کلیدِ لمسی را فعال یا غیرفعال میکند."
+msgstr "صفحه‌کلیدِ لمسی را فعال یا غیرفعال میکند"
 
 #. Translators: message shown when touch keyboard button is not found.
 msgid "Cannot activate touch keyboard"
@@ -34,7 +34,7 @@ msgstr "نمیتوانم صفحه‌کلیدِ لمسی را فعال کنم"
 
 #. Translators: input help message for Enhanced touch Gestures command.
 msgid "Toggles voice dictation"
-msgstr "املای صوتی را فعال یا غیرفعال میکند."
+msgstr "املای صوتی را فعال یا غیرفعال میکند"
 
 #. Translators: message shown when dictation command is unavailable.
 msgid "Dictation is supported on Windows 10 Version 1709 or later"
