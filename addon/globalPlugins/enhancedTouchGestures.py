@@ -15,6 +15,7 @@ import winUser
 import config
 import windowUtils
 import tones
+import keyboardHandler
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 import wx
 from logHandler import log
@@ -42,9 +43,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.debug("etouch: touch support disabled from NVDA")
 			tones.beep(380, 100)
 			wx.CallAfter(ui.message, "Touch interaction support is disabled")
-		# Synth settings ring layer.
+		# Synth settings ring layer and nav mode.
 		touchHandler.availableTouchModes.append("SynthSettings")
 		touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
+		touchHandler.availableTouchModes.append("Nav")
+		touchHandler.touchModeLabels["navsettings"] = "navsettings mode"
 		touchHandler.touchModeLabels["web"] = "web mode"
 
 	# A few setup events please (mostly for web navigation):
@@ -247,7 +250,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		# Translators: input help message for Enhanced touch Gestures command.
 		description=_("Toggles touch keyboard"),
-		gesture="ts:4finger_flickRight",
+		gesture="ts(text):4finger_flickRight",
 	)
 	def script_touchKeyboardEnable(self, gesture):
 		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
@@ -266,13 +269,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		# Translators: input help message for Enhanced touch Gestures command.
 		description=_("Toggles voice dictation"),
-		gesture="ts:4finger_flickLeft",
+		gesture="ts(text):4finger_flickLeft",
 		speakOnDemand=True,
 	)
 	def script_win10Dictation(self, gesture):
 		# Press Windows+H on Windows 10 Version 1709 (Fall Creators Update) and later.
 		import winVersion
-		import keyboardHandler
 
 		if winVersion.getWinVer() < winVersion.WIN10_1709:
 			# Translators: message shown when dictation command is unavailable.
@@ -311,3 +313,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_prevSynthSetting(self, gesture):
 		commands.script_previousSynthSetting(gesture)
+
+	# Navigation settings
+	@scriptHandler.script(
+		# Translators: input help message for Enhanced touch Gestures command.
+		description=_("Move to previous virtual desktop"),
+		gesture="ts(nav):4finger_flickLeft",
+		speakOnDemand=True,
+	)
+	def script_prevDesktop(self, gesture):
+		keyboardHandler.KeyboardInputGesture.fromName("windows+control+leftArrow").send()
+
+	@scriptHandler.script(
+		# Translators: input help message for Enhanced touch Gestures command.
+		description=_("Move to next virtual desktop"),
+		gesture="ts(nav):4finger_flickRight",
+		speakOnDemand=True,
+	)
+	def script_nextDesktop(self, gesture):
+		keyboardHandler.KeyboardInputGesture.fromName("windows+control+rightArrow").send()
