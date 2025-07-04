@@ -4,6 +4,7 @@
 # Implements needed improvements for various touchscreen gestures.
 
 import globalPluginHandler
+from collections.abc import Callable
 import touchHandler
 import scriptHandler
 import ui
@@ -15,6 +16,7 @@ import winUser
 import config
 import windowUtils
 import tones
+from NVDAObjects import NVDAObject
 from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 import wx
 from logHandler import log
@@ -49,7 +51,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# A few setup events please (mostly for web navigation):
 
-	def event_gainFocus(self, obj, nextHandler):
+	def event_gainFocus(self, obj: NVDAObject, nextHandler: Callable[[], None]):
 		# Crucial: Don't do anything unless if it is an installed copy and touchscreen support is active.
 		if config.isInstalledCopy() and touchHandler.handler:
 			# From 2015 onwards, browse mode module is used.
