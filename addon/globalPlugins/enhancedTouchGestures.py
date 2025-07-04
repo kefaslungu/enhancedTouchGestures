@@ -68,10 +68,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
 				else:
 					curAvailTouchModes = len(touchHandler.availableTouchModes)
-					# If we have too many touch modes, pop all except the original entries.
+					# If we have too many touch modes, restore the original entries.
 					if curAvailTouchModes > self.origAvailTouchModes:
-						for i in range(0, curAvailTouchModes - self.origAvailTouchModes):
-							touchHandler.availableTouchModes.pop()
+						touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
 		nextHandler()
 
 	# Global commands: additional touch commands available everywhere.
