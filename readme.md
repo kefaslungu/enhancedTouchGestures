@@ -31,6 +31,10 @@ Available web modes are: Default, Links, Buttons, Form fields, Headings, Frames,
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.
