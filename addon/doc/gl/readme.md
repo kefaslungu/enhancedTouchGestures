@@ -46,6 +46,11 @@ opcións do sintetizador e utiliza os xestos de desprazar dous dedos cara
 arriba e cara abaixo para cambiar os valores. Estos xestos refrexan as ordes
 do grupo de opcións do sintetizador no teclado.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

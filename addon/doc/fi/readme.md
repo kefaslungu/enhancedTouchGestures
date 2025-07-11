@@ -48,6 +48,11 @@ kahden sormen pyyhkäisyä ylös tai alas muuttaaksesi arvoja. Nämä eleet
 peilaavat näppäimistöllä käytettäviä syntetisaattorin asetusrenkaan
 komentoja.
 
+## Versio 25.07
+
+* Lisäosan koodin vakautta parannettu Pyrightin (Pythonin staattisen
+  tyypintarkistustyökalun) avulla.
+
 ## Versio 25.02
 
 * Palautettu rajoitettu tuki Windows 8.1:lle.

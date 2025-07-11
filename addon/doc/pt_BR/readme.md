@@ -45,6 +45,11 @@ dedos à esquerda ou à direita para mover entre as opções do sintetizador e
 deslize com dois dedos acima e abaixo para mudar valores. Esses gestos
 espelham os comandos do anel de opções do sintetizador pelo teclado.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Versão 25.02
 
 * Suporte limitado restaurado para o Windows 8.1.Suporte inicial para

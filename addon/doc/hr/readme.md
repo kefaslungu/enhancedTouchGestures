@@ -46,6 +46,11 @@ desno prelazi se između postavki govorne jedinice. Klizanjem s dva prsta
 prema gore i dolje mijenjaju se vrijednosti. Ove su geste preslika prečaca s
 tipkovnice.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

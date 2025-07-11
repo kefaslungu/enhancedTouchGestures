@@ -44,6 +44,11 @@ aby przechodzić między ustawieniami. Przesuń dwoma palcami w górę lub w dó
 aby zmieniać wartości danego ustawienia. Gesty te odpowiadają klawiszom
 szybkiej zmiany ustawień syntezatora.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

@@ -48,6 +48,11 @@ entre les paramètres synthétiseur et glisser vers le haut ou vers le bas
 deux doigts gestes pour modifier les valeurs. Ces gestes reflètes celle des
 commandes en boucle des paramètres synthétiseur sur le clavier.
 
+## Version 25.07
+
+* Rendu le code de l'extension plus robuste avec l'aide de Pyright (un
+  vérificateur de type statique Python).
+
 ## Version 25.02
 
 * Restauré prise en charge limitée pour Windows 8.1.

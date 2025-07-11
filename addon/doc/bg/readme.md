@@ -47,6 +47,11 @@ computer with Windows 10 or 11.
 или надолу за промяна на стойностите. Тези жестове са алтернатива на
 клавиатурните команди от пръстена с настройките за синтезатора.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

@@ -40,6 +40,11 @@ nastavenia hlasového výstupu. Švihaním dvoma prstami vľavo a vpravo
 vyberiete parameter, ktorý chcete zmeniť. Švihaním dvoma prstami hore a dole
 následne upravujete hodnoty.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

@@ -45,6 +45,11 @@ computer with Windows 10 or 11.
 пролистування двома пальцями вгору і вниз. Ці жести дзеркально відображають
 жести кільцевих команд налаштувань синтезатора на клавіатурі.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

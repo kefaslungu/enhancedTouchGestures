@@ -46,6 +46,11 @@ forskellige indstillinger for talesyntesen. Svirp op og ned for at ændre den
 valgte indstilling. Disse bevægelser svarer til tastaturkommandoerne til
 ringen for talesynteseindstillinger.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

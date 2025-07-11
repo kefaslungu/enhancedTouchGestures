@@ -48,6 +48,11 @@ il flick con due dita in alto o in basso per cambiare i valori. Questi gesti
 rispecchiano quelli per modificare al volo le impostazioni sintetizzatore da
 tastiera.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+
 ## Version 25.02
 
 * Restored limited support for Windows 8.1.

@@ -48,6 +48,11 @@ deslizamiento de dos dedos arriba y abajo para cambiar los valores. Estos
 gestos se reflejan en las órdenes del grupo de opciones del sintetizador del
 teclado.
 
+## Versión 25.07
+
+* Se ha hecho el código del complemento más robusto con la ayuda de Pyright
+  (un comprobador de tipado estático de Python).
+
 ## Versión 25.02
 
 * Se restaura el soporte limitado para Windows 8.1.
