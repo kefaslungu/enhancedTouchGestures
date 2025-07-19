@@ -1,5 +1,5 @@
-# NVDA add-on template  SCONSTRUCT file
-# Copyright (C) 2012-2024 Rui Batista, Noelia Martinez, Joseph Lee
+# NVDA add-on template SCONSTRUCT file
+# Copyright (C) 2012-2025 Rui Batista, Noelia Martinez, Joseph Lee
 # This file is covered by the GNU General Public License.
 # See the file COPYING.txt for more details.
 
@@ -9,13 +9,15 @@ import os
 import os.path
 import zipfile
 import sys
+from pathlib import Path
 
 # Add-on localization exchange facility and the template requires Python 3.10.
 # For best practice, use Python 3.11 or later to align with NVDA development.
 EnsurePythonVersion(3, 10)
-sys.dont_write_bytecode = True
 
 # Bytecode should not be written for build vars module to keep the repository root folder clean.
+sys.dont_write_bytecode = True
+
 import buildVars  # NOQA: E402
 
 
@@ -51,7 +53,8 @@ def md2html(source, dest):
 			"<!DOCTYPE html>",
 			f'<html lang="{lang}">',
 			"<head>",
-			'<meta charset="UTF-8">' '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+			'<meta charset="UTF-8">',
+			'<meta name="viewport" content="width=device-width, initial-scale=1.0">',
 			'<link rel="stylesheet" type="text/css" href="../style.css" media="screen">',
 			f"<title>{title}</title>",
 			"</head>\n<body>",
@@ -161,18 +164,22 @@ def createAddonHelp(dir):
 		env.Depends(addon, readmeTarget)
 
 
-def createAddonBundleFromPath(path, dest):
+def machesNoPatterns(path: Path, patterns: list[str]) -> bool:
+	return all([not path.match(pattern) for pattern in patterns])
+
+
+def createAddonBundleFromPath(path: str|Path, dest: str):
 	"""Creates a bundle from a directory that contains an addon manifest file."""
-	basedir = os.path.abspath(path)
+	if isinstance(path, str):
+		path = Path(path)
+	basedir = path.absolute()
 	with zipfile.ZipFile(dest, "w", zipfile.ZIP_DEFLATED) as z:
-		# FIXME: the include/exclude feature may or may not be useful. Also python files can be pre-compiled.
-		for dir, dirnames, filenames in os.walk(basedir):
-			relativePath = os.path.relpath(dir, basedir)
-			for filename in filenames:
-				pathInBundle = os.path.join(relativePath, filename)
-				absPath = os.path.join(dir, filename)
-				if pathInBundle not in buildVars.excludedFiles:
-					z.write(absPath, pathInBundle)
+		for p in basedir.rglob("*"):
+			if p.is_dir():
+				continue
+			pathInBundle = p.relative_to(basedir)
+			if machesNoPatterns(pathInBundle, buildVars.excludedFiles):
+				z.write(p, pathInBundle)
 	return dest
 
 
