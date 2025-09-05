@@ -25,6 +25,9 @@ addon_info = AddonInfo(
 	Requires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."""),
 	# version
 	addon_version="25.07",
+	# Brief changelog for this version
+	# Translators: what's new content for the add-on version to be shown in the add-on store
+	addon_changelog=_("""* Made the add-on code more robust with help from Pyright (a Python static type checker)."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",
 	# URL for the add-on documentation support
