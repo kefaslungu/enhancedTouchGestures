@@ -5,15 +5,15 @@ msgstr ""
 "POT-Creation-Date: 2025-09-05 14:28+0000\n"
 "PO-Revision-Date: 2025-12-01 01:10\n"
 "Last-Translator: \n"
-"Language-Team: Finnish\n"
-"Language: fi_FI\n"
+"Language-Team: Chinese Traditional\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Crowdin-Project: nvdaaddons\n"
 "X-Crowdin-Project-ID: 780748\n"
-"X-Crowdin-Language: fi\n"
+"X-Crowdin-Language: zh-TW\n"
 "X-Crowdin-File: enhancedTouchGestures.pot\n"
 "X-Crowdin-File-ID: 210\n"
 
@@ -23,39 +23,39 @@ msgstr ""
 #. to be shown on installation and add-on information found in add-on store
 #: addon/globalPlugins/enhancedTouchGestures.py:33 buildVars.py:21
 msgid "Enhanced Touch Gestures"
-msgstr "Laajennetut kosketuseleet"
+msgstr "增強觸控手勢"
 
 #. Translators: input help message for Enhanced touch Gestures command.
 #: addon/globalPlugins/enhancedTouchGestures.py:250
 msgid "Toggles touch keyboard"
-msgstr "Ottaa kosketusnäppäimistön käyttöön tai poistaa sen käytöstä"
+msgstr "切換觸控鍵盤"
 
 #. Translators: message shown when touch keyboard button is not found.
 #: addon/globalPlugins/enhancedTouchGestures.py:264
 msgid "Cannot activate touch keyboard"
-msgstr "Kosketusnäppäimistöä ei voi aktivoida"
+msgstr "無法啟用觸控鍵盤"
 
 #. Translators: input help message for Enhanced touch Gestures command.
 #: addon/globalPlugins/enhancedTouchGestures.py:269
 msgid "Toggles voice dictation"
-msgstr "Ottaa sanelun käyttöön tai poistaa sen käytöstä"
+msgstr "切換語音聽寫"
 
 #. Translators: message shown when dictation command is unavailable.
 #: addon/globalPlugins/enhancedTouchGestures.py:280
 msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr "Sanelua tuetaan Windows 10:n versiossa 1709 tai sitä uudemmassa"
+msgstr "聽寫功能支援於 Windows 10 1709 版或更新版本"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #: buildVars.py:24
 msgid "A suite of additional touch commands, including navigation and help commands.\n"
 "\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."
-msgstr "Kokoelma lisäkomentoja kosketusnäytön käyttämiseen, siirtyminen ja ohjekomennot mukaan lukien.\n"
-"\tEdellyttää kosketusnäytöllistä tietokonetta, jossa on asennettuna Windows 10 tai 11 sekä NVDA 2024.1 tai uudempi."
+msgstr "一套額外的觸控指令，包含導覽與說明指令。\n"
+"需要一部具備觸控功能的電腦，作業系統為 Windows 8.1 或更新版本，並已安裝 NVDA 2017.4 或更新版本。"
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:30
 msgid "* Made the add-on code more robust with help from Pyright (a Python static type checker)."
-msgstr "Lisäosan koodin vakautta parannettu Pyrightin (Pythonin staattisen tyypintarkistustyökalun) avulla."
+msgstr "* 在 Pyright (一個 Python 靜態類型檢查器) 的幫助下，使附加元件的程式碼更為穩健。"
 
