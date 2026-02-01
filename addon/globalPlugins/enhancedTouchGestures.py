@@ -28,6 +28,12 @@ addonHandler.initTranslation()
 post_browseModeStateChange = extensionPoints.Action()
 
 
+# Disable the add-on completely if touch support is disabled (hardware of this is portable nVDA).
+def touchSupportRequired(cls):
+	return globalPluginHandler.GlobalPlugin if not touchHandler.touchSupported() else cls
+
+
+@touchSupportRequired
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 	scriptCategory = _("Enhanced Touch Gestures")
