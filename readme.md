@@ -11,15 +11,15 @@ Note: this add-on requires NVDA 2025.3.2 or later running on a touchscreen compu
 ### Available everywhere
 
 * Two finger tripple tap: quits NVDA!
-* Three finger flick down: read current window.
-* Three finger flick left: report object with focus.
-* Three finger flick right: report current navigator object.
+* Three finger flick right: press Tab.
+* Three finger flick left: press Shift+Tab.
+* Three finger flick down (object mode): read current window.
 * Three finger double tap: cycles through speech symbol levels which determine what symbols are spoken.
 * Three finger triple tap: toggles screen curtain.
 * Four finger tap: cycles through audio ducking modes.
 * Four finger double tap: toggle input help mode.
-* Four finger flick right: toggle touch keyboard (usually enables it).
-* Four finger flick left: toggle dictation (Windows+H; Windows 10 Version 1709 or later).
+* Four finger flick left: report object with focus.
+* Four finger flick right: report current navigator object.
 * Four finger flick up: report title of the current window.
 * Four finger flick down: report status bar text.
 
@@ -38,8 +38,11 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 * NVDA 2025.3.2 or later is required.
 * A warning will be presented when installing the add-on on computers without touchscreens or portable NVDA version is in use.
 * Gestures from the add-on will not be shown in input gestures dialog when the add-on is installed on a portable NVDA version.
+* Touch gesture changes, including pressing Tab (three finger flick right), pressing Shift+Tab (three finger flick left), reporting focused object (four finger flick left), and reporting navigator object (four finger flick right).
+* Removed touch keyboard and dictation toggle gestures due to reliability issues with the former and dictation being replaced by Voice Access in Windows 11.
 * Removed progress bar output settings toggle gesture (one finger triple tap).
 * Added screen curtain toggle gesture (three finger triple tap).
+* Read current window gesture (three finger flick down) will be limited to object touch mode.
 * Added embedded object and text paragraph navigation to web touch mode.
 
 ## Version 25.07
