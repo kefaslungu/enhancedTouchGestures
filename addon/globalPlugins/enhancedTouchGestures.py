@@ -42,8 +42,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
 		super().__init__()
-		if not touchHandler.touchSupported():
-			return
 		# Notify if touch support is off.
 		# This is useful if using NVDA on a shared computer.
 		if not config.conf["touch"]["enabled"]:
