@@ -8,7 +8,7 @@ from collections.abc import Callable
 import touchHandler
 import scriptHandler
 import ui
-from globalCommands import commands, GlobalCommands
+from globalCommands import commands
 import browseMode
 import extensionPoints
 import api
@@ -149,9 +149,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_toggleScreenCurtain(self, gesture):
 		commands.script_toggleScreenCurtain(gesture)
 
-	@scriptHandler.script(description=GlobalCommands.script_quit.__doc__, gesture="ts:2finger_tripple_tap")
+	@scriptHandler.script(description=commands.script_quit.__doc__, gesture="ts:2finger_triple_tap")
 	def script_quitNvda(self, gesture):
-		GlobalCommands.script_quit(self, gesture)
+		commands.script_quit(gesture)
 
 	# Web navigation:
 
