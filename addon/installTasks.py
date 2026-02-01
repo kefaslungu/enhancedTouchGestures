@@ -22,6 +22,7 @@ def onInstall() -> None:
 		return
 	# Translators: dialog title shown when trying to install the add-on on unsupported systems.
 	installWarning = _("Enhanced Touch Gestures install warning")
+	installMessage = None
 	match (touchHardwarePresent, isInstalledCopy):
 		case (False, _):  # No touch hardware whatsoever
 			installMessage = _( # Translators: dialog text shown when trying to install the add-on on unsupported systems.
