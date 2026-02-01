@@ -111,7 +111,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_speakForeground.__doc__,
-		gesture="ts:3finger_flickDown",
+		gesture="ts(object):3finger_flickDown",
 		speakOnDemand=True,
 	)
 	def script_speakForeground(self, gesture):
