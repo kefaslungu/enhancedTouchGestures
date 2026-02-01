@@ -277,7 +277,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message shown when touch keyboard button is not found.
 			ui.message(_("Cannot activate touch keyboard"))
 
-	# toggles voice dectation.
+	# toggles voice dictation.
 	@scriptHandler.script(
 		# Translators: input help message for Enhanced touch Gestures command.
 		description=_("Toggles voice dictation"),
