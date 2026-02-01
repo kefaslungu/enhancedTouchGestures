@@ -1,32 +1,34 @@
-# Enhanced Touchscreen Gestures #
+# Enhanced Touchscreen Gestures
 
 * Authors: Joseph Lee, Kefas Lungu
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2024.1 or later running on a touchscreen computer with Windows 10 or 11.
+Note: this add-on requires NVDA 2025.3.2 or later running on a touchscreen computer with Windows 10 or 11.
 
 ## Commands
 
 ### Available everywhere
 
-* 4 finger double tap: toggle input help mode.
+* Two finger tripple tap: quits NVDA!
+* Three finger flick down: read current window.
+* Three finger flick left: report object with focus.
+* Three finger flick right: report current navigator object.
+* Three finger double tap: cycles through speech symbol levels which determine what symbols are spoken.
+* Three finger triple tap: toggles screen curtain.
+* Four finger tap: cycles through audio ducking modes.
+* Four finger double tap: toggle input help mode.
 * Four finger flick right: toggle touch keyboard (usually enables it).
 * Four finger flick left: toggle dictation (Windows+H; Windows 10 Version 1709 or later).
-* 4 finger flick up: report title of the current window.
-* 4 finger flick down: report status bar text.
-* 3 finger flick down: read current window.
-* 3 finger flick left: report object with focus.
-* 3 finger flick right: report current navigator object.
-* 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
-* 2 finger tripple tap: Quit NVDA!.
-* 4 finger tap: Cycles through audio ducking modes.
-* Triple tap: Toggles between beeps, speech, beeps and speech, and off.
+* Four finger flick up: report title of the current window.
+* Four finger flick down: report status bar text.
 
 ## Web touch mode
 
 This touch mode, available in browse mode, allows you to navigate the document by selected element. To switch to web mode, from browse mode documents, perform 3 finger tap. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents, object touch mode is used.
-Available web modes are: Default, Links, Buttons, Form fields, Headings, Frames, Tables, Lists, Graphics, and Landmarks.
+
+Available web modes are: default (move through elements/objects regardless of type), links, buttons, form fields, headings, frames, tables, lists, graphics, and landmarks.
+
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
@@ -55,13 +57,13 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 
 ## Version 23.06
 
-* Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
+* Changed add-on maintainer to Kefas Lungu.
 * All gestures in object mode are now available everywhere.
 * New gestures are now available.
   * 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
-  * 2 finger tripple tap: Quit NVDA!.
+  * 2 finger triple tap: Quit NVDA!.
   * 4 finger tap: Cycles through audio ducking modes.
-  * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
+  * Triple tap: Cycles progress bar output between beeps, speech, beeps and speech, and off.
 * In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
 * In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
 
