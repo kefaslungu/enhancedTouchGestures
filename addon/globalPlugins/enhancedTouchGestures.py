@@ -126,7 +126,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		commands.script_navigatorObject_current(gesture)
 
 	# the following doesn't need speak on demand, skip it.
-	# audio ducking mode, cycle speech symbol level, progress bar output and quit NVDA.
+	# audio ducking mode, cycle speech symbol level, screen curtain toggle, and quit NVDA.
 
 	@scriptHandler.script(
 		description=commands.script_cycleAudioDuckingMode.__doc__,
@@ -143,11 +143,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		commands.script_cycleSpeechSymbolLevel(gesture)
 
 	@scriptHandler.script(
-		description=GlobalCommands.script_toggleProgressBarOutput.__doc__,
-		gesture="ts:tripple_tap",
+		description=commands.script_toggleScreenCurtain.__doc__,
+		gesture="ts:3finger_triple_tap",
 	)
-	def script_progressBarOutput(self, gesture):
-		GlobalCommands.script_toggleProgressBarOutput(self, gesture)
+	def script_toggleScreenCurtain(self, gesture):
+		commands.script_toggleScreenCurtain(gesture)
 
 	@scriptHandler.script(description=GlobalCommands.script_quit.__doc__, gesture="ts:2finger_tripple_tap")
 	def script_quitNvda(self, gesture):
