@@ -6,6 +6,7 @@
 import globalPluginHandler
 from collections.abc import Callable
 import touchHandler
+import keyboardHandler
 import scriptHandler
 import ui
 from globalCommands import commands
@@ -89,7 +90,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_reportCurrentFocus.__doc__,
-		gesture="ts:3finger_flickLeft",
+		gesture="ts:4finger_flickLeft",
 		speakOnDemand=True,
 	)
 	def script_reportCurrentFocus(self, gesture):
@@ -119,7 +120,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_navigatorObject_current.__doc__,
-		gesture="ts:3finger_flickRight",
+		gesture="ts:4finger_flickRight",
 		speakOnDemand=True,
 	)
 	def script_navigatorObject_current(self, gesture):
@@ -257,43 +258,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				self.browseModeCommands[self.webBrowseMode - 1][1](obj, gesture)
 
-	# toggles touch keyboard
-	# again, no speak on demand is needed since touch keyboard too will also be silenced during speech on demand.
+	# Press Tab and Shift+Tab.
+
 	@scriptHandler.script(
 		# Translators: input help message for Enhanced touch Gestures command.
-		description=_("Toggles touch keyboard"),
-		gesture="ts:4finger_flickRight",
+		description=_("Emulates pressing tab on the system keyboard"),
+		gesture="ts:3finger_flickRight",
 	)
-	def script_touchKeyboardEnable(self, gesture):
-		# Locate the touch keyboard button and activate it, simulating JAWS 17 gesture.
-		keyboardButtonHwnd = windowUtils.findDescendantWindow(
-			api.getDesktopObject().windowHandle, className="TIPBand"
-		)
-		touchKeyboardButton = getNVDAObjectFromEvent(keyboardButtonHwnd, winUser.OBJID_CLIENT, 0)
-		try:
-			touchKeyboardButton.doAction()
-			tones.beep(1000, 150)
-		except NotImplementedError:
-			# Translators: message shown when touch keyboard button is not found.
-			ui.message(_("Cannot activate touch keyboard"))
+	def script_pressTab(self, gesture):
+		keyboardHandler.KeyboardInputGesture.fromName("tab").send()
 
-	# toggles voice dictation.
 	@scriptHandler.script(
 		# Translators: input help message for Enhanced touch Gestures command.
-		description=_("Toggles voice dictation"),
-		gesture="ts:4finger_flickLeft",
-		speakOnDemand=True,
+		description=_("Emulates pressing shift+tab on the system keyboard"),
+		gesture="ts:3finger_flickLeft",
 	)
-	def script_win10Dictation(self, gesture):
-		# Press Windows+H on Windows 10 Version 1709 (Fall Creators Update) and later.
-		import winVersion
-		import keyboardHandler
-
-		if winVersion.getWinVer() < winVersion.WIN10_1709:
-			# Translators: message shown when dictation command is unavailable.
-			ui.message(_("Dictation is supported on Windows 10 Version 1709 or later"))
-		else:
-			keyboardHandler.KeyboardInputGesture.fromName("windows+h").send()
+	def script_pressShiftTab(self, gesture):
+		keyboardHandler.KeyboardInputGesture.fromName("shift+tab").send()
 
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
