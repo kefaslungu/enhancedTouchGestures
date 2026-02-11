@@ -54,25 +54,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# A few setup events please (mostly for web navigation):
 
 	def event_gainFocus(self, obj: NVDAObject, nextHandler: Callable[[], None]):
-		# Crucial: Don't do anything unless if it is an installed copy and touchscreen support is active.
-		if config.isInstalledCopy() and touchHandler.handler:
-			# From 2015 onwards, browse mode module is used.
-			if (
-				isinstance(obj.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
-				and "Web" not in touchHandler.availableTouchModes
-			):
-				touchHandler.availableTouchModes.append("Web")
-				# automatically switch to web mode if any brows mode window is active
-				touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[3]
+		if (
+			isinstance(obj.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
+			and "Web" not in touchHandler.availableTouchModes
+		):
+			touchHandler.availableTouchModes.append("Web")
+			# automatically switch to web mode if any brows mode window is active
+			touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[3]
+		else:
+			# If we're not in browser window, force object mode.
+			if "Web" not in touchHandler.availableTouchModes:
+				touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
 			else:
-				# If we're not in browser window, force object mode.
-				if "Web" not in touchHandler.availableTouchModes:
-					touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
-				else:
-					curAvailTouchModes = len(touchHandler.availableTouchModes)
-					# If we have too many touch modes, restore the original entries.
-					if curAvailTouchModes > self.origAvailTouchModes:
-						touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
+				curAvailTouchModes = len(touchHandler.availableTouchModes)
+				# If we have too many touch modes, restore the original entries.
+				if curAvailTouchModes > self.origAvailTouchModes:
+					touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
 		nextHandler()
 
 	# Global commands: additional touch commands available everywhere.
