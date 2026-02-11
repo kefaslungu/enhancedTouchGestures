@@ -29,7 +29,7 @@ addonHandler.initTranslation()
 post_browseModeStateChange = extensionPoints.Action()
 
 
-# Disable the add-on completely if touch support is disabled (hardware of this is portable nVDA).
+# Disable the add-on completely if touch support is disabled (hardware or this is portable NVDA).
 def touchSupportRequired(cls):
 	return globalPluginHandler.GlobalPlugin if not touchHandler.touchSupported() else cls
 
