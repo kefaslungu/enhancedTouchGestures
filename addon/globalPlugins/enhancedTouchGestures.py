@@ -13,12 +13,9 @@ from globalCommands import commands
 import browseMode
 import extensionPoints
 import api
-import winUser
 import config
-import windowUtils
 import tones
 from NVDAObjects import NVDAObject
-from NVDAObjects.IAccessible import getNVDAObjectFromEvent
 import wx
 from logHandler import log
 import addonHandler
