@@ -46,9 +46,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.debug("etouch: touch support disabled from NVDA")
 			tones.beep(380, 100)
 			wx.CallAfter(ui.message, "Touch interaction support is disabled")
-		# Synth settings ring layer.
-		touchHandler.availableTouchModes.append("SynthSettings")
-		touchHandler.touchModeLabels["synthsettings"] = "synthsettings mode"
+		# Add synth settings ring layer.
+		touchHandler.availableTouchModes.append("synthsettings")
+		touchHandler.touchModeLabels["synthsettings"] = "synth settings mode"
 		touchHandler.touchModeLabels["web"] = "web mode"
 
 	# A few setup events please (mostly for web navigation):
@@ -270,9 +270,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_pressShiftTab(self, gesture):
 		keyboardHandler.KeyboardInputGesture.fromName("shift+tab").send()
 
+	# Synth settings ring/mode
+
 	@scriptHandler.script(
 		description=commands.script_increaseSynthSetting.__doc__,
-		gesture="ts(SynthSettings):2finger_flickUp",
+		gesture="ts(synthsettings):2finger_flickUp",
 		speakOnDemand=True,
 	)
 	def script_prevSynthSettingValue(self, gesture):
@@ -280,7 +282,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_decreaseSynthSetting.__doc__,
-		gesture="ts(SynthSettings):2finger_flickDown",
+		gesture="ts(synthsettings):2finger_flickDown",
 		speakOnDemand=True,
 	)
 	def script_nextSynthSettingValue(self, gesture):
@@ -288,7 +290,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_nextSynthSetting.__doc__,
-		gesture="ts(SynthSettings):2finger_flickRight",
+		gesture="ts(synthsettings):2finger_flickRight",
 		speakOnDemand=True,
 	)
 	def script_nextSynthSetting(self, gesture):
@@ -296,7 +298,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(
 		description=commands.script_previousSynthSetting.__doc__,
-		gesture="ts(SynthSettings):2finger_flickLeft",
+		gesture="ts(synthsettings):2finger_flickLeft",
 		speakOnDemand=True,
 	)
 	def script_prevSynthSetting(self, gesture):
