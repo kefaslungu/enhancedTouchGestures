@@ -49,20 +49,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Add synth settings ring layer.
 		touchHandler.availableTouchModes.append("synthsettings")
 		touchHandler.touchModeLabels["synthsettings"] = "synth settings mode"
-		touchHandler.touchModeLabels["web"] = "web mode"
+		touchHandler.touchModeLabels["browse"] = "browse mode"
 
-	# A few setup events please (mostly for web navigation):
+	# A few setup events please (mostly for web/browse mode navigation):
 
 	def event_foreground(self, obj: NVDAObject, nextHandler: Callable[[], None]):
 		focus = api.getFocusObject()
 		if (
 			isinstance(focus.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
-			and "Web" not in touchHandler.availableTouchModes
+			and "browse" not in touchHandler.availableTouchModes
 		):
-			touchHandler.availableTouchModes.append("Web")
+			touchHandler.availableTouchModes.append("browse")
 		else:
-			# If we're not in browser window and web mode was active, force object mode.
-			if touchHandler.handler._curTouchMode == "Web":
+			# If we're not in browser window and web (browse) mode was active, force object mode.
+			if touchHandler.handler._curTouchMode == "browse":
 				touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
 			curAvailTouchModes = len(touchHandler.availableTouchModes)
 			# If we have too many touch modes, restore the original entries.
@@ -146,9 +146,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_quitNvda(self, gesture):
 		commands.script_quit(gesture)
 
-	# Web navigation:
+	# Web browse mode navigation:
 
-	# Web elements list:
+	# Web browse mode elements list:
 	webBrowseElements = (
 		"Default",
 		"Links",
@@ -169,19 +169,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Touch gestures please.
 	# doesn't actually need touch on demand since the entire keyboard is also silenced.
 
-	@scriptHandler.script(description="Selects the next web navigation element.", gesture="ts(Web):flickDown")
-	def script_nextWebElement(self, gesture):
+	@scriptHandler.script(description="Selects the next browse mode element.", gesture="ts(browse):flickDown")
+	def script_nextBrowseModeElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
-		log.debug(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
+		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(
-		description="Selects the previous web navigation element.", gesture="ts(Web):flickUp"
+		description="Selects the previous browse mode element.", gesture="ts(browse):flickUp"
 	)
-	def script_prevWebElement(self, gesture):
+	def script_prevBrowseModeElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
-		log.debug(f"etouch: switching web mode to {self.webBrowseElements[self.webBrowseMode]}")
+		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	# The actual navigation gestures:
 	# Look up the needed commands for readability purposes.
@@ -232,7 +232,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		),
 	)
 
-	@scriptHandler.script(gesture="ts(Web):flickRight")
+	@scriptHandler.script(gesture="ts(browse):flickRight")
 	def script_nextSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
 		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
@@ -241,7 +241,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				self.browseModeCommands[self.webBrowseMode - 1][0](obj, gesture)
 
-	@scriptHandler.script(gesture="ts(Web):flickLeft")
+	@scriptHandler.script(gesture="ts(browse):flickLeft")
 	def script_prevSelectedElement(self, gesture):
 		obj = api.getNavigatorObject().treeInterceptor
 		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
