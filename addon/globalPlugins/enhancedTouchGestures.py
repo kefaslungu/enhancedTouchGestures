@@ -3,6 +3,7 @@
 # Copyright 2013-2026 Joseph Lee, Kefas Lungu, released under GPL.
 # Implements needed improvements for various touchscreen gestures.
 
+from typing import NamedTuple
 import globalPluginHandler
 from collections.abc import Callable
 import touchHandler
@@ -148,20 +149,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Web browse mode navigation:
 
-	# Web browse mode elements list:
+	# Web elements and associated scripts list:
+	WebBrowseElement = NamedTuple(
+		"WebBrowseElement", [
+			("script", str),
+			("element", str)
+		]
+	)
 	webBrowseElements = (
-		"Default",
-		"Links",
-		"Buttons",
-		"Form fields",
-		"Headings",
-		"Frames",
-		"Tables",
-		"Lists",
-		"Graphics",
-		"Landmarks",
-		"Embedded objects",
-		"Text paragraphs",
+		WebBrowseElement("", "Default (all elements)"),
+		WebBrowseElement("Link", "Links"),
+		WebBrowseElement("FormField", "Form fields"),
+		WebBrowseElement("Heading", "Headings"),
+		WebBrowseElement("Frame", "Frames"),
+		WebBrowseElement("Table", "Tables"),
+		WebBrowseElement("List", "Lists"),
+		WebBrowseElement("Graphic", "Graphics"),
+		WebBrowseElement("Landmark", "Landmarks"),
+		WebBrowseElement("EmbeddedObject", "Embedded objects"),
+		WebBrowseElement("TextParagraph", "Text paragraphs"),
 	)
 	# The starting index for the web browse mode, which flicks through objects.
 	webBrowseMode = 0
@@ -182,55 +188,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode])
 		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
-
-	# The actual navigation gestures:
-	# Look up the needed commands for readability purposes.
-	browseModeCommands = (
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextLink,
-			browseMode.BrowseModeTreeInterceptor.script_previousLink,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextButton,
-			browseMode.BrowseModeTreeInterceptor.script_previousButton,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextFormField,
-			browseMode.BrowseModeTreeInterceptor.script_previousFormField,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextHeading,
-			browseMode.BrowseModeTreeInterceptor.script_previousHeading,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextFrame,
-			browseMode.BrowseModeTreeInterceptor.script_previousFrame,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextTable,
-			browseMode.BrowseModeTreeInterceptor.script_previousTable,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextList,
-			browseMode.BrowseModeTreeInterceptor.script_previousList,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextGraphic,
-			browseMode.BrowseModeTreeInterceptor.script_previousGraphic,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextLandmark,
-			browseMode.BrowseModeTreeInterceptor.script_previousLandmark,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextEmbeddedObject,
-			browseMode.BrowseModeTreeInterceptor.script_previousEmbeddedObject,
-		),
-		(
-			browseMode.BrowseModeTreeInterceptor.script_nextTextParagraph,
-			browseMode.BrowseModeTreeInterceptor.script_previousTextParagraph,
-		),
-	)
 
 	@scriptHandler.script(gesture="ts(browse):flickRight")
 	def script_nextSelectedElement(self, gesture):
