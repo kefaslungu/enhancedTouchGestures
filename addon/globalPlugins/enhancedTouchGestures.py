@@ -178,7 +178,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(description="Selects the next browse mode element.", gesture="ts(browse):flickDown")
 	def script_nextBrowseModeElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
-		ui.message(self.webBrowseElements[self.webBrowseMode])
+		ui.message(self.webBrowseElements[self.webBrowseMode].element)
 		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(
@@ -186,7 +186,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_prevBrowseModeElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
-		ui.message(self.webBrowseElements[self.webBrowseMode])
+		ui.message(self.webBrowseElements[self.webBrowseMode].element)
 		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(gesture="ts(browse):flickRight")
