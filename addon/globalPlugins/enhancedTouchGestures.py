@@ -53,9 +53,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# A few setup events please (mostly for web navigation):
 
-	def event_gainFocus(self, obj: NVDAObject, nextHandler: Callable[[], None]):
+	def event_foreground(self, obj: NVDAObject, nextHandler: Callable[[], None]):
+		focus = api.getFocusObject()
 		if (
-			isinstance(obj.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
+			isinstance(focus.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
 			and "Web" not in touchHandler.availableTouchModes
 		):
 			touchHandler.availableTouchModes.append("Web")
