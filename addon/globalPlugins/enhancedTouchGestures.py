@@ -191,21 +191,33 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(gesture="ts(browse):flickRight")
 	def script_nextSelectedElement(self, gesture):
-		obj = api.getNavigatorObject().treeInterceptor
-		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
-			if self.webBrowseMode == 0:
-				commands.script_navigatorObject_nextInFlow(gesture)
-			else:
-				self.browseModeCommands[self.webBrowseMode - 1][0](obj, gesture)
+		if (
+			isinstance(
+				(obj := api.getNavigatorObject().treeInterceptor),
+				browseMode.BrowseModeTreeInterceptor
+			) and self.webBrowseMode > 0  # An actual browse mode element
+		):
+			getattr(
+				obj,
+				f"script_next{self.webBrowseElements[self.webBrowseMode].script}"
+			)(gesture)
+		else:
+			commands.script_navigatorObject_nextInFlow(gesture)
 
 	@scriptHandler.script(gesture="ts(browse):flickLeft")
 	def script_prevSelectedElement(self, gesture):
-		obj = api.getNavigatorObject().treeInterceptor
-		if isinstance(obj, browseMode.BrowseModeTreeInterceptor):
-			if self.webBrowseMode == 0:
-				commands.script_navigatorObject_previousInFlow(gesture)
-			else:
-				self.browseModeCommands[self.webBrowseMode - 1][1](obj, gesture)
+		if (
+			isinstance(
+				(obj := api.getNavigatorObject().treeInterceptor),
+				browseMode.BrowseModeTreeInterceptor
+		) and self.webBrowseMode > 0  # An actual browse mode element
+		):
+			getattr(
+				obj,
+				f"script_previous{self.webBrowseElements[self.webBrowseMode].script}"
+			)(gesture)
+		else:
+			commands.script_navigatorObject_previousInFlow(gesture)
 
 	# Press Tab and Shift+Tab.
 
