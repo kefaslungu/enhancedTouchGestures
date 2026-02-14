@@ -27,15 +27,7 @@ addon_info = AddonInfo(
 	addon_version="26.02",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* NVDA 2025.3.2 or later is required.
-* A warning will be presented when installing the add-on on computers without touchscreens or portable NVDA version is in use.
-* Gestures from the add-on will not be shown in input gestures dialog when the add-on is installed on a portable NVDA version.
-* Touch gesture changes, including pressing Tab (three finger flick right), pressing Shift+Tab (three finger flick left), reporting focused object (four finger flick left), and reporting navigator object (four finger flick right).
-* Removed touch keyboard and dictation toggle gestures due to reliability issues with the former and dictation being replaced by Voice Access in Windows 11.
-* Removed progress bar output settings toggle gesture (one finger triple tap).
-* Added screen curtain toggle gesture (three finger triple tap).
-* Read current window gesture (three finger flick down) will be limited to object touch mode.
-* Added embedded object and text paragraph navigation to web touch mode."""),
+	addon_changelog=_("""* Renamed 'web mode' to 'browse mode' as this mode will cover additional situations including browse mode in Word 365."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",
 	# URL for the add-on documentation support
