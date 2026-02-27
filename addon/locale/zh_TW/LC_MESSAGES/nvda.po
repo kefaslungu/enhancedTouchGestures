@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2025-09-05 14:28+0000\n"
-"PO-Revision-Date: 2026-01-05 00:34\n"
+"POT-Creation-Date: 2026-02-16 03:46+0000\n"
+"PO-Revision-Date: 2026-02-23 00:39\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
@@ -17,33 +17,40 @@ msgstr ""
 "X-Crowdin-File: enhancedTouchGestures.pot\n"
 "X-Crowdin-File-ID: 210\n"
 
+#. Translators: dialog title shown when trying to install the add-on on unsupported systems.
+#: addon/installTasks.py:24
+msgid "Enhanced Touch Gestures install warning"
+msgstr "增強觸控手勢安裝警告"
+
+#. No touch hardware whatsoever
+#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
+#: addon/installTasks.py:29
+msgid "This device does not support touch interaction. A touch capable device is required to use add-on features."
+msgstr "此裝置不支援觸控互動。必須使用具備觸控功能的裝置才能使用附加元件功能。"
+
+#. Portable NVDA running on a touch capable hardware
+#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
+#: addon/installTasks.py:33
+msgid "You are using a portable copy of NVDA and the device supports touch interaction. NVDA must be installed to use add-on features."
+msgstr "您正在使用 NVDA 可攜式版，且此裝置支援觸控互動。必須安裝 NVDA 才能使用附加元件功能。"
+
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon/globalPlugins/enhancedTouchGestures.py:33 buildVars.py:21
+#: addon/globalPlugins/enhancedTouchGestures.py:38 buildVars.py:21
 msgid "Enhanced Touch Gestures"
 msgstr "增強觸控手勢"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:250
-msgid "Toggles touch keyboard"
-msgstr "切換觸控鍵盤"
-
-#. Translators: message shown when touch keyboard button is not found.
-#: addon/globalPlugins/enhancedTouchGestures.py:264
-msgid "Cannot activate touch keyboard"
-msgstr "無法啟用觸控鍵盤"
+#: addon/globalPlugins/enhancedTouchGestures.py:226
+msgid "Emulates pressing tab on the system keyboard"
+msgstr "模擬在系統鍵盤上按 tab"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:269
-msgid "Toggles voice dictation"
-msgstr "切換語音聽寫"
-
-#. Translators: message shown when dictation command is unavailable.
-#: addon/globalPlugins/enhancedTouchGestures.py:280
-msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr "聽寫功能支援於 Windows 10 1709 版或更新版本"
+#: addon/globalPlugins/enhancedTouchGestures.py:234
+msgid "Emulates pressing shift+tab on the system keyboard"
+msgstr "模擬在系統鍵盤上按 shift+tab"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
@@ -56,6 +63,6 @@ msgstr "一套額外的觸控指令，包含導覽與說明指令。\n"
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:30
-msgid "* Made the add-on code more robust with help from Pyright (a Python static type checker)."
-msgstr "* 在 Pyright (一個 Python 靜態類型檢查器) 的幫助下，使附加元件的程式碼更為穩健。"
+msgid "* Renamed 'web mode' to 'browse mode' as this mode will cover additional situations including browse mode in Word 365."
+msgstr "由於此模式將涵蓋更多情況（包含 Word 365 中的瀏覽模式），「網頁模式」已重新命名為「瀏覽模式」。"
 

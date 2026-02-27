@@ -1,35 +1,53 @@
-# Gelişmiş dokunmatik ekran hareketleri #
+# Gelişmiş Dokunmatik Ekran Hareketleri
 
 * Yazarlar: Joseph Lee ve Kefas Lungu
 
 Bu eklenti NVDA'ya ek dokunma hareketleri ekler. Ayrıca tarama kipinde daha kolay dolaşım için ek hareketler sunar.
 
-Not: Bu eklenti, Windows 10 veya 11 yüklü dokunmatik ekranlı bir bilgisayarda NVDA 2024.1 veya sonrası sürümlerin çalışmasını gerektirir.
+Not: Bu eklenti, Windows 10 veya 11 yüklü dokunmatik ekranlı bir bilgisayarda NVDA 2025.3.2 veya sonraki bir sürümünün çalıştırılmasını gerektirir.
 
 ## Hareketler
 
 ### Her yerde kullanılabilen hareketler
 
-* 4 parmakla çift dokunma: girdi yardımını açıp kapatır.
-* Dört parmakla sağa fiske: dokunmatik klavyeyi açıp kapatır (genellikle açar).
-* Dört parmakla sola fiske: dikteyi açıp kapatır (Windows+H; Windows 10 1709 sürümü veya daha sonrası).
-* 4 parmakla yukarı fiske: Odaklanılan pencerenin başlığını söyler.
-* 4 parmakla aşağı fiske: Durum çubuğu metnini okur.
-* 3 parmakla aşağı fiske: odaklanılan pencereyi okur.
-* 3 parmakla sola fiske: odaklanılan nesneyi söyler.
-* 3 parmakla sağa fiske: nesne sunucusunun odaklanmış olduğu nesneyi söyler.
-* 3 parmakla çift dokunma: Hangi simgelerin söyleneceğini belirleyen konuşma simgesi düzeyleri arasında geçiş yapar
-* 2 parmakla üç kez dokunma: NVDA'dan çıkar!.
-* 4 parmakla dokunma: Ses Zayıflaması modları arasında geçiş yapar.
-* Üç kez dokunma: Bip sesleri, konuşma, bip sesleri ve konuşma arasında geçiş yapar ve kapatır.
+* İki parmakla üç kez dokunma: NVDA'yı kapatır!
+* Üç parmakla sağa kaydırma: Sekme tuşuna basar.
+* Üç parmakla sola kaydırma: Shift+Sekme tuşlarına basar.
+* Üç parmakla aşağı kaydırma (nesne modu): geçerli pencereyi okur.
+* Üç parmakla çift dokunma: hangi sembollerin seslendirileceğini belirleyen sembol konuşma seviyeleri arasında geçiş yapar.
+* Üç parmakla üçlü dokunma: ekran perdesini değiştirir.
+* Dört parmakla dokunma: ses kısma modları arasında geçiş yapar.
+* Dört parmakla iki kez dokunma: Yardım giriş modunu değiştirir.
+* Dört parmakla sola kaydırma: nesneyi odaklı olarak seslendirir.
+* Dört parmakla sağa kaydırma: geçerli dolaşım nesnesini seslendirir.
+* Dört parmakla yukarı kaydırma: geçerli pencerenin başlığını seslendirir.
+* Dört parmakla aşağı kaydırma: durum çubuğu metnini seslendirir.
 
-## Web dokunma kipi
+## Göz atma moduna dokunun
 
-Tarama kipinde geçiş yapılan bu kip, belgeyi seçilen öğe türüne göre dolaşmanızı sağlar. Web kipine geçmek için, tarama kipindeyken ve bir belgenin içindeyken üç parmakla dokunun. Bu kipte bir parmakla yukarı veya aşağı fiske yaparak mevcut olan öğe dolaşım modları arasında dolaşabilir, bir parmakla sağa veya sola fiske yaparak sırasıyla sonraki veya önceki öğeye gidebilirsiniz. Tarama kipinin kullanıldığı belgeden uzaklaştığınızda öğe dokunma kipine geçiş yapılır.
-Mevcut web modları: varsayılan, bağlantılar, düğmeler, form alanları, başlıklar, çerçeveler, tablolar, listeler, grafikler ve yer işaretleri.
+Göz atma modunda kullanılabilen bu dokunma modu, belgede seçilen öğeye göre gezinmenize olanak tanır. Tarama moduna geçmek için, tarama modu belgelerinde 3 parmakla hafifçe vurun. Bu moddan, bir parmakla yukarı veya aşağı kaydırmak mevcut öğe gezinme modları arasında geçiş yapar, bir parmakla sağa veya sola kaydırmak ise sırasıyla sonraki veya önceki seçilen öğeye gider. Belgelere göz atma modundan uzaklaştığınızda nesneye dokunma modu kullanılacaktır.
+
+Kullanılabilir web modları şunlardır: varsayılan (türden bağımsız olarak öğeler/nesneler arasında dolaşma), bağlantılar, düğmeler, form alanları, başlıklar, çerçeveler, tablolar, listeler, grafikler, yer işaretleri, gömülü nesneler (örneğin diyaloglar ve web uygulamaları) ve metin paragrafları.
+
 ## Sentezleyici ayarları dokunma kipi
 
 Ses seçimi, ses seviyesi gibi sentezleyici ayarlarını yapmak için bu kipi kullanabilirsiniz. İki parmakla sola veya sağa fiske yaparak sentezleyici ayarları arasında dolaşabilir, iki parmakla yukarı veya aşağı fiske yaparak ayarları değiştirebilirsiniz. Bu hareketler klavyedeki hızlı sentezleyici ayarlarını dokunmatik ekrana aktarır.
+
+## Sürüm 26.03
+
+* Bu mod, Word 365'teki göz atma modu da dahil olmak üzere ek durumları kapsayacağı için "web modu", "gözatma modu" olarak yeniden adlandırıldı.
+
+## Sürüm 26.02
+
+* NVDA 2025.3.2 veya sonrası gerekli.
+* Eklentiyi dokunmatik ekranı olmayan veya taşınabilir NVDA sürümünün kullanıldığı bilgisayarlara yüklerken bir uyarı görüntülenecek.
+* Eklenti taşınabilir bir NVDA sürümüne yüklendiğinde, eklentiden gelen hareketler girdi hareketleri iletişim kutusunda gösterilmeyecek.
+* Sekme tuşuna basma (üç parmakla sağa kaydırma), Shift+Sekme tuşlarına basma (üç parmakla sola kaydırma), odaklanılan nesneyi seslendirme (dört parmakla sola kaydırma) ve dolaşma nesnesini bildirme (dört parmakla sağa kaydırma) dahil olmak üzere dokunma hareketi değişiklikleri.
+* Dokunmatik klavye ve dikte geçiş hareketleri, öncekiyle ilgili güvenilirlik sorunları nedeniyle kaldırıldı ve Windows 11'de diktenin yerini Sesli Erişim aldı.
+* İlerleme çubuğu çıktı ayarları geçiş hareketi (tek parmakla üç kez dokunma) kaldırıldı.
+* Ekran perdesi geçiş hareketi eklendi (üç parmakla üçlü dokunma).
+* Geçerli pencereyi okuma hareketi (üç parmakla aşağı kaydırma) nesneye dokunma moduyla sınırlı olacaktır.
+* Web dokunmatik moduna gömülü nesne ve metin paragrafında dolaşma eklendi.
 
 ## Sürüm 25.07
 
@@ -55,13 +73,13 @@ Ses seçimi, ses seviyesi gibi sentezleyici ayarlarını yapmak için bu kipi ku
 
 ## Sürüm 23.06
 
-* Geliştirilmiş Dokunma hareketleri nvda-EKLENTİSİ artık Kefas Lungu tarafından korunuyor.
+* Eklenti bakımı Kefas Lungu olarak değiştirildi.
 * Nesne modundaki tüm hareketler artık her yerde kullanılabiliyor.
 * Artık yeni hareketler mevcut.
   * 3 parmakla çift dokunma: Hangi simgelerin söyleneceğini belirleyen konuşma simgesi düzeyleri arasında geçiş yapar
   * 2 parmakla üç kez dokunma: NVDA'dan çıkar!.
   * 4 parmakla dokunma: Ses Zayıflaması modları arasında geçiş yapar.
-  * Üç kez dokunma: Bip sesleri, konuşma, bip sesleri ve konuşma arasında geçiş yapar ve kapatır.
+  * Üçlü dokunma: İlerleme çubuğu çıkışını bip sesleri, konuşma, bip sesleri ve konuşma arasında değiştirir ve kapatır.
 * Web modunda, halihazırda mevcut olan göz atma öğesi listesine ek olarak düğmeleri, grafikleri ve yer işaretlerini kullanmak artık mümkün.
 * Web modunda, diğer göz atma öğeleri listesinden varsayılan gezinmeye geçtiğinizde NVDA artık normal değil, varsayılan diyecek. Örneğin, düğmelerden geçiş yaparken NVDA artık varsayılan diyecek.
 
