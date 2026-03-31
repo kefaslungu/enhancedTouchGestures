@@ -55,20 +55,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# A few setup events please (mostly for web/browse mode navigation):
 
 	def event_foreground(self, obj: NVDAObject, nextHandler: Callable[[], None]):
-		focus = api.getFocusObject()
-		if (
-			isinstance(focus.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
-			and "browse" not in touchHandler.availableTouchModes
-		):
-			touchHandler.availableTouchModes.append("browse")
-		else:
-			# If we're not in browser window and web (browse) mode was active, force object mode.
-			if touchHandler.handler._curTouchMode == "browse":
-				touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
-			curAvailTouchModes = len(touchHandler.availableTouchModes)
-			# If we have too many touch modes, restore the original entries.
-			if curAvailTouchModes > self.origAvailTouchModes:
-				touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
+		# Browse mode toggle is part of NVDA 2026.2.
+		if not hasattr(touchHandler, "TouchMode"):
+			focus = api.getFocusObject()
+			if (
+				isinstance(focus.treeInterceptor, browseMode.BrowseModeTreeInterceptor)
+				and "browse" not in touchHandler.availableTouchModes
+			):
+				touchHandler.availableTouchModes.append("browse")
+			else:
+				# If we're not in browser window and web (browse) mode was active, force object mode.
+				if touchHandler.handler._curTouchMode == "browse":
+					touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
+				curAvailTouchModes = len(touchHandler.availableTouchModes)
+				# If we have too many touch modes, restore the original entries.
+				if curAvailTouchModes > self.origAvailTouchModes:
+					touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
 		nextHandler()
 
 	# Global commands: additional touch commands available everywhere.
