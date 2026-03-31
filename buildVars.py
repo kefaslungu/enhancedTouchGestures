@@ -24,7 +24,7 @@ addon_info = AddonInfo(
 	addon_description=_("""A suite of additional touch commands, including navigation and help commands.
 	Requires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."""),
 	# version
-	addon_version="26.03",
+	addon_version="26.04",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
 	addon_changelog=_("""* Internal changes to make the add-on more compatible with future NVDA releases."""),
