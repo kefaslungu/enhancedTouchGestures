@@ -6,6 +6,7 @@
 from typing import NamedTuple
 import globalPluginHandler
 from collections.abc import Callable
+from functools import cached_property
 import touchHandler
 import keyboardHandler
 import scriptHandler
@@ -19,12 +20,36 @@ import tones
 from NVDAObjects import NVDAObject
 import wx
 from logHandler import log
+from utils.displayString import DisplayStringStrEnum
 import addonHandler
 
 addonHandler.initTranslation()
 
 # Notifies when browse mode state has changed, to enter or exit web mode.
 post_browseModeStateChange = extensionPoints.Action()
+
+
+# NVDA 2026.2: patch touchHandler.TouchMode enumeration to add synth settings mode.
+class TouchMode(DisplayStringStrEnum):
+	"""Available touch screen navigation modes."""
+
+	TEXT = "text"
+	OBJECT = "object"
+	BROWSE = "browse"
+	SYNTHSETTINGS = "synthsettings"
+
+	@cached_property
+	def _displayStringLabels(self):
+		return {
+			# Translators: The name of a touch mode.
+			TouchMode.TEXT: _("text mode"),
+			# Translators: The name of a touch mode.
+			TouchMode.OBJECT: _("object mode"),
+			# Translators: The name of a touch mode used when in browse mode.
+			TouchMode.BROWSE: _("browse mode"),
+			# Translators: The name of a touch mode.
+			TouchMode.SYNTHSETTINGS: _("synth settings mode"),
+		}
 
 
 # Disable the add-on completely if touch support is disabled (hardware or this is portable NVDA).
