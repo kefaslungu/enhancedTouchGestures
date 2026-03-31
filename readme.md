@@ -29,9 +29,15 @@ This touch mode, available in browse mode, allows you to navigate the document b
 
 Available web modes are: default (move through elements/objects regardless of type), links, buttons, form fields, headings, frames, tables, lists, graphics, landmarks, embedded objects (dialogs and web apps, for example), and text paragraphs.
 
+Note: this feature is included in NVDA 2026.2.
+
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+## Version 26.04
+
+* Internal changes to make the add-on more compatible with future NVDA releases.
 
 ## Version 26.03
 
