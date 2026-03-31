@@ -27,7 +27,7 @@ addon_info = AddonInfo(
 	addon_version="26.03",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* Renamed 'web mode' to 'browse mode' as this mode will cover additional situations including browse mode in Word 365."""),
+	addon_changelog=_("""* Internal changes to make the add-on more compatible with future NVDA releases."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",
 	# URL for the add-on documentation support
