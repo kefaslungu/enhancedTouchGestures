@@ -94,17 +94,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def _browseModeStateChange(self, browseMode: bool = False) -> None:
 		# Browse mode toggle is part of NVDA 2026.2.
-		if not hasattr(touchHandler, "TouchMode"):
-			if browseMode and "browse" not in touchHandler.availableTouchModes:
-				touchHandler.availableTouchModes.append("browse")
-			else:
-				# If we're not in browser window and web (browse) mode was active, force object mode.
-				if touchHandler.handler._curTouchMode == "browse":
-					touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
-				curAvailTouchModes = len(touchHandler.availableTouchModes)
-				# If we have too many touch modes, restore the original entries.
-				if curAvailTouchModes > self.origAvailTouchModes:
-					touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
+		if hasattr(touchHandler, "TouchMode"):
+			return
+		if browseMode and "browse" not in touchHandler.availableTouchModes:
+			touchHandler.availableTouchModes.append("browse")
+		else:
+			# If we're not in browser window and web (browse) mode was active, force object mode.
+			if touchHandler.handler._curTouchMode == "browse":
+				touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
+			curAvailTouchModes = len(touchHandler.availableTouchModes)
+			# If we have too many touch modes, restore the original entries.
+			if curAvailTouchModes > self.origAvailTouchModes:
+				touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
 
 	# Global commands: additional touch commands available everywhere.
 
