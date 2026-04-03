@@ -13,6 +13,7 @@ import scriptHandler
 import ui
 from globalCommands import commands
 import browseMode
+import treeInterceptorHandler
 import extensionPoints
 import api
 import config
@@ -72,8 +73,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.debug("etouch: touch support disabled from NVDA")
 			tones.beep(380, 100)
 			wx.CallAfter(ui.message, "Touch interaction support is disabled")
-		# Add synth settings ring layer by patching touch handler touch mode enumeratoin.
+		# Add synth settings ring layer by patching touch handler touch mode enumeration.
 		# In addition, add browse mode layer if running NVDA 2026.1 and earlier.
+		# This also includes handling post browse mode state change action in NVDA 2026.1 and earlier.
+		treeInterceptorHandler.post_browseModeStateChange.register(self._browseModeStateChange)
 		if hasattr(touchHandler, "TouchMode"):
 			touchHandler.TouchMode = TouchMode
 			touchHandler.availableTouchModes = [TouchMode.TEXT, TouchMode.OBJECT, TouchMode.SYNTHSETTINGS]
@@ -81,6 +84,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.availableTouchModes.append("synthsettings")
 			touchHandler.touchModeLabels["synthsettings"] = "synth settings mode"
 			touchHandler.touchModeLabels["browse"] = "browse mode"
+
+	def terminate(self):
+		super().terminate()
+		# Remove the add-on from post browse mode state change notifications.
+		treeInterceptorHandler.post_browseModeStateChange.unregister(self._browseModeStateChange)
 
 	# A few setup events please (mostly for web/browse mode navigation):
 
