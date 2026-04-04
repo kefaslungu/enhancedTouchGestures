@@ -5,7 +5,6 @@
 
 from typing import NamedTuple
 import globalPluginHandler
-from collections.abc import Callable
 from functools import cached_property
 import touchHandler
 import keyboardHandler
@@ -18,7 +17,6 @@ import extensionPoints
 import api
 import config
 import tones
-from NVDAObjects import NVDAObject
 import wx
 from logHandler import log
 from utils.displayString import DisplayStringStrEnum
