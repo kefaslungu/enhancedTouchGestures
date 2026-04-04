@@ -101,11 +101,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			# If we're not in browser window and web (browse) mode was active, force object mode.
 			if touchHandler.handler._curTouchMode == "browse":
-				touchHandler.handler._curTouchMode = touchHandler.availableTouchModes[1]
-			curAvailTouchModes = len(touchHandler.availableTouchModes)
-			# If we have too many touch modes, restore the original entries.
-			if curAvailTouchModes > self.origAvailTouchModes:
-				touchHandler.availableTouchModes = touchHandler.availableTouchModes[:self.origAvailTouchModes]
+				touchHandler.handler._curTouchMode = "object"
+			# Remove browse touch mode.
+			if "browse" in touchHandler.availableTouchModes:
+				touchHandler.availableTouchModes.remove("browse")
 
 	# Global commands: additional touch commands available everywhere.
 
