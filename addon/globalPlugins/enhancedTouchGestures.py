@@ -62,8 +62,6 @@ def touchSupportRequired(cls):
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 	scriptCategory = _("Enhanced Touch Gestures")
-	# Set up the touch environment for the add-on.
-	origAvailTouchModes = len(touchHandler.availableTouchModes) + 1
 
 	def __init__(self):
 		super().__init__()
@@ -81,7 +79,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			touchHandler.TouchMode = TouchMode
 			touchHandler.availableTouchModes = [TouchMode.TEXT, TouchMode.OBJECT, TouchMode.SYNTHSETTINGS]
 		else:
-			touchHandler.availableTouchModes.append("synthsettings")
+			touchHandler.availableTouchModes = ["text", "object", "synthsettings"]
 			touchHandler.touchModeLabels["synthsettings"] = "synth settings mode"
 			touchHandler.touchModeLabels["browse"] = "browse mode"
 
