@@ -25,15 +25,20 @@ Note: this add-on requires NVDA 2025.3.2 or later running on a touchscreen compu
 
 ## Touch browse mode
 
-This touch mode, available in browse mode, allows you to navigate the document by selected element. To switch to browse mode, from browse mode documents, perform 3 finger tap. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents, object touch mode will be used.
+This touch mode, available in browse mode, allows you to navigate the document by selected element. This mode is entered automatically when browse mode becomes active, including switching to a browse mode document. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents or switch to focus mode, object touch mode will be used.
 
-Available web modes are: default (move through elements/objects regardless of type), links, buttons, form fields, headings, frames, tables, lists, graphics, landmarks, embedded objects (dialogs and web apps, for example), and text paragraphs.
+Available touch browse mode elements are: default (move through elements/objects regardless of type), links, buttons, form fields, headings, frames, tables, lists, graphics, landmarks, embedded objects (dialogs and web apps, for example), and text paragraphs.
 
 Note: this feature is included in NVDA 2026.2.
 
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+## Version 26.05
+
+* Touch browse mode will be entered automatically when switching to a browse mode document or toggling from focus mode to browse mode.
+* Improved reliability of toggling through touch modes after the add-on is reloaded (Control+NVDA+F3).
 
 ## Version 26.04
 
