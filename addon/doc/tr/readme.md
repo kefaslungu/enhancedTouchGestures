@@ -1,221 +1,232 @@
-# Gelişmiş Dokunmatik Ekran Hareketleri
+# Enhanced Touchscreen Gestures
 
-* Yazarlar: Joseph Lee ve Kefas Lungu
+- Authors: Joseph Lee, Kefas Lungu
 
-Bu eklenti NVDA'ya ek dokunma hareketleri ekler. Ayrıca tarama kipinde daha kolay dolaşım için ek hareketler sunar.
+This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Not: Bu eklenti, Windows 10 veya 11 yüklü dokunmatik ekranlı bir bilgisayarda NVDA 2025.3.2 veya sonraki bir sürümünün çalıştırılmasını gerektirir.
+Note: this add-on requires NVDA 2025.3.2 or later running on a touchscreen computer with Windows 10 or 11.
 
-## Hareketler
+## Commands
 
-### Her yerde kullanılabilen hareketler
+### Available everywhere
 
-* İki parmakla üç kez dokunma: NVDA'yı kapatır!
-* Üç parmakla sağa kaydırma: Sekme tuşuna basar.
-* Üç parmakla sola kaydırma: Shift+Sekme tuşlarına basar.
-* Üç parmakla aşağı kaydırma (nesne modu): geçerli pencereyi okur.
-* Üç parmakla çift dokunma: hangi sembollerin seslendirileceğini belirleyen sembol konuşma seviyeleri arasında geçiş yapar.
-* Üç parmakla üçlü dokunma: ekran perdesini değiştirir.
-* Dört parmakla dokunma: ses kısma modları arasında geçiş yapar.
-* Dört parmakla iki kez dokunma: Yardım giriş modunu değiştirir.
-* Dört parmakla sola kaydırma: nesneyi odaklı olarak seslendirir.
-* Dört parmakla sağa kaydırma: geçerli dolaşım nesnesini seslendirir.
-* Dört parmakla yukarı kaydırma: geçerli pencerenin başlığını seslendirir.
-* Dört parmakla aşağı kaydırma: durum çubuğu metnini seslendirir.
+- Two finger tripple tap: quits NVDA!
+- Three finger flick right: press Tab.
+- Three finger flick left: press Shift+Tab.
+- Three finger flick down (object mode): read current window.
+- Three finger double tap: cycles through speech symbol levels which determine what symbols are spoken.
+- Three finger triple tap: toggles screen curtain.
+- Four finger tap: cycles through audio ducking modes.
+- Four finger double tap: toggle input help mode.
+- Four finger flick left: report object with focus.
+- Four finger flick right: report current navigator object.
+- Four finger flick up: report title of the current window.
+- Four finger flick down: report status bar text.
 
-## Göz atma moduna dokunun
+## Touch browse mode
 
-Göz atma modunda kullanılabilen bu dokunma modu, belgede seçilen öğeye göre gezinmenize olanak tanır. Tarama moduna geçmek için, tarama modu belgelerinde 3 parmakla hafifçe vurun. Bu moddan, bir parmakla yukarı veya aşağı kaydırmak mevcut öğe gezinme modları arasında geçiş yapar, bir parmakla sağa veya sola kaydırmak ise sırasıyla sonraki veya önceki seçilen öğeye gider. Belgelere göz atma modundan uzaklaştığınızda nesneye dokunma modu kullanılacaktır.
+This touch mode, available in browse mode, allows you to navigate the document by selected element. This mode is entered automatically when browse mode becomes active, including switching to a browse mode document. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents or switch to focus mode, object touch mode will be used.
 
-Kullanılabilir web modları şunlardır: varsayılan (türden bağımsız olarak öğeler/nesneler arasında dolaşma), bağlantılar, düğmeler, form alanları, başlıklar, çerçeveler, tablolar, listeler, grafikler, yer işaretleri, gömülü nesneler (örneğin diyaloglar ve web uygulamaları) ve metin paragrafları.
+Available touch browse mode elements are: default (move through elements/objects regardless of type), links, buttons, form fields, headings, frames, tables, lists, graphics, landmarks, embedded objects (dialogs and web apps, for example), and text paragraphs.
 
-## Sentezleyici ayarları dokunma kipi
+Note: this feature is included in NVDA 2026.2.
 
-Ses seçimi, ses seviyesi gibi sentezleyici ayarlarını yapmak için bu kipi kullanabilirsiniz. İki parmakla sola veya sağa fiske yaparak sentezleyici ayarları arasında dolaşabilir, iki parmakla yukarı veya aşağı fiske yaparak ayarları değiştirebilirsiniz. Bu hareketler klavyedeki hızlı sentezleyici ayarlarını dokunmatik ekrana aktarır.
+## Synth settings touch mode
 
-## Sürüm 26.03
+You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
 
-* Bu mod, Word 365'teki göz atma modu da dahil olmak üzere ek durumları kapsayacağı için "web modu", "gözatma modu" olarak yeniden adlandırıldı.
+## Version 26.05
 
-## Sürüm 26.02
+- Touch browse mode will be entered automatically when switching to a browse mode document or toggling from focus mode to browse mode.
+- Improved reliability of toggling through touch modes after the add-on is reloaded (Control+NVDA+F3).
 
-* NVDA 2025.3.2 veya sonrası gerekli.
-* Eklentiyi dokunmatik ekranı olmayan veya taşınabilir NVDA sürümünün kullanıldığı bilgisayarlara yüklerken bir uyarı görüntülenecek.
-* Eklenti taşınabilir bir NVDA sürümüne yüklendiğinde, eklentiden gelen hareketler girdi hareketleri iletişim kutusunda gösterilmeyecek.
-* Sekme tuşuna basma (üç parmakla sağa kaydırma), Shift+Sekme tuşlarına basma (üç parmakla sola kaydırma), odaklanılan nesneyi seslendirme (dört parmakla sola kaydırma) ve dolaşma nesnesini bildirme (dört parmakla sağa kaydırma) dahil olmak üzere dokunma hareketi değişiklikleri.
-* Dokunmatik klavye ve dikte geçiş hareketleri, öncekiyle ilgili güvenilirlik sorunları nedeniyle kaldırıldı ve Windows 11'de diktenin yerini Sesli Erişim aldı.
-* İlerleme çubuğu çıktı ayarları geçiş hareketi (tek parmakla üç kez dokunma) kaldırıldı.
-* Ekran perdesi geçiş hareketi eklendi (üç parmakla üçlü dokunma).
-* Geçerli pencereyi okuma hareketi (üç parmakla aşağı kaydırma) nesneye dokunma moduyla sınırlı olacaktır.
-* Web dokunmatik moduna gömülü nesne ve metin paragrafında dolaşma eklendi.
+## Version 26.04
 
-## Sürüm 25.07
+- Internal changes to make the add-on more compatible with future NVDA releases.
 
-* Pyright (bir Python statik tür denetleyicisi) yardımıyla eklenti kodu daha sağlam hale getirildi.
+## Version 26.03
 
-## Sürüm 25.02
+- Renamed "web mode" to "browse mode" as this mode will cover additional situations including browse mode in Word 365.
 
-* Windows 8.1 için sınırlı destek geri yüklendi.
+## Version 26.02
 
-## Sürüm 25.01
+- NVDA 2025.3.2 or later is required.
+- A warning will be presented when installing the add-on on computers without touchscreens or portable NVDA version is in use.
+- Gestures from the add-on will not be shown in input gestures dialog when the add-on is installed on a portable NVDA version.
+- Touch gesture changes, including pressing Tab (three finger flick right), pressing Shift+Tab (three finger flick left), reporting focused object (four finger flick left), and reporting navigator object (four finger flick right).
+- Removed touch keyboard and dictation toggle gestures due to reliability issues with the former and dictation being replaced by Voice Access in Windows 11.
+- Removed progress bar output settings toggle gesture (one finger triple tap).
+- Added screen curtain toggle gesture (three finger triple tap).
+- Read current window gesture (three finger flick down) will be limited to object touch mode.
+- Added embedded object and text paragraph navigation to web touch mode.
 
-* Eklenti sürümlerinin indirme bağlantıları artık eklenti belgelerine dahil edilmemektedir. Eklentiyi NV Access eklenti mağazasından indirebilirsiniz.
-* Linting aracı Flake8'den Ruff'a değiştirildi ve NVDA kodlama standartlarıyla daha iyi uyum sağlamak için eklenti modülleri yeniden biçimlendirildi.
-* Eklenti Güncelleyici eklentisinden otomatik eklenti güncellemeleri özelliği desteği kaldırıldı.
+## Version 25.07
 
-## Sürüm 24.05
+- Made the add-on code more robust with help from Pyright (a Python static type checker).
 
-* Eklentiyi kullanabilmek için NVDA 2024.1 veya sonrası gerekli.
+## Version 25.02
 
-## Sürüm 23.06.1
+- Restored limited support for Windows 8.1.
 
-* nvda'nın konuşma durdurma komutuyla çakışması nedeniyle sesin kısılması 4 parmakla dokunmaya taşındı.
+## Version 25.01
 
-## Sürüm 23.06
+- Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
+- Switched linting tool from Flake8 to Ruff and reformatted add-on modules to better align with NVDA coding standards.
+- Removed support for automatic add-on updates feature from Add-on Updater add-on.
 
-* Eklenti bakımı Kefas Lungu olarak değiştirildi.
-* Nesne modundaki tüm hareketler artık her yerde kullanılabiliyor.
-* Artık yeni hareketler mevcut.
-  * 3 parmakla çift dokunma: Hangi simgelerin söyleneceğini belirleyen konuşma simgesi düzeyleri arasında geçiş yapar
-  * 2 parmakla üç kez dokunma: NVDA'dan çıkar!.
-  * 4 parmakla dokunma: Ses Zayıflaması modları arasında geçiş yapar.
-  * Üçlü dokunma: İlerleme çubuğu çıkışını bip sesleri, konuşma, bip sesleri ve konuşma arasında değiştirir ve kapatır.
-* Web modunda, halihazırda mevcut olan göz atma öğesi listesine ek olarak düğmeleri, grafikleri ve yer işaretlerini kullanmak artık mümkün.
-* Web modunda, diğer göz atma öğeleri listesinden varsayılan gezinmeye geçtiğinizde NVDA artık normal değil, varsayılan diyecek. Örneğin, düğmelerden geçiş yaparken NVDA artık varsayılan diyecek.
+## Version 24.05
 
-## Sürüm 23.02
+- NVDA 2024.1 or later is required.
 
-* Eklentiyi kullanabilmek için NVDA 2022.4 veya sonrası gerekli.
-* Windows 10 21H2 (Kasım 2021 Güncelleme/Build 19044) veya daha sonraki sürümler gereklidir.
+## Version 23.06.1
 
-## Sürüm 23.01
+- audio ducking moved to 4 finger tap due to conflict with speech stops NVDA command.
 
-* Eklentiyi kullanabilmek için NVDA 2022.3 veya sonrası gerekli.
-* Windows 8.1 Ocak 2023 itibariyle Microsoft tarafından artık desteklenmediğinden Windows 10 veya daha sonraki sürümler gereklidir.
-* Girdi hareketleri iletişim kutusunda, Geliştirilmiş Dokunmatik Hareketler kategorisi altındaki dokunmatik klavye ve dikte geçiş komutlarını yeniden atamak mümkündür.
-* Windows 10'da çözüldüğü için dokunmatik klavye tuşları için salt okunur durum geçici çözümü kaldırıldı.
+## Version 23.06
 
-## Sürüm 22.03
+- Changed add-on maintainer to Kefas Lungu.
+- All gestures in object mode are now available everywhere.
+- New gestures are now available.
+  - 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
+  - 2 finger triple tap: Quit NVDA!.
+  - 4 finger tap: Cycles through audio ducking modes.
+  - Triple tap: Cycles progress bar output between beeps, speech, beeps and speech, and off.
+- In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
+- In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
 
-* Eklentiyi kullanabilmek için NVDA 2021.3 veya sonrası gerekli.
-* Eklentiyi Windows 7, 8 ve 8.1'e yüklemeye çalışırken bir uyarı mesajı gösterilecek.
+## Version 23.02
 
-## Sürüm 21.10
+- NVDA 2022.4 or later is required.
+- Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
 
-* Bu eklentiyi etkileyen NVDA'daki değişiklikler nedeniyle NVDA 2021.2 veya sonraki sürümler gereklidir.
+## Version 23.01
 
-## Sürüm 21.08
+- NVDA 2022.3 or later is required.
+- Windows 10 or later is required as Windows 8.1 is no longer supported by Microsoft as of January 2023.
+- It is possible to reassign touch keyboard and dictation toggle commands from input gestures dialog under Enhanced Touch Gestures category.
+- Removed read-only state workaround for touch keyboard keys as it is resolved in Windows 10.
 
-* Windows 11 için ilk destek.
+## Version 22.03
 
-## Sürüm 21.01
+- NVDA 2021.3 or later is required.
+- A warning message will be displayed when attempting to install the add-on on Windows 7, 8, and 8.1.
 
-* Eklentiyi kullanabilmek için NVDA 2020.3 veya sonrası gerekli.
-* Windows 10 1709 veya daha üzeri sürümlerinde dört parmak sola fiske dikteyi açıp kapatır (Windows+H).
-* Eklentiden dokunmatik etkileşim desteği ayarı kaldırıldı.
-* Dokunmatik etkileşim desteği ayarı NVDA'nın dokunmatik etkileşim ayarlarından değiştirilebildiğinden, geliştirilmiş dokunmatik ekran hareketleri ayarları iletişim kutusu kaldırıldı.
+## Version 21.10
 
-## Sürüm 20.09
+- NVDA 2021.2 or later is required due to changes to NVDA that affects this add-on.
 
-* NVDA'nın 10 saniye boyunca dokunmatik ekran desteğini devredışı bırakmaya yarayan dokunmatik hareketi yoksayma özelliği kaldırıldı.
-* Bip sesi ile koordinat belirtme özelliği kaldırıldı.
+## Version 21.08
 
-## Sürüm 20.07
+- Initial support for Windows 11.
 
-* Dokunmatik etkileşimi veya dokunmatik hareket yoksayma özelliğini açıp kapatmak için bir klavye kısayolu eklendi (Kontrol+Alt+NVDA+T).
-* NVDA 2020.1 veya üzeri sürümlerde sağ fare tıklaması bir parmakla dokunup basılı tutularak gerçekleştirilebildiğinden, söz konusu komut eklentiden kaldırıldı. Eklentiyi kullanabilmek için NVDA 2020.1 veya daha üzeri bir sürüm gerekli.
-* NVDA'nın dokunmatik ekran desteğini 10 saniye boyunca devredışı bırakmaya yarayan dokunmatik hareketi yoksayma özelliği kaldırıldı. Gelecekte aynı komutla dokunmatik etkileşim ayarı değiştirilebilecek.
-* NVDA snapshotlarında yapılan dokunmatik etkileşim değişikliklerinden dolayı, dokunmatik hareketi yoksayma özelliği ve geliştirilmiş dokunmatik ekran hareketleri ayarları iletişim kutusu devredışı bırakılacak. Dokunmatik hareketi yoksayma özelliğini açıp kapatmayı sağlayan ayar dokunmatik etkileşimi açıp kapatmak için kullanılacak.
-* Bip sesi ile koordinat belirtme özelliği devredışı bırakıldı ve gelecek bir sürümde kaldırılacak.
-* Dokunmatik klavye kullanılırken bip sesi ile koordinat belirtilmeyecek.
-* Emoji gibi modern giriş olanakları dokunmatik etkileşim yoluyla kullanılırken NVDA hiçbir şey yapmıyormuş gibi görünmeyecek veya hata sesi çalmayacak.
-* NVDA, dokunmatik klavye etkinleştirilemiyorsa bir hata mesajı verecek (dört parmakla sağa fiske hareketi).
+## Version 21.01
 
-## Sürüm 20.06
+- NVDA 2020.3 or later is required.
+- On Windows 10 Version 1709 and later, doing a four finger flick left will toggle dictation (Windows+H).
+- Remove dedicated touch interaction support toggle command from the add-on.
+- As touch interaction support can be toggled from NVDA's touch interaction settings panel, a dedicated Enhanced Touch Gestures settings panel has been removed.
 
-* Flake8 ile ilgili birçok kodlama biçimi sorunu ve potansiyel hata düzeltildi.
+## Version 20.09
 
-## Sürüm 20.04
+- Removed ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough).
+- Removed coordinate announcement beep feature.
 
-* Fare ile sağ tıklama hareketi (bir parmakla dokunup basılı tutma) NVDA 2020.1 sürümüne eklendi.
+## Version 20.07
 
-## Sürüm 20.01
+- Added a keyboard command to toggle touch interaction or enable/disable touch passthrough (Control+Alt+NVDA+T).
+- As NVDA 2020.1 and later includes a touch command to perform right mouse click (one finger tap and hold), the command has been removed from this add-on. AS a result, NVDA 2020.1 or later is required.
+- The ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough) is deprecated. In the future this feature will toggle touch interaction instead.
+- In NVDA development snapshots, due to touch interaction feature changes, touch command passthrough feature and Enhanced Touch Gestures settings panel will be disabled. The command used to enable touch command passthrough will toggle touch interaction instead.
+- Coordinate announcement beep feature is deprecated and will be removed in a future add-on release.
+- Coordinate announcement beep will not be heard while using touch keyboard.
+- NVDA will no longer appear to do nothing or play error tones while exploring modern input facility such as emoji panel via touch.
+- NVDA will present an error message if touch keyboard cannot be activated (four finger flick right).
 
-* Eklentiyi kullanabilmek için NVDA 2019.3 veya sonrası gerekli.
-* Dokunmatik ekran desteği tamamen kapatıldığında, dokunmatik hareketi yoksayma özelliği dahil olmak üzere dokunmatik destek ayarı kullanılamayacak.
+## Version 20.06
 
-## Sürüm 19.11
+- Resolved many coding style issues and potential bugs with Flake8.
 
-* Ek hareketler için girdi yardımı mesajları eklendi.
+## Version 20.04
 
-## Sürüm 19.09
+- Right mouse click gesture (one finger tap and hold) is now part of NVDA 2020.1.
 
-* Dokunmatik ekran desteği önceden sadece normal profili dışındaki profillerde devredışı bırakılabiliyordu. Artık her yerden devredışı bırakılabiliyor.
+## Version 20.01
 
-## Sürüm 19.07
+- NVDA 2019.3 or later is required.
+- Touch support toggle command (including touch passthrough) will no longer function if touch support is turned off completely.
 
-* Gelecek NVDA sürümlerini desteklemek için dahili değişiklikler yapıldı.
+## Version 19.11
 
-## Sürüm 18.12
+- Added input help messages for additional touch commands.
 
-* Gelecekteki NVDA sürümlerini desteklemek için dahili değişiklikler.
+## Version 19.09
 
-## Sürüm 18.08
+- Touch support can now be disabled from everywhere, not just from profiles other than normal profile.
 
-* Eklenti NVDA 2018.3 ve üzeri sürümler için uyumlu hâle getirildi.
+## Version 19.07
 
-## Sürüm 18.06
+- Internal changes to support future NVDA releases.
 
-* Eklenti ayarları NVDA'nın çok kategorili eklenti ayarları iletişim kutusuna taşındı. Sonuç olarak eklentiyi kullanabilmek için NVDA 2018.2 sürümü gerekli.
-* WxPython 4 ile ilgili uyumluluk sorunları giderildi.
+## Version 18.12
 
-## Sürüm 18.04
+- Internal changes to support future NVDA releases.
 
-* Eklentinin yaptığı değişikliklerden dolayı NVDA ayarları iletişim kutusundaki dokunmatik etkileşim kategorisinde hata sesleri duyulma sorunu giderildi.
+## Version 18.08
 
-## Sürüm 18.03
+- Compatible with NVDA 2018.3 and future versions.
 
-* Eklentiyi kullanabilmek için NVDA 2018.1 sürümü gerekli.
-* Dokunmatik yazma onay kutusu NVDA 2018.1 sürümüne eklendiğinden söz konusu onay kutusu eklentiden kaldırıldı.
+## Version 18.06
 
-## Sürüm 17.12
+- Add-on settings is now found in new multi-category NVDA Settings screen under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is required.
+- Fixed compatibility issues with wxPython 4.
 
-* Eklentiyi kullanabilmek için NVDA 2017.4 sürümü gerekli. Eklenti konfigürasyon profillerini destekliyor.
-* NVDA 2017.4 sürümüne ekran yönü duyurma özelliği eklendiğinden söz konusu özellik eklentiden kaldırıldı.
-* Dokunmatik etkileşim iletişim kutusuna dokunmatik ekran desteğini tamamen devredışı bırakmaya yarayan gizli bir onay kutusu eklendi. Söz konusu onay kutusu normal konfigürasyon profili dışında profiller etkinken kullanılabiliyor.
-* NVDA 2018.1 veya üzeri sürümleri kullanıyorsanız NVDA'nın ayarlar menüsünde dokunmatik etkileşim iletişim kutusu iki kez görünecektir. İkinci iletişim kutusu eklentiye aittir.
-* NVDA 2018.1 veya üzeri sürümleri kullanıyorsanız eklentiye ait olan dokunmatik etkileşim iletişim kutusunda dokunmatik yazma modu görünmeyecek.
+## Version 18.04
 
-## Sürüm 17.10
+- Resolves an issue where touch interaction category in NVDA Settings panel may cause error sounds to be heard due to changes made from this add-on.
 
-* Microsoft'un destek poliçesinden dolayı Windows 8 (orijinal sürüm) artık desteklenmiyor.
-* NVDA 2017.4 snapshotlarında NVDA ekran yönünü iki kez söylemeyecek.
+## Version 18.03
 
-## Sürüm 17.07.1
+- NVDA 2018.1 is required.
+- Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no longer included in this add-on.
 
-* Dokunmatik etkileşim iletişim kutusuna dokunmatik hareketi yoksayma özelliğini süresiz şekilde kullanabilmek için bir seçenek eklendi.
-* Dokunmatik hareketi yoksayma özelliği el ile kapatıldığında, dokunmatik hareketi yoksayma özelliğinin süresi dolmadan önce özellik açıldığında, dokunmatik etkileşimin devreye girme sorunu düzeltildi.
+## Version 17.12
 
-## Sürüm 17.07
+- Requires NVDA 2017.4. Specifically, this add-on can now handle configuration profile switches.
+- As NVDA 2017.4 includes screen orientation announcement, this feature is no longer part of this add-on.
+- Added a hidden checkbox in Touch Interaction dialog to completely disable touch support (available if profiles other than normal configuration is active).
+- If using NVDA 2018.1 or later, Touch Interaction dialog will be listed twice under NVDA's preferences menu. The second item is the dialog that comes with the add-on.
+- In Touch Interaction dialog for the add-on, touch typing mode is no longer shown if using NVDA 2018.1 or later.
 
-* NVDA'nın ayarlar menüsüne NVDA'nın dokunmatik ekranlarla çalışma şeklini ayarlamaya yarayan dokunmatik etkileşim iletişim kutusu eklendi.
-* Eklentinin bu sürümünü kurduktan sonra dokunmatik klavyede tuşlara çift dokunarak basılabilir. Eski kullanıma dönmek için dokunmatik etkileşim iletişim kutusundan dokunmatik yazmayı etkinleştirebilirsiniz.
-* NVDA'nın dokunmatik hareketleri 10 saniye boyunca yoksaymasına yarayan, kısayol tuşu atanmamış bir komut eklendi.
-* Dokunmatik etkileşim iletişim kutusuna NVDA'nın dokunmatik etkileşimini 3-10 saniye süre boyunca devredışı bırakma özelliğini ayarlamak için bir seçenek eklendi. Bu özellik dokunmatik hareketleri NVDA çalışmıyormuş gibi sisteme doğrudan aktarır. Varsayılan süre 5 saniyedir.
-* Fareyle sağ tıklandığında (bir parmakla dokunup basılı tutma) NVDA günlüğüne hata ayıklama seviyesinde hata ayıklama mesajları kaydediliyor. Bu özellik NVDA 2017.1 veya daha üzeri sürümünü gerektirir.
-* Ekran koordinatlarını duyurma ile ilgili yapılan değişikliklerden dolayı eklentiyi kullanabilmek için NVDA 2017.1 sürümü veya daha üzeri gerekli.
+## Version 17.10
 
-##Sürüm 17.03
+- Due to support policy from Microsoft, Windows 8 (original release) is no longer supported.
+- NVDA will no longer announce screen orientation twice when running NVDA 2017.4 development snapshots.
 
-* NVDA 2017.1 veya daha üzeri bir sürümü kullanılırken, koordinat sesinin çalınmaması veya hata sesi çalınmasıyla ilgili bir sorun düzeltildi.
+## Version 17.07.1
 
-##Sürüm 16.12
+- Added an option in touch interaction dialog to manually toggle touch passthrough without use of a timer.
+- With manual passthrough mode off, if touch passthrough is turned on before the passthrough duration expires, touch interaction would be enabled.
 
-* Microsoft Edge, Microsoft Word ve diğerleri gibi tarama modu kullanılan uygulamalarda web dokunma kipi çalışıyor.
-* Web dokunmatik kipi öğelerine listeler ve sınır imleri eklendi.
+## Version 17.07
 
-## Sürüm 16.06
+- Added a new dialog named Touch Interaction under NVDA's preferences menu to configure how NVDA works with touchscreens.
+- After installing this version, when pressing keys on the touch keyboard, one must double tap the desired key. You can switch back to the old way by enabling touch typing from Touch Interaction dialog.
+- Added a command (unassigned) to allow NVDA to ignore touch gestures for up to 10 seconds.
+- Added an option in Touch Interaction dialog to allow NVDA to pause touch interaction between 3 to 10 seconds in order to perform touchscreen gestures directly (as though NVDA is not running; default is 5 seconds).
+- Added debug logging messages when performing right clicks (tap and hold) to be recorded in the NVDA log (requires NVDA 2017.1 or later).
+- Due to changes made when playing screen coordinates, NVDA 2017.1 or later is required.
 
-* İlk kararlı sürüm.
+\##Version 17.03
+
+- Fixed an issue where coordinate announcement beep did not play or an error tone played instead when using NVDA 2017.1 or later.
+
+\##Version 16.12
+
+- Web touch mode works in Microsoft Edge, Microsoft Word and others where browse mode is used.
+- Added lists and landmarks to web touch mode elements.
+
+## Version 16.06
+
+- Initial stable version.
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ets

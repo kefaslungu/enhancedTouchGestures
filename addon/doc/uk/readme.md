@@ -1,291 +1,232 @@
-# Enhanced Touch Gestures (розширення сенсорних жестів #
+# Enhanced Touchscreen Gestures
 
-* Автор: Joseph Lee
+- Authors: Joseph Lee, Kefas Lungu
 
-Цей додаток надає додаткові жести для сенсорного екрана в NVDA. Він також
-надає набір жестів для полегшення навігації в режимі огляду.
+This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2024.1 or later running on a touchscreen
-computer with Windows 10 or 11.
+Note: this add-on requires NVDA 2025.3.2 or later running on a touchscreen computer with Windows 10 or 11.
 
-## Команди
+## Commands
 
-### Доступний скрізь
+### Available everywhere
 
-* Подвійний дотик чотирма пальцями: перемикає режим допомоги при введенні.
-* Пролистати чотирма пальцями вправо: перемикає сенсорну клавіатуру
-  (зазвичай вмикає її).
-* Пролистати чотирма пальцями вліво: перемикає голосове введення (Windows+H;
-  потрібна Windows 10 версія 1709 чи пізніша).
+- Two finger tripple tap: quits NVDA!
+- Three finger flick right: press Tab.
+- Three finger flick left: press Shift+Tab.
+- Three finger flick down (object mode): read current window.
+- Three finger double tap: cycles through speech symbol levels which determine what symbols are spoken.
+- Three finger triple tap: toggles screen curtain.
+- Four finger tap: cycles through audio ducking modes.
+- Four finger double tap: toggle input help mode.
+- Four finger flick left: report object with focus.
+- Four finger flick right: report current navigator object.
+- Four finger flick up: report title of the current window.
+- Four finger flick down: report status bar text.
 
-### Об’єктний режим
+## Touch browse mode
 
-* Пролистати трьома пальцями вниз: читає поточне вікно.
-* Пролистати трьома пальцями вліво: повідомляє об’єкт у фокусі.
-* Пролистати трьома пальцями вправо: повідомляє поточний об’єкт навігатора.
-* Пролистати чотирма пальцями вгору: повідомити заголовок поточного вікна.
-* Пролистати чотирма пальцями вниз: повідомляє текст у рядку стану.
+This touch mode, available in browse mode, allows you to navigate the document by selected element. This mode is entered automatically when browse mode becomes active, including switching to a browse mode document. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents or switch to focus mode, object touch mode will be used.
 
-## Сенсорний веб-режим
+Available touch browse mode elements are: default (move through elements/objects regardless of type), links, buttons, form fields, headings, frames, tables, lists, graphics, landmarks, embedded objects (dialogs and web apps, for example), and text paragraphs.
 
-Цей сенсорний режим, доступний в режимі огляду, дозволяє переміщатися в
-документі за вибраним елементом. Щоб перейти до веб-режиму з режиму огляду,
-виконайте трипальцевий дотик. У цьому режимі пролистуванням одним пальцем
-вгору або вниз можна переходити між доступними режимами навігації по
-елементах, а пролистуванням одним пальцем вправо або вліво — до наступного
-або попереднього вибраного елемента відповідно. Коли ви виходите з режиму
-перегляду документів, використовується режим дотику до об'єкта.
+Note: this feature is included in NVDA 2026.2.
 
-## Сенсорний режим налаштування синтезатора
+## Synth settings touch mode
 
-Цей режим можна використовувати для швидкої зміни налаштувань синтезатора,
-наприклад, для вибору голосу або зміни гучності. У цьому режимі для
-переміщення між налаштуваннями синтезатора використовуйте жести
-пролистування двома пальцями вліво або вправо, а для зміни значень — жести
-пролистування двома пальцями вгору і вниз. Ці жести дзеркально відображають
-жести кільцевих команд налаштувань синтезатора на клавіатурі.
+You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+## Version 26.05
+
+- Touch browse mode will be entered automatically when switching to a browse mode document or toggling from focus mode to browse mode.
+- Improved reliability of toggling through touch modes after the add-on is reloaded (Control+NVDA+F3).
+
+## Version 26.04
+
+- Internal changes to make the add-on more compatible with future NVDA releases.
+
+## Version 26.03
+
+- Renamed "web mode" to "browse mode" as this mode will cover additional situations including browse mode in Word 365.
+
+## Version 26.02
+
+- NVDA 2025.3.2 or later is required.
+- A warning will be presented when installing the add-on on computers without touchscreens or portable NVDA version is in use.
+- Gestures from the add-on will not be shown in input gestures dialog when the add-on is installed on a portable NVDA version.
+- Touch gesture changes, including pressing Tab (three finger flick right), pressing Shift+Tab (three finger flick left), reporting focused object (four finger flick left), and reporting navigator object (four finger flick right).
+- Removed touch keyboard and dictation toggle gestures due to reliability issues with the former and dictation being replaced by Voice Access in Windows 11.
+- Removed progress bar output settings toggle gesture (one finger triple tap).
+- Added screen curtain toggle gesture (three finger triple tap).
+- Read current window gesture (three finger flick down) will be limited to object touch mode.
+- Added embedded object and text paragraph navigation to web touch mode.
 
 ## Version 25.07
 
-* Made the add-on code more robust with help from Pyright (a Python static
-  type checker).
+- Made the add-on code more robust with help from Pyright (a Python static type checker).
 
 ## Version 25.02
 
-* Restored limited support for Windows 8.1.
+- Restored limited support for Windows 8.1.
 
 ## Version 25.01
 
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+- Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
+- Switched linting tool from Flake8 to Ruff and reformatted add-on modules to better align with NVDA coding standards.
+- Removed support for automatic add-on updates feature from Add-on Updater add-on.
 
 ## Version 24.05
 
-* NVDA 2024.1 or later is required.
+- NVDA 2024.1 or later is required.
 
 ## Version 23.06.1
 
-* audio ducking moved to 4 finger tap due to conflict with speech stops NVDA
-  command.
+- audio ducking moved to 4 finger tap due to conflict with speech stops NVDA command.
 
 ## Version 23.06
 
-* Enhanced Touch gestures nvda-addon is now maintained by Kefas Lungu.
-* All gestures in object mode are now available everywhere.
-* New gestures are now available.
+- Changed add-on maintainer to Kefas Lungu.
+- All gestures in object mode are now available everywhere.
+- New gestures are now available.
+  - 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
+  - 2 finger triple tap: Quit NVDA!.
+  - 4 finger tap: Cycles through audio ducking modes.
+  - Triple tap: Cycles progress bar output between beeps, speech, beeps and speech, and off.
+- In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
+- In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
 
-  * 3 finger double tap: Cycles through speech symbol levels which determine
-    what symbols are spoken
-  * 2 finger tripple tap: Quit NVDA!.
-  * 4 finger tap: Cycles through audio ducking modes.
-  * Triple tap: Toggles between beeps, speech, beeps and speech, and off.
+## Version 23.02
 
-* In web mode, it is now possible to Use buttons, graphics, and landmarks in
-  addition to the already available browse element list.
-* In web mode, NVDA is no longer going to say normal, but default when you
-  switch to default navigation from other browse element list. For example,
-  when switching from buttons, NVDA will now say default.
+- NVDA 2022.4 or later is required.
+- Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
 
-## Версія 23.02
+## Version 23.01
 
-* Потрібна NVDA 2022.4 Або пізніша.
-* Потрібна Windows 10 21H2 (оновлення від листопада 2021/збірка 19044) або
-  пізніша.
+- NVDA 2022.3 or later is required.
+- Windows 10 or later is required as Windows 8.1 is no longer supported by Microsoft as of January 2023.
+- It is possible to reassign touch keyboard and dictation toggle commands from input gestures dialog under Enhanced Touch Gestures category.
+- Removed read-only state workaround for touch keyboard keys as it is resolved in Windows 10.
 
-## Версія 23.01
+## Version 22.03
 
-* Потрібна NVDA 2022.3 Або пізніша.
-* Потрібна Windows 10 або пізніша, оскільки в січні 2023 Microsoft припинила
-  підтримку Windows 8.1.
-* Ви можете перепризначити команди перемикання сенсорної клавіатури та
-  голосового введення в діалозі «Жести вводу» в категорії «Розширення
-  сенсорних жестів».
-* Видалено обхідний шлях для клавіш сенсорної клавіатури у режимі лише для
-  читання, оскільки цю проблему вирішено у Windows 10.
+- NVDA 2021.3 or later is required.
+- A warning message will be displayed when attempting to install the add-on on Windows 7, 8, and 8.1.
 
-## Версія 22.03
+## Version 21.10
 
-* Потрібна NVDA 2021.3 Або пізніша.
-* В разі спроби встановити додаток на Windows 7, 8 та 8.1 буде показано
-  попередження.
+- NVDA 2021.2 or later is required due to changes to NVDA that affects this add-on.
 
-## Версія 21.10
+## Version 21.08
 
-* Через зміни в NVDA, які впливають на цей додаток, потрібна NVDA версії
-  2021.2 або пізніша.
+- Initial support for Windows 11.
 
-## Версія 21.08
+## Version 21.01
 
-* Перша підтримка Windows 11.
+- NVDA 2020.3 or later is required.
+- On Windows 10 Version 1709 and later, doing a four finger flick left will toggle dictation (Windows+H).
+- Remove dedicated touch interaction support toggle command from the add-on.
+- As touch interaction support can be toggled from NVDA's touch interaction settings panel, a dedicated Enhanced Touch Gestures settings panel has been removed.
 
-## Версія 21.01
+## Version 20.09
 
-* Потрібна NVDA 2020.3 чи пізніша.
-* У Windows 10 версії 1709 і новіших пролистайте чотирма пальцями ліворуч,
-  щоб увімкнути голосове введення (Windows+H).
-* Видалено з додатка спеціальну команду перемикання підтримки сенсорної
-  взаємодії.
-* Оскільки підтримку сенсорної взаємодії можна ввімкнути з панелі
-  налаштувань сенсорної взаємодії NVDA, спеціальну панель налаштувань
-  «Розширення сенсорних жестів» було вилучено.
+- Removed ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough).
+- Removed coordinate announcement beep feature.
 
-## Версія 20.09
+## Version 20.07
 
-* Видалено можливість дозволити NVDA вимкнути сенсорну взаємодію на час до
-  десяти секунд (пропуск сенсорної команди).
-* Видалено функцію звукового сигналу оголошення координат.
+- Added a keyboard command to toggle touch interaction or enable/disable touch passthrough (Control+Alt+NVDA+T).
+- As NVDA 2020.1 and later includes a touch command to perform right mouse click (one finger tap and hold), the command has been removed from this add-on. AS a result, NVDA 2020.1 or later is required.
+- The ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough) is deprecated. In the future this feature will toggle touch interaction instead.
+- In NVDA development snapshots, due to touch interaction feature changes, touch command passthrough feature and Enhanced Touch Gestures settings panel will be disabled. The command used to enable touch command passthrough will toggle touch interaction instead.
+- Coordinate announcement beep feature is deprecated and will be removed in a future add-on release.
+- Coordinate announcement beep will not be heard while using touch keyboard.
+- NVDA will no longer appear to do nothing or play error tones while exploring modern input facility such as emoji panel via touch.
+- NVDA will present an error message if touch keyboard cannot be activated (four finger flick right).
 
-## Версія 20.07
+## Version 20.06
 
-* Додано клавіатурну команду для перемикання сенсорної взаємодії або
-  увімкнення/вимкнення пропуску сенсорного жесту (Control+Alt+NVDA+T).
-* Оскільки NVDA 2020.1 і новіші версії містять сенсорну команду для
-  виконання клацання правою кнопкою миші (натискання й утримання одним
-  пальцем), цю команду було вилучено з цього додатка. Як наслідок, потрібна
-  NVDA 2020.1 або новіша версія.
-* Можливість дозволити NVDA вимкнути сенсорну взаємодію на час до десяти
-  секунд (пропуск сенсорної команди) застаріла. У майбутньому ця функція
-  буде вмикати та вимикати сенсорну взаємодію.
-* У снепшот-версіях NVDA, у зв'язку зі змінами у функціях сенсорної
-  взаємодії, буде вимкнено функцію наскрізного пропуску сенсорних команд та
-  панель налаштувань «Розширення сенсорних жестів». Команда, яка
-  використовувалася для увімкнення наскрізного пропуску сенсорних команд,
-  буде перемикати сенсорну взаємодію.
-* Функція звукового сигналу оголошення координат застаріла і буде вилучена у
-  наступному випуску додатка.
-* При використанні сенсорної клавіатури звуковий сигнал оголошення координат
-  не буде чутно.
-* NVDA більше не буде виглядати так, ніби вона нічого не робить або видає
-  звукові сигнали помилок під час огляду сучасних засобів введення, таких як
-  панель емодзі через дотик.
-* NVDA видасть повідомлення про помилку, якщо не вдасться активувати
-  сенсорну клавіатуру (клацніть чотирма пальцями вправо).
+- Resolved many coding style issues and potential bugs with Flake8.
 
-## Версія 20.06
+## Version 20.04
 
-* Вирішено багато проблем зі стилем кодування та потенційних помилок із
-  Flake8.
+- Right mouse click gesture (one finger tap and hold) is now part of NVDA 2020.1.
 
-## Версія 20.04
+## Version 20.01
 
-* Жест клацання правою кнопкою миші (натискання й утримання одним пальцем)
-  тепер є частиною NVDA 2020.1.
+- NVDA 2019.3 or later is required.
+- Touch support toggle command (including touch passthrough) will no longer function if touch support is turned off completely.
 
-## Версія 20.01
+## Version 19.11
 
-* Потрібна NVDA 2019.3 або пізніша.
-* Команди перемикання сенсорної підтримки (включно з пропуском дотику) не
-  працюватимуть, якщо сенсорну підтримку повністю вимкнено.
+- Added input help messages for additional touch commands.
 
-## Версія 19.11
+## Version 19.09
 
-* Додано повідомлення в режимі допомоги при введенні для додаткових
-  сенсорних команд.
+- Touch support can now be disabled from everywhere, not just from profiles other than normal profile.
 
-## Версія 19.09
+## Version 19.07
 
-* Тепер підтримку сенсорного вводу можна вимкнути звідусіль, а не лише з
-  профілів, відмінних від звичайного профілю.
+- Internal changes to support future NVDA releases.
 
-## Версія 19.07
+## Version 18.12
 
-* Внутрішні зміни для підтримки майбутніх версій NVDA.
+- Internal changes to support future NVDA releases.
 
-## Версія 18.12
+## Version 18.08
 
-* Внутрішні зміни для підтримки майбутніх версій NVDA.
+- Compatible with NVDA 2018.3 and future versions.
 
-## Версія 18.08
+## Version 18.06
 
-* Сумісний з NVDA 2018.3 і майбутніми версіями.
+- Add-on settings is now found in new multi-category NVDA Settings screen under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is required.
+- Fixed compatibility issues with wxPython 4.
 
-## Версія 18.06
+## Version 18.04
 
-* Налаштування додатка тепер можна знайти на новому багатокатегорійному
-  екрані налаштувань NVDA у категорії «Розширення сенсорних жестів». Як
-  наслідок, потрібна версія NVDA 2018.2.
-* Виправлено проблему сумісності з wxPython 4.
+- Resolves an issue where touch interaction category in NVDA Settings panel may cause error sounds to be heard due to changes made from this add-on.
 
-## Версія 18.04
+## Version 18.03
 
-* Вирішено проблему, коли категорія сенсорної взаємодії на панелі
-  налаштувань NVDA може спричиняти звуки помилок через зміни, внесені з
-  цього додатка.
+- NVDA 2018.1 is required.
+- Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no longer included in this add-on.
 
-## Версія 18.03
+## Version 17.12
 
-* Потрібна NVDA 2018.1.
-* Оскільки NVDA 2018.1 постачається з прапорцем сенсорного введення, цей
-  прапорець більше не включено до цього додатка.
+- Requires NVDA 2017.4. Specifically, this add-on can now handle configuration profile switches.
+- As NVDA 2017.4 includes screen orientation announcement, this feature is no longer part of this add-on.
+- Added a hidden checkbox in Touch Interaction dialog to completely disable touch support (available if profiles other than normal configuration is active).
+- If using NVDA 2018.1 or later, Touch Interaction dialog will be listed twice under NVDA's preferences menu. The second item is the dialog that comes with the add-on.
+- In Touch Interaction dialog for the add-on, touch typing mode is no longer shown if using NVDA 2018.1 or later.
 
-## Версія 17.12
+## Version 17.10
 
-* Потрібна NVDA 2017.4. Зокрема, цей додаток тепер може обробляти перемикачі
-  конфігураційних профілів.
-* Оскільки NVDA 2017.4 містить повідомлення про орієнтацію екрана, ця
-  функція більше не є частиною цього додатка.
-* Додано прихований прапорець у діалозі «Сенсорна взаємодія» для повного
-  вимкнення підтримки сенсорного вводу (доступно, якщо активні профілі,
-  відмінні від нормальної конфігурації).
-* Якщо ви використовуєте NVDA 2018.1 або новішу версію, діалог «Сенсорна
-  взаємодія» в меню NVDA буде показано двічі. Другий пункт — це діалог, який
-  постачається з додатком.
-* У діалозі «Сенсорна взаємодія» для додатка режим сенсорного введення
-  більше не показується, якщо ви використовуєте NVDA 2018.1 або новішу
-  версію.
+- Due to support policy from Microsoft, Windows 8 (original release) is no longer supported.
+- NVDA will no longer announce screen orientation twice when running NVDA 2017.4 development snapshots.
 
-## Версія 17.10
+## Version 17.07.1
 
-* У зв’язку з політикою підтримки від Microsoft, Windows 8 (оригінальний
-  випуск) більше не підтримується.
-* NVDA більше не оголошуватиме двічі орієнтацію екрана під час запуску
-  снепшот-версій NVDA 2017.4.
+- Added an option in touch interaction dialog to manually toggle touch passthrough without use of a timer.
+- With manual passthrough mode off, if touch passthrough is turned on before the passthrough duration expires, touch interaction would be enabled.
 
-## Версія 17.07.1
+## Version 17.07
 
-* У діалозі «Сенсорна взаємодія» додано параметр для ручного перемикання
-  пропуску сенсорного введення без використання таймера.
-* При вимкненому режимі ручного пропуску, якщо увімкнути сенсорний пропуск
-  до закінчення тривалості пропуску, буде увімкнено сенсорну взаємодію.
+- Added a new dialog named Touch Interaction under NVDA's preferences menu to configure how NVDA works with touchscreens.
+- After installing this version, when pressing keys on the touch keyboard, one must double tap the desired key. You can switch back to the old way by enabling touch typing from Touch Interaction dialog.
+- Added a command (unassigned) to allow NVDA to ignore touch gestures for up to 10 seconds.
+- Added an option in Touch Interaction dialog to allow NVDA to pause touch interaction between 3 to 10 seconds in order to perform touchscreen gestures directly (as though NVDA is not running; default is 5 seconds).
+- Added debug logging messages when performing right clicks (tap and hold) to be recorded in the NVDA log (requires NVDA 2017.1 or later).
+- Due to changes made when playing screen coordinates, NVDA 2017.1 or later is required.
 
-## Версія 17.07
+\##Version 17.03
 
-* Додано новий діалог «Сенсорна взаємодія» у меню налаштувань NVDA для
-  налаштування роботи NVDA з сенсорними екранами.
-* Після встановлення цієї версії для натискання клавіш на сенсорній
-  клавіатурі потрібно двічі натиснути на потрібну клавішу. Ви можете
-  повернутися до старого способу, увімкнувши сенсорне введення в діалозі
-  «Сенсорна взаємодія».
-* Додано непризначену команду, яка дозволяє NVDA ігнорувати сенсорні жести
-  до 10 секунд.
-* У діалозі «сенсорна взаємодія» додано параметр, який дозволяє NVDA
-  призупиняти сенсорну взаємодію на час від 3 до 10 секунд для виконання
-  жестів безпосередньо на сенсорному екрані (так, ніби NVDA не запущено;
-  початково — 5 секунд).
-* До журналу NVDA додано налагоджувальні повідомлення при виконанні клацання
-  правою кнопкою миші (натискання й утримання) (потрібна NVDA 2017.1 або
-  новіша версія).
-* Через зміни, внесені при відтворенні координат екрана, потрібна NVDA
-  2017.1 або новіша версія.
+- Fixed an issue where coordinate announcement beep did not play or an error tone played instead when using NVDA 2017.1 or later.
 
-##Версія 17.03
+\##Version 16.12
 
-* Виправлено проблему, коли при використанні NVDA 2017.1 або новішої версії
-  не лунав звуковий сигнал оголошення координат або замість нього лунав
-  сигнал помилки.
+- Web touch mode works in Microsoft Edge, Microsoft Word and others where browse mode is used.
+- Added lists and landmarks to web touch mode elements.
 
-##Версія 16.12
+## Version 16.06
 
-* Сенсорний веб-режим використовується в Nicrosoft Edge, Microsoft Word та
-  інших застосунках, де використовується режим огляду.
-* До елементів сенсорного режиму в інтернеті додано списки й орієнтири.
+- Initial stable version.
 
-## Версія 16.06
-
-* Перша стабільна версія.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures
+[1]: https://addons.nvda-project.org/files/get.php?file=ets

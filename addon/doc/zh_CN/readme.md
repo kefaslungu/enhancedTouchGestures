@@ -1,221 +1,232 @@
-# 触摸屏手势增强
+# Enhanced Touchscreen Gestures
 
-* 作者: Joseph Lee
+- Authors: Joseph Lee, Kefas Lungu
 
-此插件为 NVDA 提供了更多的触摸屏支持手势。其中包括一组浏览模式导航手势。
+This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-注意：此插件需在运行 Windows 10 或 11 的触摸屏计算机上使用，且要求 NVDA 版本为 2025.3.2 或更高。
+Note: this add-on requires NVDA 2025.3.2 or later running on a touchscreen computer with Windows 10 or 11.
 
-## 命令
+## Commands
 
-### 随处可用
+### Available everywhere
 
-* 双指三击：退出 NVDA！
-* 三指右滑：按 Tab 键。
-* 三指左滑：按 Shift+Tab 键。
-* 三指下滑（对象模式）：朗读当前窗口。
-* 三指双击：在语音符号级别之间循环切换，已确定朗读哪些符号。
-* 三指三击：切换黑屏。
-* 四指单击：在音频闪避模式之间切换。
-* 四指双击：切换输入帮助的开关。
-* 四指左滑：读出有焦点的对象。
-* 四指右滑：读出当前导航对象。
-* 四指上滑：读出当前窗口的标题。
-* 四指下滑：读出当前应用程序的状态栏。
+- Two finger tripple tap: quits NVDA!
+- Three finger flick right: press Tab.
+- Three finger flick left: press Shift+Tab.
+- Three finger flick down (object mode): read current window.
+- Three finger double tap: cycles through speech symbol levels which determine what symbols are spoken.
+- Three finger triple tap: toggles screen curtain.
+- Four finger tap: cycles through audio ducking modes.
+- Four finger double tap: toggle input help mode.
+- Four finger flick left: report object with focus.
+- Four finger flick right: report current navigator object.
+- Four finger flick up: report title of the current window.
+- Four finger flick down: report status bar text.
 
-## 触摸浏览模式
+## Touch browse mode
 
-此触摸模式在浏览模式下可用，允许您按所选元素导航文档。要切换到浏览模式，请从浏览模式文档中执行3指点击。在此模式下，用一根手指向上或向下滑动可循环浏览可用的元素导航模式，向右或向左滑动则可移动到下一个或上一个选定的元素。若您离开浏览模式文档，将使用对象触摸模式。
+This touch mode, available in browse mode, allows you to navigate the document by selected element. This mode is entered automatically when browse mode becomes active, including switching to a browse mode document. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents or switch to focus mode, object touch mode will be used.
 
-可用的 web 模式包括：默认（在元素/对象中移动，无论类型如何）、链接、按钮、表单字段、标题、框架、表格、列表、图形、路标、嵌入式对象（例如对话框或 web 应用程序）和文本段落。
+Available touch browse mode elements are: default (move through elements/objects regardless of type), links, buttons, form fields, headings, frames, tables, lists, graphics, landmarks, embedded objects (dialogs and web apps, for example), and text paragraphs.
 
-## 语音设置模式
+Note: this feature is included in NVDA 2026.2.
 
-您可以在此模式下快速更改语音合成器设置，例如选择语音和调节音量。在此模式下，使用两个手指向左或向右滑动以在合成器设置之间切换，然后使用两个手指向上和向下清扫来更改相应设置的值。该手势对应于键盘上的语音循环切换。
+## Synth settings touch mode
 
-## 版本 26.03
+You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
 
-* 将“web 模式”重命名为“浏览模式”，因为此模式将涵盖其他情况，包括 Word 365中的浏览模式。
+## Version 26.05
 
-## 版本26.02
+- Touch browse mode will be entered automatically when switching to a browse mode document or toggling from focus mode to browse mode.
+- Improved reliability of toggling through touch modes after the add-on is reloaded (Control+NVDA+F3).
 
-* 需要 NVDA 2025.3.2 或更高版本。
-* 在没有触摸屏或使用便携版 NVDA 的计算机上安装此插件时，将显示警告。
-* 在便携版 NVDA 安装此插件时，插件的相关手势不会显示在按键与手势对话框中。
-* 触摸手势更改，包括：按下 Tab 键（三指右滑）、按下 Shift+Tab 键（三指左滑）、朗读焦点对象（四指左滑）以及朗读导航对象（四指右滑）。
-* 移除了触摸键盘和听写开关手势，因触摸键盘存在可靠性问题，且 Windows 11 中听写功能已被语音访问取代。
-* 移除了进度条输出设置开关手势（单指三击）。
-* 新增了黑屏开关手势（三指三击）。
-* 朗读当前窗口手势（三指下滑）将仅可在对象触摸模式使用。
-* 在网页触摸模式下添加了嵌入式对象和文本段落导航功能。
+## Version 26.04
 
-## 版本25.07
+- Internal changes to make the add-on more compatible with future NVDA releases.
 
-* 在Pyright（Python静态类型检查器）的帮助下，使插件代码更加健壮。
+## Version 26.03
 
-## 版本25.02
+- Renamed "web mode" to "browse mode" as this mode will cover additional situations including browse mode in Word 365.
 
-* 恢复了对Windows 8.1的有限支持。
+## Version 26.02
 
-## 版本25.01
+- NVDA 2025.3.2 or later is required.
+- A warning will be presented when installing the add-on on computers without touchscreens or portable NVDA version is in use.
+- Gestures from the add-on will not be shown in input gestures dialog when the add-on is installed on a portable NVDA version.
+- Touch gesture changes, including pressing Tab (three finger flick right), pressing Shift+Tab (three finger flick left), reporting focused object (four finger flick left), and reporting navigator object (four finger flick right).
+- Removed touch keyboard and dictation toggle gestures due to reliability issues with the former and dictation being replaced by Voice Access in Windows 11.
+- Removed progress bar output settings toggle gesture (one finger triple tap).
+- Added screen curtain toggle gesture (three finger triple tap).
+- Read current window gesture (three finger flick down) will be limited to object touch mode.
+- Added embedded object and text paragraph navigation to web touch mode.
 
-* 文档中不再提供插件的下载链接。您可以从NV Access 插件商店下载插件。
-* Lintting 工具从 flake8 转为 ruff，并重新格式化插件模块，以更好地与NVDA编码标准保持一致。
-* 从插件更新器中删除了对自动更新的支持。
+## Version 25.07
 
-## 版本24.05
+- Made the add-on code more robust with help from Pyright (a Python static type checker).
 
-* 需要NVDA 2024.1或更高版本。
+## Version 25.02
 
-## 版本23.06.1
+- Restored limited support for Windows 8.1.
 
-* 由于跟停止朗读手势存在冲突，将切换音频闪避的手势改为4指单机。
+## Version 25.01
 
-## 版本23.06
+- Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
+- Switched linting tool from Flake8 to Ruff and reformatted add-on modules to better align with NVDA coding standards.
+- Removed support for automatic add-on updates feature from Add-on Updater add-on.
 
-* 将插件维护者更改为 Kefas Lungu。
-* 现在，对象模式下的所有手势全局生效。
-* 支持了新的手势。
-  * 3指双击：在语音符号级别之间循环切换，已确定朗读哪些符号
-  * 2指三击：退出 NVDA。
-  * 4指单击：在音频闪避模式之间切换。
-  * 三击：切换进度栏更新时的提示方式，包括提示音，朗读，朗读并发出提示音和不提示四种模式。
-* 在Web模式下，除了原有支持导航列表以外，现在还支持按钮，图形和路标的导航。
-* 在Web模式下，从其他元素类型导航切换到“默认”模式后，NVDA 提示“默认”。
+## Version 24.05
 
-## 版本 23.02
+- NVDA 2024.1 or later is required.
 
-* 需要 NVDA 2022.4 或更高版本。
-* 需要 Windows 10 21H2（2021 年 11 月更新/内部版本 19044）或更高版本。
+## Version 23.06.1
 
-## 版本23.01
+- audio ducking moved to 4 finger tap due to conflict with speech stops NVDA command.
 
-* 现在需要NVDA 2022.3或更高版本。
-* 需要 Windows 10 或更高版本，因为自 2023 年 1 月起，Microsoft 不再支持 Windows 8.1。
-* 可以从按键与手势对话框中触摸手势增强类别下重新分配触摸键盘和听写切换命令。
-* 删除了触摸键盘键的只读状态解决方法，已在 Windows 10 中得到解决。
+## Version 23.06
 
-## 版本 22.03
+- Changed add-on maintainer to Kefas Lungu.
+- All gestures in object mode are now available everywhere.
+- New gestures are now available.
+  - 3 finger double tap: Cycles through speech symbol levels which determine what symbols are spoken
+  - 2 finger triple tap: Quit NVDA!.
+  - 4 finger tap: Cycles through audio ducking modes.
+  - Triple tap: Cycles progress bar output between beeps, speech, beeps and speech, and off.
+- In web mode, it is now possible to Use buttons, graphics, and landmarks in addition to the already available browse element list.
+- In web mode, NVDA is no longer going to say normal, but default when you switch to default navigation from other browse element list. For example, when switching from buttons, NVDA will now say default.
 
-* 现在需要NVDA 2021.3或更高版本。
-* 试图在 Windows 7、8 和 8.1 上安装插件时将会显示一条警告消息。
+## Version 23.02
 
-## 版本 21.10
+- NVDA 2022.4 or later is required.
+- Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
 
-* 由于 NVDA 的更改对本插件的影响，您需要使用 NVDA 2021.2 或更高版本。
+## Version 23.01
 
-## 版本21.08
+- NVDA 2022.3 or later is required.
+- Windows 10 or later is required as Windows 8.1 is no longer supported by Microsoft as of January 2023.
+- It is possible to reassign touch keyboard and dictation toggle commands from input gestures dialog under Enhanced Touch Gestures category.
+- Removed read-only state workaround for touch keyboard keys as it is resolved in Windows 10.
 
-* 对 Windows 11 的初步支持。
+## Version 22.03
 
-## 版本21.01
+- NVDA 2021.3 or later is required.
+- A warning message will be displayed when attempting to install the add-on on Windows 7, 8, and 8.1.
 
-* 现在需要NVDA 2020.3或更高版本。
-* 在 Windows 10 版本 1709 及更高版本上，四指向左滑动可切换听写模式 (即 Windows+H)。
-* 从插件中删除专用的触摸支持命令。
-* 由于 NVDA 本身支持了触摸交互设置，故此插件删除了设置面板的相关选项。
+## Version 21.10
 
-## 版本20.09
+- NVDA 2021.2 or later is required due to changes to NVDA that affects this add-on.
 
-* 删除了让 NVDA 关闭触摸交互10秒（以直接传递触摸命令）的功能。
-* 删除了坐标通知提示音功能。
+## Version 21.08
 
-## 版本20.07
+- Initial support for Windows 11.
 
-* 添加了切换启用/禁用触摸 (Ctrl+Alt+NVDA+T) 的键盘命令。
-* 由于 NVDA 2020.1 及更高版本包含用于执行鼠标右键单击（单指点击并按住）的触摸命令，该命令已从此插件中删除。因此，需要 NVDA 2020.1 或更高版本。
-* 让 NVDA 关闭触摸交互10秒（以直接传递触摸命令）的功能已被弃用。将来，此功能使用切换触摸交互代替。
-* 在 NVDA 开发快照中，由于触摸交互功能的变化，触摸命令传递功能和增强的触摸手势设置面板将被禁用。用于启用触摸命令传递的命令将改为切换触摸交互。
-* 坐标通知提示音功能已弃用，并将在未来的附加版本中删除。
-* 使用触摸键盘时不会听到坐标通知提示音。
-* 在通过触摸探索现代输入工具（例如表情符号面板）时，NVDA 将不在没有提示或播放错误提示音。
-* 如果无法激活触摸键盘（四指向右滑动），NVDA 将显示错误消息。
+## Version 21.01
 
-## 版本20.06
+- NVDA 2020.3 or later is required.
+- On Windows 10 Version 1709 and later, doing a four finger flick left will toggle dictation (Windows+H).
+- Remove dedicated touch interaction support toggle command from the add-on.
+- As touch interaction support can be toggled from NVDA's touch interaction settings panel, a dedicated Enhanced Touch Gestures settings panel has been removed.
 
-* 使用 Flake8 解决了许多编码样式问题和潜在错误。
+## Version 20.09
 
-## 版本20.04
+- Removed ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough).
+- Removed coordinate announcement beep feature.
 
-* 鼠标右键单击手势（一个手指点击并按住）现在是 NVDA 2020.1 的一部分。
+## Version 20.07
 
-## 版本20.01
+- Added a keyboard command to toggle touch interaction or enable/disable touch passthrough (Control+Alt+NVDA+T).
+- As NVDA 2020.1 and later includes a touch command to perform right mouse click (one finger tap and hold), the command has been removed from this add-on. AS a result, NVDA 2020.1 or later is required.
+- The ability to let NVDA turn off touch interaction for up to ten seconds (touch command passthrough) is deprecated. In the future this feature will toggle touch interaction instead.
+- In NVDA development snapshots, due to touch interaction feature changes, touch command passthrough feature and Enhanced Touch Gestures settings panel will be disabled. The command used to enable touch command passthrough will toggle touch interaction instead.
+- Coordinate announcement beep feature is deprecated and will be removed in a future add-on release.
+- Coordinate announcement beep will not be heard while using touch keyboard.
+- NVDA will no longer appear to do nothing or play error tones while exploring modern input facility such as emoji panel via touch.
+- NVDA will present an error message if touch keyboard cannot be activated (four finger flick right).
 
-* 现在需要NVDA 2019.3或更高版本。
-* 如果完全关闭触摸支持，则触摸支持切换命令（包括触摸传递）将不再起作用。
+## Version 20.06
 
-## 版本19.11
+- Resolved many coding style issues and potential bugs with Flake8.
 
-* 为其他触摸命令添加输入帮助消息。
+## Version 20.04
 
-## 版本19.09
+- Right mouse click gesture (one finger tap and hold) is now part of NVDA 2020.1.
 
-* 触摸支持现在可以从任何地方禁用，而不仅仅是从配置文件以外的正常配置文件。
+## Version 20.01
 
-## 版本19.07
+- NVDA 2019.3 or later is required.
+- Touch support toggle command (including touch passthrough) will no longer function if touch support is turned off completely.
 
-* 内部更改以支持未来的NVDA版本。
+## Version 19.11
 
-## 版本18.12
+- Added input help messages for additional touch commands.
 
-* 内部更改以支持未来的NVDA版本。
+## Version 19.09
 
-## 版本18.08
+- Touch support can now be disabled from everywhere, not just from profiles other than normal profile.
 
-* 兼容NVDA 2018.3和未来版本。
+## Version 19.07
 
-## 版本18.06
+- Internal changes to support future NVDA releases.
 
-* 现在，“增强触摸手势”的设置已整合进NVDA新版设置。因此，需要NVDA 2018.2。
-* 修复了wxPython 4的兼容性问题。
+## Version 18.12
 
-## 版本18.04
+- Internal changes to support future NVDA releases.
 
-* 解决了NVDA设置面板中的触摸交互类别可能导致由于此插件所做的更改而听到错误声音的问题。
+## Version 18.08
 
-## 版本18.03
+- Compatible with NVDA 2018.3 and future versions.
 
-* 现在需要NVDA 2018.1。
-* 由于NVDA 2018.1带有触摸输入复选框，因此此插件中不再包含该复选框。
+## Version 18.06
 
-## 版本17.12
+- Add-on settings is now found in new multi-category NVDA Settings screen under "Enhanced Touch Gestures" category. As a result, NVDA 2018.2 is required.
+- Fixed compatibility issues with wxPython 4.
 
-* 现在需要NVDA 2017.4。具体来说，此插件现在可以处理配置文件切换。
-* 由于NVDA 2017.4包含屏幕方向通知，因此此功能不再是此插件的一部分。
-* 在“触摸交互”对话框中添加了一个隐藏复选框，以完全禁用触摸支持（如果正常配置以外的配置文件处于活动状态。
-* 如果使用NVDA 2018.1或更高版本，则“触摸交互”对话框将在NvDA的选项菜单下列出两次。第二项是插件随附的对话框。
-* 在插件的“触摸交互”对话框中，如果使用NVDA 2018.1或更高版本，则不再显示触摸键入模式。
+## Version 18.04
 
-## 版本17.10
+- Resolves an issue where touch interaction category in NVDA Settings panel may cause error sounds to be heard due to changes made from this add-on.
 
-* 由于Microsoft的支持策略，不再支持Windows 8（原始版本）。
-* 运行NVDA 2017.4开发快照时，NVDA将不再宣布屏幕方向两次。
+## Version 18.03
 
-## 版本17.07.1
+- NVDA 2018.1 is required.
+- Because NVDA 2018.1 comes with touch typing checkbox, the checkbox is no longer included in this add-on.
 
-* 在触摸交互对话框中添加了一个选项，可以在不使用计时器的情况下手动切换触摸直通。
-* 关闭手动直通模式后，如果在直通持续时间到期之前打开触摸直通，则会启用触摸交互。
+## Version 17.12
 
-## 版本17.07
+- Requires NVDA 2017.4. Specifically, this add-on can now handle configuration profile switches.
+- As NVDA 2017.4 includes screen orientation announcement, this feature is no longer part of this add-on.
+- Added a hidden checkbox in Touch Interaction dialog to completely disable touch support (available if profiles other than normal configuration is active).
+- If using NVDA 2018.1 or later, Touch Interaction dialog will be listed twice under NVDA's preferences menu. The second item is the dialog that comes with the add-on.
+- In Touch Interaction dialog for the add-on, touch typing mode is no longer shown if using NVDA 2018.1 or later.
 
-* 在NVDA的首选项菜单下添加了一个名为Touch Interaction的新对话框，以配置NVDA如何与触摸屏配合使用。
-* 安装此版本后，按下触摸键盘上的按键时，必须双击所需的按键。您可以通过在“触摸交互”对话框中启用触摸键入来切换回旧方法。
-* 添加了一个命令（未分配），允许NVDA忽略触摸手势长达10秒。
-* 在“触摸交互”对话框中添加了一个选项，允许NVDA暂停3到10秒之间的触摸交互，以便直接执行触摸屏手势（就像NVDA未运行;默认为5秒）。
-* 在执行右键单击（点击并按住）以记录在NVDA日志中时需要添加调试日志消息（需要NVDA 2017.1或更高版本）。
-* 由于在播放屏幕坐标时所做的更改，需要NVDA 2017.1或更高版本。
+## Version 17.10
 
-##版本 17.03
+- Due to support policy from Microsoft, Windows 8 (original release) is no longer supported.
+- NVDA will no longer announce screen orientation twice when running NVDA 2017.4 development snapshots.
 
-* 修复了使用NVDA 2017.1或更高版本时未播放坐标公告蜂鸣声或播放错误音的问题。
+## Version 17.07.1
 
-##版本 16.12
+- Added an option in touch interaction dialog to manually toggle touch passthrough without use of a timer.
+- With manual passthrough mode off, if touch passthrough is turned on before the passthrough duration expires, touch interaction would be enabled.
 
-* Web触摸模式适用于Microsoft Edge，Microsoft Word和其他使用浏览模式的模式。
-* 为web触摸模式元素添加了列表和标记。
+## Version 17.07
 
-## 版本16.06
+- Added a new dialog named Touch Interaction under NVDA's preferences menu to configure how NVDA works with touchscreens.
+- After installing this version, when pressing keys on the touch keyboard, one must double tap the desired key. You can switch back to the old way by enabling touch typing from Touch Interaction dialog.
+- Added a command (unassigned) to allow NVDA to ignore touch gestures for up to 10 seconds.
+- Added an option in Touch Interaction dialog to allow NVDA to pause touch interaction between 3 to 10 seconds in order to perform touchscreen gestures directly (as though NVDA is not running; default is 5 seconds).
+- Added debug logging messages when performing right clicks (tap and hold) to be recorded in the NVDA log (requires NVDA 2017.1 or later).
+- Due to changes made when playing screen coordinates, NVDA 2017.1 or later is required.
 
-* 发布初始版本。
+\##Version 17.03
 
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures
+- Fixed an issue where coordinate announcement beep did not play or an error tone played instead when using NVDA 2017.1 or later.
+
+\##Version 16.12
+
+- Web touch mode works in Microsoft Edge, Microsoft Word and others where browse mode is used.
+- Added lists and landmarks to web touch mode elements.
+
+## Version 16.06
+
+- Initial stable version.
+
+[1]: https://addons.nvda-project.org/files/get.php?file=ets
