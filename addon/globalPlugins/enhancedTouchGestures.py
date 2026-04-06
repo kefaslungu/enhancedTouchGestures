@@ -13,7 +13,6 @@ import ui
 from globalCommands import commands
 import browseMode
 import treeInterceptorHandler
-import extensionPoints
 import api
 import config
 import tones
@@ -23,10 +22,6 @@ from utils.displayString import DisplayStringStrEnum
 import addonHandler
 
 addonHandler.initTranslation()
-
-# Notifies when browse mode state has changed, to enter or exit web mode.
-post_browseModeStateChange = extensionPoints.Action()
-
 
 # NVDA 2026.2: patch touchHandler.TouchMode enumeration to add synth settings mode.
 class TouchMode(DisplayStringStrEnum):
