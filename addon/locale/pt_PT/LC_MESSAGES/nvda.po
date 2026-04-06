@@ -1,68 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the enhancedTouchGestures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: nvdaaddons\n"
+"Project-Id-Version: enhancedTouchGestures 17.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2026-02-23 03:47+0000\n"
-"PO-Revision-Date: 2026-04-04 20:07\n"
-"Last-Translator: \n"
-"Language-Team: Portuguese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-07-06 19:24+0100\n"
+"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
+"rui.fontes@tiflotecnia.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: nvdaaddons\n"
-"X-Crowdin-Project-ID: 780748\n"
-"X-Crowdin-Language: pt-PT\n"
-"X-Crowdin-File: enhancedTouchGestures.pot\n"
-"X-Crowdin-File-ID: 210\n"
-
-#. Translators: dialog title shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:24
-msgid "Enhanced Touch Gestures install warning"
-msgstr ""
-
-#. No touch hardware whatsoever
-#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:29
-msgid "This device does not support touch interaction. A touch capable device is required to use add-on features."
-msgstr ""
-
-#. Portable NVDA running on a touch capable hardware
-#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:33
-msgid "You are using a portable copy of NVDA and the device supports touch interaction. NVDA must be installed to use add-on features."
-msgstr ""
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
-#. Add-on summary/title, usually the user visible name of the add-on
-#. Translators: Summary/title for this add-on
-#. to be shown on installation and add-on information found in add-on store
-#: addon/globalPlugins/enhancedTouchGestures.py:38 buildVars.py:21
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Enhanced Touch Gestures"
 msgstr "Gestos de toque aprimorados"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:226
-msgid "Emulates pressing tab on the system keyboard"
-msgstr ""
+msgid "Toggles touch keyboard"
+msgstr "Alterna o teclado por toque"
+
+#. Translators: message shown when touch keyboard button is not found.
+msgid "Cannot activate touch keyboard"
+msgstr "Impossível Activar teclado touch"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:234
-msgid "Emulates pressing shift+tab on the system keyboard"
-msgstr ""
+msgid "Toggles voice dictation"
+msgstr "Alterna o ditado por voz"
+
+#. Translators: message shown when dictation command is unavailable.
+msgid "Dictation is supported on Windows 10 Version 1709 or later"
+msgstr "O ditado é suportado na versão 1709, ou superior,  do windows 10"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-on store
-#: buildVars.py:24
-msgid "A suite of additional touch commands, including navigation and help commands.\n"
-"\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."
-msgstr "Um conjunto de comandos adicionais de toque, incluindo comandos de tabulação e ajuda.\n"
-"Requer um computador preparado para toque, com o Windows 8.1 ou posterior,  que tenha o NVDA 2017.4 ou posterior instalado."
-
-#. Brief changelog for this version
-#. Translators: what's new content for the add-on version to be shown in the add-on store
-#: buildVars.py:30
-msgid "* Renamed 'web mode' to 'browse mode' as this mode will cover additional situations including browse mode in Word 365."
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"A suite of additional touch commands, including navigation and help "
+"commands.\n"
+"\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA "
+"2017.4 or later installed."
 msgstr ""
-
+"Um conjunto de comandos adicionais de toque, incluindo comandos de tabulação "
+"e ajuda.\n"
+"Requer um computador preparado para toque, com o Windows 8.1 ou posterior,  "
+"que tenha o NVDA 2017.4 ou posterior instalado."
