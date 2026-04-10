@@ -76,10 +76,10 @@ Ses seçimi, ses seviyesi gibi sentezleyici ayarlarını yapmak için bu kipi ku
 * Eklenti bakımı Kefas Lungu olarak değiştirildi.
 * Nesne modundaki tüm hareketler artık her yerde kullanılabiliyor.
 * Artık yeni hareketler mevcut.
-  * 3 parmakla çift dokunma: Hangi simgelerin söyleneceğini belirleyen konuşma simgesi düzeyleri arasında geçiş yapar
-  * 2 parmakla üç kez dokunma: NVDA'dan çıkar!.
-  * 4 parmakla dokunma: Ses Zayıflaması modları arasında geçiş yapar.
-  * Üçlü dokunma: İlerleme çubuğu çıkışını bip sesleri, konuşma, bip sesleri ve konuşma arasında değiştirir ve kapatır.
+	* 3 parmakla çift dokunma: Hangi simgelerin söyleneceğini belirleyen konuşma simgesi düzeyleri arasında geçiş yapar
+	* 2 parmakla üç kez dokunma: NVDA'dan çıkar!.
+	* 4 parmakla dokunma: Ses Zayıflaması modları arasında geçiş yapar.
+	* Üçlü dokunma: İlerleme çubuğu çıkışını bip sesleri, konuşma, bip sesleri ve konuşma arasında değiştirir ve kapatır.
 * Web modunda, halihazırda mevcut olan göz atma öğesi listesine ek olarak düğmeleri, grafikleri ve yer işaretlerini kullanmak artık mümkün.
 * Web modunda, diğer göz atma öğeleri listesinden varsayılan gezinmeye geçtiğinizde NVDA artık normal değil, varsayılan diyecek. Örneğin, düğmelerden geçiş yaparken NVDA artık varsayılan diyecek.
 
