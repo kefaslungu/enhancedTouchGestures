@@ -198,5 +198,3 @@ Możesz użyć tego trybu do szybkiej zmiany ustawień syntezatora, np. by wybra
 ## Wersja 16.06
 
 * Pierwsza wersja stabilna.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

@@ -217,5 +217,3 @@ Ses seçimi, ses seviyesi gibi sentezleyici ayarlarını yapmak için bu kipi ku
 ## Sürüm 16.06
 
 * İlk kararlı sürüm.
-
-[1]: https://addons.nvda-project.org/files/get.php?file=ets

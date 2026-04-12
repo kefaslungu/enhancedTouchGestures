@@ -198,5 +198,3 @@ Ovaj se modus koristiti za brzo mijenjenje postavki govorne jedinice, poput odab
 ## Verzija 16.06
 
 * Inicijalna stabilna verzija.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

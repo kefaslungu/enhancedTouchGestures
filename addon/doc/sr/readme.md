@@ -1,8 +1,6 @@
 # Enhanced Touch Gestures
 
 * аутор : Joseph Lee
-* Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2018.2 to 2019.3
 
 овај додатак вам пружа побољшане гестове за екране осетљиве на додир.
 
@@ -113,7 +111,3 @@ An unassigned command is available to allow you to use touchscreen gestures as t
 ## Verzija 16.06
 
 * Prva stabilna verzija
-
-[1]: https://addons.nvda-project.org/files/get.php?file=ets
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ets-dev

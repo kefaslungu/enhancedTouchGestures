@@ -198,5 +198,3 @@ In diesem Modus können Sie Sprachausgabeneinstellungen wie Tonhöhe, Geschwindi
 ## Version 16.06
 
 * Ehrstveröffentlichung der stabilen Version.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

@@ -217,5 +217,3 @@
 ## 16.06 版
 
 * 初始穩定版本。
-
-[1]: https://addons.nvda-project.org/files/get.php?file=ets

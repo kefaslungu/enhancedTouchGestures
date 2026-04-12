@@ -198,5 +198,3 @@ Questa modalità di tocco, disponibile in modalità navigazione, permette di nav
 ## Novità nella versione 16.06
 
 * Versione iniziale stabile.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

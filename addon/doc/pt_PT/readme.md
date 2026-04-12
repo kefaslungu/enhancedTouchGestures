@@ -198,5 +198,3 @@ Pode usar este modo para mudar rapidamente as configurações do sintetizador, c
 ## Versão 16.06
 
 * Versão inicial estável.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

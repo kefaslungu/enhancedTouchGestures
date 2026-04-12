@@ -217,5 +217,3 @@
 ## 版本16.06
 
 * 发布初始版本。
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

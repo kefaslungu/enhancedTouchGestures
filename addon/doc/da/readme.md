@@ -177,7 +177,7 @@ Du kan bruge denne tilstand til hurtigt at at skifte indstillinger for talesynte
 * Tilføjet en mulighed i dialogboksen "Berøringsinteraktion" til at manuelt lade berøringsbevægelser slippe igennem, uden at bruge en timer.
 * Med tilstanden til manuelt at slippe berøringsbevægelser igennem slået fra, og hvis berøringsbevægelser slippes igennem før varigheden udløber, slås berøringsinteraktion til.
 
-## Version 17.07Version: [0.6][1]
+## Version 17.07
 
 * Tilføjet en ny dialogboks ved navn "Berøringsindtastning" under NVDAs menu under Præferencer til at konfigurere, hvordan NVDA fungere med berøringsskærme.
 * Du skal trykke to gange på den ønskede tast på berøringstastaturet, når du har installeret denne version. Du kan skifte tilbage til den forrige metode ved at benytte dialogen "Beræringsindteraktion".
@@ -198,5 +198,3 @@ Du kan bruge denne tilstand til hurtigt at at skifte indstillinger for talesynte
 ## Version 16.06
 
 * Første stabile version.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

@@ -198,5 +198,3 @@ Pomocou dotykových gest môžete rovnako ako z klávesnice okamžite upravovať
 ## Verzia 16.06
 
 * Prvé stabilné vydanie.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

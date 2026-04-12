@@ -198,5 +198,3 @@ Vous pouvez utiliser ce mode pour modifier rapidement les paramètres du synthé
 ## Version 16.06
 
 * Première version stable.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

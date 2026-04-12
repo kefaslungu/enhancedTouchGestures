@@ -198,5 +198,3 @@ Voit käyttää tätä tilaa nopeaan syntetisaattoriasetusten säätämiseen, ku
 ## Versio 16.06
 
 * Ensimmäinen vakaa versio.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

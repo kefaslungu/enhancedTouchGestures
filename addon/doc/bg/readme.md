@@ -198,5 +198,3 @@ Note: this add-on requires NVDA 2024.1 or later running on a touchscreen compute
 ## Версия 16.06
 
 * Първа стабилна версия.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures

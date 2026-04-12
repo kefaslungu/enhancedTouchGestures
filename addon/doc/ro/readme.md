@@ -198,5 +198,3 @@ Aveți posibilitatea să utilizați acest mod pentru a modifica rapid setările 
 ## Versiunea 16.06
 
 * Versiunea stabilă inițială.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=enhancedTouchGestures
