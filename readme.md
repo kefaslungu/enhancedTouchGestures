@@ -4,7 +4,7 @@
 
 This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
 
-Note: this add-on requires NVDA 2025.3.2 or later running on a touchscreen computer with Windows 10 or 11.
+Note: this add-on requires NVDA 2025.3.3 or later running on a touchscreen computer with Windows 10 or 11.
 
 ## Commands
 
