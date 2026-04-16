@@ -27,7 +27,8 @@ addon_info = AddonInfo(
 	addon_version="26.04",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* Touch browse mode will be entered automatically when switching to a browse mode document or toggling from focus mode to browse mode.
+	addon_changelog=_("""* NVDA 2025.3.3 or later is required.
+* Touch browse mode will be entered automatically when switching to a browse mode document or toggling from focus mode to browse mode.
 * Improved reliability of toggling through touch modes after the add-on is reloaded (Control+NVDA+F3)."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",
