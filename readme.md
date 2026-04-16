@@ -37,6 +37,7 @@ You can use this mode to quickly change synthesizer settings such as choosing a 
 
 ## Version 26.05
 
+* NVDA 2025.3.3 or later is required.
 * Touch browse mode will be entered automatically when switching to a browse mode document or toggling from focus mode to browse mode.
 * Improved reliability of toggling through touch modes after the add-on is reloaded (Control+NVDA+F3).
 
