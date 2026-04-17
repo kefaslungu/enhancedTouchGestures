@@ -3,7 +3,6 @@
 # Copyright 2013-2026 Joseph Lee, Kefas Lungu, released under GPL.
 # Implements needed improvements for various touchscreen gestures.
 
-from typing import NamedTuple
 import globalPluginHandler
 from functools import cached_property
 import touchHandler
@@ -11,9 +10,6 @@ import keyboardHandler
 import scriptHandler
 import ui
 from globalCommands import commands
-import browseMode
-import treeInterceptorHandler
-import api
 import config
 import tones
 import wx
