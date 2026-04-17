@@ -176,53 +176,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# The starting index for the web browse mode, which flicks through objects.
 	webBrowseMode = 0
 
-	# Touch gestures please.
-	# doesn't actually need touch on demand since the entire keyboard is also silenced.
-
-	@scriptHandler.script(description="Selects the next browse mode element.", gesture="ts(browse):flickDown")
-	def script_nextBrowseModeElement(self, gesture):
-		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
-		ui.message(self.webBrowseElements[self.webBrowseMode].element)
-		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
-
-	@scriptHandler.script(
-		description="Selects the previous browse mode element.", gesture="ts(browse):flickUp"
-	)
-	def script_prevBrowseModeElement(self, gesture):
-		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
-		ui.message(self.webBrowseElements[self.webBrowseMode].element)
-		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
-
-	@scriptHandler.script(gesture="ts(browse):flickRight")
-	def script_nextSelectedElement(self, gesture):
-		if (
-			isinstance(
-				(obj := api.getNavigatorObject().treeInterceptor),
-				browseMode.BrowseModeTreeInterceptor
-			) and self.webBrowseMode > 0  # An actual browse mode element
-		):
-			getattr(
-				obj,
-				f"script_next{self.webBrowseElements[self.webBrowseMode].script}"
-			)(gesture)
-		else:
-			commands.script_navigatorObject_nextInFlow(gesture)
-
-	@scriptHandler.script(gesture="ts(browse):flickLeft")
-	def script_prevSelectedElement(self, gesture):
-		if (
-			isinstance(
-				(obj := api.getNavigatorObject().treeInterceptor),
-				browseMode.BrowseModeTreeInterceptor
-		) and self.webBrowseMode > 0  # An actual browse mode element
-		):
-			getattr(
-				obj,
-				f"script_previous{self.webBrowseElements[self.webBrowseMode].script}"
-			)(gesture)
-		else:
-			commands.script_navigatorObject_previousInFlow(gesture)
-
 	# Press Tab and Shift+Tab.
 
 	@scriptHandler.script(
