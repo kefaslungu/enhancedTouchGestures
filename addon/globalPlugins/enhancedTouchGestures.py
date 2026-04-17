@@ -153,22 +153,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Web browse mode navigation:
 	# Included in NVDA 2026.2
 
-	def _browseModeStateChange(self, browseMode: bool = False) -> None:
-		# Browse mode toggle is part of NVDA 2026.2.
-		if hasattr(touchHandler, "TouchMode"):
-			return
-		if browseMode:
-			if "browse" not in touchHandler.availableTouchModes:
-				touchHandler.availableTouchModes.append("browse")
-			touchHandler.handler._curTouchMode = "browse"
-		else:
-			# If we're not in browser window and web (browse) mode was active, force object mode.
-			if touchHandler.handler._curTouchMode == "browse":
-				touchHandler.handler._curTouchMode = "object"
-			# Remove browse touch mode.
-			if "browse" in touchHandler.availableTouchModes:
-				touchHandler.availableTouchModes.remove("browse")
-
 	# Web elements and associated scripts list:
 	WebBrowseElement = NamedTuple(
 		"WebBrowseElement", [
