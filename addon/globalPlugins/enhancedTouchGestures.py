@@ -156,32 +156,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_quitNvda(self, gesture: inputCore.InputGesture):
 		commands.script_quit(gesture)
 
-	# Web browse mode navigation:
-	# Included in NVDA 2026.2
-
-	# Web elements and associated scripts list:
-	WebBrowseElement = NamedTuple(
-		"WebBrowseElement", [
-			("script", str),
-			("element", str)
-		]
-	)
-	webBrowseElements = (
-		WebBrowseElement("", "default"),
-		WebBrowseElement("Heading", "headings"),
-		WebBrowseElement("Table", "tables"),
-		WebBrowseElement("Link", "links"),
-		WebBrowseElement("FormField", "form fields"),
-		WebBrowseElement("List", "lists"),
-		WebBrowseElement("Frame", "frames"),
-		WebBrowseElement("Graphic", "graphics"),
-		WebBrowseElement("Landmark", "landmarks"),
-		WebBrowseElement("EmbeddedObject", "embedded objects"),
-		WebBrowseElement("TextParagraph", "text paragraphs"),
-	)
-	# The starting index for the web browse mode, which flicks through objects.
-	webBrowseMode = 0
-
 	# Press Tab and Shift+Tab.
 
 	@scriptHandler.script(
