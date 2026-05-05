@@ -206,12 +206,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Touch gestures please.
 	# doesn't actually need touch on demand since the entire keyboard is also silenced.
+	# If running on NVDA 2026.2, performs built-in browse touch mode commands.
 
 	@scriptHandler.script(
 		description="Selects the next browse mode element.",
 		gesture="ts(browse):flickDown",
 	)
 	def script_nextBrowseModeElement(self, gesture):
+		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_nextBrowseElement"):
+			api.getNavigatorObject().treeInterceptor.script_nextBrowseElement(gesture)
+			return
 		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode].element)
 		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
@@ -221,12 +225,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(browse):flickUp",
 	)
 	def script_prevBrowseModeElement(self, gesture):
+		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_prevBrowseElement"):
+			api.getNavigatorObject().treeInterceptor.script_prevBrowseElement(gesture)
+			return
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode].element)
 		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(gesture="ts(browse):flickRight")
 	def script_nextSelectedElement(self, gesture):
+		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_nextSelectedElement"):
+			api.getNavigatorObject().treeInterceptor.script_nextSelectedElement(gesture)
+			return
 		if (
 			isinstance(
 				(obj := api.getNavigatorObject().treeInterceptor),
@@ -242,6 +252,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@scriptHandler.script(gesture="ts(browse):flickLeft")
 	def script_prevSelectedElement(self, gesture):
+		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_prevSelectedElement"):
+			api.getNavigatorObject().treeInterceptor.script_prevSelectedElement(gesture)
+			return
 		if (
 			isinstance(
 				(obj := api.getNavigatorObject().treeInterceptor),
