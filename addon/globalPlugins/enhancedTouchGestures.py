@@ -100,7 +100,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		commands.script_reportCurrentFocus(gesture)
 
 	@scriptHandler.script(
-		description=commands.script_title.__doc__, gesture="ts:4finger_flickUp", speakOnDemand=True
+		description=commands.script_title.__doc__,
+		gesture="ts:4finger_flickUp",
+		speakOnDemand=True,
 	)
 	def script_title(self, gesture):
 		commands.script_title(gesture)
@@ -153,7 +155,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_toggleScreenCurtain(self, gesture):
 		commands.script_toggleScreenCurtain(gesture)
 
-	@scriptHandler.script(description=commands.script_quit.__doc__, gesture="ts:2finger_triple_tap")
+	@scriptHandler.script(
+		description=commands.script_quit.__doc__,
+		gesture="ts:2finger_triple_tap",
+	)
 	def script_quitNvda(self, gesture):
 		commands.script_quit(gesture)
 
@@ -202,14 +207,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Touch gestures please.
 	# doesn't actually need touch on demand since the entire keyboard is also silenced.
 
-	@scriptHandler.script(description="Selects the next browse mode element.", gesture="ts(browse):flickDown")
+	@scriptHandler.script(
+		description="Selects the next browse mode element.",
+		gesture="ts(browse):flickDown",
+	)
 	def script_nextBrowseModeElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode].element)
 		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(
-		description="Selects the previous browse mode element.", gesture="ts(browse):flickUp"
+		description="Selects the previous browse mode element.",
+		gesture="ts(browse):flickUp",
 	)
 	def script_prevBrowseModeElement(self, gesture):
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
