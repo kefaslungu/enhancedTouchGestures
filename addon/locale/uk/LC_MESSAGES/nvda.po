@@ -6,48 +6,117 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: enhancedTouchGestures 21.01\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-05-21 18:11-0600\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-05-23 13:21+0300\n"
+"PO-Revision-Date: 2026-05-23 13:32+0300\n"
 "Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
 "Language-Team: \n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.9\n"
+
+#. Translators: dialog title shown when trying to install the add-on on unsupported systems.
+#: addon\installTasks.py:24
+msgid "Enhanced Touch Gestures install warning"
+msgstr ""
+"Попередження про встановлення Покращених жестів сенсорного керування"
+
+#. No touch hardware whatsoever
+#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
+#: addon\installTasks.py:29
+msgid ""
+"This device does not support touch interaction. A touch capable device is "
+"required to use add-on features."
+msgstr ""
+"Цей пристрій не підтримує сенсорне керування. Для використання додаткових "
+"функцій необхідний пристрій із сенсорним екраном."
+
+#. Portable NVDA running on a touch capable hardware
+#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
+#: addon\installTasks.py:33
+msgid ""
+"You are using a portable copy of NVDA and the device supports touch "
+"interaction. NVDA must be installed to use add-on features."
+msgstr ""
+"Ви використовуєте портативну версію NVDA, і пристрій підтримує сенсорне "
+"керування. Для використання додаткових функцій необхідно встановити NVDA."
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:39
+msgid "text mode"
+msgstr "текстовий режим"
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:41
+msgid "object mode"
+msgstr "об'єктний режим"
+
+#. Translators: The name of a touch mode used when in browse mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:43
+msgid "browse mode"
+msgstr "режим огляду"
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:45
+msgid "synth settings mode"
+msgstr "режим налаштувань синтезу"
 
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information found in Add-ons Manager.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: addon\globalPlugins\enhancedTouchGestures.py:57 buildVars.py:21
 msgid "Enhanced Touch Gestures"
-msgstr "Розширення сенсорних жестів"
+msgstr "Покращені жести сенсорного керування"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-msgid "Toggles touch keyboard"
-msgstr "Перемикає сенсорну клавіатуру"
-
-#. Translators: message shown when touch keyboard button is not found.
-msgid "Cannot activate touch keyboard"
-msgstr "Неможливо активувати сенсорну клавіатуру"
+#: addon\globalPlugins\enhancedTouchGestures.py:275
+msgid "Emulates pressing tab on the system keyboard"
+msgstr "Імітує натискання клавіші Tab на системній клавіатурі"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-msgid "Toggles voice dictation"
-msgstr "Перемикає голосове введення"
-
-#. Translators: message shown when dictation command is unavailable.
-msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr "Диктування підтримується на Windows 10 версії 1709 або пізніших"
+#: addon\globalPlugins\enhancedTouchGestures.py:283
+msgid "Emulates pressing shift+tab on the system keyboard"
+msgstr "Імітує натискання клавіш Shift+Tab на системній клавіатурі"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
 msgid ""
 "A suite of additional touch commands, including navigation and help "
 "commands.\n"
 "\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA "
 "2017.4 or later installed."
 msgstr ""
-"Набір додаткових жестових команд, включно з командами навігації й довідки.\n"
+"Набір додаткових жестових команд, включно з командами навігації й "
+"довідки.\n"
 "\tВимагає комп’ютера з увімкненим сенсорним екраном на Windows 8.1 або "
 "пізнішою з встановленою NVDA 2017.4 або пізнішою."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:30
+msgid ""
+"* If running NVDA 2026.2, browse touch mode next/previous element type "
+"reporting behavior will match NVDA screen reader.\n"
+"* Reordered browse touch mode elements order to follow NVDA 2026.2 order."
+msgstr ""
+"* У разі використання NVDA 2026.2 поведінка функції оголошення типу "
+"наступного/попереднього елемента в режимі сенсорного перегляду "
+"відповідатиме поведінці екранного зчитувача NVDA.\n"
+"* Змінено порядок елементів у режимі сенсорного перегляду відповідно до "
+"порядку в NVDA 2026.2."
+
+#~ msgid "Toggles touch keyboard"
+#~ msgstr "Перемикає сенсорну клавіатуру"
+
+#~ msgid "Cannot activate touch keyboard"
+#~ msgstr "Неможливо активувати сенсорну клавіатуру"
+
+#~ msgid "Toggles voice dictation"
+#~ msgstr "Перемикає голосове введення"
+
+#~ msgid "Dictation is supported on Windows 10 Version 1709 or later"
+#~ msgstr "Диктування підтримується на Windows 10 версії 1709 або пізніших"
