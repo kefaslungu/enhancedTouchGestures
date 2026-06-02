@@ -34,3 +34,7 @@ Note: this feature is included in NVDA 2026.2.
 ## Synth settings touch mode
 
 You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.
+
+For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.
+
+[1]: https://github.com/kefaslungu/enhancedTouchGestures/blob/main/changes.md
