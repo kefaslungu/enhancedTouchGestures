@@ -151,7 +151,7 @@ reportMissingTypeStubs = false
 reportMissingImports = false  # NVDA Core modules
 reportMissingParameterType = false  # Touch support test decorator
 reportUndefinedVariable = false  # _ = gettext.gettext call
-reportUnknownArgumentType = false  # touchHandler.availableTouchModes is a list of strings
+reportUnknownArgumentType = false  # Browse touch mode hasattr/getattr (NVDA 2026.2 availability testing)
 reportUnknownMemberType = false  # NVDA Core attributes
 reportUnknownParameterType = false  # Touch gestures
 reportUnknownVariableType = false  # Types coming from NVDA Core
