@@ -9,6 +9,7 @@ from functools import cached_property
 import touchHandler
 import keyboardHandler
 import scriptHandler
+import inputCore
 import ui
 from globalCommands import commands
 import browseMode
@@ -88,7 +89,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts:4finger_double_tap",
 		speakOnDemand=True,
 	)
-	def script_toggleInputHelp(self, gesture):
+	def script_toggleInputHelp(self, gesture: inputCore.InputGesture):
 		commands.script_toggleInputHelp(gesture)
 
 	@scriptHandler.script(
@@ -96,7 +97,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts:4finger_flickLeft",
 		speakOnDemand=True,
 	)
-	def script_reportCurrentFocus(self, gesture):
+	def script_reportCurrentFocus(self, gesture: inputCore.InputGesture):
 		commands.script_reportCurrentFocus(gesture)
 
 	@scriptHandler.script(
@@ -104,7 +105,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts:4finger_flickUp",
 		speakOnDemand=True,
 	)
-	def script_title(self, gesture):
+	def script_title(self, gesture: inputCore.InputGesture):
 		commands.script_title(gesture)
 
 	@scriptHandler.script(
@@ -112,7 +113,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts:4finger_flickDown",
 		speakOnDemand=True,
 	)
-	def script_reportStatusLine(self, gesture):
+	def script_reportStatusLine(self, gesture: inputCore.InputGesture):
 		commands.script_reportStatusLine(gesture)
 
 	@scriptHandler.script(
@@ -120,7 +121,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(object):3finger_flickDown",
 		speakOnDemand=True,
 	)
-	def script_speakForeground(self, gesture):
+	def script_speakForeground(self, gesture: inputCore.InputGesture):
 		commands.script_speakForeground(gesture)
 
 	@scriptHandler.script(
@@ -128,7 +129,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts:4finger_flickRight",
 		speakOnDemand=True,
 	)
-	def script_navigatorObject_current(self, gesture):
+	def script_navigatorObject_current(self, gesture: inputCore.InputGesture):
 		commands.script_navigatorObject_current(gesture)
 
 	# the following doesn't need speak on demand, skip it.
@@ -138,28 +139,28 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=commands.script_cycleAudioDuckingMode.__doc__,
 		gesture="ts:4finger_tap",
 	)
-	def script_audioDuckingMode(self, gesture):
+	def script_audioDuckingMode(self, gesture: inputCore.InputGesture):
 		commands.script_cycleAudioDuckingMode(gesture)
 
 	@scriptHandler.script(
 		description=commands.script_cycleSpeechSymbolLevel.__doc__,
 		gesture="ts:3finger_double_tap",
 	)
-	def script_speechSymbolLevel(self, gesture):
+	def script_speechSymbolLevel(self, gesture: inputCore.InputGesture):
 		commands.script_cycleSpeechSymbolLevel(gesture)
 
 	@scriptHandler.script(
 		description=commands.script_toggleScreenCurtain.__doc__,
 		gesture="ts:3finger_triple_tap",
 	)
-	def script_toggleScreenCurtain(self, gesture):
+	def script_toggleScreenCurtain(self, gesture: inputCore.InputGesture):
 		commands.script_toggleScreenCurtain(gesture)
 
 	@scriptHandler.script(
 		description=commands.script_quit.__doc__,
 		gesture="ts:2finger_triple_tap",
 	)
-	def script_quitNvda(self, gesture):
+	def script_quitNvda(self, gesture: inputCore.InputGesture):
 		commands.script_quit(gesture)
 
 	# Web browse mode navigation:
@@ -212,7 +213,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description="Selects the next browse mode element.",
 		gesture="ts(browse):flickDown",
 	)
-	def script_nextBrowseModeElement(self, gesture):
+	def script_nextBrowseModeElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_nextBrowseElement"):
 			api.getNavigatorObject().treeInterceptor.script_nextBrowseElement(gesture)
 			return
@@ -224,7 +225,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description="Selects the previous browse mode element.",
 		gesture="ts(browse):flickUp",
 	)
-	def script_prevBrowseModeElement(self, gesture):
+	def script_prevBrowseModeElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_prevBrowseElement"):
 			api.getNavigatorObject().treeInterceptor.script_prevBrowseElement(gesture)
 			return
@@ -233,7 +234,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		log.debug(f"etouch: switching browse mode to {self.webBrowseElements[self.webBrowseMode]}")
 
 	@scriptHandler.script(gesture="ts(browse):flickRight")
-	def script_nextSelectedElement(self, gesture):
+	def script_nextSelectedElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_nextSelectedElement"):
 			api.getNavigatorObject().treeInterceptor.script_nextSelectedElement(gesture)
 			return
@@ -251,7 +252,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			commands.script_navigatorObject_nextInFlow(gesture)
 
 	@scriptHandler.script(gesture="ts(browse):flickLeft")
-	def script_prevSelectedElement(self, gesture):
+	def script_prevSelectedElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_prevSelectedElement"):
 			api.getNavigatorObject().treeInterceptor.script_prevSelectedElement(gesture)
 			return
@@ -275,7 +276,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Emulates pressing tab on the system keyboard"),
 		gesture="ts:3finger_flickRight",
 	)
-	def script_pressTab(self, gesture):
+	def script_pressTab(self, gesture: inputCore.InputGesture):
 		keyboardHandler.KeyboardInputGesture.fromName("tab").send()
 
 	@scriptHandler.script(
@@ -283,7 +284,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Emulates pressing shift+tab on the system keyboard"),
 		gesture="ts:3finger_flickLeft",
 	)
-	def script_pressShiftTab(self, gesture):
+	def script_pressShiftTab(self, gesture: inputCore.InputGesture):
 		keyboardHandler.KeyboardInputGesture.fromName("shift+tab").send()
 
 	# Synth settings ring/mode
@@ -293,7 +294,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(synthsettings):2finger_flickUp",
 		speakOnDemand=True,
 	)
-	def script_prevSynthSettingValue(self, gesture):
+	def script_prevSynthSettingValue(self, gesture: inputCore.InputGesture):
 		commands.script_increaseSynthSetting(gesture)
 
 	@scriptHandler.script(
@@ -301,7 +302,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(synthsettings):2finger_flickDown",
 		speakOnDemand=True,
 	)
-	def script_nextSynthSettingValue(self, gesture):
+	def script_nextSynthSettingValue(self, gesture: inputCore.InputGesture):
 		commands.script_decreaseSynthSetting(gesture)
 
 	@scriptHandler.script(
@@ -309,7 +310,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(synthsettings):2finger_flickRight",
 		speakOnDemand=True,
 	)
-	def script_nextSynthSetting(self, gesture):
+	def script_nextSynthSetting(self, gesture: inputCore.InputGesture):
 		commands.script_nextSynthSetting(gesture)
 
 	@scriptHandler.script(
@@ -317,5 +318,5 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="ts(synthsettings):2finger_flickLeft",
 		speakOnDemand=True,
 	)
-	def script_prevSynthSetting(self, gesture):
+	def script_prevSynthSetting(self, gesture: inputCore.InputGesture):
 		commands.script_previousSynthSetting(gesture)
