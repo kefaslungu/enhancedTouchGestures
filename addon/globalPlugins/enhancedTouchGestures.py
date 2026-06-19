@@ -215,7 +215,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_nextBrowseModeElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_nextBrowseElement"):
-			api.getNavigatorObject().treeInterceptor.script_nextBrowseElement(gesture)
+			api.getFocusObject().treeInterceptor.script_nextBrowseElement(gesture)
 			return
 		self.webBrowseMode = (self.webBrowseMode + 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode].element)
@@ -227,7 +227,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_prevBrowseModeElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_prevBrowseElement"):
-			api.getNavigatorObject().treeInterceptor.script_prevBrowseElement(gesture)
+			api.getFocusObject().treeInterceptor.script_prevBrowseElement(gesture)
 			return
 		self.webBrowseMode = (self.webBrowseMode - 1) % len(self.webBrowseElements)
 		ui.message(self.webBrowseElements[self.webBrowseMode].element)
@@ -236,7 +236,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(gesture="ts(browse):flickRight")
 	def script_nextSelectedElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_nextSelectedElement"):
-			api.getNavigatorObject().treeInterceptor.script_nextSelectedElement(gesture)
+			api.getFocusObject().treeInterceptor.script_nextSelectedElement(gesture)
 			return
 		if (
 			isinstance(
@@ -254,7 +254,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(gesture="ts(browse):flickLeft")
 	def script_prevSelectedElement(self, gesture: inputCore.InputGesture):
 		if hasattr(browseMode.BrowseModeTreeInterceptor, "script_prevSelectedElement"):
-			api.getNavigatorObject().treeInterceptor.script_prevSelectedElement(gesture)
+			api.getFocusObject().treeInterceptor.script_prevSelectedElement(gesture)
 			return
 		if (
 			isinstance(
