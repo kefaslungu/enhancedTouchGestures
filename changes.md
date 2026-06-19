@@ -5,6 +5,7 @@ This page lists the complete changelog for Enhanced Touch Gestures add-on releas
 ## Version 26.07
 
 * Removed add-on changelog from add-on help (readme) file.
+* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content.
 
 ## Version 26.06
 
