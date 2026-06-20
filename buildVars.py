@@ -27,8 +27,9 @@ addon_info = AddonInfo(
 	addon_version="26.06",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* If running NVDA 2026.2, browse touch mode next/previous element type reporting behavior will match NVDA screen reader.
-* Reordered browse touch mode elements order to follow NVDA 2026.2 order."""),
+	addon_changelog=_("""* Removed add-on changelog from add-on help (readme) file.
+* The "default (all elements)" mode in touch browse mode is now called "default" mode to match NVDA 2026.2 messaging.
+* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",
 	# URL for the add-on documentation support
