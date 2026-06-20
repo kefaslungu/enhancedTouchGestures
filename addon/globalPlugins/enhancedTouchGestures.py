@@ -190,17 +190,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		]
 	)
 	webBrowseElements = (
-		WebBrowseElement("", "Default (all elements)"),
-		WebBrowseElement("Heading", "Headings"),
-		WebBrowseElement("Table", "Tables"),
-		WebBrowseElement("Link", "Links"),
-		WebBrowseElement("FormField", "Form fields"),
-		WebBrowseElement("List", "Lists"),
-		WebBrowseElement("Frame", "Frames"),
-		WebBrowseElement("Graphic", "Graphics"),
-		WebBrowseElement("Landmark", "Landmarks"),
-		WebBrowseElement("EmbeddedObject", "Embedded objects"),
-		WebBrowseElement("TextParagraph", "Text paragraphs"),
+		WebBrowseElement("", "default"),
+		WebBrowseElement("Heading", "headings"),
+		WebBrowseElement("Table", "tables"),
+		WebBrowseElement("Link", "links"),
+		WebBrowseElement("FormField", "form fields"),
+		WebBrowseElement("List", "lists"),
+		WebBrowseElement("Frame", "frames"),
+		WebBrowseElement("Graphic", "graphics"),
+		WebBrowseElement("Landmark", "landmarks"),
+		WebBrowseElement("EmbeddedObject", "embedded objects"),
+		WebBrowseElement("TextParagraph", "text paragraphs"),
 	)
 	# The starting index for the web browse mode, which flicks through objects.
 	webBrowseMode = 0
