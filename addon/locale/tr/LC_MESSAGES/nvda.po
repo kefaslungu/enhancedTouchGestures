@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2026-02-23 03:47+0000\n"
-"PO-Revision-Date: 2026-03-30 00:45\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-06-21 05:19+0000\n"
+"PO-Revision-Date: 2026-06-23 10:07\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -18,37 +18,57 @@ msgstr ""
 "X-Crowdin-File-ID: 210\n"
 
 #. Translators: dialog title shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:24
+#: addon\installTasks.py:24
 msgid "Enhanced Touch Gestures install warning"
 msgstr "Gelişmiş Dokunma Hareketleri yükleme uyarısı"
 
 #. No touch hardware whatsoever
 #. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:29
+#: addon\installTasks.py:29
 msgid "This device does not support touch interaction. A touch capable device is required to use add-on features."
 msgstr "Bu cihaz dokunmatik etkileşimi desteklemiyor. Ek özellikler kullanmak için dokunmatik özellikli bir cihaz gereklidir."
 
 #. Portable NVDA running on a touch capable hardware
 #. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:33
+#: addon\installTasks.py:33
 msgid "You are using a portable copy of NVDA and the device supports touch interaction. NVDA must be installed to use add-on features."
 msgstr "NVDA'nın taşınabilir bir kopyasını kullanıyorsunuz ve cihaz dokunmatik etkileşimi destekliyor. Eklenti özelliklerini kullanmak için NVDA'nın kurulu olması gerekir."
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:40
+msgid "text mode"
+msgstr "metin modu"
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:42
+msgid "object mode"
+msgstr "nesne modu"
+
+#. Translators: The name of a touch mode used when in browse mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:44
+msgid "browse mode"
+msgstr "tarama modu"
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:46
+msgid "synth settings mode"
+msgstr "sentezleyici ayarları modu"
 
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon/globalPlugins/enhancedTouchGestures.py:38 buildVars.py:21
+#: addon\globalPlugins\enhancedTouchGestures.py:58 buildVars.py:21
 msgid "Enhanced Touch Gestures"
 msgstr "Gelişmiş Dokunma Hareketleri"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:226
+#: addon\globalPlugins\enhancedTouchGestures.py:276
 msgid "Emulates pressing tab on the system keyboard"
 msgstr "Sistem klavyesinde Sekme tuşuna basmayı taklit eder"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:234
+#: addon\globalPlugins\enhancedTouchGestures.py:284
 msgid "Emulates pressing shift+tab on the system keyboard"
 msgstr "Sistem klavyesinde Shift+Sekme tuşlarına basmayı taklit eder"
 
@@ -63,6 +83,10 @@ msgstr "navigasyon ve yardım komutları da dahil olmak üzere, ek dokunmatik ko
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:30
-msgid "* Renamed 'web mode' to 'browse mode' as this mode will cover additional situations including browse mode in Word 365."
-msgstr "* Bu mod, Word 365'teki göz atma modu da dahil olmak üzere ek durumları kapsayacağından 'web modu', 'gözatma modu' olarak yeniden adlandırıldı."
+msgid "* Removed add-on changelog from add-on help (readme) file.\n"
+"* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n"
+"* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+msgstr "* Eklenti değişiklik günlüğü, eklenti yardım (readme) dosyasından kaldırıldı.\n"
+"* Dokunmatik Tarama modundaki \"varsayılan (tüm öğeler)\" modu artık NVDA 2026.2 mesajlarıyla eşleşecek şekilde \"varsayılan\" mod olarak adlandırılıyor.\n"
+"* NVDA 2026.2 çalıştırılıyorsa, NVDA artık hiçbir şey yapmıyor gibi görünmeyecek veya dolaşım nesnesi belge içeriği dışında bir yerdeyken web tarayıcılarında göz atma dokunmatik modu komutları gerçekleştirilirken hata sesleri çalmayacak."
 
