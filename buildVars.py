@@ -33,7 +33,7 @@ addon_info = AddonInfo(
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",
 	# URL for the add-on documentation support
-	addon_url="https://github.com/kefaslungu/enhancedTouchGestures/blob/main/readme.md",
+	addon_url="https://github.com/kefaslungu/enhancedTouchGestures",
 	# URL for the add-on repository where the source code can be found
 	addon_sourceURL="https://github.com/kefaslungu/enhancedtouchGestures",
 	# Documentation file name
