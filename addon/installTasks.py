@@ -10,6 +10,11 @@ import addonHandler
 import ctypes
 import config
 import gui
+# From NVDA 2026.1 onwards, winBindings package should be used to look for Windows API dll's.
+try:
+	from winBindings.user32 import dll as user32
+except ModuleNotFoundError:
+	from winUser import user32
 
 addonHandler.initTranslation()
 
@@ -17,7 +22,7 @@ addonHandler.initTranslation()
 def onInstall() -> None:
 	# Touch support must be present, otherwise the add-on will be disabled upon installation.
 	isInstalledCopy = config.isInstalledCopy()
-	touchHardwarePresent = ctypes.windll.user32.GetSystemMetrics(95) > 0  # SM_MAXIMUMTOUCHES
+	touchHardwarePresent = user32.GetSystemMetrics(95) > 0  # SM_MAXIMUMTOUCHES
 	if isInstalledCopy and touchHardwarePresent:
 		return
 	# Translators: dialog title shown when trying to install the add-on on unsupported systems.
