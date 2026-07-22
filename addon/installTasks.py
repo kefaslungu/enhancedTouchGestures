@@ -7,7 +7,6 @@
 # particularly Place Markers by Noelia Martinez (thanks add-on authors).
 
 import addonHandler
-import ctypes
 import config
 import gui
 # From NVDA 2026.1 onwards, winBindings package should be used to look for Windows API dll's.
