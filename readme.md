@@ -2,7 +2,7 @@
 
 * Authors: Joseph Lee, Kefas Lungu
 
-This add-on provides additional touchscreen gestures for NVDA. It also provides a set of gestures for easier browse mode navigation.
+This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.
 
 Note: this add-on requires NVDA 2025.3.3 or later running on a touchscreen computer with Windows 10 or 11.
 
