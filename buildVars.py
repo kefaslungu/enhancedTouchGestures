@@ -21,8 +21,7 @@ addon_info = AddonInfo(
 	addon_summary=_("Enhanced Touch Gestures"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
-	addon_description=_("""A suite of additional touch commands, including navigation and help commands.
-	Requires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."""),
+	addon_description=_("""This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures."""),
 	# version
 	addon_version="26.08",
 	# Brief changelog for this version
