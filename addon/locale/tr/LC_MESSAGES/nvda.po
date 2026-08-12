@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-07-24 07:30+0000\n"
-"PO-Revision-Date: 2026-08-05 15:55\n"
+"POT-Creation-Date: 2026-08-12 00:01+0000\n"
+"PO-Revision-Date: 2026-08-12 00:03\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -75,14 +75,12 @@ msgstr "Sistem klavyesinde Shift+Sekme tuşlarına basmayı taklit eder"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #: buildVars.py:24
-msgid "A suite of additional touch commands, including navigation and help commands.\n"
-"\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."
-msgstr "navigasyon ve yardım komutları da dahil olmak üzere, ek dokunmatik komutlardan oluşan bir paket.\n"
-"\tNVDA 2017.4 ya da sonraki sürümlerinden birinin kurulu olduğu, dokunmatik ekranlı ve en az Windows 8.1 yüklü bir bilgisayar gerektirir."
+msgid "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures."
+msgstr ""
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
-#: buildVars.py:30
+#: buildVars.py:29
 msgid "* Removed add-on changelog from add-on help (readme) file.\n"
 "* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n"
 "* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."

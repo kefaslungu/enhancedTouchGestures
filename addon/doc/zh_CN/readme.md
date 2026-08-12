@@ -2,7 +2,7 @@
 
 * 作者: Joseph Lee
 
-此插件为 NVDA 提供了更多的触摸屏支持手势。其中包括一组浏览模式导航手势。
+This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.
 
 注意：此插件需在运行 Windows 10 或 11 的触摸屏计算机上使用，且要求 NVDA 版本为 2025.3.3 或更高。
 
