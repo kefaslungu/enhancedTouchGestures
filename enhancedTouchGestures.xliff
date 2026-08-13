@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
-<file id="readme.md" original="https://raw.githubusercontent.com/kefaslungu/enhancedTouchGestures/db97d02a49359dedb6bd933a35ea1051709bce39/readme.md">
+<file id="readme.md" original="https://raw.githubusercontent.com/kefaslungu/enhancedTouchGestures/4306851d67391d66bc960a97557c5eec6cfb8b93/readme.md">
 <skeleton>
 # $(ID:9e115a5a-6eea-43dd-9fb7-5e04b30c78a9)
 
@@ -8,7 +8,7 @@
 
 $(ID:e6504be6-5e4b-4295-a849-34ce5dc63141)
 
-$(ID:78ed8620-3f8a-4a6f-b362-d349ec3f2c84)
+$(ID:7d7058d6-0965-4566-a078-6feb06260b31)
 
 ## $(ID:38dc1140-ff81-4e4f-bd97-31338ef6c68b)
 
@@ -26,14 +26,6 @@ $(ID:78ed8620-3f8a-4a6f-b362-d349ec3f2c84)
 * $(ID:972bf470-342c-430f-956b-e27cd23f1044)
 * $(ID:eefae056-3f75-4da9-8a71-db58592d2ebe)
 * $(ID:69bcc9c2-48fb-4615-a147-6f35ecd18ead)
-
-## $(ID:312f9362-b26f-41b5-be6d-9d8a8e3dc253)
-
-$(ID:1e374318-c3c2-4326-97d8-16043a0fd94f)
-
-$(ID:01b3e7f1-de3c-4d48-b6d5-19fa889bbec6)
-
-$(ID:78fc5f20-4bd1-482f-a23e-1fb6c55d5b1e)
 
 ## $(ID:a70a6c1e-1110-4408-9786-98a2de477bfd)
 
@@ -69,12 +61,12 @@ $(ID:6120f0c8-a73f-47ca-a9b5-4cc54f47512f)
 <source>This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.</source>
 </segment>
 </unit>
-<unit id="78ed8620-3f8a-4a6f-b362-d349ec3f2c84">
+<unit id="7d7058d6-0965-4566-a078-6feb06260b31">
 <notes>
 <note appliesTo="source">line: 8</note>
 </notes>
 <segment>
-<source>Note: this add-on requires NVDA 2025.3.3 or later running on a touchscreen computer with Windows 10 or 11.</source>
+<source>Note: this add-on requires NVDA 2026.2 or later running on a touchscreen computer with Windows 10 or 11.</source>
 </segment>
 </unit>
 <unit id="38dc1140-ff81-4e4f-bd97-31338ef6c68b">
@@ -203,42 +195,9 @@ $(ID:6120f0c8-a73f-47ca-a9b5-4cc54f47512f)
 <source>Four finger flick down: report status bar text.</source>
 </segment>
 </unit>
-<unit id="312f9362-b26f-41b5-be6d-9d8a8e3dc253">
-<notes>
-<note appliesTo="source">line: 27</note>
-<note appliesTo="source">prefix: ## </note>
-</notes>
-<segment>
-<source>Touch browse mode</source>
-</segment>
-</unit>
-<unit id="1e374318-c3c2-4326-97d8-16043a0fd94f">
-<notes>
-<note appliesTo="source">line: 29</note>
-</notes>
-<segment>
-<source>This touch mode, available in browse mode, allows you to navigate the document by selected element. This mode is entered automatically when browse mode becomes active, including switching to a browse mode document. From this mode, flicking up or down with one finger cycles through available element navigation modes, while flicking right or left with one finger moves to next or previous chosen element, respectively. Once you move away from browse mode documents or switch to focus mode, object touch mode will be used.</source>
-</segment>
-</unit>
-<unit id="01b3e7f1-de3c-4d48-b6d5-19fa889bbec6">
-<notes>
-<note appliesTo="source">line: 31</note>
-</notes>
-<segment>
-<source>Available touch browse mode elements can vary between NVDA versionns. For NVDA 2025.3.3 and 2026.1, the available elements are default (move through elements/objects regardless of type), headings, tables, links, form fields, lists, frames, graphics, landmarks, embedded objects (dialogs and web apps, for example), and text paragraphs. In NVDA 2026.2, the available elements by default are default, headings, tables, links, form fields, and lists, with additional elements selectable from browse mode NVDA settings category.</source>
-</segment>
-</unit>
-<unit id="78fc5f20-4bd1-482f-a23e-1fb6c55d5b1e">
-<notes>
-<note appliesTo="source">line: 33</note>
-</notes>
-<segment>
-<source>Note: this feature is included in NVDA 2026.2.</source>
-</segment>
-</unit>
 <unit id="a70a6c1e-1110-4408-9786-98a2de477bfd">
 <notes>
-<note appliesTo="source">line: 35</note>
+<note appliesTo="source">line: 27</note>
 <note appliesTo="source">prefix: ## </note>
 </notes>
 <segment>
@@ -247,7 +206,7 @@ $(ID:6120f0c8-a73f-47ca-a9b5-4cc54f47512f)
 </unit>
 <unit id="5989e396-17cc-4b52-9995-fcbe21122205">
 <notes>
-<note appliesTo="source">line: 37</note>
+<note appliesTo="source">line: 29</note>
 </notes>
 <segment>
 <source>You can use this mode to quickly change synthesizer settings such as choosing a voice and changing volume. In this mode, use two finger flick left or right to move between synth settings and use two finger flick up and down gestures to change values. This gestures mirrors that of synth settings ring commands on the keyboard.</source>
@@ -255,7 +214,7 @@ $(ID:6120f0c8-a73f-47ca-a9b5-4cc54f47512f)
 </unit>
 <unit id="7281a5e8-a0ae-405c-8f5d-d1382290473c">
 <notes>
-<note appliesTo="source">line: 39</note>
+<note appliesTo="source">line: 31</note>
 </notes>
 <segment>
 <source>For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.</source>
@@ -263,7 +222,7 @@ $(ID:6120f0c8-a73f-47ca-a9b5-4cc54f47512f)
 </unit>
 <unit id="6120f0c8-a73f-47ca-a9b5-4cc54f47512f">
 <notes>
-<note appliesTo="source">line: 41</note>
+<note appliesTo="source">line: 33</note>
 </notes>
 <segment>
 <source>[1]: https://github.com/kefaslungu/enhancedTouchGestures/blob/main/changes.md</source>
