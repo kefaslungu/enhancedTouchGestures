@@ -2,9 +2,9 @@
 
 * 作者: Joseph Lee
 
-This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.
+此插件为 NVDA 提供了额外的触摸屏手势，包括读出焦点、循环切换合成器设置等。
 
-注意：此插件需在运行 Windows 10 或 11 的触摸屏计算机上使用，且要求 NVDA 版本为 2025.3.3 或更高。
+Note: this add-on requires NVDA 2026.2 or later running on a touchscreen computer with Windows 10 or 11.
 
 ## 命令
 
@@ -22,14 +22,6 @@ This add-on provides additional touchscreen gestures for NVDA, including focus r
 * 四指右滑：读出当前导航对象。
 * 四指上滑：读出当前窗口的标题。
 * 四指下滑：读出当前应用程序的状态栏。
-
-## 触摸浏览模式
-
-此触摸模式在浏览模式下可用，允许您按所选元素导航文档。当浏览模式激活时（包括切换到浏览模式文档），会自动使用此模式。在此模式下，用一根手指向上或向下滑动可循环浏览可用的元素导航模式，向右或向左滑动则可移动到下一个或上一个选定的元素。若您离开浏览模式文档，将使用对象触摸模式。
-
-可用的触摸浏览模式元素在不同 NVDA 版本中将有所不同。对于 NVDA 2025.3.3 和 2026.1，可用的元素包括默认（在元素/对象中移动，无论类型如何）、标题、表格、链接、表单字段、列表、框架、图形、路标、嵌入式对象（例如对话框和 Web 应用）以及文本段落。在 NVDA 2026.2 中，默认可用的元素包括默认、标题、表格、链接、表单字段和列表，其他元素可从 NVDA 设置中的浏览模式类别中添加。
-
-注意：此功能已包含在 NVDA 2026.2 中。
 
 ## 语音设置模式
 
