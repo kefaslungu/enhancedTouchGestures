@@ -26,7 +26,7 @@ addon_info = AddonInfo(
 	addon_version="26.08",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* NVDA 2026.2 or later is required.
+	addon_changelog=_("""* NVDA 2026.2 (64-bit) or later is required.
 * Removed add-on specific version of touch browse mode in favor of NVDA's own touch browse mode functionality. Use NVDA's browse mode settings to configure touch browse mode elements."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com>, Kefas Lungu <jameskefaslungu@gmail.com>",

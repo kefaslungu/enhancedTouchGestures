@@ -4,7 +4,7 @@ This page lists the complete changelog for Enhanced Touch Gestures add-on releas
 
 ## Version 26.09
 
-* NVDA 2026.2 or later is required.
+* NVDA 2026.2 (64-bit) or later is required.
 * Removed add-on specific version of touch browse mode in favor of NVDA's own touch browse mode functionality. Use NVDA's browse mode settings to configure touch browse mode elements.
 
 ## Version 26.07
