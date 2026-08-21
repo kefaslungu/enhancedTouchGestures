@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2026-08-18 07:41+0000\n"
-"PO-Revision-Date: 2026-08-18 07:44\n"
+"PO-Revision-Date: 2026-08-18 17:26\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -83,5 +83,6 @@ msgstr "Bu eklenti, NVDA için odak durum bildirimi ve ses sentezleyici ayar hal
 #: buildVars.py:29
 msgid "* NVDA 2026.2 (64-bit) or later is required.\n"
 "* Removed add-on specific version of touch browse mode in favor of NVDA's own touch browse mode functionality. Use NVDA's browse mode settings to configure touch browse mode elements."
-msgstr ""
+msgstr "* NVDA 2026.2 (64-bit) veya sonrası sürümler gerekli.\n"
+"* NVDA’nın kendi dokunmatik dolaşım modu işlevselliği lehine, eklentiye özgü dokunmatik dolaşım modu sürümü kaldırıldı. Dokunmatik dolaşım modu öğelerini yapılandırmak için NVDA’nın dolaşım modu ayarlarını kullanın."
 
