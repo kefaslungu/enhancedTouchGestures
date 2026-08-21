@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2025-09-05 14:28+0000\n"
-"PO-Revision-Date: 2026-01-05 00:34\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-08-18 07:41+0000\n"
+"PO-Revision-Date: 2026-08-18 07:42\n"
 "Last-Translator: \n"
 "Language-Team: Bulgarian\n"
 "Language: bg_BG\n"
@@ -17,41 +17,66 @@ msgstr ""
 "X-Crowdin-File: enhancedTouchGestures.pot\n"
 "X-Crowdin-File-ID: 210\n"
 
+#. Translators: dialog title shown when trying to install the add-on on unsupported systems.
+#: addon\installTasks.py:24
+msgid "Enhanced Touch Gestures install warning"
+msgstr "Предупреждение за инсталиране на „Подобрени сензорни жестове“"
+
+#. No touch hardware whatsoever
+#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
+#: addon\installTasks.py:29
+msgid "This device does not support touch interaction. A touch capable device is required to use add-on features."
+msgstr "Това устройство не поддържа сензорно взаимодействие. За използване на функциите на добавката е необходимо устройство със сензорни възможности."
+
+#. Portable NVDA running on a touch capable hardware
+#. Translators: dialog text shown when trying to install the add-on on unsupported systems.
+#: addon\installTasks.py:33
+msgid "You are using a portable copy of NVDA and the device supports touch interaction. NVDA must be installed to use add-on features."
+msgstr "Използвате преносимо копие на NVDA и устройството поддържа сензорно взаимодействие. NVDA трябва да бъде инсталиран, за да използвате функциите на добавката."
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:36
+msgid "text mode"
+msgstr "текстов режим"
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:38
+msgid "object mode"
+msgstr "обектен режим"
+
+#. Translators: The name of a touch mode used when in browse mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:40
+msgid "browse mode"
+msgstr "режим на разглеждане"
+
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:42
+msgid "synth settings mode"
+msgstr "режим за настройки на синтезатора"
+
 #. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon/globalPlugins/enhancedTouchGestures.py:33 buildVars.py:21
+#: addon\globalPlugins\enhancedTouchGestures.py:54 buildVars.py:21
 msgid "Enhanced Touch Gestures"
 msgstr "Подобрени сензорни жестове (Enhanced Touch Gestures)"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:250
-msgid "Toggles touch keyboard"
-msgstr "Показва или скрива сензорната клавиатура"
-
-#. Translators: message shown when touch keyboard button is not found.
-#: addon/globalPlugins/enhancedTouchGestures.py:264
-msgid "Cannot activate touch keyboard"
-msgstr "Не може да се задейства сензорната клавиатура"
+#: addon\globalPlugins\enhancedTouchGestures.py:153
+msgid "Emulates pressing tab on the system keyboard"
+msgstr "Емулира натискането на TAB от системната клавиатура"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:269
-msgid "Toggles voice dictation"
-msgstr "Задейства или спира гласовото въвеждане"
-
-#. Translators: message shown when dictation command is unavailable.
-#: addon/globalPlugins/enhancedTouchGestures.py:280
-msgid "Dictation is supported on Windows 10 Version 1709 or later"
-msgstr "Гласовото въвеждане се поддържа в Windows 10 версия 1709 или по-нови"
+#: addon\globalPlugins\enhancedTouchGestures.py:161
+msgid "Emulates pressing shift+tab on the system keyboard"
+msgstr "Емулира натискането на Shift+TAB от системната клавиатура"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #: buildVars.py:24
-msgid "A suite of additional touch commands, including navigation and help commands.\n"
-"\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."
-msgstr "Комплект допълнителни сензорни команди, включително команди за табулация и помощ.\n"
-"\tИзисква компютър със сензорна поддръжка с Windows 8.1 или по-нова версия и NVDA 2017.4 или по-нова версия."
+msgid "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures."
+msgstr "Тази добавка предоставя допълнителни жестове за сензорния екран при работа с NVDA, включително докладване на фокуса и жестове за пръстена от настройки на синтезатора."
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
