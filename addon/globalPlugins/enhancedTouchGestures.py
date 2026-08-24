@@ -23,7 +23,7 @@ from logHandler import log
 from utils.displayString import DisplayStringStrEnum
 import addonHandler
 
-# Some add-on messages are exact copies of NVDA Core (call the built-in gettext functio).
+# Some add-on messages are exact copies of NVDA Core (call the built-in gettext function).
 nvdaMessage = builtins._
 addonHandler.initTranslation()
 
