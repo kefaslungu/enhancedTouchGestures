@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-08-18 07:41+0000\n"
-"PO-Revision-Date: 2026-08-18 17:26\n"
+"POT-Creation-Date: 2026-08-24 02:46+0000\n"
+"PO-Revision-Date: 2026-08-24 02:47\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -33,21 +33,6 @@ msgstr "Bu cihaz dokunmatik etkileşimi desteklemiyor. Ek özellikler kullanmak 
 #: addon\installTasks.py:33
 msgid "You are using a portable copy of NVDA and the device supports touch interaction. NVDA must be installed to use add-on features."
 msgstr "NVDA'nın taşınabilir bir kopyasını kullanıyorsunuz ve cihaz dokunmatik etkileşimi destekliyor. Eklenti özelliklerini kullanmak için NVDA'nın kurulu olması gerekir."
-
-#. Translators: The name of a touch mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:36
-msgid "text mode"
-msgstr "metin modu"
-
-#. Translators: The name of a touch mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:38
-msgid "object mode"
-msgstr "nesne modu"
-
-#. Translators: The name of a touch mode used when in browse mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:40
-msgid "browse mode"
-msgstr "tarama modu"
 
 #. Translators: The name of a touch mode.
 #: addon\globalPlugins\enhancedTouchGestures.py:42
