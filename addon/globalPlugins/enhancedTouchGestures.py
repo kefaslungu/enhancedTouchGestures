@@ -4,6 +4,7 @@
 # Implements needed improvements for various touchscreen gestures.
 
 from typing import NamedTuple
+import builtins
 import globalPluginHandler
 from functools import cached_property
 import touchHandler
@@ -22,6 +23,8 @@ from logHandler import log
 from utils.displayString import DisplayStringStrEnum
 import addonHandler
 
+# Some add-on messages are exact copies of NVDA Core (call the built-in gettext functio).
+nvdaMessage = builtins._
 addonHandler.initTranslation()
 
 # NVDA 2026.2: patch touchHandler.TouchMode enumeration to add synth settings mode.
@@ -36,12 +39,9 @@ class TouchMode(DisplayStringStrEnum):
 	@cached_property
 	def _displayStringLabels(self):
 		return {
-			# Translators: The name of a touch mode.
-			TouchMode.TEXT: _("text mode"),
-			# Translators: The name of a touch mode.
-			TouchMode.OBJECT: _("object mode"),
-			# Translators: The name of a touch mode used when in browse mode.
-			TouchMode.BROWSE: _("browse mode"),
+			TouchMode.TEXT: nvdaMessage("text mode"),
+			TouchMode.OBJECT: nvdaMessage("object mode"),
+			TouchMode.BROWSE: nvdaMessage("browse mode"),
 			# Translators: The name of a touch mode.
 			TouchMode.SYNTHSETTINGS: _("synth settings mode"),
 		}
