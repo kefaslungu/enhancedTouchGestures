@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2026-08-28 02:31-0600\n"
-"PO-Revision-Date: 2026-08-28 02:32-0600\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-08-28 17:04+0000\n"
+"PO-Revision-Date: 2026-08-28 17:06\n"
 "Last-Translator: \n"
 "Language-Team: Kurmanji (Kurdish)\n"
 "Language: kmr_TR\n"
@@ -16,36 +16,26 @@ msgstr ""
 "X-Crowdin-Language: kmr\n"
 "X-Crowdin-File: enhancedTouchGestures.pot\n"
 "X-Crowdin-File-ID: 210\n"
-"X-Generator: Poedit 3.9\n"
 
 #. Translators: dialog title shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:28
+#: addon\installTasks.py:24
 msgid "Enhanced Touch Gestures install warning"
 msgstr "Hişyariya sazkirina Jestên Destikê yên Pêşkeftî"
 
 #. No touch hardware whatsoever
 #. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:33
-msgid ""
-"This device does not support touch interaction. A touch capable device is "
-"required to use add-on features."
-msgstr ""
-"Ev cîhaz piştgiriya têkiliya destavêtinê nake. Ji bo bikaranîna "
-"taybetmendiyên pêvek cîhazek ku xwedî kapasîteya destavêtinê ye hewce ye."
+#: addon\installTasks.py:29
+msgid "This device does not support touch interaction. A touch capable device is required to use add-on features."
+msgstr "Ev cîhaz piştgiriya têkiliya destavêtinê nake. Ji bo bikaranîna taybetmendiyên pêvek cîhazek ku xwedî kapasîteya destavêtinê ye hewce ye."
 
 #. Portable NVDA running on a touch capable hardware
 #. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:37
-msgid ""
-"You are using a portable copy of NVDA and the device supports touch "
-"interaction. NVDA must be installed to use add-on features."
-msgstr ""
-"Hûn kopiyek veguhêzbar a NVDA-yê bikar tînin û cîhaz bi destdana destan "
-"piştgirî dike. Ji bo bikaranîna taybetmendiyên pêvek divê NVDA were saz "
-"kirin."
+#: addon\installTasks.py:33
+msgid "You are using a portable copy of NVDA and the device supports touch interaction. NVDA must be installed to use add-on features."
+msgstr "Hûn kopiyek veguhêzbar a NVDA-yê bikar tînin û cîhaz bi destdana destan piştgirî dike. Ji bo bikaranîna taybetmendiyên pêvek divê NVDA were saz kirin."
 
 #. Translators: The name of a touch mode.
-#: addon/globalPlugins/enhancedTouchGestures.py:47
+#: addon\globalPlugins\enhancedTouchGestures.py:43
 msgid "synth settings mode"
 msgstr "moda mîhengên synthê"
 
@@ -53,29 +43,25 @@ msgstr "moda mîhengên synthê"
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon/globalPlugins/enhancedTouchGestures.py:59 buildVars.py:21
+#: addon\globalPlugins\enhancedTouchGestures.py:55 buildVars.py:21
 msgid "Enhanced Touch Gestures"
 msgstr "Jestên Destikê yên Pêşkeftî"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:277
+#: addon\globalPlugins\enhancedTouchGestures.py:154
 msgid "Emulates pressing tab on the system keyboard"
 msgstr "Tepandina Tabê li ser klavyeya pergalê teqlîd dike"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:285
+#: addon\globalPlugins\enhancedTouchGestures.py:162
 msgid "Emulates pressing shift+tab on the system keyboard"
 msgstr "Tepandina shift+tab li ser klavyeya pergalê teqlîd dike"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #: buildVars.py:24
-msgid ""
-"This add-on provides additional touchscreen gestures for NVDA, including "
-"focus reporting and synth settings ring gestures."
-msgstr ""
-"Ev pêvek ji bo NVDA-yê jestên ekrana desta yên zêdetir peyda dike, di nav de "
-"raporkirina fokusê û jestên zengilê yên mîhengên synthê."
+msgid "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures."
+msgstr "Ev pêvek ji bo NVDA-yê jestên ekrana desta yên zêdetir peyda dike, di nav de raporkirina fokusê û jestên zengilê yên mîhengên synthê."
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
