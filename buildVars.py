@@ -23,7 +23,7 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_("""This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures."""),
 	# version
-	addon_version="26.08",
+	addon_version="26.09",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
 	addon_changelog=_("""* NVDA 2026.2 (64-bit) or later is required.
