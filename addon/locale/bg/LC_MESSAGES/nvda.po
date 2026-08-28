@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-08-18 07:41+0000\n"
-"PO-Revision-Date: 2026-08-18 07:42\n"
+"POT-Creation-Date: 2026-08-28 17:04+0000\n"
+"PO-Revision-Date: 2026-08-28 17:05\n"
 "Last-Translator: \n"
 "Language-Team: Bulgarian\n"
 "Language: bg_BG\n"
@@ -35,22 +35,7 @@ msgid "You are using a portable copy of NVDA and the device supports touch inter
 msgstr "Използвате преносимо копие на NVDA и устройството поддържа сензорно взаимодействие. NVDA трябва да бъде инсталиран, за да използвате функциите на добавката."
 
 #. Translators: The name of a touch mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:36
-msgid "text mode"
-msgstr "текстов режим"
-
-#. Translators: The name of a touch mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:38
-msgid "object mode"
-msgstr "обектен режим"
-
-#. Translators: The name of a touch mode used when in browse mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:40
-msgid "browse mode"
-msgstr "режим на разглеждане"
-
-#. Translators: The name of a touch mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:42
+#: addon\globalPlugins\enhancedTouchGestures.py:43
 msgid "synth settings mode"
 msgstr "режим за настройки на синтезатора"
 
@@ -58,17 +43,17 @@ msgstr "режим за настройки на синтезатора"
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon\globalPlugins\enhancedTouchGestures.py:54 buildVars.py:21
+#: addon\globalPlugins\enhancedTouchGestures.py:55 buildVars.py:21
 msgid "Enhanced Touch Gestures"
 msgstr "Подобрени сензорни жестове (Enhanced Touch Gestures)"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon\globalPlugins\enhancedTouchGestures.py:153
+#: addon\globalPlugins\enhancedTouchGestures.py:154
 msgid "Emulates pressing tab on the system keyboard"
 msgstr "Емулира натискането на TAB от системната клавиатура"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon\globalPlugins\enhancedTouchGestures.py:161
+#: addon\globalPlugins\enhancedTouchGestures.py:162
 msgid "Emulates pressing shift+tab on the system keyboard"
 msgstr "Емулира натискането на Shift+TAB от системната клавиатура"
 
@@ -83,5 +68,6 @@ msgstr "Тази добавка предоставя допълнителни ж
 #: buildVars.py:29
 msgid "* NVDA 2026.2 (64-bit) or later is required.\n"
 "* Removed add-on specific version of touch browse mode in favor of NVDA's own touch browse mode functionality. Use NVDA's browse mode settings to configure touch browse mode elements."
-msgstr ""
+msgstr "* Изисква се NVDA версия 2026.2 (64-битова) или по-нова.\n"
+"* Премахнат е сензорният режим на разглеждане идващ от добавката в полза на същия такъв вграден в NVDA. Използвайте настройките за режима на разглеждане на NVDA, за да конфигурирате елементите на сензорния режим на разглеждане."
 
