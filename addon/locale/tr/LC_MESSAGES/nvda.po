@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-08-24 02:46+0000\n"
-"PO-Revision-Date: 2026-08-24 02:47\n"
+"POT-Creation-Date: 2026-08-28 06:27+0000\n"
+"PO-Revision-Date: 2026-08-28 06:30\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -35,7 +35,7 @@ msgid "You are using a portable copy of NVDA and the device supports touch inter
 msgstr "NVDA'nın taşınabilir bir kopyasını kullanıyorsunuz ve cihaz dokunmatik etkileşimi destekliyor. Eklenti özelliklerini kullanmak için NVDA'nın kurulu olması gerekir."
 
 #. Translators: The name of a touch mode.
-#: addon\globalPlugins\enhancedTouchGestures.py:42
+#: addon\globalPlugins\enhancedTouchGestures.py:43
 msgid "synth settings mode"
 msgstr "sentezleyici ayarları modu"
 
@@ -43,17 +43,17 @@ msgstr "sentezleyici ayarları modu"
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon\globalPlugins\enhancedTouchGestures.py:54 buildVars.py:21
+#: addon\globalPlugins\enhancedTouchGestures.py:55 buildVars.py:21
 msgid "Enhanced Touch Gestures"
 msgstr "Gelişmiş Dokunma Hareketleri"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon\globalPlugins\enhancedTouchGestures.py:153
+#: addon\globalPlugins\enhancedTouchGestures.py:154
 msgid "Emulates pressing tab on the system keyboard"
 msgstr "Sistem klavyesinde Sekme tuşuna basmayı taklit eder"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon\globalPlugins\enhancedTouchGestures.py:161
+#: addon\globalPlugins\enhancedTouchGestures.py:162
 msgid "Emulates pressing shift+tab on the system keyboard"
 msgstr "Sistem klavyesinde Shift+Sekme tuşlarına basmayı taklit eder"
 
