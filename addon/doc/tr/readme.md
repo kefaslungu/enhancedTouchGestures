@@ -1,27 +1,27 @@
 # Gelişmiş Dokunmatik Ekran Hareketleri
 
-* Yazarlar: Joseph Lee ve Kefas Lungu
+* Yazarlar: Joseph Lee, Kefas Lungu
 
-Bu eklenti NVDA'ya ek dokunma hareketleri ekler. Ayrıca tarama kipinde daha kolay dolaşım için ek hareketler sunar.
+Bu eklenti, NVDA için odağı bildirme ve sentez ayarları halka hareketleri de dahil olmak üzere ek dokunmatik ekran hareketleri sağlar.
 
 Not: Bu eklenti, Windows 10 veya 11 yüklü dokunmatik ekranlı bir bilgisayarda NVDA 2025.3.2 veya sonraki bir sürümünün çalıştırılmasını gerektirir.
 
-## Hareketler
+## Komutlar
 
-### Her yerde kullanılabilen hareketler
+### Her yerde mevcut
 
-* İki parmakla üç kez dokunma: NVDA'yı kapatır!
-* Üç parmakla sağa kaydırma: Sekme tuşuna basar.
+* İki parmakla üç kez dokunma: NVDA'dan çıkar!
+* Üç parmakla sağa doğru hafifçe vurun: Sekme tuşuna basar.
 * Üç parmakla sola kaydırma: Shift+Sekme tuşlarına basar.
 * Üç parmakla aşağı kaydırma (nesne modu): geçerli pencereyi okur.
-* Üç parmakla çift dokunma: hangi sembollerin seslendirileceğini belirleyen sembol konuşma seviyeleri arasında geçiş yapar.
-* Üç parmakla üçlü dokunma: ekran perdesini değiştirir.
-* Dört parmakla dokunma: ses kısma modları arasında geçiş yapar.
-* Dört parmakla iki kez dokunma: Yardım giriş modunu değiştirir.
-* Dört parmakla sola kaydırma: nesneyi odaklı olarak seslendirir.
-* Dört parmakla sağa kaydırma: geçerli dolaşım nesnesini seslendirir.
-* Dört parmakla yukarı kaydırma: geçerli pencerenin başlığını seslendirir.
-* Dört parmakla aşağı kaydırma: durum çubuğu metnini seslendirir.
+* Üç parmakla çift dokunma: hangi simgelerin söyleneceğini belirleyen konuşma simgesi seviyeleri arasında geçiş yapar.
+* Üç parmakla üç dokunma: ekran perdesini değiştirir.
+* Dört parmakla dokunma: ses kısma kipleri arasında geçiş yapar.
+* Dört parmakla iki kez dokunma: girdi yardım modunu değiştirir.
+* Dört parmakla sola kaydırma: nesneyi odaklı olarak bildirir.
+* Dört parmakla sağa kaydırma: geçerli gezgin nesnesini bildirir.
+* Dört parmakla yukarı kaydırma: geçerli pencerenin başlığını bildirir.
+* Dört parmakla aşağı kaydırma: durum çubuğu metnini bildirir.
 
 ## Göz atma moduna dokunun
 
@@ -29,6 +29,10 @@ Göz atma modunda kullanılabilen bu dokunma modu, belgede seçilen öğeye gör
 
 Kullanılabilir web modları şunlardır: varsayılan (türden bağımsız olarak öğeler/nesneler arasında dolaşma), bağlantılar, düğmeler, form alanları, başlıklar, çerçeveler, tablolar, listeler, grafikler, yer işaretleri, gömülü nesneler (örneğin diyaloglar ve web uygulamaları) ve metin paragrafları.
 
-## Sentezleyici ayarları dokunma kipi
+## Sentezleyici ayarları dokunmatik modu
 
-Ses seçimi, ses seviyesi gibi sentezleyici ayarlarını yapmak için bu kipi kullanabilirsiniz. İki parmakla sola veya sağa fiske yaparak sentezleyici ayarları arasında dolaşabilir, iki parmakla yukarı veya aşağı fiske yaparak ayarları değiştirebilirsiniz. Bu hareketler klavyedeki hızlı sentezleyici ayarlarını dokunmatik ekrana aktarır.
+Ses seçme ve ses seviyesini değiştirme gibi sentezleyici ayarlarını hızlı bir şekilde değiştirmek için bu modu kullanabilirsiniz. Bu modda, sentez ayarları arasında geçiş yapmak için iki parmakla sola veya sağa kaydırma hareketini kullanın ve değerleri değiştirmek için iki parmakla yukarı ve aşağı kaydırma hareketini kullanın. Bu hareketler, klavyedeki synth ayarları zil komutlarının hareketlerini yansıtır.
+
+Her eklenti sürümü arasında yapılan değişikliklerin bir listesi için [eklenti sürümleri için değişiklik günlükleri][1] belgesine bakın.
+
+[1]: https://github.com/kefaslungu/enhancedTouchGestures/blob/main/changes.md
