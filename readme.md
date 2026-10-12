@@ -4,7 +4,7 @@
 
 This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.
 
-Note: this add-on requires NVDA 2026.2 or later running on a touchscreen computer with Windows 10 or 11.
+Note: this add-on requires a Windows 10 or 11 touchscreen computer with NVDA installed.
 
 ## Commands
 
