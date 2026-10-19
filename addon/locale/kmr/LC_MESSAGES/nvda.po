@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-25 09:58+0000\n"
-"PO-Revision-Date: 2026-09-25 10:01\n"
+"POT-Creation-Date: 2026-10-19 03:02+0000\n"
+"PO-Revision-Date: 2026-10-19 03:04\n"
 "Last-Translator: \n"
 "Language-Team: Kurmanji (Kurdish)\n"
 "Language: kmr_TR\n"
@@ -66,8 +66,6 @@ msgstr "Ev pêvek ji bo NVDA-yê jestên ekrana desta yên zêdetir peyda dike, 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2026.2 (64-bit) or later is required.\n"
-"* Removed add-on specific version of touch browse mode in favor of NVDA's own touch browse mode functionality. Use NVDA's browse mode settings to configure touch browse mode elements."
-msgstr "* NVDA 2026.2 (64-bit) an guhertoyek nûtir pêwîst e.\n"
-"* Guhertoya pêvekirî ya taybetî ya moda geroka bi destavêj hate rakirin û fonksiyona moda geroka bi destavêj a NVDA-yê bi kar anî. Ji bo mîhengkirina hêmanên moda geroka bi destavêj, mîhengên moda geroka NVDA-yê bikar bînin."
+msgid "* NVDA 2026.3 or later is required."
+msgstr ""
 

@@ -4,7 +4,7 @@
 
 Bu eklenti, NVDA için odağı bildirme ve sentez ayarları halka hareketleri de dahil olmak üzere ek dokunmatik ekran hareketleri sağlar.
 
-Not: Bu eklenti, Windows 10 veya 11 yüklü dokunmatik ekranlı bir bilgisayarda NVDA 2026.2 veya sonraki bir sürümün çalışmasını gerektirir.
+Note: this add-on requires a Windows 10 or 11 touchscreen computer with NVDA installed.
 
 ## Komutlar
 

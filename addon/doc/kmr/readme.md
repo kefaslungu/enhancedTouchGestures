@@ -4,7 +4,7 @@
 
 Ev pêvek ji bo NVDA-yê jestên ekrana desta yên zêdetir peyda dike, di nav de raporkirina fokusê û jestên zengilê yên mîhengên synthê.
 
-Têbînî: Ji bo vê pêvekê, pêdivî bi NVDA 2026.2 an jî guhertoyek nûtir heye ku li ser kompîturek bi ekrana destavêj a bi Windows 10 an 11-ê dixebite.
+Note: this add-on requires a Windows 10 or 11 touchscreen computer with NVDA installed.
 
 ## Ferman
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-25 09:58+0000\n"
-"PO-Revision-Date: 2026-10-06 22:56\n"
+"POT-Creation-Date: 2026-10-19 03:02+0000\n"
+"PO-Revision-Date: 2026-10-19 03:03\n"
 "Last-Translator: \n"
 "Language-Team: Bulgarian\n"
 "Language: bg_BG\n"
@@ -66,8 +66,6 @@ msgstr "Тази добавка предоставя допълнителни ж
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2026.2 (64-bit) or later is required.\n"
-"* Removed add-on specific version of touch browse mode in favor of NVDA's own touch browse mode functionality. Use NVDA's browse mode settings to configure touch browse mode elements."
-msgstr "* Изисква се NVDA версия 2026.2 (64-битова) или по-нова.\n"
-"* Премахнат е сензорният режим на разглеждане идващ от добавката в полза на същия такъв вграден в NVDA. Използвайте настройките за режима на разглеждане на NVDA, за да конфигурирате елементите на сензорния режим на разглеждане."
+msgid "* NVDA 2026.3 or later is required."
+msgstr ""
 
