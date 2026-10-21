@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2026-02-23 03:47+0000\n"
-"PO-Revision-Date: 2026-03-30 00:45\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-10-19 03:02+0000\n"
+"PO-Revision-Date: 2026-10-19 03:03\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
@@ -18,47 +18,50 @@ msgstr ""
 "X-Crowdin-File-ID: 210\n"
 
 #. Translators: dialog title shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:24
+#: addon\installTasks.py:24
 msgid "Enhanced Touch Gestures install warning"
 msgstr "增強觸控手勢安裝警告"
 
 #. No touch hardware whatsoever
 #. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:29
+#: addon\installTasks.py:29
 msgid "This device does not support touch interaction. A touch capable device is required to use add-on features."
 msgstr "此裝置不支援觸控互動。必須使用具備觸控功能的裝置才能使用附加元件功能。"
 
 #. Portable NVDA running on a touch capable hardware
 #. Translators: dialog text shown when trying to install the add-on on unsupported systems.
-#: addon/installTasks.py:33
+#: addon\installTasks.py:33
 msgid "You are using a portable copy of NVDA and the device supports touch interaction. NVDA must be installed to use add-on features."
 msgstr "您正在使用 NVDA 可攜式版，且此裝置支援觸控互動。必須安裝 NVDA 才能使用附加元件功能。"
 
-#. Translators: The gestures category for this add-on in input gestures dialog (2013.3 or later).
+#. Translators: The name of a touch mode.
+#: addon\globalPlugins\enhancedTouchGestures.py:43
+msgid "synth settings mode"
+msgstr ""
+
+#. Translators: The gestures category for this add-on in input gestures dialog.
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon/globalPlugins/enhancedTouchGestures.py:38 buildVars.py:21
+#: addon\globalPlugins\enhancedTouchGestures.py:55 buildVars.py:21
 msgid "Enhanced Touch Gestures"
 msgstr "增強觸控手勢"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:226
+#: addon\globalPlugins\enhancedTouchGestures.py:154
 msgid "Emulates pressing tab on the system keyboard"
 msgstr "模擬在系統鍵盤上按 tab"
 
 #. Translators: input help message for Enhanced touch Gestures command.
-#: addon/globalPlugins/enhancedTouchGestures.py:234
+#: addon\globalPlugins\enhancedTouchGestures.py:162
 msgid "Emulates pressing shift+tab on the system keyboard"
 msgstr "模擬在系統鍵盤上按 shift+tab"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #: buildVars.py:24
-msgid "A suite of additional touch commands, including navigation and help commands.\n"
-"\tRequires a touch-enabled computer with Windows 8.1 or later with NVDA 2017.4 or later installed."
-msgstr "一套額外的觸控指令，包含導覽與說明指令。\n"
-"需要一部具備觸控功能的電腦，作業系統為 Windows 8.1 或更新版本，並已安裝 NVDA 2017.4 或更新版本。"
+msgid "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures."
+msgstr ""
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
