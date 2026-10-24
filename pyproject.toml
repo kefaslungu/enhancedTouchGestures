@@ -189,6 +189,7 @@ reportTypedDictNotRequiredAccess = true
 reportUnboundVariable = true
 reportUnhashable = true
 reportUninitializedInstanceVariable = true
+reportUnknownArgumentType = true
 reportUnknownLambdaType = true
 reportUnnecessaryCast = true
 reportUnnecessaryComparison = true
@@ -216,7 +217,6 @@ reportMissingTypeStubs = false
 reportMissingImports = false  # NVDA Core modules
 reportMissingParameterType = false  # Touch support test decorator
 reportUndefinedVariable = false  # _ = gettext.gettext call
-reportUnknownArgumentType = false  # Browse touch mode hasattr/getattr (NVDA 2026.2 availability testing)
 reportUnknownMemberType = false  # NVDA Core attributes
 reportUnknownParameterType = false  # Touch gestures
 reportUnknownVariableType = false  # Types coming from NVDA Core
