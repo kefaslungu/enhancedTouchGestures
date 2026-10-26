@@ -4,7 +4,7 @@
 
 此插件为 NVDA 提供了额外的触摸屏手势，包括读出焦点、循环切换合成器设置等。
 
-Note: this add-on requires a Windows 10 or 11 touchscreen computer with NVDA installed.
+注意：此插件需在运行安装版 NVDA 的 Windows 10 或 11 的触摸屏计算机上使用。
 
 ## 命令
 
